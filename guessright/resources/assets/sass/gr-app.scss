@@ -1,0 +1,79 @@
+$lightText: #777;
+
+body {
+    background-color: #88ccff;
+}
+
+    body.welcome-home-body {
+        background-image: url("../../img/guessright_wood-cube-473703.jpg");
+    }
+
+    .alert-vue {
+        display: block;
+        max-height: 0;
+        opacity: 0;
+        transition: all 2s cubic-bezier(0, 1, 0.5, 1);
+
+        margin-bottom: 0;
+        padding: 0;
+
+        top: -75px;
+        position: relative;
+        z-index: -1;
+    }
+    .max-height-none {
+        max-height: 0;
+    }
+    .max-height-100 {
+        max-height: 100px;
+        opacity: 1;
+        top: 0;
+
+        margin-bottom: 20px; /* Overriding -> bootstrap.min.css */
+        padding: 15px;
+    }
+
+    .gr-nav {
+
+        .gr-nav-buttons,
+        .gr-nav-greeting {
+            min-height: 5rem;
+
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+/* Remove column left/right padding */
+
+    .no-gutter > [class*="col-"], [class*="-12"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+/* Container used on all 3 route's components */
+
+    .container-shared {
+            border-top: 1px solid lightblue;
+            margin-top: 1rem;
+            max-width: 500px;
+            padding-top: 1rem;
+            text-align: left;
+        }
+
+/* Modal - Backgrounds for winning modal */
+
+    div.modal-back {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.modal-frame {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }

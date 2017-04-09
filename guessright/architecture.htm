@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guess Right Architecture and File Structure</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <style type="text/css">
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 10pt;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        p {
+            text-align: left;
+            text-indent: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        H2                  { font-weight: bold; }
+
+        p                   { position: relative; padding: 0.25rem 0; }
+        p:nth-child(odd)    { background-color: #eafaff; }
+        p span              { display: inline-block; }
+        p.levelT            { text-indent: 3rem; border-bottom: 1px solid gray; font-weight: bold; background-color: #ffffff; padding: 0.25rem 0; }
+
+        .level0             { text-indent: 6rem; text-decoration: underline; }
+        .level1             { text-indent: 6rem; }
+        .level2             { text-indent: 9rem; }
+        .level3             { text-indent: 12rem; }
+
+        .col2               { position: absolute; left: 25rem; border-left: 1px solid gray; padding-left: 0.5rem; }
+        .col3               { position: absolute; left: 37rem; border-left: 1px solid gray; padding-left: 0.5rem; }
+    </style>
+</head>
+<body>
+    <h2>- Vue Architecture</h2>
+        <p><span class=level1>- This Vue project will be a micro-site with the following routes:</span></p>
+        <p><span class=level2>/</span><span class=col2>Intro page with project description/instructions.</span></p>
+        <p><span class=level2>/project-name</span><span class=col2>Primary SPA Content</span></p>
+        <p><span class=level2>/about</span><span class=col2>Thank you; thoughts and notes re: project. Maybe game history/updates?</span></p>
+    <h2>- Project Structure</h2>
+        <p class=levelT>GLOBAL</p>
+            <p><span class=level0>LARAVEL</span></p>
+                <p><span class=level1>\app\</span></p>
+                <p><span class=level2>Http\</span><span class=col2>routes.php</span></p>
+                <p><span class=level3>Controllers\</span><span class=col2>GuessRightController.php</span></p>
+                <p><span class=level2>Models\</span><span class=col2>GuessRightUser.php</span></p>
+                <p><span class=level2>\</span><span class=col2>User.php</span></p>
+                <p><span class=level1>\database\</span></p>
+                <p><span class=level2>migrations\</span><span class=col2>2017_03_12_110000_create_guess_right_words_table.php</span></p>
+                <p><span class=level1>\resources\</span></p>
+                <p><span class=level2>views\</span><span class=col2>gr-welcome.blade.php</span><span class=col3>Landing (index) page</span></p>
+                <p><span class=level3>layouts\</span><span class=col2>grLayout.blade.php</span><span class=col3>Overall page layout (container for landing page)</span></p>
+            <p><span class=level0>VUE</span></p>
+                <p><span class=level1>\resources\assets\</span></p>
+                <p><span class=level2>js\vue\</span><span class=col2>vue-config.js</span><span class=col3>Loaded 1st -&gt; via [grLayout.blade.php]</span></p>
+                <p><span class="level2">&nbsp;</span><span class=col3>Loads: [ axios, VueRouter ]</span></p>
+        <p class=levelT>VUE ROUTES</p>
+            <p><span class=level1>\resources\assets\</span></p>
+            <p><span class=level2>js\vue\vue-components\ (uses VueRouter)</span></p>
+            <p><span class=level3>#</span><span class=col2>guess-right-intro.vue</span><span class=col3>Project landing page</span></p>
+            <p><span class=level3>#guess</span><span class=col2>guess-right.vue</span><span class=col3>Project page (Guess Right Game)</span></p>
+            <p><span class=level3>#about</span><span class=col2>guess-right-about.vue</span><span class=col3>Project tidbits</span></p>
+        <p class=levelT>GAME COMPONENTS</p>
+            <p><span class=level1>(called from: guess-right.vue)</span></p>
+            <p><span class=level2>import Alphabet</span><span class=col2>from '../vue-components/Alphabet.vue'</span></p>
+            <p><span class=level2>import ProgressVisual</span><span class=col2>from '../vue-components/ProgressVisual.vue'</span></p>
+            <p><span class=level2>import ProgressUp</span><span class=col2>from '../vue-components/ProgressUp.vue'</span></p>
+            <p><span class=level2>import ProgressDown</span><span class=col2>from '../vue-components/ProgressDown.vue'</span></p>
+            <p><span class=level2>import Modal</span><span class=col2>from '../vue-components/Modal.vue'</span></p>
+            <p><span class=level2>import InfoComp</span><span class=col2>from '../vue-components/InfoComp.vue'</span></p>
+        <p class=levelT>VUEX</p>
+            <p><span class=level1>\resources\assets\</span></p>
+            <p><span class=level2>js\vue\store\</span><span class=col2>store.js</span></p>
+            <p><span class=level2>&nbsp;</span><span class=col2>getters.js</span></p>
+            <p><span class=level2>&nbsp;</span><span class=col2>actions.js</span></p>
+            <p><span class=level2>&nbsp;</span><span class=col2>mutations.js</span></p>
+        <p class=levelT>JSON FILES</p>
+            <p><span class=level1>\json-files\</span></p>
+            <p><span class=level2>&nbsp;</span><span class=col2>alphabetlist-en_US.json</span></p>
+            <p><span class=level2>&nbsp;</span><span class=col2>progress-images-en_US.json</span></p>
+            <p><span class=level2>&nbsp;</span><span class=col2>wordlist-en_US.json</span></p>
+        <p class=levelT>SCSS FILE</p>
+            <p><span class=level1>\resources\assets\</span></p>
+            <p><span class=level2>sass\</span><span class=col2>gr-app.scss</span></p>
+</body>
+</html>
