@@ -150,8 +150,8 @@
                         <div slot="modal-body">
                             <div class="modal-300-frame-wrap text-center">
                                 <div class="modal-300">
-                                    <p><h2>Great Guessing !!!</h2></p>
                                     <p>
+                                        <h2>Great Guessing !!!</h2>
                                         <button class="btn btn-primary btn-lg" @click.prevent="resetGame($event)">Play Again</button><br>
                                         <button @click="hideModal" class="btn btn-primary btn-close">Close</button>
                                     </p>

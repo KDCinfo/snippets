@@ -363,7 +363,11 @@ export default {
         // This will --- SHOW THE ENTIRE IMAGE --- by adding the 'anim' class to all the 'divContent' DIVs (it is called from [ Alphabet.vue ] when [ errorsMaxed() ] is triggered, after a 1-second setTimeout())
 
         document.getElementById('divContentCountDown').classList.add('off')
-        for (let div of document.getElementsByClassName('divContent')) {    // Add CSS class named 'anim' to all the boxes (Game is Over, show the entire pic)
+
+        // Add CSS class named 'anim' to all the boxes (Game is Over, show the entire pic)
+
+        // for (let div of document.getElementsByClassName('divContent')) { // This 'for-of' doesn't work in IE11
+        for (let [key, div] of Object.entries(document.getElementsByClassName('divContent'))) {
             div.classList.add('anim-none')
         }
         document.getElementById('divContents').classList.add('anim-whole')  // This applies a 3-second pulse_animation [ProgressVisual.vue] -> [style] [divContents.anim-whole]
@@ -379,8 +383,15 @@ export default {
             document.getElementById('divContentProgressImage').classList.remove('on')
             document.getElementById('divContentCountDown').classList.remove('off')
             document.getElementById('divContents').classList.remove('anim-whole')
-            for (let div of document.getElementsByClassName('divContent')) { // Remove CSS class named 'anim' from all the boxes (prep for showing next image tile, or the entire image)
-                div.classList.remove('anim', 'anim-none')
+
+            // Remove CSS class named 'anim' from all the boxes (prep for showing next image tile, or the entire image)
+
+            // for (let div of document.getElementsByClassName('divContent')) {     // This 'for-of' doesn't work in IE11
+            for (let [key, div] of Object.entries(document.getElementsByClassName('divContent'))) {
+
+                // IE11 doesn't support multiple classList assignments: .classList.remove('anim', 'anim-none')
+                div.classList.remove('anim')
+                div.classList.remove('anim-none')
             }
         }
     },

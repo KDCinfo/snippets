@@ -14,7 +14,8 @@ Vue.use(Vuex)
     // before it moves on, it kinda makes you hold your breath a bit, like a Jack-in-the-Box.
 
 const _NoI = 9,
-      myTempArray = [...Array(_NoI).keys()].fill('.') // Create an array to hold incorrect guesses. E.g., NoI = 9: ['.','.','.','.','.','.','.','.','.']
+      myTempArray = Array(_NoI).fill('.')                  // Create an array to hold incorrect guesses. E.g., NoI = 9: ['.','.','.','.','.','.','.','.','.']
+      // myTempArray = [...Array(_NoI).keys()].fill('.')   // .keys() isn't valid in IE11 (even after installing/importing babel-polyfill)
 
 const _getNoIarrayRemaining = new Map( myTempArray.entries() )
 

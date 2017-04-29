@@ -131,6 +131,8 @@
 
         opacity: 0;
         position: absolute;
+            left: 0;
+            right: 0;
         transition: all .5s cubic-bezier(.1, 1, .55, 1);
         z-index: 101;
 

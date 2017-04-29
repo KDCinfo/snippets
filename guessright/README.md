@@ -39,3 +39,52 @@ The following link is to a flowchart diagram I created to help me analyze a part
   - [Keep Track](https://kdcinfo.com/keeptrack/) An online personal inventory manager
   - [Pick-a-Meal](https://kdcinfo.com/pickameal/) Can't decide where or what to eat?
   - [Guess Right](https://kdcinfo.com/guessright/) A little word-guessing game.
+
+## Internet Explorer Issues
+
+The following were primarily related to IE11, but some affected Edge as well. I didn't analyze the differences between, and just fixed everything for IE11, which resulted in fixing Edge's subset of issues as well.
+
+### _ Didn’t understand `.keys()`
+
+  - Installed babel-polyfill: 6.23
+
+    - Didn’t work for .keys(), but I think it fixed 1 or 2 other errors I didn’t log.
+
+  - Code Fix
+
+    - Didn’t Work
+      ```
+      for ( let div of document.getElementsByClassName('divContent') ) {
+      ```
+
+    - Works
+      ```
+      for ( let [key, div] of Object.entries( document.getElementsByClassName('divContent') ) ) {
+      ```
+
+### _ Shows ~20px tall white bar under the image and image frame.
+
+  - Moved `<h2>Great Guessing !!!</h2>` into it’s sibling `<p>` with the 2 buttons
+
+### _ Shows the next 'You Lost' background image when game is ‘played again’ (or reset)
+
+  - Found IE11 doesn’t support multiple `classList` assignments
+
+    - Didn’t Work
+      ```
+      div.classList.remove('anim', 'anim-none')
+      ```
+
+    - Works
+      ```
+      div.classList.remove('anim')
+      div.classList.remove('anim-none')
+      ```
+
+### _ Pushed ‘Congratz’ background image off to the right side of the frame.
+
+  - Image element is absolute, so I added `left: 0; right: 0;`
+
+### _ IE11 shows "Great Guessing !!!" in extra-wide font that won’t center.
+
+  - Haven’t figured this out yet (2017-04-29)

@@ -1,8 +1,9 @@
                                     // webpack was installed via: sudo npm install webpack@2.2.1 --save-dev
-import Vue from 'vue'               // Vue: Installed via -> sudo npm install vue@2.1.10 --save-dev
+import Vue from 'vue'               // This was installed via: sudo npm install vue@2.1.10 --save-dev
 
-import axios from 'axios'           // axios@0.15.3
+import axios from 'axios'           // This was installed via: sudo npm install axios@0.15.3 --save-dev
 import VueRouter from 'vue-router'  // vue-router@2.2.1
+import "babel-polyfill"
 
     Vue.use(VueRouter)
 
@@ -44,13 +45,21 @@ import VueRouter from 'vue-router'  // vue-router@2.2.1
     if (window.addEventListener) {
         window.gr.resizestart = function(event) {
             let _someElement = document.getElementsByClassName('divContent')
-            for (let div of _someElement) {             // Add CSS class named 'notransition' to all the boxes during resize so they don't animate, showing the image behind them.
+
+            // Add CSS class named 'notransition' to all the boxes during resize so they don't animate, showing the image behind them.
+
+            // for (let div of _someElement) {          // This 'for-of' doesn't work in IE11
+            for (let [key, div] of Object.entries(_someElement)) {
                 div.classList.add('notransition')       // Disable transitions
             }
         }
         window.gr.resizeend = function(event) {
             let _someElement = document.getElementsByClassName('divContent')
-            for (let div of _someElement) {             // Add CSS class named 'notransition' to all the boxes during resize so they don't animate, showing the image behind them.
+
+            // Add CSS class named 'notransition' to all the boxes during resize so they don't animate, showing the image behind them.
+
+            // for (let div of _someElement) {          // This 'for-of' doesn't work in IE11
+            for (let [key, div] of Object.entries(_someElement)) {
                 // console.log(div, div[0])
                 div.offsetHeight                        // Trigger a reflow, flushing the CSS changes
                 div.classList.remove('notransition')    // Re-enable transitions
