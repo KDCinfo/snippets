@@ -16,6 +16,10 @@ The primary technologies I used whilst creating this little web app are as follo
   * Laravel 5.2 / Blade
   * Gulp, webpack, npm, vue-loader, Babel, Laravel Elixir, Apache
 
+## Screenshot
+
+[![Link to Guess Right Screenshot](http://kdcinfo.com/guessright/guess-right-game-thumb.jpg "Link to Guess Right Screenshot")](http://kdcinfo.com/guessright/guess-right-game.jpg)
+
 ## Flowchart
 
 The following link is to a flowchart diagram I created to help me analyze a particular flow in the game
@@ -44,15 +48,15 @@ The following link is to a flowchart diagram I created to help me analyze a part
 
 The following were primarily related to IE11, but some affected Edge as well. I didn't analyze the differences between, and just fixed everything for IE11, which resulted in fixing Edge's subset of issues as well.
 
-### _ Didn’t understand `.keys()`
+### _ Didnâ€™t understand `.keys()`
 
   - Installed babel-polyfill: 6.23
 
-    - Didn’t work for .keys(), but I think it fixed 1 or 2 other errors I didn’t log.
+    - Didnâ€™t work for .keys(), but I think it fixed 1 or 2 other errors I didnâ€™t log.
 
   - Code Fix
 
-    - Didn’t Work
+    - Didnâ€™t Work
       ```
       for ( let div of document.getElementsByClassName('divContent') ) {
       ```
@@ -64,13 +68,13 @@ The following were primarily related to IE11, but some affected Edge as well. I 
 
 ### _ Shows ~20px tall white bar under the image and image frame.
 
-  - Moved `<h2>Great Guessing !!!</h2>` into it’s sibling `<p>` with the 2 buttons
+  - Moved `<h2>Great Guessing !!!</h2>` into itâ€™s sibling `<p>` with the 2 buttons
 
-### _ Shows the next 'You Lost' background image when game is ‘played again’ (or reset)
+### _ Shows the next 'You Lost' background image when game is â€˜played againâ€™ (or reset)
 
-  - Found IE11 doesn’t support multiple `classList` assignments
+  - Found IE11 doesnâ€™t support multiple `classList` assignments
 
-    - Didn’t Work
+    - Didnâ€™t Work
       ```
       div.classList.remove('anim', 'anim-none')
       ```
@@ -81,10 +85,10 @@ The following were primarily related to IE11, but some affected Edge as well. I 
       div.classList.remove('anim-none')
       ```
 
-### _ Pushed ‘Congratz’ background image off to the right side of the frame.
+### _ Pushed â€˜Congratzâ€™ background image off to the right side of the frame.
 
   - Image element is absolute, so I added `left: 0; right: 0;`
 
-### _ IE11 shows "Great Guessing !!!" in extra-wide font that won’t center.
+### _ IE11 shows "Great Guessing !!!" in extra-wide font that wonâ€™t center.
 
-  - Haven’t figured this out yet (2017-04-29)
+  - Havenâ€™t figured this out yet (2017-04-29)
