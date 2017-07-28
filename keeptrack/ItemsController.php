@@ -1,4 +1,11 @@
 <?php
+/*
+    The code below is representative of the Keep Track! web app
+    (the columns on the page from the link below are sortable.)
+
+    See this file in action:
+    https://kdcinfo.com/keeptrack/1/show
+*/
 
 namespace App\Http\Controllers;
 
