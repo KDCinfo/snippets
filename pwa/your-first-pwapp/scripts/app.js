@@ -377,12 +377,12 @@
   /*
     https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/#cache_the_site_assets
 
-    The code below must NOT be used in production,
-    it covers only the most basic use cases and
-    it's easy to get yourself into a state where your app shell will never update.
+    The code below must NOT be used in production, it covers only the most
+    basic use cases and it's easy to get yourself into a state where your
+    app shell will never update. Be sure to review the section below that
+    discusses the pitfalls of this implementation and how to avoid them.
 
-    Be sure to review the section below that discusses
-    the pitfalls of this implementation and how to avoid them.
+    addEventListener('install', e => { e.waitUntil( caches.open(cacheName).then( cache => return cache.addAll(filesToCache)))})
   */
 
   // TODO add service worker code here
