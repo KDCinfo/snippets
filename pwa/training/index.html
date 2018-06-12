@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://kdcinfo.com/app/training/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Advancement Profile page: Keith D Commiskey</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Palanquin+Dark|Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="training.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- TODO add manifest here -->
+  <style type="text/css">
+    main div.card > div { outline: 1px solid red; margin: 0.5rem; padding: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <div class="all-content">
+    <header class="header">
+      <div id="header" class="desc">
+        <div id="hdrLogo">
+          <h1 tabindex="0" onclick="goToExternalUrl()" alt="Showcase for Keith D Commiskey" title="Showcase for Keith D Commiskey">Keith D Commiskey</h1>
+          <h2 class="sub"><span class="no-wrap">Educational Advancement 2018</span> (WIP)</h2>
+          <h3>Work-In-Progress: I'm in the process of creating this <span class="no-wrap">'Training SPA'</span> as a JavaScript-based PWA (as a part of my PWA learning).</h3>
+          <div>
+            [&nbsp;<a onclick="goToExternalUrl(this.href);" href="https://kdcinfo.com">Portfolio</a>&nbsp;]&nbsp;
+            [&nbsp;<a onclick="goToExternalUrl(this.href);" href="https://kdcbase.com">Showcase</a>&nbsp;]&nbsp;
+            [&nbsp;<a onclick="goToExternalUrl(this.href);" href="https://kdcinfo.blogspot.com/">Blog</a>&nbsp;]
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header-below">
+      <div>
+        <strong>Educational Advancement</strong> is a listing of courses I've been engaged with since May 2018.
+        Previous educational advancements can be found in the <a href="https://kdcinfo.com/resume.php?education" class="no-wrap">educational section of my resume</a>.
+      </div>
+    </div>
+  </div>
+
+  <!-- .main will be a vertical scroller (vh: 100, mh: 600px) -->
+  <!-- Maybe collapse onclick for mobile -->
+  <!-- There will need to be a DIV to the right. -->
+  <!-- Main will begin centered. -->
+       <!-- Mobile: Collapse. Desktop: Pull left; Open DIV on right (somehow; smooth) -->
+       <!-- Responsive: Menu will expand/collapse; DIV on right will fold underneath Main. -->
+  <!-- { c-: class, ch-: hidden, cl-: list item, cc-: content } -->
+  <div class="main-wrapper"><!--  maxit  -->
+    <main class="main">
+      <div class="card cardTemplate" hidden>
+        <div class="ch-id" hidden></div>
+        <div class="ch-courseProgress" hidden></div>
+        <div class="c-courseVendorName"></div>
+        <div class="c-courseVendor"></div>
+        <div class="c-courseProgress"></div>
+        <div class="c-courseDateLast"></div>
+        <div class="ch-courseDateStarted" hidden></div>
+        <div class="ch-courseDesc" hidden></div>
+        <div class="ch-courseList" hidden>
+          <div class="cardList cardListTemplate" hidden>
+            <div class="c-listitem cl-courseClassTitle"></div>
+            <div class="c-listitem cl-courseClassProgress"></div>
+            <div class="c-listitem cl-courseClassContent"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="cc-courseDateLast">2018 June</div>
+        <div class="cc-courseDateStarted">2018 May</div>
+        <div class="cc-courseDesc">
+          Fake Static Hard-Coded Data (WIP; Sorry! ETA: 2018-06-18 Mon (The course listing is correct, however)): [lorem15&rarr;] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam fuga reprehenderit voluptates sunt assumenda eius.
+        </div>
+        <div class="cc-courseList">
+          <div>Class 1</div>
+          <div>Class 2</div>
+          <div>Class 3</div>
+        </div>
+      </div>
+      <div class="closeIt" onClick="document.querySelector('.main-wrapper').classList.remove('maxit');">X</div>
+    </div>
+  </div>
+
+  <footer hidden>
+    <h2>(Responsive!)</h2>
+  </footer>
+
+  <div class="loader">
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+
+  <script src="training.js" async></script>
+</body>
+</html>
