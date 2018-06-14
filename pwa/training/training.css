@@ -102,12 +102,7 @@ footer {
   max-width: 700px;
   padding: 0;
   width: 100%;
-  /*align-items: top;*/
   outline: 1px solid orange;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*flex-wrap: wrap;*/
-  /*justify-content: flex-start;*/
 }
 .accordion li {
   vertical-align: top;
@@ -285,23 +280,6 @@ ul {
     stroke-dashoffset: -65.973;
     transform: rotate(90deg); }
 }
-/*
-main {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(7,1fr);
-  grid-template-rows: 200px;
-  grid-auto-rows: 200px;
-}
-main .cardClass {
-}
-.main {
-    display: grid;
-    padding: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 0.25rem;
-}
-*/
 
 .main-wrapper {
   display: grid;
@@ -325,6 +303,7 @@ main .cardClass {
   .main-wrapper .content-wrapper {
     display: none;
     opacity: 0;
+    transition: all 0.5s;
   }
 
 @media (min-width: 675px) {
@@ -337,21 +316,46 @@ main .cardClass {
 }
 
 main.main {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   grid-area: pageleft;
-  /*justify-content: space-evenly;*/
-  justify-content: space-around;
-  outline: 2px solid green;
-  overflow: auto;
   padding: 0 0.75rem 1rem;
   vertical-align: top;
   white-space: normal;
+
+  /* From CodePen */
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0 0.5rem 1rem;
+  position: relative;
+  transition: all 2s;
 }
   .main-wrapper.maxit main.main {
     max-height: 200px;
+    overflow: auto;
   }
+  .main-wrapper.maxit .content-wrapper {
+    display: inline-block;
+    grid-area: pageright;
+    margin: 0;
+    opacity: 1;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    transition: all 0.5s;
+    vertical-align: top;
+    width: calc(100% - 15px);
+      /*max-width: 800px;*/
+      min-width: 300px;
+  }
+    .content {
+      margin: 0 auto;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+      width: 90%;
+    }
   @media (min-width: 675px) {
     .main-wrapper.maxit main.main {
       width: 250px;
@@ -361,109 +365,80 @@ main.main {
     .main-wrapper.maxit main.main {
       max-height: calc(100vh - 360px);
       /*max-height: calc(100vh - 250px);*//* @TODO: Restore after WIP */
-      /*overflow: visible;*/
+      overflow: visible;
       width: calc(100% - 50px);
     }
   }
+  @media (min-width: 1400px) {
+    .main-wrapper {
+      max-width: 1400px;
+    }
+    .main-wrapper.maxit {
+      grid-template-columns: 600px auto;
+      grid-column-gap: 1em;
+    }
+    .main-wrapper.maxit main.main {
+      width: 550px;
+        min-width: 550px;
+        max-width: 550px;
+    }
+    .main-wrapper.maxit .content-wrapper {
+      width: calc(100% - 15px);
+    }
+  }
 
-.main-wrapper main.main .cardClass {
+.main-wrapper main.main .card { /* New */
+  background-color: hsl(133, 100%, 80%);
   cursor: pointer;
-  display: flex;
-  flex: 1 0 300px;
-  flex-wrap: wrap;
+  flex: 0 1 auto;
+  margin: 0.5rem;
+  padding: 0;
+  position: relative;
+    min-height: 100px;
+    width: 200px;
+  transition: top 0.5s, left 0.5s;
+}
+.main-wrapper main.main .item-node {
+  /*display: flex;*/
+  /*flex: 1 0 300px;*/
+  /*flex-wrap: wrap;*/
   margin: 1rem 0.5rem 0;
   max-width: 250px;
-  outline: 1px solid blue;
 }
-  .main-wrapper main.main .cardClass:hover {
+  .main-wrapper main.main .item-node:hover {
     background-color: hsla(120, 100%, 75%, 0.25);
+  }
+
+  .main-wrapper main.main > div.item-node {
+    visibility: hidden;
+  }
+  .main-wrapper main.main > div.item-dupe {
+    position: absolute;
+    visibility: visible;
+  }
+
+  .main-wrapper main.main .card > div {
+    /*outline: 1px solid red; */
+    margin: 0.5rem;
+    padding: 0;
   }
 
   .c-courseVendorName,
   .c-courseVendor {
     color: rgba(0, 106, 176, .65);
     font-family: 'Palanquin Dark';
-    width: 100%;
+    width: calc(100% - 1rem);
   }
   .c-courseProgress,
   .c-courseDateLast {
     color: green;
     font-family: 'Permanent Marker';
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-style: normal;
     font-weight: normal;
-    margin: 0 0 0 2rem;
+    margin: 0;
+    padding: 0;
   }
   .c-courseProgress::after {
     content: '%';
   }
-
-.main-wrapper.maxit .content-wrapper {
-  display: inline-block;
-  grid-area: pageright;
-  margin: 0;
-  opacity: 1;
-  outline: 1px solid orange;
-  padding: 1rem 0.5rem;
-  text-align: center;
-  vertical-align: top;
-  width: calc(100% - 15px);
-    /*max-width: 800px;*/
-    min-width: 300px;
-}
-.content {
-  margin: 0 auto;
-  outline: 1px solid purple;
-  padding: 0;
-  text-align: left;
-  white-space: normal;
-  width: 90%;
-}
-
-@media (min-width: 1400px) {
-  .main-wrapper {
-    max-width: 1400px;
-  }
-  .main-wrapper.maxit {
-    grid-template-columns: 600px auto;
-    grid-column-gap: 1em;
-  }
-  .main-wrapper.maxit main.main {
-    width: 550px;
-      min-width: 550px;
-      max-width: 550px;
-  }
-  .main-wrapper.maxit .content-wrapper {
-    width: calc(100% - 15px);
-  }
-}
-
-/* Didn't work :(
-.main::before,
-.main::after {
-  content: '';
-}
-*/
-/*
-.cardClass > div[class^='c-']:nth-child(3) {
-  flex: 0 0 75px;
-}
-.cardClass > div[class^='c-']:nth-child(4) {
-  flex: 0 0 150px;
-}
-.cardClass > div[class^='c-']:nth-child(5) {
-  flex: 0 0 250px;
-}
-.cardClass > div[class^='c-']:nth-child(6) {
-  flex: 0 0 100px;
-}
-.cardClass > div[class^='c-']:nth-child(7) {
-  flex: 0 0 100px;
-}
-.cardClass > div[class^='c-']:nth-child(8) {
-  flex: 0 0 50px;
-}
-.cardClass > div[class^='c-']:nth-child(9) {
-  flex: 1;
-}
-*/

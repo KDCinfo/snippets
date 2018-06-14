@@ -10,11 +10,6 @@
   <link rel="stylesheet" type="text/css" href="training.css">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-  <!-- TODO add manifest here -->
-  <style type="text/css">
-    main div.card > div { outline: 1px solid red; margin: 0.5rem; padding: 0.5rem; }
-  </style>
 </head>
 <body>
 
@@ -49,14 +44,17 @@
        <!-- Responsive: Menu will expand/collapse; DIV on right will fold underneath Main. -->
   <!-- { c-: class, ch-: hidden, cl-: list item, cc-: content } -->
   <div class="main-wrapper"><!--  maxit  -->
-    <main class="main">
-      <div class="card cardTemplate" hidden>
+    <main class="main container">
+      <div class="card card-template" hidden>
         <div class="ch-id" hidden></div>
         <div class="ch-courseProgress" hidden></div>
         <div class="c-courseVendorName"></div>
         <div class="c-courseVendor"></div>
-        <div class="c-courseProgress"></div>
-        <div class="c-courseDateLast"></div>
+
+        <div>
+          <span class="c-courseProgress"></span> - <span class="c-courseDateLast"></span>
+        </div>
+
         <div class="ch-courseDateStarted" hidden></div>
         <div class="ch-courseDesc" hidden></div>
         <div class="ch-courseList" hidden>
@@ -81,7 +79,7 @@
           <div>Class 3</div>
         </div>
       </div>
-      <div class="closeIt" onClick="document.querySelector('.main-wrapper').classList.remove('maxit');">X</div>
+      <div class="close-it">X</div>
     </div>
   </div>
 

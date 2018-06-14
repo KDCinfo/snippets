@@ -24,7 +24,7 @@
           visibleClassSet: new Set(), // Class IDs (unique); Used to loop and match to `visibleClasses` object.
           spinner: document.querySelector('.loader'),
           container: document.querySelector('.main'),
-          cardTemplate: document.querySelector('.cardTemplate'),
+          cardTemplate: document.querySelector('.card-template'),
           dataSource: (window.indexedDB) ? 'IDB' : 'LOCAL' // Determine which storage we'll use.
           // dataSource: (window.indexedDB) ? 'LOCAL' : 'LOCAL' // Determine which storage we'll use.
         };
@@ -32,6 +32,17 @@
 
   let appDB,
       appObjectStore;
+
+  // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
+  //
+  const boxes = [];
+
+  let nodes = document.querySelectorAll(".item-node"), // .card-template, .item-node
+      nodeCnt = 0,      // Node count: Loop through nodes[]
+      totalNodes = nodes.length,
+      resizeWaitID = 0, // setTimeout ID for window.resize()
+      node = {},
+      dupe = {};
 
   /*****************************************************************************
    *
@@ -46,8 +57,6 @@
    */
 
   /**
-   * Removed -- Cycling through full list: Use `active` property where applicable.
-   *
    * [visibleClasses] - Includes all sortable properties
    *
    * { 'udacity-1': {
@@ -64,75 +73,43 @@
 
   /*****************************************************************************
    *
-   * Event listeners for UI elements
-   *
-   ****************************************************************************/
-
-  /*
-    document.getElementById('butRefresh').addEventListener('click', function() {
-      // Refresh all of the forecasts
-      app.updateForecasts();
-    });
-
-    document.getElementById('butAddCity').addEventListener('click', function() {
-      // Add the newly selected city
-      var select = document.getElementById('selectCityToAdd');
-      var selected = select.options[select.selectedIndex];
-      var key = selected.value;
-      var label = selected.textContent;
-
-      // TODO init the app.courseList array here
-      if (!app.courseList) {
-        app.courseList = [];
-      }
-
-      app.listCourse(key, label);
-
-      // TODO push the selected city to the array and save here
-      app.courseList.push({key: key, label: label});
-      app.saveCourses();
-    });
-  */
-
-  /*****************************************************************************
-   *
    * Methods to update/refresh the UI
    *
    ****************************************************************************/
 
   // Updates a weather card with the latest weather forecast. If the card
   // doesn't already exist, it's cloned from the template.
-  app.updateForecastCard = function(data) {
+  // app.updateForecastCard = function(data) {
 
-    var card = app.visibleClasses[data.key];
-    if (!card) {
-      card = app.cardTemplate.cloneNode(true);
-      card.classList.remove('cardTemplate');
-      card.querySelector('.location').textContent = data.label;
-      card.removeAttribute('hidden');
-      app.container.appendChild(card);
-    }
+  //   var card = app.visibleClasses[data.key];
+  //   if (!card) {
+  //     card = app.cardTemplate.cloneNode(true);
+  //     card.classList.remove('card-template');
+  //     card.querySelector('.location').textContent = data.label;
+  //     card.removeAttribute('hidden');
+  //     app.container.appendChild(card);
+  //   }
 
-    // Verifies the data provide is newer than what's already visible
-    // on the card, if it's not bail, if it is, continue and update the
-    // time saved in the card
-    var cardLastUpdatedElem = card.querySelector('.card-last-updated');
-    var cardLastUpdated = cardLastUpdatedElem.textContent;
-    if (cardLastUpdated) {
-      cardLastUpdated = new Date(cardLastUpdated);
-      // Bail if the card has more recent data then the data
-      if (dataLastUpdated.getTime() < cardLastUpdated.getTime()) {
-        return;
-      }
-    }
-    cardLastUpdatedElem.textContent = data.created;
+  //   // Verifies the data provide is newer than what's already visible
+  //   // on the card, if it's not bail, if it is, continue and update the
+  //   // time saved in the card
+  //   var cardLastUpdatedElem = card.querySelector('.card-last-updated');
+  //   var cardLastUpdated = cardLastUpdatedElem.textContent;
+  //   if (cardLastUpdated) {
+  //     cardLastUpdated = new Date(cardLastUpdated);
+  //     // Bail if the card has more recent data then the data
+  //     if (dataLastUpdated.getTime() < cardLastUpdated.getTime()) {
+  //       return;
+  //     }
+  //   }
+  //   cardLastUpdatedElem.textContent = data.created;
 
-    if (app.isLoading) {
-      app.spinner.setAttribute('hidden', true);
-      app.container.removeAttribute('hidden');
-      app.isLoading = false;
-    }
-  };
+  //   if (app.isLoading) {
+  //     app.spinner.setAttribute('hidden', true);
+  //     app.container.removeAttribute('hidden');
+  //     app.isLoading = false;
+  //   }
+  // };
 
 
   /*****************************************************************************
@@ -149,49 +126,49 @@
    * request goes through, then the card gets updated a second time with the
    * freshest data.
    */
-  app.listCourseOld = function(key, label) {
-    /*
-      var statement = 'select * from weather.forecast where woeid=' + key;
-      var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
-          statement;
+  /*
+    app.listCourseOld = function(key, label) {
+        var statement = 'select * from weather.forecast where woeid=' + key;
+        var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
+            statement;
 
-      // TODO add cache logic here
-      if ('caches' in window) {
-        /*
-         * Check if the service worker has already cached this city's weather
-         * data. If the service worker has the data, then display the cached
-         * data while the app fetches the latest data.
-         * /
-        caches.match(url).then(function(response) {
-          if (response) {
-            response.json().then(function updateFromCache(json) {
-              var results = json.query.results;
+        // TODO add cache logic here
+        if ('caches' in window) {
+          /*
+           * Check if the service worker has already cached this city's weather
+           * data. If the service worker has the data, then display the cached
+           * data while the app fetches the latest data.
+           * /
+          caches.match(url).then(function(response) {
+            if (response) {
+              response.json().then(function updateFromCache(json) {
+                var results = json.query.results;
+                results.key = key;
+                results.label = label;
+                results.created = json.query.created;
+                app.updateForecastCard(results);
+              });
+            }
+          });
+        }
+
+        // Fetch the latest data.
+          if (request.readyState === XMLHttpRequest.DONE) {
+              var response = JSON.parse(request.response);
+              var results = response.query.results;
               results.key = key;
               results.label = label;
-              results.created = json.query.created;
+              results.created = response.query.created;
               app.updateForecastCard(results);
-            });
+          } else {
+            // Return the initial weather forecast since no data is available.
+            app.updateForecastCard(initialTrainingData);
           }
-        });
-      }
-
-      // Fetch the latest data.
-        if (request.readyState === XMLHttpRequest.DONE) {
-            var response = JSON.parse(request.response);
-            var results = response.query.results;
-            results.key = key;
-            results.label = label;
-            results.created = response.query.created;
-            app.updateForecastCard(results);
-        } else {
-          // Return the initial weather forecast since no data is available.
-          app.updateForecastCard(initialTrainingData);
-        }
-      };
-      request.open('GET', url);
-      request.send();
-    */
-  };
+        };
+        request.open('GET', url);
+        request.send();
+    };
+  */
 
   // @TODO add saveCourses function here
   // Save list of cities to localStorage.
@@ -484,13 +461,56 @@
         app.listCourse(classId);                          // ADD (class not in list; hasn't been replaced.)
       }
     });
+
+    app.setAllCardsUI();
   };
 
+  app.setAllCardsUI = function() {
+
+    // Extracted from:
+
+    nodes = document.querySelectorAll(".item-node");
+    totalNodes = nodes.length;
+
+    for (nodeCnt = 0; nodeCnt < totalNodes; nodeCnt++) {
+      node = nodes[nodeCnt];
+
+      dupe = node.cloneNode(true);         // We'll clone each node so it can "follow" its sibling `node` element around the UI.
+      dupe.classList.remove("item-node"); // .item-node | visibility: hidden - Will move natively with Flex wrapping (snappy!).
+      dupe.classList.add("item-dupe");     // .item-dupe | visibility: visible - Will smoothly follow sibling .item-node around.
+
+      node.parentNode.appendChild(dupe);  // Position: `absolute` - Each clone stays relative to their shared parent container.
+
+      dupe.addEventListener('click', app.clickClass.bind(node));
+
+      dupe.style.top = node.offsetTop + 'px';   // Establish each dupe's `absolute` position.
+      dupe.style.left = node.offsetLeft + 'px'; // <--^
+
+      boxes[nodeCnt] = { node, dupe };
+    }
+  };
+
+  app.moveNodes = function() {
+    // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
+    //
+    clearTimeout(resizeWaitID);
+    resizeWaitID = setTimeout(() => {
+      for (nodeCnt = 0; nodeCnt < totalNodes; nodeCnt++) {
+        boxes[nodeCnt].dupe.style.left = boxes[nodeCnt].node.offsetLeft + 'px';
+        boxes[nodeCnt].dupe.style.top = boxes[nodeCnt].node.offsetTop + 'px';
+      }
+    }, 101);
+  }
+
   app.clickClass = function(e) {
+    document.querySelector('.content-wrapper').style.opacity = 0;
     this.parentNode.parentNode.classList.add('maxit');
+    app.moveNodes();
+    setTimeout( () => {
+      document.querySelector('.content-wrapper').style.opacity = 1;
+    }, 500);
 
     // @TODO: Populate content pane
-
   }
 
   app.getClassCard = function(cid, existing = false) {
@@ -498,8 +518,8 @@
     let classWrapper = app.cardTemplate.cloneNode(true),
         updateMsg = document.createElement('span');
 
-    classWrapper.classList.remove('cardTemplate');
-    classWrapper.classList.add('cardClass');
+    classWrapper.classList.remove('card-template');
+    classWrapper.classList.add('item-node');
     classWrapper.removeAttribute('hidden');
 
     const courseVendorName = app.visibleClasses[cid].courseVendorName,
@@ -530,7 +550,7 @@
       classWrapper.appendChild(updateMsg);
     }
 
-    classWrapper.addEventListener('click', app.clickClass.bind(classWrapper));
+    // classWrapper.addEventListener('click', app.clickClass.bind(classWrapper));
 
     return classWrapper;
 
@@ -627,6 +647,22 @@
   };
 
   app.initialDBCheck(); // Let's get the ball rolling!
+
+  /*****************************************************************************
+   *
+   * Event listeners for UI elements
+   *
+   ****************************************************************************/
+
+  document.querySelector('.main-wrapper .content-wrapper .close-it').addEventListener('click', () => {
+    document.querySelector('.content-wrapper').style.opacity = 0;
+    setTimeout( () => {
+      document.querySelector('.main-wrapper').classList.remove('maxit');
+      app.moveNodes();
+    }, 500);
+  });
+
+  window.addEventListener("resize", app.moveNodes); // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
 
   /*
    * Initial data presented when app has no saved data (e.g., first time app is used).
