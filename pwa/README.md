@@ -10,7 +10,7 @@ In May 2018, I began investing time learning Progressive Web Apps (PWA). In that
 
 The SPA's data store currently uses IndexedDB with a fallback to localStorage. Once complete, it will support service workers as well. In all cases, the overriding source of truth is an external `.js` file.
 
-- [IP] UI [In Progress]
+- [x] UI [In Progress]
 
   - [x] Overall layout: 2 States
 
@@ -28,9 +28,9 @@ The SPA's data store currently uses IndexedDB with a fallback to localStorage. O
       
     - Apply CodePen results to Training project.
 
-  - [IP] Implement course sub-subject listings in Detail view.
+  - [x] Implement course sub-subject listings in Detail view.
 
-- [ ] Save SSOT (external `.js` file) back into either IndexedDB (or localStorage, as fallback).
+- [IP] Save SSOT (external `.js` file) back into either IndexedDB (or localStorage, as fallback).
 
 - [ ] PWA: Add service worker as primary cache ahead of IndexedDB.
 
