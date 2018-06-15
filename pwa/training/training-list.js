@@ -108,7 +108,7 @@
       "courseList": [
         {
           "courseClassTitle": "Intro to Progressive Web Apps",
-          "courseClassProgress": 0,
+          "courseClassProgress": 10,
           "courseClassContent": `
             <h3 class='western'>Free, self-paced, online course.</h3>
             <p class='text-body'>Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.</p>

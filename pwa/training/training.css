@@ -401,15 +401,17 @@ main.main {
     width: 200px;
   transition: top 0.5s, left 0.5s;
 }
+  .main-wrapper main.main .card.active,
+  .main-wrapper main.main .card.active:hover {
+      background-color: hsl(193, 100%, 90%);
+  }
+
 .main-wrapper main.main .item-node {
-  /*display: flex;*/
-  /*flex: 1 0 300px;*/
-  /*flex-wrap: wrap;*/
   margin: 1rem 0.5rem 0;
   max-width: 250px;
 }
-  .main-wrapper main.main .item-node:hover {
-    background-color: hsla(120, 100%, 75%, 0.25);
+  .main-wrapper main.main .card:hover {
+    background-color: hsla(120, 100%, 75%, 0.95);
   }
 
   .main-wrapper main.main > div.item-node {
@@ -421,7 +423,6 @@ main.main {
   }
 
   .main-wrapper main.main .card > div {
-    /*outline: 1px solid red; */
     margin: 0.5rem;
     padding: 0;
   }
@@ -457,12 +458,17 @@ main.main {
   border-radius: 10px;
   box-shadow: 2px 2px;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 0rem auto 1rem;
   padding: 0.5rem;
   width: 250px;
 }
 .close-it:hover {
   background-color: hsla(195, 53%, 79%, 0.6);
+}
+@media (min-width: 675px) {
+  .close-it {
+    margin: 0 0 1rem 0.25rem;
+  }
 }
 
 .course {
@@ -473,11 +479,12 @@ main.main {
     border-radius: 10px;
     box-shadow: 2px 2px;
     cursor: pointer;
+    display: inline-block;
     height: 15px;
     line-height: 1;
     margin: 2px 0 0 4px;
     padding: 0.25rem;
-    position: absolute;
+    position: sticky;
       left: 0;
       top: 0;
       z-index: 1;
@@ -488,7 +495,8 @@ main.main {
     background-color: hsla(195, 53%, 79%, 0.6);
   }
   .c-listheader {
-    margin: 0 0 0 45px;
+    display: inline-block;
+    margin: 0 0 0 0.75rem;
   }
 
 .content-wrapper .content {
@@ -525,7 +533,7 @@ main.main {
 .course.course-node {
   border-bottom: 2px solid lightgreen;
   border-left: 2px solid lightgreen;
-  max-height: 50px;
+  max-height: 62px;
   margin: 0 0 1rem;
   overflow: auto;
   padding: 0.25rem;

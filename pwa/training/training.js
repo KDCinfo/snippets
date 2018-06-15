@@ -443,10 +443,16 @@
   };
 
   app.expandTopic = function(e) {
-    // e =
-    console.log('e: ', e);
-    e.target.parentNode.parentNode.querySelectorAll('.course-node').forEach( elem => elem.style.maxHeight = '50px');
-    e.target.parentNode.style.maxHeight = '250px';
+    // e = Any '.expand-it' DIV
+    console.log('e: ', e.target.parentNode.style);
+    let isOwn = false;
+    if (e.target.parentNode.style.maxHeight === '250px') {
+      isOwn = true;
+    }
+    e.target.parentNode.parentNode.querySelectorAll('.course-node').forEach( elem => elem.style.maxHeight = '62px');
+    if (!isOwn) {
+      e.target.parentNode.style.maxHeight = '250px';
+    }
   };
 
   app.setAllCardsUI = function() {
@@ -676,6 +682,7 @@
     document.querySelector('.content-wrapper .content').style.opacity = 0;
     setTimeout( () => {
       document.querySelector('.main-wrapper').classList.remove('maxit');
+      document.querySelectorAll('.item-dupe').forEach(elem => elem.classList.remove('active'));
       app.moveNodes();
     }, 250);
   });
