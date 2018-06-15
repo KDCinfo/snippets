@@ -3,7 +3,7 @@
 
   /*****************************************************************************
    *
-   * Try to load data (my classes) from IndexedDB; using localStorage as a fallback
+   * Load data (courses) from IndexedDB; Use localStorage as a fallback.
    * A class list is then `fetch`ed and merged with any pre-loaded data.
    *
    ****************************************************************************/
@@ -17,6 +17,8 @@
    //
    // @TODO: PWA (Service Workers; if available) will be primary data store (then IndexedDB; then localStorage).
 
+  // Initialize App
+  //
   const app = {
           isLoading: true,
           allClassList: [],           // Continuously repopulated with progressive data retrieval (per above).
@@ -27,16 +29,16 @@
           cardTemplate: document.querySelector('.card-template'),
           dataSource: (window.indexedDB) ? 'IDB' : 'LOCAL' // Determine which storage we'll use.
           // dataSource: (window.indexedDB) ? 'LOCAL' : 'LOCAL' // Determine which storage we'll use.
-        };
-        // visibleClassSet = new Set(); // Class IDs (unique); Used to loop and match to `visibleClasses` object.
+        },
+        boxes = [];
 
+  // Initialize Database / Storage
+  //
   let appDB,
       appObjectStore;
 
-  // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
+  // Initialize DOM Nodes
   //
-  const boxes = [];
-
   let nodes = document.querySelectorAll(".item-node"), // .card-template, .item-node
       nodeCnt = 0,      // Node count: Loop through nodes[]
       totalNodes = nodes.length,
@@ -53,64 +55,21 @@
   /**
    * [allClassList] An array of objects - Includes all vendor classes
    *
-   * See [training-list.js].classList
-   */
-
-  /**
+   *   See [training-list.js].classList
+   *
    * [visibleClasses] - Includes all sortable properties
    *
-   * { 'udacity-1': {
-   *     courseVendorName: '',  // Udacity
-   *     courseVendor: '',      // Offline Web Applications
-   *     courseDesc: '',        // (if any)
-   *     courseDateStarted: '', // 2018 May
-   *     courseDateLast: '',    // 2018 June
-   *     courseProgress: 0,     // 0-100
-   *     courseList: []
+   *   { 'udacity-1': {
+   *       courseVendorName: '',  // Udacity
+   *       courseVendor: '',      // Offline Web Applications
+   *       courseDesc: '',        // (if any)
+   *       courseDateStarted: '', // 2018 May
+   *       courseDateLast: '',    // 2018 June
+   *       courseProgress: 0,     // 0-100
+   *       courseList: []
+   *     }
    *   }
-   * }
    */
-
-  /*****************************************************************************
-   *
-   * Methods to update/refresh the UI
-   *
-   ****************************************************************************/
-
-  // Updates a weather card with the latest weather forecast. If the card
-  // doesn't already exist, it's cloned from the template.
-  // app.updateForecastCard = function(data) {
-
-  //   var card = app.visibleClasses[data.key];
-  //   if (!card) {
-  //     card = app.cardTemplate.cloneNode(true);
-  //     card.classList.remove('card-template');
-  //     card.querySelector('.location').textContent = data.label;
-  //     card.removeAttribute('hidden');
-  //     app.container.appendChild(card);
-  //   }
-
-  //   // Verifies the data provide is newer than what's already visible
-  //   // on the card, if it's not bail, if it is, continue and update the
-  //   // time saved in the card
-  //   var cardLastUpdatedElem = card.querySelector('.card-last-updated');
-  //   var cardLastUpdated = cardLastUpdatedElem.textContent;
-  //   if (cardLastUpdated) {
-  //     cardLastUpdated = new Date(cardLastUpdated);
-  //     // Bail if the card has more recent data then the data
-  //     if (dataLastUpdated.getTime() < cardLastUpdated.getTime()) {
-  //       return;
-  //     }
-  //   }
-  //   cardLastUpdatedElem.textContent = data.created;
-
-  //   if (app.isLoading) {
-  //     app.spinner.setAttribute('hidden', true);
-  //     app.container.removeAttribute('hidden');
-  //     app.isLoading = false;
-  //   }
-  // };
-
 
   /*****************************************************************************
    *
@@ -119,18 +78,9 @@
    ****************************************************************************/
 
   /*
-   * Gets a forecast for a specific city and updates the card with the data.
-   * listCourse() first checks if the weather data is in the cache. If so,
-   * then it gets that data and populates the card with the cached data.
-   * Then, listCourse() goes to the network for fresh data. If the network
-   * request goes through, then the card gets updated a second time with the
-   * freshest data.
-   */
-  /*
     app.listCourseOld = function(key, label) {
         var statement = 'select * from weather.forecast where woeid=' + key;
-        var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
-            statement;
+        var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' + statement;
 
         // TODO add cache logic here
         if ('caches' in window) {
@@ -151,22 +101,6 @@
             }
           });
         }
-
-        // Fetch the latest data.
-          if (request.readyState === XMLHttpRequest.DONE) {
-              var response = JSON.parse(request.response);
-              var results = response.query.results;
-              results.key = key;
-              results.label = label;
-              results.created = response.query.created;
-              app.updateForecastCard(results);
-          } else {
-            // Return the initial weather forecast since no data is available.
-            app.updateForecastCard(initialTrainingData);
-          }
-        };
-        request.open('GET', url);
-        request.send();
     };
   */
 
@@ -194,17 +128,6 @@
       },
       getList: () => {  // Should just send back an array of classes.
         return new Promise((resolve, reject) => {
-
-          /*// read "hello" in "keyval"
-          dbPromise.then(function(db) {
-            var tx = db.transaction('keyval');
-            var keyValStore = tx.objectStore('keyval');
-            return keyValStore.get('hello');
-          }).then(function(val) {
-            console.log('The value of "hello" is:', val);
-          });
-          */
-
           let tmpCourseList = [];
 
           if (app.dataSource === 'IDB') {
@@ -256,7 +179,7 @@
 
   /************************************************************************
    *
-   * Code required to start the app
+   * ALL THE METHODS!!
    *
    ************************************************************************/
 
@@ -323,11 +246,7 @@
 
         const ourJson = data ? JSON.parse(data) : {};
 
-        console.log('getClassList --> app: ', app);
-        console.log('getClassList --> data: ', ourJson);
-
         if (ourJson.classList) {
-
 
           if (app.visibleClassSet.size > 0) {
             app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
@@ -343,8 +262,10 @@
         }
 
       }).catch( (e) => {
-        console.log('ERROR:');
-        console.log(e);
+        if (console && console.log) {
+          console.log('ERROR:');
+          console.log(e);
+        }
         app.errorMsg('There was an error fetching the class listing.', e);
       });
 
@@ -465,23 +386,68 @@
     app.setAllCardsUI();
   };
 
+  app.clickClass = function(e) {
+    // `this` refers to clicked DOM Node's index in: boxes
+    //    .ch-id, .ch-courseProgress
+    //    .c-courseVendorName, .c-courseVendor, .c-courseProgress, .c-courseDateLast
+    //    .ch-courseDateStarted, .ch-courseDesc, .ch-courseList
+
+    // cc-courseDateLast
+    // cc-courseDateStarted
+    // cc-courseDesc
+    // cc-courseList
+
+    // @TODO: Add 'active' CSS class name to selected Course in course listing.
+    // .ch-id
+
+    const nodeIdx = this;                // Passed in as a number from: app.setAllCardsUI
+
+    let nodeContent = boxes[this].node,
+        dupeContent = boxes[this].dupe,
+        classContent = document.querySelector('.content-wrapper');
+
+    classContent.style.opacity = 0;      // Turn off main content
+
+    document.querySelectorAll('.item-dupe').forEach(elem => elem.classList.remove('active'));
+    dupeContent.classList.add('active'); // De-activate all nodes, then activate clicked element.
+
+    setTimeout( () => {
+      classContent.querySelector('.cc-courseProgress').textContent = nodeContent.querySelector('.ch-courseProgress').textContent;
+      classContent.querySelector('.cc-courseDateLast').textContent = nodeContent.querySelector('.c-courseDateLast').textContent;
+      classContent.querySelector('.cc-courseDateStarted').textContent = nodeContent.querySelector('.ch-courseDateStarted').textContent;
+      classContent.querySelector('.cc-courseDesc').textContent = nodeContent.querySelector('.ch-courseDesc').textContent;
+      classContent.querySelector('.cc-courseList').textContent = nodeContent.querySelector('.ch-courseList').textContent;
+    }, 500);
+
+    nodeContent.parentNode.parentNode.classList.add('maxit');
+    app.moveNodes();
+    setTimeout( () => {
+      document.querySelector('.content-wrapper').style.opacity = 1;
+    }, 750);
+  }
+
   app.setAllCardsUI = function() {
-
-    // Extracted from:
-
-    nodes = document.querySelectorAll(".item-node");
+    // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
+    //
+    nodes = document.querySelectorAll(".item-node"); // These are all the HTML Elements that will be monitored for movement.
     totalNodes = nodes.length;
 
     for (nodeCnt = 0; nodeCnt < totalNodes; nodeCnt++) {
       node = nodes[nodeCnt];
 
-      dupe = node.cloneNode(true);         // We'll clone each node so it can "follow" its sibling `node` element around the UI.
+      dupe = node.cloneNode(true);        // We'll clone each node so it can "follow" its sibling `node` element around the UI.
       dupe.classList.remove("item-node"); // .item-node | visibility: hidden - Will move natively with Flex wrapping (snappy!).
-      dupe.classList.add("item-dupe");     // .item-dupe | visibility: visible - Will smoothly follow sibling .item-node around.
+      dupe.classList.add("item-dupe");    // .item-dupe | visibility: visible - Will smoothly follow sibling .item-node around.
+
+      // Remove superfluous content that will only serve to make the node's `dupe` heavier to move around.
+      const courseDesc = dupe.querySelector('.ch-courseDesc'),
+            courseList = dupe.querySelector('.ch-courseList');
+      dupe.removeChild(courseDesc);
+      dupe.removeChild(courseList);
 
       node.parentNode.appendChild(dupe);  // Position: `absolute` - Each clone stays relative to their shared parent container.
 
-      dupe.addEventListener('click', app.clickClass.bind(node));
+      dupe.addEventListener('click', app.clickClass.bind(nodeCnt));
 
       dupe.style.top = node.offsetTop + 'px';   // Establish each dupe's `absolute` position.
       dupe.style.left = node.offsetLeft + 'px'; // <--^
@@ -500,17 +466,6 @@
         boxes[nodeCnt].dupe.style.top = boxes[nodeCnt].node.offsetTop + 'px';
       }
     }, 101);
-  }
-
-  app.clickClass = function(e) {
-    document.querySelector('.content-wrapper').style.opacity = 0;
-    this.parentNode.parentNode.classList.add('maxit');
-    app.moveNodes();
-    setTimeout( () => {
-      document.querySelector('.content-wrapper').style.opacity = 1;
-    }, 500);
-
-    // @TODO: Populate content pane
   }
 
   app.getClassCard = function(cid, existing = false) {
@@ -551,6 +506,7 @@
     }
 
     // classWrapper.addEventListener('click', app.clickClass.bind(classWrapper));
+    // ^^^ Moved to: app.setAllCardsUI
 
     return classWrapper;
 
@@ -592,6 +548,16 @@
    ****************************************************************************/
 
   app.initialDBCheck = function() {
+
+    // TODO add service worker code here
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('load', function() {
+    //     navigator.serviceWorker
+    //              .register('./service-worker.js')
+    //              .then( () => console.log('Service Worker Registered') );
+    //   });
+    // }
+
     if (app.dataSource === 'IDB') {
 
       // var dbPromise = window.indexedDB.open('EducationalAdvancement', 1, function(upgradeDb) {
@@ -650,7 +616,7 @@
 
   /*****************************************************************************
    *
-   * Event listeners for UI elements
+   * Event listeners
    *
    ****************************************************************************/
 
@@ -663,22 +629,4 @@
   });
 
   window.addEventListener("resize", app.moveNodes); // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
-
-  /*
-   * Initial data presented when app has no saved data (e.g., first time app is used).
-  let initialTrainingData = {
-    key: 'google-training',
-    label: 'Progressive Web Apps',
-    courseList: [] // { id: 1, courseName: '', ... }
-  };
-   */
-
-  // TODO add service worker code here
-  // if ('serviceWorker' in navigator) {
-  //   window.addEventListener('load', function() {
-  //     navigator.serviceWorker
-  //              .register('./service-worker.js')
-  //              .then( () => console.log('Service Worker Registered') );
-  //   });
-  // }
 })();
