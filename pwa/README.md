@@ -20,15 +20,15 @@ The SPA's data store currently uses IndexedDB with a fallback to localStorage. O
       - Narrow [vertical] A short scrollable Listing over the Detail view.
       - Wide [side-by-side] A full-page Listing on the left with Detail (active course) on the right).
 
-  - [IP] Animate course listings between 'Listing' and 'Detail' layouts (allow for browser resizing).
+  - [x] Animate course listings between 'Listing' and 'Detail' layouts (allow for browser resizing).
 
-    - [x] CodePen: Figure out how to get CSS Flex wrapping to move smoothly to new positions.
+    - CodePen: Figure out how to get CSS Flex wrapping to move smoothly to new positions.
     
-      - [CSS Flex: Smooth Wrapping - Success!](https://codepen.io/KeithDC/pen/XYMgQj)
+      - My solution: [CSS Flex: Smooth Wrapping](https://codepen.io/KeithDC/pen/XYMgQj)
       
-    - [IP] Apply CodePen results to Training project.
+    - Apply CodePen results to Training project.
 
-  - [ ] Implement course sub-subject listings in Detail view.
+  - [IP] Implement course sub-subject listings in Detail view.
 
 - [ ] Save SSOT (external `.js` file) back into either IndexedDB (or localStorage, as fallback).
 
