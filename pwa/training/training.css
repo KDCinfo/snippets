@@ -304,6 +304,10 @@ ul {
     opacity: 0;
     transition: all 0.5s;
   }
+  .main-wrapper .content-wrapper .content {
+    opacity: 0;
+    transition: all 0.5s;
+  }
 
 @media (min-width: 675px) {
   .main-wrapper.maxit {
@@ -441,3 +445,9 @@ main.main {
   .c-courseProgress::after {
     content: '%';
   }
+
+.cl-courseClassTitle,
+.cl-courseClassProgress,
+.cl-courseClassContent {
+  outline: 1px solid red;
+}

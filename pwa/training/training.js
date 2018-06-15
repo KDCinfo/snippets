@@ -404,7 +404,7 @@
 
     let nodeContent = boxes[this].node,
         dupeContent = boxes[this].dupe,
-        classContent = document.querySelector('.content-wrapper');
+        classContent = document.querySelector('.content-wrapper .content');
 
     classContent.style.opacity = 0;      // Turn off main content
 
@@ -416,14 +416,24 @@
       classContent.querySelector('.cc-courseDateLast').textContent = nodeContent.querySelector('.c-courseDateLast').textContent;
       classContent.querySelector('.cc-courseDateStarted').textContent = nodeContent.querySelector('.ch-courseDateStarted').textContent;
       classContent.querySelector('.cc-courseDesc').textContent = nodeContent.querySelector('.ch-courseDesc').textContent;
-      classContent.querySelector('.cc-courseList').textContent = nodeContent.querySelector('.ch-courseList').textContent;
-    }, 500);
+
+      // .main-wrapper .content-wrapper
+      if (classContent.querySelector('.ch-courseList')) {
+        classContent.removeChild(classContent.querySelector('.ch-courseList'));
+      }
+
+      let newCourse = nodeContent.querySelector('.ch-courseList').cloneNode(true);
+      newCourse.classList.remove('.ch-courseList');
+      newCourse.classList.add('.cc-courseList');
+      newCourse.removeAttribute('hidden');
+      classContent.appendChild(newCourse); // course-template
+    }, 250);
 
     nodeContent.parentNode.parentNode.classList.add('maxit');
     app.moveNodes();
     setTimeout( () => {
-      document.querySelector('.content-wrapper').style.opacity = 1;
-    }, 750);
+      document.querySelector('.content-wrapper .content').style.opacity = 1;
+    }, 500);
   }
 
   app.setAllCardsUI = function() {
@@ -468,6 +478,8 @@
     }, 101);
   }
 
+  // Creating the initial `item-node` cards.
+  //
   app.getClassCard = function(cid, existing = false) {
 
     let classWrapper = app.cardTemplate.cloneNode(true),
@@ -485,6 +497,8 @@
           courseProgress = app.visibleClasses[cid].courseProgress,
           courseList = app.visibleClasses[cid].courseList;
 
+    // courseList = [ { courseClassTitle, courseClassProgress, courseClassContent } ]
+
     classWrapper.querySelector('.ch-id').textContent = cid;
     classWrapper.querySelector('.ch-courseProgress').textContent = courseProgress;
 
@@ -497,8 +511,32 @@
     classWrapper.querySelector('.ch-courseDesc').textContent = courseDesc;
 
     // @TODO: Do the same with course sections.
+    // classWrapper.querySelector('.ch-courseList').textContent = courseList;
+    // <div class="c-courseList">
+    //   <div class="cardList course-template">
+    //     <div class="c-listitem cl-courseClassTitle"></div>
 
-    classWrapper.querySelector('.ch-courseList').textContent = courseList;
+    let courseListWrapper = classWrapper.querySelector('.ch-courseList'),
+        courseTemplate = courseListWrapper.querySelector('.course-template');
+
+    if (courseList.length > 0) {
+
+      courseList.forEach( (course, idx) => {
+        let courseWrapper = courseTemplate.cloneNode(true);
+        courseWrapper.classList.remove('course-template');
+        courseWrapper.classList.add('course-node');
+        courseWrapper.removeAttribute('hidden');
+
+        courseWrapper.querySelector('.cl-courseClassTitle').textContent = course.courseClassTitle;
+        courseWrapper.querySelector('.cl-courseClassProgress').textContent = course.courseClassProgress;
+        courseWrapper.querySelector('.cl-courseClassContent').innerHTML = course.courseClassContent;
+
+        courseListWrapper.appendChild(courseWrapper);
+      });
+
+      courseListWrapper.removeChild(courseTemplate);
+      classWrapper.appendChild(courseListWrapper);
+    }
 
     if (existing) {                           // Add <span> overlay: "Updated!"
       updateMsg.textContent = 'Updated!';
@@ -621,11 +659,11 @@
    ****************************************************************************/
 
   document.querySelector('.main-wrapper .content-wrapper .close-it').addEventListener('click', () => {
-    document.querySelector('.content-wrapper').style.opacity = 0;
+    document.querySelector('.content-wrapper .content').style.opacity = 0;
     setTimeout( () => {
       document.querySelector('.main-wrapper').classList.remove('maxit');
       app.moveNodes();
-    }, 500);
+    }, 250);
   });
 
   window.addEventListener("resize", app.moveNodes); // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj

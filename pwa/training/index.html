@@ -39,7 +39,7 @@
   <!-- Main will begin centered. -->
        <!-- Mobile: Collapse. Desktop: Pull left; Open DIV on right (somehow; smooth) -->
        <!-- Responsive: Menu will expand/collapse; DIV on right will fold underneath Main. -->
-  <!-- { c-: class, ch-: hidden, cl-: list item, cc-: content } -->
+  <!-- { c-: class, ch-: hidden, cl-: course list item, cc-: content } -->
   <div class="main-wrapper"><!--  maxit  -->
     <main class="main container">
       <div class="card card-template" hidden>
@@ -55,7 +55,7 @@
         <div class="ch-courseDateStarted" hidden></div>
         <div class="ch-courseDesc" hidden></div>
         <div class="ch-courseList" hidden>
-          <div class="cardList cardListTemplate" hidden>
+          <div class="course course-template" hidden>
             <div class="c-listitem cl-courseClassTitle"></div>
             <div class="c-listitem cl-courseClassProgress"></div>
             <div class="c-listitem cl-courseClassContent"></div>
@@ -64,18 +64,20 @@
       </div>
     </main>
     <div class="content-wrapper">
+      <div class="close-it">X</div>
       <div class="content">
         <div class="cc-courseDateLast">2018 June</div>
         <div class="cc-courseDateStarted">2018 May</div>
         <div class="cc-courseProgress">1</div>
         <div class="cc-courseDesc">Fake Static Hard-Coded Data (replaced with JavaScript) [lorem15&rarr;]</div>
-        <div class="cc-courseList">
-          <div>Class 1</div>
-          <div>Class 2</div>
-          <div>Class 3</div>
-        </div>
+        <!--
+          <div class="cc-courseList">
+            <div>Class 1</div>
+            <div>Class 2</div>
+            <div>Class 3</div>
+          </div>
+        -->
       </div>
-      <div class="close-it">X</div>
     </div>
   </div>
 
