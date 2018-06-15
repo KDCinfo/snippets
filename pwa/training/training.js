@@ -402,8 +402,8 @@
 
     const nodeIdx = this;                // Passed in as a number from: app.setAllCardsUI
 
-    let nodeContent = boxes[this].node,
-        dupeContent = boxes[this].dupe,
+    let nodeContent = boxes[nodeIdx].node,
+        dupeContent = boxes[nodeIdx].dupe,
         classContent = document.querySelector('.content-wrapper .content');
 
     classContent.style.opacity = 0;      // Turn off main content
@@ -418,15 +418,21 @@
       classContent.querySelector('.cc-courseDesc').textContent = nodeContent.querySelector('.ch-courseDesc').textContent;
 
       // .main-wrapper .content-wrapper
-      if (classContent.querySelector('.ch-courseList')) {
-        classContent.removeChild(classContent.querySelector('.ch-courseList'));
+      if (classContent.querySelector('.cc-courseList')) {
+        classContent.removeChild(classContent.querySelector('.cc-courseList'));
       }
 
       let newCourse = nodeContent.querySelector('.ch-courseList').cloneNode(true);
-      newCourse.classList.remove('.ch-courseList');
-      newCourse.classList.add('.cc-courseList');
+      newCourse.classList.remove('ch-courseList');
+      newCourse.classList.add('cc-courseList');
       newCourse.removeAttribute('hidden');
       classContent.appendChild(newCourse); // course-template
+
+      // Now that it's attached to the DOM, we can cycle through and attach an event listener to each topic.
+      classContent.querySelector('.cc-courseList').querySelectorAll('.course-node').forEach( elem => {
+        elem.querySelector('.expand-it').addEventListener('click', e => app.expandTopic(e));
+      });
+
     }, 250);
 
     nodeContent.parentNode.parentNode.classList.add('maxit');
@@ -434,7 +440,14 @@
     setTimeout( () => {
       document.querySelector('.content-wrapper .content').style.opacity = 1;
     }, 500);
-  }
+  };
+
+  app.expandTopic = function(e) {
+    // e =
+    console.log('e: ', e);
+    e.target.parentNode.parentNode.querySelectorAll('.course-node').forEach( elem => elem.style.maxHeight = '50px');
+    e.target.parentNode.style.maxHeight = '250px';
+  };
 
   app.setAllCardsUI = function() {
     // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
@@ -475,8 +488,8 @@
         boxes[nodeCnt].dupe.style.left = boxes[nodeCnt].node.offsetLeft + 'px';
         boxes[nodeCnt].dupe.style.top = boxes[nodeCnt].node.offsetTop + 'px';
       }
-    }, 101);
-  }
+    }, 50);
+  };
 
   // Creating the initial `item-node` cards.
   //
@@ -523,8 +536,9 @@
 
       courseList.forEach( (course, idx) => {
         let courseWrapper = courseTemplate.cloneNode(true);
+
         courseWrapper.classList.remove('course-template');
-        courseWrapper.classList.add('course-node');
+        courseWrapper.classList.add('course-node'); // , 'cc-course-' + cid);
         courseWrapper.removeAttribute('hidden');
 
         courseWrapper.querySelector('.cl-courseClassTitle').textContent = course.courseClassTitle;

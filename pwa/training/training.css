@@ -446,8 +446,91 @@ main.main {
     content: '%';
   }
 
+/**
+ *
+ * Course Content (on right)
+ *
+ */
+
+.close-it {
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 250px;
+}
+.close-it:hover {
+  background-color: hsla(195, 53%, 79%, 0.6);
+}
+
+.course {
+  position: relative;
+}
+  .expand-it {
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    cursor: pointer;
+    height: 15px;
+    line-height: 1;
+    margin: 2px 0 0 4px;
+    padding: 0.25rem;
+    position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    text-align: center;
+    width: 30px;
+  }
+  .expand-it:hover {
+    background-color: hsla(195, 53%, 79%, 0.6);
+  }
+  .c-listheader {
+    margin: 0 0 0 45px;
+  }
+
+.content-wrapper .content {
+  line-height: 1.4;
+}
+.content-wrapper .content label {
+  background-color: hsla(133, 100%, 80%, 0.3);
+  border-bottom: 2px solid lightgreen;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 0 0.25rem;
+  min-width: 150px;
+  padding: .5rem;
+}
+.content-wrapper .content span {
+  color: darkblue;
+}
+.cc-courseDesc,
+.cc-courseList {
+  color: darkblue;
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
 .cl-courseClassTitle,
 .cl-courseClassProgress,
 .cl-courseClassContent {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
+}
+.cc-courseProgress::after,
+.cl-courseClassProgress::after {
+  content: '%';
+}
+.course.course-node {
+  border-bottom: 2px solid lightgreen;
+  border-left: 2px solid lightgreen;
+  max-height: 50px;
+  margin: 0 0 1rem;
+  overflow: auto;
+  padding: 0.25rem;
+  transition: all 0.25s;
+}
+.course-expand {
+  max-height: 300px;
 }

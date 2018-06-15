@@ -49,15 +49,17 @@
         <div class="c-courseVendor"></div>
 
         <div>
-          <span class="c-courseProgress"></span> - <span class="c-courseDateLast"></span>
+          <span class="c-courseProgress"></span><span> - </span><span class="c-courseDateLast"></span>
         </div>
 
         <div class="ch-courseDateStarted" hidden></div>
         <div class="ch-courseDesc" hidden></div>
         <div class="ch-courseList" hidden>
           <div class="course course-template" hidden>
-            <div class="c-listitem cl-courseClassTitle"></div>
-            <div class="c-listitem cl-courseClassProgress"></div>
+            <div class="expand-it">+</div>
+            <div class="c-listheader">
+              <span class="c-listitem cl-courseClassProgress"></span><span> - </span><span class="c-listitem cl-courseClassTitle"></span>
+            </div>
             <div class="c-listitem cl-courseClassContent"></div>
           </div>
         </div>
@@ -66,10 +68,12 @@
     <div class="content-wrapper">
       <div class="close-it">X</div>
       <div class="content">
-        <div class="cc-courseDateLast">2018 June</div>
-        <div class="cc-courseDateStarted">2018 May</div>
-        <div class="cc-courseProgress">1</div>
+        <div><label>Last Visited:</label> <span class="cc-courseDateLast">2018 June</span></div>
+        <div><label>Began:</label> <span class="cc-courseDateStarted">2018 May</span></div>
+        <div><label>Overall Progress:</label> <span class="cc-courseProgress">1</span></div>
+        <label>Course Desciption:</label><br/>
         <div class="cc-courseDesc">Fake Static Hard-Coded Data (replaced with JavaScript) [lorem15&rarr;]</div>
+        <label>Course Topics:</label><br/>
         <!--
           <div class="cc-courseList">
             <div>Class 1</div>
