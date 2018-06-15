@@ -18,8 +18,14 @@
       <div id="header" class="desc">
         <div id="hdrLogo">
           <h1 tabindex="0" onclick="goToExternalUrl()" alt="Showcase for Keith D Commiskey" title="Showcase for Keith D Commiskey">Keith D Commiskey</h1>
-          <h2 class="sub"><span class="no-wrap">Educational Advancement 2018</span> (WIP)</h2>
-          <h3>Work-In-Progress: I'm in the process of creating this <span class="no-wrap">'Training SPA'</span> as a JavaScript-based PWA (as a part of my PWA learning).</h3>
+          <h2 class="sub"><span class="no-wrap">Educational Advancement 2018</span></h2>
+          <div class="h3">
+            I developed this <span class="no-wrap">'Training Progress SPA'</span> as a JavaScript-based PWA (as a part of my PWA learning).
+          </div>
+          <div class="h3">
+            My code (for this page) is <a class="no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">open source on GitHub</a>.<br/>
+            I did R&D on the <a class="no-wrap" target="kdcNewWindow" href="https://codepen.io/KeithDC/pen/XYMgQj">smooth CSS Flex wrapping in CodePen</a>.
+          </div>
           <div>
             [&nbsp;<a onclick="goToExternalUrl(this.href);" href="https://kdcinfo.com">Portfolio</a>&nbsp;]&nbsp;
             [&nbsp;<a onclick="goToExternalUrl(this.href);" href="https://kdcbase.com">Showcase</a>&nbsp;]&nbsp;
@@ -37,8 +43,8 @@
   </div>
 
   <!-- Main will begin centered. -->
-       <!-- Mobile: Collapse. Desktop: Pull left; Open DIV on right (somehow; smooth) -->
-       <!-- Responsive: Menu will expand/collapse; DIV on right will fold underneath Main. -->
+       <!-- Mobile: Collapse. Desktop: Pull left; Open DIV on right: Smooth move class cards. -->
+       <!-- Responsive: Menu will expand / collapse; DIV on right will fold underneath Main. -->
   <!-- { c-: class, ch-: hidden, cl-: course list item, cc-: content } -->
   <div class="main-wrapper"><!--  maxit  -->
     <main class="main container">
@@ -47,11 +53,9 @@
         <div class="ch-courseProgress" hidden></div>
         <div class="c-courseVendorName"></div>
         <div class="c-courseVendor"></div>
-
         <div>
           <span class="c-courseProgress"></span><span> - </span><span class="c-courseDateLast"></span>
         </div>
-
         <div class="ch-courseDateStarted" hidden></div>
         <div class="ch-courseDesc" hidden></div>
         <div class="ch-courseList" hidden>
@@ -74,13 +78,6 @@
         <label>Course Desciption:</label><br/>
         <div class="cc-courseDesc">Fake Static Hard-Coded Data (replaced with JavaScript) [lorem15&rarr;]</div>
         <label>Course Topics:</label><br/>
-        <!--
-          <div class="cc-courseList">
-            <div>Class 1</div>
-            <div>Class 2</div>
-            <div>Class 3</div>
-          </div>
-        -->
       </div>
     </div>
   </div>
