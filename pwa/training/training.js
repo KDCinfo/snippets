@@ -40,6 +40,7 @@
   // Initialize DOM Nodes
   //
   let nodes = document.querySelectorAll(".item-node"), // .card-template, .item-node
+      dupeIDnodes = document.querySelectorAll(".item-dupe"),
       nodeCnt = 0,      // Node count: Loop through nodes[]
       totalNodes = nodes.length,
       resizeWaitID = 0, // setTimeout ID for window.resize()
@@ -119,14 +120,14 @@
 
   app.storage = (function() {
     return {
-      set: (key, val) => {
+      set: (val, key = 'EducationalAdvancement') => {
         if (app.dataSource === 'IDB') {
           // qID, questionText, correctAnswer, studentAnswer, result
         } else {
           localStorage[key] = JSON.stringify(val);
         }
       },
-      getList: () => {  // Should just send back an array of classes.
+      getList: (key = 'EducationalAdvancement') => {  // Should just send back an array of classes.
         return new Promise((resolve, reject) => {
           let tmpCourseList = [];
 
@@ -139,21 +140,16 @@
               // if there is still another cursor to go, keep runing this code
 
               if (cursor) {
-                console.log('getList IDB cursor: ', cursor);
                 tmpCourseList.push(JSON.parse(cursor));
               } else { // if (cursor === null) {
                 // tmpCourseList = 'No courses.';
               }
-              console.log('getList tmpCourseList: ', tmpCourseList, tmpCourseList.length);
-              console.log('getList app: ', app);
               resolve(tmpCourseList);
             };
 
           } else {
-            tmpCourseList = localStorage['EducationalAdvancement'];
-            tmpCourseList = JSON.parse(tmpCourseList).classList;
-            console.log('getList tmpCourseList: ', tmpCourseList, tmpCourseList.length);
-            console.log('getList app: ', app);
+            tmpCourseList = localStorage[key];
+            tmpCourseList = JSON.parse(tmpCourseList);
             resolve(tmpCourseList);
           }
         });
@@ -168,9 +164,6 @@
             tmpCourse = localStorage[key];
             // return localStorage[key];
           }
-          console.log('get 1: ', JSON.parse(tmpCourse));
-          console.log('get 2: ', tmpCourse);
-          console.log('get 3: ', app);
           resolve(JSON.parse(tmpCourse));
         });
       }
@@ -211,7 +204,7 @@
       }, 250);
 
 // @TODO: Uncomment below
-      // app.clearDisplayList();                   // Let's start clean; always; no unexpected side effects.
+      app.clearDisplayList();                   // Let's start clean; always; no unexpected side effects.
 
       // FIRST PASS - Populate with browser-saved data (if any; it will try IndexedDB first, then localStorage).
 
@@ -248,13 +241,14 @@
 
         if (ourJson.classList) {
 
-          if (app.visibleClassSet.size > 0) {
-            app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
-          }
+          // if (app.visibleClassSet.size > 0) {
+          //   app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
+          // }
 
           if (ourJson.classList.length > 0) {
             app.allClassList = ourJson.classList;
             app.updatedAllClassList('Fetched');
+            app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
           }
 
         } else {
@@ -285,7 +279,16 @@
   }
 
   app.updateLocalDB = function(jsonData) {
-    // @TODO: Need to update local DB with this new jsonData [array.length >= 0]
+    // if (app.visibleClassSet.size > 0) {
+    //   app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
+
+    app.storage.set(jsonData);
+
+      // ^ Happens before... \/
+
+    // if (ourJson.classList.length > 0) {
+    //   app.allClassList = ourJson.classList;
+    //   app.updatedAllClassList('Fetched');
   }
 
   app.clearDisplayList = function() {
@@ -305,15 +308,20 @@
    */
 
   app.updatedAllClassList = function(msg = '') {
+
     if (app.allClassList.length > 0) {
 
-      if (app.visibleClassSet.size > 0) { // Pre-populated // @TODO: Is `if` necessary? Quicker to just clear it?
-        app.visibleClassSet.clear();      // Replace the data
+      if (app.visibleClassSet.size > 0) {
+        app.visibleClassSet.clear();                    // Pre-populated: Replace the data
+        app.visibleClasses = {};
       }
 
       // @TODO: Future 'sort' feature: app.allClassList.sort((a,b)=>1|-1|0)
 
       app.allClassList.forEach( classObj => {
+
+// console.log('updatedAllClassList forEach: ', msg, classObj);
+
         if (classObj.active) {                          // No non-active classes allowed inside `visibleClassSet`.
           app.visibleClassSet.add(classObj.id);         // Update Set with IDs
           const trimmedObj = app.getNewObj(classObj);
@@ -321,10 +329,7 @@
         }
       });
 
-      console.log('[updatedAllClassList]', msg);
-
       if (app.visibleClassSet.size > 0) {
-        console.log('... [visibleClassSet]', app.visibleClassSet);
         app.listClasses();
       }
     } // Else; Nothing to do
@@ -334,8 +339,6 @@
   app.listClasses = function() {
 
     const updatedItems = [];
-
-    console.log('listClasses children: ', app.container.childElementCount, app.container.childNodes);
 
     if (app.container.childElementCount > 0) {
       // Cycle thru NodeList        - Remove obsoletes
@@ -351,30 +354,36 @@
       //   if (elem.id === classId) { classItemIdx = idx; return true; }
       // });
 
-      app.container.childNodes.forEach( (childNode, idx) => {
-        // `app.container` is a `querySelector`; not a live collection.
+      Array.from(app.container.childNodes).forEach( (childNode) => {
 
-        console.log('forEach: ', idx, childNode);
+        if (childNode.nodeType === childNode.ELEMENT_NODE && childNode.classList.contains('item-node')) {
 
-        if (childNode.nodeType === childNode.ELEMENT_NODE) {
-          if (!app.visibleClassSet.has(childNode.id)) {
-            console.log('inside ^: ', childNode.parentNode.childElementCount, childNode.parentNode.childNodes);
-// @TODO: Uncomment below (once storage of external file is complete)
-            // childNode.parentNode.removeChild(childNode);  // REMOVE
-            console.log('inside _: ', app.container.childElementCount, app.container.childNodes);
+          let childNodeID = childNode.querySelector('.ch-id').textContent;
+
+          if (!app.visibleClassSet.has(childNodeID)) {
+
+            childNode.parentNode.removeChild(childNode);  // REMOVE
+
+            dupeIDnodes = app.container.querySelectorAll('.item-dupe');
+            if (dupeIDnodes.length > 0) {
+              for (var k = 0; k < dupeIDnodes.length; k++) {
+                if (dupeIDnodes[k].querySelector('.ch-id').textContent === childNode.querySelector('.ch-id').textContent) {
+                  dupeIDnodes[k].parentNode.removeChild(dupeIDnodes[k]); // querySelectorAll is not a live collection.
+                  break;
+                }
+              }
+            }
+            // app.visibleClassSet.delete(childNodeID);   // Already gone.
+            // delete app.visibleClasses[childNodeID];
+
           } else {
 
-            // @TODO: Don't overwite if not newer (or changed).
-            // But need to know what the HTML (DOM) structure will be.
-            // Might be able to do some hiddne inputs for checking.
-            console.log('childNode: ', childNode);
-
-            app.listCourse(childNode.id, childNode);      // REPLACE
-            updatedItems.push(childNode.id);
+            // These are all getting replaced, but it can still be determined if display needs updating.
+            app.listCourse(childNodeID, childNode);       // REPLACE
+            updatedItems.push(childNodeID);
           }
         }
       });
-      console.log('outside >: ', app.container.childElementCount, app.container.childNodes);
     }
 
     app.visibleClassSet.forEach( classId => {
@@ -386,120 +395,28 @@
     app.setAllCardsUI();
   };
 
-  app.clickClass = function(e) {
-    // `this` refers to clicked DOM Node's index in: boxes
-    //    .ch-id, .ch-courseProgress
-    //    .c-courseVendorName, .c-courseVendor, .c-courseProgress, .c-courseDateLast
-    //    .ch-courseDateStarted, .ch-courseDesc, .ch-courseList
+  app.listCourse = function(classId, existingChild = null) {
+    // Note: `classId` and `existingChild.id` are the same.
 
-    // cc-courseDateLast
-    // cc-courseDateStarted
-    // cc-courseDesc
-    // cc-courseList
+    if (existingChild) {  // REPLACE
+      const storedClassProgress = existingChild.querySelector('.ch-courseProgress').textContent;
 
-    // @TODO: Add 'active' CSS class name to selected Course in course listing.
-    // .ch-id
+      // @TODO: Make validation checks to see if `true` param should really be passed (if anything has actually changed)')
 
-    const nodeIdx = this;                // Passed in as a number from: app.setAllCardsUI
-
-    let nodeContent = boxes[nodeIdx].node,
-        dupeContent = boxes[nodeIdx].dupe,
-        classContent = document.querySelector('.content-wrapper .content');
-
-    classContent.style.opacity = 0;      // Turn off main content
-
-    document.querySelectorAll('.item-dupe').forEach(elem => elem.classList.remove('active'));
-    dupeContent.classList.add('active'); // De-activate all nodes, then activate clicked element.
-
-    setTimeout( () => {
-      classContent.querySelector('.cc-courseProgress').textContent = nodeContent.querySelector('.ch-courseProgress').textContent;
-      classContent.querySelector('.cc-courseDateLast').textContent = nodeContent.querySelector('.c-courseDateLast').textContent;
-      classContent.querySelector('.cc-courseDateStarted').textContent = nodeContent.querySelector('.ch-courseDateStarted').textContent;
-      classContent.querySelector('.cc-courseDesc').textContent = nodeContent.querySelector('.ch-courseDesc').textContent;
-
-      // .main-wrapper .content-wrapper
-      if (classContent.querySelector('.cc-courseList')) {
-        classContent.removeChild(classContent.querySelector('.cc-courseList'));
+      if (storedClassProgress !== app.visibleClasses[classId].courseProgress.toString()) {
+        existingChild.parentNode.replaceChild(app.getClassCard(classId, true), existingChild);
+      } else {
+        existingChild.parentNode.replaceChild(app.getClassCard(classId), existingChild);
       }
 
-      let newCourse = nodeContent.querySelector('.ch-courseList').cloneNode(true);
-      newCourse.classList.remove('ch-courseList');
-      newCourse.classList.add('cc-courseList');
-      newCourse.removeAttribute('hidden');
-      classContent.appendChild(newCourse); // course-template
-
-      // Now that it's attached to the DOM, we can cycle through and attach an event listener to each topic.
-      classContent.querySelector('.cc-courseList').querySelectorAll('.course-node').forEach( elem => {
-        elem.querySelector('.expand-it').addEventListener('click', e => app.expandTopic(e));
-      });
-
-    }, 250);
-
-    nodeContent.parentNode.parentNode.classList.add('maxit');
-    app.moveNodes();
-    setTimeout( () => {
-      document.querySelector('.content-wrapper .content').style.opacity = 1;
-    }, 500);
-  };
-
-  app.expandTopic = function(e) {
-    // e = Any '.expand-it' DIV
-    console.log('e: ', e.target.parentNode.style);
-    let isOwn = false;
-    if (e.target.parentNode.style.maxHeight === '250px') {
-      isOwn = true;
+    } else {              // ADD
+      app.container.appendChild(app.getClassCard(classId));
     }
-    e.target.parentNode.parentNode.querySelectorAll('.course-node').forEach( elem => elem.style.maxHeight = '62px');
-    if (!isOwn) {
-      e.target.parentNode.style.maxHeight = '250px';
-    }
-  };
-
-  app.setAllCardsUI = function() {
-    // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
-    //
-    nodes = document.querySelectorAll(".item-node"); // These are all the HTML Elements that will be monitored for movement.
-    totalNodes = nodes.length;
-
-    for (nodeCnt = 0; nodeCnt < totalNodes; nodeCnt++) {
-      node = nodes[nodeCnt];
-
-      dupe = node.cloneNode(true);        // We'll clone each node so it can "follow" its sibling `node` element around the UI.
-      dupe.classList.remove("item-node"); // .item-node | visibility: hidden - Will move natively with Flex wrapping (snappy!).
-      dupe.classList.add("item-dupe");    // .item-dupe | visibility: visible - Will smoothly follow sibling .item-node around.
-
-      // Remove superfluous content that will only serve to make the node's `dupe` heavier to move around.
-      const courseDesc = dupe.querySelector('.ch-courseDesc'),
-            courseList = dupe.querySelector('.ch-courseList');
-      dupe.removeChild(courseDesc);
-      dupe.removeChild(courseList);
-
-      node.parentNode.appendChild(dupe);  // Position: `absolute` - Each clone stays relative to their shared parent container.
-
-      dupe.addEventListener('click', app.clickClass.bind(nodeCnt));
-
-      dupe.style.top = node.offsetTop + 'px';   // Establish each dupe's `absolute` position.
-      dupe.style.left = node.offsetLeft + 'px'; // <--^
-
-      boxes[nodeCnt] = { node, dupe };
-    }
-  };
-
-  app.moveNodes = function() {
-    // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
-    //
-    clearTimeout(resizeWaitID);
-    resizeWaitID = setTimeout(() => {
-      for (nodeCnt = 0; nodeCnt < totalNodes; nodeCnt++) {
-        boxes[nodeCnt].dupe.style.left = boxes[nodeCnt].node.offsetLeft + 'px';
-        boxes[nodeCnt].dupe.style.top = boxes[nodeCnt].node.offsetTop + 'px';
-      }
-    }, 50);
   };
 
   // Creating the initial `item-node` cards.
   //
-  app.getClassCard = function(cid, existing = false) {
+  app.getClassCard = function(cid, replaceExisting = false) {
 
     let classWrapper = app.cardTemplate.cloneNode(true),
         updateMsg = document.createElement('span');
@@ -558,7 +475,7 @@
       classWrapper.appendChild(courseListWrapper);
     }
 
-    if (existing) {                           // Add <span> overlay: "Updated!"
+    if (replaceExisting) {                           // Add <span> overlay: "Updated!"
       updateMsg.textContent = 'Updated!';
       classWrapper.appendChild(updateMsg);
     }
@@ -581,21 +498,120 @@
     */
   }
 
-  app.listCourse = function(classId, existingChild = null) {
+  app.setAllCardsUI = function() {
+    nodes = app.container.querySelectorAll(".item-node"); // These are all the HTML Elements that will be monitored for movement.
+    dupeIDnodes = app.container.querySelectorAll('.item-dupe');
+    totalNodes = nodes.length;
 
-    if (existingChild) {  // REPLACE
-      const storedClassProgress = existingChild.querySelector('.ch-courseProgress').textContent;
+    for (nodeCnt = 0; nodeCnt < totalNodes; nodeCnt++) {
+      node = nodes[nodeCnt];
 
-      console.log('listCourse 1: ', typeof storedClassProgress, storedClassProgress);
-      console.log('listCourse 2: ', typeof app.visibleClasses[classId].courseProgress, app.visibleClasses[classId].courseProgress);
-
-      if (storedClassProgress !== app.visibleClasses[classId].courseProgress) {
-        // Note: `classId` and `existingChild.id` are the same.
-        existingChild.parentNode.replaceChild(app.getClassCard(classId, true), existingChild);
+      if (dupeIDnodes.length > 0) {
+        for (var k = 0; k < dupeIDnodes.length; k++) {
+          if (dupeIDnodes[k].querySelector('.ch-id').textContent === node.querySelector('.ch-id').textContent) {
+            dupeIDnodes[k].parentNode.removeChild(dupeIDnodes[k]); // querySelectorAll is not a live collection.
+            break;
+          }
+        }
       }
 
-    } else {              // ADD
-      app.container.appendChild(app.getClassCard(classId));
+      dupe = node.cloneNode(true);        // We'll clone each node so it can "follow" its sibling `node` element around the UI.
+      dupe.classList.remove("item-node"); // .item-node | visibility: hidden - Will move natively with Flex wrapping (snappy!).
+      dupe.classList.add("item-dupe");    // .item-dupe | visibility: visible - Will smoothly follow sibling .item-node around.
+
+      // Remove superfluous content that will only serve to make the node's `dupe` heavier to move around.
+      const courseDesc = dupe.querySelector('.ch-courseDesc'),
+            courseList = dupe.querySelector('.ch-courseList');
+      dupe.removeChild(courseDesc);
+      dupe.removeChild(courseList);
+
+      node.parentNode.appendChild(dupe);  // Position: `absolute` - Each clone stays relative to their shared parent container.
+
+      dupe.addEventListener('click', app.clickClass.bind(nodeCnt));
+
+      dupe.style.top = node.offsetTop + 'px';   // Establish each dupe's `absolute` position.
+      dupe.style.left = node.offsetLeft + 'px'; // <--^
+
+      boxes[nodeCnt] = { node, dupe };
+    }
+  };
+
+  app.moveNodes = function() {
+    // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
+    //
+    clearTimeout(resizeWaitID);
+    resizeWaitID = setTimeout(() => {
+      for (nodeCnt = 0; nodeCnt < totalNodes; nodeCnt++) {
+        boxes[nodeCnt].dupe.style.left = boxes[nodeCnt].node.offsetLeft + 'px';
+        boxes[nodeCnt].dupe.style.top = boxes[nodeCnt].node.offsetTop + 'px';
+      }
+    }, 50);
+  };
+
+  app.clickClass = function(e) {
+    // `this` refers to clicked DOM Node's index in: boxes
+    //    .ch-id, .ch-courseProgress
+    //    .c-courseVendorName, .c-courseVendor, .c-courseProgress, .c-courseDateLast
+    //    .ch-courseDateStarted, .ch-courseDesc, .ch-courseList
+
+    // cc-courseDateLast
+    // cc-courseDateStarted
+    // cc-courseDesc
+    // cc-courseList
+
+    // @TODO: Add 'active' CSS class name to selected Course in course listing.
+    // .ch-id
+
+    const nodeIdx = this;                // Passed in as a number from: app.setAllCardsUI
+
+    let nodeContent = boxes[nodeIdx].node,
+        dupeContent = boxes[nodeIdx].dupe,
+        classContent = document.querySelector('.content-wrapper .content');
+
+    classContent.style.opacity = 0;      // Turn off main content
+
+    document.querySelectorAll('.item-dupe').forEach(elem => elem.classList.remove('active'));
+    dupeContent.classList.add('active'); // De-activate all nodes, then activate clicked element.
+
+    setTimeout( () => {
+      classContent.querySelector('.cc-courseProgress').textContent = nodeContent.querySelector('.ch-courseProgress').textContent;
+      classContent.querySelector('.cc-courseDateLast').textContent = nodeContent.querySelector('.c-courseDateLast').textContent;
+      classContent.querySelector('.cc-courseDateStarted').textContent = nodeContent.querySelector('.ch-courseDateStarted').textContent;
+      classContent.querySelector('.cc-courseDesc').textContent = nodeContent.querySelector('.ch-courseDesc').textContent;
+
+      // .main-wrapper .content-wrapper
+      if (classContent.querySelector('.cc-courseList')) {
+        classContent.removeChild(classContent.querySelector('.cc-courseList'));
+      }
+
+      let newCourse = nodeContent.querySelector('.ch-courseList').cloneNode(true);
+      newCourse.classList.remove('ch-courseList');
+      newCourse.classList.add('cc-courseList');
+      newCourse.removeAttribute('hidden');
+      classContent.appendChild(newCourse); // course-template
+
+      // Now that it's attached to the DOM, we can cycle through and attach an event listener to each topic.
+      classContent.querySelector('.cc-courseList').querySelectorAll('.course-node').forEach( elem => {
+        elem.querySelector('.expand-it').addEventListener('click', e => app.expandTopic(e));
+      });
+
+    }, 250);
+
+    nodeContent.parentNode.parentNode.classList.add('maxit');
+    app.moveNodes();
+    setTimeout( () => {
+      document.querySelector('.content-wrapper .content').style.opacity = 1;
+    }, 501);
+  };
+
+  app.expandTopic = function(e) { // e = Clicked '.expand-it' DIV
+    let isOwn = false;
+    if (e.target.parentNode.style.maxHeight === '250px') {
+      isOwn = true;
+    }
+    e.target.parentNode.parentNode.querySelectorAll('.course-node').forEach( elem => elem.style.maxHeight = '62px');
+    if (!isOwn) {
+      e.target.parentNode.style.maxHeight = '250px';
     }
   };
 
