@@ -744,4 +744,22 @@
   });
 
   window.addEventListener("resize", app.moveNodes); // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
+
+  // <button>: Web App 'About'
+  document.getElementById('button-toggle-webapp-help').addEventListener('click', (e) => {
+    document.getElementById('app-message').classList.toggle('open');
+  });
+
+  document.addEventListener('click', (e) => {
+    // Thanks to:
+       // https://github.com/KDCinfo/expired-to-be/blob/master/public/extensions/chrome/popup.js
+    if (!e.target.closest('#button-toggle-webapp-help') && !e.target.closest('#app-message')) {
+      document.getElementById('app-message').classList.toggle('open', false);
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'escape') {
+      document.getElementById('app-message').classList.toggle('open', false);
+    }
+  });
 })();

@@ -93,6 +93,7 @@ header h1 {
 }
 footer {
   margin: 0 auto;
+  position: relative;
   text-align: center;
   width: 98%;
 }
@@ -110,6 +111,96 @@ footer {
     margin: 0.5rem auto;
     padding: 0;
   }
+  /* From: expired-to-be\public\...\popup.css */
+    #button-toggle-webapp-help {
+      background-color: #ffffff;
+      border: 1px solid rgb(40, 150, 255);
+        border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 11px;
+      padding: .5em 1.5em;
+    }
+    #button-toggle-webapp-help:hover {
+      background-color: rgba(40, 150, 255, 0.2);
+      outline: 0;
+    }
+    #app-message {
+      padding: 0.5em;
+      white-space: normal;
+    }
+      #app-message p {
+        margin: 1em;
+      }
+  /* From: expired-to-be\src\index.css */
+    #webapp-help {
+      display: block;
+      position: relative;
+        bottom: 0;
+      text-align: center;
+      transform-origin: bottom center;
+    }
+      #app-message {
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(40, 150, 255);
+        margin: 0 auto;
+        max-width: 400px;
+        outline: 0px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+          bottom: 2em;
+          left: 0;
+          right: 0;
+          z-index: 99;
+        text-align: left;
+        transform: scale(1, 0);
+        transform-origin: bottom center;
+        transition: all 0.5s ease-out;
+      }
+      #app-message.open {
+        transition: all 0.5s ease-in;
+        transform: scale(1, 1);
+      }
+    @media (min-width: 675px) {
+      #webapp-help {
+        bottom: 1rem;
+        right: 1rem;
+        text-align: right;
+      }
+      #app-message {
+        left: inherit;
+        margin: 0;
+        transform-origin: bottom right;
+      }
+    }
+
+    .footer-prefs-div,
+    #app-message {
+      max-width: 400px;
+      min-width: 300px;
+    }
+    .footer-menu-ul {
+      background-color: hsla(133, 100%, 80%, 0.3);
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgb(40, 150, 255);
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0.5rem 0;
+    }
+      .footer-menu-div.open,
+      .footer-prefs-div.open {
+        transition: all 0.5s ease-in;
+        transform: scale(1, 1);
+      }
+      .footer-menu-ul li {
+        background-color: hsla(133, 100%, 80%, 0.5);
+        margin: 0.5rem 1.0rem;
+        min-height: 30px;
+        padding: 0.5rem;
+      }
 
 /* New: Page-specific */
 .accordion {
