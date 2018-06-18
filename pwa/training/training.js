@@ -44,6 +44,7 @@
       nodeCnt = 0,      // Node count: Loop through nodes[]
       totalNodes = nodes.length,
       resizeWaitID = 0, // setTimeout ID for window.resize()
+      lastMsg = '',
       node = {},
       dupe = {};
 
@@ -156,7 +157,10 @@
   };
 
   app.message = function(msg) {
-    document.querySelector('.message').textContent += ' ' + msg;
+    if (msg !== lastMsg) {
+      lastMsg = msg;
+      document.querySelector('.message').textContent += ' ' + msg;
+    }
   }
 
   app.storage = (function() {

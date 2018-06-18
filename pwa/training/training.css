@@ -1,4 +1,5 @@
 body {
+  /*background-color: hsl(240, 90%, 10%);*/
   color: green;
   font-family: 'Nanum Gothic', 'Helvetica', 'Verdana', sans-serif;
   line-height: 1;
@@ -95,12 +96,18 @@ footer {
   text-align: center;
   width: 98%;
 }
+  footer .message {
+    border-top: 1px solid hsla(195, 100%, 41%, 0.5);
+    font-size: 14px;
+    margin: 1.5rem 0 0;
+    padding: 0.5rem 0 0;
+  }
   footer .msg,
   footer .msg a {
     color: #999999;
     font-size: 12px;
     line-height: 1;
-    margin: 20px auto 10px;
+    margin: 0.5rem auto;
     padding: 0;
   }
 
