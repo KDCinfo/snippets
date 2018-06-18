@@ -118,11 +118,52 @@
    *
    ****************************************************************************/
 
+  app.addDataIDB = function(val) {
+    // open a read/write db transaction, ready for adding the data
+    var thisObjectStore = appDB.transaction(["classList"], "readwrite");
+    // report on the success of the transaction completing, when everything is done
+    thisObjectStore.oncomplete = function() {
+      // console.log('<li>Transaction completed: database modification finished.</li>');
+      app.message('IndexedDB transaction complete.');
+    };
+    thisObjectStore.onerror = function() {
+      // console.log('<li>Transaction not opened due to error: ' + thisObjectStore.error);
+      app.dataSource = 'LOCAL';
+      app.message('Error with IndexedDB transaction. Switching to localStorage.');
+      app.initialDBCheck(); // Re-run with localStorage
+    };
+    // Transaction not opened due to error: ConstraintError: Key already exists in the object store.
+    // call an object store that's already been added to the database
+
+    appObjectStore = thisObjectStore.objectStore("classList");
+      // console.log('appObjectStore ... ... ...');
+      // console.log(appObjectStore.indexNames);
+      // console.log(appObjectStore.keyPath);
+      // console.log(appObjectStore.name);
+      // console.log(appObjectStore.transaction);
+      // console.log(appObjectStore.autoIncrement);
+
+    // Make a request to add our newItem object to the object store
+    for (let thisV of val) {
+      let objectStoreRequest = appObjectStore.put(thisV);
+      objectStoreRequest.onsuccess = function(event) {
+        // report the success of our request
+        // to detect whether it has been succesfully added to the database, look at transaction.oncomplete
+        app.message('IndexedDB request successful.');
+        // console.log('<li>Request successful.</li>', event, thisV);
+      };
+    }
+  };
+
+  app.message = function(msg) {
+    document.querySelector('.message').textContent += ' ' + msg;
+  }
+
   app.storage = (function() {
     return {
       set: (val, key = 'EducationalAdvancement') => {
         if (app.dataSource === 'IDB') {
-          // qID, questionText, correctAnswer, studentAnswer, result
+          app.addDataIDB(val);
         } else {
           localStorage[key] = JSON.stringify(val);
         }
@@ -140,11 +181,12 @@
               // if there is still another cursor to go, keep runing this code
 
               if (cursor) {
-                tmpCourseList.push(JSON.parse(cursor));
-              } else { // if (cursor === null) {
-                // tmpCourseList = 'No courses.';
+                tmpCourseList.push(JSON.parse(JSON.stringify(cursor.value)));
+                cursor.continue();
+
+              } else { // if (cursor === null) { // End of cursor.
+                resolve(tmpCourseList);
               }
-              resolve(tmpCourseList);
             };
 
           } else {
@@ -320,8 +362,6 @@
 
       app.allClassList.forEach( classObj => {
 
-// console.log('updatedAllClassList forEach: ', msg, classObj);
-
         if (classObj.active) {                          // No non-active classes allowed inside `visibleClassSet`.
           app.visibleClassSet.add(classObj.id);         // Update Set with IDs
           const trimmedObj = app.getNewObj(classObj);
@@ -446,7 +486,7 @@
     classWrapper.querySelector('.ch-courseDateStarted').textContent = courseDateStarted;
     classWrapper.querySelector('.ch-courseDesc').textContent = courseDesc;
 
-    // @TODO: Do the same with course sections.
+    // @TODONE: Do the same with course sections.
     // classWrapper.querySelector('.ch-courseList').textContent = courseList;
     // <div class="c-courseList">
     //   <div class="cardList course-template">
@@ -550,17 +590,13 @@
 
   app.clickClass = function(e) {
     // `this` refers to clicked DOM Node's index in: boxes
+
     //    .ch-id, .ch-courseProgress
     //    .c-courseVendorName, .c-courseVendor, .c-courseProgress, .c-courseDateLast
     //    .ch-courseDateStarted, .ch-courseDesc, .ch-courseList
 
-    // cc-courseDateLast
-    // cc-courseDateStarted
-    // cc-courseDesc
-    // cc-courseList
-
-    // @TODO: Add 'active' CSS class name to selected Course in course listing.
-    // .ch-id
+    //                                                             .cc-courseDateLast
+    //    .cc-courseDateStarted, .cc-courseDesc, .cc-courseList
 
     const nodeIdx = this;                // Passed in as a number from: app.setAllCardsUI
 
