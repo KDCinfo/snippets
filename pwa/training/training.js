@@ -106,13 +106,6 @@
     };
   */
 
-  // @TODO add saveCourses function here
-  // Save list of cities to localStorage.
-  app.saveCourses = function() {
-    // localStorage.classList = app.allClassList;
-    app.storage.set('classList', app.allClassList);
-  };
-
   /*****************************************************************************
    *
    * Methods for dealing with the app's model API
@@ -241,7 +234,7 @@
     app.storage.getList().then( tmpClassList => {
 
       setTimeout( () => {
-        if (app.isLoading) {                      // Turn spinner off.
+        if (app.isLoading) {                    // Turn spinner off.
           // app.spinner.setAttribute('hidden', true);
           app.spinner.style.opacity = 0;
           app.container.removeAttribute('hidden');
@@ -249,7 +242,6 @@
         }
       }, 250);
 
-// @TODO: Uncomment below
       app.clearDisplayList();                   // Let's start clean; always; no unexpected side effects.
 
       // FIRST PASS - Populate with browser-saved data (if any; it will try IndexedDB first, then localStorage).
@@ -308,20 +300,11 @@
         }
         app.errorMsg('There was an error fetching the class listing.', e);
       });
-
-      /* The user is using the app for the first time, or the user has not saved anything.
-       *
-        app.updateForecastCard(initialTrainingData);
-        app.allClassList = [
-          {key: initialTrainingData.key, label: initialTrainingData.label}
-        ];
-        app.saveCourses();
-       */
     });
   };
 
   app.errorMsg = function(msg, e = '') {
-    alert(msg + '\r\n\r\n' + e);
+    app.message(msg + ' :: ' + e);
   }
 
   app.updateLocalDB = function(jsonData) {
@@ -646,12 +629,14 @@
 
   app.expandTopic = function(e) { // e = Clicked '.expand-it' DIV
     let isOwn = false;
-    if (e.target.parentNode.style.maxHeight === '250px') {
+    if (e.target.nextElementSibling.style.maxHeight === '250px') {
       isOwn = true;
     }
-    e.target.parentNode.parentNode.querySelectorAll('.course-node').forEach( elem => elem.style.maxHeight = '62px');
+    e.target.parentNode.parentNode.querySelectorAll('.course-node .c-expandable').forEach(
+      elem => elem.style.maxHeight = '62px'
+    );
     if (!isOwn) {
-      e.target.parentNode.style.maxHeight = '250px';
+      e.target.nextElementSibling.style.maxHeight = '250px';
     }
   };
 

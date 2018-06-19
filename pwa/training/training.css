@@ -396,7 +396,7 @@ ul {
     grid-template-columns: 1fr;
   justify-content: center;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   /* 250px | min: 300px ? */
   /* pageleft | pageright */
 }
@@ -421,7 +421,7 @@ ul {
     grid-template-areas:
       "pageleft pageright";
     grid-template-columns: 275px minmax(auto, 1000px);
-    grid-column-gap: 2em;
+    grid-column-gap: 1rem;
   }
 }
 
@@ -451,7 +451,7 @@ main.main {
     grid-area: pageright;
     margin: 0;
     opacity: 1;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem 1rem 0;
     text-align: center;
     transition: all 0.5s;
     vertical-align: top;
@@ -464,7 +464,7 @@ main.main {
       padding: 0;
       text-align: left;
       white-space: normal;
-      width: 90%;
+      width: 98%;
     }
   @media (min-width: 675px) {
     .main-wrapper.maxit main.main {
@@ -578,6 +578,7 @@ main.main {
   }
 }
 
+.cc-courseList,
 .course {
   position: relative;
 }
@@ -591,7 +592,8 @@ main.main {
     line-height: 1;
     margin: 2px 0 0 4px;
     padding: 0.25rem;
-    position: sticky;
+    /*position: sticky;*/
+    position: absolute;
       left: 0;
       top: 0;
       z-index: 1;
@@ -599,7 +601,8 @@ main.main {
     width: 30px;
   }
   .expand-it:hover {
-    background-color: hsla(195, 53%, 79%, 0.6);
+    /*background-color: hsl(195, 53%, 79%, 0.6);*/
+    background-color: hsl(194, 53%, 87%);
   }
   .c-listheader {
     display: inline-block;
@@ -607,7 +610,7 @@ main.main {
   }
 
 .content-wrapper .content {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .content-wrapper .content label {
   background-color: hsla(133, 100%, 80%, 0.3);
@@ -624,7 +627,7 @@ main.main {
 .cc-courseDesc,
 .cc-courseList {
   color: darkblue;
-  margin: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
   padding: 0.25rem;
 }
 
@@ -638,14 +641,18 @@ main.main {
   content: '%';
 }
 .course.course-node {
-  border-bottom: 2px solid lightgreen;
+  border-bottom: 1px solid lightgreen;
   border-left: 2px solid lightgreen;
-  max-height: 62px;
   margin: 0 0 1rem;
-  overflow: auto;
-  padding: 0.25rem;
-  transition: all 0.25s;
+  padding: 0;
 }
-.course-expand {
-  max-height: 300px;
-}
+  .c-expandable {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    max-height: 62px;
+    overflow: auto;
+    transition: all 0.25s;
+  }
+    .c-listheader {
+      margin-left: 50px;
+    }
