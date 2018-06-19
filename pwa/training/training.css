@@ -1,5 +1,4 @@
 body {
-  /*background-color: hsl(240, 90%, 10%);*/
   color: green;
   font-family: 'Nanum Gothic', 'Helvetica', 'Verdana', sans-serif;
   line-height: 1;
@@ -51,7 +50,6 @@ a {
     opacity: 0.8;
   }
   a.b {
-    /*color: #008cba;*/
     color: hsla(195, 100%, 41%, 1);
     font-weight: normal;
   }
@@ -221,8 +219,6 @@ footer {
 
 /* Course Header - Host */
 .accordion li:nth-child(odd) {
-  /*display: inline-block;*/
-  /*margin: 1rem 0;*/
   outline: 1px solid blue;
 }
   /* Course Header - Host Name */
@@ -244,15 +240,10 @@ footer {
 
 /* Courses - Primary Focus */
 .accordion li:nth-child(even) {
-  /* background-color: lightyellow; */
   background-color: hsl(60, 100%, 94%);
   border: 1px solid lightblue;
-  /*border-bottom: 1px solid hsla(195, 100%, 41%, 0.5);*/
   color: gray;
-  /*display: inline-block;*/
-  /*height: 100px;*/
   max-height: 100px;
-  /*margin: 0 0 0 1.5rem;*/
   outline: 1px solid red;
   overflow: hidden;
   padding: 0.5rem;
@@ -261,9 +252,6 @@ footer {
   transition-delay: 0s;
 }
 .accordion li:nth-child(even)::after {
-  /*animation-fill-mode: forwards;*/
-  /*animation: show-it 1.5s;*/
-  /*animation-delay: 0s;*/
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
   content: '';
   height: 115px;
@@ -275,14 +263,12 @@ footer {
   .accordion li.active:nth-child(even) {
     background-color: hsl(60, 80%, 94%);
     color: green;
-    /*height: auto;*/
     max-height: 2500px;
     transition: all 15s ease-out;
   }
   .accordion li.active:nth-child(even)::after {
     animation-fill-mode: backwards;
     animation: hide-it 2.5s;
-    /*animation-delay: 1s;*/
     content: '';
     height: 0px;
   }
@@ -358,8 +344,6 @@ ul {
 .loader #spinner {
   box-sizing: border-box;
   opacity: 1;
-  /*stroke: #673AB7;*/
-  /*stroke: #008cba;*/
   stroke: #004c6a;
   stroke-width: 5px;
   -webkit-transform-origin: 50%;
@@ -456,7 +440,6 @@ main.main {
     transition: all 0.5s;
     vertical-align: top;
     width: calc(100% - 15px);
-      /*max-width: 800px;*/
       min-width: 300px;
   }
     .content {
@@ -473,8 +456,7 @@ main.main {
         max-width: 250px;
     }
     .main-wrapper.maxit main.main {
-      max-height: calc(100vh - 360px);
-      /*max-height: calc(100vh - 250px);*//* @TODO: Restore after WIP */
+      max-height: calc(100vh - 250px);
       overflow: visible;
       width: calc(100% - 50px);
     }
@@ -592,7 +574,6 @@ main.main {
     line-height: 1;
     margin: 2px 0 0 4px;
     padding: 0.25rem;
-    /*position: sticky;*/
     position: absolute;
       left: 0;
       top: 0;
@@ -601,7 +582,6 @@ main.main {
     width: 30px;
   }
   .expand-it:hover {
-    /*background-color: hsl(195, 53%, 79%, 0.6);*/
     background-color: hsl(194, 53%, 87%);
   }
   .c-listheader {

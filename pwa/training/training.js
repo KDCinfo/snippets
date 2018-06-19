@@ -426,11 +426,18 @@
     // Note: `classId` and `existingChild.id` are the same.
 
     if (existingChild) {  // REPLACE
-      const storedClassProgress = existingChild.querySelector('.ch-courseProgress').textContent;
+      const storedClassProgress = existingChild.querySelector('.ch-courseProgress').textContent, // Same as: `.c-courseProgress`
+            storedClassVendorName = existingChild.querySelector('.c-courseVendorName').textContent,
+            storedClassVendor = existingChild.querySelector('.c-courseVendor').textContent,
+            storedClassDateLast = existingChild.querySelector('.c-courseDateLast').textContent,
+            storedClassDesc = existingChild.querySelector('.ch-courseDesc').textContent;
 
-      // @TODO: Make validation checks to see if `true` param should really be passed (if anything has actually changed)')
-
-      if (storedClassProgress !== app.visibleClasses[classId].courseProgress.toString()) {
+      if (storedClassProgress !== app.visibleClasses[classId].courseProgress.toString() ||
+          storedClassVendorName !== app.visibleClasses[classId].courseVendorName ||
+          storedClassDesc !== app.visibleClasses[classId].courseDesc ||
+          storedClassVendor !== app.visibleClasses[classId].courseVendor ||
+          storedClassDateLast !== app.visibleClasses[classId].courseDateLast
+         ) {
         existingChild.parentNode.replaceChild(app.getClassCard(classId, true), existingChild);
       } else {
         existingChild.parentNode.replaceChild(app.getClassCard(classId), existingChild);
