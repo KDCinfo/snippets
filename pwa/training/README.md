@@ -30,9 +30,9 @@ The SPA's data store currently uses IndexedDB with a fallback to localStorage. O
 
   - [x] Implement course sub-subject listings in Detail view.
 
-- [ ] [IP] Save SSOT (external `.js` file) back into either IndexedDB (or localStorage, as fallback).
+- [x] Save SSOT (external `.js` file) back into either IndexedDB (or localStorage, as fallback).
 
-- [ ] PWA: Add service worker as primary cache ahead of IndexedDB.
+- [ ] [IP] PWA: Add service worker as primary cache ahead of IndexedDB.
 
   - If SW not available, use IDB as backup; then try localStorage (if IDB isn't available).
 
