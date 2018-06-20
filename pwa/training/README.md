@@ -2,6 +2,8 @@
 
 `Educational Advancement` is a listing of courses I've been engaged with since May 2018.
 
+[See it live!](https://kdcinfo.com/app/training/)
+
 ## Training Progress SPA
 
 In May 2018, I began investing time learning Progressive Web Apps (PWA). In that neither selected training vendor provides a public profile page, I decided to create a SPA showing my relevant and ongoing course studies.
@@ -34,7 +36,9 @@ The SPA's data store currently uses IndexedDB with a fallback to localStorage. O
 
 - [ ] [IP] PWA: Add service worker as primary cache ahead of IndexedDB.
 
-  - If SW not available, use IDB as backup; then try localStorage (if IDB isn't available).
+  - I'll be implementing Service Workers as I follow along my current Udacity course.
+
+> [See it live!](https://kdcinfo.com/app/training/)
 
 ## In Other News...
 
