@@ -19,7 +19,7 @@
         <div id="hdrLogo">
           <h1 tabindex="0" onclick="goToExternalUrl()" alt="Showcase for Keith D Commiskey" title="Showcase for Keith D Commiskey">Keith D Commiskey</h1>
           <h2 class="sub"><span class="no-wrap">Educational Advancement 2018</span></h2>
-          <h3>(Training Progress SPA)</h3>
+          <h3>&mdash; Training Progress SPA &mdash;</h3>
           <div>
             [&nbsp;<a onclick="goToExternalUrl(this.href);" href="https://kdcinfo.com">Portfolio</a>&nbsp;]&nbsp;
             [&nbsp;<a onclick="goToExternalUrl(this.href);" href="https://kdcbase.com">Showcase</a>&nbsp;]&nbsp;
@@ -40,6 +40,7 @@
        <!-- Mobile: Collapse. Desktop: Pull left; Open DIV on right: Smooth move class cards. -->
        <!-- Responsive: Menu will expand / collapse; DIV on right will fold underneath Main. -->
   <!-- { c-: class, ch-: hidden, cl-: course list item, cc-: content } -->
+  <div class="h4">Click a course for more detailed progress.</div>
   <div class="main-wrapper"><!--  maxit  -->
     <main class="main container">
       <div class="card card-template" hidden>
@@ -110,5 +111,12 @@
   </div>
 
   <script src="training.js"></script>
+  <script type="text/javascript">
+    function goToExternalUrl(url) {
+      let goToUrl = (typeof url === 'undefined') ? 'https://kdcinfo.com' : url;
+      top.location.href = goToUrl;
+      return false;
+    }
+  </script>
 </body>
 </html>
