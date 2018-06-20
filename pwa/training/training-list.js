@@ -5,67 +5,67 @@
       "active": true,
       "courseVendorName": "Udacity",
       "courseVendor": "Offline Web Applications",
-      "courseProgress": 20,
+      "courseProgress": 37,
       "courseDesc": "None provided.",
       "courseDateStarted": "May 2018",
-      "courseDateLast": "May 2018",
+      "courseDateLast": "June 2018",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "offline",
       "courseList": [
         {
           "courseClassTitle": "The Benefits of Offline First",
-          "courseClassProgress": 62,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Discover the differences between a standard web app and an offline-first application and get an introduction to new APIs.</p>
             <ul>
-              <li><span class='progress done'></span>Intro</li>
-              <li><span class='progress done'></span>The Problem</li>
-              <li><span class='progress done'></span>The Benefits of Offline First</li>
-              <li><span class='progress done'></span>Quiz: What Can Slow Us Down</li>
-              <li><span class='progress done'></span>Quiz: What Does Online First Look Like</li>
-              <li><span class='progress done'></span>Quiz: What Are Ways To Be Offline First</li>
-              <li><span class='progress done'></span>Introducing the Demo App</li>
-              <li><span class='progress done'></span>Quiz: Installing the Demo App</li>
-              <li><span class='progress'></span>Quiz: Running the Demo App</li>
-              <li><span class='progress'></span>Exploring the Demo Apps Code</li>
-              <li><span class='progress'></span>Quiz: Changing Connection Types</li>
-              <li><span class='progress'></span>Quiz: Testing Lie Fi Mode</li>
-              <li><span class='progress'></span>Introducing Service Worker</li>
+              <li class='progress done'>Intro</li>
+              <li class='progress done'>The Problem</li>
+              <li class='progress done'>The Benefits of Offline First</li>
+              <li class='progress done'>Quiz: What Can Slow Us Down</li>
+              <li class='progress done'>Quiz: What Does Online First Look Like</li>
+              <li class='progress done'>Quiz: What Are Ways To Be Offline First</li>
+              <li class='progress done'>Introducing the Demo App</li>
+              <li class='progress done'>Quiz: Installing the Demo App</li>
+              <li class='progress done'>Quiz: Running the Demo App</li>
+              <li class='progress done'>Exploring the Demo Apps Code</li>
+              <li class='progress done'>Quiz: Changing Connection Types</li>
+              <li class='progress done'>Quiz: Testing Lie Fi Mode</li>
+              <li class='progress done'>Introducing Service Worker</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Introducing the Service Worker",
-          "courseClassProgress": 0,
+          "courseClassProgress": 12,
           "courseClassContent": `
             <p class='text-body'>Write your first Service Workers and get comfortable with the lifecycle of a request when using a service worker.</p>
             <ul>
-              <li><span class='progress'></span>An Overview of Service Worker</li>
-              <li><span class='progress'></span>Quiz: Scoping Quiz</li>
-              <li><span class='progress'></span>Adding a Service Worker To the Project</li>
-              <li><span class='progress'></span>Quiz: Registering a Service Worker</li>
-              <li><span class='progress'></span>The Service Worker Lifecycle</li>
-              <li><span class='progress'></span>Quiz: Enabling Service Worker Dev Tools</li>
-              <li><span class='progress'></span>Quiz: Service Worker Dev Tools</li>
-              <li><span class='progress'></span>Quiz: Service Worker Dev Tools 2</li>
-              <li><span class='progress'></span>Service Worker Dev Tools Continued</li>
-              <li><span class='progress'></span>Hijacking Requests</li>
-              <li><span class='progress'></span>Quiz: Hijacking Requests 1 Quiz</li>
-              <li><span class='progress'></span>Hijacking Requests 2</li>
-              <li><span class='progress'></span>Quiz: Hijacking Requests 2 Quiz</li>
-              <li><span class='progress'></span>Hijacking Requests 3</li>
-              <li><span class='progress'></span>Quiz: Hijacking Requests 3 Quiz</li>
-              <li><span class='progress'></span>Caching and Serving Assets</li>
-              <li><span class='progress'></span>Quiz: Install and Cache Quiz</li>
-              <li><span class='progress'></span>Quiz: Cache Response Quiz</li>
-              <li><span class='progress'></span>Updating the Static Cache</li>
-              <li><span class='progress'></span>Quiz: Update Your CSS Quiz</li>
-              <li><span class='progress'></span>Quiz: Update Your CSS 2</li>
-              <li><span class='progress'></span>Adding UX to the Update Process</li>
-              <li><span class='progress'></span>Quiz: Adding UX Quiz</li>
-              <li><span class='progress'></span>Triggering an Update</li>
-              <li><span class='progress'></span>Quiz: Triggering an Update Quiz</li>
-              <li><span class='progress'></span>Quiz: Caching the Page Skeleton</li>
+              <li class='progress done'>An Overview of Service Worker</li>
+              <li class='progress done'>Quiz: Scoping Quiz</li>
+              <li class='progress done'>Adding a Service Worker To the Project</li>
+              <li class='progress'>Quiz: Registering a Service Worker</li>
+              <li class='progress'>The Service Worker Lifecycle</li>
+              <li class='progress'>Quiz: Enabling Service Worker Dev Tools</li>
+              <li class='progress'>Quiz: Service Worker Dev Tools</li>
+              <li class='progress'>Quiz: Service Worker Dev Tools 2</li>
+              <li class='progress'>Service Worker Dev Tools Continued</li>
+              <li class='progress'>Hijacking Requests</li>
+              <li class='progress'>Quiz: Hijacking Requests 1 Quiz</li>
+              <li class='progress'>Hijacking Requests 2</li>
+              <li class='progress'>Quiz: Hijacking Requests 2 Quiz</li>
+              <li class='progress'>Hijacking Requests 3</li>
+              <li class='progress'>Quiz: Hijacking Requests 3 Quiz</li>
+              <li class='progress'>Caching and Serving Assets</li>
+              <li class='progress'>Quiz: Install and Cache Quiz</li>
+              <li class='progress'>Quiz: Cache Response Quiz</li>
+              <li class='progress'>Updating the Static Cache</li>
+              <li class='progress'>Quiz: Update Your CSS Quiz</li>
+              <li class='progress'>Quiz: Update Your CSS 2</li>
+              <li class='progress'>Adding UX to the Update Process</li>
+              <li class='progress'>Quiz: Adding UX Quiz</li>
+              <li class='progress'>Triggering an Update</li>
+              <li class='progress'>Quiz: Triggering an Update Quiz</li>
+              <li class='progress'>Quiz: Caching the Page Skeleton</li>
             </ul>
           `
         },
@@ -75,20 +75,20 @@
           "courseClassContent": `
             <p class='text-body'>Use the IndexedDB API, along with Service Workers, to write caching solutions that will make your applications more performant.</p>
             <ul>
-              <li><span class='progress'></span>Introducing the IDB Promised Library</li>
-              <li><span class='progress'></span>Getting Started with IDB</li>
-              <li><span class='progress'></span>Quiz: Getting Started with IDB</li>
-              <li><span class='progress'></span>Quiz: More IDB</li>
-              <li><span class='progress'></span>Using the IDB Cache and Display Entries</li>
-              <li><span class='progress'></span>Quiz: Using IDB Cache</li>
-              <li><span class='progress'></span>Quiz: Using IDB 2</li>
-              <li><span class='progress'></span>Quiz: Cleaning IDB</li>
-              <li><span class='progress'></span>Cache Photos</li>
-              <li><span class='progress'></span>Quiz: Cache Photos Quiz</li>
-              <li><span class='progress'></span>Cleaning Photo Cache</li>
-              <li><span class='progress'></span>Quiz: Cleaning Photo Cache Quiz</li>
-              <li><span class='progress'></span>Quiz: Caching Avatars</li>
-              <li><span class='progress'></span>Outro</li>
+              <li class='progress'>Introducing the IDB Promised Library</li>
+              <li class='progress'>Getting Started with IDB</li>
+              <li class='progress'>Quiz: Getting Started with IDB</li>
+              <li class='progress'>Quiz: More IDB</li>
+              <li class='progress'>Using the IDB Cache and Display Entries</li>
+              <li class='progress'>Quiz: Using IDB Cache</li>
+              <li class='progress'>Quiz: Using IDB 2</li>
+              <li class='progress'>Quiz: Cleaning IDB</li>
+              <li class='progress'>Cache Photos</li>
+              <li class='progress'>Quiz: Cache Photos Quiz</li>
+              <li class='progress'>Cleaning Photo Cache</li>
+              <li class='progress'>Quiz: Cleaning Photo Cache Quiz</li>
+              <li class='progress'>Quiz: Caching Avatars</li>
+              <li class='progress'>Outro</li>
             </ul>
           `
         }
@@ -99,7 +99,7 @@
       "active": true,
       "courseVendorName": "Google Training",
       "courseVendor": "Build Progressive Web Apps",
-      "courseProgress": 5,
+      "courseProgress": 0,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "May 2018",
