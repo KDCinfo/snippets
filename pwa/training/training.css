@@ -1,3 +1,23 @@
+:root {
+  --updated-course: dodgerblue;
+  --post-it-1: 2deg;
+  --post-it-2: -1deg;
+  --post-it-3: 1deg;
+  --post-it-4: -2deg;
+    --post-it-1b: -1deg;
+    --post-it-2b: 2deg;
+    --post-it-3b: 2deg;
+    --post-it-4b: -1deg;
+  --post-it-cut-1a: 35px solid hsl(120, 62%, 35%);
+  --post-it-cut-1b: 20px solid white;
+  --post-it-cut-2a: 25px solid hsl(120, 56%, 49%);
+  --post-it-cut-2b: 30px solid white;
+  --post-it-cut-3a: 30px solid hsl(156, 66%, 26%);
+  --post-it-cut-3b: 25px solid white;
+  --post-it-cut-4a: 20px solid hsl(156, 93%, 37%);
+  --post-it-cut-4b: 35px solid white;
+}
+
 body {
   color: green;
   font-family: 'Nanum Gothic', 'Helvetica', 'Verdana', sans-serif;
@@ -23,7 +43,8 @@ body div.desc {
   h2,
   h3,
   .h3,
-  h4 {
+  h4,
+  .h4 {
     font-weight: normal;
     margin: 0 auto;
     padding: 0;
@@ -37,6 +58,13 @@ body div.desc {
     line-height: 1.3;
     margin: 1em auto;
     max-width: 500px;
+  }
+  h4,
+  .h4 {
+    color: #43616a;
+    font-style: italic;
+    margin: 1em auto 0;
+    text-align: center;
   }
 
 a {
@@ -373,14 +401,14 @@ ul {
 
 .main-wrapper {
   display: grid;
-    grid-column-gap: 1rem;
+    grid-column-gap: 0.5rem;
     grid-row-gap: 20px;
     grid-template-areas:
       "pageleft";
     grid-template-columns: 1fr;
   justify-content: center;
   margin: 0 auto;
-  width: 95%;
+  width: 98%;
   /* 250px | min: 300px ? */
   /* pageleft | pageright */
 }
@@ -405,7 +433,7 @@ ul {
     grid-template-areas:
       "pageleft pageright";
     grid-template-columns: 275px minmax(auto, 1000px);
-    grid-column-gap: 1rem;
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -456,8 +484,8 @@ main.main {
         max-width: 250px;
     }
     .main-wrapper.maxit main.main {
-      max-height: calc(100vh - 250px);
-      overflow: visible;
+      max-height: calc(100vh - 130px);
+      overflow: visible;/* ^ Override: Let page scroll */
       width: calc(100% - 50px);
     }
   }
@@ -481,6 +509,7 @@ main.main {
 
 .main-wrapper main.main .card { /* New */
   background-color: hsl(133, 100%, 80%);
+  border-radius: 5px;
   cursor: pointer;
   flex: 0 1 auto;
   margin: 0.5rem;
@@ -488,11 +517,86 @@ main.main {
   position: relative;
     min-height: 100px;
     width: 200px;
-  transition: top 0.5s, left 0.5s;
+  transition: top 0.5s, left 0.5s, transform 0.5s;
 }
   .main-wrapper main.main .card.active,
   .main-wrapper main.main .card.active:hover {
       background-color: hsl(193, 100%, 90%);
+  }
+  .main-wrapper main.main .card > span {
+    color: var(--updated-course);
+    display: inline-block;
+    font-family: 'Permanent Marker';
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 0 0.75rem 1.0rem;
+    padding: 0;
+  }
+  .main-wrapper main.main .card:before {
+    content: '';
+    position: absolute;
+      right: -1px;
+      top: -1px;
+    width: 1px;
+  }
+
+  /* 'Cut Corners' thanks to: [Joseph Silber](https://stackoverflow.com/a/7324826/638153) */
+  .main-wrapper main.main .card:nth-child(1):before,
+  .main-wrapper main.main .card:nth-child(5):before {
+    border-left: var(--post-it-cut-1a);
+    border-top: var(--post-it-cut-1b);
+  }
+  .main-wrapper main.main .card:nth-child(2):before,
+  .main-wrapper main.main .card:nth-child(6):before {
+    border-left: var(--post-it-cut-2a);
+    border-top: var(--post-it-cut-2b);
+  }
+  .main-wrapper main.main .card:nth-child(3):before,
+  .main-wrapper main.main .card:nth-child(7):before {
+    border-left: var(--post-it-cut-3a);
+    border-top: var(--post-it-cut-3b);
+  }
+  .main-wrapper main.main .card:nth-child(4):before,
+  .main-wrapper main.main .card:nth-child(8):before {
+    border-left: var(--post-it-cut-4a);
+    border-top: var(--post-it-cut-4b);
+  }
+
+  /* POST-IT NOTE ROTATIONS */
+
+  .main-wrapper main.main .card:nth-child(1),
+  .main-wrapper main.main .card:nth-child(5) {
+    transform: rotate(var(--post-it-1b));
+  }
+  .main-wrapper main.main .card:nth-child(2),
+  .main-wrapper main.main .card:nth-child(6) {
+    transform: rotate(var(--post-it-2b));
+  }
+  .main-wrapper main.main .card:nth-child(3),
+  .main-wrapper main.main .card:nth-child(7) {
+    transform: rotate(var(--post-it-3b));
+  }
+  .main-wrapper main.main .card:nth-child(4),
+  .main-wrapper main.main .card:nth-child(8) {
+    transform: rotate(var(--post-it-4b));
+  }
+  @media (min-width: 675px) {
+    .main-wrapper main.main .card:nth-child(1),
+    .main-wrapper main.main .card:nth-child(5) {
+      transform: rotate(var(--post-it-1));
+    }
+    .main-wrapper main.main .card:nth-child(2),
+    .main-wrapper main.main .card:nth-child(6) {
+      transform: rotate(var(--post-it-2));
+    }
+    .main-wrapper main.main .card:nth-child(3),
+    .main-wrapper main.main .card:nth-child(7) {
+      transform: rotate(var(--post-it-3));
+    }
+    .main-wrapper main.main .card:nth-child(4),
+    .main-wrapper main.main .card:nth-child(8) {
+      transform: rotate(var(--post-it-4));
+    }
   }
 
 .main-wrapper main.main .item-node {
@@ -586,6 +690,8 @@ main.main {
   }
   .c-listheader {
     display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
     margin: 0 0 0 0.75rem;
   }
 
@@ -636,3 +742,19 @@ main.main {
     .c-listheader {
       margin-left: 50px;
     }
+
+.cl-courseClassContent {
+  font-size: 14px;
+}
+  .cl-courseClassContent p {
+    line-height: 1.3;
+    margin: 0.6rem 0;
+  }
+  .cc-courseList .progress {
+    font-weight: bold;
+  }
+  .cc-courseList .progress.done {
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: line-through;
+  }
