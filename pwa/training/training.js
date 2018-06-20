@@ -345,7 +345,22 @@
         app.visibleClasses = {};
       }
 
-      // @TODO: Future 'sort' feature: app.allClassList.sort((a,b)=>1|-1|0)
+      // @TODONE: 'sort' feature
+      app.allClassList.sort( (a, b) => {
+        if (a.courseProgress > b.courseProgress) {
+          return -1;
+        } else if (a.courseProgress < b.courseProgress) {
+          return 1;
+        } else {
+          if (a.id < b.id) {
+            return -1;
+          } else if (a.id > b.id) {
+            return 1;
+          } else {
+            return 0;
+          }
+        }
+      });
 
       app.allClassList.forEach( classObj => {
 
