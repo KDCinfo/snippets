@@ -67,7 +67,7 @@
       </div>
     </main>
     <div class="content-wrapper">
-      <div class="close-it">X</div>
+      <div class="close-it">Close Details</div>
       <div class="content">
         <div><label>Last Visited:</label> <span class="cc-courseDateLast">2018 June</span></div>
         <div><label>Began:</label> <span class="cc-courseDateStarted">2018 May</span></div>
@@ -82,7 +82,7 @@
   <footer>
     <div class="message"></div>
     <div class="msg">
-      Last Updated: <b><a class="no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">2018 June 20 @ 1:08 AM</a></b>
+      Last Dev Build: <b><a class="last-dev-build no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">Wed Jun 20 2018 01:50:34 GMT-0700 (Pacific Daylight Time)</a></b>
     </div>
     <div id="webapp-help">
       <button type="button" id="button-toggle-webapp-help">About this App</button>
@@ -117,6 +117,20 @@
       top.location.href = goToUrl;
       return false;
     }
+    async function fetchAsync(getUrl) {
+      // GitHub API Request Process - Thanks to: [Ivan Zuzak](https://stackoverflow.com/a/15933109/638153)
+      let response = await fetch('https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master', { method: "GET" });
+      let json = await response.json();
+      let refResponse = await fetch(json.object.url, { method: "GET" });
+      let refJson = await refResponse.json();
+      return refJson;
+    }
+    fetchAsync().then( data => {                     // My old manual version:     // 2018 June 21 @ 1:08 AM
+      const modDate = new Date(data.committer.date); // modDate.toLocaleString()); // 6/20/2018, 1:50:34 AM
+      document.querySelector('.last-dev-build').textContent = modDate;
+    }).catch( err => {
+      document.querySelector('.last-dev-build').innerHTML = 'Wed Jun 21 2018 03:00:00 GMT-0700<br/>(err: using last known commit date)<br/><br/>' + err;
+    });
   </script>
 </body>
 </html>
