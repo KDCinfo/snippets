@@ -5,7 +5,7 @@
       "active": true,
       "courseVendorName": "Udacity",
       "courseVendor": "Offline Web Applications",
-      "courseProgress": 37,
+      "courseProgress": 45,
       "courseDesc": "None provided.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "June 2018",
@@ -36,19 +36,19 @@
         },
         {
           "courseClassTitle": "Introducing the Service Worker",
-          "courseClassProgress": 12,
+          "courseClassProgress": 35,
           "courseClassContent": `
             <p class='text-body'>Write your first Service Workers and get comfortable with the lifecycle of a request when using a service worker.</p>
             <ul>
               <li class='progress done'>An Overview of Service Worker</li>
               <li class='progress done'>Quiz: Scoping Quiz</li>
               <li class='progress done'>Adding a Service Worker To the Project</li>
-              <li class='progress'>Quiz: Registering a Service Worker</li>
-              <li class='progress'>The Service Worker Lifecycle</li>
-              <li class='progress'>Quiz: Enabling Service Worker Dev Tools</li>
-              <li class='progress'>Quiz: Service Worker Dev Tools</li>
-              <li class='progress'>Quiz: Service Worker Dev Tools 2</li>
-              <li class='progress'>Service Worker Dev Tools Continued</li>
+              <li class='progress done'>Quiz: Registering a Service Worker</li>
+              <li class='progress done'>The Service Worker Lifecycle</li>
+              <li class='progress done'>Quiz: Enabling Service Worker Dev Tools</li>
+              <li class='progress done'>Quiz: Service Worker Dev Tools</li>
+              <li class='progress done'>Quiz: Service Worker Dev Tools 2</li>
+              <li class='progress done'>Service Worker Dev Tools Continued</li>
               <li class='progress'>Hijacking Requests</li>
               <li class='progress'>Quiz: Hijacking Requests 1 Quiz</li>
               <li class='progress'>Hijacking Requests 2</li>
@@ -108,7 +108,7 @@
       "courseList": [
         {
           "courseClassTitle": "Intro to Progressive Web Apps",
-          "courseClassProgress": 10,
+          "courseClassProgress": 0,
           "courseClassContent": `
             <h3 class='western'>Free, self-paced, online course.</h3>
             <p class='text-body'>Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.</p>
