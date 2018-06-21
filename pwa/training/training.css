@@ -10,12 +10,15 @@
     --post-it-4b: -1deg;
   --post-it-cut-1a: 35px solid hsl(120, 62%, 35%);
   --post-it-cut-1b: 20px solid white;
-  --post-it-cut-2a: 25px solid hsl(120, 56%, 49%);
+  /*--post-it-cut-2a: 25px solid hsl(120, 56%, 49%);*/
+  --post-it-cut-2a: 35px solid hsl(120, 62%, 35%);
   --post-it-cut-2b: 30px solid white;
-  --post-it-cut-3a: 30px solid hsl(156, 66%, 26%);
-  --post-it-cut-3b: 25px solid white;
-  --post-it-cut-4a: 20px solid hsl(156, 93%, 37%);
-  --post-it-cut-4b: 35px solid white;
+  /*--post-it-cut-3a: 30px solid hsl(156, 66%, 26%);*/
+  --post-it-cut-3a: 25px solid hsl(120, 62%, 35%);
+  --post-it-cut-3b: 35px solid white;
+  /*--post-it-cut-4a: 20px solid hsl(156, 93%, 37%);*/
+  --post-it-cut-4a: 40px solid hsl(120, 62%, 35%);
+  --post-it-cut-4b: 25px solid white;
 }
 
 body {
@@ -191,7 +194,6 @@ footer {
       }
     @media (min-width: 675px) {
       #webapp-help {
-        bottom: 1rem;
         right: 1rem;
         text-align: right;
       }
