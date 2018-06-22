@@ -5,7 +5,7 @@
       "active": true,
       "courseVendorName": "Udacity",
       "courseVendor": "Offline Web Applications",
-      "courseProgress": 45,
+      "courseProgress": 56,
       "courseDesc": "None provided.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "June 2018",
@@ -36,7 +36,7 @@
         },
         {
           "courseClassTitle": "Introducing the Service Worker",
-          "courseClassProgress": 35,
+          "courseClassProgress": 69,
           "courseClassContent": `
             <p class='text-body'>Write your first Service Workers and get comfortable with the lifecycle of a request when using a service worker.</p>
             <ul>
@@ -49,15 +49,15 @@
               <li class='progress done'>Quiz: Service Worker Dev Tools</li>
               <li class='progress done'>Quiz: Service Worker Dev Tools 2</li>
               <li class='progress done'>Service Worker Dev Tools Continued</li>
-              <li class='progress'>Hijacking Requests</li>
-              <li class='progress'>Quiz: Hijacking Requests 1 Quiz</li>
-              <li class='progress'>Hijacking Requests 2</li>
-              <li class='progress'>Quiz: Hijacking Requests 2 Quiz</li>
-              <li class='progress'>Hijacking Requests 3</li>
-              <li class='progress'>Quiz: Hijacking Requests 3 Quiz</li>
-              <li class='progress'>Caching and Serving Assets</li>
-              <li class='progress'>Quiz: Install and Cache Quiz</li>
-              <li class='progress'>Quiz: Cache Response Quiz</li>
+              <li class='progress done'>Hijacking Requests</li>
+              <li class='progress done'>Quiz: Hijacking Requests 1 Quiz</li>
+              <li class='progress done'>Hijacking Requests 2</li>
+              <li class='progress done'>Quiz: Hijacking Requests 2 Quiz</li>
+              <li class='progress done'>Hijacking Requests 3</li>
+              <li class='progress done'>Quiz: Hijacking Requests 3 Quiz</li>
+              <li class='progress done'>Caching and Serving Assets</li>
+              <li class='progress done'>Quiz: Install and Cache Quiz</li>
+              <li class='progress done'>Quiz: Cache Response Quiz</li>
               <li class='progress'>Updating the Static Cache</li>
               <li class='progress'>Quiz: Update Your CSS Quiz</li>
               <li class='progress'>Quiz: Update Your CSS 2</li>
