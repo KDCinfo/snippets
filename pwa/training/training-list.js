@@ -5,7 +5,7 @@
       "active": true,
       "courseVendorName": "Udacity",
       "courseVendor": "Offline Web Applications",
-      "courseProgress": 56,
+      "courseProgress": 67,
       "courseDesc": "None provided.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "June 2018",
@@ -36,7 +36,7 @@
         },
         {
           "courseClassTitle": "Introducing the Service Worker",
-          "courseClassProgress": 69,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Write your first Service Workers and get comfortable with the lifecycle of a request when using a service worker.</p>
             <ul>
@@ -58,14 +58,14 @@
               <li class='progress done'>Caching and Serving Assets</li>
               <li class='progress done'>Quiz: Install and Cache Quiz</li>
               <li class='progress done'>Quiz: Cache Response Quiz</li>
-              <li class='progress'>Updating the Static Cache</li>
-              <li class='progress'>Quiz: Update Your CSS Quiz</li>
-              <li class='progress'>Quiz: Update Your CSS 2</li>
-              <li class='progress'>Adding UX to the Update Process</li>
-              <li class='progress'>Quiz: Adding UX Quiz</li>
-              <li class='progress'>Triggering an Update</li>
-              <li class='progress'>Quiz: Triggering an Update Quiz</li>
-              <li class='progress'>Quiz: Caching the Page Skeleton</li>
+              <li class='progress done'>Updating the Static Cache</li>
+              <li class='progress done'>Quiz: Update Your CSS Quiz</li>
+              <li class='progress done'>Quiz: Update Your CSS 2</li>
+              <li class='progress done'>Adding UX to the Update Process</li>
+              <li class='progress done'>Quiz: Adding UX Quiz</li>
+              <li class='progress done'>Triggering an Update</li>
+              <li class='progress done'>Quiz: Triggering an Update Quiz</li>
+              <li class='progress done'>Quiz: Caching the Page Skeleton</li>
             </ul>
           `
         },
