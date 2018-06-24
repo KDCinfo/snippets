@@ -5,7 +5,7 @@
       "active": true,
       "courseVendorName": "Udacity",
       "courseVendor": "Offline Web Applications",
-      "courseProgress": 67,
+      "courseProgress": 76,
       "courseDesc": "None provided.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "June 2018",
@@ -71,14 +71,14 @@
         },
         {
           "courseClassTitle": "IndexedDB and Caching",
-          "courseClassProgress": 0,
+          "courseClassProgress": 29,
           "courseClassContent": `
             <p class='text-body'>Use the IndexedDB API, along with Service Workers, to write caching solutions that will make your applications more performant.</p>
             <ul>
-              <li class='progress'>Introducing the IDB Promised Library</li>
-              <li class='progress'>Getting Started with IDB</li>
-              <li class='progress'>Quiz: Getting Started with IDB</li>
-              <li class='progress'>Quiz: More IDB</li>
+              <li class='progress done'>Introducing the IDB Promised Library</li>
+              <li class='progress done'>Getting Started with IDB</li>
+              <li class='progress done'>Quiz: Getting Started with IDB</li>
+              <li class='progress done'>Quiz: More IDB</li>
               <li class='progress'>Using the IDB Cache and Display Entries</li>
               <li class='progress'>Quiz: Using IDB Cache</li>
               <li class='progress'>Quiz: Using IDB 2</li>
