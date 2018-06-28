@@ -446,7 +446,8 @@ main.main {
   white-space: normal;
 
   /* From CodePen */
-  align-items: stretch;
+  /*align-items: stretch;*/
+  align-self: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -615,9 +616,14 @@ main.main {
   }
 
 .main-wrapper main.main .item-node {
-  margin: 1rem 0.5rem 0;
+  margin: 1rem 0.5rem 0.2rem;
   max-width: 250px;
 }
+  @media (min-width: 1400px) {
+    .main-wrapper main.main .item-node {
+      margin: 1rem 0.5rem;
+    }
+  }
   .main-wrapper main.main .card:hover {
     background-color: hsla(120, 100%, 75%, 0.95);
   }
