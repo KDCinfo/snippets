@@ -544,60 +544,73 @@ main.main {
 
   /* 'Cut Corners' thanks to: [Joseph Silber](https://stackoverflow.com/a/7324826/638153) */
   .main-wrapper main.main .card:nth-child(1):before,
-  .main-wrapper main.main .card:nth-child(5):before {
+  .main-wrapper main.main .card:nth-child(6):before {
     border-left: var(--post-it-cut-1a);
     border-top: var(--post-it-cut-1b);
   }
   .main-wrapper main.main .card:nth-child(2):before,
-  .main-wrapper main.main .card:nth-child(6):before {
+  .main-wrapper main.main .card:nth-child(7):before {
     border-left: var(--post-it-cut-2a);
     border-top: var(--post-it-cut-2b);
   }
   .main-wrapper main.main .card:nth-child(3):before,
-  .main-wrapper main.main .card:nth-child(7):before {
+  .main-wrapper main.main .card:nth-child(8):before {
     border-left: var(--post-it-cut-3a);
     border-top: var(--post-it-cut-3b);
   }
   .main-wrapper main.main .card:nth-child(4):before,
-  .main-wrapper main.main .card:nth-child(8):before {
+  .main-wrapper main.main .card:nth-child(9):before {
     border-left: var(--post-it-cut-4a);
     border-top: var(--post-it-cut-4b);
+  }
+  .main-wrapper main.main .card:nth-child(5):before,
+  .main-wrapper main.main .card:nth-child(10):before {
+    border-left: var(--post-it-cut-1a);
+    border-top: var(--post-it-cut-1b);
   }
 
   /* POST-IT NOTE ROTATIONS */
 
   .main-wrapper main.main .card:nth-child(1),
-  .main-wrapper main.main .card:nth-child(5) {
+  .main-wrapper main.main .card:nth-child(6) {
     transform: rotate(var(--post-it-1b));
   }
   .main-wrapper main.main .card:nth-child(2),
-  .main-wrapper main.main .card:nth-child(6) {
+  .main-wrapper main.main .card:nth-child(7) {
     transform: rotate(var(--post-it-2b));
   }
   .main-wrapper main.main .card:nth-child(3),
-  .main-wrapper main.main .card:nth-child(7) {
+  .main-wrapper main.main .card:nth-child(8) {
     transform: rotate(var(--post-it-3b));
   }
   .main-wrapper main.main .card:nth-child(4),
-  .main-wrapper main.main .card:nth-child(8) {
+  .main-wrapper main.main .card:nth-child(9) {
     transform: rotate(var(--post-it-4b));
+  }
+  .main-wrapper main.main .card:nth-child(5),
+  .main-wrapper main.main .card:nth-child(10) {
+    transform: rotate(var(--post-it-1b));
   }
   @media (min-width: 675px) {
     .main-wrapper main.main .card:nth-child(1),
-    .main-wrapper main.main .card:nth-child(5) {
+    .main-wrapper main.main .card:nth-child(6) {
       transform: rotate(var(--post-it-1));
     }
     .main-wrapper main.main .card:nth-child(2),
-    .main-wrapper main.main .card:nth-child(6) {
+    .main-wrapper main.main .card:nth-child(7) {
       transform: rotate(var(--post-it-2));
     }
     .main-wrapper main.main .card:nth-child(3),
-    .main-wrapper main.main .card:nth-child(7) {
+    .main-wrapper main.main .card:nth-child(8) {
       transform: rotate(var(--post-it-3));
     }
     .main-wrapper main.main .card:nth-child(4),
-    .main-wrapper main.main .card:nth-child(8) {
+    .main-wrapper main.main .card:nth-child(9) {
       transform: rotate(var(--post-it-4));
+    }
+    .main-wrapper main.main .card:nth-child(5),
+    .main-wrapper main.main .card:nth-child(10) {
+      transform: rotate(var(--post-it-1));
     }
   }
 
