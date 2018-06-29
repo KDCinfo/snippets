@@ -10,6 +10,16 @@ In May 2018, I began investing time learning Progressive Web Apps (PWA). In that
 
 The SPA's data store currently uses IndexedDB with a fallback to localStorage. Once complete, it will support service workers as well. In all cases, the overriding source of truth is an external `.js` file.
 
+## Q: Why is it free?
+
+### A:
+
+I'm a web/app developer by trait: Developing open source projects fills two purposes for me; I get more programming experience _(something I never tire of gaining)_, and I get a utility that can be crossed off my life's `@TODO:` list _(where it's likely been for years)_.
+
+Additionally...
+
+> Sharing is a building block for making lives better.
+
 ## SPA Progress
 
 - [x] UI [In Progress]
