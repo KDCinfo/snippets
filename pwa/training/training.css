@@ -206,9 +206,13 @@ footer {
 
     .footer-prefs-div,
     #app-message {
-      max-width: 400px;
+      max-width: 550px;
       min-width: 300px;
     }
+      .input-options-with-items {
+        display: inline-block;
+      }
+
     .footer-menu-ul {
       background-color: hsla(133, 100%, 80%, 0.3);
       border-radius: 5px;
