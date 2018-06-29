@@ -1,106 +1,68 @@
 {
   "classList": [
     {
-      "id": "udacity-2",
+      "id": "udacity-3",
       "active": true,
       "courseVendorName": "Udacity",
-      "courseVendor": "Intro to Progressive Web Apps",
-      "courseProgress": 77,
-      "courseDesc": "Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.",
+      "courseVendor": "JavaScript Promises",
+      "courseProgress": 2,
+      "courseDesc": "Learn how to handle asynchronous work with ease! In this course, you'll use Native JavaScript Promises to write asynchronous code that is easy to read, easy to write and easy to debug. Along the way, you'll be using Promises to make a webapp come to life!",
       "courseDateStarted": "June 2018",
       "courseDateLast": "June",
       "courseShortVendor": "udacity-courses",
-      "courseShortName": "intro-pwa",
-      "courseURL": "https://classroom.udacity.com/courses/ud811",
+      "courseShortName": "js-promises",
+      "courseURL": "https://classroom.udacity.com/courses/ud898",
       "courseList": [
         {
-          "courseClassTitle": "Progressive Web Apps",
-          "courseClassProgress": 100,
+          "courseClassTitle": "Creating Promises",
+          "courseClassProgress": 7,
           "courseClassContent": `
+            <p class='text-body'>Learn what a promise is, how it makes writing asynchronous JavaScript simpler and how to handle errors.</p>
+            <ul style='list-style: disc;'>
+              <li class='text-body'>Promises syntax and scope.</li>
+              <li class='text-body'>Simplifying common, useful methods with Promises.</li>
+              <li class='text-body'>Basic error handling.</li>
+            </ul>
             <ul>
-              <li class='progress done'>Intro and Hook</li>
-              <li class='progress done'>Introduction</li>
-              <li class='progress done'>Why Build a Progressive Web App?</li>
-              <li class='progress done'>Technologies Behind Progressive Web Apps</li>
-              <li class='progress done'>What is an App Shell?</li>
-              <li class='progress done'>Why use an App Shell?</li>
-              <li class='progress done'>Design the App Shell</li>
-              <li class='progress done'>Quiz: What Goes In the App Shell?</li>
-              <li class='progress done'>The Weather App Shell</li>
-              <li class='progress done'>Start your project</li>
-              <li class='progress done'>Quiz: Update Your Project</li>
-              <li class='progress done'>Quiz: What Does What?</li>
-              <li class='progress done'>Get data on screen as fast as possible</li>
-              <li class='progress done'>Server-Side Rendering</li>
-              <li class='progress done'>Get Data via an AJAX Request</li>
-              <li class='progress done'>Inject the Data</li>
-              <li class='progress done'>Update your project</li>
-              <li class='progress done'>Quiz: Update Your Project</li>
-              <li class='progress done'>Storage Intro</li>
-              <li class='progress done'>Local Storage</li>
-              <li class='progress done'>Caches Object</li>
-              <li class='progress done'>IndexedDB</li>
-              <li class='progress done'>It’s not permanent</li>
-              <li class='progress done'>Update your project</li>
-              <li class='progress done'>Quiz: Update Your Project</li>
-              <li class='progress done'>Outro</li>
+              <li class='progress done'>Course Introduction</li>
+              <li class='progress'>Callbacks vs Promises</li>
+              <li class='progress'>Callbacks vs Thens</li>
+              <li class='progress'>Course Map</li>
+              <li class='progress'>Promise Timeline</li>
+              <li class='progress'>Quiz: Async Scenarios</li>
+              <li class='progress'>Syntax</li>
+              <li class='progress'>Quiz: Write Your First Promise</li>
+              <li class='progress'>Quiz: Wrapping readyState</li>
+              <li class='progress'>IMPORTANT! Working w/Exoplanet Explorer</li>
+              <li class='progress'>Quiz: Wrap an XHR</li>
+              <li class='progress'>Web Technologies</li>
+              <li class='progress'>Quiz: Fetch API</li>
+              <li class='progress'>What Happens Next?</li>
             </ul>
           `
         },
         {
-          "courseClassTitle": "Service Workers",
-          "courseClassProgress": 100,
+          "courseClassTitle": "Chaining Promises",
+          "courseClassProgress": 0,
           "courseClassContent": `
-            <ul>
-              <li class='progress done'>What is a service worker?</li>
-              <li class='progress done'>How does a service worker work?</li>
-              <li class='progress done'>HTTPS</li>
-              <li class='progress done'>Registering the Service Worker</li>
-              <li class='progress done'>Service Worker Scope</li>
-              <li class='progress done'>The Service Worker Events & Debugging</li>
-              <li class='progress done'>Quiz: Service Worker Scope</li>
-              <li class='progress done'>Caching The App Shell on Install</li>
-              <li class='progress done'>Updating the Cache</li>
-              <li class='progress done'>Handling the Fetch Event</li>
-              <li class='progress done'>Beware</li>
-              <li class='progress done'>Quiz: Update your project - Cache</li>
-              <li class='progress done'>Caching Strategies Intro</li>
-              <li class='progress done'>Cache First, then Network</li>
-              <li class='progress done'>Network First, then Cache</li>
-              <li class='progress done'>Cache Only</li>
-              <li class='progress done'>Network Only</li>
-              <li class='progress done'>Cache and Network Race</li>
-              <li class='progress done'>Cache Then Network</li>
-              <li class='progress done'>Summary</li>
-              <li class='progress done'>Quiz: Pick a caching strategy</li>
-              <li class='progress done'>Picking the Right Caching Strategy</li>
-              <li class='progress done'>Intercept the Request and Cache</li>
-              <li class='progress done'>Making the Request</li>
-              <li class='progress done'>Update Your Project</li>
-              <li class='progress done'>Update Your Project</li>
-              <li class='progress done'>Update Your Project</li>
-              <li class='progress done'>Using Service Worker Precache</li>
-              <li class='progress done'>Update Your Project</li>
-              <li class='progress done'>Quiz: Update Your Project - sw-precache</li>
-              <li class='progress done'>Outro</li>
+            <p class='text-body'>Create sequences of asynchronous work by chaining Promises together and dive into more advanced error handling.</p>
+            <ul style='list-style: disc;'>
+              <li class='text-body'>Creating sequences of async work manually.</li>
+              <li class='text-body'>Advanced error handling.</li>
+              <li class='text-body'>Techniques for generating sequences of async work with array methods.</li>
             </ul>
-          `
-        },
-        {
-          "courseClassTitle": "Web App Manifest",
-          "courseClassProgress": 30,
-          "courseClassContent": `
             <ul>
-              <li class='progress done'>Intro</li>
-              <li class='progress done'>Web App Manifest</li>
-              <li class='progress done'>Quiz: Validate your manifest</li>
-              <li class='progress'>Web App Install Banners</li>
-              <li class='progress'>Add to Home Screen Elements for Safari</li>
-              <li class='progress'>Deploy to an HTTPS Host</li>
-              <li class='progress'>Update Your Project</li>
-              <li class='progress'>Quiz: Update Your Project</li>
-              <li class='progress'>Wrap-Up</li>
-              <li class='progress'>What Next?</li>
+              <li class='progress'>Quiz: Fetch and Show First Planet</li>
+              <li class='progress'>Error Handling Strategies</li>
+              <li class='progress'>Quiz: Chained Thenables</li>
+              <li class='progress'>Quiz: Series vs Parallel Requests</li>
+              <li class='progress'>Array Methods and Promises</li>
+              <li class='progress'>Quiz: Promises with .forEach</li>
+              <li class='progress'>Quiz: Promises with .map</li>
+              <li class='progress'>Quiz: All Promises</li>
+              <li class='progress'>Course Outro</li>
+              <li class='progress'>Exoplanets 101</li>
+              <li class='progress'>Quiz: Bonus Question: Parallel Requests</li>
             </ul>
           `
         }
@@ -111,7 +73,7 @@
       "active": true,
       "courseVendorName": "Google Training",
       "courseVendor": "Build Progressive Web Apps",
-      "courseProgress": 26,
+      "courseProgress": 67,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "June",
@@ -121,7 +83,7 @@
       "courseList": [
         {
           "courseClassTitle": "Intro to Progressive Web Apps",
-          "courseClassProgress": 77,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <h3 class='western'>Free, self-paced, online course.</h3>
             <p class='text-body'>Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.</p>
@@ -130,7 +92,7 @@
         },
         {
           "courseClassTitle": "Offline Web Applications",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <h3 class='western'>Free, self-paced, online course.</h3>
             <p class='text-body'>In this entertaining, fast-paced class, learn to analyze your own app, select the right caching patterns, use the Service Worker Toolbox, and handle dynamic data via IndexedDB.</p>
@@ -139,7 +101,7 @@
         },
         {
           "courseClassTitle": "JavaScript Promises",
-          "courseClassProgress": 0,
+          "courseClassProgress": 2,
           "courseClassContent": `
             <p class='text-body'>Who needs the complication of writing code to handle asynchronous activities that happen out of your app's control, such as network requests and file I/O? JavaScript Promises make asynchronous code as easy to write as doThis().then(that).then(something_else).</p>
             <h3 class='western'>Approx. 3 weeks Advanced</h3>
@@ -326,6 +288,112 @@
               <li class='progress done'>Quiz: Cleaning Photo Cache Quiz</li>
               <li class='progress done'>Quiz: Caching Avatars</li>
               <li class='progress done'>Outro</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-2",
+      "active": true,
+      "courseVendorName": "Udacity",
+      "courseVendor": "Intro to Progressive Web Apps",
+      "courseProgress": 100,
+      "courseDesc": "Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.",
+      "courseDateStarted": "June 2018",
+      "courseDateLast": "June",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "intro-pwa",
+      "courseURL": "https://classroom.udacity.com/courses/ud811",
+      "courseList": [
+        {
+          "courseClassTitle": "Progressive Web Apps",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul>
+              <li class='progress done'>Intro and Hook</li>
+              <li class='progress done'>Introduction</li>
+              <li class='progress done'>Why Build a Progressive Web App?</li>
+              <li class='progress done'>Technologies Behind Progressive Web Apps</li>
+              <li class='progress done'>What is an App Shell?</li>
+              <li class='progress done'>Why use an App Shell?</li>
+              <li class='progress done'>Design the App Shell</li>
+              <li class='progress done'>Quiz: What Goes In the App Shell?</li>
+              <li class='progress done'>The Weather App Shell</li>
+              <li class='progress done'>Start your project</li>
+              <li class='progress done'>Quiz: Update Your Project</li>
+              <li class='progress done'>Quiz: What Does What?</li>
+              <li class='progress done'>Get data on screen as fast as possible</li>
+              <li class='progress done'>Server-Side Rendering</li>
+              <li class='progress done'>Get Data via an AJAX Request</li>
+              <li class='progress done'>Inject the Data</li>
+              <li class='progress done'>Update your project</li>
+              <li class='progress done'>Quiz: Update Your Project</li>
+              <li class='progress done'>Storage Intro</li>
+              <li class='progress done'>Local Storage</li>
+              <li class='progress done'>Caches Object</li>
+              <li class='progress done'>IndexedDB</li>
+              <li class='progress done'>It’s not permanent</li>
+              <li class='progress done'>Update your project</li>
+              <li class='progress done'>Quiz: Update Your Project</li>
+              <li class='progress done'>Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Service Workers",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul>
+              <li class='progress done'>What is a service worker?</li>
+              <li class='progress done'>How does a service worker work?</li>
+              <li class='progress done'>HTTPS</li>
+              <li class='progress done'>Registering the Service Worker</li>
+              <li class='progress done'>Service Worker Scope</li>
+              <li class='progress done'>The Service Worker Events & Debugging</li>
+              <li class='progress done'>Quiz: Service Worker Scope</li>
+              <li class='progress done'>Caching The App Shell on Install</li>
+              <li class='progress done'>Updating the Cache</li>
+              <li class='progress done'>Handling the Fetch Event</li>
+              <li class='progress done'>Beware</li>
+              <li class='progress done'>Quiz: Update your project - Cache</li>
+              <li class='progress done'>Caching Strategies Intro</li>
+              <li class='progress done'>Cache First, then Network</li>
+              <li class='progress done'>Network First, then Cache</li>
+              <li class='progress done'>Cache Only</li>
+              <li class='progress done'>Network Only</li>
+              <li class='progress done'>Cache and Network Race</li>
+              <li class='progress done'>Cache Then Network</li>
+              <li class='progress done'>Summary</li>
+              <li class='progress done'>Quiz: Pick a caching strategy</li>
+              <li class='progress done'>Picking the Right Caching Strategy</li>
+              <li class='progress done'>Intercept the Request and Cache</li>
+              <li class='progress done'>Making the Request</li>
+              <li class='progress done'>Update Your Project</li>
+              <li class='progress done'>Update Your Project</li>
+              <li class='progress done'>Update Your Project</li>
+              <li class='progress done'>Using Service Worker Precache</li>
+              <li class='progress done'>Update Your Project</li>
+              <li class='progress done'>Quiz: Update Your Project - sw-precache</li>
+              <li class='progress done'>Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Web App Manifest",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul>
+              <li class='progress done'>Intro</li>
+              <li class='progress done'>Web App Manifest</li>
+              <li class='progress done'>Quiz: Validate your manifest</li>
+              <li class='progress done'>Web App Install Banners</li>
+              <li class='progress done'>Add to Home Screen Elements for Safari</li>
+              <li class='progress done'>Deploy to an HTTPS Host</li>
+              <li class='progress done'>Update Your Project</li>
+              <li class='progress done'>Quiz: Update Your Project</li>
+              <li class='progress done'>Wrap-Up</li>
+              <li class='progress done'>What Next?</li>
             </ul>
           `
         }
