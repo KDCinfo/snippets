@@ -48,7 +48,7 @@
           `
         },
         {
-          "courseClassTitle": "Introducing the Service Worker",
+          "courseClassTitle": "Service Workers",
           "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
@@ -87,7 +87,7 @@
           `
         },
         {
-          "courseClassTitle": "IndexedDB and Caching",
+          "courseClassTitle": "Web App Manifest",
           "courseClassProgress": 30,
           "courseClassContent": `
             <ul>
