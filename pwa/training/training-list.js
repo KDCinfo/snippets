@@ -5,7 +5,7 @@
       "active": true,
       "courseVendorName": "Udacity",
       "courseVendor": "JavaScript Promises",
-      "courseProgress": 2,
+      "courseProgress": 42,
       "courseDesc": "Learn how to handle asynchronous work with ease! In this course, you'll use Native JavaScript Promises to write asynchronous code that is easy to read, easy to write and easy to debug. Along the way, you'll be using Promises to make a webapp come to life!",
       "courseDateStarted": "June 2018",
       "courseDateLast": "June",
@@ -15,46 +15,48 @@
       "courseList": [
         {
           "courseClassTitle": "Creating Promises",
-          "courseClassProgress": 7,
+          "courseClassProgress": 100,
           "courseClassContent": `
-            <p class='text-body'>Learn what a promise is, how it makes writing asynchronous JavaScript simpler and how to handle errors.</p>
             <ul style='list-style: disc;'>
               <li class='text-body'>Promises syntax and scope.</li>
               <li class='text-body'>Simplifying common, useful methods with Promises.</li>
               <li class='text-body'>Basic error handling.</li>
             </ul>
+            <p class='text-body'>Learn what a promise is, how it makes writing asynchronous JavaScript simpler and how to handle errors.</p>
             <ul>
               <li class='progress done'>Course Introduction</li>
-              <li class='progress'>Callbacks vs Promises</li>
-              <li class='progress'>Callbacks vs Thens</li>
-              <li class='progress'>Course Map</li>
-              <li class='progress'>Promise Timeline</li>
-              <li class='progress'>Quiz: Async Scenarios</li>
-              <li class='progress'>Syntax</li>
-              <li class='progress'>Quiz: Write Your First Promise</li>
-              <li class='progress'>Quiz: Wrapping readyState</li>
-              <li class='progress'>IMPORTANT! Working w/Exoplanet Explorer</li>
-              <li class='progress'>Quiz: Wrap an XHR</li>
-              <li class='progress'>Web Technologies</li>
-              <li class='progress'>Quiz: Fetch API</li>
-              <li class='progress'>What Happens Next?</li>
+              <li class='progress done'>Web Components and the Polymer Project</li>
+              <li class='progress done'>PWA Starter Kit</li>
+              <li class='progress done'>Callbacks vs Promises</li>
+              <li class='progress done'>Callbacks vs Thens</li>
+              <li class='progress done'>Course Map</li>
+              <li class='progress done'>Promise Timeline</li>
+              <li class='progress done'>Quiz: Async Scenarios</li>
+              <li class='progress done'>Syntax</li>
+              <li class='progress done'>Quiz: Write Your First Promise</li>
+              <li class='progress done'>Quiz: Wrapping readyState</li>
+              <li class='progress done'>IMPORTANT! Working w/Exoplanet Explorer</li>
+              <li class='progress done'>Quiz: Wrap an XHR</li>
+              <li class='progress done'>Web Technologies</li>
+              <li class='progress done'>Quiz: Fetch API</li>
+              <li class='progress done'>What Happens Next?</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Chaining Promises",
-          "courseClassProgress": 0,
+          "courseClassProgress": 27,
           "courseClassContent": `
-            <p class='text-body'>Create sequences of asynchronous work by chaining Promises together and dive into more advanced error handling.</p>
             <ul style='list-style: disc;'>
               <li class='text-body'>Creating sequences of async work manually.</li>
               <li class='text-body'>Advanced error handling.</li>
               <li class='text-body'>Techniques for generating sequences of async work with array methods.</li>
             </ul>
+            <p class='text-body'>Create sequences of asynchronous work by chaining Promises together and dive into more advanced error handling.</p>
             <ul>
-              <li class='progress'>Quiz: Fetch and Show First Planet</li>
-              <li class='progress'>Error Handling Strategies</li>
-              <li class='progress'>Quiz: Chained Thenables</li>
+              <li class='progress done'>Quiz: Fetch and Show First Planet</li>
+              <li class='progress done'>Error Handling Strategies</li>
+              <li class='progress done'>Quiz: Chained Thenables</li>
               <li class='progress'>Quiz: Series vs Parallel Requests</li>
               <li class='progress'>Array Methods and Promises</li>
               <li class='progress'>Quiz: Promises with .forEach</li>
@@ -73,7 +75,7 @@
       "active": true,
       "courseVendorName": "Google Training",
       "courseVendor": "Build Progressive Web Apps",
-      "courseProgress": 67,
+      "courseProgress": 81,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "June",
@@ -101,7 +103,7 @@
         },
         {
           "courseClassTitle": "JavaScript Promises",
-          "courseClassProgress": 2,
+          "courseClassProgress": 42,
           "courseClassContent": `
             <p class='text-body'>Who needs the complication of writing code to handle asynchronous activities that happen out of your app's control, such as network requests and file I/O? JavaScript Promises make asynchronous code as easy to write as doThis().then(that).then(something_else).</p>
             <h3 class='western'>Approx. 3 weeks Advanced</h3>
