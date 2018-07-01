@@ -1,70 +1,169 @@
 {
   "classList": [
     {
-      "id": "udacity-3",
+      "id": "udacity-4",
       "active": true,
-      "courseVendorName": "Udacity",
-      "courseVendor": "JavaScript Promises",
-      "courseProgress": 42,
-      "courseDesc": "Learn how to handle asynchronous work with ease! In this course, you'll use Native JavaScript Promises to write asynchronous code that is easy to read, easy to write and easy to debug. Along the way, you'll be using Promises to make a webapp come to life!",
+      "courseVendorName": "Udacity (2a)",
+      "courseVendor": "Web Accessibility",
+      "courseProgress": 25,
+      "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "June",
       "courseShortVendor": "udacity-courses",
-      "courseShortName": "js-promises",
-      "courseURL": "https://classroom.udacity.com/courses/ud898",
+      "courseShortName": "web-accessibility",
+      "courseURL": "https://classroom.udacity.com/courses/ud891",
       "courseList": [
         {
-          "courseClassTitle": "Creating Promises",
+          "courseClassTitle": "Accessibility Overview",
           "courseClassProgress": 100,
           "courseClassContent": `
-            <ul style='list-style: disc;'>
-              <li class='text-body'>Promises syntax and scope.</li>
-              <li class='text-body'>Simplifying common, useful methods with Promises.</li>
-              <li class='text-body'>Basic error handling.</li>
-            </ul>
-            <p class='text-body'>Learn what a promise is, how it makes writing asynchronous JavaScript simpler and how to handle errors.</p>
+            <p class='text-body'>Explore the diversity of different users experience with web sites and applications. Learn about using screen readers practically and recognize the challenge of building web experiences for all users.</p>
             <ul>
-              <li class='progress done'>Course Introduction</li>
-              <li class='progress done'>Web Components and the Polymer Project</li>
-              <li class='progress done'>PWA Starter Kit</li>
-              <li class='progress done'>Callbacks vs Promises</li>
-              <li class='progress done'>Callbacks vs Thens</li>
-              <li class='progress done'>Course Map</li>
-              <li class='progress done'>Promise Timeline</li>
-              <li class='progress done'>Quiz: Async Scenarios</li>
-              <li class='progress done'>Syntax</li>
-              <li class='progress done'>Quiz: Write Your First Promise</li>
-              <li class='progress done'>Quiz: Wrapping readyState</li>
-              <li class='progress done'>IMPORTANT! Working w/Exoplanet Explorer</li>
-              <li class='progress done'>Quiz: Wrap an XHR</li>
-              <li class='progress done'>Web Technologies</li>
-              <li class='progress done'>Quiz: Fetch API</li>
-              <li class='progress done'>What Happens Next?</li>
+              <li class='progress done'>Introduction to Accessibility</li>
+              <li class='progress done'>What is Accessibility</li>
+              <li class='progress done'>Understanding the diversity of users</li>
+              <li class='progress done'>Quiz: Diversity of Users (Broken Arm)</li>
+              <li class='progress done'>Quiz: Diversity of Users (Blindness)</li>
+              <li class='progress done'>Quiz: Diversity of Users (Audio)</li>
+              <li class='progress done'>Quiz: Diversity of Users (Baby)</li>
+              <li class='progress done'>Quiz: Diversity of Users (Concussion)</li>
+              <li class='progress done'>Quiz: Diversity of Users (RSI)</li>
+              <li class='progress done'>Using a Screen Reader</li>
+              <li class='progress done'>Quiz: Experiencing a screen reader</li>
+              <li class='progress done'>Checklists</li>
+              <li class='progress done'>Quiz: Using WebAIM Checklist</li>
+              <li class='progress done'>Gear Shift into Course Practicalities</li>
             </ul>
           `
         },
         {
-          "courseClassTitle": "Chaining Promises",
-          "courseClassProgress": 27,
+          "courseClassTitle": "Focus",
+          "courseClassProgress": 50,
           "courseClassContent": `
-            <ul style='list-style: disc;'>
-              <li class='text-body'>Creating sequences of async work manually.</li>
-              <li class='text-body'>Advanced error handling.</li>
-              <li class='text-body'>Techniques for generating sequences of async work with array methods.</li>
-            </ul>
-            <p class='text-body'>Create sequences of asynchronous work by chaining Promises together and dive into more advanced error handling.</p>
+            <p class='text-body'>Manage focus - the location on a page that receives input from the keyboard. Discover how some users navigate website entirely with the keyboard, and how to optimize their experience.</p>
             <ul>
-              <li class='progress done'>Quiz: Fetch and Show First Planet</li>
-              <li class='progress done'>Error Handling Strategies</li>
-              <li class='progress done'>Quiz: Chained Thenables</li>
-              <li class='progress'>Quiz: Series vs Parallel Requests</li>
-              <li class='progress'>Array Methods and Promises</li>
-              <li class='progress'>Quiz: Promises with .forEach</li>
-              <li class='progress'>Quiz: Promises with .map</li>
-              <li class='progress'>Quiz: All Promises</li>
+              <li class='progress done'>Introduction to Focus</li>
+              <li class='progress done'>What is Focus?</li>
+              <li class='progress done'>Quiz: Experiencing Focus</li>
+              <li class='progress done'>DOM Order Matters</li>
+              <li class='progress done'>Quiz: Fixing DOM Order</li>
+              <li class='progress done'>Using Tabindex</li>
+              <li class='progress done'>Deciding whats in focus</li>
+              <li class='progress done'>Quiz: Which Elements Should Have Focus?</li>
+              <li class='progress done'>Managing Focus</li>
+              <li class='progress'>Quiz: Manage Focus Yourself</li>
+              <li class='progress'>Skip Links</li>
+              <li class='progress'>Focus in Complex Components</li>
+              <li class='progress'>Keyboard Design Patterns</li>
+              <li class='progress'>Quiz: Implementing Keyboard Event Listeners</li>
+              <li class='progress'>Offscreen Content</li>
+              <li class='progress'>Quiz: Implementing Offscreen Content</li>
+              <li class='progress'>Modals and Keyboard Traps</li>
+              <li class='progress'>Lesson 2 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Semantics Basics",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Dive into the differences between visual UI and semantically designed accessible UI. Add semantic elements to HTML to create a user interface that works for everyone.</p>
+            <ul>
+              <li class='progress'>Semantics Introduction</li>
+              <li class='progress'>Assistive Technology</li>
+              <li class='progress'>Affordances</li>
+              <li class='progress'>Quiz: Experiencing Affordances</li>
+              <li class='progress'>Semantics and Assistive Technology</li>
+              <li class='progress'>Quiz: Experience Using a Screenreader</li>
+              <li class='progress'>Role, Name, Value</li>
+              <li class='progress'>Quiz: Experience a Screen Reader 2</li>
+              <li class='progress'>The Accessibility Tree</li>
+              <li class='progress'>Quiz: Matching simple DOM and A11y Tree</li>
+              <li class='progress'>Semantics in Native HTML</li>
+              <li class='progress'>Quiz: Writing Semantic HTML Quiz</li>
+              <li class='progress'>Writing Semantic HTML: The Name Game</li>
+              <li class='progress'>Quiz: Labeling Input Elements</li>
+              <li class='progress'>Text Alternatives</li>
+              <li class='progress'>Quiz: Labeling Images With ALT Text</li>
+              <li class='progress'>Lesson 3 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Navigating Content",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Implement effective semantic navigation using headings, link text and landmarks.</p>
+            <ul>
+              <li class='progress'>Semantics - Navigating content - Intro</li>
+              <li class='progress'>Navigating with a screen reader</li>
+              <li class='progress'>Navigating by Headings</li>
+              <li class='progress'>Using Headings</li>
+              <li class='progress'>Quiz: Using Headings</li>
+              <li class='progress'>Other navigational options</li>
+              <li class='progress'>Other navigational options example</li>
+              <li class='progress'>Link Text</li>
+              <li class='progress'>Quiz: Link Text</li>
+              <li class='progress'>Landmarks</li>
+              <li class='progress'>Quiz: Landmarks</li>
+              <li class='progress'>Outro Lesson 4</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "ARIA",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Sometimes an HTML element may not have a role or value assigned semantically. In this lesson, you'll use ARIA attributes to provide context for screen readers.</p>
+            <ul>
+              <li class='progress'>Intro to Semantics: ARIA</li>
+              <li class='progress'>Why ARIA</li>
+              <li class='progress'>Quiz: First Steps with ARIA</li>
+              <li class='progress'>What can ARIA do for you?</li>
+              <li class='progress'>Roleplaying</li>
+              <li class='progress'>Quiz: Custom radio button group with ARIA</li>
+              <li class='progress'>More Ways to Label</li>
+              <li class='progress'>Quiz: Name That Element!</li>
+              <li class='progress'>Breather</li>
+              <li class='progress'>Default Semantics and Landmarks</li>
+              <li class='progress'>ARIA Relationships</li>
+              <li class='progress'>Quiz: Combo Box</li>
+              <li class='progress'>Hidden In Plain Sight</li>
+              <li class='progress'>Quiz: Name That Element Round 2</li>
+              <li class='progress'>Recap so far</li>
+              <li class='progress'>Introducing ARIA Live</li>
+              <li class='progress'>Atomic Relevant Busy</li>
+              <li class='progress'>Recap</li>
+              <li class='progress'>Quiz: Modal Dialog Quiz</li>
+              <li class='progress'>Outro Lesson 5</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Style",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Incorporate CSS styling into your accessible web design and use accessible color schemes to improve accessibility.</p>
+            <ul>
+              <li class='progress'>Introduction to Style</li>
+              <li class='progress'>Working with focus styles</li>
+              <li class='progress'>Quiz: Write your own focus styles</li>
+              <li class='progress'>Input Modality</li>
+              <li class='progress'>Styling with Aria</li>
+              <li class='progress'>Quiz: Quiz: Styling with ARIA</li>
+              <li class='progress'>Responsive design for multi-device</li>
+              <li class='progress'>Responsive design for multi-device Pt. 2</li>
+              <li class='progress'>Mobile Screen Readers</li>
+              <li class='progress'>Mobile Screen Readers iOS</li>
+              <li class='progress'>Mobile Screen Readers Android</li>
+              <li class='progress'>Quiz: Using Mobile Screen Readers</li>
+              <li class='progress'>Segue to Color & Contrast</li>
+              <li class='progress'>Meeting Contrast Requirements</li>
+              <li class='progress'>Quiz: Contrast Audit</li>
+              <li class='progress'>Don't convey info with color alone</li>
+              <li class='progress'>High Contrast Mode</li>
+              <li class='progress'>Outro</li>
               <li class='progress'>Course Outro</li>
-              <li class='progress'>Exoplanets 101</li>
-              <li class='progress'>Quiz: Bonus Question: Parallel Requests</li>
             </ul>
           `
         }
@@ -73,12 +172,12 @@
     {
       "id": "google-1",
       "active": true,
-      "courseVendorName": "Google Training",
+      "courseVendorName": "Google Training (1*)",
       "courseVendor": "Build Progressive Web Apps",
-      "courseProgress": 81,
+      "courseProgress": 100,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
       "courseDateStarted": "May 2018",
-      "courseDateLast": "June",
+      "courseDateLast": "May—Jun",
       "courseShortVendor": "google-training",
       "courseShortName": "pwa",
       "courseURL": "",
@@ -103,7 +202,7 @@
         },
         {
           "courseClassTitle": "JavaScript Promises",
-          "courseClassProgress": 42,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Who needs the complication of writing code to handle asynchronous activities that happen out of your app's control, such as network requests and file I/O? JavaScript Promises make asynchronous code as easy to write as doThis().then(that).then(something_else).</p>
             <h3 class='western'>Approx. 3 weeks Advanced</h3>
@@ -114,19 +213,19 @@
     {
       "id": "google-2",
       "active": true,
-      "courseVendorName": "Google Training",
+      "courseVendorName": "Google Training (2*)",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 0,
+      "courseProgress": 8,
       "courseDesc": "None provided.",
-      "courseDateStarted": "TBD",
-      "courseDateLast": "",
+      "courseDateStarted": "June 2018",
+      "courseDateLast": "June",
       "courseShortVendor": "google-training",
       "courseShortName": "all-devices",
       "courseURL": "",
       "courseList": [
         {
           "courseClassTitle": "Web Accessibility",
-          "courseClassProgress": 0,
+          "courseClassProgress": 25,
           "courseClassContent": `
             <p class='text-body'>Everybody deserves access to their apps, even when affected by age, vision concerns, limited hearing, a broken arm, or other limitations.</p>
             <p class='text-body'>This course dives into the why and how of making web apps accessible. As a bonus, accessible sites tend to be more usable for all!</p>
@@ -156,7 +255,7 @@
     {
       "id": "google-3",
       "active": true,
-      "courseVendorName": "Google Training",
+      "courseVendorName": "Google Training (3*)",
       "courseVendor": "Improve the user experience",
       "courseProgress": 0,
       "courseDesc": "None provided.",
@@ -203,12 +302,12 @@
     {
       "id": "udacity-1",
       "active": true,
-      "courseVendorName": "Udacity",
+      "courseVendorName": "Udacity (1a)",
       "courseVendor": "Offline Web Applications",
       "courseProgress": 100,
       "courseDesc": "This course was found by way of Jake Archibald's 'The offline cookbook' (a.k.a., caching strategies) [https://jakearchibald.com/2014/offline-cookbook/] ... This course provides a ton of relevant and fully functional examples, with a little humor sprinkled throughout.",
       "courseDateStarted": "May 2018",
-      "courseDateLast": "May—Jun",
+      "courseDateLast": "May",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "offline",
       "courseURL": "https://classroom.udacity.com/courses/ud899",
@@ -298,7 +397,7 @@
     {
       "id": "udacity-2",
       "active": true,
-      "courseVendorName": "Udacity",
+      "courseVendorName": "Udacity (1b)",
       "courseVendor": "Intro to Progressive Web Apps",
       "courseProgress": 100,
       "courseDesc": "Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.",
@@ -335,7 +434,7 @@
               <li class='progress done'>Local Storage</li>
               <li class='progress done'>Caches Object</li>
               <li class='progress done'>IndexedDB</li>
-              <li class='progress done'>It’s not permanent</li>
+              <li class='progress done'>It's not permanent</li>
               <li class='progress done'>Update your project</li>
               <li class='progress done'>Quiz: Update Your Project</li>
               <li class='progress done'>Outro</li>
@@ -396,6 +495,76 @@
               <li class='progress done'>Quiz: Update Your Project</li>
               <li class='progress done'>Wrap-Up</li>
               <li class='progress done'>What Next?</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-3",
+      "active": true,
+      "courseVendorName": "Udacity (1c)",
+      "courseVendor": "JavaScript Promises",
+      "courseProgress": 100,
+      "courseDesc": "Learn how to handle asynchronous work with ease! In this course, you'll use Native JavaScript Promises to write asynchronous code that is easy to read, easy to write and easy to debug. Along the way, you'll be using Promises to make a webapp come to life!",
+      "courseDateStarted": "June 2018",
+      "courseDateLast": "June",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "js-promises",
+      "courseURL": "https://classroom.udacity.com/courses/ud898",
+      "courseList": [
+        {
+          "courseClassTitle": "Creating Promises",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul style='list-style: disc;'>
+              <li class='text-body'>Promises syntax and scope.</li>
+              <li class='text-body'>Simplifying common, useful methods with Promises.</li>
+              <li class='text-body'>Basic error handling.</li>
+            </ul>
+            <p class='text-body'>Learn what a promise is, how it makes writing asynchronous JavaScript simpler and how to handle errors.</p>
+            <ul>
+              <li class='progress done'>Course Introduction</li>
+              <li class='progress done'>Web Components and the Polymer Project</li>
+              <li class='progress done'>PWA Starter Kit</li>
+              <li class='progress done'>Callbacks vs Promises</li>
+              <li class='progress done'>Callbacks vs Thens</li>
+              <li class='progress done'>Course Map</li>
+              <li class='progress done'>Promise Timeline</li>
+              <li class='progress done'>Quiz: Async Scenarios</li>
+              <li class='progress done'>Syntax</li>
+              <li class='progress done'>Quiz: Write Your First Promise</li>
+              <li class='progress done'>Quiz: Wrapping readyState</li>
+              <li class='progress done'>IMPORTANT! Working w/Exoplanet Explorer</li>
+              <li class='progress done'>Quiz: Wrap an XHR</li>
+              <li class='progress done'>Web Technologies</li>
+              <li class='progress done'>Quiz: Fetch API</li>
+              <li class='progress done'>What Happens Next?</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Chaining Promises",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul style='list-style: disc;'>
+              <li class='text-body'>Creating sequences of async work manually.</li>
+              <li class='text-body'>Advanced error handling.</li>
+              <li class='text-body'>Techniques for generating sequences of async work with array methods.</li>
+            </ul>
+            <p class='text-body'>Create sequences of asynchronous work by chaining Promises together and dive into more advanced error handling.</p>
+            <ul>
+              <li class='progress done'>Quiz: Fetch and Show First Planet</li>
+              <li class='progress done'>Error Handling Strategies</li>
+              <li class='progress done'>Quiz: Chained Thenables</li>
+              <li class='progress done'>Quiz: Series vs Parallel Requests</li>
+              <li class='progress done'>Array Methods and Promises</li>
+              <li class='progress done'>Quiz: Promises with .forEach</li>
+              <li class='progress done'>Quiz: Promises with .map</li>
+              <li class='progress done'>Quiz: All Promises</li>
+              <li class='progress done'>Course Outro</li>
+              <li class='progress done'>Exoplanets 101</li>
+              <li class='progress done'>Quiz: Bonus Question: Parallel Requests</li>
             </ul>
           `
         }
