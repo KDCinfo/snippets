@@ -597,6 +597,14 @@
     }, 50);
   };
 
+  app.focusCloseIt = function() {
+    setTimeout( () => {
+      const closeIt = document.querySelector('.close-it');
+      closeIt.scrollIntoView({behavior: 'smooth', block: 'start'});
+      setTimeout( () => closeIt.focus(), 500);
+    }, 300);
+  };
+
   app.clickClass = function(e) {
     // `this` refers to clicked DOM Node's index in: boxes
 
@@ -637,15 +645,16 @@
 
       // Now that it's attached to the DOM, we can cycle through and attach an event listener to each topic.
       classContent.querySelector('.cc-courseList').querySelectorAll('.course-node').forEach( elem => {
+
         elem.querySelector('.expand-it').addEventListener('click', e => app.expandTopic(e));
       });
-
     }, 250);
 
     nodeContent.parentNode.parentNode.classList.add('maxit');
     app.moveNodes();
     setTimeout( () => {
       document.querySelector('.content-wrapper .content').style.opacity = 1;
+      app.focusCloseIt();
     }, 501);
   };
 
