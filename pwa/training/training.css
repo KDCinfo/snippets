@@ -9,16 +9,13 @@
     --post-it-3b: 2deg;
     --post-it-4b: -1deg;
   --post-it-cut-1a: 35px solid hsl(120, 62%, 35%);
-  --post-it-cut-1b: 20px solid white;
-  /*--post-it-cut-2a: 25px solid hsl(120, 56%, 49%);*/
+  --post-it-cut-1b: 20px solid hsl(45, 100%, 90%);
   --post-it-cut-2a: 35px solid hsl(120, 62%, 35%);
-  --post-it-cut-2b: 30px solid white;
-  /*--post-it-cut-3a: 30px solid hsl(156, 66%, 26%);*/
+  --post-it-cut-2b: 30px solid hsl(45, 100%, 90%);
   --post-it-cut-3a: 25px solid hsl(120, 62%, 35%);
-  --post-it-cut-3b: 35px solid white;
-  /*--post-it-cut-4a: 20px solid hsl(156, 93%, 37%);*/
+  --post-it-cut-3b: 35px solid hsl(45, 100%, 90%);
   --post-it-cut-4a: 40px solid hsl(120, 62%, 35%);
-  --post-it-cut-4b: 25px solid white;
+  --post-it-cut-4b: 25px solid hsl(45, 100%, 90%);
 }
 
 body {
@@ -121,7 +118,9 @@ header h1 {
   max-width: 650px;
 }
 footer {
+  grid-area: pagefooter;
   margin: 0 auto;
+  padding: 0 0 0 1.5rem;
   position: relative;
   text-align: center;
   width: 98%;
@@ -129,8 +128,8 @@ footer {
   footer .message {
     border-top: 1px solid hsla(195, 100%, 41%, 0.5);
     font-size: 14px;
-    margin: 1.5rem 0 0;
-    padding: 0.5rem 0 0;
+    margin: 0;
+    padding: 1.0rem 0 0;
   }
   footer .msg,
   footer .msg a {
@@ -408,20 +407,24 @@ ul {
 .main-wrapper {
   display: grid;
     grid-column-gap: 0.5rem;
-    grid-row-gap: 20px;
+    grid-row-gap: 0.2rem;
     grid-template-areas:
-      "pageleft";
+      "pagetop"
+      "pageleft"
+      "pagefooter";
     grid-template-columns: 1fr;
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 0.5rem;
   width: 98%;
-  /* 250px | min: 300px ? */
+  /*  250px   |   500px   */
   /* pageleft | pageright */
 }
   .main-wrapper.maxit {
     grid-template-areas:
       "pageleft"
-      "pageright";
+      "pageright"
+      "pagefooter";
     grid-template-columns: 1fr;
   }
   .main-wrapper .content-wrapper {
@@ -437,10 +440,26 @@ ul {
 @media (min-width: 675px) {
   .main-wrapper.maxit {
     grid-template-areas:
-      "pageleft pageright";
-    grid-template-columns: 275px minmax(auto, 1000px);
+      "pageleft pageright"
+      "pageleft pagefooter";
+    grid-template-columns: 250px minmax(auto, 825px);
     grid-column-gap: 0.5rem;
   }
+}
+@media (min-width: 1076px) {
+  .main-wrapper.maxit {
+    grid-template-areas:
+      "pageleft pageright"
+      "pagefooter pagefooter";
+    grid-template-columns: 500px auto;
+  }
+}
+
+div.cards.h4 {
+  grid-area: pagetop;
+}
+.main-wrapper.maxit div.cards.h4 {
+  display: none;
 }
 
 main.main {
@@ -448,7 +467,11 @@ main.main {
   padding: 0 0.75rem 1rem;
   vertical-align: top;
   white-space: normal;
-
+  /* Adding some coloring */
+  background-color: hsl(45, 100%, 90%);
+  box-shadow: inset 3px 3px grey;
+  border: 3px double orange;
+  border-radius: 1rem;
   /* From CodePen */
   /*align-items: stretch;*/
   align-self: flex-start;
@@ -456,8 +479,8 @@ main.main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0 auto;
-  padding: 0 0.5rem 1rem;
+  margin: 1rem auto 0;
+  padding: 0 0.5rem 1.5rem;
   position: relative;
   transition: all 2s;
 }
@@ -468,7 +491,7 @@ main.main {
   .main-wrapper.maxit .content-wrapper {
     display: inline-block;
     grid-area: pageright;
-    margin: 0;
+    margin: 0 0 0 1.5rem;
     opacity: 1;
     padding: 1rem 0.5rem 1rem 0;
     text-align: center;
@@ -486,28 +509,16 @@ main.main {
     }
   @media (min-width: 675px) {
     .main-wrapper.maxit main.main {
-      width: 250px;
-        min-width: 250px;
-        max-width: 250px;
-    }
-    .main-wrapper.maxit main.main {
-      max-height: calc(100vh - 130px);
-      overflow: visible;/* ^ Override: Let page scroll */
+      /*max-height: calc(100vh - 130px);*/
+      max-height: 100%;
+      overflow: visible;
       width: calc(100% - 50px);
+        min-width: 250px;
     }
   }
   @media (min-width: 1400px) {
-    .main-wrapper {
-      max-width: 1400px;
-    }
     .main-wrapper.maxit {
-      grid-template-columns: 600px auto;
       grid-column-gap: 1em;
-    }
-    .main-wrapper.maxit main.main {
-      width: 550px;
-        min-width: 550px;
-        max-width: 550px;
     }
     .main-wrapper.maxit .content-wrapper {
       width: calc(100% - 15px);
@@ -549,73 +560,85 @@ main.main {
 
   /* 'Cut Corners' thanks to: [Joseph Silber](https://stackoverflow.com/a/7324826/638153) */
   .main-wrapper main.main .card:nth-child(1):before,
-  .main-wrapper main.main .card:nth-child(6):before {
+  .main-wrapper main.main .card:nth-child(5):before,
+  .main-wrapper main.main .card:nth-child(9):before,
+  .main-wrapper main.main .card:nth-child(13):before {
     border-left: var(--post-it-cut-1a);
     border-top: var(--post-it-cut-1b);
   }
   .main-wrapper main.main .card:nth-child(2):before,
-  .main-wrapper main.main .card:nth-child(7):before {
+  .main-wrapper main.main .card:nth-child(6):before,
+  .main-wrapper main.main .card:nth-child(10):before,
+  .main-wrapper main.main .card:nth-child(14):before {
     border-left: var(--post-it-cut-2a);
     border-top: var(--post-it-cut-2b);
   }
   .main-wrapper main.main .card:nth-child(3):before,
-  .main-wrapper main.main .card:nth-child(8):before {
+  .main-wrapper main.main .card:nth-child(7):before,
+  .main-wrapper main.main .card:nth-child(11):before,
+  .main-wrapper main.main .card:nth-child(15):before {
     border-left: var(--post-it-cut-3a);
     border-top: var(--post-it-cut-3b);
   }
   .main-wrapper main.main .card:nth-child(4):before,
-  .main-wrapper main.main .card:nth-child(9):before {
+  .main-wrapper main.main .card:nth-child(8):before,
+  .main-wrapper main.main .card:nth-child(12):before,
+  .main-wrapper main.main .card:nth-child(16):before {
     border-left: var(--post-it-cut-4a);
     border-top: var(--post-it-cut-4b);
-  }
-  .main-wrapper main.main .card:nth-child(5):before,
-  .main-wrapper main.main .card:nth-child(10):before {
-    border-left: var(--post-it-cut-1a);
-    border-top: var(--post-it-cut-1b);
   }
 
   /* POST-IT NOTE ROTATIONS */
 
   .main-wrapper main.main .card:nth-child(1),
-  .main-wrapper main.main .card:nth-child(6) {
+  .main-wrapper main.main .card:nth-child(5),
+  .main-wrapper main.main .card:nth-child(9),
+  .main-wrapper main.main .card:nth-child(13) {
     transform: rotate(var(--post-it-1b));
   }
   .main-wrapper main.main .card:nth-child(2),
-  .main-wrapper main.main .card:nth-child(7) {
+  .main-wrapper main.main .card:nth-child(6),
+  .main-wrapper main.main .card:nth-child(10),
+  .main-wrapper main.main .card:nth-child(14) {
     transform: rotate(var(--post-it-2b));
   }
   .main-wrapper main.main .card:nth-child(3),
-  .main-wrapper main.main .card:nth-child(8) {
+  .main-wrapper main.main .card:nth-child(7),
+  .main-wrapper main.main .card:nth-child(11),
+  .main-wrapper main.main .card:nth-child(15) {
     transform: rotate(var(--post-it-3b));
   }
   .main-wrapper main.main .card:nth-child(4),
-  .main-wrapper main.main .card:nth-child(9) {
+  .main-wrapper main.main .card:nth-child(8),
+  .main-wrapper main.main .card:nth-child(12),
+  .main-wrapper main.main .card:nth-child(16) {
     transform: rotate(var(--post-it-4b));
   }
-  .main-wrapper main.main .card:nth-child(5),
-  .main-wrapper main.main .card:nth-child(10) {
-    transform: rotate(var(--post-it-1b));
-  }
+
   @media (min-width: 675px) {
     .main-wrapper main.main .card:nth-child(1),
-    .main-wrapper main.main .card:nth-child(6) {
+    .main-wrapper main.main .card:nth-child(5),
+    .main-wrapper main.main .card:nth-child(9),
+    .main-wrapper main.main .card:nth-child(13) {
       transform: rotate(var(--post-it-1));
     }
     .main-wrapper main.main .card:nth-child(2),
-    .main-wrapper main.main .card:nth-child(7) {
+    .main-wrapper main.main .card:nth-child(6),
+    .main-wrapper main.main .card:nth-child(10),
+    .main-wrapper main.main .card:nth-child(14) {
       transform: rotate(var(--post-it-2));
     }
     .main-wrapper main.main .card:nth-child(3),
-    .main-wrapper main.main .card:nth-child(8) {
+    .main-wrapper main.main .card:nth-child(7),
+    .main-wrapper main.main .card:nth-child(11),
+    .main-wrapper main.main .card:nth-child(15) {
       transform: rotate(var(--post-it-3));
     }
     .main-wrapper main.main .card:nth-child(4),
-    .main-wrapper main.main .card:nth-child(9) {
+    .main-wrapper main.main .card:nth-child(8),
+    .main-wrapper main.main .card:nth-child(12),
+    .main-wrapper main.main .card:nth-child(16) {
       transform: rotate(var(--post-it-4));
-    }
-    .main-wrapper main.main .card:nth-child(5),
-    .main-wrapper main.main .card:nth-child(10) {
-      transform: rotate(var(--post-it-1));
     }
   }
 

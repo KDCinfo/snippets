@@ -40,8 +40,8 @@
        <!-- Mobile: Collapse. Desktop: Pull left; Open DIV on right: Smooth move class cards. -->
        <!-- Responsive: Menu will expand / collapse; DIV on right will fold underneath Main. -->
   <!-- { c-: class, ch-: hidden, cl-: course list item, cc-: content } -->
-  <div class="h4">Click a course for more detailed progress.</div>
   <div class="main-wrapper"><!--  maxit  -->
+    <div class="cards h4">Click a course for more detailed progress.</div>
     <main class="main container">
       <div class="card card-template" hidden>
         <div class="ch-id" hidden></div>
@@ -77,34 +77,33 @@
         <label>Course Topics:</label><br/>
       </div>
     </div>
-  </div>
-
-  <footer>
-    <div class="message"></div>
-    <div class="msg">
-      Last Dev Build: <b><a class="last-dev-build no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">Wed Jun 20 2018 01:50:34 GMT-0700 (Pacific Daylight Time)</a></b>
-    </div>
-    <div id="webapp-help">
-      <button type="button" id="button-toggle-webapp-help">About this App</button>
-      <div id="app-message">
-        <ul class="footer-menu-ul">
-          <li class="h3 input-options-with-items">
-            <b>Q:</b> Why is it free? <b>A:</b> I'm a web/app developer by trait: Doing these projects fills two purposes;
-            I get more programming experience <small>(something I never tire of gaining)</small>,
-            and I get a utility that can be crossed off my life's <code>@TODO:</code> list <small>(where it's likely been for years)</small>.
-            <br/><br/>Additionally... <em>Sharing is a building block for making lives better.</em>
-          </li>
-          <li class="h3 input-options-with-items">
-            I developed this <span class="no-wrap">'Training Progress SPA'</span> as a JavaScript-based PWA (as a part of my PWA learning).
-          </li>
-          <li class="h3 input-options-with-items">
-            My code (for this page) is <a class="no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">open source on GitHub</a>.<br/>
-            I did R&D on the <a target="kdcNewWindow" href="https://codepen.io/KeithDC/pen/XYMgQj"><span class="no-wrap">smooth CSS Flex wrapping</span> <span class="no-wrap">in CodePen</span></a>.
-          </li>
-        </ul>
+    <footer>
+      <div class="message"></div>
+      <div class="msg">
+        Last Dev Build: <b><a class="last-dev-build no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">Wed Jun 20 2018 01:50:34 GMT-0700 (Pacific Daylight Time)</a></b>
       </div>
-    </div>
-  </footer>
+      <div id="webapp-help">
+        <button type="button" id="button-toggle-webapp-help">About this App</button>
+        <div id="app-message">
+          <ul class="footer-menu-ul">
+            <li class="h3 input-options-with-items">
+              <b>Q:</b> Why is it free? <b>A:</b> I'm a web/app developer by trait: Doing these projects fills two purposes;
+              I get more programming experience <small>(something I never tire of gaining)</small>,
+              and I get a utility that can be crossed off my life's <code>@TODO:</code> list <small>(where it's likely been for years)</small>.
+              <br/><br/>Additionally... <em>Sharing is a building block for making lives better.</em>
+            </li>
+            <li class="h3 input-options-with-items">
+              I developed this <span class="no-wrap">'Training Progress SPA'</span> as a JavaScript-based PWA (as a part of my PWA learning).
+            </li>
+            <li class="h3 input-options-with-items">
+              My code (for this page) is <a class="no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">open source on GitHub</a>.<br/>
+              I did R&D on the <a target="kdcNewWindow" href="https://codepen.io/KeithDC/pen/XYMgQj"><span class="no-wrap">smooth CSS Flex wrapping</span> <span class="no-wrap">in CodePen</span></a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <div class="loader">
     <svg viewBox="0 0 32 32" width="32" height="32">
