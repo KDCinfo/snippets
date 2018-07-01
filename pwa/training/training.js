@@ -567,6 +567,7 @@
       dupe = node.cloneNode(true);        // We'll clone each node so it can "follow" its sibling `node` element around the UI.
       dupe.classList.remove("item-node"); // .item-node | visibility: hidden - Will move natively with Flex wrapping (snappy!).
       dupe.classList.add("item-dupe");    // .item-dupe | visibility: visible - Will smoothly follow sibling .item-node around.
+      dupe.setAttribute('tabindex', 0);
 
       // Remove superfluous content that will only serve to make the node's `dupe` heavier to move around.
       const courseDesc = dupe.querySelector('.ch-courseDesc'),
@@ -577,6 +578,15 @@
       node.parentNode.appendChild(dupe);  // Position: `absolute` - Each clone stays relative to their shared parent container.
 
       dupe.addEventListener('click', app.clickClass.bind(nodeCnt));
+
+      dupe.addEventListener('keydown', function(e) {
+        // [event.keyCode] is deprecated.
+        // [event.key] is its replacement.
+        // [event.code] is not supported well (2017-11-07).
+        if (e.key.charCodeAt() === 32 || e.key.toLowerCase() === 'enter') { // 32 = space
+          e.target.click();
+        }
+      });
 
       dupe.style.top = node.offsetTop + 'px';   // Establish each dupe's `absolute` position.
       dupe.style.left = node.offsetLeft + 'px'; // <--^
@@ -646,7 +656,18 @@
       // Now that it's attached to the DOM, we can cycle through and attach an event listener to each topic.
       classContent.querySelector('.cc-courseList').querySelectorAll('.course-node').forEach( elem => {
 
-        elem.querySelector('.expand-it').addEventListener('click', e => app.expandTopic(e));
+        let expandElem = elem.querySelector('.expand-it');
+
+        expandElem.setAttribute('tabindex', 0);
+        expandElem.addEventListener('click', e => app.expandTopic(e));
+        expandElem.addEventListener('keydown', function(e) {
+          // [event.keyCode] is deprecated.
+          // [event.key] is its replacement.
+          // [event.code] is not supported well (2017-11-07).
+          if (e.key.charCodeAt() === 32 || e.key.toLowerCase() === 'enter') { // 32 = space
+            e.target.click();
+          }
+        });
       });
     }, 250);
 
@@ -750,13 +771,30 @@
    *
    ****************************************************************************/
 
-  document.querySelector('.main-wrapper .content-wrapper .close-it').addEventListener('click', () => {
+  let closeIt = document.querySelector('.main-wrapper .content-wrapper .close-it');
+  closeIt.addEventListener('click', () => {
     document.querySelector('.content-wrapper .content').style.opacity = 0;
     setTimeout( () => {
       document.querySelector('.main-wrapper').classList.remove('maxit');
-      document.querySelectorAll('.item-dupe').forEach(elem => elem.classList.remove('active'));
+      document.querySelectorAll('.item-dupe').forEach(elem => {
+        if (elem.classList.contains('active')) {
+          elem.classList.remove('active');
+          setTimeout( () => {
+            elem.focus();
+          }, 250);
+        }
+      });
       app.moveNodes();
     }, 250);
+  });
+  closeIt.addEventListener('keydown', function(e) {
+    // [event.key] is replacement for [event.keyCode]. [event.code] is not supported well (2017-11-07).
+    if (e.key.charCodeAt() === 32 || e.key.toLowerCase() === 'enter') { // 32 = space
+      e.target.click();
+      setTimeout( () => {
+        document.querySelector('.item-dupe').focus();
+      }, 500);
+    }
   });
 
   window.addEventListener("resize", app.moveNodes); // CSS Flex: Smooth Wrapping - https://codepen.io/KeithDC/pen/XYMgQj
