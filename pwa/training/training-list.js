@@ -3,9 +3,9 @@
     {
       "id": "udacity-4",
       "active": true,
-      "courseVendorName": "Udacity (2a)",
+      "courseVendorName": "2a— Udacity",
       "courseVendor": "Web Accessibility",
-      "courseProgress": 25,
+      "courseProgress": 28,
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "June",
@@ -38,7 +38,7 @@
         },
         {
           "courseClassTitle": "Focus",
-          "courseClassProgress": 50,
+          "courseClassProgress": 67,
           "courseClassContent": `
             <p class='text-body'>Manage focus - the location on a page that receives input from the keyboard. Discover how some users navigate website entirely with the keyboard, and how to optimize their experience.</p>
             <ul>
@@ -51,9 +51,9 @@
               <li class='progress done'>Deciding whats in focus</li>
               <li class='progress done'>Quiz: Which Elements Should Have Focus?</li>
               <li class='progress done'>Managing Focus</li>
-              <li class='progress'>Quiz: Manage Focus Yourself</li>
-              <li class='progress'>Skip Links</li>
-              <li class='progress'>Focus in Complex Components</li>
+              <li class='progress done'>Quiz: Manage Focus Yourself</li>
+              <li class='progress done'>Skip Links</li>
+              <li class='progress done'>Focus in Complex Components</li>
               <li class='progress'>Keyboard Design Patterns</li>
               <li class='progress'>Quiz: Implementing Keyboard Event Listeners</li>
               <li class='progress'>Offscreen Content</li>
@@ -172,7 +172,7 @@
     {
       "id": "google-1",
       "active": true,
-      "courseVendorName": "Google Training (1*)",
+      "courseVendorName": "1*— Google Training",
       "courseVendor": "Build Progressive Web Apps",
       "courseProgress": 100,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
@@ -213,9 +213,9 @@
     {
       "id": "google-2",
       "active": true,
-      "courseVendorName": "Google Training (2*)",
+      "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 8,
+      "courseProgress": 9,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "June",
@@ -225,7 +225,7 @@
       "courseList": [
         {
           "courseClassTitle": "Web Accessibility",
-          "courseClassProgress": 25,
+          "courseClassProgress": 28,
           "courseClassContent": `
             <p class='text-body'>Everybody deserves access to their apps, even when affected by age, vision concerns, limited hearing, a broken arm, or other limitations.</p>
             <p class='text-body'>This course dives into the why and how of making web apps accessible. As a bonus, accessible sites tend to be more usable for all!</p>
@@ -255,7 +255,7 @@
     {
       "id": "google-3",
       "active": true,
-      "courseVendorName": "Google Training (3*)",
+      "courseVendorName": "3*— Google Training",
       "courseVendor": "Improve the user experience",
       "courseProgress": 0,
       "courseDesc": "None provided.",
@@ -302,7 +302,7 @@
     {
       "id": "udacity-1",
       "active": true,
-      "courseVendorName": "Udacity (1a)",
+      "courseVendorName": "1a— Udacity",
       "courseVendor": "Offline Web Applications",
       "courseProgress": 100,
       "courseDesc": "This course was found by way of Jake Archibald's 'The offline cookbook' (a.k.a., caching strategies) [https://jakearchibald.com/2014/offline-cookbook/] ... This course provides a ton of relevant and fully functional examples, with a little humor sprinkled throughout.",
@@ -397,7 +397,7 @@
     {
       "id": "udacity-2",
       "active": true,
-      "courseVendorName": "Udacity (1b)",
+      "courseVendorName": "1b— Udacity",
       "courseVendor": "Intro to Progressive Web Apps",
       "courseProgress": 100,
       "courseDesc": "Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.",
@@ -503,7 +503,7 @@
     {
       "id": "udacity-3",
       "active": true,
-      "courseVendorName": "Udacity (1c)",
+      "courseVendorName": "1c— Udacity",
       "courseVendor": "JavaScript Promises",
       "courseProgress": 100,
       "courseDesc": "Learn how to handle asynchronous work with ease! In this course, you'll use Native JavaScript Promises to write asynchronous code that is easy to read, easy to write and easy to debug. Along the way, you'll be using Promises to make a webapp come to life!",

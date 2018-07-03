@@ -347,19 +347,19 @@
 
       // @TODONE: 'sort' feature
       app.allClassList.sort( (a, b) => {
-        if (a.courseProgress > b.courseProgress) {
-          return -1;
-        } else if (a.courseProgress < b.courseProgress) {
-          return 1;
-        } else {
-          if (a.id < b.id) {
+        // if (a.courseProgress > b.courseProgress) {
+        //   return -1;
+        // } else if (a.courseProgress < b.courseProgress) {
+        //   return 1;
+        // } else {
+          if (a.courseVendorName < b.courseVendorName) {
             return -1;
-          } else if (a.id > b.id) {
+          } else if (a.courseVendorName > b.courseVendorName) {
             return 1;
           } else {
             return 0;
           }
-        }
+        // }
       });
 
       app.allClassList.forEach( classObj => {
@@ -610,7 +610,7 @@
   app.focusCloseIt = function() {
     setTimeout( () => {
       const closeIt = document.querySelector('.close-it');
-      closeIt.scrollIntoView({behavior: 'smooth', block: 'start'});
+      closeIt.scrollIntoView({behavior: 'smooth'});
       setTimeout( () => closeIt.focus(), 500);
     }, 300);
   };
