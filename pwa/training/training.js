@@ -442,16 +442,16 @@
 
     if (existingChild) {  // REPLACE
       const storedClassProgress = existingChild.querySelector('.ch-courseProgress').textContent, // Same as: `.c-courseProgress`
-            storedClassVendorName = existingChild.querySelector('.c-courseVendorName').textContent,
-            storedClassVendor = existingChild.querySelector('.c-courseVendor').textContent,
+            // storedClassVendorName = existingChild.querySelector('.c-courseVendorName').textContent,
+            // storedClassVendor = existingChild.querySelector('.c-courseVendor').textContent,
             storedClassDateLast = existingChild.querySelector('.c-courseDateLast').textContent,
             storedClassDesc = existingChild.querySelector('.ch-courseDesc').textContent;
 
       if (storedClassProgress !== app.visibleClasses[classId].courseProgress.toString() ||
-          storedClassDesc !== app.visibleClasses[classId].courseDesc ||
           // storedClassVendorName !== app.visibleClasses[classId].courseVendorName ||
           // storedClassVendor !== app.visibleClasses[classId].courseVendor ||
-          storedClassDateLast !== app.visibleClasses[classId].courseDateLast
+          storedClassDateLast !== app.visibleClasses[classId].courseDateLast ||
+          storedClassDesc !== app.visibleClasses[classId].courseDesc
          ) {
         existingChild.parentNode.replaceChild(app.getClassCard(classId, true), existingChild);
       } else {
@@ -583,8 +583,25 @@
         // [event.keyCode] is deprecated.
         // [event.key] is its replacement.
         // [event.code] is not supported well (2017-11-07).
+
         if (e.key.charCodeAt() === 32 || e.key.toLowerCase() === 'enter') { // 32 = space
           e.target.click();
+
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+
+          if (this.previousElementSibling.classList.contains('item-dupe')) {
+            this.previousElementSibling.focus();
+          } else {
+            this.parentNode.children[(this.parentNode.childElementCount-1)].focus();
+          }
+
+        } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+
+          if (this.nextElementSibling !== null) {
+            this.nextElementSibling.focus();
+          } else {
+            this.parentNode.children[(this.parentNode.childElementCount/2)].focus();
+          }
         }
       });
 
