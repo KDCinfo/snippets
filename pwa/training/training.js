@@ -448,9 +448,9 @@
             storedClassDesc = existingChild.querySelector('.ch-courseDesc').textContent;
 
       if (storedClassProgress !== app.visibleClasses[classId].courseProgress.toString() ||
-          storedClassVendorName !== app.visibleClasses[classId].courseVendorName ||
           storedClassDesc !== app.visibleClasses[classId].courseDesc ||
-          storedClassVendor !== app.visibleClasses[classId].courseVendor ||
+          // storedClassVendorName !== app.visibleClasses[classId].courseVendorName ||
+          // storedClassVendor !== app.visibleClasses[classId].courseVendor ||
           storedClassDateLast !== app.visibleClasses[classId].courseDateLast
          ) {
         existingChild.parentNode.replaceChild(app.getClassCard(classId, true), existingChild);
