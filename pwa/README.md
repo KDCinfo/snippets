@@ -2,11 +2,11 @@
 
 Chronological - Descending (reverse order)
 
-## [2018-06]
+## [2018-06 - 2018-07]
 
-> Work-In-Progress: [Educational Advancement: Course Summaries 2018](https://kdcinfo.com/app/training/)
+Completed (Active): [Educational Advancement 2018: Training Progress SPA](https://kdcinfo.com/app/training/)
 
-I'm in the process of creating a '[Training Progress SPA](https://kdcinfo.com/app/training/)' as a JavaScript-based PWA (as a part of my PWA learning).
+A JavaScript-based PWA I created as a part of my PWA learning.
 
 ## [2018-05]
 
