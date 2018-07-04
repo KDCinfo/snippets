@@ -653,6 +653,8 @@ main.main {
   }
   .main-wrapper main.main .card:hover {
     background-color: hsla(120, 100%, 75%, 0.95);
+    transform: scale(1.05);
+    transition: transform 0.4s cubic-bezier(0.1, -2, 0.5, 1);
   }
 
   .main-wrapper main.main > div.item-node {
