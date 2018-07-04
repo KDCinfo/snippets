@@ -5,7 +5,7 @@
       "active": true,
       "courseVendorName": "2a— Udacity",
       "courseVendor": "Web Accessibility",
-      "courseProgress": 28,
+      "courseProgress": 30,
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "June",
@@ -38,7 +38,7 @@
         },
         {
           "courseClassTitle": "Focus",
-          "courseClassProgress": 67,
+          "courseClassProgress": 78,
           "courseClassContent": `
             <p class='text-body'>Manage focus - the location on a page that receives input from the keyboard. Discover how some users navigate website entirely with the keyboard, and how to optimize their experience.</p>
             <ul>
@@ -54,8 +54,8 @@
               <li class='progress done'>Quiz: Manage Focus Yourself</li>
               <li class='progress done'>Skip Links</li>
               <li class='progress done'>Focus in Complex Components</li>
-              <li class='progress'>Keyboard Design Patterns</li>
-              <li class='progress'>Quiz: Implementing Keyboard Event Listeners</li>
+              <li class='progress done'>Keyboard Design Patterns</li>
+              <li class='progress done'>Quiz: Implementing Keyboard Event Listeners</li>
               <li class='progress'>Offscreen Content</li>
               <li class='progress'>Quiz: Implementing Offscreen Content</li>
               <li class='progress'>Modals and Keyboard Traps</li>
@@ -215,7 +215,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 9,
+      "courseProgress": 10,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "June",
@@ -225,7 +225,7 @@
       "courseList": [
         {
           "courseClassTitle": "Web Accessibility",
-          "courseClassProgress": 28,
+          "courseClassProgress": 30,
           "courseClassContent": `
             <p class='text-body'>Everybody deserves access to their apps, even when affected by age, vision concerns, limited hearing, a broken arm, or other limitations.</p>
             <p class='text-body'>This course dives into the why and how of making web apps accessible. As a bonus, accessible sites tend to be more usable for all!</p>
