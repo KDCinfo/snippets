@@ -257,7 +257,7 @@
 
       async function fetchClassList(urlToGet) {
         try {
-          let response = await fetch(urlToGet, { method: 'GET' }); // , mode: 'no-cors', mode: 'same-origin'
+          let response = await fetch(urlToGet, { method: 'GET', cache: 'reload' }); // , mode: 'no-cors', mode: 'same-origin'
           let text = await response.text();
 
           text = text.replace(/\n/g, '');       // ^^^ \n should be all that's needed.
