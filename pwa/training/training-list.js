@@ -5,10 +5,10 @@
       "active": true,
       "courseVendorName": "2a— Udacity",
       "courseVendor": "Web Accessibility",
-      "courseProgress": 30,
+      "courseProgress": 74,
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
-      "courseDateLast": "June",
+      "courseDateLast": "July",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "web-accessibility",
       "courseURL": "https://classroom.udacity.com/courses/ud891",
@@ -38,7 +38,7 @@
         },
         {
           "courseClassTitle": "Focus",
-          "courseClassProgress": 78,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Manage focus - the location on a page that receives input from the keyboard. Discover how some users navigate website entirely with the keyboard, and how to optimize their experience.</p>
             <ul>
@@ -56,75 +56,75 @@
               <li class='progress done'>Focus in Complex Components</li>
               <li class='progress done'>Keyboard Design Patterns</li>
               <li class='progress done'>Quiz: Implementing Keyboard Event Listeners</li>
-              <li class='progress'>Offscreen Content</li>
-              <li class='progress'>Quiz: Implementing Offscreen Content</li>
-              <li class='progress'>Modals and Keyboard Traps</li>
-              <li class='progress'>Lesson 2 Outro</li>
+              <li class='progress done'>Offscreen Content</li>
+              <li class='progress done'>Quiz: Implementing Offscreen Content</li>
+              <li class='progress done'>Modals and Keyboard Traps</li>
+              <li class='progress done'>Lesson 2 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Semantics Basics",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Dive into the differences between visual UI and semantically designed accessible UI. Add semantic elements to HTML to create a user interface that works for everyone.</p>
             <ul>
-              <li class='progress'>Semantics Introduction</li>
-              <li class='progress'>Assistive Technology</li>
-              <li class='progress'>Affordances</li>
-              <li class='progress'>Quiz: Experiencing Affordances</li>
-              <li class='progress'>Semantics and Assistive Technology</li>
-              <li class='progress'>Quiz: Experience Using a Screenreader</li>
-              <li class='progress'>Role, Name, Value</li>
-              <li class='progress'>Quiz: Experience a Screen Reader 2</li>
-              <li class='progress'>The Accessibility Tree</li>
-              <li class='progress'>Quiz: Matching simple DOM and A11y Tree</li>
-              <li class='progress'>Semantics in Native HTML</li>
-              <li class='progress'>Quiz: Writing Semantic HTML Quiz</li>
-              <li class='progress'>Writing Semantic HTML: The Name Game</li>
-              <li class='progress'>Quiz: Labeling Input Elements</li>
-              <li class='progress'>Text Alternatives</li>
-              <li class='progress'>Quiz: Labeling Images With ALT Text</li>
-              <li class='progress'>Lesson 3 Outro</li>
+              <li class='progress done'>Semantics Introduction</li>
+              <li class='progress done'>Assistive Technology</li>
+              <li class='progress done'>Affordances</li>
+              <li class='progress done'>Quiz: Experiencing Affordances</li>
+              <li class='progress done'>Semantics and Assistive Technology</li>
+              <li class='progress done'>Quiz: Experience Using a Screenreader</li>
+              <li class='progress done'>Role, Name, Value</li>
+              <li class='progress done'>Quiz: Experience a Screen Reader 2</li>
+              <li class='progress done'>The Accessibility Tree</li>
+              <li class='progress done'>Quiz: Matching simple DOM and A11y Tree</li>
+              <li class='progress done'>Semantics in Native HTML</li>
+              <li class='progress done'>Quiz: Writing Semantic HTML Quiz</li>
+              <li class='progress done'>Writing Semantic HTML: The Name Game</li>
+              <li class='progress done'>Quiz: Labeling Input Elements</li>
+              <li class='progress done'>Text Alternatives</li>
+              <li class='progress done'>Quiz: Labeling Images With ALT Text</li>
+              <li class='progress done'>Lesson 3 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Navigating Content",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Implement effective semantic navigation using headings, link text and landmarks.</p>
             <ul>
-              <li class='progress'>Semantics - Navigating content - Intro</li>
-              <li class='progress'>Navigating with a screen reader</li>
-              <li class='progress'>Navigating by Headings</li>
-              <li class='progress'>Using Headings</li>
-              <li class='progress'>Quiz: Using Headings</li>
-              <li class='progress'>Other navigational options</li>
-              <li class='progress'>Other navigational options example</li>
-              <li class='progress'>Link Text</li>
-              <li class='progress'>Quiz: Link Text</li>
-              <li class='progress'>Landmarks</li>
-              <li class='progress'>Quiz: Landmarks</li>
-              <li class='progress'>Outro Lesson 4</li>
+              <li class='progress done'>Semantics - Navigating content - Intro</li>
+              <li class='progress done'>Navigating with a screen reader</li>
+              <li class='progress done'>Navigating by Headings</li>
+              <li class='progress done'>Using Headings</li>
+              <li class='progress done'>Quiz: Using Headings</li>
+              <li class='progress done'>Other navigational options</li>
+              <li class='progress done'>Other navigational options example</li>
+              <li class='progress done'>Link Text</li>
+              <li class='progress done'>Quiz: Link Text</li>
+              <li class='progress done'>Landmarks</li>
+              <li class='progress done'>Quiz: Landmarks</li>
+              <li class='progress done'>Outro Lesson 4</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "ARIA",
-          "courseClassProgress": 0,
+          "courseClassProgress": 45,
           "courseClassContent": `
             <p class='text-body'>Sometimes an HTML element may not have a role or value assigned semantically. In this lesson, you'll use ARIA attributes to provide context for screen readers.</p>
             <ul>
-              <li class='progress'>Intro to Semantics: ARIA</li>
-              <li class='progress'>Why ARIA</li>
-              <li class='progress'>Quiz: First Steps with ARIA</li>
-              <li class='progress'>What can ARIA do for you?</li>
-              <li class='progress'>Roleplaying</li>
-              <li class='progress'>Quiz: Custom radio button group with ARIA</li>
-              <li class='progress'>More Ways to Label</li>
-              <li class='progress'>Quiz: Name That Element!</li>
-              <li class='progress'>Breather</li>
+              <li class='progress done'>Intro to Semantics: ARIA</li>
+              <li class='progress done'>Why ARIA</li>
+              <li class='progress done'>Quiz: First Steps with ARIA</li>
+              <li class='progress done'>What can ARIA do for you?</li>
+              <li class='progress done'>Roleplaying</li>
+              <li class='progress done'>Quiz: Custom radio button group with ARIA</li>
+              <li class='progress done'>More Ways to Label</li>
+              <li class='progress done'>Quiz: Name That Element!</li>
+              <li class='progress done'>Breather</li>
               <li class='progress'>Default Semantics and Landmarks</li>
               <li class='progress'>ARIA Relationships</li>
               <li class='progress'>Quiz: Combo Box</li>
@@ -215,17 +215,17 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 10,
+      "courseProgress": 25,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
-      "courseDateLast": "June",
+      "courseDateLast": "Jun—Jul",
       "courseShortVendor": "google-training",
       "courseShortName": "all-devices",
       "courseURL": "",
       "courseList": [
         {
           "courseClassTitle": "Web Accessibility",
-          "courseClassProgress": 30,
+          "courseClassProgress": 74,
           "courseClassContent": `
             <p class='text-body'>Everybody deserves access to their apps, even when affected by age, vision concerns, limited hearing, a broken arm, or other limitations.</p>
             <p class='text-body'>This course dives into the why and how of making web apps accessible. As a bonus, accessible sites tend to be more usable for all!</p>
