@@ -5,7 +5,7 @@
       "active": true,
       "courseVendorName": "2a— Udacity",
       "courseVendor": "Web Accessibility",
-      "courseProgress": 76,
+      "courseProgress": 77,
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "July",
@@ -112,7 +112,7 @@
         },
         {
           "courseClassTitle": "ARIA",
-          "courseClassProgress": 55,
+          "courseClassProgress": 60,
           "courseClassContent": `
             <p class='text-body'>Sometimes an HTML element may not have a role or value assigned semantically. In this lesson, you'll use ARIA attributes to provide context for screen readers.</p>
             <ul>
@@ -127,7 +127,7 @@
               <li class='progress done'>Breather</li>
               <li class='progress done'>Default Semantics and Landmarks</li>
               <li class='progress done'>ARIA Relationships</li>
-              <li class='progress'>Quiz: Combo Box</li>
+              <li class='progress done'>Quiz: Combo Box</li>
               <li class='progress'>Hidden In Plain Sight</li>
               <li class='progress'>Quiz: Name That Element Round 2</li>
               <li class='progress'>Recap so far</li>
@@ -215,7 +215,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 25,
+      "courseProgress": 26,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -225,7 +225,7 @@
       "courseList": [
         {
           "courseClassTitle": "Web Accessibility",
-          "courseClassProgress": 76,
+          "courseClassProgress": 77,
           "courseClassContent": `
             <p class='text-body'>Everybody deserves access to their apps, even when affected by age, vision concerns, limited hearing, a broken arm, or other limitations.</p>
             <p class='text-body'>This course dives into the why and how of making web apps accessible. As a bonus, accessible sites tend to be more usable for all!</p>
