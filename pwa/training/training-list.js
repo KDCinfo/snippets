@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 30,
+      "courseProgress": 35,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -56,7 +56,7 @@
       "courseList": [
         {
           "courseClassTitle": "Web Accessibility",
-          "courseClassProgress": 89,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Everybody deserves access to their apps, even when affected by age, vision concerns, limited hearing, a broken arm, or other limitations.</p>
             <p class='text-body'>This course dives into the why and how of making web apps accessible. As a bonus, accessible sites tend to be more usable for all!</p>
@@ -65,7 +65,7 @@
         },
         {
           "courseClassTitle": "Responsive Web Design",
-          "courseClassProgress": 0,
+          "courseClassProgress": 4,
           "courseClassContent": `
             <p class='text-body'>Responsive Web Design is an old idea, but many developers struggle to implement it. Cut through the confusion and learn the mechanics of responsive web design. You&rsquo;ll come away able to build web pages that work equally well on phones, tablets, and the desktop.</p>
             <h4 class='western'>Approx. 2 weeks Intermediate</h4>
@@ -406,7 +406,7 @@
       "active": true,
       "courseVendorName": "2a— Udacity",
       "courseVendor": "Web Accessibility",
-      "courseProgress": 89,
+      "courseProgress": 100,
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "July",
@@ -542,7 +542,7 @@
         },
         {
           "courseClassTitle": "Style",
-          "courseClassProgress": 32,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Incorporate CSS styling into your accessible web design and use accessible color schemes to improve accessibility.</p>
             <ul>
@@ -552,24 +552,158 @@
               <li class='progress done'>Input Modality</li>
               <li class='progress done'>Styling with Aria</li>
               <li class='progress done'>Quiz: Quiz: Styling with ARIA</li>
-              <li class='progress'>Responsive design for multi-device</li>
-              <li class='progress'>Responsive design for multi-device Pt. 2</li>
-              <li class='progress'>Mobile Screen Readers</li>
-              <li class='progress'>Mobile Screen Readers iOS</li>
-              <li class='progress'>Mobile Screen Readers Android</li>
-              <li class='progress'>Quiz: Using Mobile Screen Readers</li>
-              <li class='progress'>Segue to Color & Contrast</li>
-              <li class='progress'>Meeting Contrast Requirements</li>
-              <li class='progress'>Quiz: Contrast Audit</li>
-              <li class='progress'>Don't convey info with color alone</li>
-              <li class='progress'>High Contrast Mode</li>
-              <li class='progress'>Outro</li>
-              <li class='progress'>Course Outro</li>
+              <li class='progress done'>Responsive design for multi-device</li>
+              <li class='progress done'>Responsive design for multi-device Pt. 2</li>
+              <li class='progress done'>Mobile Screen Readers</li>
+              <li class='progress done'>Mobile Screen Readers iOS</li>
+              <li class='progress done'>Mobile Screen Readers Android</li>
+              <li class='progress done'>Quiz: Using Mobile Screen Readers</li>
+              <li class='progress done'>Segue to Color & Contrast</li>
+              <li class='progress done'>Meeting Contrast Requirements</li>
+              <li class='progress done'>Quiz: Contrast Audit</li>
+              <li class='progress done'>Don't convey info with color alone</li>
+              <li class='progress done'>High Contrast Mode</li>
+              <li class='progress done'>Outro</li>
+              <li class='progress done'>Course Outro</li>
             </ul>
           `
         }
       ]
     },
+    {
+      "id": "udacity-5",
+      "active": true,
+      "courseVendorName": "2b— Udacity",
+      "courseVendor": "Responsive Web Design Fundamentals",
+      "courseProgress": 4,
+      "courseDesc": "In this course you'll learn the fundamentals of responsive web design with Google's Pete LePage! You'll create your own responsive web page that works well on any device - phone, tablet, desktop or anything in between.",
+      "courseDateStarted": "July 2018",
+      "courseDateLast": "July",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "responsive-design-fundamentals",
+      "courseURL": "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893",
+      "courseList": [
+        {
+          "courseClassTitle": "Why Responsive?",
+          "courseClassProgress": 18,
+          "courseClassContent": `
+            <p class='text-body'>Pete Lepage, Developer Advocate at Google, explains why responsive design is so important and helps you set up your development environment.</p>
+            <ul>
+              <li class='progress done'>Sites On Mobile</li>
+              <li class='progress done'>Quiz: Share Your Great & Awful Sites</li>
+              <li class='progress'>Intro to Project</li>
+              <li class='progress'>Pan, Zoom, Touch, Ick</li>
+              <li class='progress'>Emulators, Simulators and Real Devices</li>
+              <li class='progress'>Setting up Chrome's Dev Tools</li>
+              <li class='progress'>Remote Debugging Intro</li>
+              <li class='progress'>Setup for mobile</li>
+              <li class='progress'>Using dev tools on mobile</li>
+              <li class='progress'>Mobile tools for iOS</li>
+              <li class='progress'>Lesson Summary</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Starting Small",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Dive into the specifics of how pixels on a webpage are rendered and how that impacts the development process.</p>
+            <ul>
+              <li class='progress'>Defining the Viewport</li>
+              <li class='progress'>Pixels, pixels and moar pixels!</li>
+              <li class='progress'>Quiz: Pixelation</li>
+              <li class='progress'>Quiz: Calculating DPR</li>
+              <li class='progress'>Quiz: What's the difference?</li>
+              <li class='progress'>Quiz: Calculating CSS Pixels</li>
+              <li class='progress'>Quiz: How wide is the viewport?</li>
+              <li class='progress'>Setting the Viewport</li>
+              <li class='progress'>Large Fixed Width Elements</li>
+              <li class='progress'>Max-width on elements</li>
+              <li class='progress'>Quiz: Relative Sizes</li>
+              <li class='progress'>Tap Target Sizes</li>
+              <li class='progress'>Quiz: Tap Targets</li>
+              <li class='progress'>Start Small</li>
+              <li class='progress'>Quiz: Project Part 1</li>
+              <li class='progress'>Project Solution - Long</li>
+              <li class='progress'>Lesson Summary</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Building Up",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Learn the most important tools in developing any responsive web application: media queries and flexbox.</p>
+            <ul>
+              <li class='progress'>Lesson Intro</li>
+              <li class='progress'>Basic Media Query Intro</li>
+              <li class='progress'>Adding a Basic Media Query</li>
+              <li class='progress'>Adding a basic media query 2</li>
+              <li class='progress'>Next Step Media Queries</li>
+              <li class='progress'>Breakpoints</li>
+              <li class='progress'>Breakpoints Pt. II</li>
+              <li class='progress'>Quiz: Number of Breakpoints</li>
+              <li class='progress'>Picking Breakpoints</li>
+              <li class='progress'>Picking Breakpoints 2</li>
+              <li class='progress'>Quiz: Pick a Breakpoint</li>
+              <li class='progress'>Complex Media Queries</li>
+              <li class='progress'>Quiz: What Styles Are Applied?</li>
+              <li class='progress'>Grids</li>
+              <li class='progress'>Flexbox Intro</li>
+              <li class='progress'>Flexbox Container</li>
+              <li class='progress'>Flex Item</li>
+              <li class='progress'>Deconstructing a Flexbox Layout</li>
+              <li class='progress'>Quiz: Deconstructing a Flexbox Layout</li>
+              <li class='progress'>Lesson Summary</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Common Responsive Patterns",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Walk through the most popular responsive layout patterns and learn the tools needed to implement them in your own designs.</p>
+            <ul>
+              <li class='progress'>Intro to Patterns</li>
+              <li class='progress'>Pattern - Column Drop</li>
+              <li class='progress'>Pattern - Mostly Fluid</li>
+              <li class='progress'>Quiz: Mostly Fluid Part 1</li>
+              <li class='progress'>Quiz: Mostly Fluid Part 2</li>
+              <li class='progress'>Quiz: Combining Fluid Layouts</li>
+              <li class='progress'>Pattern - Layout Shifter</li>
+              <li class='progress'>Quiz: Which is Which?</li>
+              <li class='progress'>Pattern - Off Canvas</li>
+              <li class='progress'>Quiz: Off Canvas Visualization</li>
+              <li class='progress'>Quiz: Project Update Part 2</li>
+              <li class='progress'>Lesson Summary</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Optimizations",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Learn how to optimize images, tables, and fonts to make for the best responsive layouts.</p>
+            <ul>
+              <li class='progress'>Lesson Intro</li>
+              <li class='progress'>Images</li>
+              <li class='progress'>Responsive Tables Intro</li>
+              <li class='progress'>Responsive Tables - Hidden Columns</li>
+              <li class='progress'>Quiz: Hide Some Columns</li>
+              <li class='progress'>Responsive Tables - No More Tables</li>
+              <li class='progress'>Responsive Tables - Contained Scrolling</li>
+              <li class='progress'>Fonts</li>
+              <li class='progress'>Minor Breakpoints</li>
+              <li class='progress'>Quiz: Final Project Updates</li>
+              <li class='progress'>Wrap Up</li>
+             </ul>
+          `
+        }
+      ]
+    },
+
+
+
     {
       "id": "fcc-1",
       "active": true,
