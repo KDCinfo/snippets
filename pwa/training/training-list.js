@@ -1457,6 +1457,53 @@
           `
         }
       ]
+    },
+    {
+      "id": "angu-1",
+      "active": true,
+      "courseVendorName": "5a— Angular University",
+      "courseVendor": "Service Workers: Guided Intro",
+      "courseProgress": 25,
+      "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
+      "courseDateStarted": "July 2018",
+      "courseDateLast": "July",
+      "courseShortVendor": "angu-courses",
+      "courseShortName": "angu-guided-intro",
+      "courseURL": "https://blog.angular-university.io/service-workers/",
+      "courseList": [
+        {
+          "courseClassTitle": "Service Workers - A Practical Guided Introduction",
+          "courseClassProgress": 25,
+          "courseClassContent": `
+            <ul>
+              <li class='progress done'>What is a Service Worker?</li>
+              <li class='progress done'>Application Download, Installation and Versioning in a Nutshell</li>
+              <li class='progress done'>Step 1 - Service Worker Registration</li>
+              <li class='progress'>Step 2 - Service Worker Hello World Install Phase
+                <ul>
+                  <li>The Cache Storage API</li>
+                  <li>Background Application Download</li>
+                  <li>The Service Worker Lifecycle (Consistency by Default)</li>
+                </ul>
+              </li>
+              <li class='progress'>Step 3 - Service Worker Activation Phase</li>
+              <li class='progress'>Step 4 - Intercepting HTTP Requests</li>
+              <li class='progress'>Step 5 - Purging Previous Application versions</li>
+              <li class='progress'>Step 6 - Serving the Application From Cache Using a Cache Then Network Strategy</li>
+              <li class='progress'>Customizing the Service Worker Lifecycle
+                <ul>
+                  <li>Taking over the current page with clients.claim()</li>
+                  <li>Skipping the Wait Phase (and potential issues it might cause)</li>
+                  <li>Updating a Service Worker Manually</li>
+                </ul>
+              </li>
+              <li class='progress'>Built-in Browser protection against broken Service Workers</li>
+              <li class='progress'>Precautions with the use of the Browser Cache and Service Workers</li>
+              <li class='progress'>Conclusions</li>
+            </ul>
+          `
+        }
+      ]
     }
   ]
 }

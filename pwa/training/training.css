@@ -563,7 +563,9 @@ main.main {
   .main-wrapper main.main .card:nth-child(5):before,
   .main-wrapper main.main .card:nth-child(9):before,
   .main-wrapper main.main .card:nth-child(13):before,
-  .main-wrapper main.main .card:nth-child(17):before {
+  .main-wrapper main.main .card:nth-child(17):before,
+  .main-wrapper main.main .card:nth-child(21):before,
+  .main-wrapper main.main .card:nth-child(25):before {
     border-left: var(--post-it-cut-1a);
     border-top: var(--post-it-cut-1b);
   }
@@ -571,7 +573,9 @@ main.main {
   .main-wrapper main.main .card:nth-child(6):before,
   .main-wrapper main.main .card:nth-child(10):before,
   .main-wrapper main.main .card:nth-child(14):before,
-  .main-wrapper main.main .card:nth-child(18):before {
+  .main-wrapper main.main .card:nth-child(18):before,
+  .main-wrapper main.main .card:nth-child(22):before,
+  .main-wrapper main.main .card:nth-child(26):before {
     border-left: var(--post-it-cut-2a);
     border-top: var(--post-it-cut-2b);
   }
@@ -579,7 +583,9 @@ main.main {
   .main-wrapper main.main .card:nth-child(7):before,
   .main-wrapper main.main .card:nth-child(11):before,
   .main-wrapper main.main .card:nth-child(15):before,
-  .main-wrapper main.main .card:nth-child(19):before {
+  .main-wrapper main.main .card:nth-child(19):before,
+  .main-wrapper main.main .card:nth-child(23):before,
+  .main-wrapper main.main .card:nth-child(27):before {
     border-left: var(--post-it-cut-3a);
     border-top: var(--post-it-cut-3b);
   }
@@ -587,7 +593,9 @@ main.main {
   .main-wrapper main.main .card:nth-child(8):before,
   .main-wrapper main.main .card:nth-child(12):before,
   .main-wrapper main.main .card:nth-child(16):before,
-  .main-wrapper main.main .card:nth-child(20):before {
+  .main-wrapper main.main .card:nth-child(20):before,
+  .main-wrapper main.main .card:nth-child(24):before,
+  .main-wrapper main.main .card:nth-child(28):before {
     border-left: var(--post-it-cut-4a);
     border-top: var(--post-it-cut-4b);
   }
@@ -598,28 +606,36 @@ main.main {
   .main-wrapper main.main .card:nth-child(5),
   .main-wrapper main.main .card:nth-child(9),
   .main-wrapper main.main .card:nth-child(13),
-  .main-wrapper main.main .card:nth-child(17) {
+  .main-wrapper main.main .card:nth-child(17),
+  .main-wrapper main.main .card:nth-child(21),
+  .main-wrapper main.main .card:nth-child(25) {
     transform: rotate(var(--post-it-1b));
   }
   .main-wrapper main.main .card:nth-child(2),
   .main-wrapper main.main .card:nth-child(6),
   .main-wrapper main.main .card:nth-child(10),
   .main-wrapper main.main .card:nth-child(14),
-  .main-wrapper main.main .card:nth-child(18) {
+  .main-wrapper main.main .card:nth-child(18),
+  .main-wrapper main.main .card:nth-child(22),
+  .main-wrapper main.main .card:nth-child(26) {
     transform: rotate(var(--post-it-2b));
   }
   .main-wrapper main.main .card:nth-child(3),
   .main-wrapper main.main .card:nth-child(7),
   .main-wrapper main.main .card:nth-child(11),
   .main-wrapper main.main .card:nth-child(15),
-  .main-wrapper main.main .card:nth-child(19) {
+  .main-wrapper main.main .card:nth-child(19),
+  .main-wrapper main.main .card:nth-child(23),
+  .main-wrapper main.main .card:nth-child(27) {
     transform: rotate(var(--post-it-3b));
   }
   .main-wrapper main.main .card:nth-child(4),
   .main-wrapper main.main .card:nth-child(8),
   .main-wrapper main.main .card:nth-child(12),
   .main-wrapper main.main .card:nth-child(16),
-  .main-wrapper main.main .card:nth-child(20) {
+  .main-wrapper main.main .card:nth-child(20),
+  .main-wrapper main.main .card:nth-child(24),
+  .main-wrapper main.main .card:nth-child(28) {
     transform: rotate(var(--post-it-4b));
   }
 
@@ -628,28 +644,36 @@ main.main {
     .main-wrapper main.main .card:nth-child(5),
     .main-wrapper main.main .card:nth-child(9),
     .main-wrapper main.main .card:nth-child(13),
-    .main-wrapper main.main .card:nth-child(17) {
+    .main-wrapper main.main .card:nth-child(17),
+    .main-wrapper main.main .card:nth-child(21),
+    .main-wrapper main.main .card:nth-child(25) {
       transform: rotate(var(--post-it-1));
     }
     .main-wrapper main.main .card:nth-child(2),
     .main-wrapper main.main .card:nth-child(6),
     .main-wrapper main.main .card:nth-child(10),
     .main-wrapper main.main .card:nth-child(14),
-    .main-wrapper main.main .card:nth-child(18) {
+    .main-wrapper main.main .card:nth-child(18),
+    .main-wrapper main.main .card:nth-child(22),
+    .main-wrapper main.main .card:nth-child(26) {
       transform: rotate(var(--post-it-2));
     }
     .main-wrapper main.main .card:nth-child(3),
     .main-wrapper main.main .card:nth-child(7),
     .main-wrapper main.main .card:nth-child(11),
     .main-wrapper main.main .card:nth-child(15),
-    .main-wrapper main.main .card:nth-child(19) {
+    .main-wrapper main.main .card:nth-child(19),
+    .main-wrapper main.main .card:nth-child(23),
+    .main-wrapper main.main .card:nth-child(27) {
       transform: rotate(var(--post-it-3));
     }
     .main-wrapper main.main .card:nth-child(4),
     .main-wrapper main.main .card:nth-child(8),
     .main-wrapper main.main .card:nth-child(12),
     .main-wrapper main.main .card:nth-child(16),
-    .main-wrapper main.main .card:nth-child(20) {
+    .main-wrapper main.main .card:nth-child(20),
+    .main-wrapper main.main .card:nth-child(24),
+    .main-wrapper main.main .card:nth-child(28) {
       transform: rotate(var(--post-it-4));
     }
   }
