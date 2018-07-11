@@ -126,8 +126,6 @@
       app.message('Error with IndexedDB transaction. Switching to localStorage.');
       app.initialDBCheck(); // Re-run with localStorage
     };
-    // Transaction not opened due to error: ConstraintError: Key already exists in the object store.
-    // call an object store that's already been added to the database
 
     appObjectStore = thisObjectStore.objectStore("classList");
       // console.log('appObjectStore ... ... ...');
@@ -138,15 +136,37 @@
       // console.log(appObjectStore.autoIncrement);
 
     // Make a request to add our newItem object to the object store
-    for (let thisV of val) {
-      let objectStoreRequest = appObjectStore.put(thisV);
-      objectStoreRequest.onsuccess = function(event) {
-        // report the success of our request
-        // to detect whether it has been succesfully added to the database, look at transaction.oncomplete
-        app.message('IndexedDB request successful.');
-        // console.log('<li>Request successful.</li>', event, thisV);
-      };
-    }
+
+    const classCount = appObjectStore.count();
+    classCount.onsuccess = () => {
+
+      if (classCount.result > val.length) {
+        appObjectStore.openCursor().onsuccess = function(e) {
+          var cursor = e.target.result;
+          // if there is still another cursor to go, keep runing this code
+
+          if (cursor) {
+            // If a course exists in the DB, but isn't in the JSON list, remove it from the DB.
+            if (typeof val.find(v => v.id === cursor.value.id) === 'undefined') {
+              var cursorRequest = cursor.delete();
+              // https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/delete#Example
+              cursorRequest.onsuccess = cursor => app.message('Course removed: [' + cursor.target.source.value.id + ']');
+            }
+            cursor.continue();
+          }
+        };
+      }
+
+      for (let thisV of val) {
+        let objectStoreRequest = appObjectStore.put(thisV);
+
+        objectStoreRequest.onsuccess = function(event) {
+          // report the success of our request
+          // to detect whether it has been succesfully added to the database, look at transaction.oncomplete
+          app.message('IndexedDB request successful.');
+        };
+      }
+    };
   };
 
   app.message = function(msg) {
@@ -158,7 +178,7 @@
 
   app.storage = (function() {
     return {
-      set: (val, key = 'EducationalAdvancement') => {
+      set: (val, key = 'EducationalAdvancement') => { // app.storage.set()
         if (app.dataSource === 'IDB') {
           app.addDataIDB(val);
         } else {
@@ -279,15 +299,11 @@
 
         if (ourJson.classList) {
 
-          // if (app.visibleClassSet.size > 0) {
-          //   app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
-          // }
-
-          if (ourJson.classList.length > 0) {
+          // if (ourJson.classList.length > 0) { // Should also update the list if it's empty.
             app.allClassList = ourJson.classList;
             app.updatedAllClassList('Fetched');
-            app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
-          }
+            app.storage.set(ourJson.classList);
+          // }
 
         } else {
           app.errorMsg('There was an error with the classList.');
@@ -305,19 +321,6 @@
 
   app.errorMsg = function(msg, e = '') {
     app.message(msg + ' :: ' + e);
-  }
-
-  app.updateLocalDB = function(jsonData) {
-    // if (app.visibleClassSet.size > 0) {
-    //   app.updateLocalDB(ourJson.classList); // Replace entire local DB with this new data (could be empty).
-
-    app.storage.set(jsonData);
-
-      // ^ Happens before... \/
-
-    // if (ourJson.classList.length > 0) {
-    //   app.allClassList = ourJson.classList;
-    //   app.updatedAllClassList('Fetched');
   }
 
   app.clearDisplayList = function() {
