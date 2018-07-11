@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 35,
+      "courseProgress": 38,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -65,7 +65,7 @@
         },
         {
           "courseClassTitle": "Responsive Web Design",
-          "courseClassProgress": 4,
+          "courseClassProgress": 13,
           "courseClassContent": `
             <p class='text-body'>Responsive Web Design is an old idea, but many developers struggle to implement it. Cut through the confusion and learn the mechanics of responsive web design. You&rsquo;ll come away able to build web pages that work equally well on phones, tablets, and the desktop.</p>
             <h4 class='western'>Approx. 2 weeks Intermediate</h4>
@@ -575,7 +575,7 @@
       "active": true,
       "courseVendorName": "2b— Udacity",
       "courseVendor": "Responsive Web Design Fundamentals",
-      "courseProgress": 4,
+      "courseProgress": 13,
       "courseDesc": "In this course you'll learn the fundamentals of responsive web design with Google's Pete LePage! You'll create your own responsive web page that works well on any device - phone, tablet, desktop or anything in between.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -585,17 +585,17 @@
       "courseList": [
         {
           "courseClassTitle": "Why Responsive?",
-          "courseClassProgress": 18,
+          "courseClassProgress": 64,
           "courseClassContent": `
             <p class='text-body'>Pete Lepage, Developer Advocate at Google, explains why responsive design is so important and helps you set up your development environment.</p>
             <ul>
               <li class='progress done'>Sites On Mobile</li>
               <li class='progress done'>Quiz: Share Your Great & Awful Sites</li>
-              <li class='progress'>Intro to Project</li>
-              <li class='progress'>Pan, Zoom, Touch, Ick</li>
-              <li class='progress'>Emulators, Simulators and Real Devices</li>
-              <li class='progress'>Setting up Chrome's Dev Tools</li>
-              <li class='progress'>Remote Debugging Intro</li>
+              <li class='progress done'>Intro to Project</li>
+              <li class='progress done'>Pan, Zoom, Touch, Ick</li>
+              <li class='progress done'>Emulators, Simulators and Real Devices</li>
+              <li class='progress done'>Setting up Chrome's Dev Tools</li>
+              <li class='progress done'>Remote Debugging Intro</li>
               <li class='progress'>Setup for mobile</li>
               <li class='progress'>Using dev tools on mobile</li>
               <li class='progress'>Mobile tools for iOS</li>
@@ -701,15 +701,12 @@
         }
       ]
     },
-
-
-
     {
       "id": "fcc-1",
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 38,
+      "courseProgress": 39,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -719,7 +716,7 @@
       "courseList": [
         {
           "courseClassTitle": "Basic JavaScript",
-          "courseClassProgress": 94,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to JavaScript</li>
@@ -774,14 +771,14 @@
               <li class='progress done'>Local Scope and Functions</li>
               <li class='progress done'>Global vs. Local Scope in Functions</li>
               <li class='progress done'>Return a Value from a Function with Return</li>
-              <li class='progress'>Understanding Undefined Value returned from a Function</li>
+              <li class='progress done'>Understanding Undefined Value returned from a Function</li>
               <li class='progress done'>Assignment with a Returned Value</li>
               <li class='progress done'>Stand in Line</li>
               <li class='progress done'>Understanding Boolean Values</li>
               <li class='progress done'>Use Conditional Logic with If Statements</li>
               <li class='progress done'>Comparison with the Equality Operator</li>
               <li class='progress done'>Comparison with the Strict Equality Operator</li>
-              <li class='progress'>Practice comparing different values</li>
+              <li class='progress done'>Practice comparing different values</li>
               <li class='progress done'>Comparison with the Inequality Operator</li>
               <li class='progress done'>Comparison with the Strict Inequality Operator</li>
               <li class='progress done'>Comparison with the Greater Than Operator</li>
@@ -821,24 +818,24 @@
               <li class='progress done'>Count Backwards With a For Loop</li>
               <li class='progress done'>Iterate Through an Array with a For Loop</li>
               <li class='progress done'>Nesting For Loops</li>
-              <li class='progress'>Iterate with JavaScript Do...While Loops</li>
+              <li class='progress done'>Iterate with JavaScript Do...While Loops</li>
               <li class='progress done'>Profile Lookup</li>
               <li class='progress done'>Generate Random Fractions with JavaScript</li>
               <li class='progress done'>Generate Random Whole Numbers with JavaScript</li>
               <li class='progress done'>Generate Random Whole Numbers within a Range</li>
-              <li class='progress'>Use the parseInt Function</li>
-              <li class='progress'>Use the parseInt Function with a Radix</li>
-              <li class='progress'>Use the Conditional (Ternary) Operator</li>
-              <li class='progress'>Use Multiple Conditional (Ternary) Operators</li>
+              <li class='progress done'>Use the parseInt Function</li>
+              <li class='progress done'>Use the parseInt Function with a Radix</li>
+              <li class='progress done'>Use the Conditional (Ternary) Operator</li>
+              <li class='progress done'>Use Multiple Conditional (Ternary) Operators</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "ES6",
-          "courseClassProgress": 0,
+          "courseClassProgress": 4,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the ES6 Challenges</li>
+              <li class='progress done'>Introduction to the ES6 Challenges</li>
               <li class='progress'>Explore Differences Between the var and let Keywords</li>
               <li class='progress'>Compare Scopes of the var and let Keywords</li>
               <li class='progress'>Declare a Read-Only Variable with the const Keyword</li>
@@ -1597,7 +1594,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 25,
+      "courseProgress": 67,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1607,28 +1604,28 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 25,
+          "courseClassProgress": 67,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
               <li class='progress done'>Application Download, Installation and Versioning in a Nutshell</li>
               <li class='progress done'>Step 1 - Service Worker Registration</li>
-              <li class='progress'>Step 2 - Service Worker Hello World Install Phase
+              <li class='progress done'>Step 2 - Service Worker Hello World Install Phase
                 <ul>
-                  <li>The Cache Storage API</li>
-                  <li>Background Application Download</li>
-                  <li>The Service Worker Lifecycle (Consistency by Default)</li>
+                  <li class='progress done'>The Cache Storage API</li>
+                  <li class='progress done'>Background Application Download</li>
+                  <li class='progress done'>The Service Worker Lifecycle (Consistency by Default)</li>
                 </ul>
               </li>
-              <li class='progress'>Step 3 - Service Worker Activation Phase</li>
-              <li class='progress'>Step 4 - Intercepting HTTP Requests</li>
-              <li class='progress'>Step 5 - Purging Previous Application versions</li>
-              <li class='progress'>Step 6 - Serving the Application From Cache Using a Cache Then Network Strategy</li>
+              <li class='progress done'>Step 3 - Service Worker Activation Phase</li>
+              <li class='progress done'>Step 4 - Intercepting HTTP Requests</li>
+              <li class='progress done'>Step 5 - Purging Previous Application versions</li>
+              <li class='progress done'>Step 6 - Serving the Application From Cache Using a Cache Then Network Strategy</li>
               <li class='progress'>Customizing the Service Worker Lifecycle
                 <ul>
-                  <li>Taking over the current page with clients.claim()</li>
-                  <li>Skipping the Wait Phase (and potential issues it might cause)</li>
-                  <li>Updating a Service Worker Manually</li>
+                  <li class='progress done'>Skipping the Wait Phase (and potential issues it might cause)</li>
+                  <li class='progress done'>Taking over the current page with clients.claim()</li>
+                  <li class='progress'>Updating a Service Worker Manually</li>
                 </ul>
               </li>
               <li class='progress'>Built-in Browser protection against broken Service Workers</li>
