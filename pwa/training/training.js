@@ -399,7 +399,7 @@
       //   if (elem.id === classId) { classItemIdx = idx; return true; }
       // });
 
-      Array.from(app.container.childNodes).forEach( (childNode) => {
+      Array.from(app.container.childNodes).forEach( (childNode) => { // Definitely Need `Array.from()` (tried it without; blech!)
 
         if (childNode.nodeType === childNode.ELEMENT_NODE && childNode.classList.contains('item-node')) {
 
@@ -407,7 +407,7 @@
 
           if (!app.visibleClassSet.has(childNodeID)) {
 
-            childNode.parentNode.removeChild(childNode);  // REMOVE
+            childNode.parentNode.removeChild(childNode);              // REMOVE
 
             dupeIDnodes = app.container.querySelectorAll('.item-dupe');
             if (dupeIDnodes.length > 0) {
@@ -418,57 +418,68 @@
                 }
               }
             }
-            // app.visibleClassSet.delete(childNodeID);   // Already gone.
-            // delete app.visibleClasses[childNodeID];
 
           } else {
 
             // These are all getting replaced, but it can still be determined if display needs updating.
-            app.listCourse(childNodeID, childNode);       // REPLACE
+            app.listCourse(childNodeID, {'replace': childNode});      // REPLACE
             updatedItems.push(childNodeID);
           }
         }
       });
     }
 
+    const firstTime = app.container.querySelector('.item-node') ? false : true;
+
     app.visibleClassSet.forEach( classId => {
+
       if (!updatedItems.includes(classId)) {
-        app.listCourse(classId);                          // ADD (class not in list; hasn't been replaced.)
+
+        if (firstTime) {
+          app.listCourse(classId, {'add': -1});                       // ADD (append to end of container DOM)
+
+        } else {
+          app.listCourse(classId, {'add': app.allClassList.findIndex(course => course.id === classId)});
+        }
       }
     });
 
     app.setAllCardsUI();
   };
 
-  app.listCourse = function(classId, existingChild = null) {
-    // Note: `classId` and `existingChild.id` are the same.
+  app.listCourse = function(classId, newOrReplace) { // 'replace': childNode | 'add': Card's index in the display order
+    // Note: `classId` and `newOrReplace.id` are the same.
 
-    if (existingChild) {  // REPLACE
-      const storedClassProgress = existingChild.querySelector('.ch-courseProgress').textContent, // Same as: `.c-courseProgress`
-            // storedClassVendorName = existingChild.querySelector('.c-courseVendorName').textContent,
-            // storedClassVendor = existingChild.querySelector('.c-courseVendor').textContent,
-            storedClassDateLast = existingChild.querySelector('.c-courseDateLast').textContent,
-            storedClassDesc = existingChild.querySelector('.ch-courseDesc').textContent;
+// console.log('newOrReplace.replace: ', newOrReplace.replace, newOrReplace.add);
+
+    if (newOrReplace.replace) {  // REPLACE
+      const storedClassProgress = newOrReplace.replace.querySelector('.ch-courseProgress').textContent, // Same as: `.c-courseProgress`
+            storedClassDateLast = newOrReplace.replace.querySelector('.c-courseDateLast').textContent,
+            storedClassDesc = newOrReplace.replace.querySelector('.ch-courseDesc').textContent;
 
       if (storedClassProgress !== app.visibleClasses[classId].courseProgress.toString() ||
-          // storedClassVendorName !== app.visibleClasses[classId].courseVendorName ||
-          // storedClassVendor !== app.visibleClasses[classId].courseVendor ||
           storedClassDateLast !== app.visibleClasses[classId].courseDateLast ||
           storedClassDesc !== app.visibleClasses[classId].courseDesc
          ) {
-        existingChild.parentNode.replaceChild(app.getClassCard(classId, true), existingChild);
+        newOrReplace.replace.parentNode.replaceChild(app.getClassCard(classId, 'updated'), newOrReplace.replace); // 0 = Card was updated.
       } else {
-        existingChild.parentNode.replaceChild(app.getClassCard(classId), existingChild);
+        newOrReplace.replace.parentNode.replaceChild(app.getClassCard(classId), newOrReplace.replace); // -1 = Card not updated.
       }
 
     } else {              // ADD
-      app.container.appendChild(app.getClassCard(classId));
+      if (newOrReplace.add >= 0) {
+        // Course is new. Inserting it just before the course that's currently in its place.
+        // (According to the app.allClassList order, which is in the same order as the classes being read and output to the DOM).
+        app.container.insertBefore(app.getClassCard(classId, 'newer'), app.container.querySelectorAll('.item-node')[newOrReplace.add]);
+      } else {
+        app.container.appendChild(app.getClassCard(classId, 'new')); // newOrReplace.add -- card's index from the display order
+      }
     }
   };
 
   // Creating the initial `item-node` cards.
   //
-  app.getClassCard = function(cid, replaceExisting = false) {
+  app.getClassCard = function(cid, addOrUpdate = '') { // 'updated', 'new', '' (dont' add message; leave card alone).
 
     let classWrapper = app.cardTemplate.cloneNode(true),
         updateMsg = document.createElement('span');
@@ -527,8 +538,11 @@
       classWrapper.appendChild(courseListWrapper);
     }
 
-    if (replaceExisting) {                           // Add <span> overlay: "Updated!"
+    if (addOrUpdate === 'updated') {                           // Add <span> overlay: "Updated!"
       updateMsg.textContent = 'Updated!';
+      classWrapper.appendChild(updateMsg);
+    } else if (addOrUpdate === 'newer') {
+      updateMsg.textContent = 'New!';
       classWrapper.appendChild(updateMsg);
     }
 
