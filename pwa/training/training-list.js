@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 38,
+      "courseProgress": 40,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -65,7 +65,7 @@
         },
         {
           "courseClassTitle": "Responsive Web Design",
-          "courseClassProgress": 13,
+          "courseClassProgress": 21,
           "courseClassContent": `
             <p class='text-body'>Responsive Web Design is an old idea, but many developers struggle to implement it. Cut through the confusion and learn the mechanics of responsive web design. You&rsquo;ll come away able to build web pages that work equally well on phones, tablets, and the desktop.</p>
             <h4 class='western'>Approx. 2 weeks Intermediate</h4>
@@ -575,7 +575,7 @@
       "active": true,
       "courseVendorName": "2b— Udacity",
       "courseVendor": "Responsive Web Design Fundamentals",
-      "courseProgress": 13,
+      "courseProgress": 21,
       "courseDesc": "In this course you'll learn the fundamentals of responsive web design with Google's Pete LePage! You'll create your own responsive web page that works well on any device - phone, tablet, desktop or anything in between.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -585,7 +585,7 @@
       "courseList": [
         {
           "courseClassTitle": "Why Responsive?",
-          "courseClassProgress": 64,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Pete Lepage, Developer Advocate at Google, explains why responsive design is so important and helps you set up your development environment.</p>
             <ul>
@@ -596,20 +596,20 @@
               <li class='progress done'>Emulators, Simulators and Real Devices</li>
               <li class='progress done'>Setting up Chrome's Dev Tools</li>
               <li class='progress done'>Remote Debugging Intro</li>
-              <li class='progress'>Setup for mobile</li>
-              <li class='progress'>Using dev tools on mobile</li>
-              <li class='progress'>Mobile tools for iOS</li>
-              <li class='progress'>Lesson Summary</li>
+              <li class='progress done'>Setup for mobile</li>
+              <li class='progress done'>Using dev tools on mobile</li>
+              <li class='progress done'>Mobile tools for iOS</li>
+              <li class='progress done'>Lesson Summary</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Starting Small",
-          "courseClassProgress": 0,
+          "courseClassProgress": 6,
           "courseClassContent": `
             <p class='text-body'>Dive into the specifics of how pixels on a webpage are rendered and how that impacts the development process.</p>
             <ul>
-              <li class='progress'>Defining the Viewport</li>
+              <li class='progress done'>Defining the Viewport</li>
               <li class='progress'>Pixels, pixels and moar pixels!</li>
               <li class='progress'>Quiz: Pixelation</li>
               <li class='progress'>Quiz: Calculating DPR</li>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 39,
+      "courseProgress": 41,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -832,14 +832,14 @@
         },
         {
           "courseClassTitle": "ES6",
-          "courseClassProgress": 4,
+          "courseClassProgress": 19,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the ES6 Challenges</li>
-              <li class='progress'>Explore Differences Between the var and let Keywords</li>
-              <li class='progress'>Compare Scopes of the var and let Keywords</li>
-              <li class='progress'>Declare a Read-Only Variable with the const Keyword</li>
-              <li class='progress'>Mutate an Array Declared with const</li>
+              <li class='progress done'>Explore Differences Between the var and let Keywords</li>
+              <li class='progress done'>Compare Scopes of the var and let Keywords</li>
+              <li class='progress done'>Declare a Read-Only Variable with the const Keyword</li>
+              <li class='progress done'>Mutate an Array Declared with const</li>
               <li class='progress'>Prevent Object Mutation</li>
               <li class='progress'>Use Arrow Functions to Write Concise Anonymous Functions</li>
               <li class='progress'>Write Arrow Functions with Parameters</li>
@@ -1594,7 +1594,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 67,
+      "courseProgress": 75,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1604,7 +1604,7 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 67,
+          "courseClassProgress": 75,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
@@ -1621,11 +1621,11 @@
               <li class='progress done'>Step 4 - Intercepting HTTP Requests</li>
               <li class='progress done'>Step 5 - Purging Previous Application versions</li>
               <li class='progress done'>Step 6 - Serving the Application From Cache Using a Cache Then Network Strategy</li>
-              <li class='progress'>Customizing the Service Worker Lifecycle
+              <li class='progress done'>Customizing the Service Worker Lifecycle
                 <ul>
                   <li class='progress done'>Skipping the Wait Phase (and potential issues it might cause)</li>
                   <li class='progress done'>Taking over the current page with clients.claim()</li>
-                  <li class='progress'>Updating a Service Worker Manually</li>
+                  <li class='progress done'>Updating a Service Worker Manually</li>
                 </ul>
               </li>
               <li class='progress'>Built-in Browser protection against broken Service Workers</li>
