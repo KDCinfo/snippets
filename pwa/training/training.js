@@ -815,6 +815,9 @@
           elem.classList.remove('active');
           setTimeout( () => {
             elem.focus();
+            // Bug: When screen width is between 1375px - 1391px;
+            // collapsing Details view orphans cards below bordered container.
+            window.dispatchEvent(new Event('resize'));
           }, 250);
         }
       });
