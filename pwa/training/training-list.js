@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 41,
+      "courseProgress": 42,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -832,7 +832,7 @@
         },
         {
           "courseClassTitle": "ES6",
-          "courseClassProgress": 19,
+          "courseClassProgress": 30,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the ES6 Challenges</li>
@@ -840,9 +840,9 @@
               <li class='progress done'>Compare Scopes of the var and let Keywords</li>
               <li class='progress done'>Declare a Read-Only Variable with the const Keyword</li>
               <li class='progress done'>Mutate an Array Declared with const</li>
-              <li class='progress'>Prevent Object Mutation</li>
-              <li class='progress'>Use Arrow Functions to Write Concise Anonymous Functions</li>
-              <li class='progress'>Write Arrow Functions with Parameters</li>
+              <li class='progress done'>Prevent Object Mutation</li>
+              <li class='progress done'>Use Arrow Functions to Write Concise Anonymous Functions</li>
+              <li class='progress done'>Write Arrow Functions with Parameters</li>
               <li class='progress'>Write Higher Order Arrow Functions</li>
               <li class='progress'>Set Default Parameters for Your Functions</li>
               <li class='progress'>Use the Rest Operator with Function Parameters</li>
@@ -1594,7 +1594,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 75,
+      "courseProgress": 83,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1604,7 +1604,7 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 75,
+          "courseClassProgress": 83,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
@@ -1628,7 +1628,7 @@
                   <li class='progress done'>Updating a Service Worker Manually</li>
                 </ul>
               </li>
-              <li class='progress'>Built-in Browser protection against broken Service Workers</li>
+              <li class='progress done'>Built-in Browser protection against broken Service Workers</li>
               <li class='progress'>Precautions with the use of the Browser Cache and Service Workers</li>
               <li class='progress'>Conclusions</li>
             </ul>
