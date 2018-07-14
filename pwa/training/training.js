@@ -385,6 +385,8 @@
 
     const updatedItems = [];
 
+    document.getElementById('completed-count').textContent = 0;
+
     if (app.container.childElementCount > 0) {
       // Cycle thru NodeList        - Remove obsoletes
       // Cycle thru Set             - Remove obsoletes; Update existing classes.
@@ -509,7 +511,12 @@
     classWrapper.querySelector('.ch-courseDateStarted').textContent = courseDateStarted;
     classWrapper.querySelector('.ch-courseDesc').textContent = courseDesc;
 
-    // @TODONE: Do the same with course sections.
+    if (courseProgress === 100) {
+      classWrapper.classList.add('completed');
+      document.getElementById('completed-count').textContent = parseInt(document.getElementById('completed-count').textContent, 10) + 1;
+    }
+
+    // Do the same with sub-courses section.
     // classWrapper.querySelector('.ch-courseList').textContent = courseList;
     // <div class="c-courseList">
     //   <div class="cardList course-template">
@@ -853,4 +860,26 @@
       document.getElementById('app-message').classList.toggle('open', false);
     }
   });
+
+  // https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_switch_role
+  //
+  document.querySelector("button.switch").addEventListener("click", function(e) {
+    // Event Bubbling Propagate
+    if (e.target !== this) {
+      e.stopPropagation();
+      document.querySelector("button.switch").click();
+      return;
+    }
+
+    let el = e.target;
+    if (el.getAttribute("aria-checked") === "true") {
+        el.setAttribute("aria-checked", "false");
+        document.querySelectorAll('.completed').forEach(n => n.classList.add('t-off'));
+        window.dispatchEvent(new Event('resize'));
+    } else {
+        el.setAttribute("aria-checked", "true");
+        document.querySelectorAll('.completed').forEach(n => n.classList.remove('t-off'));
+        window.dispatchEvent(new Event('resize'));
+    }
+  }, false);
 })();

@@ -422,10 +422,12 @@ ul {
 }
   .main-wrapper.maxit {
     grid-template-areas:
+      "pagetop"
       "pageleft"
       "pageright"
       "pagefooter";
     grid-template-columns: 1fr;
+    grid-template-rows: 3px auto;
   }
   .main-wrapper .content-wrapper {
     display: none;
@@ -440,27 +442,116 @@ ul {
 @media (min-width: 675px) {
   .main-wrapper.maxit {
     grid-template-areas:
+      "pagetop pageright"
       "pageleft pageright"
       "pageleft pagefooter";
-    grid-template-columns: 250px minmax(auto, 825px);
+    grid-template-columns: 285px minmax(auto, 825px);
     grid-column-gap: 0.5rem;
   }
 }
 @media (min-width: 1076px) {
   .main-wrapper.maxit {
     grid-template-areas:
+      "pagetop pageright"
       "pageleft pageright"
       "pagefooter pagefooter";
     grid-template-columns: 500px auto;
   }
 }
 
-div.cards.h4 {
+div.page-top {
   grid-area: pagetop;
+  position: relative;
 }
-.main-wrapper.maxit div.cards.h4 {
+.main-wrapper.maxit div.page-top .card-tip {
   display: none;
 }
+  .main-wrapper .card-tip {
+    color: #43616a;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0.6em auto 0;
+    padding: 0;
+    text-align: center;
+  }
+  .main-wrapper .card-options {
+    background-color: hsl(45, 100%, 95%);
+    box-shadow: inset 3px 3px grey;
+    border: 3px double orange;
+    border-radius: 0.4rem;
+    display: block;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    position: absolute;
+      left: 0;
+      right: 0;
+      top: 2.75em;
+      z-index: 20;
+    text-align: center;
+    max-width: 270px;
+  }
+    .main-wrapper.maxit .card-options {
+      top: 1.1rem;
+    }
+
+  button.switch {
+    border: 2px solid black;
+    cursor: pointer;
+    display: inline-block;
+    font: 12px "Open Sans", "Arial", serif;
+    height: 26px;
+    line-height: 20px;
+    margin: 0 0.25em 0 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+  }
+    button.switch span {
+      height: 17px;
+      width: 51px;
+      line-height: 1.4;
+      position: absolute;
+        left: 3px;
+        right: 3px;
+        top: 3px;
+        bottom: 3px;
+    }
+      [role="switch"][aria-checked="false"] :first-child,
+      [role="switch"][aria-checked="true"] :last-child {
+        background: green;
+        color: #fff;
+        z-index: 1;
+      }
+      [role="switch"][aria-checked="false"] :last-child,
+      [role="switch"][aria-checked="true"] :first-child {
+        background: red;
+        z-index: -1;
+      }
+    label.switch {
+      cursor: pointer;
+      font: 16px "Open Sans", "Arial", sans-serif;
+      line-height: 20px;
+      user-select: none;
+      vertical-align: middle;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      -o-user-select: none;
+    }
+    .t-off {
+      display: none;
+    }
+  button.switch:hover,
+  button.switch:focus {
+    background-color: orange;
+  }
+  label.switch:hover,
+  label.switch:focus {
+    text-decoration: underline;
+  }
 
 main.main {
   grid-area: pageleft;
@@ -472,15 +563,13 @@ main.main {
   box-shadow: inset 3px 3px grey;
   border: 3px double orange;
   border-radius: 1rem;
-  /* From CodePen */
-  /*align-items: stretch;*/
   align-self: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 1rem auto 0;
-  padding: 0 0.5rem 1.5rem;
+  margin: 2rem auto 0;
+  padding: 0.75rem 0.5rem 1.5rem;
   position: relative;
   transition: all 2s;
 }
@@ -565,7 +654,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(13):before,
   .main-wrapper main.main .card:nth-child(17):before,
   .main-wrapper main.main .card:nth-child(21):before,
-  .main-wrapper main.main .card:nth-child(25):before {
+  .main-wrapper main.main .card:nth-child(25):before,
+  .main-wrapper main.main .card:nth-child(29):before,
+  .main-wrapper main.main .card:nth-child(33):before,
+  .main-wrapper main.main .card:nth-child(37):before,
+  .main-wrapper main.main .card:nth-child(41):before  {
     border-left: var(--post-it-cut-1a);
     border-top: var(--post-it-cut-1b);
   }
@@ -575,7 +668,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(14):before,
   .main-wrapper main.main .card:nth-child(18):before,
   .main-wrapper main.main .card:nth-child(22):before,
-  .main-wrapper main.main .card:nth-child(26):before {
+  .main-wrapper main.main .card:nth-child(26):before,
+  .main-wrapper main.main .card:nth-child(30):before,
+  .main-wrapper main.main .card:nth-child(34):before,
+  .main-wrapper main.main .card:nth-child(38):before,
+  .main-wrapper main.main .card:nth-child(42):before {
     border-left: var(--post-it-cut-2a);
     border-top: var(--post-it-cut-2b);
   }
@@ -585,7 +682,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(15):before,
   .main-wrapper main.main .card:nth-child(19):before,
   .main-wrapper main.main .card:nth-child(23):before,
-  .main-wrapper main.main .card:nth-child(27):before {
+  .main-wrapper main.main .card:nth-child(27):before,
+  .main-wrapper main.main .card:nth-child(31):before,
+  .main-wrapper main.main .card:nth-child(35):before,
+  .main-wrapper main.main .card:nth-child(39):before,
+  .main-wrapper main.main .card:nth-child(43):before {
     border-left: var(--post-it-cut-3a);
     border-top: var(--post-it-cut-3b);
   }
@@ -595,7 +696,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(16):before,
   .main-wrapper main.main .card:nth-child(20):before,
   .main-wrapper main.main .card:nth-child(24):before,
-  .main-wrapper main.main .card:nth-child(28):before {
+  .main-wrapper main.main .card:nth-child(28):before,
+  .main-wrapper main.main .card:nth-child(32):before,
+  .main-wrapper main.main .card:nth-child(36):before,
+  .main-wrapper main.main .card:nth-child(40):before,
+  .main-wrapper main.main .card:nth-child(44):before {
     border-left: var(--post-it-cut-4a);
     border-top: var(--post-it-cut-4b);
   }
@@ -608,7 +713,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(13),
   .main-wrapper main.main .card:nth-child(17),
   .main-wrapper main.main .card:nth-child(21),
-  .main-wrapper main.main .card:nth-child(25) {
+  .main-wrapper main.main .card:nth-child(25),
+  .main-wrapper main.main .card:nth-child(29),
+  .main-wrapper main.main .card:nth-child(33),
+  .main-wrapper main.main .card:nth-child(37),
+  .main-wrapper main.main .card:nth-child(41) {
     transform: rotate(var(--post-it-1b));
   }
   .main-wrapper main.main .card:nth-child(2),
@@ -617,7 +726,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(14),
   .main-wrapper main.main .card:nth-child(18),
   .main-wrapper main.main .card:nth-child(22),
-  .main-wrapper main.main .card:nth-child(26) {
+  .main-wrapper main.main .card:nth-child(26),
+  .main-wrapper main.main .card:nth-child(30),
+  .main-wrapper main.main .card:nth-child(34),
+  .main-wrapper main.main .card:nth-child(38),
+  .main-wrapper main.main .card:nth-child(42) {
     transform: rotate(var(--post-it-2b));
   }
   .main-wrapper main.main .card:nth-child(3),
@@ -626,7 +739,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(15),
   .main-wrapper main.main .card:nth-child(19),
   .main-wrapper main.main .card:nth-child(23),
-  .main-wrapper main.main .card:nth-child(27) {
+  .main-wrapper main.main .card:nth-child(27),
+  .main-wrapper main.main .card:nth-child(31),
+  .main-wrapper main.main .card:nth-child(35),
+  .main-wrapper main.main .card:nth-child(39),
+  .main-wrapper main.main .card:nth-child(43) {
     transform: rotate(var(--post-it-3b));
   }
   .main-wrapper main.main .card:nth-child(4),
@@ -635,7 +752,11 @@ main.main {
   .main-wrapper main.main .card:nth-child(16),
   .main-wrapper main.main .card:nth-child(20),
   .main-wrapper main.main .card:nth-child(24),
-  .main-wrapper main.main .card:nth-child(28) {
+  .main-wrapper main.main .card:nth-child(28),
+  .main-wrapper main.main .card:nth-child(32),
+  .main-wrapper main.main .card:nth-child(36),
+  .main-wrapper main.main .card:nth-child(40),
+  .main-wrapper main.main .card:nth-child(44) {
     transform: rotate(var(--post-it-4b));
   }
 
@@ -646,7 +767,11 @@ main.main {
     .main-wrapper main.main .card:nth-child(13),
     .main-wrapper main.main .card:nth-child(17),
     .main-wrapper main.main .card:nth-child(21),
-    .main-wrapper main.main .card:nth-child(25) {
+    .main-wrapper main.main .card:nth-child(25),
+    .main-wrapper main.main .card:nth-child(29),
+    .main-wrapper main.main .card:nth-child(33),
+    .main-wrapper main.main .card:nth-child(37),
+    .main-wrapper main.main .card:nth-child(41) {
       transform: rotate(var(--post-it-1));
     }
     .main-wrapper main.main .card:nth-child(2),
@@ -655,7 +780,11 @@ main.main {
     .main-wrapper main.main .card:nth-child(14),
     .main-wrapper main.main .card:nth-child(18),
     .main-wrapper main.main .card:nth-child(22),
-    .main-wrapper main.main .card:nth-child(26) {
+    .main-wrapper main.main .card:nth-child(26),
+    .main-wrapper main.main .card:nth-child(30),
+    .main-wrapper main.main .card:nth-child(34),
+    .main-wrapper main.main .card:nth-child(38),
+    .main-wrapper main.main .card:nth-child(42) {
       transform: rotate(var(--post-it-2));
     }
     .main-wrapper main.main .card:nth-child(3),
@@ -664,7 +793,11 @@ main.main {
     .main-wrapper main.main .card:nth-child(15),
     .main-wrapper main.main .card:nth-child(19),
     .main-wrapper main.main .card:nth-child(23),
-    .main-wrapper main.main .card:nth-child(27) {
+    .main-wrapper main.main .card:nth-child(27),
+    .main-wrapper main.main .card:nth-child(31),
+    .main-wrapper main.main .card:nth-child(35),
+    .main-wrapper main.main .card:nth-child(39),
+    .main-wrapper main.main .card:nth-child(43) {
       transform: rotate(var(--post-it-3));
     }
     .main-wrapper main.main .card:nth-child(4),
@@ -673,7 +806,11 @@ main.main {
     .main-wrapper main.main .card:nth-child(16),
     .main-wrapper main.main .card:nth-child(20),
     .main-wrapper main.main .card:nth-child(24),
-    .main-wrapper main.main .card:nth-child(28) {
+    .main-wrapper main.main .card:nth-child(28),
+    .main-wrapper main.main .card:nth-child(32),
+    .main-wrapper main.main .card:nth-child(36),
+    .main-wrapper main.main .card:nth-child(40),
+    .main-wrapper main.main .card:nth-child(44) {
       transform: rotate(var(--post-it-4));
     }
   }

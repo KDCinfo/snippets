@@ -41,7 +41,17 @@
        <!-- Responsive: Menu will expand / collapse; DIV on right will fold underneath Main. -->
   <!-- { c-: class, ch-: hidden, cl-: course list item, cc-: content } -->
   <div class="main-wrapper"><!--  maxit  -->
-    <div class="cards h4">Click a course for more detailed progress.</div>
+    <div class="page-top">
+      <div class="card-tip">Click a course for more detailed progress.</div>
+      <div class="cards card-options">
+        <label class="switch">
+          <button role="switch" aria-checked="true" id="completedCourses" class="switch">
+            <span>show</span>
+            <span>hide</span>
+          </button> Completed Courses <small>(<span id="completed-count">0</span>)</small>
+        </label>
+      </div>
+    </div>
     <main class="main container">
       <div class="card card-template" hidden>
         <div class="ch-id" hidden></div>
