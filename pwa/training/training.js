@@ -13,9 +13,7 @@
    // allClassList: [] <-- First populate with 'browser data' (if any),
    //                      then overwrite with external `.js` file (most recent class data).
    //
-   // Browser Data: Attempt to use `IndexedDB`, else then try `localStorage`
-   //
-   // @TODO: PWA (Service Workers; if available) will be primary data store (then IndexedDB; then localStorage).
+   // @TODO: PWA (Service Workers; if available).
 
   // Initialize App
   //
@@ -72,39 +70,6 @@
    *     }
    *   }
    */
-
-  /*****************************************************************************
-   *
-   * Methods for dealing with the model
-   *
-   ****************************************************************************/
-
-  /*
-    app.listCourseOld = function(key, label) {
-        var statement = 'select * from weather.forecast where woeid=' + key;
-        var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' + statement;
-
-        // TODO add cache logic here
-        if ('caches' in window) {
-          /*
-           * Check if the service worker has already cached this city's weather
-           * data. If the service worker has the data, then display the cached
-           * data while the app fetches the latest data.
-           * /
-          caches.match(url).then(function(response) {
-            if (response) {
-              response.json().then(function updateFromCache(json) {
-                var results = json.query.results;
-                results.key = key;
-                results.label = label;
-                results.created = json.query.created;
-                app.updateForecastCard(results);
-              });
-            }
-          });
-        }
-    };
-  */
 
   /*****************************************************************************
    *
@@ -451,8 +416,6 @@
 
   app.listCourse = function(classId, newOrReplace) { // 'replace': childNode | 'add': Card's index in the display order
     // Note: `classId` and `newOrReplace.id` are the same.
-
-// console.log('newOrReplace.replace: ', newOrReplace.replace, newOrReplace.add);
 
     if (newOrReplace.replace) {  // REPLACE
       const storedClassProgress = newOrReplace.replace.querySelector('.ch-courseProgress').textContent, // Same as: `.c-courseProgress`

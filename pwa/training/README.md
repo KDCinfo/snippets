@@ -12,7 +12,7 @@ The SPA's data store currently uses IndexedDB with a fallback to localStorage. O
 
 ## SPA Progress
 
-- [x] UI [In Progress]
+- [x] UI
 
   - [x] Overall layout: 2 States
 
@@ -34,7 +34,7 @@ The SPA's data store currently uses IndexedDB with a fallback to localStorage. O
 
 - [x] Save SSOT (external `.js` file) back into either IndexedDB (or localStorage, as fallback).
 
-- [ ] [IP] PWA: Add service worker as primary cache ahead of IndexedDB.
+- [ ] [IP] PWA: Add service worker.
 
   - I'll be implementing Service Workers as I follow along my current Udacity course.
 
