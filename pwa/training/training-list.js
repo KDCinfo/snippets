@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 40,
+      "courseProgress": 68,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -65,7 +65,7 @@
         },
         {
           "courseClassTitle": "Responsive Web Design",
-          "courseClassProgress": 21,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Responsive Web Design is an old idea, but many developers struggle to implement it. Cut through the confusion and learn the mechanics of responsive web design. You&rsquo;ll come away able to build web pages that work equally well on phones, tablets, and the desktop.</p>
             <h4 class='western'>Approx. 2 weeks Intermediate</h4>
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 0,
+          "courseClassProgress": 3,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -575,7 +575,7 @@
       "active": true,
       "courseVendorName": "2b— Udacity",
       "courseVendor": "Responsive Web Design Fundamentals",
-      "courseProgress": 21,
+      "courseProgress": 100,
       "courseDesc": "In this course you'll learn the fundamentals of responsive web design with Google's Pete LePage! You'll create your own responsive web page that works well on any device - phone, tablet, desktop or anything in between.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -605,98 +605,200 @@
         },
         {
           "courseClassTitle": "Starting Small",
-          "courseClassProgress": 6,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Dive into the specifics of how pixels on a webpage are rendered and how that impacts the development process.</p>
             <ul>
               <li class='progress done'>Defining the Viewport</li>
-              <li class='progress'>Pixels, pixels and moar pixels!</li>
-              <li class='progress'>Quiz: Pixelation</li>
-              <li class='progress'>Quiz: Calculating DPR</li>
-              <li class='progress'>Quiz: What's the difference?</li>
-              <li class='progress'>Quiz: Calculating CSS Pixels</li>
-              <li class='progress'>Quiz: How wide is the viewport?</li>
-              <li class='progress'>Setting the Viewport</li>
-              <li class='progress'>Large Fixed Width Elements</li>
-              <li class='progress'>Max-width on elements</li>
-              <li class='progress'>Quiz: Relative Sizes</li>
-              <li class='progress'>Tap Target Sizes</li>
-              <li class='progress'>Quiz: Tap Targets</li>
-              <li class='progress'>Start Small</li>
-              <li class='progress'>Quiz: Project Part 1</li>
-              <li class='progress'>Project Solution - Long</li>
-              <li class='progress'>Lesson Summary</li>
+              <li class='progress done'>Pixels, pixels and moar pixels!</li>
+              <li class='progress done'>Quiz: Pixelation</li>
+              <li class='progress done'>Quiz: Calculating DPR</li>
+              <li class='progress done'>Quiz: What's the difference?</li>
+              <li class='progress done'>Quiz: Calculating CSS Pixels</li>
+              <li class='progress done'>Quiz: How wide is the viewport?</li>
+              <li class='progress done'>Setting the Viewport</li>
+              <li class='progress done'>Large Fixed Width Elements</li>
+              <li class='progress done'>Max-width on elements</li>
+              <li class='progress done'>Quiz: Relative Sizes</li>
+              <li class='progress done'>Tap Target Sizes</li>
+              <li class='progress done'>Quiz: Tap Targets</li>
+              <li class='progress done'>Start Small</li>
+              <li class='progress done'>Quiz: Project Part 1</li>
+              <li class='progress done'>Project Solution - Long</li>
+              <li class='progress done'>Lesson Summary</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Building Up",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Learn the most important tools in developing any responsive web application: media queries and flexbox.</p>
             <ul>
-              <li class='progress'>Lesson Intro</li>
-              <li class='progress'>Basic Media Query Intro</li>
-              <li class='progress'>Adding a Basic Media Query</li>
-              <li class='progress'>Adding a basic media query 2</li>
-              <li class='progress'>Next Step Media Queries</li>
-              <li class='progress'>Breakpoints</li>
-              <li class='progress'>Breakpoints Pt. II</li>
-              <li class='progress'>Quiz: Number of Breakpoints</li>
-              <li class='progress'>Picking Breakpoints</li>
-              <li class='progress'>Picking Breakpoints 2</li>
-              <li class='progress'>Quiz: Pick a Breakpoint</li>
-              <li class='progress'>Complex Media Queries</li>
-              <li class='progress'>Quiz: What Styles Are Applied?</li>
-              <li class='progress'>Grids</li>
-              <li class='progress'>Flexbox Intro</li>
-              <li class='progress'>Flexbox Container</li>
-              <li class='progress'>Flex Item</li>
-              <li class='progress'>Deconstructing a Flexbox Layout</li>
-              <li class='progress'>Quiz: Deconstructing a Flexbox Layout</li>
-              <li class='progress'>Lesson Summary</li>
+              <li class='progress done'>Lesson Intro</li>
+              <li class='progress done'>Basic Media Query Intro</li>
+              <li class='progress done'>Adding a Basic Media Query</li>
+              <li class='progress done'>Adding a basic media query 2</li>
+              <li class='progress done'>Next Step Media Queries</li>
+              <li class='progress done'>Breakpoints</li>
+              <li class='progress done'>Breakpoints Pt. II</li>
+              <li class='progress done'>Quiz: Number of Breakpoints</li>
+              <li class='progress done'>Picking Breakpoints</li>
+              <li class='progress done'>Picking Breakpoints 2</li>
+              <li class='progress done'>Quiz: Pick a Breakpoint</li>
+              <li class='progress done'>Complex Media Queries</li>
+              <li class='progress done'>Quiz: What Styles Are Applied?</li>
+              <li class='progress done'>Grids</li>
+              <li class='progress done'>Flexbox Intro</li>
+              <li class='progress done'>Flexbox Container</li>
+              <li class='progress done'>Flex Item</li>
+              <li class='progress done'>Deconstructing a Flexbox Layout</li>
+              <li class='progress done'>Quiz: Deconstructing a Flexbox Layout</li>
+              <li class='progress done'>Lesson Summary</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Common Responsive Patterns",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Walk through the most popular responsive layout patterns and learn the tools needed to implement them in your own designs.</p>
             <ul>
-              <li class='progress'>Intro to Patterns</li>
-              <li class='progress'>Pattern - Column Drop</li>
-              <li class='progress'>Pattern - Mostly Fluid</li>
-              <li class='progress'>Quiz: Mostly Fluid Part 1</li>
-              <li class='progress'>Quiz: Mostly Fluid Part 2</li>
-              <li class='progress'>Quiz: Combining Fluid Layouts</li>
-              <li class='progress'>Pattern - Layout Shifter</li>
-              <li class='progress'>Quiz: Which is Which?</li>
-              <li class='progress'>Pattern - Off Canvas</li>
-              <li class='progress'>Quiz: Off Canvas Visualization</li>
-              <li class='progress'>Quiz: Project Update Part 2</li>
-              <li class='progress'>Lesson Summary</li>
+              <li class='progress done'>Intro to Patterns</li>
+              <li class='progress done'>Pattern - Column Drop</li>
+              <li class='progress done'>Pattern - Mostly Fluid</li>
+              <li class='progress done'>Quiz: Mostly Fluid Part 1</li>
+              <li class='progress done'>Quiz: Mostly Fluid Part 2</li>
+              <li class='progress done'>Quiz: Combining Fluid Layouts</li>
+              <li class='progress done'>Pattern - Layout Shifter</li>
+              <li class='progress done'>Quiz: Which is Which?</li>
+              <li class='progress done'>Pattern - Off Canvas</li>
+              <li class='progress done'>Quiz: Off Canvas Visualization</li>
+              <li class='progress done'>Quiz: Project Update Part 2</li>
+              <li class='progress done'>Lesson Summary</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Optimizations",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Learn how to optimize images, tables, and fonts to make for the best responsive layouts.</p>
             <ul>
-              <li class='progress'>Lesson Intro</li>
-              <li class='progress'>Images</li>
-              <li class='progress'>Responsive Tables Intro</li>
-              <li class='progress'>Responsive Tables - Hidden Columns</li>
-              <li class='progress'>Quiz: Hide Some Columns</li>
-              <li class='progress'>Responsive Tables - No More Tables</li>
-              <li class='progress'>Responsive Tables - Contained Scrolling</li>
-              <li class='progress'>Fonts</li>
-              <li class='progress'>Minor Breakpoints</li>
-              <li class='progress'>Quiz: Final Project Updates</li>
-              <li class='progress'>Wrap Up</li>
+              <li class='progress done'>Lesson Intro</li>
+              <li class='progress done'>Images</li>
+              <li class='progress done'>Responsive Tables Intro</li>
+              <li class='progress done'>Responsive Tables - Hidden Columns</li>
+              <li class='progress done'>Quiz: Hide Some Columns</li>
+              <li class='progress done'>Responsive Tables - No More Tables</li>
+              <li class='progress done'>Responsive Tables - Contained Scrolling</li>
+              <li class='progress done'>Fonts</li>
+              <li class='progress done'>Minor Breakpoints</li>
+              <li class='progress done'>Quiz: Final Project Updates</li>
+              <li class='progress done'>Wrap Up</li>
              </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-6",
+      "active": true,
+      "courseVendorName": "2c— Udacity",
+      "courseVendor": "Responsive Images by Google",
+      "courseProgress": 3,
+      "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
+      "courseDateStarted": "July 2018",
+      "courseDateLast": "July",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "responsive-images",
+      "courseURL": "https://www.udacity.com/course/responsive-images--ud882",
+      "courseList": [
+        {
+          "courseClassTitle": "Getting Up and Running",
+          "courseClassProgress": 13,
+          "courseClassContent": `
+            <p class='text-body'>Sam Dutton, developer advocate at Google, explains the importance of getting responsive images right and helps you setup mobile developer tools.</p>
+            <ul>
+              <li class='progress done'>Course Introduction</li>
+              <li class='progress'>Why Responsive Images?</li>
+              <li class='progress'>Intro to Project</li>
+              <li class='progress'>Setting up Your Environment</li>
+              <li class='progress'>Setup for mobile</li>
+              <li class='progress'>Using dev tools on mobile</li>
+              <li class='progress'>Mobile tools for iOS</li>
+              <li class='progress'>Lesson Wrap Up</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Units, Formats, Environments",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Optimize images to display beautifully on all screen sizes. Learn about the difference between Raster vs Vector images, responsive CSS units, and setting up optimization tools.</p>
+            <ul>
+              <li class='progress'>Quiz: Sizing Intro</li>
+              <li class='progress'>All about Bits and Pixels</li>
+              <li class='progress'>Requests and Revenue</li>
+              <li class='progress'>Relative Sizing</li>
+              <li class='progress'>IMPORTANT! Udacity Front End Feedback Extension</li>
+              <li class='progress'>Quiz: calc()</li>
+              <li class='progress'>Landscape and Portrait</li>
+              <li class='progress'>Less Well Known CSS Units</li>
+              <li class='progress'>Raster and Vector</li>
+              <li class='progress'>Quiz: Raster or Vector Banner?</li>
+              <li class='progress'>Quiz: Raster and Vector Identification</li>
+              <li class='progress'>File formats</li>
+              <li class='progress'>Quiz: Spot the Differences</li>
+              <li class='progress'>Quiz: Spot the Differences 2</li>
+              <li class='progress'>Image Compression</li>
+              <li class='progress'>Quiz: Project Part 1</li>
+              <li class='progress'>Lesson Summary</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Images with Markup",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Dive deep into image alternatives like CSS and icon fonts and learn common strategies to alleviate latency.</p>
+            <ul>
+              <li class='progress'>Performance</li>
+              <li class='progress'>Text Problems</li>
+              <li class='progress'>CSS Techniques</li>
+              <li class='progress'>CSS background images</li>
+              <li class='progress'>Quiz: CSS background image techniques</li>
+              <li class='progress'>Symbol characters</li>
+              <li class='progress'>Quiz: Unicode Treble Clef</li>
+              <li class='progress'>Icon Fonts</li>
+              <li class='progress'>Inlining images with SVG and data URIs</li>
+              <li class='progress'>Quiz: Strategy Quiz 1</li>
+              <li class='progress'>Quiz: Strategy Quiz 2</li>
+              <li class='progress'>Quiz: Strategy Quiz 3</li>
+              <li class='progress'>Quiz: Strategy Quiz 4</li>
+              <li class='progress'>Quiz: Project Part 2</li>
+              <li class='progress'>Lesson Summary</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Full Responsiveness",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Learn to use the srcset attribute and the picture element to choose images of the right size for your application for every viewing context.</p>
+            <ul>
+              <li class='progress'>Responding to Screen Capability & View</li>
+              <li class='progress'>srcset</li>
+              <li class='progress'>Sizes Attribute</li>
+              <li class='progress'>Quiz: srcset Quiz</li>
+              <li class='progress'>Quiz: srcset and sizes</li>
+              <li class='progress'>The Picture Element</li>
+              <li class='progress'>The Full Monty</li>
+              <li class='progress'>Accessibility</li>
+              <li class='progress'>Quiz: Accessibility Promise</li>
+              <li class='progress'>Quiz: Project Part 3</li>
+              <li class='progress'>Course Conclusion</li>
+            </ul>
           `
         }
       ]
@@ -706,8 +808,8 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 42,
-      "courseDesc": "",
+      "courseProgress": 46,
+      "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
       "courseShortVendor": "fcc-courses",
@@ -832,7 +934,7 @@
         },
         {
           "courseClassTitle": "ES6",
-          "courseClassProgress": 30,
+          "courseClassProgress": 74,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the ES6 Challenges</li>
@@ -843,19 +945,19 @@
               <li class='progress done'>Prevent Object Mutation</li>
               <li class='progress done'>Use Arrow Functions to Write Concise Anonymous Functions</li>
               <li class='progress done'>Write Arrow Functions with Parameters</li>
-              <li class='progress'>Write Higher Order Arrow Functions</li>
-              <li class='progress'>Set Default Parameters for Your Functions</li>
-              <li class='progress'>Use the Rest Operator with Function Parameters</li>
-              <li class='progress'>Use the Spread Operator to Evaluate Arrays In-Place</li>
-              <li class='progress'>Use Destructuring Assignment to Assign Variables from Objects</li>
-              <li class='progress'>Use Destructuring Assignment to Assign Variables from Nested Objects</li>
-              <li class='progress'>Use Destructuring Assignment to Assign Variables from Arrays</li>
-              <li class='progress'>Use Destructuring Assignment with the Rest Operator to Reassign Array Elements</li>
-              <li class='progress'>Use Destructuring Assignment to Pass an Object as a Function's Parameters</li>
+              <li class='progress done'>Write Higher Order Arrow Functions</li>
+              <li class='progress done'>Set Default Parameters for Your Functions</li>
+              <li class='progress done'>Use the Rest Operator with Function Parameters</li>
+              <li class='progress done'>Use the Spread Operator to Evaluate Arrays In-Place</li>
+              <li class='progress done'>Use Destructuring Assignment to Assign Variables from Objects</li>
+              <li class='progress done'>Use Destructuring Assignment to Assign Variables from Nested Objects</li>
+              <li class='progress done'>Use Destructuring Assignment to Assign Variables from Arrays</li>
+              <li class='progress done'>Use Destructuring Assignment with the Rest Operator to Reassign Array Elements</li>
+              <li class='progress done'>Use Destructuring Assignment to Pass an Object as a Function's Parameters</li>
               <li class='progress'>Create Strings using Template Literals</li>
-              <li class='progress'>Write Concise Object Literal Declarations Using Simple Fields</li>
-              <li class='progress'>Write Concise Declarative Functions with ES6</li>
-              <li class='progress'>Use class Syntax to Define a Constructor Function</li>
+              <li class='progress done'>Write Concise Object Literal Declarations Using Simple Fields</li>
+              <li class='progress done'>Write Concise Declarative Functions with ES6</li>
+              <li class='progress done'>Use class Syntax to Define a Constructor Function</li>
               <li class='progress'>Use getters and setters to Control Access to an Object</li>
               <li class='progress'>Understand the Differences Between import and require</li>
               <li class='progress'>Use export to Reuse a Code Block</li>
