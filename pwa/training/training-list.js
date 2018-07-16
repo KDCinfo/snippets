@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 68,
+      "courseProgress": 71,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 3,
+          "courseClassProgress": 13,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "2c— Udacity",
       "courseVendor": "Responsive Images by Google",
-      "courseProgress": 3,
+      "courseProgress": 13,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -716,7 +716,7 @@
       "courseList": [
         {
           "courseClassTitle": "Getting Up and Running",
-          "courseClassProgress": 13,
+          "courseClassProgress": 50,
           "courseClassContent": `
             <p class='text-body'>Sam Dutton, developer advocate at Google, explains the importance of getting responsive images right and helps you setup mobile developer tools.</p>
             <ul>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 46,
+      "courseProgress": 55,
       "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -934,7 +934,7 @@
         },
         {
           "courseClassTitle": "ES6",
-          "courseClassProgress": 74,
+          "courseClassProgress": 96,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the ES6 Challenges</li>
@@ -958,42 +958,42 @@
               <li class='progress done'>Write Concise Object Literal Declarations Using Simple Fields</li>
               <li class='progress done'>Write Concise Declarative Functions with ES6</li>
               <li class='progress done'>Use class Syntax to Define a Constructor Function</li>
-              <li class='progress'>Use getters and setters to Control Access to an Object</li>
-              <li class='progress'>Understand the Differences Between import and require</li>
-              <li class='progress'>Use export to Reuse a Code Block</li>
-              <li class='progress'>Use * to Import Everything from a File</li>
-              <li class='progress'>Create an Export Fallback with export default</li>
-              <li class='progress'>Import a Default Export</li>
+              <li class='progress done'>Use getters and setters to Control Access to an Object</li>
+              <li class='progress done'>Understand the Differences Between import and require</li>
+              <li class='progress done'>Use export to Reuse a Code Block</li>
+              <li class='progress done'>Use * to Import Everything from a File</li>
+              <li class='progress done'>Create an Export Fallback with export default</li>
+              <li class='progress done'>Import a Default Export</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Regular Expressions",
-          "courseClassProgress": 0,
+          "courseClassProgress": 67,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Regular Expression Challenges</li>
-              <li class='progress'>Using the Test Method</li>
-              <li class='progress'>Match Literal Strings</li>
-              <li class='progress'>Match a Literal String with Different Possibilities</li>
-              <li class='progress'>Ignore Case While Matching</li>
-              <li class='progress'>Extract Matches</li>
-              <li class='progress'>Find More Than the First Match</li>
-              <li class='progress'>Match Anything with Wildcard Period</li>
-              <li class='progress'>Match Single Character with Multiple Possibilities</li>
-              <li class='progress'>Match Letters of the Alphabet</li>
-              <li class='progress'>Match Numbers and Letters of the Alphabet</li>
-              <li class='progress'>Match Single Characters Not Specified</li>
-              <li class='progress'>Match Characters that Occur One or More Times</li>
-              <li class='progress'>Match Characters that Occur Zero or More Times</li>
-              <li class='progress'>Find Characters with Lazy Matching</li>
-              <li class='progress'>Find One or More Criminals in a Hunt</li>
-              <li class='progress'>Match Beginning String Patterns</li>
-              <li class='progress'>Match Ending String Patterns</li>
-              <li class='progress'>Match All Letters and Numbers</li>
-              <li class='progress'>Match Everything But Letters and Numbers</li>
-              <li class='progress'>Match All Numbers</li>
-              <li class='progress'>Match All Non-Numbers</li>
+              <li class='progress done'>Introduction to the Regular Expression Challenges</li>
+              <li class='progress done'>Using the Test Method</li>
+              <li class='progress done'>Match Literal Strings</li>
+              <li class='progress done'>Match a Literal String with Different Possibilities</li>
+              <li class='progress done'>Ignore Case While Matching</li>
+              <li class='progress done'>Extract Matches</li>
+              <li class='progress done'>Find More Than the First Match</li>
+              <li class='progress done'>Match Anything with Wildcard Period</li>
+              <li class='progress done'>Match Single Character with Multiple Possibilities</li>
+              <li class='progress done'>Match Letters of the Alphabet</li>
+              <li class='progress done'>Match Numbers and Letters of the Alphabet</li>
+              <li class='progress done'>Match Single Characters Not Specified</li>
+              <li class='progress done'>Match Characters that Occur One or More Times</li>
+              <li class='progress done'>Match Characters that Occur Zero or More Times</li>
+              <li class='progress done'>Find Characters with Lazy Matching</li>
+              <li class='progress done'>Find One or More Criminals in a Hunt</li>
+              <li class='progress done'>Match Beginning String Patterns</li>
+              <li class='progress done'>Match Ending String Patterns</li>
+              <li class='progress done'>Match All Letters and Numbers</li>
+              <li class='progress done'>Match Everything But Letters and Numbers</li>
+              <li class='progress done'>Match All Numbers</li>
+              <li class='progress done'>Match All Non-Numbers</li>
               <li class='progress'>Restrict Possible Usernames</li>
               <li class='progress'>Match Whitespace</li>
               <li class='progress'>Match Non-Whitespace Characters</li>
@@ -1696,7 +1696,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 83,
+      "courseProgress": 92,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1706,7 +1706,7 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 83,
+          "courseClassProgress": 92,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
@@ -1731,7 +1731,7 @@
                 </ul>
               </li>
               <li class='progress done'>Built-in Browser protection against broken Service Workers</li>
-              <li class='progress'>Precautions with the use of the Browser Cache and Service Workers</li>
+              <li class='progress done'>Precautions with the use of the Browser Cache and Service Workers</li>
               <li class='progress'>Conclusions</li>
             </ul>
           `
