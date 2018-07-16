@@ -658,11 +658,22 @@
       classContent.appendChild(newCourse); // course-template
 
       // Now that it's attached to the DOM, we can cycle through and attach an event listener to each topic.
-      classContent.querySelector('.cc-courseList').querySelectorAll('.course-node').forEach( elem => {
+      classContent.querySelector('.cc-courseList').querySelectorAll('.course-node').forEach( (elem, idx) => {
+
+        elem.querySelector('.cl-courseClassTitle').setAttribute('id', 'courseStatTitle-' + nodeIdx + '-' + idx);
+        // fullCourseStats-4-0 // Classroom Index + Sub-Topic Index
+
+        elem.querySelector('.c-expandable').setAttribute('tabindex', 0); // article.c-expandable
+        // Make the article sub-topic clickable (to appease ChromeVox; NVDA is fine with arrows.)
+        // ChromeVox also doesn't read the aria-describedby; NVDA does.
 
         let expandElem = elem.querySelector('.expand-it');
-
         expandElem.setAttribute('tabindex', 0);
+        expandElem.setAttribute('role', 'button');
+        expandElem.setAttribute('aria-labelledby', 'courseStatTitle-' + nodeIdx + '-' + idx);
+        if (idx === 0) {
+          expandElem.setAttribute('aria-describedby', 'expand-it-desc');
+        }
         expandElem.addEventListener('click', e => app.expandTopic(e));
         expandElem.addEventListener('keydown', function(e) {
           // [event.keyCode] is deprecated.

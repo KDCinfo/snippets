@@ -71,12 +71,12 @@
         <div class="ch-courseList" hidden>
           <div class="course course-template" hidden>
             <div class="expand-it">*</div>
-            <div class="c-expandable">
+            <article class="c-expandable">
               <div class="c-listheader">
                 <span class="c-listitem cl-courseClassProgress"></span><span> - </span><span class="c-listitem cl-courseClassTitle"></span>
               </div>
               <div class="c-listitem cl-courseClassContent"></div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
@@ -132,6 +132,13 @@
     <svg viewBox="0 0 32 32" width="32" height="32">
       <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
     </svg>
+  </div>
+
+  <div id="expand-it-desc" aria-hidden="true" sr-only="true" class="hidden">
+    You are on course sub-topic number one.
+    These sections show course sub-topic progress.
+    Use arrow keys for sub-textual information within each section.
+    Press tab/shift-tab to shift back to primary navigation.
   </div>
 
   <script src="training.js?v20180715b"></script>
