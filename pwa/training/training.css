@@ -560,8 +560,8 @@ div.page-top {
   button.switch:focus {
     background-color: orange;
   }
-  label.switch:hover,
-  label.switch:focus {
+  label.switch:hover .button-label,
+  label.switch:focus .button-label {
     text-decoration: underline;
   }
 
@@ -581,7 +581,7 @@ main.main {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 2rem auto 0;
-  padding: 1.25rem 0.5rem 0.75rem;
+  padding: 1.25rem 0.5rem 1.5rem;
   position: relative;
   transition: all 2s;
 }
