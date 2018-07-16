@@ -721,9 +721,9 @@
             <p class='text-body'>Sam Dutton, developer advocate at Google, explains the importance of getting responsive images right and helps you setup mobile developer tools.</p>
             <ul>
               <li class='progress done'>Course Introduction</li>
-              <li class='progress'>Why Responsive Images?</li>
-              <li class='progress'>Intro to Project</li>
-              <li class='progress'>Setting up Your Environment</li>
+              <li class='progress done'>Why Responsive Images?</li>
+              <li class='progress done'>Intro to Project</li>
+              <li class='progress done'>Setting up Your Environment</li>
               <li class='progress'>Setup for mobile</li>
               <li class='progress'>Using dev tools on mobile</li>
               <li class='progress'>Mobile tools for iOS</li>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 55,
+      "courseProgress": 63,
       "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -969,7 +969,7 @@
         },
         {
           "courseClassTitle": "Regular Expressions",
-          "courseClassProgress": 67,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Regular Expression Challenges</li>
@@ -994,31 +994,31 @@
               <li class='progress done'>Match Everything But Letters and Numbers</li>
               <li class='progress done'>Match All Numbers</li>
               <li class='progress done'>Match All Non-Numbers</li>
-              <li class='progress'>Restrict Possible Usernames</li>
-              <li class='progress'>Match Whitespace</li>
-              <li class='progress'>Match Non-Whitespace Characters</li>
-              <li class='progress'>Specify Upper and Lower Number of Matches</li>
-              <li class='progress'>Specify Only the Lower Number of Matches</li>
-              <li class='progress'>Specify Exact Number of Matches</li>
-              <li class='progress'>Check for All or None</li>
-              <li class='progress'>Positive and Negative Lookahead</li>
-              <li class='progress'>Reuse Patterns Using Capture Groups</li>
-              <li class='progress'>Use Capture Groups to Search and Replace</li>
-              <li class='progress'>Remove Whitespace from Start and End</li>
+              <li class='progress done'>Restrict Possible Usernames</li>
+              <li class='progress done'>Match Whitespace</li>
+              <li class='progress done'>Match Non-Whitespace Characters</li>
+              <li class='progress done'>Specify Upper and Lower Number of Matches</li>
+              <li class='progress done'>Specify Only the Lower Number of Matches</li>
+              <li class='progress done'>Specify Exact Number of Matches</li>
+              <li class='progress done'>Check for All or None</li>
+              <li class='progress done'>Positive and Negative Lookahead</li>
+              <li class='progress done'>Reuse Patterns Using Capture Groups</li>
+              <li class='progress done'>Use Capture Groups to Search and Replace</li>
+              <li class='progress done'>Remove Whitespace from Start and End</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Debugging",
-          "courseClassProgress": 0,
+          "courseClassProgress": 46,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Debugging Challenges</li>
-              <li class='progress'>Use the JavaScript Console to Check the Value of a Variable</li>
-              <li class='progress'>Understanding the Differences between the freeCodeCamp and Browser Console</li>
-              <li class='progress'>Use typeof to Check the Type of a Variable</li>
-              <li class='progress'>Catch Misspelled Variable and Function Names</li>
-              <li class='progress'>Catch Unclosed Parentheses, Brackets, Braces and Quotes</li>
+              <li class='progress done'>Introduction to the Debugging Challenges</li>
+              <li class='progress done'>Use the JavaScript Console to Check the Value of a Variable</li>
+              <li class='progress done'>Understanding the Differences between the freeCodeCamp and Browser Console</li>
+              <li class='progress done'>Use typeof to Check the Type of a Variable</li>
+              <li class='progress done'>Catch Misspelled Variable and Function Names</li>
+              <li class='progress done'>Catch Unclosed Parentheses, Brackets, Braces and Quotes</li>
               <li class='progress'>Catch Mixed Usage of Single and Double Quotes</li>
               <li class='progress'>Catch Use of Assignment Operator Instead of Equality Operator</li>
               <li class='progress'>Catch Missing Open and Closing Parenthesis After a Function Call</li>
