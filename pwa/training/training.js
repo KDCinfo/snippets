@@ -475,7 +475,7 @@
     classWrapper.querySelector('.ch-courseDesc').textContent = courseDesc;
 
     if (courseProgress === 100) {
-      classWrapper.classList.add('completed');
+      classWrapper.classList.add('completed', 't-off');
       document.getElementById('completed-count').textContent = parseInt(document.getElementById('completed-count').textContent, 10) + 1;
     }
 
