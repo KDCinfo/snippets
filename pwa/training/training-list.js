@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 71,
+      "courseProgress": 78,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 13,
+          "courseClassProgress": 34,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "2c— Udacity",
       "courseVendor": "Responsive Images by Google",
-      "courseProgress": 13,
+      "courseProgress": 34,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -716,7 +716,7 @@
       "courseList": [
         {
           "courseClassTitle": "Getting Up and Running",
-          "courseClassProgress": 50,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Sam Dutton, developer advocate at Google, explains the importance of getting responsive images right and helps you setup mobile developer tools.</p>
             <ul>
@@ -724,25 +724,25 @@
               <li class='progress done'>Why Responsive Images?</li>
               <li class='progress done'>Intro to Project</li>
               <li class='progress done'>Setting up Your Environment</li>
-              <li class='progress'>Setup for mobile</li>
-              <li class='progress'>Using dev tools on mobile</li>
-              <li class='progress'>Mobile tools for iOS</li>
-              <li class='progress'>Lesson Wrap Up</li>
+              <li class='progress done'>Setup for mobile</li>
+              <li class='progress done'>Using dev tools on mobile</li>
+              <li class='progress done'>Mobile tools for iOS</li>
+              <li class='progress done'>Lesson Wrap Up</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Units, Formats, Environments",
-          "courseClassProgress": 0,
+          "courseClassProgress": 35,
           "courseClassContent": `
             <p class='text-body'>Optimize images to display beautifully on all screen sizes. Learn about the difference between Raster vs Vector images, responsive CSS units, and setting up optimization tools.</p>
             <ul>
-              <li class='progress'>Quiz: Sizing Intro</li>
-              <li class='progress'>All about Bits and Pixels</li>
-              <li class='progress'>Requests and Revenue</li>
-              <li class='progress'>Relative Sizing</li>
-              <li class='progress'>IMPORTANT! Udacity Front End Feedback Extension</li>
-              <li class='progress'>Quiz: calc()</li>
+              <li class='progress done'>Quiz: Sizing Intro</li>
+              <li class='progress done'>All about Bits and Pixels</li>
+              <li class='progress done'>Requests and Revenue</li>
+              <li class='progress done'>Relative Sizing</li>
+              <li class='progress done'>IMPORTANT! Udacity Front End Feedback Extension</li>
+              <li class='progress done'>Quiz: calc()</li>
               <li class='progress'>Landscape and Portrait</li>
               <li class='progress'>Less Well Known CSS Units</li>
               <li class='progress'>Raster and Vector</li>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 63,
+      "courseProgress": 80,
       "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1010,7 +1010,7 @@
         },
         {
           "courseClassTitle": "Debugging",
-          "courseClassProgress": 46,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Debugging Challenges</li>
@@ -1019,51 +1019,51 @@
               <li class='progress done'>Use typeof to Check the Type of a Variable</li>
               <li class='progress done'>Catch Misspelled Variable and Function Names</li>
               <li class='progress done'>Catch Unclosed Parentheses, Brackets, Braces and Quotes</li>
-              <li class='progress'>Catch Mixed Usage of Single and Double Quotes</li>
-              <li class='progress'>Catch Use of Assignment Operator Instead of Equality Operator</li>
-              <li class='progress'>Catch Missing Open and Closing Parenthesis After a Function Call</li>
-              <li class='progress'>Catch Arguments               <li class='progress done'> in the Wrong Order When Calling a Function</li></li>
-              <li class='progress'>Catch Off By One Errors When Using Indexing</li>
-              <li class='progress'>Use Caution When Reinitializing Variables Inside a Loop</li>
-              <li class='progress'>Prevent Infinite Loops with a Valid Terminal Condition</li>
+              <li class='progress done'>Catch Mixed Usage of Single and Double Quotes</li>
+              <li class='progress done'>Catch Use of Assignment Operator Instead of Equality Operator</li>
+              <li class='progress done'>Catch Missing Open and Closing Parenthesis After a Function Call</li>
+              <li class='progress done'>Catch Arguments in the Wrong Order When Calling a Function</li>
+              <li class='progress done'>Catch Off By One Errors When Using Indexing</li>
+              <li class='progress done'>Use Caution When Reinitializing Variables Inside a Loop</li>
+              <li class='progress done'>Prevent Infinite Loops with a Valid Terminal Condition</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Basic Data Structures",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Basic Data Structure Challenges</li>
-              <li class='progress'>Use an Array to Store a Collection of Data</li>
-              <li class='progress'>Access an Array's Contents Using Bracket Notation</li>
-              <li class='progress'>Add Items to an Array with push() and unshift()</li>
-              <li class='progress'>Remove Items from an Array with pop() and shift()</li>
-              <li class='progress'>Remove Items Using splice()</li>
-              <li class='progress'>Add Items Using splice()</li>
-              <li class='progress'>Copy Array Items Using slice()</li>
-              <li class='progress'>Copy an Array with the Spread Operator</li>
-              <li class='progress'>Combine Arrays with the Spread Operator</li>
-              <li class='progress'>Check For The Presence of an Element With indexOf()</li>
-              <li class='progress'>Iterate Through All an Array's Items Using For Loops</li>
-              <li class='progress'>Create complex multi-dimensional arrays</li>
-              <li class='progress'>Add Key-Value Pairs to JavaScript Objects</li>
-              <li class='progress'>Modify an Object Nested Within an Object</li>
-              <li class='progress'>Access Property Names with Bracket Notation</li>
-              <li class='progress'>Use the delete Keyword to Remove Object Properties</li>
-              <li class='progress'>Check if an Object has a Property</li>
-              <li class='progress'> Iterate Through the Keys of an Object with a for...in Statement</li>
-              <li class='progress'>Generate an Array of All Object Keys with Object.keys()</li>
-              <li class='progress'>Modify an Array Stored in an Object</li>
+              <li class='progress done'>Introduction to the Basic Data Structure Challenges</li>
+              <li class='progress done'>Use an Array to Store a Collection of Data</li>
+              <li class='progress done'>Access an Array's Contents Using Bracket Notation</li>
+              <li class='progress done'>Add Items to an Array with push() and unshift()</li>
+              <li class='progress done'>Remove Items from an Array with pop() and shift()</li>
+              <li class='progress done'>Remove Items Using splice()</li>
+              <li class='progress done'>Add Items Using splice()</li>
+              <li class='progress done'>Copy Array Items Using slice()</li>
+              <li class='progress done'>Copy an Array with the Spread Operator</li>
+              <li class='progress done'>Combine Arrays with the Spread Operator</li>
+              <li class='progress done'>Check For The Presence of an Element With indexOf()</li>
+              <li class='progress done'>Iterate Through All an Array's Items Using For Loops</li>
+              <li class='progress done'>Create complex multi-dimensional arrays</li>
+              <li class='progress done'>Add Key-Value Pairs to JavaScript Objects</li>
+              <li class='progress done'>Modify an Object Nested Within an Object</li>
+              <li class='progress done'>Access Property Names with Bracket Notation</li>
+              <li class='progress done'>Use the delete Keyword to Remove Object Properties</li>
+              <li class='progress done'>Check if an Object has a Property</li>
+              <li class='progress done'>Iterate Through the Keys of an Object with a for...in Statement</li>
+              <li class='progress done'>Generate an Array of All Object Keys with Object.keys()</li>
+              <li class='progress done'>Modify an Array Stored in an Object</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Basic Algorithm Scripting",
-          "courseClassProgress": 88,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to Basic Algorithm Scripting</li>
+              <li class='progress done'>Introduction to Basic Algorithm Scripting</li>
               <li class='progress done'>Convert Celsius to Fahrenheit</li>
               <li class='progress done'>Reverse a String</li>
               <li class='progress done'>Factorialize a Number</li>
@@ -1075,7 +1075,7 @@
               <li class='progress done'>Finders Keepers</li>
               <li class='progress done'>Boo who</li>
               <li class='progress done'>Title Case a Sentence</li>
-              <li class='progress'>Slice and Splice</li>
+              <li class='progress done'>Slice and Splice</li>
               <li class='progress done'>Falsy Bouncer</li>
               <li class='progress done'>Where do I Belong</li>
               <li class='progress done'>Mutations</li>
@@ -1085,10 +1085,10 @@
         },
         {
           "courseClassTitle": "Object Oriented Programming",
-          "courseClassProgress": 0,
+          "courseClassProgress": 4,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Object Oriented Programming Challenges</li>
+              <li class='progress done'>Introduction to the Object Oriented Programming Challenges</li>
               <li class='progress'>Create a Basic JavaScript Object</li>
               <li class='progress'>Use Dot Notation to Access the Properties of an Object</li>
               <li class='progress'>Create a Method on an Object</li>
@@ -1696,7 +1696,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 92,
+      "courseProgress": 94,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
