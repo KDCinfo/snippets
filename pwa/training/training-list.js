@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 78,
+      "courseProgress": 82,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 34,
+          "courseClassProgress": 46,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "2c— Udacity",
       "courseVendor": "Responsive Images by Google",
-      "courseProgress": 34,
+      "courseProgress": 46,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -733,7 +733,7 @@
         },
         {
           "courseClassTitle": "Units, Formats, Environments",
-          "courseClassProgress": 35,
+          "courseClassProgress": 82,
           "courseClassContent": `
             <p class='text-body'>Optimize images to display beautifully on all screen sizes. Learn about the difference between Raster vs Vector images, responsive CSS units, and setting up optimization tools.</p>
             <ul>
@@ -1696,7 +1696,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 96,
+      "courseProgress": 97,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1706,7 +1706,7 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 96,
+          "courseClassProgress": 97,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
