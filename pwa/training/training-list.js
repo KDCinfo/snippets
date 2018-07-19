@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 82,
+      "courseProgress": 84,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 46,
+          "courseClassProgress": 52,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "2c— Udacity",
       "courseVendor": "Responsive Images by Google",
-      "courseProgress": 46,
+      "courseProgress": 52,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -733,7 +733,7 @@
         },
         {
           "courseClassTitle": "Units, Formats, Environments",
-          "courseClassProgress": 82,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Optimize images to display beautifully on all screen sizes. Learn about the difference between Raster vs Vector images, responsive CSS units, and setting up optimization tools.</p>
             <ul>
@@ -743,27 +743,27 @@
               <li class='progress done'>Relative Sizing</li>
               <li class='progress done'>IMPORTANT! Udacity Front End Feedback Extension</li>
               <li class='progress done'>Quiz: calc()</li>
-              <li class='progress'>Landscape and Portrait</li>
-              <li class='progress'>Less Well Known CSS Units</li>
-              <li class='progress'>Raster and Vector</li>
-              <li class='progress'>Quiz: Raster or Vector Banner?</li>
-              <li class='progress'>Quiz: Raster and Vector Identification</li>
-              <li class='progress'>File formats</li>
-              <li class='progress'>Quiz: Spot the Differences</li>
-              <li class='progress'>Quiz: Spot the Differences 2</li>
-              <li class='progress'>Image Compression</li>
-              <li class='progress'>Quiz: Project Part 1</li>
-              <li class='progress'>Lesson Summary</li>
+              <li class='progress done'>Landscape and Portrait</li>
+              <li class='progress done'>Less Well Known CSS Units</li>
+              <li class='progress done'>Raster and Vector</li>
+              <li class='progress done'>Quiz: Raster or Vector Banner?</li>
+              <li class='progress done'>Quiz: Raster and Vector Identification</li>
+              <li class='progress done'>File formats</li>
+              <li class='progress done'>Quiz: Spot the Differences</li>
+              <li class='progress done'>Quiz: Spot the Differences 2</li>
+              <li class='progress done'>Image Compression</li>
+              <li class='progress done'>Quiz: Project Part 1</li>
+              <li class='progress done'>Lesson Summary</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Images with Markup",
-          "courseClassProgress": 0,
+          "courseClassProgress": 7,
           "courseClassContent": `
             <p class='text-body'>Dive deep into image alternatives like CSS and icon fonts and learn common strategies to alleviate latency.</p>
             <ul>
-              <li class='progress'>Performance</li>
+              <li class='progress done'>Performance</li>
               <li class='progress'>Text Problems</li>
               <li class='progress'>CSS Techniques</li>
               <li class='progress'>CSS background images</li>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 80,
+      "courseProgress": 85,
       "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1085,23 +1085,23 @@
         },
         {
           "courseClassTitle": "Object Oriented Programming",
-          "courseClassProgress": 4,
+          "courseClassProgress": 52,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Object Oriented Programming Challenges</li>
-              <li class='progress'>Create a Basic JavaScript Object</li>
-              <li class='progress'>Use Dot Notation to Access the Properties of an Object</li>
-              <li class='progress'>Create a Method on an Object</li>
-              <li class='progress'>Make Code More Reusable with the this Keyword</li>
-              <li class='progress'>Define a Constructor Function</li>
-              <li class='progress'>Use a Constructor to Create Objects</li>
-              <li class='progress'>Extend Constructors to Receive Arguments</li>
-              <li class='progress'>Verify an Object's Constructor with instanceof</li>
-              <li class='progress'>Understand Own Properties</li>
-              <li class='progress'>Use Prototype Properties to Reduce Duplicate Code</li>
-              <li class='progress'>Iterate Over All Properties</li>
-              <li class='progress'>Understand the Constructor Property</li>
-              <li class='progress'>Change the Prototype to a New Object</li>
+              <li class='progress done'>Create a Basic JavaScript Object</li>
+              <li class='progress done'>Use Dot Notation to Access the Properties of an Object</li>
+              <li class='progress done'>Create a Method on an Object</li>
+              <li class='progress done'>Make Code More Reusable with the this Keyword</li>
+              <li class='progress done'>Define a Constructor Function</li>
+              <li class='progress done'>Use a Constructor to Create Objects</li>
+              <li class='progress done'>Extend Constructors to Receive Arguments</li>
+              <li class='progress done'>Verify an Object's Constructor with instanceof</li>
+              <li class='progress done'>Understand Own Properties</li>
+              <li class='progress done'>Use Prototype Properties to Reduce Duplicate Code</li>
+              <li class='progress done'>Iterate Over All Properties</li>
+              <li class='progress done'>Understand the Constructor Property</li>
+              <li class='progress done'>Change the Prototype to a New Object</li>
               <li class='progress'>Remember to Set the Constructor Property when Changing the Prototype</li>
               <li class='progress'>Understand Where an Object’s Prototype Comes From</li>
               <li class='progress'>Understand the Prototype Chain</li>
@@ -1417,7 +1417,7 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 29,
+      "courseProgress": 31,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1515,18 +1515,18 @@
         },
         {
           "courseClassTitle": "Applied Visual Design",
-          "courseClassProgress": 0,
+          "courseClassProgress": 17,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Applied Visual Design Challenges</li>
-              <li class='progress'>Create Visual Balance Using the text-align Property</li>
-              <li class='progress'>Adjust the Width of an Element Using the width Property</li>
-              <li class='progress'>Adjust the Height of an Element Using the height Property</li>
-              <li class='progress'>Use the strong Tag to Make Text Bold</li>
-              <li class='progress'>Use the u Tag to Underline Text</li>
-              <li class='progress'>Use the em Tag to Italicize Text</li>
-              <li class='progress'>Use the del Tag to Strikethrough Text</li>
-              <li class='progress'>Create a Horizontal Line Using the hr Element</li>
+              <li class='progress done'>Introduction to the Applied Visual Design Challenges</li>
+              <li class='progress done'>Create Visual Balance Using the text-align Property</li>
+              <li class='progress done'>Adjust the Width of an Element Using the width Property</li>
+              <li class='progress done'>Adjust the Height of an Element Using the height Property</li>
+              <li class='progress done'>Use the strong Tag to Make Text Bold</li>
+              <li class='progress done'>Use the u Tag to Underline Text</li>
+              <li class='progress done'>Use the em Tag to Italicize Text</li>
+              <li class='progress done'>Use the del Tag to Strikethrough Text</li>
+              <li class='progress done'>Create a Horizontal Line Using the hr Element</li>
               <li class='progress'>Adjust the background-color Property of Text</li>
               <li class='progress'>Adjust the Size of a Header Versus a Paragraph Tag</li>
               <li class='progress'>Add a box-shadow to a Card-like Element</li>
@@ -1733,6 +1733,420 @@
               <li class='progress done'>Built-in Browser protection against broken Service Workers</li>
               <li class='progress done'>Precautions with the use of the Browser Cache and Service Workers</li>
               <li class='progress'>Conclusions</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "harvard-1",
+      "active": true,
+      "courseVendorName": "6a— HarvardX CS50W",
+      "courseVendor": "CS50's Web Programming with Python and JavaScript",
+      "courseProgress": 1,
+      "courseDesc": "This is CS50's Web Programming with Python and JavaScript. It assumes that you've already taken CS50 itself or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
+      "courseDateStarted": "July 2018",
+      "courseDateLast": "July",
+      "courseShortVendor": "harvard-courses",
+      "courseShortName": "harvard-cs50w",
+      "courseURL": "https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web",
+      "courseList": [
+        {
+          "courseClassTitle": "Git",
+          "courseClassProgress": 10,
+          "courseClassContent": `
+            <p>Welcome everyone to web programming with Python and JavaScript.</p>
+            <ul>
+              <li class='progress done'>Introduction - 8 mins</li>
+              <li class='progress done'>git - 4 mins</li>
+              <li class='progress done'>GitHub - 2 mins</li>
+              <li class='progress'>git clone - 3 mins</li>
+              <li class='progress'>git add - 1 mins</li>
+              <li class='progress'>git commit - 2 mins</li>
+              <li class='progress'>git status - 2 mins</li>
+              <li class='progress'>git push - 2 mins</li>
+              <li class='progress'>git pull - 3 mins</li>
+              <li class='progress'>Merge Conflicts - 5 mins</li>
+              <li class='progress'>git log - 1 mins</li>
+              <li class='progress'>git reset - 8 mins</li>
+              <li class='progress'>hello.html - 7 mins</li>
+              <li class='progress'>headings.html - 3 mins</li>
+              <li class='progress'>lists.html - 3 mins</li>
+              <li class='progress'>image0.html - 4 mins</li>
+              <li class='progress'>image1.html - 5 mins</li>
+              <li class='progress'>table.html - 3 mins</li>
+              <li class='progress'>form.html - 3 mins</li>
+              <li class='progress'>DOM - 2 mins</li>
+              <li class='progress'>CSS - 2 mins</li>
+              <li class='progress'>style0.html - 6 mins</li>
+              <li class='progress'>style1.html - 5 mins</li>
+              <li class='progress'>style2.html - 3 mins</li>
+              <li class='progress'>size.html - 4 mins</li>
+              <li class='progress'>font.html - 3 mins</li>
+              <li class='progress'>border.html - 2 mins</li>
+              <li class='progress'>Styling table.html - 8 mins</li>
+              <li class='progress'>div_span.html - 11 mins</li>
+              <li class='progress'>GitHub Pages - 5 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "HTML, CSS",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 3 mins</li>
+              <li class='progress'>Branching - 15 mins</li>
+              <li class='progress'>Remotes - 3 mins</li>
+              <li class='progress'>Forks - 1 mins</li>
+              <li class='progress'>Pull Requests - 4 mins</li>
+              <li class='progress'>links0.html - 3 mins</li>
+              <li class='progress'>link1.html - 4 mins</li>
+              <li class='progress'>HTML5 - 3 mins</li>
+              <li class='progress'>form.html - 6 mins</li>
+              <li class='progress'>CSS - 2 mins</li>
+              <li class='progress'>multiple.html - 3 mins</li>
+              <li class='progress'>descendant.html - 5 mins</li>
+              <li class='progress'>child.html - 2 mins</li>
+              <li class='progress'>attribute.html - 4 mins</li>
+              <li class='progress'>hover.html - 2 mins</li>
+              <li class='progress'>before.html - 3 mins</li>
+              <li class='progress'>selection.html - 1 mins</li>
+              <li class='progress'>CSS Selectors - 2 mins</li>
+              <li class='progress'>Responsive Design - 3 mins</li>
+              <li class='progress'>print.html - 3 mins</li>
+              <li class='progress'>responsive0.html - 3 mins</li>
+              <li class='progress'>responsive1.html - 4 mins</li>
+              <li class='progress'>flexbox.html - 3 mins</li>
+              <li class='progress'>grid.html - 4 mins</li>
+              <li class='progress'>nobootstrap.html - 1 mins</li>
+              <li class='progress'>bootstrap.html - 2 mins</li>
+              <li class='progress'>columns0.html - 2 mins</li>
+              <li class='progress'>columns1.html - 5 mins</li>
+              <li class='progress'>alert.html - 2 mins</li>
+              <li class='progress'>variables.html - 2 mins</li>
+              <li class='progress'>Sass - 10 mins</li>
+              <li class='progress'>nesting.html - 5 mins</li>
+              <li class='progress'>inheritance.html - 4 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Flask",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 1 mins</li>
+              <li class='progress'>Python - 1 mins</li>
+              <li class='progress'>hello.py - 2 mins</li>
+              <li class='progress'>name.py - 4 mins</li>
+              <li class='progress'>variables.py - 4 mins</li>
+              <li class='progress'>conditions.py - 3 mins</li>
+              <li class='progress'>sequences.py - 6 mins</li>
+              <li class='progress'>loops0.py - 5 mins</li>
+              <li class='progress'>loops1.py - 1 mins</li>
+              <li class='progress'>sets.py - 2 mins</li>
+              <li class='progress'>dictionaries.py - 3 mins</li>
+              <li class='progress'>functions.py - 5 mins</li>
+              <li class='progress'>modules.py - 4 mins</li>
+              <li class='progress'>classes.py - 4 mins</li>
+              <li class='progress'>HTTP - 2 mins</li>
+              <li class='progress'>Flask - 7 mins</li>
+              <li class='progress'>routes0 - 6 mins</li>
+              <li class='progress'>templates - 5 mins</li>
+              <li class='progress'>variables0 - 8 mins</li>
+              <li class='progress'>conditions - 8 mins</li>
+              <li class='progress'>loops - 6 mins</li>
+              <li class='progress'>inheritance - 6 mins</li>
+              <li class='progress'>forms - 11 mins</li>
+              <li class='progress'>notes - 12 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "SQL",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 1 mins</li>
+              <li class='progress'>Databases - 2 mins</li>
+              <li class='progress'>SQL - 1 mins</li>
+              <li class='progress'>SQL Data Types - 2 mins</li>
+              <li class='progress'>create.sql - 6 mins</li>
+              <li class='progress'>Constraints - 2 mins</li>
+              <li class='progress'>INSERT - 3 mins</li>
+              <li class='progress'>insert.sql - 1 mins</li>
+              <li class='progress'>SELECT - 12 mins</li>
+              <li class='progress'>SQL Functions - 1 mins</li>
+              <li class='progress'>UPDATE - 3 mins</li>
+              <li class='progress'>DELETE - 9 mins</li>
+              <li class='progress'>Foreign Keys - 6 mins</li>
+              <li class='progress'>joins.sql - 8 mins</li>
+              <li class='progress'>Indexing - 7 mins</li>
+              <li class='progress'>SQL Injection - 7 mins</li>
+              <li class='progress'>Race Conditions - 6 mins</li>
+              <li class='progress'>SQL Transactions - 1 mins</li>
+              <li class='progress'>SQLAlchemy - 1 mins</li>
+              <li class='progress'>list.py - 6 mins</li>
+              <li class='progress'>import.py - 7 mins</li>
+              <li class='progress'>passengers.py - 4 mins</li>
+              <li class='progress'>airline0 - 14 mins</li>
+              <li class='progress'>airline1 - 9 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "ORMs, APIs",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 2 mins</li>
+              <li class='progress'>Object-Oriented Programming - 2 mins</li>
+              <li class='progress'>classes0.py - 3 mins</li>
+              <li class='progress'>classes1.py - 7 mins</li>
+              <li class='progress'>classes2.py - 5 mins</li>
+              <li class='progress'>classes3.py - 3 mins</li>
+              <li class='progress'>classes4.py - 7 mins</li>
+              <li class='progress'>Object-Relational Mapping - 1 mins</li>
+              <li class='progress'>Flask-SQLAlchemy - 1 mins</li>
+              <li class='progress'>models.py - 6 mins</li>
+              <li class='progress'>create.py - 6 mins</li>
+              <li class='progress'>import0.py - 1 mins</li>
+              <li class='progress'>import1.py - 13 mins</li>
+              <li class='progress'>airline1 - 1 mins</li>
+              <li class='progress'>airline2 - 5 mins</li>
+              <li class='progress'>airline3 - 4 mins</li>
+              <li class='progress'>airline4 - 5 mins</li>
+              <li class='progress'>Relationships - 3 mins</li>
+              <li class='progress'>APIs - 1 mins</li>
+              <li class='progress'>JSON - 7 mins</li>
+              <li class='progress'>HTTP Methods - 2 mins</li>
+              <li class='progress'>requests - 1 mins</li>
+              <li class='progress'>google.py - 3 mins</li>
+              <li class='progress'>fixer.io - 3 mins</li>
+              <li class='progress'>currency0.py - 2 mins</li>
+              <li class='progress'>HTTP Status Codes - 4 mins</li>
+              <li class='progress'>currency1.py - 5 mins</li>
+              <li class='progress'>currency2.py - 4 mins</li>
+              <li class='progress'>airline5 - 7 mins</li>
+              <li class='progress'>API Keys - 4 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "JavaScript",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 3 mins</li>
+              <li class='progress'>JavaScript - 1 mins</li>
+              <li class='progress'>ES6 - 1 mins</li>
+              <li class='progress'>JavaScript in a Web Page - 1 mins</li>
+              <li class='progress'>hello0.html - 2 mins</li>
+              <li class='progress'>events.html - 4 mins</li>
+              <li class='progress'>Functions - 1 mins</li>
+              <li class='progress'>Events - 3 mins</li>
+              <li class='progress'>query.html - 5 mins</li>
+              <li class='progress'>querySelector - 2 mins</li>
+              <li class='progress'>counter0.html - 3 mins</li>
+              <li class='progress'>counter1.html - 5 mins</li>
+              <li class='progress'>counter2.html - 8 mins</li>
+              <li class='progress'>counter3.html - 2 mins</li>
+              <li class='progress'>Variables - 2 mins</li>
+              <li class='progress'>variables0.html - 1 mins</li>
+              <li class='progress'>variables1.html - 2 mins</li>
+              <li class='progress'>variables2.html - 8 mins</li>
+              <li class='progress'>colors0.html - 3 mins</li>
+              <li class='progress'>colors1.html - 7 mins</li>
+              <li class='progress'>Arrow Functions - 2 mins</li>
+              <li class='progress'>colors2.html - 2 mins</li>
+              <li class='progress'>colors3.html - 4 mins</li>
+              <li class='progress'>tasks0.html - 6 mins</li>
+              <li class='progress'>tasks1.html - 3 mins</li>
+              <li class='progress'>tasks2.html - 3 mins</li>
+              <li class='progress'>interval.html - 2 mins</li>
+              <li class='progress'>storage.html - 5 mins</li>
+              <li class='progress'>Ajax - 1 mins</li>
+              <li class='progress'>currency - 13 mins</li>
+              <li class='progress'>Socket.IO - 3 mins</li>
+              <li class='progress'>vote0 - 10 mins</li>
+              <li class='progress'>vote1 - 5 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Front Ends",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 1 mins</li>
+              <li class='progress'>Single-Page Apps - 2 mins</li>
+              <li class='progress'>multipage - 4 mins</li>
+              <li class='progress'>singlepage0 - 10 mins</li>
+              <li class='progress'>HTML5 History API - 2 mins</li>
+              <li class='progress'>singlepage1 - 10 mins</li>
+              <li class='progress'>window - 5 mins</li>
+              <li class='progress'>scroll.html - 4 mins</li>
+              <li class='progress'>posts0 - 10 mins</li>
+              <li class='progress'>posts1 - 6 mins</li>
+              <li class='progress'>dice0 - 5 mins</li>
+              <li class='progress'>dice1 - 3 mins</li>
+              <li class='progress'>dice2 - 5 mins</li>
+              <li class='progress'>dice3 - 7 mins</li>
+              <li class='progress'>CSS Animation - 2 mins</li>
+              <li class='progress'>animate0.html - 3 mins</li>
+              <li class='progress'>animate1.html - 3 mins</li>
+              <li class='progress'>animate2.html - 3 mins</li>
+              <li class='progress'>animate3.html - 3 mins</li>
+              <li class='progress'>posts2 - 1 mins</li>
+              <li class='progress'>posts3 - 5 mins</li>
+              <li class='progress'>posts4 - 2 mins</li>
+              <li class='progress'>circle0.html - 2 mins</li>
+              <li class='progress'>circle1.html - 2 mins</li>
+              <li class='progress'>rect.html - 1 mins</li>
+              <li class='progress'>circle2.html - 2 mins</li>
+              <li class='progress'>circle3.html - 2 mins</li>
+              <li class='progress'>stoplight.html - 4 mins</li>
+              <li class='progress'>draw0.html - 4 mins</li>
+              <li class='progress'>draw1.html - 3 mins</li>
+              <li class='progress'>draw2.html - 7 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Django",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 3 mins</li>
+              <li class='progress'>Django - 3 mins</li>
+              <li class='progress'>Project Components - 3 mins</li>
+              <li class='progress'>hello - 9 mins</li>
+              <li class='progress'>flights - 6 mins</li>
+              <li class='progress'>Migrations - 5 mins</li>
+              <li class='progress'>Django Shell - 11 mins</li>
+              <li class='progress'>Rendering Templates - 6 mins</li>
+              <li class='progress'>admin - 8 mins</li>
+              <li class='progress'>Adding Routes - 5 mins</li>
+              <li class='progress'>Linking Routes - 4 mins</li>
+              <li class='progress'>Template Inheritance - 4 mins</li>
+              <li class='progress'>Model Relationships - 10 mins</li>
+              <li class='progress'>Registration - 11 mins</li>
+              <li class='progress'>CSRF - 2 mins</li>
+              <li class='progress'>Login and Authentication - 15 mins</li>
+              <li class='progress'>In Conclusion - 5 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Testing, CI/CD",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 2 mins</li>
+              <li class='progress'>Customizing Django Admin - 7 mins</li>
+              <li class='progress'>Static Files in Django - 3 mins</li>
+              <li class='progress'>Testing - 2 mins</li>
+              <li class='progress'>prime.py - 4 mins</li>
+              <li class='progress'>tests0.py - 2 mins</li>
+              <li class='progress'>tests0.sh - 5 mins</li>
+              <li class='progress'>assert - 2 mins</li>
+              <li class='progress'>assert0.py - 1 mins</li>
+              <li class='progress'>assert1.py - 2 mins</li>
+              <li class='progress'>unittest - 1 mins</li>
+              <li class='progress'>tests1.py - 5 mins</li>
+              <li class='progress'>tests.py - 22 mins</li>
+              <li class='progress'>unittest Methods - 2 mins</li>
+              <li class='progress'>Selenium - 7 mins</li>
+              <li class='progress'>CI/CD - 4 mins</li>
+              <li class='progress'>Travis - 3 mins</li>
+              <li class='progress'>YAML - 3 mins</li>
+              <li class='progress'>.travis.yaml - 13 mins</li>
+              <li class='progress'>Docker - 3 mins</li>
+              <li class='progress'>Dockerfile - 3 mins</li>
+              <li class='progress'>docker-compose.yml - 14 mins</li>
+              <li class='progress'>In Conclusion - 2 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "GitHub, Travis CI",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 1 mins</li>
+              <li class='progress'>GitHub Classroom - 8 mins</li>
+              <li class='progress'>Creating a Branch - 5 mins</li>
+              <li class='progress'>Opening a Pull Request - 5 mins</li>
+              <li class='progress'>Deploying - 28 mins</li>
+              <li class='progress'>Travis CI - 5 mins</li>
+              <li class='progress'>Types of Tests - 5 mins</li>
+              <li class='progress'>Build - 3 mins</li>
+              <li class='progress'>Reproducibility - 2 mins</li>
+              <li class='progress'>Tidy Deploys - 1 mins</li>
+              <li class='progress'>Faster Development - 1 mins</li>
+              <li class='progress'>Automate all the things! - 2 mins</li>
+              <li class='progress'>CICD - 2 mins</li>
+              <li class='progress'>Travis Configurations - 12 mins</li>
+              <li class='progress'>Builds and Testing - 3 mins</li>
+              <li class='progress'>CICD in the Wild - 2 mins</li>
+              <li class='progress'>In Conclusion - 5 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Scalability",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 4 mins</li>
+              <li class='progress'>Benchmarking - 1 mins</li>
+              <li class='progress'>Vertical Scaling - 2 mins</li>
+              <li class='progress'>Horizontal Scaling - 4 mins</li>
+              <li class='progress'>Load Balancing Methods - 6 mins</li>
+              <li class='progress'>Session-Aware Load Balancing - 5 mins</li>
+              <li class='progress'>Autoscaling - 16 mins</li>
+              <li class='progress'>Scaling Databases - 3 mins</li>
+              <li class='progress'>Database Partitioning - 11 mins</li>
+              <li class='progress'>Database Replication - 2 mins</li>
+              <li class='progress'>Single-Primary Replication - 4 mins</li>
+              <li class='progress'>Multi-Primary Replication - 4 mins</li>
+              <li class='progress'>Caching - 2 mins</li>
+              <li class='progress'>Client-Side Caching - 7 mins</li>
+              <li class='progress'>Server-Side Caching - 12 mins</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Security",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - 1 mins</li>
+              <li class='progress'>Security - 2 mins</li>
+              <li class='progress'>Git - 1 mins</li>
+              <li class='progress'>Open-Source Software - 4 mins</li>
+              <li class='progress'>Two-Factor Authentication - 4 mins</li>
+              <li class='progress'>HTML - 7 mins</li>
+              <li class='progress'>Flask - 1 mins</li>
+              <li class='progress'>HTTP and HTTPS - 2 mins</li>
+              <li class='progress'>Cryptography - 3 mins</li>
+              <li class='progress'>Public-Key Cryptography - 3 mins</li>
+              <li class='progress'>Environment Variables - 3 mins</li>
+              <li class='progress'>SQL - 9 mins</li>
+              <li class='progress'>SQL Injection - 7 mins</li>
+              <li class='progress'>APIs - 3 mins</li>
+              <li class='progress'>API Keys - 2 mins</li>
+              <li class='progress'>JavaScript - 3 mins</li>
+              <li class='progress'>Cross-Site Scripting - 20 mins</li>
+              <li class='progress'>Django - 1 mins</li>
+              <li class='progress'>Cross-Site Request Forgery - 9 mins</li>
+              <li class='progress'>Testing, CI/CD - 3 mins</li>
+              <li class='progress'>Scalability - 1 mins</li>
+              <li class='progress'>DoS Attacks - 1 mins</li>
+              <li class='progress'>DDoS Attacks - 3 mins</li>
+              <li class='progress'>What's Next? - 4 mins</li>
+              <li class='progress'>In Conclusion - 1 mins</li>
             </ul>
           `
         }
