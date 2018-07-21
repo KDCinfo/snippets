@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 85,
+      "courseProgress": 86,
       "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1085,7 +1085,7 @@
         },
         {
           "courseClassTitle": "Object Oriented Programming",
-          "courseClassProgress": 52,
+          "courseClassProgress": 67,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Object Oriented Programming Challenges</li>
@@ -1102,10 +1102,10 @@
               <li class='progress done'>Iterate Over All Properties</li>
               <li class='progress done'>Understand the Constructor Property</li>
               <li class='progress done'>Change the Prototype to a New Object</li>
-              <li class='progress'>Remember to Set the Constructor Property when Changing the Prototype</li>
-              <li class='progress'>Understand Where an Object’s Prototype Comes From</li>
-              <li class='progress'>Understand the Prototype Chain</li>
-              <li class='progress'>Use Inheritance So You Don't Repeat Yourself</li>
+              <li class='progress done'>Remember to Set the Constructor Property when Changing the Prototype</li>
+              <li class='progress done'>Understand Where an Object’s Prototype Comes From</li>
+              <li class='progress done'>Understand the Prototype Chain</li>
+              <li class='progress done'>Use Inheritance So You Don't Repeat Yourself</li>
               <li class='progress'>Inherit Behaviors from a Supertype</li>
               <li class='progress'>Set the Child's Prototype to an Instance of the Parent</li>
               <li class='progress'>Reset an Inherited Constructor Property</li>
@@ -1417,7 +1417,7 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 31,
+      "courseProgress": 36,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1515,7 +1515,7 @@
         },
         {
           "courseClassTitle": "Applied Visual Design",
-          "courseClassProgress": 17,
+          "courseClassProgress": 58,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Applied Visual Design Challenges</li>
@@ -1527,28 +1527,28 @@
               <li class='progress done'>Use the em Tag to Italicize Text</li>
               <li class='progress done'>Use the del Tag to Strikethrough Text</li>
               <li class='progress done'>Create a Horizontal Line Using the hr Element</li>
-              <li class='progress'>Adjust the background-color Property of Text</li>
-              <li class='progress'>Adjust the Size of a Header Versus a Paragraph Tag</li>
-              <li class='progress'>Add a box-shadow to a Card-like Element</li>
-              <li class='progress'>Decrease the Opacity of an Element</li>
-              <li class='progress'>Use the text-transform Property to Make Text Uppercase</li>
-              <li class='progress'>Set the font-size for Multiple Heading Elements</li>
-              <li class='progress'>Set the font-weight for Multiple Heading Elements</li>
-              <li class='progress'>Set the font-size of Paragraph Text</li>
-              <li class='progress'>Set the line-height of Paragraphs</li>
-              <li class='progress'>Adjust the Hover State of an Anchor Tag</li>
-              <li class='progress'>Change an Element's Relative Position</li>
-              <li class='progress'>Move a Relatively Positioned Element with CSS Offsets</li>
-              <li class='progress'>Lock an Element to its Parent with Absolute Positioning</li>
-              <li class='progress'>Lock an Element to the Browser Window with Fixed Positioning</li>
-              <li class='progress'>Push Elements Left or Right with the float Property</li>
-              <li class='progress'>Change the Position of Overlapping Elements with the z-index Property</li>
-              <li class='progress'>Center an Element Horizontally Using the margin Property</li>
-              <li class='progress'>Learn about Complementary Colors</li>
-              <li class='progress'>Learn about Tertiary Colors</li>
-              <li class='progress'>Adjust the Color of Various Elements to Complementary Colors</li>
-              <li class='progress'>Adjust the Hue of a Color</li>
-              <li class='progress'>Adjust the Tone of a Color</li>
+              <li class='progress done'>Adjust the background-color Property of Text</li>
+              <li class='progress done'>Adjust the Size of a Header Versus a Paragraph Tag</li>
+              <li class='progress done'>Add a box-shadow to a Card-like Element</li>
+              <li class='progress done'>Decrease the Opacity of an Element</li>
+              <li class='progress done'>Use the text-transform Property to Make Text Uppercase</li>
+              <li class='progress done'>Set the font-size for Multiple Heading Elements</li>
+              <li class='progress done'>Set the font-weight for Multiple Heading Elements</li>
+              <li class='progress done'>Set the font-size of Paragraph Text</li>
+              <li class='progress done'>Set the line-height of Paragraphs</li>
+              <li class='progress done'>Adjust the Hover State of an Anchor Tag</li>
+              <li class='progress done'>Change an Element's Relative Position</li>
+              <li class='progress done'>Move a Relatively Positioned Element with CSS Offsets</li>
+              <li class='progress done'>Lock an Element to its Parent with Absolute Positioning</li>
+              <li class='progress done'>Lock an Element to the Browser Window with Fixed Positioning</li>
+              <li class='progress done'>Push Elements Left or Right with the float Property</li>
+              <li class='progress done'>Change the Position of Overlapping Elements with the z-index Property</li>
+              <li class='progress done'>Center an Element Horizontally Using the margin Property</li>
+              <li class='progress done'>Learn about Complementary Colors</li>
+              <li class='progress done'>Learn about Tertiary Colors</li>
+              <li class='progress done'>Adjust the Color of Various Elements to Complementary Colors</li>
+              <li class='progress done'>Adjust the Hue of a Color</li>
+              <li class='progress done'>Adjust the Tone of a Color</li>
               <li class='progress'>Create a Gradual CSS Linear Gradient</li>
               <li class='progress'>Use a CSS Linear Gradient to Create a Striped Element</li>
               <li class='progress'>Create Texture by Adding a Subtle Pattern as a Background Image</li>
@@ -1696,7 +1696,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 97,
+      "courseProgress": 98,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1706,7 +1706,7 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 97,
+          "courseClassProgress": 98,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
