@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 84,
+      "courseProgress": 87,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 52,
+          "courseClassProgress": 62,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "2c— Udacity",
       "courseVendor": "Responsive Images by Google",
-      "courseProgress": 52,
+      "courseProgress": 62,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -759,17 +759,17 @@
         },
         {
           "courseClassTitle": "Images with Markup",
-          "courseClassProgress": 7,
+          "courseClassProgress": 47,
           "courseClassContent": `
             <p class='text-body'>Dive deep into image alternatives like CSS and icon fonts and learn common strategies to alleviate latency.</p>
             <ul>
               <li class='progress done'>Performance</li>
-              <li class='progress'>Text Problems</li>
-              <li class='progress'>CSS Techniques</li>
-              <li class='progress'>CSS background images</li>
-              <li class='progress'>Quiz: CSS background image techniques</li>
-              <li class='progress'>Symbol characters</li>
-              <li class='progress'>Quiz: Unicode Treble Clef</li>
+              <li class='progress done'>Text Problems</li>
+              <li class='progress done'>CSS Techniques</li>
+              <li class='progress done'>CSS background images</li>
+              <li class='progress done'>Quiz: CSS background image techniques</li>
+              <li class='progress done'>Symbol characters</li>
+              <li class='progress done'>Quiz: Unicode Treble Clef</li>
               <li class='progress'>Icon Fonts</li>
               <li class='progress'>Inlining images with SVG and data URIs</li>
               <li class='progress'>Quiz: Strategy Quiz 1</li>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 86,
+      "courseProgress": 88,
       "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1085,7 +1085,7 @@
         },
         {
           "courseClassTitle": "Object Oriented Programming",
-          "courseClassProgress": 67,
+          "courseClassProgress": 81,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Object Oriented Programming Challenges</li>
@@ -1106,10 +1106,10 @@
               <li class='progress done'>Understand Where an Object’s Prototype Comes From</li>
               <li class='progress done'>Understand the Prototype Chain</li>
               <li class='progress done'>Use Inheritance So You Don't Repeat Yourself</li>
-              <li class='progress'>Inherit Behaviors from a Supertype</li>
-              <li class='progress'>Set the Child's Prototype to an Instance of the Parent</li>
-              <li class='progress'>Reset an Inherited Constructor Property</li>
-              <li class='progress'>Add Methods After Inheritance</li>
+              <li class='progress done'>Inherit Behaviors from a Supertype</li>
+              <li class='progress done'>Set the Child's Prototype to an Instance of the Parent</li>
+              <li class='progress done'>Reset an Inherited Constructor Property</li>
+              <li class='progress done'>Add Methods After Inheritance</li>
               <li class='progress'>Override Inherited Methods</li>
               <li class='progress'>Use a Mixin to Add Common Behavior Between Unrelated Objects</li>
               <li class='progress'>Use Closure to Protect Properties Within an Object from Being Modified Externally</li>
