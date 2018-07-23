@@ -46,7 +46,7 @@
       "active": true,
       "courseVendorName": "2*— Google Training",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 87,
+      "courseProgress": 92,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 62,
+          "courseClassProgress": 77,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "2c— Udacity",
       "courseVendor": "Responsive Images by Google",
-      "courseProgress": 62,
+      "courseProgress": 77,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -759,7 +759,7 @@
         },
         {
           "courseClassTitle": "Images with Markup",
-          "courseClassProgress": 47,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Dive deep into image alternatives like CSS and icon fonts and learn common strategies to alleviate latency.</p>
             <ul>
@@ -770,24 +770,24 @@
               <li class='progress done'>Quiz: CSS background image techniques</li>
               <li class='progress done'>Symbol characters</li>
               <li class='progress done'>Quiz: Unicode Treble Clef</li>
-              <li class='progress'>Icon Fonts</li>
-              <li class='progress'>Inlining images with SVG and data URIs</li>
-              <li class='progress'>Quiz: Strategy Quiz 1</li>
-              <li class='progress'>Quiz: Strategy Quiz 2</li>
-              <li class='progress'>Quiz: Strategy Quiz 3</li>
-              <li class='progress'>Quiz: Strategy Quiz 4</li>
-              <li class='progress'>Quiz: Project Part 2</li>
-              <li class='progress'>Lesson Summary</li>
+              <li class='progress done'>Icon Fonts</li>
+              <li class='progress done'>Inlining images with SVG and data URIs</li>
+              <li class='progress done'>Quiz: Strategy Quiz 1</li>
+              <li class='progress done'>Quiz: Strategy Quiz 2</li>
+              <li class='progress done'>Quiz: Strategy Quiz 3</li>
+              <li class='progress done'>Quiz: Strategy Quiz 4</li>
+              <li class='progress done'>Quiz: Project Part 2</li>
+              <li class='progress done'>Lesson Summary</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Full Responsiveness",
-          "courseClassProgress": 0,
+          "courseClassProgress": 9,
           "courseClassContent": `
             <p class='text-body'>Learn to use the srcset attribute and the picture element to choose images of the right size for your application for every viewing context.</p>
             <ul>
-              <li class='progress'>Responding to Screen Capability & View</li>
+              <li class='progress done'>Responding to Screen Capability & View</li>
               <li class='progress'>srcset</li>
               <li class='progress'>Sizes Attribute</li>
               <li class='progress'>Quiz: srcset Quiz</li>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 88,
+      "courseProgress": 90,
       "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1085,7 +1085,7 @@
         },
         {
           "courseClassTitle": "Object Oriented Programming",
-          "courseClassProgress": 81,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Object Oriented Programming Challenges</li>
@@ -1110,21 +1110,21 @@
               <li class='progress done'>Set the Child's Prototype to an Instance of the Parent</li>
               <li class='progress done'>Reset an Inherited Constructor Property</li>
               <li class='progress done'>Add Methods After Inheritance</li>
-              <li class='progress'>Override Inherited Methods</li>
-              <li class='progress'>Use a Mixin to Add Common Behavior Between Unrelated Objects</li>
-              <li class='progress'>Use Closure to Protect Properties Within an Object from Being Modified Externally</li>
-              <li class='progress'>Understand the Immediately Invoked Function Expression (IIFE)</li>
-              <li class='progress'>Use an IIFE to Create a Module</li>
+              <li class='progress done'>Override Inherited Methods</li>
+              <li class='progress done'>Use a Mixin to Add Common Behavior Between Unrelated Objects</li>
+              <li class='progress done'>Use Closure to Protect Properties Within an Object from Being Modified Externally</li>
+              <li class='progress done'>Understand the Immediately Invoked Function Expression (IIFE)</li>
+              <li class='progress done'>Use an IIFE to Create a Module</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Functional Programming",
-          "courseClassProgress": 0,
+          "courseClassProgress": 8,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Functional Programming Challenges</li>
-              <li class='progress'>Learn About Functional Programming</li>
+              <li class='progress done'>Introduction to the Functional Programming Challenges</li>
+              <li class='progress done'>Learn About Functional Programming</li>
               <li class='progress'>Understand Functional Programming Terminology</li>
               <li class='progress'>Understand the Hazards of Using Imperative Code</li>
               <li class='progress'>Avoid Mutations and Side Effects Using Functional Programming</li>
@@ -1201,7 +1201,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 36,
+      "courseProgress": 41,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1278,13 +1278,13 @@
         },
         {
           "courseClassTitle": "Sass",
-          "courseClassProgress": 0,
+          "courseClassProgress": 40,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Sass Challenges</li>
-              <li class='progress'>Store Data with Sass Variables</li>
-              <li class='progress'>Nest CSS with Sass</li>
-              <li class='progress'>Create Reusable CSS with Mixins</li>
+              <li class='progress done'>Introduction to the Sass Challenges</li>
+              <li class='progress done'>Store Data with Sass Variables</li>
+              <li class='progress done'>Nest CSS with Sass</li>
+              <li class='progress done'>Create Reusable CSS with Mixins</li>
               <li class='progress'>Use @if and @else to Add Logic To Your Styles</li>
               <li class='progress'>Use @for to Create a Sass Loop</li>
               <li class='progress'>Use @each to Map Over Items in a List</li>
@@ -1417,7 +1417,7 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 36,
+      "courseProgress": 40,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1515,7 +1515,7 @@
         },
         {
           "courseClassTitle": "Applied Visual Design",
-          "courseClassProgress": 58,
+          "courseClassProgress": 89,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Applied Visual Design Challenges</li>
@@ -1549,22 +1549,22 @@
               <li class='progress done'>Adjust the Color of Various Elements to Complementary Colors</li>
               <li class='progress done'>Adjust the Hue of a Color</li>
               <li class='progress done'>Adjust the Tone of a Color</li>
-              <li class='progress'>Create a Gradual CSS Linear Gradient</li>
-              <li class='progress'>Use a CSS Linear Gradient to Create a Striped Element</li>
-              <li class='progress'>Create Texture by Adding a Subtle Pattern as a Background Image</li>
-              <li class='progress'>Use the CSS Transform scale Property to Change the Size of an Element</li>
-              <li class='progress'>Use the CSS Transform scale Property to Scale an Element on Hover</li>
-              <li class='progress'>Use the CSS Transform Property skewX to Skew an Element Along the X-Axis</li>
-              <li class='progress'>Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis</li>
-              <li class='progress'>Create a Graphic Using CSS</li>
-              <li class='progress'>Create a More Complex Shape Using CSS and HTML</li>
-              <li class='progress'>Learn How the CSS @keyframes and animation Properties Work</li>
-              <li class='progress'>Use CSS Animation to Change the Hover State of a Button</li>
-              <li class='progress'>Modify Fill Mode of an Animation</li>
-              <li class='progress'>Create Movement Using CSS Animation</li>
-              <li class='progress'>Create Visual Direction by Fading an Element from Left to Right</li>
-              <li class='progress'>Animate Elements Continually Using an Infinite Animation Count</li>
-              <li class='progress'>Make a CSS Heartbeat using an Infinite Animation Count</li>
+              <li class='progress done'>Create a Gradual CSS Linear Gradient</li>
+              <li class='progress done'>Use a CSS Linear Gradient to Create a Striped Element</li>
+              <li class='progress done'>Create Texture by Adding a Subtle Pattern as a Background Image</li>
+              <li class='progress done'>Use the CSS Transform scale Property to Change the Size of an Element</li>
+              <li class='progress done'>Use the CSS Transform scale Property to Scale an Element on Hover</li>
+              <li class='progress done'>Use the CSS Transform Property skewX to Skew an Element Along the X-Axis</li>
+              <li class='progress done'>Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis</li>
+              <li class='progress done'>Create a Graphic Using CSS</li>
+              <li class='progress done'>Create a More Complex Shape Using CSS and HTML</li>
+              <li class='progress done'>Learn How the CSS @keyframes and animation Properties Work</li>
+              <li class='progress done'>Use CSS Animation to Change the Hover State of a Button</li>
+              <li class='progress done'>Modify Fill Mode of an Animation</li>
+              <li class='progress done'>Create Movement Using CSS Animation</li>
+              <li class='progress done'>Create Visual Direction by Fading an Element from Left to Right</li>
+              <li class='progress done'>Animate Elements Continually Using an Infinite Animation Count</li>
+              <li class='progress done'>Make a CSS Heartbeat using an Infinite Animation Count</li>
               <li class='progress'>Animate Elements at Variable Rates</li>
               <li class='progress'>Animate Multiple Elements at Variable Rates</li>
               <li class='progress'>Change Animation Timing with Keywords</li>
@@ -1743,7 +1743,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 1,
+      "courseProgress": 3,
       "courseDesc": "This is CS50's Web Programming with Python and JavaScript. It assumes that you've already taken CS50 itself or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1753,21 +1753,21 @@
       "courseList": [
         {
           "courseClassTitle": "Git",
-          "courseClassProgress": 10,
+          "courseClassProgress": 37,
           "courseClassContent": `
             <p>Welcome everyone to web programming with Python and JavaScript.</p>
             <ul>
               <li class='progress done'>Introduction - 8 mins</li>
               <li class='progress done'>git - 4 mins</li>
               <li class='progress done'>GitHub - 2 mins</li>
-              <li class='progress'>git clone - 3 mins</li>
-              <li class='progress'>git add - 1 mins</li>
-              <li class='progress'>git commit - 2 mins</li>
-              <li class='progress'>git status - 2 mins</li>
-              <li class='progress'>git push - 2 mins</li>
-              <li class='progress'>git pull - 3 mins</li>
-              <li class='progress'>Merge Conflicts - 5 mins</li>
-              <li class='progress'>git log - 1 mins</li>
+              <li class='progress done'>git clone - 3 mins</li>
+              <li class='progress done'>git add - 1 mins</li>
+              <li class='progress done'>git commit - 2 mins</li>
+              <li class='progress done'>git status - 2 mins</li>
+              <li class='progress done'>git push - 2 mins</li>
+              <li class='progress done'>git pull - 3 mins</li>
+              <li class='progress done'>Merge Conflicts - 5 mins</li>
+              <li class='progress done'>git log - 1 mins</li>
               <li class='progress'>git reset - 8 mins</li>
               <li class='progress'>hello.html - 7 mins</li>
               <li class='progress'>headings.html - 3 mins</li>
