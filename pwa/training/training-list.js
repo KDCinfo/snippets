@@ -1201,7 +1201,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 41,
+      "courseProgress": 43,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1278,14 +1278,14 @@
         },
         {
           "courseClassTitle": "Sass",
-          "courseClassProgress": 40,
+          "courseClassProgress": 50,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Sass Challenges</li>
               <li class='progress done'>Store Data with Sass Variables</li>
               <li class='progress done'>Nest CSS with Sass</li>
               <li class='progress done'>Create Reusable CSS with Mixins</li>
-              <li class='progress'>Use @if and @else to Add Logic To Your Styles</li>
+              <li class='progress done'>Use @if and @else to Add Logic To Your Styles</li>
               <li class='progress'>Use @for to Create a Sass Loop</li>
               <li class='progress'>Use @each to Map Over Items in a List</li>
               <li class='progress'>Apply a Style Until a Condition is Met with @while</li>
@@ -1743,7 +1743,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 3,
+      "courseProgress": 4,
       "courseDesc": "This is CS50's Web Programming with Python and JavaScript. It assumes that you've already taken CS50 itself or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1753,7 +1753,7 @@
       "courseList": [
         {
           "courseClassTitle": "Git",
-          "courseClassProgress": 37,
+          "courseClassProgress": 50,
           "courseClassContent": `
             <p>Welcome everyone to web programming with Python and JavaScript.</p>
             <ul>
@@ -1768,10 +1768,10 @@
               <li class='progress done'>git pull - 3 mins</li>
               <li class='progress done'>Merge Conflicts - 5 mins</li>
               <li class='progress done'>git log - 1 mins</li>
-              <li class='progress'>git reset - 8 mins</li>
-              <li class='progress'>hello.html - 7 mins</li>
-              <li class='progress'>headings.html - 3 mins</li>
-              <li class='progress'>lists.html - 3 mins</li>
+              <li class='progress done'>git reset - 8 mins</li>
+              <li class='progress done'>hello.html - 7 mins</li>
+              <li class='progress done'>headings.html - 3 mins</li>
+              <li class='progress done'>lists.html - 3 mins</li>
               <li class='progress'>image0.html - 4 mins</li>
               <li class='progress'>image1.html - 5 mins</li>
               <li class='progress'>table.html - 3 mins</li>
