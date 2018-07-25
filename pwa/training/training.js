@@ -466,7 +466,7 @@
     classWrapper.querySelector('.ch-id').textContent = cid;
     classWrapper.querySelector('.ch-courseProgress').textContent = courseProgress;
 
-    classWrapper.querySelector('.c-courseVendorName').textContent = courseVendorName;
+    classWrapper.querySelector('.c-courseVendorName').textContent = courseVendorName.substr(courseVendorName.indexOf(' ') + 1);
     classWrapper.querySelector('.c-courseVendor').textContent = courseVendor;
     classWrapper.querySelector('.c-courseProgress').textContent = courseProgress;
     classWrapper.querySelector('.c-courseDateLast').textContent = courseDateLast;

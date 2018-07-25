@@ -855,6 +855,9 @@ main.main {
     padding: 0;
   }
 
+  .c-courseVendorName {
+    font-weight: bold;
+  }
   .c-courseVendorName,
   .c-courseVendor {
     color: rgba(0, 106, 176, .65);
