@@ -3,7 +3,7 @@
     {
       "id": "google-1",
       "active": true,
-      "courseVendorName": "1*— Google Training",
+      "courseVendorName": "1*— Google Training Pt 1",
       "courseVendor": "Build Progressive Web Apps",
       "courseProgress": 100,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
@@ -44,9 +44,9 @@
     {
       "id": "google-2",
       "active": true,
-      "courseVendorName": "2*— Google Training",
+      "courseVendorName": "2*— Google Training Pt 2",
       "courseVendor": "Build for all devices and users",
-      "courseProgress": 92,
+      "courseProgress": 100,
       "courseDesc": "None provided.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
@@ -74,7 +74,7 @@
         },
         {
           "courseClassTitle": "Responsive Images",
-          "courseClassProgress": 77,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Images are the last frontier of responsive design: how can you load the right image for the current screen?</p>
             <p class='text-body'>HTML5 has evolved new image-handling capabilities; learn how to work with new features such as &lt;picture&gt; and srcset so that your images look great and load quickly on any device.</p>
@@ -86,19 +86,19 @@
     {
       "id": "google-3",
       "active": true,
-      "courseVendorName": "3*— Google Training",
+      "courseVendorName": "3*— Google Training Pt 3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 0,
+      "courseProgress": 1,
       "courseDesc": "None provided.",
-      "courseDateStarted": "TBD",
-      "courseDateLast": "",
+      "courseDateStarted": "July 2018",
+      "courseDateLast": "July",
       "courseShortVendor": "google-training",
       "courseShortName": "ux",
       "courseURL": "",
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 0,
+          "courseClassProgress": 2,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -706,7 +706,7 @@
       "active": true,
       "courseVendorName": "2c— Udacity",
       "courseVendor": "Responsive Images by Google",
-      "courseProgress": 77,
+      "courseProgress": 100,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -783,21 +783,169 @@
         },
         {
           "courseClassTitle": "Full Responsiveness",
-          "courseClassProgress": 9,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Learn to use the srcset attribute and the picture element to choose images of the right size for your application for every viewing context.</p>
             <ul>
               <li class='progress done'>Responding to Screen Capability & View</li>
-              <li class='progress'>srcset</li>
-              <li class='progress'>Sizes Attribute</li>
-              <li class='progress'>Quiz: srcset Quiz</li>
-              <li class='progress'>Quiz: srcset and sizes</li>
-              <li class='progress'>The Picture Element</li>
-              <li class='progress'>The Full Monty</li>
-              <li class='progress'>Accessibility</li>
-              <li class='progress'>Quiz: Accessibility Promise</li>
-              <li class='progress'>Quiz: Project Part 3</li>
-              <li class='progress'>Course Conclusion</li>
+              <li class='progress done'>srcset</li>
+              <li class='progress done'>Sizes Attribute</li>
+              <li class='progress done'>Quiz: srcset Quiz</li>
+              <li class='progress done'>Quiz: srcset and sizes</li>
+              <li class='progress done'>The Picture Element</li>
+              <li class='progress done'>The Full Monty</li>
+              <li class='progress done'>Accessibility</li>
+              <li class='progress done'>Quiz: Accessibility Promise</li>
+              <li class='progress done'>Quiz: Project Part 3</li>
+              <li class='progress done'>Course Conclusion</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-7",
+      "active": true,
+      "courseVendorName": "3a— Udacity",
+      "courseVendor": "Browser Rendering Optimization by Google",
+      "courseProgress": 2,
+      "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
+      "courseDateStarted": "July 2018",
+      "courseDateLast": "July",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "browser-rendering-optimization",
+      "courseURL": "https://www.udacity.com/course/browser-rendering-optimization--ud860",
+      "courseList": [
+        {
+          "courseClassTitle": "The Critical Rendering Path",
+          "courseClassProgress": 13,
+          "courseClassContent": `
+            <p class='text-body'>Follow along with Paul Lewis and Cameron Pittman as they explain common performance issues on the web and what we should be hoping to achieve in terms of speed.</p>
+            <ul>
+              <li class='progress done'>Course Introduction</li>
+              <li class='progress done'>Jank Invaders!</li>
+              <li class='progress'>Lesson Introduction</li>
+              <li class='progress'>Juddering</li>
+              <li class='progress'>Frames</li>
+              <li class='progress'>Quiz: Milliseconds Per Frame</li>
+              <li class='progress'>What Goes Into One Frame</li>
+              <li class='progress'>Quiz: Render Tree Quiz</li>
+              <li class='progress'>DOM, CSSOM, Render Tree</li>
+              <li class='progress'>Quiz: Layout</li>
+              <li class='progress'>Layout and Paint</li>
+              <li class='progress'>Quiz: Rendering Quiz</li>
+              <li class='progress'>Quiz: CSS Research</li>
+              <li class='progress'>Final Project</li>
+              <li class='progress'>Lesson Outro</li>
+              <li class='progress'>Jank Invaders Leaderboard</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "App Lifecycles",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Learn about the four parts of a web app's lifecycle: RAIL (Response, Animate, Idle, and Load). You'll discover how these phases cause jank in your web apps.</p>
+            <ul>
+              <li class='progress'>Lesson 2 Introduction</li>
+              <li class='progress'>RAIL</li>
+              <li class='progress'>Load and Idle</li>
+              <li class='progress'>Quiz: Idle Time</li>
+              <li class='progress'>RAIL Response</li>
+              <li class='progress'>RAIL - Animations Part 1</li>
+              <li class='progress'>RAIL - Animations Part 2</li>
+              <li class='progress'>Quiz: Rendering Animations</li>
+              <li class='progress'>Quiz: Interactions and Animations</li>
+              <li class='progress'>RAIL Thresholds Review</li>
+              <li class='progress'>Quiz: RAIL Scenario 1</li>
+              <li class='progress'>Quiz: RAIL Scenario 2</li>
+              <li class='progress'>Lesson 2 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Weapons of Jank Destruction",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Learn how to use Chrome's Developer Tools Timeline to find page jank and remove it from your site.</p>
+            <ul>
+              <li class='progress'>Lesson 3 Introduction</li>
+              <li class='progress'>DevTools</li>
+              <li class='progress'>The Timeline in Depth</li>
+              <li class='progress'>Quiz: Reading the Timeline</li>
+              <li class='progress'>Identifying Jank Sample</li>
+              <li class='progress'>Test… All the Devices!!!</li>
+              <li class='progress'>Setup for mobile</li>
+              <li class='progress'>Using dev tools on mobile</li>
+              <li class='progress'>Mobile tools for iOS</li>
+              <li class='progress'>Quiz: More Timeline Practice</li>
+              <li class='progress'>Quiz: Finding Janky Functions</li>
+              <li class='progress'>Quiz: Finding More Jank</li>
+              <li class='progress'>Lesson 3 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "JavaScript",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Learn how to use JavaScript to optimize animations and use web workers to speed up performance.</p>
+            <ul>
+              <li class='progress'>Lesson 4 Introduction</li>
+              <li class='progress'>Just in Time</li>
+              <li class='progress'>Quiz: Optimizing JS for Animations</li>
+              <li class='progress'>requestAnimationFrame</li>
+              <li class='progress'>JavaScript Profile</li>
+              <li class='progress'>Quiz: Long Running JS</li>
+              <li class='progress'>Quiz: Web Workers</li>
+              <li class='progress'>JS Memory Management</li>
+              <li class='progress'>Quiz: A Snappier QR Code App Pt. 1</li>
+              <li class='progress'>Quiz: A Snappier QR Code App Pt. 2</li>
+              <li class='progress'>Lesson 4 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Styles and Layout",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Discover how changing styles can result in surprisingly slow page speed. You'll also learn how to prevent Forced Synchronous Layouts.</p>
+            <ul>
+              <li class='progress'>Lesson 5 Introduction</li>
+              <li class='progress'>Quiz: The Cost of Style Changes</li>
+              <li class='progress'>Selector Matching</li>
+              <li class='progress'>Quiz: Selector Matching</li>
+              <li class='progress'>Quiz: Recalculate Styles</li>
+              <li class='progress'>Layout Thrashing</li>
+              <li class='progress'>Quiz: FSL</li>
+              <li class='progress'>Quiz: Stopping FSL Strategy</li>
+              <li class='progress'>Causes of Forced Synchronous Layout</li>
+              <li class='progress'>Quiz: Stop FSL</li>
+              <li class='progress'>Lesson 5 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Compositing and Painting",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p class='text-body'>Learn how to manage page layers and improve page performance using the Chrome Dev Tools Paint Profiler.</p>
+            <ul>
+              <li class='progress'>Lesson 6 Introduction</li>
+              <li class='progress'>Quiz: Paint Rectangles</li>
+              <li class='progress'>Quiz: Paint Profiler</li>
+              <li class='progress'>Compositing</li>
+              <li class='progress'>Quiz: Conceptual Question about Layers</li>
+              <li class='progress'>Composite Layers</li>
+              <li class='progress'>Managing Layers</li>
+              <li class='progress'>Managing Layers 2</li>
+              <li class='progress'>Quiz: Will-Change</li>
+              <li class='progress'>Your Compositing Budget</li>
+              <li class='progress'>Quiz: Layer Counting</li>
+              <li class='progress'>Quiz: Painting and Compositing</li>
+              <li class='progress'>Make Some Quizzes</li>
+              <li class='progress'>Quiz: The Final Project</li>
+              <li class='progress'>Course Outro</li>
             </ul>
           `
         }
@@ -1201,7 +1349,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 43,
+      "courseProgress": 51,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1278,7 +1426,7 @@
         },
         {
           "courseClassTitle": "Sass",
-          "courseClassProgress": 50,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Sass Challenges</li>
@@ -1286,21 +1434,21 @@
               <li class='progress done'>Nest CSS with Sass</li>
               <li class='progress done'>Create Reusable CSS with Mixins</li>
               <li class='progress done'>Use @if and @else to Add Logic To Your Styles</li>
-              <li class='progress'>Use @for to Create a Sass Loop</li>
-              <li class='progress'>Use @each to Map Over Items in a List</li>
-              <li class='progress'>Apply a Style Until a Condition is Met with @while</li>
-              <li class='progress'>Split Your Styles into Smaller Chunks with Partials</li>
-              <li class='progress'>Extend One Set of CSS Styles to Another Element</li>
+              <li class='progress done'>Use @for to Create a Sass Loop</li>
+              <li class='progress done'>Use @each to Map Over Items in a List</li>
+              <li class='progress done'>Apply a Style Until a Condition is Met with @while</li>
+              <li class='progress done'>Split Your Styles into Smaller Chunks with Partials</li>
+              <li class='progress done'>Extend One Set of CSS Styles to Another Element</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "React",
-          "courseClassProgress": 0,
+          "courseClassProgress": 4,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the React Challenges</li>
-              <li class='progress'>Create a Simple JSX Element</li>
+              <li class='progress done'>Introduction to the React Challenges</li>
+              <li class='progress done'>Create a Simple JSX Element</li>
               <li class='progress'>Create a Complex JSX Element</li>
               <li class='progress'>Add Comments in JSX</li>
               <li class='progress'>Render HTML Elements to the DOM</li>
@@ -1417,7 +1565,7 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 40,
+      "courseProgress": 48,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1515,7 +1663,7 @@
         },
         {
           "courseClassTitle": "Applied Visual Design",
-          "courseClassProgress": 89,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Applied Visual Design Challenges</li>
@@ -1565,32 +1713,32 @@
               <li class='progress done'>Create Visual Direction by Fading an Element from Left to Right</li>
               <li class='progress done'>Animate Elements Continually Using an Infinite Animation Count</li>
               <li class='progress done'>Make a CSS Heartbeat using an Infinite Animation Count</li>
-              <li class='progress'>Animate Elements at Variable Rates</li>
-              <li class='progress'>Animate Multiple Elements at Variable Rates</li>
-              <li class='progress'>Change Animation Timing with Keywords</li>
-              <li class='progress'>Learn How Bezier Curves Work</li>
-              <li class='progress'>Use a Bezier Curve to Move a Graphic</li>
-              <li class='progress'>Make Motion More Natural Using a Bezier Curve</li>
+              <li class='progress done'>Animate Elements at Variable Rates</li>
+              <li class='progress done'>Animate Multiple Elements at Variable Rates</li>
+              <li class='progress done'>Change Animation Timing with Keywords</li>
+              <li class='progress done'>Learn How Bezier Curves Work</li>
+              <li class='progress done'>Use a Bezier Curve to Move a Graphic</li>
+              <li class='progress done'>Make Motion More Natural Using a Bezier Curve</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Applied Accessibility",
-          "courseClassProgress": 0,
+          "courseClassProgress": 52,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Applied Accessibility Challenges</li>
-              <li class='progress'>Add a Text Alternative to Images for Visually Impaired Accessibility</li>
-              <li class='progress'>Know When Alt Text Should be Left Blank</li>
-              <li class='progress'>Use Headings to Show Hierarchical Relationships of Content</li>
-              <li class='progress'>Jump Straight to the Content Using the main Element</li>
-              <li class='progress'>Wrap Content in the article Element</li>
-              <li class='progress'>Make Screen Reader Navigation Easier with the header Landmark</li>
-              <li class='progress'>Make Screen Reader Navigation Easier with the nav Landmark</li>
-              <li class='progress'>Make Screen Reader Navigation Easier with the footer Landmark</li>
-              <li class='progress'>Improve Accessibility of Audio Content with the audio Element</li>
-              <li class='progress'>Improve Chart Accessibility with the figure Element</li>
-              <li class='progress'>Improve Form Field Accessibility with the label Element</li>
+              <li class='progress done'>Introduction to the Applied Accessibility Challenges</li>
+              <li class='progress done'>Add a Text Alternative to Images for Visually Impaired Accessibility</li>
+              <li class='progress done'>Know When Alt Text Should be Left Blank</li>
+              <li class='progress done'>Use Headings to Show Hierarchical Relationships of Content</li>
+              <li class='progress done'>Jump Straight to the Content Using the main Element</li>
+              <li class='progress done'>Wrap Content in the article Element</li>
+              <li class='progress done'>Make Screen Reader Navigation Easier with the header Landmark</li>
+              <li class='progress done'>Make Screen Reader Navigation Easier with the nav Landmark</li>
+              <li class='progress done'>Make Screen Reader Navigation Easier with the footer Landmark</li>
+              <li class='progress done'>Improve Accessibility of Audio Content with the audio Element</li>
+              <li class='progress done'>Improve Chart Accessibility with the figure Element</li>
+              <li class='progress done'>Improve Form Field Accessibility with the label Element</li>
               <li class='progress'>Wrap Radio Buttons in a fieldset Element for Better Accessibility</li>
               <li class='progress'>Add an Accessible Date Picker</li>
               <li class='progress'>Standardize Times with the HTML5 datetime Attribute</li>
@@ -1743,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 4,
+      "courseProgress": 5,
       "courseDesc": "This is CS50's Web Programming with Python and JavaScript. It assumes that you've already taken CS50 itself or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1753,7 +1901,7 @@
       "courseList": [
         {
           "courseClassTitle": "Git",
-          "courseClassProgress": 50,
+          "courseClassProgress": 63,
           "courseClassContent": `
             <p>Welcome everyone to web programming with Python and JavaScript.</p>
             <ul>
@@ -1772,10 +1920,10 @@
               <li class='progress done'>hello.html - 7 mins</li>
               <li class='progress done'>headings.html - 3 mins</li>
               <li class='progress done'>lists.html - 3 mins</li>
-              <li class='progress'>image0.html - 4 mins</li>
-              <li class='progress'>image1.html - 5 mins</li>
-              <li class='progress'>table.html - 3 mins</li>
-              <li class='progress'>form.html - 3 mins</li>
+              <li class='progress done'>image0.html - 4 mins</li>
+              <li class='progress done'>image1.html - 5 mins</li>
+              <li class='progress done'>table.html - 3 mins</li>
+              <li class='progress done'>form.html - 3 mins</li>
               <li class='progress'>DOM - 2 mins</li>
               <li class='progress'>CSS - 2 mins</li>
               <li class='progress'>style0.html - 6 mins</li>
