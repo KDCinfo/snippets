@@ -423,8 +423,8 @@
             storedClassDesc = newOrReplace.replace.querySelector('.ch-courseDesc').textContent;
 
       if (storedClassProgress !== app.visibleClasses[classId].courseProgress.toString() ||
-          storedClassDateLast !== app.visibleClasses[classId].courseDateLast ||
-          storedClassDesc !== app.visibleClasses[classId].courseDesc
+          storedClassDateLast !== app.visibleClasses[classId].courseDateLast
+          // || storedClassDesc !== app.visibleClasses[classId].courseDesc
          ) {
         newOrReplace.replace.parentNode.replaceChild(app.getClassCard(classId, 'updated'), newOrReplace.replace); // 0 = Card was updated.
       } else {
@@ -472,7 +472,13 @@
     classWrapper.querySelector('.c-courseDateLast').textContent = courseDateLast;
 
     classWrapper.querySelector('.ch-courseDateStarted').textContent = courseDateStarted;
-    classWrapper.querySelector('.ch-courseDesc').textContent = courseDesc;
+    if (courseDesc.length === 0) {
+      classWrapper.querySelector('.ch-courseDesc').textContent =
+        '[' + courseVendorName.substr(courseVendorName.indexOf(' ') + 1) + '] ' + courseVendor;
+    } else {
+      classWrapper.querySelector('.ch-courseDesc').textContent =
+        '[' + courseVendorName.substr(courseVendorName.indexOf(' ') + 1) + '] [' + courseVendor + '] ' + courseDesc;
+    }
 
     if (courseProgress === 100) {
       classWrapper.classList.add('completed', 't-off');
