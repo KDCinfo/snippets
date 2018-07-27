@@ -3,7 +3,7 @@
     {
       "id": "google-1",
       "active": true,
-      "courseVendorName": "1*— Google Training Pt 1",
+      "courseVendorName": "1*— Google Training #1",
       "courseVendor": "Build Progressive Web Apps",
       "courseProgress": 100,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
@@ -44,10 +44,10 @@
     {
       "id": "google-2",
       "active": true,
-      "courseVendorName": "2*— Google Training Pt 2",
+      "courseVendorName": "2*— Google Training #2",
       "courseVendor": "Build for all devices and users",
       "courseProgress": 100,
-      "courseDesc": "None provided.",
+      "courseDesc": "",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul",
       "courseShortVendor": "google-training",
@@ -86,10 +86,10 @@
     {
       "id": "google-3",
       "active": true,
-      "courseVendorName": "3*— Google Training Pt 3",
+      "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 1,
-      "courseDesc": "None provided.",
+      "courseProgress": 2,
+      "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
       "courseShortVendor": "google-training",
@@ -98,7 +98,7 @@
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 2,
+          "courseClassProgress": 5,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -409,7 +409,7 @@
       "courseProgress": 100,
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "June",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "web-accessibility",
       "courseURL": "https://classroom.udacity.com/courses/ud891",
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 2,
+      "courseProgress": 5,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -818,15 +818,15 @@
       "courseList": [
         {
           "courseClassTitle": "The Critical Rendering Path",
-          "courseClassProgress": 13,
+          "courseClassProgress": 31,
           "courseClassContent": `
             <p class='text-body'>Follow along with Paul Lewis and Cameron Pittman as they explain common performance issues on the web and what we should be hoping to achieve in terms of speed.</p>
             <ul>
               <li class='progress done'>Course Introduction</li>
               <li class='progress done'>Jank Invaders!</li>
-              <li class='progress'>Lesson Introduction</li>
-              <li class='progress'>Juddering</li>
-              <li class='progress'>Frames</li>
+              <li class='progress done'>Lesson Introduction</li>
+              <li class='progress done'>Juddering</li>
+              <li class='progress done'>Frames</li>
               <li class='progress'>Quiz: Milliseconds Per Frame</li>
               <li class='progress'>What Goes Into One Frame</li>
               <li class='progress'>Quiz: Render Tree Quiz</li>
@@ -957,7 +957,7 @@
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
       "courseProgress": 90,
-      "courseDesc": "Javascript Algorithms And Data Structures Certification (300 hours) Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
+      "courseDesc": "Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
       "courseShortVendor": "fcc-courses",
@@ -1565,7 +1565,7 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 48,
+      "courseProgress": 50,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1724,7 +1724,7 @@
         },
         {
           "courseClassTitle": "Applied Accessibility",
-          "courseClassProgress": 52,
+          "courseClassProgress": 65,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Applied Accessibility Challenges</li>
@@ -1739,9 +1739,9 @@
               <li class='progress done'>Improve Accessibility of Audio Content with the audio Element</li>
               <li class='progress done'>Improve Chart Accessibility with the figure Element</li>
               <li class='progress done'>Improve Form Field Accessibility with the label Element</li>
-              <li class='progress'>Wrap Radio Buttons in a fieldset Element for Better Accessibility</li>
-              <li class='progress'>Add an Accessible Date Picker</li>
-              <li class='progress'>Standardize Times with the HTML5 datetime Attribute</li>
+              <li class='progress done'>Wrap Radio Buttons in a fieldset Element for Better Accessibility</li>
+              <li class='progress done'>Add an Accessible Date Picker</li>
+              <li class='progress done'>Standardize Times with the HTML5 datetime Attribute</li>
               <li class='progress'>Make Elements Only Visible to a Screen Reader by Using Custom CSS</li>
               <li class='progress'>Improve Readability with High Contrast Text</li>
               <li class='progress'>Avoid Colorblindness Issues by Using Sufficient Contrast</li>
@@ -1892,7 +1892,7 @@
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
       "courseProgress": 5,
-      "courseDesc": "This is CS50's Web Programming with Python and JavaScript. It assumes that you've already taken CS50 itself or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
+      "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
       "courseShortVendor": "harvard-courses",
