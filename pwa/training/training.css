@@ -12,10 +12,10 @@
   --post-it-cut-1b: 20px solid hsl(45, 100%, 90%);
   --post-it-cut-2a: 35px solid hsl(120, 62%, 35%);
   --post-it-cut-2b: 30px solid hsl(45, 100%, 90%);
-  --post-it-cut-3a: 25px solid hsl(120, 62%, 35%);
-  --post-it-cut-3b: 35px solid hsl(45, 100%, 90%);
-  --post-it-cut-4a: 40px solid hsl(120, 62%, 35%);
-  --post-it-cut-4b: 25px solid hsl(45, 100%, 90%);
+  --post-it-cut-3a: 40px solid hsl(120, 62%, 35%);
+  --post-it-cut-3b: 25px solid hsl(45, 100%, 90%);
+  --post-it-cut-4a: 25px solid hsl(120, 62%, 35%);
+  --post-it-cut-4b: 35px solid hsl(45, 100%, 90%);
 }
 
 body {
