@@ -88,7 +88,7 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 2,
+      "courseProgress": 4,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -98,7 +98,7 @@
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 5,
+          "courseClassProgress": 13,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 5,
+      "courseProgress": 13,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -818,7 +818,7 @@
       "courseList": [
         {
           "courseClassTitle": "The Critical Rendering Path",
-          "courseClassProgress": 31,
+          "courseClassProgress": 75,
           "courseClassContent": `
             <p class='text-body'>Follow along with Paul Lewis and Cameron Pittman as they explain common performance issues on the web and what we should be hoping to achieve in terms of speed.</p>
             <ul>
@@ -827,13 +827,13 @@
               <li class='progress done'>Lesson Introduction</li>
               <li class='progress done'>Juddering</li>
               <li class='progress done'>Frames</li>
-              <li class='progress'>Quiz: Milliseconds Per Frame</li>
-              <li class='progress'>What Goes Into One Frame</li>
-              <li class='progress'>Quiz: Render Tree Quiz</li>
-              <li class='progress'>DOM, CSSOM, Render Tree</li>
-              <li class='progress'>Quiz: Layout</li>
-              <li class='progress'>Layout and Paint</li>
-              <li class='progress'>Quiz: Rendering Quiz</li>
+              <li class='progress done'>Quiz: Milliseconds Per Frame</li>
+              <li class='progress done'>What Goes Into One Frame</li>
+              <li class='progress done'>Quiz: Render Tree Quiz</li>
+              <li class='progress done'>DOM, CSSOM, Render Tree</li>
+              <li class='progress done'>Quiz: Layout</li>
+              <li class='progress done'>Layout and Paint</li>
+              <li class='progress done'>Quiz: Rendering Quiz</li>
               <li class='progress'>Quiz: CSS Research</li>
               <li class='progress'>Final Project</li>
               <li class='progress'>Lesson Outro</li>
@@ -1565,7 +1565,7 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 50,
+      "courseProgress": 54,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1724,7 +1724,7 @@
         },
         {
           "courseClassTitle": "Applied Accessibility",
-          "courseClassProgress": 65,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Applied Accessibility Challenges</li>
@@ -1742,14 +1742,14 @@
               <li class='progress done'>Wrap Radio Buttons in a fieldset Element for Better Accessibility</li>
               <li class='progress done'>Add an Accessible Date Picker</li>
               <li class='progress done'>Standardize Times with the HTML5 datetime Attribute</li>
-              <li class='progress'>Make Elements Only Visible to a Screen Reader by Using Custom CSS</li>
-              <li class='progress'>Improve Readability with High Contrast Text</li>
-              <li class='progress'>Avoid Colorblindness Issues by Using Sufficient Contrast</li>
-              <li class='progress'>Avoid Colorblindness Issues by Carefully Choosing Colors that Convey Information</li>
-              <li class='progress'>Give Links Meaning by Using Descriptive Link Text</li>
-              <li class='progress'>Make Links Navigatable with HTML Access Keys</li>
-              <li class='progress'>Use tabindex to Add Keyboard Focus to an Element</li>
-              <li class='progress'>Use tabindex to Specify the Order of Keyboard Focus for Several Elements</li>
+              <li class='progress done'>Make Elements Only Visible to a Screen Reader by Using Custom CSS</li>
+              <li class='progress done'>Improve Readability with High Contrast Text</li>
+              <li class='progress done'>Avoid Colorblindness Issues by Using Sufficient Contrast</li>
+              <li class='progress done'>Avoid Colorblindness Issues by Carefully Choosing Colors that Convey Information</li>
+              <li class='progress done'>Give Links Meaning by Using Descriptive Link Text</li>
+              <li class='progress done'>Make Links Navigatable with HTML Access Keys</li>
+              <li class='progress done'>Use tabindex to Add Keyboard Focus to an Element</li>
+              <li class='progress done'>Use tabindex to Specify the Order of Keyboard Focus for Several Elements</li>
             </ul>
           `
         },
@@ -1844,7 +1844,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 98,
+      "courseProgress": 99,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1854,7 +1854,7 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 98,
+          "courseClassProgress": 99,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 5,
+      "courseProgress": 10,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1901,7 +1901,7 @@
       "courseList": [
         {
           "courseClassTitle": "Git",
-          "courseClassProgress": 63,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p>Welcome everyone to web programming with Python and JavaScript.</p>
             <ul>
@@ -1924,30 +1924,30 @@
               <li class='progress done'>image1.html - 5 mins</li>
               <li class='progress done'>table.html - 3 mins</li>
               <li class='progress done'>form.html - 3 mins</li>
-              <li class='progress'>DOM - 2 mins</li>
-              <li class='progress'>CSS - 2 mins</li>
-              <li class='progress'>style0.html - 6 mins</li>
-              <li class='progress'>style1.html - 5 mins</li>
-              <li class='progress'>style2.html - 3 mins</li>
-              <li class='progress'>size.html - 4 mins</li>
-              <li class='progress'>font.html - 3 mins</li>
-              <li class='progress'>border.html - 2 mins</li>
-              <li class='progress'>Styling table.html - 8 mins</li>
-              <li class='progress'>div_span.html - 11 mins</li>
-              <li class='progress'>GitHub Pages - 5 mins</li>
+              <li class='progress done'>DOM - 2 mins</li>
+              <li class='progress done'>CSS - 2 mins</li>
+              <li class='progress done'>style0.html - 6 mins</li>
+              <li class='progress done'>style1.html - 5 mins</li>
+              <li class='progress done'>style2.html - 3 mins</li>
+              <li class='progress done'>size.html - 4 mins</li>
+              <li class='progress done'>font.html - 3 mins</li>
+              <li class='progress done'>border.html - 2 mins</li>
+              <li class='progress done'>Styling table.html - 8 mins</li>
+              <li class='progress done'>div_span.html - 11 mins</li>
+              <li class='progress done'>GitHub Pages - 5 mins</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "HTML, CSS",
-          "courseClassProgress": 0,
+          "courseClassProgress": 15,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction - 3 mins</li>
-              <li class='progress'>Branching - 15 mins</li>
-              <li class='progress'>Remotes - 3 mins</li>
-              <li class='progress'>Forks - 1 mins</li>
-              <li class='progress'>Pull Requests - 4 mins</li>
+              <li class='progress done'>Introduction - 3 mins</li>
+              <li class='progress done'>Branching - 15 mins</li>
+              <li class='progress done'>Remotes - 3 mins</li>
+              <li class='progress done'>Forks - 1 mins</li>
+              <li class='progress done'>Pull Requests - 4 mins</li>
               <li class='progress'>links0.html - 3 mins</li>
               <li class='progress'>link1.html - 4 mins</li>
               <li class='progress'>HTML5 - 3 mins</li>
