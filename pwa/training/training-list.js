@@ -1349,7 +1349,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 51,
+      "courseProgress": 53,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1444,18 +1444,18 @@
         },
         {
           "courseClassTitle": "React",
-          "courseClassProgress": 4,
+          "courseClassProgress": 18,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the React Challenges</li>
               <li class='progress done'>Create a Simple JSX Element</li>
-              <li class='progress'>Create a Complex JSX Element</li>
-              <li class='progress'>Add Comments in JSX</li>
-              <li class='progress'>Render HTML Elements to the DOM</li>
-              <li class='progress'>Define an HTML Class in JSX</li>
-              <li class='progress'>Learn About Self-Closing JSX Tags</li>
-              <li class='progress'>Create a Stateless Functional Component</li>
-              <li class='progress'>Create a React Component</li>
+              <li class='progress done'>Create a Complex JSX Element</li>
+              <li class='progress done'>Add Comments in JSX</li>
+              <li class='progress done'>Render HTML Elements to the DOM</li>
+              <li class='progress done'>Define an HTML Class in JSX</li>
+              <li class='progress done'>Learn About Self-Closing JSX Tags</li>
+              <li class='progress done'>Create a Stateless Functional Component</li>
+              <li class='progress done'>Create a React Component</li>
               <li class='progress'>Create a Component with Composition</li>
               <li class='progress'>Use React to Render Nested Components</li>
               <li class='progress'>Compose React Components</li>
@@ -1565,7 +1565,7 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 54,
+      "courseProgress": 72,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1755,29 +1755,29 @@
         },
         {
           "courseClassTitle": "Responsive Web Design Principles",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Responsive Web Design Challenges</li>
-              <li class='progress'>Create a Media Query</li>
-              <li class='progress'>Make an Image Responsive</li>
-              <li class='progress'>Use a Retina Image for Higher Resolution Displays</li>
-              <li class='progress'>Make Typography Responsive</li>
+              <li class='progress done'>Introduction to the Responsive Web Design Challenges</li>
+              <li class='progress done'>Create a Media Query</li>
+              <li class='progress done'>Make an Image Responsive</li>
+              <li class='progress done'>Use a Retina Image for Higher Resolution Displays</li>
+              <li class='progress done'>Make Typography Responsive</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "CSS Flexbox",
-          "courseClassProgress": 0,
+          "courseClassProgress": 39,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the CSS Flexbox Challenges</li>
-              <li class='progress'>Use display: flex to Position Two Boxes</li>
-              <li class='progress'>Add Flex Superpowers to the Tweet Embed</li>
-              <li class='progress'>Use the flex-direction Property to Make a Row</li>
-              <li class='progress'>Apply the flex-direction Property to Create Rows in the Tweet Embed</li>
-              <li class='progress'>Use the flex-direction Property to Make a Column</li>
-              <li class='progress'>Apply the flex-direction Property to Create a Column in the Tweet Embed</li>
+              <li class='progress done'>Introduction to the CSS Flexbox Challenges</li>
+              <li class='progress done'>Use display: flex to Position Two Boxes</li>
+              <li class='progress done'>Add Flex Superpowers to the Tweet Embed</li>
+              <li class='progress done'>Use the flex-direction Property to Make a Row</li>
+              <li class='progress done'>Apply the flex-direction Property to Create Rows in the Tweet Embed</li>
+              <li class='progress done'>Use the flex-direction Property to Make a Column</li>
+              <li class='progress done'>Apply the flex-direction Property to Create a Column in the Tweet Embed</li>
               <li class='progress'>Align Elements Using the justify-content Property</li>
               <li class='progress'>Use the justify-content Property in the Tweet Embed</li>
               <li class='progress'>Align Elements Using the align-items Property</li>
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 10,
+      "courseProgress": 17,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1940,7 +1940,7 @@
         },
         {
           "courseClassTitle": "HTML, CSS",
-          "courseClassProgress": 15,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 3 mins</li>
@@ -1948,34 +1948,34 @@
               <li class='progress done'>Remotes - 3 mins</li>
               <li class='progress done'>Forks - 1 mins</li>
               <li class='progress done'>Pull Requests - 4 mins</li>
-              <li class='progress'>links0.html - 3 mins</li>
-              <li class='progress'>link1.html - 4 mins</li>
-              <li class='progress'>HTML5 - 3 mins</li>
-              <li class='progress'>form.html - 6 mins</li>
-              <li class='progress'>CSS - 2 mins</li>
-              <li class='progress'>multiple.html - 3 mins</li>
-              <li class='progress'>descendant.html - 5 mins</li>
-              <li class='progress'>child.html - 2 mins</li>
-              <li class='progress'>attribute.html - 4 mins</li>
-              <li class='progress'>hover.html - 2 mins</li>
-              <li class='progress'>before.html - 3 mins</li>
-              <li class='progress'>selection.html - 1 mins</li>
-              <li class='progress'>CSS Selectors - 2 mins</li>
-              <li class='progress'>Responsive Design - 3 mins</li>
-              <li class='progress'>print.html - 3 mins</li>
-              <li class='progress'>responsive0.html - 3 mins</li>
-              <li class='progress'>responsive1.html - 4 mins</li>
-              <li class='progress'>flexbox.html - 3 mins</li>
-              <li class='progress'>grid.html - 4 mins</li>
-              <li class='progress'>nobootstrap.html - 1 mins</li>
-              <li class='progress'>bootstrap.html - 2 mins</li>
-              <li class='progress'>columns0.html - 2 mins</li>
-              <li class='progress'>columns1.html - 5 mins</li>
-              <li class='progress'>alert.html - 2 mins</li>
-              <li class='progress'>variables.html - 2 mins</li>
-              <li class='progress'>Sass - 10 mins</li>
-              <li class='progress'>nesting.html - 5 mins</li>
-              <li class='progress'>inheritance.html - 4 mins</li>
+              <li class='progress done'>links0.html - 3 mins</li>
+              <li class='progress done'>link1.html - 4 mins</li>
+              <li class='progress done'>HTML5 - 3 mins</li>
+              <li class='progress done'>form.html - 6 mins</li>
+              <li class='progress done'>CSS - 2 mins</li>
+              <li class='progress done'>multiple.html - 3 mins</li>
+              <li class='progress done'>descendant.html - 5 mins</li>
+              <li class='progress done'>child.html - 2 mins</li>
+              <li class='progress done'>attribute.html - 4 mins</li>
+              <li class='progress done'>hover.html - 2 mins</li>
+              <li class='progress done'>before.html - 3 mins</li>
+              <li class='progress done'>selection.html - 1 mins</li>
+              <li class='progress done'>CSS Selectors - 2 mins</li>
+              <li class='progress done'>Responsive Design - 3 mins</li>
+              <li class='progress done'>print.html - 3 mins</li>
+              <li class='progress done'>responsive0.html - 3 mins</li>
+              <li class='progress done'>responsive1.html - 4 mins</li>
+              <li class='progress done'>flexbox.html - 3 mins</li>
+              <li class='progress done'>grid.html - 4 mins</li>
+              <li class='progress done'>nobootstrap.html - 1 mins</li>
+              <li class='progress done'>bootstrap.html - 2 mins</li>
+              <li class='progress done'>columns0.html - 2 mins</li>
+              <li class='progress done'>columns1.html - 5 mins</li>
+              <li class='progress done'>alert.html - 2 mins</li>
+              <li class='progress done'>variables.html - 2 mins</li>
+              <li class='progress done'>Sass - 10 mins</li>
+              <li class='progress done'>nesting.html - 5 mins</li>
+              <li class='progress done'>inheritance.html - 4 mins</li>
             </ul>
           `
         },
