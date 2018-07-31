@@ -88,7 +88,7 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 4,
+      "courseProgress": 7,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -98,7 +98,7 @@
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 13,
+          "courseClassProgress": 22,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 13,
+      "courseProgress": 22,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -818,7 +818,7 @@
       "courseList": [
         {
           "courseClassTitle": "The Critical Rendering Path",
-          "courseClassProgress": 75,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Follow along with Paul Lewis and Cameron Pittman as they explain common performance issues on the web and what we should be hoping to achieve in terms of speed.</p>
             <ul>
@@ -834,23 +834,23 @@
               <li class='progress done'>Quiz: Layout</li>
               <li class='progress done'>Layout and Paint</li>
               <li class='progress done'>Quiz: Rendering Quiz</li>
-              <li class='progress'>Quiz: CSS Research</li>
-              <li class='progress'>Final Project</li>
-              <li class='progress'>Lesson Outro</li>
-              <li class='progress'>Jank Invaders Leaderboard</li>
+              <li class='progress done'>Quiz: CSS Research</li>
+              <li class='progress done'>Final Project</li>
+              <li class='progress done'>Lesson Outro</li>
+              <li class='progress done'>Jank Invaders Leaderboard</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "App Lifecycles",
-          "courseClassProgress": 0,
+          "courseClassProgress": 31,
           "courseClassContent": `
             <p class='text-body'>Learn about the four parts of a web app's lifecycle: RAIL (Response, Animate, Idle, and Load). You'll discover how these phases cause jank in your web apps.</p>
             <ul>
-              <li class='progress'>Lesson 2 Introduction</li>
-              <li class='progress'>RAIL</li>
-              <li class='progress'>Load and Idle</li>
-              <li class='progress'>Quiz: Idle Time</li>
+              <li class='progress done'>Lesson 2 Introduction</li>
+              <li class='progress done'>RAIL</li>
+              <li class='progress done'>Load and Idle</li>
+              <li class='progress done'>Quiz: Idle Time</li>
               <li class='progress'>RAIL Response</li>
               <li class='progress'>RAIL - Animations Part 1</li>
               <li class='progress'>RAIL - Animations Part 2</li>
@@ -1349,7 +1349,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 53,
+      "courseProgress": 59,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1444,7 +1444,7 @@
         },
         {
           "courseClassTitle": "React",
-          "courseClassProgress": 18,
+          "courseClassProgress": 65,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the React Challenges</li>
@@ -1456,29 +1456,29 @@
               <li class='progress done'>Learn About Self-Closing JSX Tags</li>
               <li class='progress done'>Create a Stateless Functional Component</li>
               <li class='progress done'>Create a React Component</li>
-              <li class='progress'>Create a Component with Composition</li>
-              <li class='progress'>Use React to Render Nested Components</li>
-              <li class='progress'>Compose React Components</li>
-              <li class='progress'>Render a Class Component to the DOM</li>
-              <li class='progress'>Write a React Component from Scratch</li>
-              <li class='progress'>Pass Props to a Stateless Functional Component</li>
-              <li class='progress'>Pass an Array as Props</li>
-              <li class='progress'>Use Default Props</li>
-              <li class='progress'>Override Default Props</li>
-              <li class='progress'>Use PropTypes to Define the Props You Expect</li>
-              <li class='progress'>Access Props Using this.props</li>
-              <li class='progress'>Review Using Props with Stateless Functional Components</li>
-              <li class='progress'>Create a Stateful Component</li>
-              <li class='progress'>Render State in the User Interface</li>
-              <li class='progress'>Render State in the User Interface Another Way</li>
-              <li class='progress'>Set State with this.setState</li>
-              <li class='progress'>Bind 'this' to a Class Method</li>
-              <li class='progress'>Use State to Toggle an Element</li>
-              <li class='progress'>Write a Simple Counter</li>
-              <li class='progress'>Create a Controlled Input</li>
-              <li class='progress'>Create a Controlled Form</li>
-              <li class='progress'>Pass State as Props to Child Components</li>
-              <li class='progress'>Pass a Callback as Props</li>
+              <li class='progress done'>Create a Component with Composition</li>
+              <li class='progress done'>Use React to Render Nested Components</li>
+              <li class='progress done'>Compose React Components</li>
+              <li class='progress done'>Render a Class Component to the DOM</li>
+              <li class='progress done'>Write a React Component from Scratch</li>
+              <li class='progress done'>Pass Props to a Stateless Functional Component</li>
+              <li class='progress done'>Pass an Array as Props</li>
+              <li class='progress done'>Use Default Props</li>
+              <li class='progress done'>Override Default Props</li>
+              <li class='progress done'>Use PropTypes to Define the Props You Expect</li>
+              <li class='progress done'>Access Props Using this.props</li>
+              <li class='progress done'>Review Using Props with Stateless Functional Components</li>
+              <li class='progress done'>Create a Stateful Component</li>
+              <li class='progress done'>Render State in the User Interface</li>
+              <li class='progress done'>Render State in the User Interface Another Way</li>
+              <li class='progress done'>Set State with this.setState</li>
+              <li class='progress done'>Bind 'this' to a Class Method</li>
+              <li class='progress done'>Use State to Toggle an Element</li>
+              <li class='progress done'>Write a Simple Counter</li>
+              <li class='progress done'>Create a Controlled Input</li>
+              <li class='progress done'>Create a Controlled Form</li>
+              <li class='progress done'>Pass State as Props to Child Components</li>
+              <li class='progress done'>Pass a Callback as Props</li>
               <li class='progress'>Use the Lifecycle Method componentWillMount</li>
               <li class='progress'>Use the Lifecycle Method componentDidMount</li>
               <li class='progress'>Add Event Listeners</li>
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 17,
+      "courseProgress": 20,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1981,18 +1981,18 @@
         },
         {
           "courseClassTitle": "Flask",
-          "courseClassProgress": 0,
+          "courseClassProgress": 38,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction - 1 mins</li>
-              <li class='progress'>Python - 1 mins</li>
-              <li class='progress'>hello.py - 2 mins</li>
-              <li class='progress'>name.py - 4 mins</li>
-              <li class='progress'>variables.py - 4 mins</li>
-              <li class='progress'>conditions.py - 3 mins</li>
-              <li class='progress'>sequences.py - 6 mins</li>
-              <li class='progress'>loops0.py - 5 mins</li>
-              <li class='progress'>loops1.py - 1 mins</li>
+              <li class='progress done'>Introduction - 1 mins</li>
+              <li class='progress done'>Python - 1 mins</li>
+              <li class='progress done'>hello.py - 2 mins</li>
+              <li class='progress done'>name.py - 4 mins</li>
+              <li class='progress done'>variables.py - 4 mins</li>
+              <li class='progress done'>conditions.py - 3 mins</li>
+              <li class='progress done'>sequences.py - 6 mins</li>
+              <li class='progress done'>loops0.py - 5 mins</li>
+              <li class='progress done'>loops1.py - 1 mins</li>
               <li class='progress'>sets.py - 2 mins</li>
               <li class='progress'>dictionaries.py - 3 mins</li>
               <li class='progress'>functions.py - 5 mins</li>
