@@ -11,7 +11,7 @@ if ('serviceWorker' in navigator) {
       // appName:   _ | _pwa_ | _pwa_training_
       // scopeName: / | /pwa/ | /pwa/training/
 
-      navigator.serviceWorker.register(scopeName + 'sw.js' + '?appName=' + encodeURIComponent(appName), {
+      navigator.serviceWorker.register(scopeName + 'sw.js' + '?appName=' + encodeURIComponent(getAppName(appName)), {
         scope: scopeName
       })
         .then(registration => {           // 'appName' is (later) extracted from within [sw.js]
@@ -29,5 +29,12 @@ if ('serviceWorker' in navigator) {
       return _appName.replace(/_/g, '/').replace(/pwa/, 'app');
     }
     return _appName.replace(/_/g, '/');
+  }
+
+  function getAppName(_appName) {
+    if (location.hostname === 'kdcinfo.com') {
+      return _appName.replace(/pwa/, 'app');
+    }
+    return _appName;
   }
 }
