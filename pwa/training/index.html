@@ -8,7 +8,7 @@
   <title>Training Progress SPA: Keith D Commiskey</title>
   <meta name="description" content="I built this Training Progress SPA for courses I've been engaged with since May 2018.">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Palanquin+Dark|Permanent+Marker" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="training.css?v20180715b">
+  <link rel="stylesheet" type="text/css" href="training.css"><!-- ?v20180730a -->
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <meta property="og:url" content="https://kdcinfo.com/app/training/">
@@ -95,7 +95,7 @@
     <footer>
       <div class="message"></div>
       <div class="msg">
-        Last Dev Build: <b><a class="last-dev-build no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">Wed Jun 20 2018 01:50:34 GMT-0700 (Pacific Daylight Time)</a></b>
+        Last Build: <b><a class="last-dev-build no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">Wed Jun 20 2018 01:50:34 GMT-0700 (Pacific Daylight Time)</a></b>
       </div>
       <div id="webapp-help">
         <button type="button" id="button-toggle-webapp-help">About this App</button>
@@ -141,14 +141,14 @@
     Press tab/shift-tab to shift back to primary navigation.
   </div>
 
-  <script src="training.js?v20180715b"></script>
+  <script src="training.js"></script><!-- ?v20180730a -->
   <script type="text/javascript">
     function goToExternalUrl(url) {
       let goToUrl = (typeof url === 'undefined') ? 'https://kdcinfo.com' : url;
       top.location.href = goToUrl;
       return false;
     }
-    async function fetchAsync(getUrl) {
+    async function fetchAsync() {
       // GitHub API Request Process - Thanks to: [Ivan Zuzak](https://stackoverflow.com/a/15933109/638153)
       let response = await fetch('https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master', { method: "GET" });
       let json = await response.json();
@@ -163,5 +163,7 @@
       document.querySelector('.last-dev-build').innerHTML = 'Wed Jun 21 2018 03:00:00 GMT-0700<br/>(err: using last known commit date)<br/><br/>' + err;
     });
   </script>
+  <!-- register the Service Worker -->
+  <script src="/sw-register.js" id="sw-register" data-app-name="_pwa_training_"></script>
 </body>
 </html>
