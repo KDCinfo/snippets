@@ -150,7 +150,7 @@
     }
     async function fetchAsync() {
       // GitHub API Request Process - Thanks to: [Ivan Zuzak](https://stackoverflow.com/a/15933109/638153)
-      let response = await fetch('https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master', { method: "GET" });
+      let response = await fetch('https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master', { method: "GET", cache: 'reload' });
       let json = await response.json();
       let refResponse = await fetch(json.object.url, { method: "GET" });
       let refJson = await refResponse.json();
