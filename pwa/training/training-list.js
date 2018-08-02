@@ -1844,7 +1844,7 @@
       "active": true,
       "courseVendorName": "5a— Angular University",
       "courseVendor": "Service Workers: Guided Intro",
-      "courseProgress": 99,
+      "courseProgress": 100,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1854,7 +1854,7 @@
       "courseList": [
         {
           "courseClassTitle": "Service Workers - A Practical Guided Introduction",
-          "courseClassProgress": 99,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>What is a Service Worker?</li>
@@ -1880,7 +1880,7 @@
               </li>
               <li class='progress done'>Built-in Browser protection against broken Service Workers</li>
               <li class='progress done'>Precautions with the use of the Browser Cache and Service Workers</li>
-              <li class='progress'>Conclusions</li>
+              <li class='progress done'>Conclusions</li>
             </ul>
           `
         }
