@@ -60,7 +60,11 @@ self.addEventListener('fetch', function(event) {
             .then(function(response) {
               cache.put(eventRequest, response.clone());
               return response;
-            })
+            }).catch((e) => {
+              return new Response("", {
+                headers: {'Content-Type': 'text/plain'}
+              });
+            });
         });
 
   // [requestUrl.origin]    http://127.0.0.1:8887 | https://fonts.gstatic.com
@@ -97,6 +101,12 @@ self.addEventListener('fetch', function(event) {
     event.respondWith(
       fetch(event.request, { cache: 'no-store' }) // reload
         .then(response => { return response; })
+        .catch((e) => {
+          // console.log('training-list: no-store: ', e); // TypeError: Failed to fetch
+          return new Response("{}", {
+            headers: {'Content-Type': 'text/javascript'}
+          });
+        }) // <-- No semicolon !!!
     );
 
   } else if (strUrl.indexOf('sw-register') > 0 ||
@@ -106,6 +116,11 @@ self.addEventListener('fetch', function(event) {
     event.respondWith(
       fetch(event.request, { cache: 'no-store' })
       .then(response => { return response; })
+      .catch((e) => {
+        return new Response("{}", {
+          headers: {'Content-Type': 'text/javascript'}
+        });
+      }) // <-- No semicolon !!!
     );
 
   } else {
