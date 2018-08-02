@@ -1,7 +1,7 @@
 const curPath = location.search.split('=')[1].replace(/_/g, '/'),
       curApp = 'training-progress-spa';
 
-const staticCacheName = curApp + '-v1',
+const staticCacheName = curApp + '-v2',
       staticAssetsVer = '20180731a';
 
 self.addEventListener('install', function(event) {
@@ -85,7 +85,9 @@ self.addEventListener('fetch', function(event) {
         .then(response => { return response; })
     );
 
-  } else if (strUrl.indexOf('sw-register') > 0) {
+  } else if (strUrl.indexOf('sw-register') > 0 ||
+             strUrl.indexOf('googletagmanager') > 0 ||
+             strUrl.indexOf('google-analytics') > 0) {
 
     event.respondWith(
       fetch(event.request, { cache: 'no-store' })
