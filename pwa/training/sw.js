@@ -7,7 +7,21 @@ const staticCacheName = curApp + '-v2',
 self.addEventListener('install', function(event) {
 
   const urls = [
-          curPath
+          curPath,
+          curPath + 'training.css?v=' + staticAssetsVer,    // CSS and...
+          curPath + 'training.js?v=' + staticAssetsVer,     // JS are cached with their own version parameter.
+          // , curPath + 'training-list.js' // IndexedDB --> Network Fetch: cache: 'reload'
+                                            // (Network; then update cache (maybe use `no-store` instead).)
+          '/favicon.ico',
+          'https://fonts.googleapis.com/css?family=Nanum+Gothic|Palanquin+Dark|Permanent+Marker',
+          'https://fonts.gstatic.com/s/nanumgothic/v8/PN_3Rfi-oW3hYwmKDpxS7F_z-7r_xFtIsPV5MbNOyrVj67GNc972x-dpix2LdhN-iTB6aWWhDX3G.119.woff2',
+          'https://fonts.gstatic.com/s/nanumgothic/v8/PN_3Rfi-oW3hYwmKDpxS7F_z-7r_xFtIsPV5MbNOyrVj67GNc972x-dpix2LdhN-iTB6aWWhDX3G.118.woff2',
+          'https://fonts.gstatic.com/s/nanumgothic/v8/PN_3Rfi-oW3hYwmKDpxS7F_z-7r_xFtIsPV5MbNOyrVj67GNc972x-dpix2LdhN-iTB6aWWhDX3G.117.woff2',
+          'https://fonts.gstatic.com/s/nanumgothic/v8/PN_3Rfi-oW3hYwmKDpxS7F_z-7r_xFtIsPV5MbNOyrVj67GNc972x-dpix2LdhN-iTB6aWWhDX3G.116.woff2',
+          'https://fonts.gstatic.com/s/palanquindark/v3/xn75YHgl1nqmANMB-26xC7yuF86JRks.woff2',
+          'https://fonts.gstatic.com/s/permanentmarker/v7/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2',
+          'https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master',
+          'https://api.github.com/repos/KDCinfo/snippets/git/commits/9cab1823273d47f5f2d65b4b409657ad33dc05ac'
         ];
 
   event.waitUntil(
