@@ -1,7 +1,7 @@
 const curPath = location.search.split('=')[1].replace(/_/g, '/'),
       curApp = 'training-progress-spa';
 
-const staticCacheName = curApp + '-v2',
+const staticCacheName = curApp + '-v4',
       staticAssetsVer = '20180731a';
 
 self.addEventListener('install', function(event) {
@@ -19,9 +19,9 @@ self.addEventListener('install', function(event) {
           'https://fonts.gstatic.com/s/nanumgothic/v8/PN_3Rfi-oW3hYwmKDpxS7F_z-7r_xFtIsPV5MbNOyrVj67GNc972x-dpix2LdhN-iTB6aWWhDX3G.117.woff2',
           'https://fonts.gstatic.com/s/nanumgothic/v8/PN_3Rfi-oW3hYwmKDpxS7F_z-7r_xFtIsPV5MbNOyrVj67GNc972x-dpix2LdhN-iTB6aWWhDX3G.116.woff2',
           'https://fonts.gstatic.com/s/palanquindark/v3/xn75YHgl1nqmANMB-26xC7yuF86JRks.woff2',
-          'https://fonts.gstatic.com/s/permanentmarker/v7/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2',
-          'https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master',
-          'https://api.github.com/repos/KDCinfo/snippets/git/commits/9cab1823273d47f5f2d65b4b409657ad33dc05ac'
+          'https://fonts.gstatic.com/s/permanentmarker/v7/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2'
+          // , 'https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master'
+          // , 'https://api.github.com/repos/KDCinfo/snippets/git/commits/9cab1823273d47f5f2d65b4b409657ad33dc05ac'
         ];
 
   event.waitUntil(
@@ -61,6 +61,7 @@ self.addEventListener('fetch', function(event) {
               cache.put(eventRequest, response.clone());
               return response;
             }).catch((e) => {
+              console.log('CATCH [fetchThenCache]: ', eventRequest);
               return new Response("", {
                 headers: {'Content-Type': 'text/plain'}
               });
@@ -103,11 +104,48 @@ self.addEventListener('fetch', function(event) {
         .then(response => { return response; })
         .catch((e) => {
           // console.log('training-list: no-store: ', e); // TypeError: Failed to fetch
+          console.log('CATCH [training-list]: ', event.request);
           return new Response("{}", {
-            headers: {'Content-Type': 'text/javascript'}
+            headers: {'Content-Type': 'application/javascript'}
           });
         }) // <-- No semicolon !!!
     );
+
+  } else if (strUrl.indexOf('repos/') > 0) { // repos/KDCinfo/snippets/git/refs/heads/master
+
+    event.respondWith(
+      fetch(event.request, { cache: 'no-store' }) // reload
+        .then(response => { return response; })
+        .catch((e) => {
+          // console.log('training-list: no-store: ', e); // TypeError: Failed to fetch
+          console.log('CATCH [repos]: ', event.request);
+          return new Response("{}", {
+            headers: {'Content-Type': 'application/javascript'}
+          });
+        }) // <-- No semicolon !!!
+    );
+
+    // fetch --> update cache --> return response
+    // if fetch fails --> return cache --> else return silent empty object
+
+    // console.log('REPOS: ', event.request);
+
+    // event.respondWith(
+    //   caches.open(staticCacheName).then(function(cache) {
+    //     return fetch(event.request, { cache: 'no-store' })
+    //       .then(function(response) {
+    //         cache.put(event.request, response.clone());
+    //         return response;
+    //       }).catch((e) => {
+    //         caches.match(event.request).then(function(response) {
+    //           console.log('CATCH [repos]: ', event.request);
+    //           return response || new Response("{}", {
+    //             headers: {'Content-Type': 'application/json'}
+    //           });
+    //         });
+    //       });
+    //   })
+    // );
 
   } else if (strUrl.indexOf('sw-register') > 0 ||
              strUrl.indexOf('googletagmanager') > 0 ||
@@ -117,8 +155,9 @@ self.addEventListener('fetch', function(event) {
       fetch(event.request, { cache: 'no-store' })
       .then(response => { return response; })
       .catch((e) => {
+        console.log('CATCH [sw-reg]: ', event.request);
         return new Response("{}", {
-          headers: {'Content-Type': 'text/javascript'}
+          headers: {'Content-Type': 'application/javascript'}
         });
       }) // <-- No semicolon !!!
     );
