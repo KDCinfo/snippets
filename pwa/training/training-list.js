@@ -88,7 +88,7 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 7,
+      "courseProgress": 17,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -98,7 +98,7 @@
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 22,
+          "courseClassProgress": 52,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 22,
+      "courseProgress": 52,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -843,7 +843,7 @@
         },
         {
           "courseClassTitle": "App Lifecycles",
-          "courseClassProgress": 31,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Learn about the four parts of a web app's lifecycle: RAIL (Response, Animate, Idle, and Load). You'll discover how these phases cause jank in your web apps.</p>
             <ul>
@@ -851,47 +851,47 @@
               <li class='progress done'>RAIL</li>
               <li class='progress done'>Load and Idle</li>
               <li class='progress done'>Quiz: Idle Time</li>
-              <li class='progress'>RAIL Response</li>
-              <li class='progress'>RAIL - Animations Part 1</li>
-              <li class='progress'>RAIL - Animations Part 2</li>
-              <li class='progress'>Quiz: Rendering Animations</li>
-              <li class='progress'>Quiz: Interactions and Animations</li>
-              <li class='progress'>RAIL Thresholds Review</li>
-              <li class='progress'>Quiz: RAIL Scenario 1</li>
-              <li class='progress'>Quiz: RAIL Scenario 2</li>
-              <li class='progress'>Lesson 2 Outro</li>
+              <li class='progress done'>RAIL Response</li>
+              <li class='progress done'>RAIL - Animations Part 1</li>
+              <li class='progress done'>RAIL - Animations Part 2</li>
+              <li class='progress done'>Quiz: Rendering Animations</li>
+              <li class='progress done'>Quiz: Interactions and Animations</li>
+              <li class='progress done'>RAIL Thresholds Review</li>
+              <li class='progress done'>Quiz: RAIL Scenario 1</li>
+              <li class='progress done'>Quiz: RAIL Scenario 2</li>
+              <li class='progress done'>Lesson 2 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Weapons of Jank Destruction",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Learn how to use Chrome's Developer Tools Timeline to find page jank and remove it from your site.</p>
             <ul>
-              <li class='progress'>Lesson 3 Introduction</li>
-              <li class='progress'>DevTools</li>
-              <li class='progress'>The Timeline in Depth</li>
-              <li class='progress'>Quiz: Reading the Timeline</li>
-              <li class='progress'>Identifying Jank Sample</li>
-              <li class='progress'>Test… All the Devices!!!</li>
-              <li class='progress'>Setup for mobile</li>
-              <li class='progress'>Using dev tools on mobile</li>
-              <li class='progress'>Mobile tools for iOS</li>
-              <li class='progress'>Quiz: More Timeline Practice</li>
-              <li class='progress'>Quiz: Finding Janky Functions</li>
-              <li class='progress'>Quiz: Finding More Jank</li>
-              <li class='progress'>Lesson 3 Outro</li>
+              <li class='progress done'>Lesson 3 Introduction</li>
+              <li class='progress done'>DevTools</li>
+              <li class='progress done'>The Timeline in Depth</li>
+              <li class='progress done'>Quiz: Reading the Timeline</li>
+              <li class='progress done'>Identifying Jank Sample</li>
+              <li class='progress done'>Test… All the Devices!!!</li>
+              <li class='progress done'>Setup for mobile</li>
+              <li class='progress done'>Using dev tools on mobile</li>
+              <li class='progress done'>Mobile tools for iOS</li>
+              <li class='progress done'>Quiz: More Timeline Practice</li>
+              <li class='progress done'>Quiz: Finding Janky Functions</li>
+              <li class='progress done'>Quiz: Finding More Jank</li>
+              <li class='progress done'>Lesson 3 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "JavaScript",
-          "courseClassProgress": 0,
+          "courseClassProgress": 9,
           "courseClassContent": `
             <p class='text-body'>Learn how to use JavaScript to optimize animations and use web workers to speed up performance.</p>
             <ul>
-              <li class='progress'>Lesson 4 Introduction</li>
+              <li class='progress done'>Lesson 4 Introduction</li>
               <li class='progress'>Just in Time</li>
               <li class='progress'>Quiz: Optimizing JS for Animations</li>
               <li class='progress'>requestAnimationFrame</li>
@@ -1349,7 +1349,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 59,
+      "courseProgress": 65,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1444,7 +1444,7 @@
         },
         {
           "courseClassTitle": "React",
-          "courseClassProgress": 65,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the React Challenges</li>
@@ -1479,32 +1479,32 @@
               <li class='progress done'>Create a Controlled Form</li>
               <li class='progress done'>Pass State as Props to Child Components</li>
               <li class='progress done'>Pass a Callback as Props</li>
-              <li class='progress'>Use the Lifecycle Method componentWillMount</li>
-              <li class='progress'>Use the Lifecycle Method componentDidMount</li>
-              <li class='progress'>Add Event Listeners</li>
-              <li class='progress'>Manage Updates with Lifecycle Methods</li>
-              <li class='progress'>Optimize Re-Renders with shouldComponentUpdate</li>
-              <li class='progress'>Introducing Inline Styles</li>
-              <li class='progress'>Add Inline Styles in React</li>
-              <li class='progress'>Use Advanced JavaScript in React Render Method</li>
-              <li class='progress'>Render with an If/Else Condition</li>
-              <li class='progress'>Use && for a More Concise Conditional</li>
-              <li class='progress'>Use a Ternary Expression for Conditional Rendering</li>
-              <li class='progress'>Render Conditionally from Props</li>
-              <li class='progress'>Change Inline CSS Conditionally Based on Component State</li>
-              <li class='progress'>Use Array.map() to Dynamically Render Elements</li>
-              <li class='progress'>Give Sibling Elements a Unique Key Attribute</li>
-              <li class='progress'>Use Array.filter() to Dynamically Filter an Array</li>
-              <li class='progress'>Render React on the Server with renderToString</li>
+              <li class='progress done'>Use the Lifecycle Method componentWillMount</li>
+              <li class='progress done'>Use the Lifecycle Method componentDidMount</li>
+              <li class='progress done'>Add Event Listeners</li>
+              <li class='progress done'>Manage Updates with Lifecycle Methods</li>
+              <li class='progress done'>Optimize Re-Renders with shouldComponentUpdate</li>
+              <li class='progress done'>Introducing Inline Styles</li>
+              <li class='progress done'>Add Inline Styles in React</li>
+              <li class='progress done'>Use Advanced JavaScript in React Render Method</li>
+              <li class='progress done'>Render with an If/Else Condition</li>
+              <li class='progress done'>Use && for a More Concise Conditional</li>
+              <li class='progress done'>Use a Ternary Expression for Conditional Rendering</li>
+              <li class='progress done'>Render Conditionally from Props</li>
+              <li class='progress done'>Change Inline CSS Conditionally Based on Component State</li>
+              <li class='progress done'>Use Array.map() to Dynamically Render Elements</li>
+              <li class='progress done'>Give Sibling Elements a Unique Key Attribute</li>
+              <li class='progress done'>Use Array.filter() to Dynamically Filter an Array</li>
+              <li class='progress done'>Render React on the Server with renderToString</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Redux",
-          "courseClassProgress": 0,
+          "courseClassProgress": 6,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Redux Challenges</li>
+              <li class='progress done'>Introduction to the Redux Challenges</li>
               <li class='progress'>Create a Redux Store</li>
               <li class='progress'>Get State from the Redux Store</li>
               <li class='progress'>Define a Redux Action</li>
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 20,
+      "courseProgress": 26,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1981,7 +1981,7 @@
         },
         {
           "courseClassTitle": "Flask",
-          "courseClassProgress": 38,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 1 mins</li>
@@ -1993,33 +1993,33 @@
               <li class='progress done'>sequences.py - 6 mins</li>
               <li class='progress done'>loops0.py - 5 mins</li>
               <li class='progress done'>loops1.py - 1 mins</li>
-              <li class='progress'>sets.py - 2 mins</li>
-              <li class='progress'>dictionaries.py - 3 mins</li>
-              <li class='progress'>functions.py - 5 mins</li>
-              <li class='progress'>modules.py - 4 mins</li>
-              <li class='progress'>classes.py - 4 mins</li>
-              <li class='progress'>HTTP - 2 mins</li>
-              <li class='progress'>Flask - 7 mins</li>
-              <li class='progress'>routes0 - 6 mins</li>
-              <li class='progress'>templates - 5 mins</li>
-              <li class='progress'>variables0 - 8 mins</li>
-              <li class='progress'>conditions - 8 mins</li>
-              <li class='progress'>loops - 6 mins</li>
-              <li class='progress'>inheritance - 6 mins</li>
-              <li class='progress'>forms - 11 mins</li>
-              <li class='progress'>notes - 12 mins</li>
+              <li class='progress done'>sets.py - 2 mins</li>
+              <li class='progress done'>dictionaries.py - 3 mins</li>
+              <li class='progress done'>functions.py - 5 mins</li>
+              <li class='progress done'>modules.py - 4 mins</li>
+              <li class='progress done'>classes.py - 4 mins</li>
+              <li class='progress done'>HTTP - 2 mins</li>
+              <li class='progress done'>Flask - 7 mins</li>
+              <li class='progress done'>routes0 - 6 mins</li>
+              <li class='progress done'>templates - 5 mins</li>
+              <li class='progress done'>variables0 - 8 mins</li>
+              <li class='progress done'>conditions - 8 mins</li>
+              <li class='progress done'>loops - 6 mins</li>
+              <li class='progress done'>inheritance - 6 mins</li>
+              <li class='progress done'>forms - 11 mins</li>
+              <li class='progress done'>notes - 12 mins</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "SQL",
-          "courseClassProgress": 0,
+          "courseClassProgress": 17,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction - 1 mins</li>
-              <li class='progress'>Databases - 2 mins</li>
-              <li class='progress'>SQL - 1 mins</li>
-              <li class='progress'>SQL Data Types - 2 mins</li>
+              <li class='progress done'>Introduction - 1 mins</li>
+              <li class='progress done'>Databases - 2 mins</li>
+              <li class='progress done'>SQL - 1 mins</li>
+              <li class='progress done'>SQL Data Types - 2 mins</li>
               <li class='progress'>create.sql - 6 mins</li>
               <li class='progress'>Constraints - 2 mins</li>
               <li class='progress'>INSERT - 3 mins</li>
