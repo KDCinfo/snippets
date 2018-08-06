@@ -1,5 +1,5 @@
 # snippets
 
-Random bits of code I've worked on at various points in history.
+Custom-built SPAs and PWAs.
 
-Also includes some standalone SPAs and PWAs.
+Also includes some random bits of detailed code I've worked on at various points in history.
