@@ -88,17 +88,17 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 17,
+      "courseProgress": 20,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "August",
       "courseShortVendor": "google-training",
       "courseShortName": "ux",
       "courseURL": "",
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 52,
+          "courseClassProgress": 59,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -808,10 +808,10 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 52,
+      "courseProgress": 59,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "August",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "browser-rendering-optimization",
       "courseURL": "https://www.udacity.com/course/browser-rendering-optimization--ud860",
@@ -887,16 +887,16 @@
         },
         {
           "courseClassTitle": "JavaScript",
-          "courseClassProgress": 9,
+          "courseClassProgress": 55,
           "courseClassContent": `
             <p class='text-body'>Learn how to use JavaScript to optimize animations and use web workers to speed up performance.</p>
             <ul>
               <li class='progress done'>Lesson 4 Introduction</li>
-              <li class='progress'>Just in Time</li>
-              <li class='progress'>Quiz: Optimizing JS for Animations</li>
-              <li class='progress'>requestAnimationFrame</li>
-              <li class='progress'>JavaScript Profile</li>
-              <li class='progress'>Quiz: Long Running JS</li>
+              <li class='progress done'>Just in Time</li>
+              <li class='progress done'>Quiz: Optimizing JS for Animations</li>
+              <li class='progress done'>requestAnimationFrame</li>
+              <li class='progress done'>JavaScript Profile</li>
+              <li class='progress done'>Quiz: Long Running JS</li>
               <li class='progress'>Quiz: Web Workers</li>
               <li class='progress'>JS Memory Management</li>
               <li class='progress'>Quiz: A Snappier QR Code App Pt. 1</li>
@@ -1349,10 +1349,10 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 65,
+      "courseProgress": 67,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "August",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-libraries-cert",
       "courseURL": "https://www.freecodecamp.org/kdcinfo",
@@ -1501,12 +1501,12 @@
         },
         {
           "courseClassTitle": "Redux",
-          "courseClassProgress": 6,
+          "courseClassProgress": 17,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Redux Challenges</li>
-              <li class='progress'>Create a Redux Store</li>
-              <li class='progress'>Get State from the Redux Store</li>
+              <li class='progress done'>Create a Redux Store</li>
+              <li class='progress done'>Get State from the Redux Store</li>
               <li class='progress'>Define a Redux Action</li>
               <li class='progress'>Define an Action Creator</li>
               <li class='progress'>Dispatch an Action Event</li>
@@ -1891,10 +1891,10 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 26,
+      "courseProgress": 33,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "August",
       "courseShortVendor": "harvard-courses",
       "courseShortName": "harvard-cs50w",
       "courseURL": "https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web",
@@ -2013,31 +2013,31 @@
         },
         {
           "courseClassTitle": "SQL",
-          "courseClassProgress": 17,
+          "courseClassProgress": 92,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 1 mins</li>
               <li class='progress done'>Databases - 2 mins</li>
               <li class='progress done'>SQL - 1 mins</li>
               <li class='progress done'>SQL Data Types - 2 mins</li>
-              <li class='progress'>create.sql - 6 mins</li>
-              <li class='progress'>Constraints - 2 mins</li>
-              <li class='progress'>INSERT - 3 mins</li>
-              <li class='progress'>insert.sql - 1 mins</li>
-              <li class='progress'>SELECT - 12 mins</li>
-              <li class='progress'>SQL Functions - 1 mins</li>
-              <li class='progress'>UPDATE - 3 mins</li>
-              <li class='progress'>DELETE - 9 mins</li>
-              <li class='progress'>Foreign Keys - 6 mins</li>
-              <li class='progress'>joins.sql - 8 mins</li>
-              <li class='progress'>Indexing - 7 mins</li>
-              <li class='progress'>SQL Injection - 7 mins</li>
-              <li class='progress'>Race Conditions - 6 mins</li>
-              <li class='progress'>SQL Transactions - 1 mins</li>
-              <li class='progress'>SQLAlchemy - 1 mins</li>
-              <li class='progress'>list.py - 6 mins</li>
-              <li class='progress'>import.py - 7 mins</li>
-              <li class='progress'>passengers.py - 4 mins</li>
+              <li class='progress done'>create.sql - 6 mins</li>
+              <li class='progress done'>Constraints - 2 mins</li>
+              <li class='progress done'>INSERT - 3 mins</li>
+              <li class='progress done'>insert.sql - 1 mins</li>
+              <li class='progress done'>SELECT - 12 mins</li>
+              <li class='progress done'>SQL Functions - 1 mins</li>
+              <li class='progress done'>UPDATE - 3 mins</li>
+              <li class='progress done'>DELETE - 9 mins</li>
+              <li class='progress done'>Foreign Keys - 6 mins</li>
+              <li class='progress done'>joins.sql - 8 mins</li>
+              <li class='progress done'>Indexing - 7 mins</li>
+              <li class='progress done'>SQL Injection - 7 mins</li>
+              <li class='progress done'>Race Conditions - 6 mins</li>
+              <li class='progress done'>SQL Transactions - 1 mins</li>
+              <li class='progress done'>SQLAlchemy - 1 mins</li>
+              <li class='progress done'>list.py - 6 mins</li>
+              <li class='progress done'>import.py - 7 mins</li>
+              <li class='progress done'>passengers.py - 4 mins</li>
               <li class='progress'>airline0 - 14 mins</li>
               <li class='progress'>airline1 - 9 mins</li>
             </ul>
