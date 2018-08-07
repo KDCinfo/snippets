@@ -4,7 +4,7 @@ Chronological - Descending (reverse order)
 
 ## [2018-06 - 2018-07]
 
-Completed (Active): [Educational Advancement 2018: Training Progress SPA](https://kdcinfo.com/app/training/)
+Completed (Live): [Training Progress SPA](https://kdcinfo.com/app/training/)
 
 A JavaScript-based PWA I created as a part of my PWA learning.
 
