@@ -98,7 +98,7 @@
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 59,
+          "courseClassProgress": 61,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 59,
+      "courseProgress": 61,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -887,7 +887,7 @@
         },
         {
           "courseClassTitle": "JavaScript",
-          "courseClassProgress": 55,
+          "courseClassProgress": 64,
           "courseClassContent": `
             <p class='text-body'>Learn how to use JavaScript to optimize animations and use web workers to speed up performance.</p>
             <ul>
@@ -897,7 +897,7 @@
               <li class='progress done'>requestAnimationFrame</li>
               <li class='progress done'>JavaScript Profile</li>
               <li class='progress done'>Quiz: Long Running JS</li>
-              <li class='progress'>Quiz: Web Workers</li>
+              <li class='progress done'>Quiz: Web Workers</li>
               <li class='progress'>JS Memory Management</li>
               <li class='progress'>Quiz: A Snappier QR Code App Pt. 1</li>
               <li class='progress'>Quiz: A Snappier QR Code App Pt. 2</li>
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 33,
+      "courseProgress": 34,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -2013,7 +2013,7 @@
         },
         {
           "courseClassTitle": "SQL",
-          "courseClassProgress": 92,
+          "courseClassProgress": 96,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 1 mins</li>
@@ -2038,7 +2038,7 @@
               <li class='progress done'>list.py - 6 mins</li>
               <li class='progress done'>import.py - 7 mins</li>
               <li class='progress done'>passengers.py - 4 mins</li>
-              <li class='progress'>airline0 - 14 mins</li>
+              <li class='progress done'>airline0 - 14 mins</li>
               <li class='progress'>airline1 - 9 mins</li>
             </ul>
           `
