@@ -88,7 +88,7 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 20,
+      "courseProgress": 23,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -98,7 +98,7 @@
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 61,
+          "courseClassProgress": 68,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 61,
+      "courseProgress": 68,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -887,7 +887,7 @@
         },
         {
           "courseClassTitle": "JavaScript",
-          "courseClassProgress": 64,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Learn how to use JavaScript to optimize animations and use web workers to speed up performance.</p>
             <ul>
@@ -898,20 +898,20 @@
               <li class='progress done'>JavaScript Profile</li>
               <li class='progress done'>Quiz: Long Running JS</li>
               <li class='progress done'>Quiz: Web Workers</li>
-              <li class='progress'>JS Memory Management</li>
-              <li class='progress'>Quiz: A Snappier QR Code App Pt. 1</li>
-              <li class='progress'>Quiz: A Snappier QR Code App Pt. 2</li>
-              <li class='progress'>Lesson 4 Outro</li>
+              <li class='progress done'>JS Memory Management</li>
+              <li class='progress done'>Quiz: A Snappier QR Code App Pt. 1</li>
+              <li class='progress done'>Quiz: A Snappier QR Code App Pt. 2</li>
+              <li class='progress done'>Lesson 4 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Styles and Layout",
-          "courseClassProgress": 0,
+          "courseClassProgress": 9,
           "courseClassContent": `
             <p class='text-body'>Discover how changing styles can result in surprisingly slow page speed. You'll also learn how to prevent Forced Synchronous Layouts.</p>
             <ul>
-              <li class='progress'>Lesson 5 Introduction</li>
+              <li class='progress done'>Lesson 5 Introduction</li>
               <li class='progress'>Quiz: The Cost of Style Changes</li>
               <li class='progress'>Selector Matching</li>
               <li class='progress'>Quiz: Selector Matching</li>
@@ -1349,7 +1349,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 67,
+      "courseProgress": 70,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -1501,16 +1501,16 @@
         },
         {
           "courseClassTitle": "Redux",
-          "courseClassProgress": 17,
+          "courseClassProgress": 39,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Redux Challenges</li>
               <li class='progress done'>Create a Redux Store</li>
               <li class='progress done'>Get State from the Redux Store</li>
-              <li class='progress'>Define a Redux Action</li>
-              <li class='progress'>Define an Action Creator</li>
-              <li class='progress'>Dispatch an Action Event</li>
-              <li class='progress'>Handle an Action in the Store</li>
+              <li class='progress done'>Define a Redux Action</li>
+              <li class='progress done'>Define an Action Creator</li>
+              <li class='progress done'>Dispatch an Action Event</li>
+              <li class='progress done'>Handle an Action in the Store</li>
               <li class='progress'>Use a Switch Statement to Handle Multiple Actions</li>
               <li class='progress'>Use const for Action Types</li>
               <li class='progress'>Register a Store Listener</li>
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 34,
+      "courseProgress": 35,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -2013,7 +2013,7 @@
         },
         {
           "courseClassTitle": "SQL",
-          "courseClassProgress": 96,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 1 mins</li>
@@ -2039,16 +2039,16 @@
               <li class='progress done'>import.py - 7 mins</li>
               <li class='progress done'>passengers.py - 4 mins</li>
               <li class='progress done'>airline0 - 14 mins</li>
-              <li class='progress'>airline1 - 9 mins</li>
+              <li class='progress done'>airline1 - 9 mins</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "ORMs, APIs",
-          "courseClassProgress": 0,
+          "courseClassProgress": 3,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction - 2 mins</li>
+              <li class='progress done'>Introduction - 2 mins</li>
               <li class='progress'>Object-Oriented Programming - 2 mins</li>
               <li class='progress'>classes0.py - 3 mins</li>
               <li class='progress'>classes1.py - 7 mins</li>
