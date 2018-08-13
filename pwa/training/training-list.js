@@ -956,7 +956,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 90,
+      "courseProgress": 93,
       "courseDesc": "Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1268,17 +1268,17 @@
         },
         {
           "courseClassTitle": "Functional Programming",
-          "courseClassProgress": 8,
+          "courseClassProgress": 33,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Functional Programming Challenges</li>
               <li class='progress done'>Learn About Functional Programming</li>
-              <li class='progress'>Understand Functional Programming Terminology</li>
-              <li class='progress'>Understand the Hazards of Using Imperative Code</li>
-              <li class='progress'>Avoid Mutations and Side Effects Using Functional Programming</li>
-              <li class='progress'>Pass Arguments to Avoid External Dependence in a Function</li>
-              <li class='progress'>Refactor Global Variables Out of Functions</li>
-              <li class='progress'>Use the map Method to Extract Data from an Array</li>
+              <li class='progress done'>Understand Functional Programming Terminology</li>
+              <li class='progress done'>Understand the Hazards of Using Imperative Code</li>
+              <li class='progress done'>Avoid Mutations and Side Effects Using Functional Programming</li>
+              <li class='progress done'>Pass Arguments to Avoid External Dependence in a Function</li>
+              <li class='progress done'>Refactor Global Variables Out of Functions</li>
+              <li class='progress done'>Use the map Method to Extract Data from an Array</li>
               <li class='progress'>Implement map on a Prototype</li>
               <li class='progress'>Use the filter Method to Extract Data from an Array</li>
               <li class='progress'>Implement the filter Method on a Prototype</li>
@@ -1565,13 +1565,13 @@
       "active": true,
       "courseVendorName": "4c— freecodecamp",
       "courseVendor": "Responsive Web Design Certification",
-      "courseProgress": 72,
-      "courseDesc": "",
+      "courseProgress": 100,
+      "courseDesc": "https://www.freecodecamp.org/certification/kdcinfo/responsive-web-design",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-web-design-cert",
-      "courseURL": "https://www.freecodecamp.org/kdcinfo",
+      "courseURL": "https://www.freecodecamp.org/certification/kdcinfo/responsive-web-design",
       "courseList": [
         {
           "courseClassTitle": "Basic HTML and HTML5",
@@ -1768,7 +1768,7 @@
         },
         {
           "courseClassTitle": "CSS Flexbox",
-          "courseClassProgress": 39,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the CSS Flexbox Challenges</li>
@@ -1778,61 +1778,61 @@
               <li class='progress done'>Apply the flex-direction Property to Create Rows in the Tweet Embed</li>
               <li class='progress done'>Use the flex-direction Property to Make a Column</li>
               <li class='progress done'>Apply the flex-direction Property to Create a Column in the Tweet Embed</li>
-              <li class='progress'>Align Elements Using the justify-content Property</li>
-              <li class='progress'>Use the justify-content Property in the Tweet Embed</li>
-              <li class='progress'>Align Elements Using the align-items Property</li>
-              <li class='progress'>Use the align-items Property in the Tweet Embed</li>
-              <li class='progress'>Use the flex-wrap Property to Wrap a Row or Column</li>
-              <li class='progress'>Use the flex-shrink Property to Shrink Items</li>
-              <li class='progress'>Use the flex-grow Property to Expand Items</li>
-              <li class='progress'>Use the flex-basis Property to Set the Initial Size of an Item</li>
-              <li class='progress'>Use the flex Shorthand Property</li>
-              <li class='progress'>Use the order Property to Rearrange Items</li>
-              <li class='progress'>Use the align-self Property</li>
+              <li class='progress done'>Align Elements Using the justify-content Property</li>
+              <li class='progress done'>Use the justify-content Property in the Tweet Embed</li>
+              <li class='progress done'>Align Elements Using the align-items Property</li>
+              <li class='progress done'>Use the align-items Property in the Tweet Embed</li>
+              <li class='progress done'>Use the flex-wrap Property to Wrap a Row or Column</li>
+              <li class='progress done'>Use the flex-shrink Property to Shrink Items</li>
+              <li class='progress done'>Use the flex-grow Property to Expand Items</li>
+              <li class='progress done'>Use the flex-basis Property to Set the Initial Size of an Item</li>
+              <li class='progress done'>Use the flex Shorthand Property</li>
+              <li class='progress done'>Use the order Property to Rearrange Items</li>
+              <li class='progress done'>Use the align-self Property</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "CSS Grid",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the CSS Grid Challenges</li>
-              <li class='progress'>Create Your First CSS Grid</li>
-              <li class='progress'>Add Columns with grid-template-columns</li>
-              <li class='progress'>Add Rows with grid-template-rows</li>
-              <li class='progress'>Use CSS Grid units to Change the Size of Columns and Rows</li>
-              <li class='progress'>Create a Column Gap Using grid-column-gap</li>
-              <li class='progress'>Create a Row Gap using grid-row-gap</li>
-              <li class='progress'>Add Gaps Faster with grid-gap</li>
-              <li class='progress'>Use grid-column to Control Spacing</li>
-              <li class='progress'>Use grid-row to Control Spacing</li>
-              <li class='progress'>Align an Item Horizontally using justify-self</li>
-              <li class='progress'>Align an Item Vertically using align-self</li>
-              <li class='progress'>Align All Items Horizontally using justify-items</li>
-              <li class='progress'>Align All Items Vertically using align-items</li>
-              <li class='progress'>Divide the Grid Into an Area Template</li>
-              <li class='progress'>Place Items in Grid Areas Using the grid-area Property</li>
-              <li class='progress'>Use grid-area Without Creating an Areas Template</li>
-              <li class='progress'>Reduce Repetition Using the repeat Function</li>
-              <li class='progress'>Limit Item Size Using the minmax Function</li>
-              <li class='progress'>Create Flexible Layouts Using auto-fill</li>
-              <li class='progress'>Create Flexible Layouts Using auto-fit</li>
-              <li class='progress'>Use Media Queries to Create Responsive Layouts</li>
-              <li class='progress'>Create Grids within Grids</li>
+              <li class='progress done'>Introduction to the CSS Grid Challenges</li>
+              <li class='progress done'>Create Your First CSS Grid</li>
+              <li class='progress done'>Add Columns with grid-template-columns</li>
+              <li class='progress done'>Add Rows with grid-template-rows</li>
+              <li class='progress done'>Use CSS Grid units to Change the Size of Columns and Rows</li>
+              <li class='progress done'>Create a Column Gap Using grid-column-gap</li>
+              <li class='progress done'>Create a Row Gap using grid-row-gap</li>
+              <li class='progress done'>Add Gaps Faster with grid-gap</li>
+              <li class='progress done'>Use grid-column to Control Spacing</li>
+              <li class='progress done'>Use grid-row to Control Spacing</li>
+              <li class='progress done'>Align an Item Horizontally using justify-self</li>
+              <li class='progress done'>Align an Item Vertically using align-self</li>
+              <li class='progress done'>Align All Items Horizontally using justify-items</li>
+              <li class='progress done'>Align All Items Vertically using align-items</li>
+              <li class='progress done'>Divide the Grid Into an Area Template</li>
+              <li class='progress done'>Place Items in Grid Areas Using the grid-area Property</li>
+              <li class='progress done'>Use grid-area Without Creating an Areas Template</li>
+              <li class='progress done'>Reduce Repetition Using the repeat Function</li>
+              <li class='progress done'>Limit Item Size Using the minmax Function</li>
+              <li class='progress done'>Create Flexible Layouts Using auto-fill</li>
+              <li class='progress done'>Create Flexible Layouts Using auto-fit</li>
+              <li class='progress done'>Use Media Queries to Create Responsive Layouts</li>
+              <li class='progress done'>Create Grids within Grids</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Responsive Web Design Projects",
-          "courseClassProgress": 33,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
-              <li class='progress'>Introduction to the Responsive Web Design Projects</li>
+              <li class='progress done'>Introduction to the Responsive Web Design Projects</li>
               <li class='progress done'>Build a Tribute Page</li>
-              <li class='progress'>Build a Survey Form</li>
-              <li class='progress'>Build a Product Landing Page</li>
-              <li class='progress'>Build a Technical Documentation Page</li>
+              <li class='progress done'>Build a Survey Form</li>
+              <li class='progress done'>Build a Product Landing Page</li>
+              <li class='progress done'>Build a Technical Documentation Page</li>
               <li class='progress done'>Build a Personal Portfolio Webpage</li>
             </ul>
           `
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 35,
+      "courseProgress": 36,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -2045,18 +2045,18 @@
         },
         {
           "courseClassTitle": "ORMs, APIs",
-          "courseClassProgress": 3,
+          "courseClassProgress": 30,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 2 mins</li>
-              <li class='progress'>Object-Oriented Programming - 2 mins</li>
-              <li class='progress'>classes0.py - 3 mins</li>
-              <li class='progress'>classes1.py - 7 mins</li>
-              <li class='progress'>classes2.py - 5 mins</li>
-              <li class='progress'>classes3.py - 3 mins</li>
-              <li class='progress'>classes4.py - 7 mins</li>
-              <li class='progress'>Object-Relational Mapping - 1 mins</li>
-              <li class='progress'>Flask-SQLAlchemy - 1 mins</li>
+              <li class='progress done'>Object-Oriented Programming - 2 mins</li>
+              <li class='progress done'>classes0.py - 3 mins</li>
+              <li class='progress done'>classes1.py - 7 mins</li>
+              <li class='progress done'>classes2.py - 5 mins</li>
+              <li class='progress done'>classes3.py - 3 mins</li>
+              <li class='progress done'>classes4.py - 7 mins</li>
+              <li class='progress done'>Object-Relational Mapping - 1 mins</li>
+              <li class='progress done'>Flask-SQLAlchemy - 1 mins</li>
               <li class='progress'>models.py - 6 mins</li>
               <li class='progress'>create.py - 6 mins</li>
               <li class='progress'>import0.py - 1 mins</li>
