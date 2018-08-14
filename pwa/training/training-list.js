@@ -956,7 +956,7 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 93,
+      "courseProgress": 98,
       "courseDesc": "Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "July",
@@ -1268,7 +1268,7 @@
         },
         {
           "courseClassTitle": "Functional Programming",
-          "courseClassProgress": 33,
+          "courseClassProgress": 83,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Functional Programming Challenges</li>
@@ -1279,18 +1279,18 @@
               <li class='progress done'>Pass Arguments to Avoid External Dependence in a Function</li>
               <li class='progress done'>Refactor Global Variables Out of Functions</li>
               <li class='progress done'>Use the map Method to Extract Data from an Array</li>
-              <li class='progress'>Implement map on a Prototype</li>
-              <li class='progress'>Use the filter Method to Extract Data from an Array</li>
-              <li class='progress'>Implement the filter Method on a Prototype</li>
-              <li class='progress'>Return Part of an Array Using the slice Method</li>
-              <li class='progress'>Remove Elements from an Array Using slice Instead of splice</li>
-              <li class='progress'>Combine Two Arrays Using the concat Method</li>
-              <li class='progress'>Add Elements to the End of an Array Using concat Instead of push</li>
-              <li class='progress'>Use the reduce Method to Analyze Data</li>
-              <li class='progress'>Sort an Array Alphabetically using the sort Method</li>
-              <li class='progress'>Return a Sorted Array Without Changing the Original Array</li>
-              <li class='progress'>Split a String into an Array Using the split Method</li>
-              <li class='progress'>Combine an Array into a String Using the join Method</li>
+              <li class='progress done'>Implement map on a Prototype</li>
+              <li class='progress done'>Use the filter Method to Extract Data from an Array</li>
+              <li class='progress done'>Implement the filter Method on a Prototype</li>
+              <li class='progress done'>Return Part of an Array Using the slice Method</li>
+              <li class='progress done'>Remove Elements from an Array Using slice Instead of splice</li>
+              <li class='progress done'>Combine Two Arrays Using the concat Method</li>
+              <li class='progress done'>Add Elements to the End of an Array Using concat Instead of push</li>
+              <li class='progress done'>Use the reduce Method to Analyze Data</li>
+              <li class='progress done'>Sort an Array Alphabetically using the sort Method</li>
+              <li class='progress done'>Return a Sorted Array Without Changing the Original Array</li>
+              <li class='progress done'>Split a String into an Array Using the split Method</li>
+              <li class='progress done'>Combine an Array into a String Using the join Method</li>
               <li class='progress'>Apply Functional Programming to Convert Strings to URL Slugs</li>
               <li class='progress'>Use the every Method to Check that Every Element in an Array Meets a Criteria</li>
               <li class='progress'>Use the some Method to Check that Any Elements in an Array Meet a Criteria</li>
@@ -1891,7 +1891,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 36,
+      "courseProgress": 37,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -2045,7 +2045,7 @@
         },
         {
           "courseClassTitle": "ORMs, APIs",
-          "courseClassProgress": 30,
+          "courseClassProgress": 43,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 2 mins</li>
@@ -2057,10 +2057,10 @@
               <li class='progress done'>classes4.py - 7 mins</li>
               <li class='progress done'>Object-Relational Mapping - 1 mins</li>
               <li class='progress done'>Flask-SQLAlchemy - 1 mins</li>
-              <li class='progress'>models.py - 6 mins</li>
-              <li class='progress'>create.py - 6 mins</li>
-              <li class='progress'>import0.py - 1 mins</li>
-              <li class='progress'>import1.py - 13 mins</li>
+              <li class='progress done'>models.py - 6 mins</li>
+              <li class='progress done'>create.py - 6 mins</li>
+              <li class='progress done'>import0.py - 1 mins</li>
+              <li class='progress done'>import1.py - 13 mins</li>
               <li class='progress'>airline1 - 1 mins</li>
               <li class='progress'>airline2 - 5 mins</li>
               <li class='progress'>airline3 - 4 mins</li>
