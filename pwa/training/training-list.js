@@ -956,10 +956,10 @@
       "active": true,
       "courseVendorName": "4a— freecodecamp",
       "courseVendor": "Javascript Algorithms And Data Structures Certification",
-      "courseProgress": 98,
+      "courseProgress": 100,
       "courseDesc": "Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "August",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-javascript-data-cert",
       "courseURL": "https://www.freecodecamp.org/kdcinfo",
@@ -1268,7 +1268,7 @@
         },
         {
           "courseClassTitle": "Functional Programming",
-          "courseClassProgress": 83,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Functional Programming Challenges</li>
@@ -1291,10 +1291,10 @@
               <li class='progress done'>Return a Sorted Array Without Changing the Original Array</li>
               <li class='progress done'>Split a String into an Array Using the split Method</li>
               <li class='progress done'>Combine an Array into a String Using the join Method</li>
-              <li class='progress'>Apply Functional Programming to Convert Strings to URL Slugs</li>
-              <li class='progress'>Use the every Method to Check that Every Element in an Array Meets a Criteria</li>
-              <li class='progress'>Use the some Method to Check that Any Elements in an Array Meet a Criteria</li>
-              <li class='progress'>Introduction to Currying and Partial Application</li>
+              <li class='progress done'>Apply Functional Programming to Convert Strings to URL Slugs</li>
+              <li class='progress done'>Use the every Method to Check that Every Element in an Array Meets a Criteria</li>
+              <li class='progress done'>Use the some Method to Check that Any Elements in an Array Meet a Criteria</li>
+              <li class='progress done'>Introduction to Currying and Partial Application</li>
             </ul>
           `
         },
