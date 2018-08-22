@@ -88,7 +88,7 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 23,
+      "courseProgress": 52,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -98,7 +98,7 @@
       "courseList": [
         {
           "courseClassTitle": "Browser Rendering Optimization",
-          "courseClassProgress": 68,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly.</p>
             <h4 class='western'>Approx. 1 month Advanced</h4>
@@ -106,7 +106,7 @@
         },
         {
           "courseClassTitle": "Website Performance Optimization",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>The #1 reason people leave a web site is because it renders too slowly. Learn how to optimize your websites for speed on the desktop and mobile.</p>
             <h4 class='western'>Approx. 1 week  Intermediate</h4>
@@ -114,7 +114,7 @@
         },
         {
           "courseClassTitle": "Client-Server Communications",
-          "courseClassProgress": 0,
+          "courseClassProgress": 2,
           "courseClassContent": `
             <p class='text-body'>Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.</p>
             <h4 class='western'>Approx. 5 weeks Advanced</h4>
@@ -122,7 +122,7 @@
         },
         {
           "courseClassTitle": "High Conversion Web Forms",
-          "courseClassProgress": 0,
+          "courseClassProgress": 5,
           "courseClassContent": `
             <p class='text-body'>Over 70% of online shopping carts are abandoned before checkout! Learn how to keep users happy and reduce the chances of their walking away.</p>
             <h4 class='western'>Approx. 2 weeks Intermediate</h4>
@@ -808,7 +808,7 @@
       "active": true,
       "courseVendorName": "3a— Udacity",
       "courseVendor": "Browser Rendering Optimization by Google",
-      "courseProgress": 68,
+      "courseProgress": 100,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -907,44 +907,369 @@
         },
         {
           "courseClassTitle": "Styles and Layout",
-          "courseClassProgress": 9,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Discover how changing styles can result in surprisingly slow page speed. You'll also learn how to prevent Forced Synchronous Layouts.</p>
             <ul>
               <li class='progress done'>Lesson 5 Introduction</li>
-              <li class='progress'>Quiz: The Cost of Style Changes</li>
-              <li class='progress'>Selector Matching</li>
-              <li class='progress'>Quiz: Selector Matching</li>
-              <li class='progress'>Quiz: Recalculate Styles</li>
-              <li class='progress'>Layout Thrashing</li>
-              <li class='progress'>Quiz: FSL</li>
-              <li class='progress'>Quiz: Stopping FSL Strategy</li>
-              <li class='progress'>Causes of Forced Synchronous Layout</li>
-              <li class='progress'>Quiz: Stop FSL</li>
-              <li class='progress'>Lesson 5 Outro</li>
+              <li class='progress done'>Quiz: The Cost of Style Changes</li>
+              <li class='progress done'>Selector Matching</li>
+              <li class='progress done'>Quiz: Selector Matching</li>
+              <li class='progress done'>Quiz: Recalculate Styles</li>
+              <li class='progress done'>Layout Thrashing</li>
+              <li class='progress done'>Quiz: FSL</li>
+              <li class='progress done'>Quiz: Stopping FSL Strategy</li>
+              <li class='progress done'>Causes of Forced Synchronous Layout</li>
+              <li class='progress done'>Quiz: Stop FSL</li>
+              <li class='progress done'>Lesson 5 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Compositing and Painting",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Learn how to manage page layers and improve page performance using the Chrome Dev Tools Paint Profiler.</p>
             <ul>
-              <li class='progress'>Lesson 6 Introduction</li>
-              <li class='progress'>Quiz: Paint Rectangles</li>
-              <li class='progress'>Quiz: Paint Profiler</li>
-              <li class='progress'>Compositing</li>
-              <li class='progress'>Quiz: Conceptual Question about Layers</li>
-              <li class='progress'>Composite Layers</li>
-              <li class='progress'>Managing Layers</li>
-              <li class='progress'>Managing Layers 2</li>
-              <li class='progress'>Quiz: Will-Change</li>
-              <li class='progress'>Your Compositing Budget</li>
-              <li class='progress'>Quiz: Layer Counting</li>
-              <li class='progress'>Quiz: Painting and Compositing</li>
-              <li class='progress'>Make Some Quizzes</li>
-              <li class='progress'>Quiz: The Final Project</li>
+              <li class='progress done'>Lesson 6 Introduction</li>
+              <li class='progress done'>Quiz: Paint Rectangles</li>
+              <li class='progress done'>Quiz: Paint Profiler</li>
+              <li class='progress done'>Compositing</li>
+              <li class='progress done'>Quiz: Conceptual Question about Layers</li>
+              <li class='progress done'>Composite Layers</li>
+              <li class='progress done'>Managing Layers</li>
+              <li class='progress done'>Managing Layers 2</li>
+              <li class='progress done'>Quiz: Will-Change</li>
+              <li class='progress done'>Your Compositing Budget</li>
+              <li class='progress done'>Quiz: Layer Counting</li>
+              <li class='progress done'>Quiz: Painting and Compositing</li>
+              <li class='progress done'>Make Some Quizzes</li>
+              <li class='progress done'>Quiz: The Final Project</li>
+              <li class='progress done'>Course Outro</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-10",
+      "active": true,
+      "courseVendorName": "3b— Udacity",
+      "courseVendor": "Website Performance Optimization by Google",
+      "courseProgress": 100,
+      "courseDesc": "The #1 reason people leave a web site is because it renders too slowly. Learn how to optimize your websites for speed on the desktop and mobile. You will learn how to optimize any website for speed by diving into the details of how mobile and desktop browsers render pages. Level: Intermediate",
+      "courseDateStarted": "Aug 2018",
+      "courseDateLast": "August",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "website-performance-optimization",
+      "courseURL": "https://www.udacity.com/course/website-performance-optimization--ud884",
+      "courseList": [
+        {
+          "courseClassTitle": "Lesson 1: - Website Performance Optimization",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul>
+              <li class='progress done'>Instructor Introduction</li>
+              <li class='progress done'>Quiz: What are your goals?</li>
+              <li class='progress done'>Final Project Overview</li>
+              <li class='progress done'>Tech Requirements</li>
+              <li class='progress done'>Setup for mobile</li>
+              <li class='progress done'>Using dev tools on mobile</li>
+              <li class='progress done'>Mobile tools for iOS</li>
+              <li class='progress done'>Using Screencast</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 2: - The Critical Rendering Path",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul>
+              <li class='progress done'>Critical Rendering Path Walkthrough</li>
+              <li class='progress done'>Converting HTML to the DOM</li>
+              <li class='progress done'>Fast Google Search Responses</li>
+              <li class='progress done'>Quiz: Exploring Timeline Traces</li>
+              <li class='progress done'>Quiz: Building the DOM</li>
+              <li class='progress done'>Converting CSS to the CSSOM</li>
+              <li class='progress done'>Quiz: Which styles render faster?</li>
+              <li class='progress done'>Recalculating CSS Styles in DevTools</li>
+              <li class='progress done'>The Render Tree</li>
+              <li class='progress done'>Quiz: Which screen elements are visible?</li>
+              <li class='progress done'>Layout</li>
+              <li class='progress done'>Quiz: Calculating Layout</li>
+              <li class='progress done'>Analyzing Layout in DevTools</li>
+              <li class='progress done'>Quiz: Finding Examples of Expensive Layouts</li>
+              <li class='progress done'>Quiz: Time to Paint the Page!</li>
+              <li class='progress done'>Analyzing Paint in DevTools</li>
+              <li class='progress done'>Quiz: Steps to Render the Page</li>
+              <li class='progress done'>Analyzing the Entire CRP in DevTools</li>
+              <li class='progress done'>Quiz: Practice Optimizing the CRP</li>
+              <li class='progress done'>CRP Wrap Up</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 3: - Optimizing the CRP",
+          "courseClassProgress": 100,
+          "courseClassContent": `
+            <ul>
+              <li class='progress done'>Optimizing the DOM</li>
+              <li class='progress done'>Quiz: When will the page render?</li>
+              <li class='progress done'>Unblocking CSS with Media Queries</li>
+              <li class='progress done'>Quiz: Which stylesheets are render blocking?</li>
+              <li class='progress done'>JavaScript and the CRP</li>
+              <li class='progress done'>Quiz: How will the text be rendered?</li>
+              <li class='progress done'>External JavaScript Dependencies</li>
+              <li class='progress done'>More on JavaScript Dependencies</li>
+              <li class='progress done'>Quiz: What optimizations would you try?</li>
+              <li class='progress done'>Async JavaScript</li>
+              <li class='progress done'>Quiz: Pick the JavaScript Approach</li>
+              <li class='progress done'>General Strategies and CRP Diagrams</li>
+              <li class='progress done'>CRP Diagrams with External CSS</li>
+              <li class='progress done'>Quiz: Calculate CRP Metrics</li>
+              <li class='progress done'>CRP Metrics Discussion</li>
+              <li class='progress done'>Quiz: Calculate the CRP Metrics 2</li>
+              <li class='progress done'>Quiz: What strategies would you try?</li>
+              <li class='progress done'>Quiz: Can you Calculate CRP Metrics from HTML?</li>
+              <li class='progress done'>The Preload Scanner</li>
+              <li class='progress done'>Quiz: Draw a CRP Diagram - Easy</li>
+              <li class='progress done'>Quiz: Draw a CRP Diagram - Hard</li>
+              <li class='progress done'>The Final Project Overview</li>
+              <li class='progress done'>Quiz: The Final Project Submission</li>
+              <li class='progress done'>Quiz: Course Feedback</li>
+              <li class='progress done'>Quiz: TCP Bonus Question</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-11",
+      "active": true,
+      "courseVendorName": "3c— Udacity",
+      "courseVendor": "Client-Server Communications by Google",
+      "courseProgress": 2,
+      "courseDesc": "HTTP/1 to HTTP/2 and all things Security. Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.",
+      "courseDateStarted": "Aug 2018",
+      "courseDateLast": "August",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "client-server-communication",
+      "courseURL": "https://www.udacity.com/course/client-server-communication--ud897",
+      "courseList": [
+        {
+          "courseClassTitle": "Lesson 1: HTTP's Request/Response Cycle -- 1 hour 15 minutes",
+          "courseClassProgress": 8,
+          "courseClassContent": `
+            <p>You'll learn the ins and outs of requests. You'll look at how a page is requested, the headers that are received, HTTP codes, and how data is transferred.</p>
+            <ul>
+              <li class='progress done'>Intro</li>
+              <li class='progress'>HTTP Requests</li>
+              <li class='progress'>HTTP Requests 2</li>
+              <li class='progress'>Fetching a single request</li>
+              <li class='progress'>Fetching a single request 2</li>
+              <li class='progress'>Getting Multiple Requests</li>
+              <li class='progress'>Exercise Setup</li>
+              <li class='progress'>Quiz: DevTools Quiz</li>
+              <li class='progress'>Sending data with a POST Request</li>
+              <li class='progress'>From XHR to Fetch</li>
+              <li class='progress'>Quiz: Fetch Quiz</li>
+              <li class='progress'>Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 2: HTTP/1 -- 1 hour 15 minutes",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>You'll take a deep dive into HTTP verbs. You'll dig in deep to the vital headers used in HTTP. You'll also learn how to efficiently structure applications using REST.</p>
+            <ul>
+              <li class='progress'>HTTP Intro</li>
+              <li class='progress'>The Netcat Command</li>
+              <li class='progress'>HTTP Verbs</li>
+              <li class='progress'>HTTP Verbs 2</li>
+              <li class='progress'>Quiz: HTTP Verbs Quiz</li>
+              <li class='progress'>Common Response Headers</li>
+              <li class='progress'>Quiz: Request Headers Quiz</li>
+              <li class='progress'>REST</li>
+              <li class='progress'>Quiz: REST Quiz</li>
+              <li class='progress'>Performance Basics</li>
+              <li class='progress'>Performance Details</li>
+              <li class='progress'>Performance Details 2</li>
+              <li class='progress'>Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 3: HTTPS -- 1 hour 15 minutes",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>You'll discover just how important security is to the web. You'll learn about TLS, discover issues with loading mixed content, have a quick primer on cryptography and verify Certificate Authorities.</p>
+            <ul>
+              <li class='progress'>HTTPS Intro</li>
+              <li class='progress'>Securing HTTP</li>
+              <li class='progress'>Quiz: MITM Quiz 1</li>
+              <li class='progress'>Quiz: MITM Quiz 2</li>
+              <li class='progress'>TLS and Certificate Authorities</li>
+              <li class='progress'>TLS: Cryptography Primer</li>
+              <li class='progress'>TLS: Hashing</li>
+              <li class='progress'>Quiz: Hashing Quiz</li>
+              <li class='progress'>Certificate Authority Signatures</li>
+              <li class='progress'>The TLS Handshake</li>
+              <li class='progress'>Quiz: SSL Error Quiz</li>
+              <li class='progress'>Mixed Content</li>
+              <li class='progress'>Quiz: Mixed Content Quiz</li>
+              <li class='progress'>Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 4: HTTP/2 -- 1 hour 30 minutes",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>HTTP/1 is great, but the future is HTTP/2! You'll learn about the changes that HTTP/2 brings. You'll learn the current 'best practices' that HTTP/1 extols, but that are now anti-patterns in HTTP/2.</p>
+            <ul>
+              <li class='progress'>HTTP/2 Intro</li>
+              <li class='progress'>HTTP/1 Problem: Head of Line Blocking</li>
+              <li class='progress'>HTTP/1 Problem: Uncompressed Headers</li>
+              <li class='progress'>HTTP/1 Problem: Security</li>
+              <li class='progress'>HTTP/2 Improvements</li>
+              <li class='progress'>Quiz: HTTP/1 vs HTTP/2 Quiz</li>
+              <li class='progress'>Working with HTTP/2</li>
+              <li class='progress'>Quiz: Development Techniques for HTTP/2 Quiz</li>
+              <li class='progress'>Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 5: Security -- 1 hour 30 minutes",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>Security is vital for every web application! You'll learn about common security pitfalls and how to avoid them. You'll also get a chance to don your white hat and hack into a (sample) bank's website.</p>
+            <ul>
+              <li class='progress'>Security Intro</li>
+              <li class='progress'>Origins</li>
+              <li class='progress'>Origins 2</li>
+              <li class='progress'>Overriding Same Origin Policy</li>
+              <li class='progress'>CORS</li>
+              <li class='progress'>Quiz: Preflight Request with CORS Quiz 1</li>
+              <li class='progress'>Quiz: Preflight Request with CORS Quiz 2</li>
+              <li class='progress'>Quiz: Preflight Request with CORS Quiz 3</li>
+              <li class='progress'>Security Exploit - CSRF</li>
+              <li class='progress'>Quiz: CSRF Quiz</li>
+              <li class='progress'>Security Exploit - XSS</li>
+              <li class='progress'>Quiz: XSS Quiz</li>
+              <li class='progress'>Security Outro</li>
+              <li class='progress'>Course Outro</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-12",
+      "active": true,
+      "courseVendorName": "3d— Udacity",
+      "courseVendor": "Building High Conversion Web Forms by Google",
+      "courseProgress": 5,
+      "courseDesc": "Forms Rock! Over 70% of online shopping carts are abandoned before checkout! Learn how to keep users happy and reduce the chances of their walking away.",
+      "courseDateStarted": "Aug 2018",
+      "courseDateLast": "August",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "high-conversion-web-forms",
+      "courseURL": "https://www.udacity.com/course/building-high-conversion-web-forms--ud890",
+      "courseList": [
+        {
+          "courseClassTitle": "Lesson 1: Efficient Inputs Part 1 -- 30 minutes",
+          "courseClassProgress": 25,
+          "courseClassContent": `
+            <p>Get started using the proper input types to make forms as simple to complete as possible for your users.</p>
+            <ul>
+              <li class='progress done'>Course Intro</li>
+              <li class='progress done'>Quiz: Fix This Form</li>
+              <li class='progress done'>Luke Interview Part 1</li>
+              <li class='progress'>Why Care about Forms</li>
+              <li class='progress'>The Principles of Useful Forms</li>
+              <li class='progress'>Form Fixing Strategies</li>
+              <li class='progress'>Death to Dropdowns!</li>
+              <li class='progress'>HTML5 Inputs</li>
+              <li class='progress'>Quiz: Pick an Input</li>
+              <li class='progress'>Quiz: Datalist Quiz</li>
+              <li class='progress'>LukeW Interview Part 2</li>
+              <li class='progress'>Lesson Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 2: Efficient Inputs Part 2 -- 45 minutes",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>Start adding other features to your inputs, such as autofill and validation.</p>
+            <ul>
+              <li class='progress'>Lesson 2 Intro</li>
+              <li class='progress'>Pop Quiz HS</li>
+              <li class='progress'>The Label Element</li>
+              <li class='progress'>Quiz: Make A Label</li>
+              <li class='progress'>Part 3</li>
+              <li class='progress'>Label Sizing and Positions</li>
+              <li class='progress'>Placeholders</li>
+              <li class='progress'>Quiz: Placeholder</li>
+              <li class='progress'>Calendars</li>
+              <li class='progress'>Quiz: Calendars</li>
+              <li class='progress'>Typos</li>
+              <li class='progress'>Autocomplete</li>
+              <li class='progress'>Quiz: Autocomplete</li>
+              <li class='progress'>Autofocus</li>
+              <li class='progress'>Use Past Data to Fill Inputs</li>
+              <li class='progress'>Validation</li>
+              <li class='progress'>Numeric Validation</li>
+              <li class='progress'>Quiz: Validate Some Inputs</li>
+              <li class='progress'>Constraints Validation API</li>
+              <li class='progress'>Quiz: Validate Some Data</li>
+              <li class='progress'>Interview with Luke W part 4</li>
+              <li class='progress'>Lesson 2 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 3: Fast Forms -- 30 minutes",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>Begin optimizing entire forms, rather than individual elements, to create high conversion web forms.</p>
+            <ul>
+              <li class='progress'>Lesson 3 Intro</li>
+              <li class='progress'>Form Principles</li>
+              <li class='progress'>Quiz: Duck It’s Storming Brains</li>
+              <li class='progress'>LukeW Interview part 5</li>
+              <li class='progress'>I Just Need to Check My Payment Info</li>
+              <li class='progress'>But I'm Not Ready to Commit</li>
+              <li class='progress'>Quiz: Draw a Conclusion</li>
+              <li class='progress'>Finish on Another Device</li>
+              <li class='progress'>Quiz: Fast Forms = More Conversions</li>
+              <li class='progress'>Interview with Luke W part 6</li>
+              <li class='progress'>One Weird Trick</li>
+              <li class='progress'>Location</li>
+              <li class='progress'>Quiz: Build a Checkout</li>
+              <li class='progress'>Interview with Luke W part 7</li>
+              <li class='progress'>Lesson 3 Outro</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Lesson 4: Touch Support -- 30 minutes",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>Learn about the special considerations required when building excellent forms on mobile devices, such as touch events.</p>
+            <ul>
+              <li class='progress'>Lesson 4 Intro</li>
+              <li class='progress'>It Can't be That Bad, Right?</li>
+              <li class='progress'>Touch Pseudo States</li>
+              <li class='progress'>Too Much Touch</li>
+              <li class='progress'>Quiz: Build a Better UI</li>
+              <li class='progress'>Interview with Luke W part 8</li>
+              <li class='progress'>Quiz: Quick Practice with Event Listeners</li>
+              <li class='progress'>Touch Events</li>
+              <li class='progress'>Quiz: Interact with a Single Element</li>
+              <li class='progress'>Final Project Instructions and Rubric</li>
               <li class='progress'>Course Outro</li>
             </ul>
           `
@@ -1349,7 +1674,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 70,
+      "courseProgress": 72,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -1501,7 +1826,7 @@
         },
         {
           "courseClassTitle": "Redux",
-          "courseClassProgress": 39,
+          "courseClassProgress": 56,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Redux Challenges</li>
@@ -1511,9 +1836,9 @@
               <li class='progress done'>Define an Action Creator</li>
               <li class='progress done'>Dispatch an Action Event</li>
               <li class='progress done'>Handle an Action in the Store</li>
-              <li class='progress'>Use a Switch Statement to Handle Multiple Actions</li>
-              <li class='progress'>Use const for Action Types</li>
-              <li class='progress'>Register a Store Listener</li>
+              <li class='progress done'>Use a Switch Statement to Handle Multiple Actions</li>
+              <li class='progress done'>Use const for Action Types</li>
+              <li class='progress done'>Register a Store Listener</li>
               <li class='progress'>Combine Multiple Reducers</li>
               <li class='progress'>Send Action Data to the Store</li>
               <li class='progress'>Use Middleware to Handle Asynchronous Actions</li>
@@ -2295,6 +2620,467 @@
               <li class='progress'>DDoS Attacks - 3 mins</li>
               <li class='progress'>What's Next? - 4 mins</li>
               <li class='progress'>In Conclusion - 1 mins</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-8",
+      "active": true,
+      "courseVendorName": "6b— Udacity",
+      "courseVendor": "Modern React with Redux",
+      "courseProgress": 0,
+      "courseDesc": "Master the fundamentals of React v16.3.2 and Redux as you develop apps with React Router, Webpack, and ES6.",
+      "courseDateStarted": "Aug 2018",
+      "courseDateLast": "August",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "react-redux-tutorial",
+      "courseURL": "https://www.udemy.com/react-redux/",
+      "courseList": [
+        {
+          "courseClassTitle": "An Intro to React",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction - Github Links for Project Files! -- 3:38</li>
+              <li class='progress'>Completed Projects - Github Links --</li>
+              <li class='progress'>The Purpose of Boilerplate Projects -- 3:41</li>
+              <li class='progress'>Environment Setup -- 1:45</li>
+              <li class='progress'>Project Setup -- 2:53</li>
+              <li class='progress'>A Taste of JSX -- 11:29</li>
+              <li class='progress'>More on JSX -- 4:35</li>
+              <li class='progress'>ES6 Import Statements -- 3:58</li>
+              <li class='progress'>ReactDOM vs React -- 2:26</li>
+              <li class='progress'>Differences Between Component Instances and Component Classes -- 3:38</li>
+              <li class='progress'>Render Targets -- 5:53</li>
+              <li class='progress'>Component Structure -- 6:26</li>
+              <li class='progress'>Youtube Search API Signup -- 6:39</li>
+              <li class='progress'>Export Statements -- 8:40</li>
+              <li class='progress'>Class-Based Components -- 8:11</li>
+              <li class='progress'>Handling User Events -- 9:30</li>
+              <li class='progress'>Introduction to State -- 5:13</li>
+              <li class='progress'>More on State -- 6:04</li>
+              <li class='progress'>Controlled Components -- 7:47</li>
+              <li class='progress'>Breather and Review -- 3:37</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Ajax Requests with React",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Youtube Search Response -- 4:26</li>
+              <li class='progress'>Refactoring Functional Components to Class Components -- 7:43</li>
+              <li class='progress'>Props -- 7:42</li>
+              <li class='progress'>Building Lists with Map -- 7:06</li>
+              <li class='progress'>List Item Keys -- 3:54</li>
+              <li class='progress'>Video List Items -- 7:53</li>
+              <li class='progress'>Detail Component and Template Strings -- 7:05</li>
+              <li class='progress'>Handling Null Props -- 4:41</li>
+              <li class='progress'>Video Selection -- 11:39</li>
+              <li class='progress'>Styling with CSS -- 3:43</li>
+              <li class='progress'>Searching for Videos -- 7:51</li>
+              <li class='progress'>Throttling Search Term Input -- 5:46</li>
+              <li class='progress'>React Wrapup -- 5:24</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Modeling Application State",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Foreword on Redux -- 2:16</li>
+              <li class='progress'>What is Redux? -- 2:45</li>
+              <li class='progress'>More on Redux -- 3:42</li>
+              <li class='progress'>Even More on Redux! -- 4:19</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Managing App State with Redux",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Putting Redux to Practice --</li>
+              <li class='progress'>Reducers -- 7:43</li>
+              <li class='progress'>Containers - Connecting Redux to React -- 7:23</li>
+              <li class='progress'>Containers Continued -- 4:00</li>
+              <li class='progress'>Implementation of a Container Class -- 10:45</li>
+              <li class='progress'>Containers and Reducers Review -- 4:09</li>
+              <li class='progress'>Actions and Action Creators -- 7:31</li>
+              <li class='progress'>Binding Action Creators -- 9:41</li>
+              <li class='progress'>Creating an Action -- 6:45</li>
+              <li class='progress'>Consuming Actions in Reducers -- 7:16</li>
+              <li class='progress'>Consuming Actions in Reducers Continued -- 5:05</li>
+              <li class='progress'>Conditional Rendering -- 6:38</li>
+              <li class='progress'>Reducers and Actions Review -- 5:02</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Intermediate Redux: Middleware",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>App Overview and Planning -- 5:10</li>
+              <li class='progress'>Component Setup -- 7:57</li>
+              <li class='progress'>Controlled Components and Binding Context -- 9:56</li>
+              <li class='progress'>Form Elements in React -- 6:28</li>
+              <li class='progress'>Working with API's -- 8:12</li>
+              <li class='progress'>Introduction to Middleware -- 7:27</li>
+              <li class='progress'>Ajax Requests with Axios -- 13:02</li>
+              <li class='progress'>Redux-Promise in Practice -- 10:15</li>
+              <li class='progress'>Redux-Promise Continued -- 10:55</li>
+              <li class='progress'>Avoiding State Mutations in Reducers -- 9:53</li>
+              <li class='progress'>Building a List Container -- 6:53</li>
+              <li class='progress'>Mapping Props to a Render Helper -- 6:07</li>
+              <li class='progress'>Adding Sparkline Charts -- 9:54</li>
+              <li class='progress'>Making a Reusable Chart Component -- 6:00</li>
+              <li class='progress'>Labeling of Units -- 10:37</li>
+              <li class='progress'>Google Maps Integration -- 7:59</li>
+              <li class='progress'>Google Maps Integration Continued -- 7:16</li>
+              <li class='progress'>Project Review -- 2:36</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "React Router + Redux Form",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Important Note - Do Not Skip! --</li>
+              <li class='progress'>App Overview and Goals -- 6:49</li>
+              <li class='progress'>Exploring the Posts Api -- 13:26</li>
+              <li class='progress'>Installing React Router -- 2:35</li>
+              <li class='progress'>React Router - What is It? -- 5:33</li>
+              <li class='progress'>Setting Up React Router -- 4:39</li>
+              <li class='progress'>Route Configuration -- 5:16</li>
+              <li class='progress'>Nesting Of Routes -- 8:02</li>
+              <li class='progress'>IndexRoutes with React Router -- 5:04</li>
+              <li class='progress'>Back To Redux - Index Action -- 5:50</li>
+              <li class='progress'>Catching Data with Posts Reducer -- 6:29</li>
+              <li class='progress'>Catching Data with Posts Reducer Continued -- 2:38</li>
+              <li class='progress'>Fetching Data with Lifecycle Methods -- 5:43</li>
+              <li class='progress'>Fetching Data with Lifecycle Methods Continued -- 6:50</li>
+              <li class='progress'>Creating New Posts -- 5:23</li>
+              <li class='progress'>Navigation with the Link Component -- 4:25</li>
+              <li class='progress'>Forms and Form Submission -- 10:12</li>
+              <li class='progress'>More on Forms and Form Submission -- 7:37</li>
+              <li class='progress'>Passing Control to Redux Form -- 7:51</li>
+              <li class='progress'>CreatePost Action Creator -- 11:21</li>
+              <li class='progress'>Form Validation -- 8:28</li>
+              <li class='progress'>Form Validation Continued -- 8:51</li>
+              <li class='progress'>Navigating on Submit -- 12:37</li>
+              <li class='progress'>Posts Index -- 4:31</li>
+              <li class='progress'>Dynamic Route Params -- 7:09</li>
+              <li class='progress'>Loading Data on Render -- 5:45</li>
+              <li class='progress'>Handling Null Props -- 5:31</li>
+              <li class='progress'>Delete Action Creator -- 7:07</li>
+              <li class='progress'>Navigate on Delete -- 2:25</li>
+              <li class='progress'>ReactRouter and ReduxForm Wrapup -- 7:02</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Bonus - RallyCoding",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Basics of Redux Thunk -- 7:16</li>
+              <li class='progress'>Combining Redux and Firebase -- 12:16</li>
+              <li class='progress'>Dynamic Forms with Redux Form -- 14:42</li>
+              <li class='progress'>Logicless Components with Reselect -- 18:08</li>
+              <li class='progress'>Data Loading Methods with Redux -- 9:29</li>
+              <li class='progress'>Animation of React Components -- 12:33</li>
+              <li class='progress'>The Best Way to Store Redux Data -- 15:05</li>
+              <li class='progress'>Four Most Common Errors with React and Redux -- 12:02</li>
+              <li class='progress'>Modals in React and Redux Apps -- 18:43</li>
+              <li class='progress'>Deployment of React/Webpack Apps -- 23:15</li>
+              <li class='progress'>BrowserHistory in Production -- 19:46</li>
+              <li class='progress'>React Integration with 3rd Party Libraries -- 18:42</li>
+              <li class='progress'>Introducing JSPlaygrounds for Rapid Prototyping -- 12:18</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "More to Come!",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Still want more React? --</li>
+              <li class='progress'>React Source --</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "React Router + Redux Form",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Important Note --</li>
+              <li class='progress'>App Overview and Goals -- 6:49</li>
+              <li class='progress'>Posts API -- 9:20</li>
+              <li class='progress'>Quick Note --</li>
+              <li class='progress'>Installing React Router -- 3:00</li>
+              <li class='progress'>What React Router Does -- 5:36</li>
+              <li class='progress'>The Basics of React Router -- 8:58</li>
+              <li class='progress'>Route Design -- 6:31</li>
+              <li class='progress'>Our First Route Definition -- 5:57</li>
+              <li class='progress'>State as an Object -- 9:07</li>
+              <li class='progress'>Back to Redux - Index Action -- 7:07</li>
+              <li class='progress'>Implementing Posts Reducer -- 10:29</li>
+              <li class='progress'>Action Creator Shortcuts -- 8:06</li>
+              <li class='progress'>Rendering a List of Posts -- 9:19</li>
+              <li class='progress'>Creating New Posts -- 5:42</li>
+              <li class='progress'>A React Router Gotcha -- 4:44</li>
+              <li class='progress'>Navigation with the Link Component -- 5:58</li>
+              <li class='progress'>Redux Form -- 5:33</li>
+              <li class='progress'>Setting Up Redux Form -- 9:27</li>
+              <li class='progress'>The Field Component -- 10:49</li>
+              <li class='progress'>Generalizing Fields -- 8:54</li>
+              <li class='progress'>Validating Forms -- 10:31</li>
+              <li class='progress'>Showing Errors to Users -- 4:30</li>
+              <li class='progress'>Handling Form Submittal -- 9:30</li>
+              <li class='progress'>Form and Field States -- 6:06</li>
+              <li class='progress'>Conditional Styling -- 7:06</li>
+              <li class='progress'>More on Navigation -- 3:11</li>
+              <li class='progress'>Create Post Action Creator -- 10:05</li>
+              <li class='progress'>Navigation Through Callbacks -- 7:31</li>
+              <li class='progress'>The Posts Show Component -- 3:39</li>
+              <li class='progress'>Receiving New Posts -- 9:26</li>
+              <li class='progress'>Selecting from OwnProps -- 11:27</li>
+              <li class='progress'>Data Dependencies -- 5:32</li>
+              <li class='progress'>Caching Records -- 6:13</li>
+              <li class='progress'>Deleting a Post -- 9:25</li>
+              <li class='progress'>Wrapup -- 9:10</li>
+              <li class='progress'>Bonus! --</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udacity-9",
+      "active": true,
+      "courseVendorName": "6c— Udacity",
+      "courseVendor": "Advanced React and Redux: 2018 Edition",
+      "courseProgress": 0,
+      "courseDesc": "Detailed walkthroughs on advanced React and Redux concepts - Authentication, Testing, Middlewares, HOC's, and Deployment",
+      "courseDateStarted": "Aug 2018",
+      "courseDateLast": "August",
+      "courseShortVendor": "udacity-courses",
+      "courseShortName": "react-redux-tutorial",
+      "courseURL": "https://www.udemy.com/react-redux-tutorial/",
+      "courseList": [
+        {
+          "courseClassTitle": "Welcome! Let's Get Started!",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <p>
+              <ul>
+                <li>4.7 (6,480 ratings)</li>
+                <li>43,410 students enrolled</li>
+                <li>Created by Stephen Grider</li>
+                <li>Last updated 6/2018</li>
+              </ul>
+            </p>
+            <ul>
+              <li class='progress'>Introduction -- 1:46</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Testing",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Project Generation -- 2:05</li>
+              <li class='progress'>Our First Test -- 3:51</li>
+              <li class='progress'>Introduction to Jest -- 3:43</li>
+              <li class='progress'>App Overview -- 2:01</li>
+              <li class='progress'>Installing Dependencies -- 0:44</li>
+              <li class='progress'>React and Redux Design -- 2:44</li>
+              <li class='progress'>What Do We Test? -- 4:24</li>
+              <li class='progress'>Starting from Scratch -- 2:48</li>
+              <li class='progress'>Rendering the App -- 4:07</li>
+              <li class='progress'>Showing Components in the App -- 3:16</li>
+              <li class='progress'>Valid Test File Names -- 3:31</li>
+              <li class='progress'>Test Structure -- 3:56</li>
+              <li class='progress'>Tricking React with JSDOM -- 7:52</li>
+              <li class='progress'>Verifying Component Existence -- 4:11</li>
+              <li class='progress'>Test Expectations -- 4:11</li>
+              <li class='progress'>Limiting Test Knowledge -- 6:13</li>
+              <li class='progress'>Enzyme Setup -- 7:25</li>
+              <li class='progress'>Enzyme Renderers -- 6:19</li>
+              <li class='progress'>Expectations for Component Instances -- 7:06</li>
+              <li class='progress'>Exercise Time! -- 1:18</li>
+              <li class='progress'>Expecting the Comment List -- 1:56</li>
+              <li class='progress'>Absolute Path Imports -- 5:00</li>
+              <li class='progress'>Code Reuse with BeforeEach -- 4:25</li>
+              <li class='progress'>Comment Box Component -- 3:16</li>
+              <li class='progress'>TextArea Implementation -- 5:08</li>
+              <li class='progress'>CommentBox Test File -- 3:22</li>
+              <li class='progress'>Asserting Element Existence -- 6:48</li>
+              <li class='progress'>AfterEach Statements -- 4:02</li>
+              <li class='progress'>Simulating Change Events -- 5:15</li>
+              <li class='progress'>Providing Fake Events -- 6:35</li>
+              <li class='progress'>Forcing Component Updates -- 3:55</li>
+              <li class='progress'>Retrieving Prop Values -- 4:19</li>
+              <li class='progress'>Form Submit Exercise -- 2:08</li>
+              <li class='progress'>Exercise Solution -- 6:41</li>
+              <li class='progress'>Describe Statements -- 6:18</li>
+              <li class='progress'>Redux Setup -- 4:30</li>
+              <li class='progress'>The Provider Tag -- 5:00</li>
+              <li class='progress'>The SaveComment Action Creator -- 4:11</li>
+              <li class='progress'>Bonding React with Redux -- 3:57</li>
+              <li class='progress'>Redux Test Errors -- 6:56</li>
+              <li class='progress'>Adding a Root Component -- 7:36</li>
+              <li class='progress'>Testing Reducers -- 5:21</li>
+              <li class='progress'>Handling Unknown Types -- 2:46</li>
+              <li class='progress'>Testing Action Creators -- 5:31</li>
+              <li class='progress'>Comment List Wireup -- 4:34</li>
+              <li class='progress'>Getting Data Into Redux -- 4:55</li>
+              <li class='progress'>Redux Initial State -- 7:51</li>
+              <li class='progress'>Cheerio Queries -- 8:29</li>
+              <li class='progress'>One More Feature -- 3:51</li>
+              <li class='progress'>Fetching a Remote Resource -- 4:37</li>
+              <li class='progress'>Parsing Comment List -- 5:08</li>
+              <li class='progress'>Integration Tests -- 3:31</li>
+              <li class='progress'>Integration Tests in Action -- 3:03</li>
+              <li class='progress'>Fixing a Broken Test -- 2:30</li>
+              <li class='progress'>Simulating Button Clicks -- 3:04</li>
+              <li class='progress'>Why the Failure? -- 4:32</li>
+              <li class='progress'>Faking Requests with Moxios -- 5:58</li>
+              <li class='progress'>The Reason for Failure -- 2:47</li>
+              <li class='progress'>Introducing a Pause -- 6:55</li>
+              <li class='progress'>Moxios's Wait Function -- 2:43</li>
+              <li class='progress'>App Wrapup -- 2:01</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Higher Order Components",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>An Introduction to Higher Order Components -- 1:42</li>
+              <li class='progress'>Connect - A Higher Order Component -- 1:58</li>
+              <li class='progress'>App Overview -- 4:30</li>
+              <li class='progress'>Adding React Router -- 1:45</li>
+              <li class='progress'>Adding Routes -- 3:34</li>
+              <li class='progress'>Auth Reducer -- 5:04</li>
+              <li class='progress'>Rendering a Header -- 4:05</li>
+              <li class='progress'>Wiring Up State -- 4:18</li>
+              <li class='progress'>Changing Auth State -- 3:47</li>
+              <li class='progress'>Steps for Building a HOC -- 6:29</li>
+              <li class='progress'>Forced Navigation with React Router -- 4:27</li>
+              <li class='progress'>Creating the HOC -- 10:06</li>
+              <li class='progress'>Placing Reusable Logic -- 3:26</li>
+              <li class='progress'>Passing Through Props -- 9:10</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "MIddlewares with Redux",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction to Middlewares -- 2:30</li>
+              <li class='progress'>The Purpose of Redux Promise -- 9:04</li>
+              <li class='progress'>How Async Middlewares Work -- 8:33</li>
+              <li class='progress'>Crazy Middleware Syntax -- 8:42</li>
+              <li class='progress'>Forwarding Actions -- 4:06</li>
+              <li class='progress'>Waiting for Promise Resolution -- 5:57</li>
+              <li class='progress'>Observing the Middleware -- 7:02</li>
+              <li class='progress'>State Validation Middleware -- 4:34</li>
+              <li class='progress'>JSON Schema -- 5:13</li>
+              <li class='progress'>Generating JSON Schema -- 4:13</li>
+              <li class='progress'>Middleware Creation -- 6:08</li>
+              <li class='progress'>Emitting Warnings -- 5:52</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Server Setup - Authentication",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Introduction to Authentication -- 4:32</li>
+              <li class='progress'>Cookies vs Tokens -- 4:57</li>
+              <li class='progress'>Scalable Architecture -- 4:49</li>
+              <li class='progress'>Server Setup -- 3:45</li>
+              <li class='progress'>More Server Setup -- 5:41</li>
+              <li class='progress'>Express Middleware -- 6:29</li>
+              <li class='progress'>Express Route Handler -- 6:09</li>
+              <li class='progress'>Mongoose Models -- 10:22</li>
+              <li class='progress'>MongoDB Setup -- 6:29</li>
+              <li class='progress'>Inspecting the Database -- 6:19</li>
+              <li class='progress'>Authentication Controller -- 4:57</li>
+              <li class='progress'>Searching for Users -- 7:57</li>
+              <li class='progress'>Creating User Records -- 6:31</li>
+              <li class='progress'>Encrypting Passwords with Bcrypt -- 8:12</li>
+              <li class='progress'>Salting a Password -- 6:16</li>
+              <li class='progress'>JWT Overview -- 4:58</li>
+              <li class='progress'>Creating a JWT -- 7:13</li>
+              <li class='progress'>Installing Passport -- 5:50</li>
+              <li class='progress'>Passport Strategies -- 8:55</li>
+              <li class='progress'>Using Strategies with Passport -- 4:02</li>
+              <li class='progress'>Making an Authenticated Request -- 5:55</li>
+              <li class='progress'>Signing in with Local Strategy -- 5:37</li>
+              <li class='progress'>Purpose of Local Strategy -- 4:17</li>
+              <li class='progress'>Bcrypt Full Circle -- 5:08</li>
+              <li class='progress'>Protecting Signin Route -- 4:12</li>
+              <li class='progress'>Signing Users In -- 4:04</li>
+              <li class='progress'>Server Review -- 2:39</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Client Side Auth",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>Client Overview -- 3:25</li>
+              <li class='progress'>Lib Installs -- 1:49</li>
+              <li class='progress'>The App Component -- 3:51</li>
+              <li class='progress'>Creating the Header -- 6:02</li>
+              <li class='progress'>Wiring Up React Router -- 5:23</li>
+              <li class='progress'>Scaffolding the Signup Form -- 4:37</li>
+              <li class='progress'>Including Redux -- 7:45</li>
+              <li class='progress'>ReduxForm for Signup -- 6:27</li>
+              <li class='progress'>Handling Form Submission -- 5:05</li>
+              <li class='progress'>Wiring Up Middleware -- 2:16</li>
+              <li class='progress'>Basics of Redux Thunk -- 9:20</li>
+              <li class='progress'>Calling the API -- 5:01</li>
+              <li class='progress'>Code Cleanup with Compose -- 5:50</li>
+              <li class='progress'>CORS in a Nutshell -- 11:21</li>
+              <li class='progress'>Solution to CORS Errors -- 5:26</li>
+              <li class='progress'>Dispatching Actions -- 4:04</li>
+              <li class='progress'>Displaying Auth Errors -- 5:16</li>
+              <li class='progress'>Redirect on Signup -- 2:37</li>
+              <li class='progress'>Feature Component -- 2:28</li>
+              <li class='progress'>The Require Auth HOC -- 4:02</li>
+              <li class='progress'>Reference - HOC Code -- </li>
+              <li class='progress'>Persisting Login State -- 4:54</li>
+              <li class='progress'>Signing Out a User -- 4:20</li>
+              <li class='progress'>Automatic Sign Out -- 2:26</li>
+              <li class='progress'>The Signin Component -- 2:14</li>
+              <li class='progress'>The Signin Action Creator -- 2:35</li>
+              <li class='progress'>Updating the Header -- 3:20</li>
+              <li class='progress'>Header Styling -- 3:09</li>
+              <li class='progress'>Auth Wrapup -- 2:55</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Bonus!",
+          "courseClassProgress": 0,
+          "courseClassContent": `
+            <ul>
+              <li class='progress'>RallyCoding</li>
             </ul>
           `
         }
