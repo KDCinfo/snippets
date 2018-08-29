@@ -88,7 +88,7 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 52,
+      "courseProgress": 78,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -114,7 +114,7 @@
         },
         {
           "courseClassTitle": "Client-Server Communications",
-          "courseClassProgress": 2,
+          "courseClassProgress": 13,
           "courseClassContent": `
             <p class='text-body'>Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.</p>
             <h4 class='western'>Approx. 5 weeks Advanced</h4>
@@ -122,7 +122,7 @@
         },
         {
           "courseClassTitle": "High Conversion Web Forms",
-          "courseClassProgress": 5,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p class='text-body'>Over 70% of online shopping carts are abandoned before checkout! Learn how to keep users happy and reduce the chances of their walking away.</p>
             <h4 class='western'>Approx. 2 weeks Intermediate</h4>
@@ -1048,7 +1048,7 @@
       "active": true,
       "courseVendorName": "3c— Udacity",
       "courseVendor": "Client-Server Communications by Google",
-      "courseProgress": 2,
+      "courseProgress": 13,
       "courseDesc": "HTTP/1 to HTTP/2 and all things Security. Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "August",
@@ -1058,17 +1058,17 @@
       "courseList": [
         {
           "courseClassTitle": "Lesson 1: HTTP's Request/Response Cycle -- 1 hour 15 minutes",
-          "courseClassProgress": 8,
+          "courseClassProgress": 67,
           "courseClassContent": `
             <p>You'll learn the ins and outs of requests. You'll look at how a page is requested, the headers that are received, HTTP codes, and how data is transferred.</p>
             <ul>
               <li class='progress done'>Intro</li>
-              <li class='progress'>HTTP Requests</li>
-              <li class='progress'>HTTP Requests 2</li>
-              <li class='progress'>Fetching a single request</li>
-              <li class='progress'>Fetching a single request 2</li>
-              <li class='progress'>Getting Multiple Requests</li>
-              <li class='progress'>Exercise Setup</li>
+              <li class='progress done'>HTTP Requests</li>
+              <li class='progress done'>HTTP Requests 2</li>
+              <li class='progress done'>Fetching a single request</li>
+              <li class='progress done'>Fetching a single request 2</li>
+              <li class='progress done'>Getting Multiple Requests</li>
+              <li class='progress done'>Exercise Setup</li>
               <li class='progress'>Quiz: DevTools Quiz</li>
               <li class='progress'>Sending data with a POST Request</li>
               <li class='progress'>From XHR to Fetch</li>
@@ -1170,7 +1170,7 @@
       "active": true,
       "courseVendorName": "3d— Udacity",
       "courseVendor": "Building High Conversion Web Forms by Google",
-      "courseProgress": 5,
+      "courseProgress": 100,
       "courseDesc": "Forms Rock! Over 70% of online shopping carts are abandoned before checkout! Learn how to keep users happy and reduce the chances of their walking away.",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "August",
@@ -1180,97 +1180,97 @@
       "courseList": [
         {
           "courseClassTitle": "Lesson 1: Efficient Inputs Part 1 -- 30 minutes",
-          "courseClassProgress": 25,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p>Get started using the proper input types to make forms as simple to complete as possible for your users.</p>
             <ul>
               <li class='progress done'>Course Intro</li>
               <li class='progress done'>Quiz: Fix This Form</li>
               <li class='progress done'>Luke Interview Part 1</li>
-              <li class='progress'>Why Care about Forms</li>
-              <li class='progress'>The Principles of Useful Forms</li>
-              <li class='progress'>Form Fixing Strategies</li>
-              <li class='progress'>Death to Dropdowns!</li>
-              <li class='progress'>HTML5 Inputs</li>
-              <li class='progress'>Quiz: Pick an Input</li>
-              <li class='progress'>Quiz: Datalist Quiz</li>
-              <li class='progress'>LukeW Interview Part 2</li>
-              <li class='progress'>Lesson Outro</li>
+              <li class='progress done'>Why Care about Forms</li>
+              <li class='progress done'>The Principles of Useful Forms</li>
+              <li class='progress done'>Form Fixing Strategies</li>
+              <li class='progress done'>Death to Dropdowns!</li>
+              <li class='progress done'>HTML5 Inputs</li>
+              <li class='progress done'>Quiz: Pick an Input</li>
+              <li class='progress done'>Quiz: Datalist Quiz</li>
+              <li class='progress done'>LukeW Interview Part 2</li>
+              <li class='progress done'>Lesson Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Lesson 2: Efficient Inputs Part 2 -- 45 minutes",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p>Start adding other features to your inputs, such as autofill and validation.</p>
             <ul>
-              <li class='progress'>Lesson 2 Intro</li>
-              <li class='progress'>Pop Quiz HS</li>
-              <li class='progress'>The Label Element</li>
-              <li class='progress'>Quiz: Make A Label</li>
-              <li class='progress'>Part 3</li>
-              <li class='progress'>Label Sizing and Positions</li>
-              <li class='progress'>Placeholders</li>
-              <li class='progress'>Quiz: Placeholder</li>
-              <li class='progress'>Calendars</li>
-              <li class='progress'>Quiz: Calendars</li>
-              <li class='progress'>Typos</li>
-              <li class='progress'>Autocomplete</li>
-              <li class='progress'>Quiz: Autocomplete</li>
-              <li class='progress'>Autofocus</li>
-              <li class='progress'>Use Past Data to Fill Inputs</li>
-              <li class='progress'>Validation</li>
-              <li class='progress'>Numeric Validation</li>
-              <li class='progress'>Quiz: Validate Some Inputs</li>
-              <li class='progress'>Constraints Validation API</li>
-              <li class='progress'>Quiz: Validate Some Data</li>
-              <li class='progress'>Interview with Luke W part 4</li>
-              <li class='progress'>Lesson 2 Outro</li>
+              <li class='progress done'>Lesson 2 Intro</li>
+              <li class='progress done'>Pop Quiz HS</li>
+              <li class='progress done'>The Label Element</li>
+              <li class='progress done'>Quiz: Make A Label</li>
+              <li class='progress done'>Part 3</li>
+              <li class='progress done'>Label Sizing and Positions</li>
+              <li class='progress done'>Placeholders</li>
+              <li class='progress done'>Quiz: Placeholder</li>
+              <li class='progress done'>Calendars</li>
+              <li class='progress done'>Quiz: Calendars</li>
+              <li class='progress done'>Typos</li>
+              <li class='progress done'>Autocomplete</li>
+              <li class='progress done'>Quiz: Autocomplete</li>
+              <li class='progress done'>Autofocus</li>
+              <li class='progress done'>Use Past Data to Fill Inputs</li>
+              <li class='progress done'>Validation</li>
+              <li class='progress done'>Numeric Validation</li>
+              <li class='progress done'>Quiz: Validate Some Inputs</li>
+              <li class='progress done'>Constraints Validation API</li>
+              <li class='progress done'>Quiz: Validate Some Data</li>
+              <li class='progress done'>Interview with Luke W part 4</li>
+              <li class='progress done'>Lesson 2 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Lesson 3: Fast Forms -- 30 minutes",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p>Begin optimizing entire forms, rather than individual elements, to create high conversion web forms.</p>
             <ul>
-              <li class='progress'>Lesson 3 Intro</li>
-              <li class='progress'>Form Principles</li>
-              <li class='progress'>Quiz: Duck It’s Storming Brains</li>
-              <li class='progress'>LukeW Interview part 5</li>
-              <li class='progress'>I Just Need to Check My Payment Info</li>
-              <li class='progress'>But I'm Not Ready to Commit</li>
-              <li class='progress'>Quiz: Draw a Conclusion</li>
-              <li class='progress'>Finish on Another Device</li>
-              <li class='progress'>Quiz: Fast Forms = More Conversions</li>
-              <li class='progress'>Interview with Luke W part 6</li>
-              <li class='progress'>One Weird Trick</li>
-              <li class='progress'>Location</li>
-              <li class='progress'>Quiz: Build a Checkout</li>
-              <li class='progress'>Interview with Luke W part 7</li>
-              <li class='progress'>Lesson 3 Outro</li>
+              <li class='progress done'>Lesson 3 Intro</li>
+              <li class='progress done'>Form Principles</li>
+              <li class='progress done'>Quiz: Duck It’s Storming Brains</li>
+              <li class='progress done'>LukeW Interview part 5</li>
+              <li class='progress done'>I Just Need to Check My Payment Info</li>
+              <li class='progress done'>But I'm Not Ready to Commit</li>
+              <li class='progress done'>Quiz: Draw a Conclusion</li>
+              <li class='progress done'>Finish on Another Device</li>
+              <li class='progress done'>Quiz: Fast Forms = More Conversions</li>
+              <li class='progress done'>Interview with Luke W part 6</li>
+              <li class='progress done'>One Weird Trick</li>
+              <li class='progress done'>Location</li>
+              <li class='progress done'>Quiz: Build a Checkout</li>
+              <li class='progress done'>Interview with Luke W part 7</li>
+              <li class='progress done'>Lesson 3 Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Lesson 4: Touch Support -- 30 minutes",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p>Learn about the special considerations required when building excellent forms on mobile devices, such as touch events.</p>
             <ul>
-              <li class='progress'>Lesson 4 Intro</li>
-              <li class='progress'>It Can't be That Bad, Right?</li>
-              <li class='progress'>Touch Pseudo States</li>
-              <li class='progress'>Too Much Touch</li>
-              <li class='progress'>Quiz: Build a Better UI</li>
-              <li class='progress'>Interview with Luke W part 8</li>
-              <li class='progress'>Quiz: Quick Practice with Event Listeners</li>
-              <li class='progress'>Touch Events</li>
-              <li class='progress'>Quiz: Interact with a Single Element</li>
-              <li class='progress'>Final Project Instructions and Rubric</li>
-              <li class='progress'>Course Outro</li>
+              <li class='progress done'>Lesson 4 Intro</li>
+              <li class='progress done'>It Can't be That Bad, Right?</li>
+              <li class='progress done'>Touch Pseudo States</li>
+              <li class='progress done'>Too Much Touch</li>
+              <li class='progress done'>Quiz: Build a Better UI</li>
+              <li class='progress done'>Interview with Luke W part 8</li>
+              <li class='progress done'>Quiz: Quick Practice with Event Listeners</li>
+              <li class='progress done'>Touch Events</li>
+              <li class='progress done'>Quiz: Interact with a Single Element</li>
+              <li class='progress done'>Final Project Instructions and Rubric</li>
+              <li class='progress done'>Course Outro</li>
             </ul>
           `
         }
@@ -1407,7 +1407,7 @@
         },
         {
           "courseClassTitle": "ES6",
-          "courseClassProgress": 96,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the ES6 Challenges</li>
@@ -1427,7 +1427,7 @@
               <li class='progress done'>Use Destructuring Assignment to Assign Variables from Arrays</li>
               <li class='progress done'>Use Destructuring Assignment with the Rest Operator to Reassign Array Elements</li>
               <li class='progress done'>Use Destructuring Assignment to Pass an Object as a Function's Parameters</li>
-              <li class='progress'>Create Strings using Template Literals</li>
+              <li class='progress done'>Create Strings using Template Literals</li>
               <li class='progress done'>Write Concise Object Literal Declarations Using Simple Fields</li>
               <li class='progress done'>Write Concise Declarative Functions with ES6</li>
               <li class='progress done'>Use class Syntax to Define a Constructor Function</li>
@@ -1674,7 +1674,7 @@
       "active": true,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
-      "courseProgress": 72,
+      "courseProgress": 77,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -1826,7 +1826,7 @@
         },
         {
           "courseClassTitle": "Redux",
-          "courseClassProgress": 56,
+          "courseClassProgress": 89,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction to the Redux Challenges</li>
@@ -1839,12 +1839,12 @@
               <li class='progress done'>Use a Switch Statement to Handle Multiple Actions</li>
               <li class='progress done'>Use const for Action Types</li>
               <li class='progress done'>Register a Store Listener</li>
-              <li class='progress'>Combine Multiple Reducers</li>
-              <li class='progress'>Send Action Data to the Store</li>
-              <li class='progress'>Use Middleware to Handle Asynchronous Actions</li>
-              <li class='progress'>Write a Counter with Redux</li>
-              <li class='progress'>Never Mutate State</li>
-              <li class='progress'>Use the Spread Operator on Arrays</li>
+              <li class='progress done'>Combine Multiple Reducers</li>
+              <li class='progress done'>Send Action Data to the Store</li>
+              <li class='progress done'>Use Middleware to Handle Asynchronous Actions</li>
+              <li class='progress done'>Write a Counter with Redux</li>
+              <li class='progress done'>Never Mutate State</li>
+              <li class='progress done'>Use the Spread Operator on Arrays</li>
               <li class='progress'>Remove an Item from an Array</li>
               <li class='progress'>Copy an Object with Object.assign</li>
             </ul>
@@ -2216,7 +2216,7 @@
       "active": true,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
-      "courseProgress": 37,
+      "courseProgress": 40,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -2370,7 +2370,7 @@
         },
         {
           "courseClassTitle": "ORMs, APIs",
-          "courseClassProgress": 43,
+          "courseClassProgress": 77,
           "courseClassContent": `
             <ul>
               <li class='progress done'>Introduction - 2 mins</li>
@@ -2386,16 +2386,16 @@
               <li class='progress done'>create.py - 6 mins</li>
               <li class='progress done'>import0.py - 1 mins</li>
               <li class='progress done'>import1.py - 13 mins</li>
-              <li class='progress'>airline1 - 1 mins</li>
-              <li class='progress'>airline2 - 5 mins</li>
-              <li class='progress'>airline3 - 4 mins</li>
-              <li class='progress'>airline4 - 5 mins</li>
-              <li class='progress'>Relationships - 3 mins</li>
-              <li class='progress'>APIs - 1 mins</li>
-              <li class='progress'>JSON - 7 mins</li>
-              <li class='progress'>HTTP Methods - 2 mins</li>
-              <li class='progress'>requests - 1 mins</li>
-              <li class='progress'>google.py - 3 mins</li>
+              <li class='progress done'>airline1 - 1 mins</li>
+              <li class='progress done'>airline2 - 5 mins</li>
+              <li class='progress done'>airline3 - 4 mins</li>
+              <li class='progress done'>airline4 - 5 mins</li>
+              <li class='progress done'>Relationships - 3 mins</li>
+              <li class='progress done'>APIs - 1 mins</li>
+              <li class='progress done'>JSON - 7 mins</li>
+              <li class='progress done'>HTTP Methods - 2 mins</li>
+              <li class='progress done'>requests - 1 mins</li>
+              <li class='progress done'>google.py - 3 mins</li>
               <li class='progress'>fixer.io - 3 mins</li>
               <li class='progress'>currency0.py - 2 mins</li>
               <li class='progress'>HTTP Status Codes - 4 mins</li>
