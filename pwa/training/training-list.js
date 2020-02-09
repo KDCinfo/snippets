@@ -8,7 +8,7 @@
       "courseProgress": 100,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
       "courseDateStarted": "May 2018",
-      "courseDateLast": "May—Jun",
+      "courseDateLast": "May—Jun '18",
       "courseShortVendor": "google-training",
       "courseShortName": "pwa",
       "courseURL": "",
@@ -49,7 +49,7 @@
       "courseProgress": 100,
       "courseDesc": "",
       "courseDateStarted": "June 2018",
-      "courseDateLast": "Jun—Jul",
+      "courseDateLast": "Jun—Jul '18",
       "courseShortVendor": "google-training",
       "courseShortName": "all-devices",
       "courseURL": "",
@@ -85,13 +85,13 @@
     },
     {
       "id": "google-3",
-      "active": true,
+      "active": false,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
       "courseProgress": 84,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "google-training",
       "courseShortName": "ux",
       "courseURL": "",
@@ -138,7 +138,7 @@
       "courseProgress": 100,
       "courseDesc": "This course was found by way of Jake Archibald's 'The offline cookbook' (a.k.a., caching strategies) [https://jakearchibald.com/2014/offline-cookbook/] ... This course provides a ton of relevant and fully functional examples, with a little humor sprinkled throughout.",
       "courseDateStarted": "May 2018",
-      "courseDateLast": "May",
+      "courseDateLast": "May '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "offline",
       "courseURL": "https://classroom.udacity.com/courses/ud899",
@@ -233,7 +233,7 @@
       "courseProgress": 100,
       "courseDesc": "Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.",
       "courseDateStarted": "June 2018",
-      "courseDateLast": "June",
+      "courseDateLast": "Jun '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "intro-pwa",
       "courseURL": "https://classroom.udacity.com/courses/ud811",
@@ -339,7 +339,7 @@
       "courseProgress": 100,
       "courseDesc": "Learn how to handle asynchronous work with ease! In this course, you'll use Native JavaScript Promises to write asynchronous code that is easy to read, easy to write and easy to debug. Along the way, you'll be using Promises to make a webapp come to life!",
       "courseDateStarted": "June 2018",
-      "courseDateLast": "June",
+      "courseDateLast": "Jun '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "js-promises",
       "courseURL": "https://classroom.udacity.com/courses/ud898",
@@ -409,7 +409,7 @@
       "courseProgress": 100,
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
-      "courseDateLast": "June",
+      "courseDateLast": "Jun '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "web-accessibility",
       "courseURL": "https://classroom.udacity.com/courses/ud891",
@@ -578,7 +578,7 @@
       "courseProgress": 100,
       "courseDesc": "In this course you'll learn the fundamentals of responsive web design with Google's Pete LePage! You'll create your own responsive web page that works well on any device - phone, tablet, desktop or anything in between.",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "Jul '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "responsive-design-fundamentals",
       "courseURL": "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893",
@@ -709,7 +709,7 @@
       "courseProgress": 100,
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "Jul '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "responsive-images",
       "courseURL": "https://www.udacity.com/course/responsive-images--ud882",
@@ -811,7 +811,7 @@
       "courseProgress": 100,
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "browser-rendering-optimization",
       "courseURL": "https://www.udacity.com/course/browser-rendering-optimization--ud860",
@@ -959,7 +959,7 @@
       "courseProgress": 100,
       "courseDesc": "The #1 reason people leave a web site is because it renders too slowly. Learn how to optimize your websites for speed on the desktop and mobile. You will learn how to optimize any website for speed by diving into the details of how mobile and desktop browsers render pages. Level: Intermediate",
       "courseDateStarted": "Aug 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "website-performance-optimization",
       "courseURL": "https://www.udacity.com/course/website-performance-optimization--ud884",
@@ -1045,13 +1045,13 @@
     },
     {
       "id": "udacity-11",
-      "active": true,
+      "active": false,
       "courseVendorName": "3c— Udacity",
       "courseVendor": "Client-Server Communications by Google",
       "courseProgress": 35,
       "courseDesc": "HTTP/1 to HTTP/2 and all things Security. Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.",
       "courseDateStarted": "Aug 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "client-server-communication",
       "courseURL": "https://www.udacity.com/course/client-server-communication--ud897",
@@ -1173,7 +1173,7 @@
       "courseProgress": 100,
       "courseDesc": "Forms Rock! Over 70% of online shopping carts are abandoned before checkout! Learn how to keep users happy and reduce the chances of their walking away.",
       "courseDateStarted": "Aug 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "high-conversion-web-forms",
       "courseURL": "https://www.udacity.com/course/building-high-conversion-web-forms--ud890",
@@ -1284,7 +1284,7 @@
       "courseProgress": 100,
       "courseDesc": "Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-javascript-data-cert",
       "courseURL": "https://www.freecodecamp.org/kdcinfo",
@@ -1671,13 +1671,13 @@
     },
     {
       "id": "fcc-2",
-      "active": true,
+      "active": false,
       "courseVendorName": "4b— freecodecamp",
       "courseVendor": "Front End Libraries Certification",
       "courseProgress": 77,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-libraries-cert",
       "courseURL": "https://www.freecodecamp.org/kdcinfo",
@@ -1893,7 +1893,7 @@
       "courseProgress": 100,
       "courseDesc": "https://www.freecodecamp.org/certification/kdcinfo/responsive-web-design",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "Jul '18",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-web-design-cert",
       "courseURL": "https://www.freecodecamp.org/certification/kdcinfo/responsive-web-design",
@@ -2172,7 +2172,7 @@
       "courseProgress": 100,
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "July",
+      "courseDateLast": "Jul '18",
       "courseShortVendor": "angu-courses",
       "courseShortName": "angu-guided-intro",
       "courseURL": "https://blog.angular-university.io/service-workers/",
@@ -2219,7 +2219,7 @@
       "courseProgress": 40,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
-      "courseDateLast": "August",
+      "courseDateLast": "Aug '18",
       "courseShortVendor": "harvard-courses",
       "courseShortName": "harvard-cs50w",
       "courseURL": "https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web",
@@ -2626,15 +2626,15 @@
       ]
     },
     {
-      "id": "udacity-8",
+      "id": "udemy-1",
       "active": false,
-      "courseVendorName": "6b— Udacity",
+      "courseVendorName": "1a— Udemy",
       "courseVendor": "Modern React with Redux",
       "courseProgress": 0,
       "courseDesc": "Master the fundamentals of React v16.3.2 and Redux as you develop apps with React Router, Webpack, and ES6.",
       "courseDateStarted": "Aug 2018",
-      "courseDateLast": "August",
-      "courseShortVendor": "udacity-courses",
+      "courseDateLast": "Aug '18",
+      "courseShortVendor": "udemy-courses",
       "courseShortName": "react-redux-tutorial",
       "courseURL": "https://www.udemy.com/react-redux/",
       "courseList": [
@@ -2863,15 +2863,15 @@
       ]
     },
     {
-      "id": "udacity-9",
+      "id": "udemy-2",
       "active": false,
-      "courseVendorName": "6c— Udacity",
+      "courseVendorName": "1b— Udemy",
       "courseVendor": "Advanced React and Redux: 2018 Edition",
       "courseProgress": 0,
       "courseDesc": "Detailed walkthroughs on advanced React and Redux concepts - Authentication, Testing, Middlewares, HOC's, and Deployment",
       "courseDateStarted": "Aug 2018",
-      "courseDateLast": "August",
-      "courseShortVendor": "udacity-courses",
+      "courseDateLast": "Aug '18",
+      "courseShortVendor": "udemy-courses",
       "courseShortName": "react-redux-tutorial",
       "courseURL": "https://www.udemy.com/react-redux-tutorial/",
       "courseList": [
@@ -2881,10 +2881,10 @@
           "courseClassContent": `
             <p>
               <ul>
-                <li>4.7 (6,480 ratings)</li>
-                <li>43,410 students enrolled</li>
-                <li>Created by Stephen Grider</li>
-                <li>Last updated 6/2018</li>
+                <li class='li-desc'>4.7 (6,480 ratings)</li>
+                <li class='li-desc'>43,410 students enrolled</li>
+                <li class='li-desc'>Created by Stephen Grider</li>
+                <li class='li-desc'>Last updated 6/2018</li>
               </ul>
             </p>
             <ul>
@@ -3091,17 +3091,17 @@
       "active": true,
       "courseVendorName": "7a— The Code Of A Ninja",
       "courseVendor": "PHP Login Script",
-      "courseProgress": 3,
+      "courseProgress": 100,
       "courseDesc": "Mike Dalisay has been a pro software developer since 2010. He's the founder and author of codeofaninja.com programming blog. Through his tutorials you can learn PHP programming, JavaScript programming and how to use Social Media APIs.",
       "courseDateStarted": "Sep 2018",
-      "courseDateLast": "September",
+      "courseDateLast": "Sep '19",
       "courseShortVendor": "codeofaninja-courses",
       "courseShortName": "codeofaninja-tutorial",
       "courseURL": "https://www.codeofaninja.com/2013/03/php-login-script.html",
       "courseList": [
         {
           "courseClassTitle": "Step by Step Contents",
-          "courseClassProgress": 3,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p>
               PHP Login Script with Session Tutorial – Step by Step Guide!
@@ -3110,119 +3110,119 @@
               <li class='progress done'>1.0 Overview</li>
               <li class='progress done'>2.0 Program output</li>
               <li class='progress done'>3.0 File structure</li>
-              <li class='progress'>4.0 Prepare the database
+              <li class='progress done'>4.0 Prepare the database
                 <ul>
-                  <li class='progress'>4.1 Create a database</li>
-                  <li class='progress'>4.2 Run SQL for users table</li>
-                  <li class='progress'>4.3 Run SQL for user accounts</li>
-                  <li class='progress'>4.4 Create database connection file</li>
-                  <li class='progress'>4.5 Create user object file</li>
-                  <li class='progress'>4.6 Output</li>
+                  <li class='progress done'>4.1 Create a database</li>
+                  <li class='progress done'>4.2 Run SQL for users table</li>
+                  <li class='progress done'>4.3 Run SQL for user accounts</li>
+                  <li class='progress done'>4.4 Create database connection file</li>
+                  <li class='progress done'>4.5 Create user object file</li>
+                  <li class='progress done'>4.6 Output</li>
                 </ul>
               </li>
-              <li class='progress'>5.0 Prepare basic settings
+              <li class='progress done'>5.0 Prepare basic settings
                 <ul>
-                  <li class='progress'>5.1 Create config file</li>
-                  <li class='progress'>5.2 Create login checker file</li>
-                  <li class='progress'>5.3 Create .htaccess file</li>
-                  <li class='progress'>5.4 Output</li>
+                  <li class='progress done'>5.1 Create config file</li>
+                  <li class='progress done'>5.2 Create login checker file</li>
+                  <li class='progress done'>5.3 Create .htaccess file</li>
+                  <li class='progress done'>5.4 Output</li>
                 </ul>
               </li>
-              <li class='progress'>6.0 Create the template files
+              <li class='progress done'>6.0 Create the template files
                 <ul>
-                  <li class='progress'>6.1 Create navigation bar</li>
-                  <li class='progress'>6.2 Show logout button</li>
-                  <li class='progress'>6.3 Show login and register buttons</li>
-                  <li class='progress'>6.4 Create page header</li>
-                  <li class='progress'>6.5 Create page footer</li>
-                  <li class='progress'>6.6 Customer section custom CSS</li>
-                  <li class='progress'>6.7 Output</li>
+                  <li class='progress done'>6.1 Create navigation bar</li>
+                  <li class='progress done'>6.2 Show logout button</li>
+                  <li class='progress done'>6.3 Show login and register buttons</li>
+                  <li class='progress done'>6.4 Create page header</li>
+                  <li class='progress done'>6.5 Create page footer</li>
+                  <li class='progress done'>6.6 Customer section custom CSS</li>
+                  <li class='progress done'>6.7 Output</li>
                 </ul>
               </li>
-              <li class='progress'>7.0 Create login form
+              <li class='progress done'>7.0 Create login form
                 <ul>
-                  <li class='progress'>7.1 Include basic settings</li>
-                  <li class='progress'>7.2 Login form HTML</li>
-                  <li class='progress'>7.3 Login form output</li>
-                  <li class='progress'>7.4 Add alert message</li>
-                  <li class='progress'>7.5 Alert message output</li>
-                  <li class='progress'>7.6 If user submitted the form</li>
-                  <li class='progress'>7.7 Check if email exists</li>
-                  <li class='progress'>7.8 Add emailExists() method</li>
-                  <li class='progress'>7.9 Validate login credentials</li>
-                  <li class='progress'>7.10 Customer’s index page</li>
-                  <li class='progress'>7.11 Logout file</li>
-                  <li class='progress'>7.12 Output</li>
+                  <li class='progress done'>7.1 Include basic settings</li>
+                  <li class='progress done'>7.2 Login form HTML</li>
+                  <li class='progress done'>7.3 Login form output</li>
+                  <li class='progress done'>7.4 Add alert message</li>
+                  <li class='progress done'>7.5 Alert message output</li>
+                  <li class='progress done'>7.6 If user submitted the form</li>
+                  <li class='progress done'>7.7 Check if email exists</li>
+                  <li class='progress done'>7.8 Add emailExists() method</li>
+                  <li class='progress done'>7.9 Validate login credentials</li>
+                  <li class='progress done'>7.10 Customer’s index page</li>
+                  <li class='progress done'>7.11 Logout file</li>
+                  <li class='progress done'>7.12 Output</li>
                 </ul>
               </li>
-              <li class='progress'>8.0 Create registration form
+              <li class='progress done'>8.0 Create registration form
                 <ul>
-                  <li class='progress'>8.1 Create register page</li>
-                  <li class='progress'>8.2 Create Utils class</li>
-                  <li class='progress'>8.3 Registration form HTML</li>
-                  <li class='progress'>8.4 If registration form was submitted</li>
-                  <li class='progress'>8.5 Create new user</li>
-                  <li class='progress'>8.6 User object create() method</li>
-                  <li class='progress'>8.7 Add showError() method</li>
-                  <li class='progress'>8.8 Output</li>
+                  <li class='progress done'>8.1 Create register page</li>
+                  <li class='progress done'>8.2 Create Utils class</li>
+                  <li class='progress done'>8.3 Registration form HTML</li>
+                  <li class='progress done'>8.4 If registration form was submitted</li>
+                  <li class='progress done'>8.5 Create new user</li>
+                  <li class='progress done'>8.6 User object create() method</li>
+                  <li class='progress done'>8.7 Add showError() method</li>
+                  <li class='progress done'>8.8 Output</li>
                 </ul>
               </li>
-              <li class='progress'>9.0 Admin section
+              <li class='progress done'>9.0 Admin section
                 <ul>
-                  <li class='progress'>9.1 Create admin index page</li>
-                  <li class='progress'>9.2 Create navigation bar</li>
-                  <li class='progress'>9.3 Create page header</li>
-                  <li class='progress'>9.4 Create page footer</li>
-                  <li class='progress'>9.5 Admin section custom CSS</li>
-                  <li class='progress'>9.6 Create login checker file</li>
-                  <li class='progress'>9.7 Output</li>
+                  <li class='progress done'>9.1 Create admin index page</li>
+                  <li class='progress done'>9.2 Create navigation bar</li>
+                  <li class='progress done'>9.3 Create page header</li>
+                  <li class='progress done'>9.4 Create page footer</li>
+                  <li class='progress done'>9.5 Admin section custom CSS</li>
+                  <li class='progress done'>9.6 Create login checker file</li>
+                  <li class='progress done'>9.7 Output</li>
                 </ul>
               </li>
-              <li class='progress'>10.0 Show registered users
+              <li class='progress done'>10.0 Show registered users
                 <ul>
-                  <li class='progress'>10.1 Create \"read users\" file</li>
-                  <li class='progress'>10.2 Add readAll() method in user object</li>
-                  <li class='progress'>10.3 Create \"read users\" template file</li>
-                  <li class='progress'>10.4 Add countAll() method in user object</li>
-                  <li class='progress'>10.5 Paginate list of users</li>
-                  <li class='progress'>10.6 Output</li>
+                  <li class='progress done'>10.1 Create \"read users\" file</li>
+                  <li class='progress done'>10.2 Add readAll() method in user object</li>
+                  <li class='progress done'>10.3 Create \"read users\" template file</li>
+                  <li class='progress done'>10.4 Add countAll() method in user object</li>
+                  <li class='progress done'>10.5 Paginate list of users</li>
+                  <li class='progress done'>10.6 Output</li>
                 </ul>
               </li>
-              <li class='progress'>11.0 How to validate email address?
+              <li class='progress done'>11.0 How to validate email address?
                 <ul>
-                  <li class='progress'>11.1 Change account status</li>
-                  <li class='progress'>11.2 Add access code field</li>
-                  <li class='progress'>11.3 Add getToken() method</li>
-                  <li class='progress'>11.4 Change create() method</li>
-                  <li class='progress'>11.5 Add access_code property</li>
-                  <li class='progress'>11.6 Send verification email</li>
-                  <li class='progress'>11.7 Add sendEmailViaPhpMail() method</li>
-                  <li class='progress'>11.8 Output</li>
-                  <li class='progress'>11.9 Create verification file</li>
-                  <li class='progress'>11.10 Add updateStatusByAccessCode() method</li>
-                  <li class='progress'>11.11 Output</li>
+                  <li class='progress done'>11.1 Change account status</li>
+                  <li class='progress done'>11.2 Add access code field</li>
+                  <li class='progress done'>11.3 Add getToken() method</li>
+                  <li class='progress done'>11.4 Change create() method</li>
+                  <li class='progress done'>11.5 Add access_code property</li>
+                  <li class='progress done'>11.6 Send verification email</li>
+                  <li class='progress done'>11.7 Add sendEmailViaPhpMail() method</li>
+                  <li class='progress done'>11.8 Output</li>
+                  <li class='progress done'>11.9 Create verification file</li>
+                  <li class='progress done'>11.10 Add updateStatusByAccessCode() method</li>
+                  <li class='progress done'>11.11 Output</li>
                 </ul>
               </li>
-              <li class='progress'>12.0 PHP forgot password form
+              <li class='progress done'>12.0 PHP forgot password form
                 <ul>
-                  <li class='progress'>12.1 Add forgot password link</li>
-                  <li class='progress'>12.2 Login page new output</li>
-                  <li class='progress'>12.3 Create “forgot password” page</li>
-                  <li class='progress'>12.4 Forgot password page output</li>
-                  <li class='progress'>12.5 Add post code</li>
-                  <li class='progress'>12.6 Add updateAccessCode() method</li>
-                  <li class='progress'>12.7 Output</li>
+                  <li class='progress done'>12.1 Add forgot password link</li>
+                  <li class='progress done'>12.2 Login page new output</li>
+                  <li class='progress done'>12.3 Create “forgot password” page</li>
+                  <li class='progress done'>12.4 Forgot password page output</li>
+                  <li class='progress done'>12.5 Add post code</li>
+                  <li class='progress done'>12.6 Add updateAccessCode() method</li>
+                  <li class='progress done'>12.7 Output</li>
                 </ul>
               </li>
-              <li class='progress'>13.0 PHP reset password form
+              <li class='progress done'>13.0 PHP reset password form
                 <ul>
-                  <li class='progress'>13.1 Create “reset password” page</li>
-                  <li class='progress'>13.2 Check access code</li>
-                  <li class='progress'>13.3 Add accessCodeExists() method</li>
-                  <li class='progress'>13.4 Add “reset password” form</li>
-                  <li class='progress'>13.5 Add post code</li>
-                  <li class='progress'>13.6 Add updatePassword() method</li>
-                  <li class='progress'>13.7 Output</li>
+                  <li class='progress done'>13.1 Create “reset password” page</li>
+                  <li class='progress done'>13.2 Check access code</li>
+                  <li class='progress done'>13.3 Add accessCodeExists() method</li>
+                  <li class='progress done'>13.4 Add “reset password” form</li>
+                  <li class='progress done'>13.5 Add post code</li>
+                  <li class='progress done'>13.6 Add updatePassword() method</li>
+                  <li class='progress done'>13.7 Output</li>
                 </ul>
               </li>
               <li class='progress'>14.0 How To Run The Source Code?</li>
@@ -3232,6 +3232,533 @@
               <li class='progress'>18.0 Related Tutorials</li>
               <li class='progress'>19.0 Notes</li>
             </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udemy-3",
+      "active": true,
+      "courseVendorName": "2a— Udemy",
+      "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
+      "courseProgress": 11,
+      "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 | Created by Academind by Maximilian Schwarzmüller",
+      "courseDateStarted": "Feb 2020",
+      "courseDateLast": "Feb '20",
+      "courseShortVendor": "udemy-courses",
+      "courseShortName": "learn-flutter-and-dart",
+      "courseURL": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+      "courseList": [
+        {
+          "courseClassTitle": "Section 1: Introduction",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p>
+            <ul><li>15 / 15 | 1hr 23min</li></ul>
+            <ul>
+              <li class='progress done'>1. Introduction ___ 2min</li>
+              <li class='progress done'>2. What is Flutter? ___ 6min</li>
+              <li class='progress done'>3. Join our Online Learning Community ___ 1min</li>
+              <li class='progress done'>4. Understanding the Flutter Architecture ___ 5min</li>
+              <li class='progress done'>5. How Flutter and Dart Code Gets Compiled To Native Apps ___ 3min</li>
+              <li class='progress done'>6. Understanding Flutter Versions ___ 3min</li>
+              <li class='progress done'>7. Flutter macOS Setup ___ 19min</li>
+              <li class='progress done'>8. macOS Development Environment ___ 4min</li>
+              <li class='progress done'>9. Flutter Windows Setup ___ 20min</li>
+              <li class='progress done'>10. Windows Development Environment ___ 4min</li>
+              <li class='progress done'>11. Flutter and Material Design ___ 1min</li>
+              <li class='progress done'>12. Flutter Alternatives ___ 6min</li>
+              <li class='progress done'>13. Course Outline ___ 7min</li>
+              <li class='progress done'>14. How To Get The Most Out Of The Course ___ 3min</li>
+              <li class='progress done'>15. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 2: Flutter Basics [QUIZ APP]",
+          "courseClassProgress": 85,
+          "courseClassContent": `<p>
+            <ul><li>44 / 46 | 4hr 30min</li></ul>
+            <ul>
+              <li class='progress done'>16. Module Introduction ___ 2min</li>
+              <li class='progress done'>17. Creating a New Project ___ 12min</li>
+              <li class='progress done'>18. An Overview of the Generated Files and Folders ___ 8min</li>
+              <li class='progress done'>19. More on Git (Version Control System) ___ 1min</li>
+              <li class='progress done'>20. Analyzing the Default App ___ 6min</li>
+              <li class='progress done'>21. Dart Basics ___ 17min</li>
+              <li class='progress done'>22. More Dart Basics ___ 13min</li>
+              <li class='progress done'>23. Dart Basics - Summary ___ 5min</li>
+              <li class='progress done'>Quiz 1: Dart Fundamentals</li>
+              <li class='progress done'>24. Building an App From Scratch ___ 11min</li>
+              <li class='progress done'>25. Running the App on an Emulator ___ 3min</li>
+              <li class='progress done'>26. Class Constructors and Named Arguments ___ 8min</li>
+              <li class='progress done'>27. First Summary and Additional Syntax ___ 8min</li>
+              <li class='progress done'>Quiz 2: Flutter App Basics</li>
+              <li class='progress done'>28. Building a Widget Tree ___ 8min</li>
+              <li class='progress done'>29. Visible (Input / Output) and Invisible (Layout / Control) Widgets ___ 3min</li>
+              <li class='progress done'>30. Adding Layout Widgets ___ 7min</li>
+              <li class='progress done'>Quiz 3: Widget Basics</li>
+              <li class='progress done'>31. Connecting Functions and Buttons ___ 8min</li>
+              <li class='progress done'>32. Anonymous Functions ___ 3min</li>
+              <li class='progress done'>33. Updating Widget Data (Or: Using StatelessWidget Incorrectly) ___ 7min</li>
+              <li class='progress done'>34. [DART DEEP DIVE] Understanding Lists ___ 2min</li>
+              <li class='progress done'>35. Updating Correctly with Stateful Widgets ___ 12min</li>
+              <li class='progress done'>Quiz 4: Stateful and Stateless Widgets</li>
+              <li class='progress done'>36. A Brief Look Under The Hood ___ 2min</li>
+              <li class='progress done'>37. Using Private Properties ___ 5min</li>
+              <li class='progress done'>38. Creating a New, Custom Widget ___ 12min</li>
+              <li class='progress done'>39. First Styling and Layouting Steps ___ 8min</li>
+              <li class='progress done'>40. Enums and Multiple Constructors ___ 4min</li>
+              <li class='progress done'>41. Official Docs and The Widget Catalog ___ 3min</li>
+              <li class='progress done'>42. Passing Callback Functions Around ___ 11min</li>
+              <li class='progress done'>43. Introducing Maps ___ 6min</li>
+              <li class='progress done'>44. Mapping Lists to Widgets ___ 10min</li>
+              <li class='progress done'>45. final vs const ___ 11min</li>
+              <li class='progress done'>Quiz 5: Advanced Flutter and Dart Basics</li>
+              <li class='progress done'>46. Introducing 'if' Statements ___ 7min</li>
+              <li class='progress done'>47. [DART DEEP DIVE] More on 'if' Statements ___ 11min</li>
+              <li class='progress done'>48. [DART DEEP DIVE] The 'null' Value ___ 2min</li>
+              <li class='progress done'>49. Outputting Widgets Conditionally ___ 2min</li>
+              <li class='progress'>50. Splitting the App Into Widgets ___ 10min</li>
+              <li class='progress'>51. Calculating a Total Score ___ 8min</li>
+              <li class='progress'>52. Getters and 'else-if' ___ 7min</li>
+              <li class='progress'>53. Resetting the Quiz ___ 5min</li>
+              <li class='progress'>Assignment 1: Time to Practice: Flutter Basics</li>
+              <li class='progress'>54. Wrap Up ___ 2min</li>
+              <li class='progress'>55. Module Resources ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 3: Running Apps on Different",
+          "courseClassProgress": 9,
+          "courseClassContent": `<p>
+            <ul><li>6 / 11 | 38min</li></ul>
+            <ul>
+              <li class='progress done'>56. Module Introduction ___ 2min</li>
+              <li class='progress'>57. Running the App on a Real Android Device ___ 4min</li>
+              <li class='progress'>58. Running the App on an iOS Emulator ___ 6min</li>
+              <li class='progress'>59. Running the App on a Real iOS Device ___ 2min</li>
+              <li class='progress'>60. Working with the Emulators / Using the Emulators ___ 2min</li>
+              <li class='progress'>61. Understanding Error Messages and Fixing Errors ___ 5min</li>
+              <li class='progress'>62. Using the Debugger ___ 6min</li>
+              <li class='progress'>63. Getting Started with the Dart DevTools ___ 5min</li>
+              <li class='progress'>64. Understanding the Repaint Rainbow ___ 3min</li>
+              <li class='progress'>65. Wrapping up the Dart DevTools ___ 2min</li>
+              <li class='progress'>66. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 4: Widgets, Styling, Adding Logic - Building a Real App",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 51 | 5hr 1min</li></ul>
+            <ul>
+              <li class='progress'>67. Module Introduction ___ 3min</li>
+              <li class='progress'>68. An Overview of the Core Flutter Widgets ___ 10min</li>
+              <li class='progress'>69. Planning the App ___ 3min</li>
+              <li class='progress'>70. Combining Widgets ___ 9min</li>
+              <li class='progress'>71. Understanding Column Alignment ___ 6min</li>
+              <li class='progress'>Quiz 6: Columns and Rows</li>
+              <li class='progress'>72. Not a Widget: Adding a Transaction Model and Transaction Data ___ 8min</li>
+              <li class='progress'>73. Mapping Data Into Widgets ___ 4min</li>
+              <li class='progress'>74. Building a Custom List Item ___ 5min</li>
+              <li class='progress'>75. Styling a Container ___ 5min</li>
+              <li class='progress'>76. Styling Text ___ 3min</li>
+              <li class='progress'>77. More Styling! ___ 2min</li>
+              <li class='progress'>Quiz 7: Styling Time!</li>
+              <li class='progress'>78. Containers vs Columns vs Rows ___ 4min</li>
+              <li class='progress'>79. Using String Interpolation ___ 5min</li>
+              <li class='progress'>80. Installing External Packages and Formatting Dates ___ 7min</li>
+              <li class='progress'>81. DateFormat Patterns ___ 1min</li>
+              <li class='progress'>82. Adding Text Input Widgets (TextField) ___ 10min</li>
+              <li class='progress'>83. Fetching User Input ___ 9min</li>
+              <li class='progress'>84. Splitting the App Into Widgets ___ 13min</li>
+              <li class='progress'>85. Connecting Widgets and Managing Data / State ___ 7min</li>
+              <li class='progress'>86. Adding User Transactions to the List ___ 4min</li>
+              <li class='progress'>87. Making the List Scrollable! ___ 6min</li>
+              <li class='progress'>88. Working with ListViews ___ 12min</li>
+              <li class='progress'>Quiz 8: Lists, Scrolling and Text Input</li>
+              <li class='progress'>89. Further Input and Output Styling and Configuration ___ 8min</li>
+              <li class='progress'>90. Adding AppBar Buttons and Floating Action Buttons ___ 5min</li>
+              <li class='progress'>91. Showing a Modal Bottom Sheet ___ 10min</li>
+              <li class='progress'>92. Improving and Styling the Modal Bottom Sheet ___ 5min</li>
+              <li class='progress'>93. Configuring and Using Themes ___ 9min</li>
+              <li class='progress'>94. Custom Fonts and Working with Text Themes ___ 11min</li>
+              <li class='progress'>Quiz 9: Theming</li>
+              <li class='progress'>95. Adding Images to the App ___ 8min</li>
+              <li class='progress'>96. Planning the Chart Widget ___ 4min</li>
+              <li class='progress'>97. Looping Through Lists ___ 14min</li>
+              <li class='progress'>98. More on 'for' Loops ___ 1min</li>
+              <li class='progress'>99. Deriving Recent Transactions ___ 7min</li>
+              <li class='progress'>100. Creating Bars for our Chart ___ 11min</li>
+              <li class='progress'>101. Populating the Chart with Values ___ 6min</li>
+              <li class='progress'>102. Finishing the Chart Bars ___ 5min</li>
+              <li class='progress'>103. Flexible and Expanded: Deep Dive ___ 10min</li>
+              <li class='progress'>104. Adding a ListTile Widget ___ 5min</li>
+              <li class='progress'>105. Improving the Overall Chart ___ 3min</li>
+              <li class='progress'>106. Widgets and Configuring Widgets - Summary / Overview ___ 5min</li>
+              <li class='progress'>107. Getting Started with Date Selection ___ 5min</li>
+              <li class='progress'>108. Showing a DatePicker ___ 11min</li>
+              <li class='progress'>109. Adding Transactions with a Date ___ 3min</li>
+              <li class='progress'>110. Deleting Transactions and Using IconButtons ___ 7min</li>
+              <li class='progress'>111. Final Polishing! ___ 6min</li>
+              <li class='progress'>112. Wrap Up ___ 4min</li>
+              <li class='progress'>113. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 5: Responsive and Adaptive User Interfaces and Apps",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 23 | 1hr 25min</li></ul>
+            <ul>
+              <li class='progress'>114. Module Introduction ___ 2min</li>
+              <li class='progress'>115. What does 'Responsive' and 'Adaptive' Mean? ___ 6min</li>
+              <li class='progress'>116. Examples: Where we could improve the App! ___ 3min</li>
+              <li class='progress'>117. Calculating Sizes Dynamically ___ 9min</li>
+              <li class='progress'>118. Working with the 'textScaleFactor' ___ 1min</li>
+              <li class='progress'>119. Using the LayoutBuilder Widget ___ 8min</li>
+              <li class='progress'>Quiz 10: Responsiveness</li>
+              <li class='progress'>120. Controlling the Device Orientation ___ 3min</li>
+              <li class='progress'>121. Rendering Alternative Landscape Content - 1 ___ 5min</li>
+              <li class='progress'>122. Finishing Landscape Mode ___ 3min</li>
+              <li class='progress'>123. Showing Different Content Based on Device Orientation ___ 6min</li>
+              <li class='progress'>124. Respecting the Softkeyboard Insets ___ 4min</li>
+              <li class='progress'>125. Using the Device Size in Conditions ___ 4min</li>
+              <li class='progress'>126. Managing the MediaQuery Object ___ 2min</li>
+              <li class='progress'>127. Checking the Device Platform ___ 6min</li>
+              <li class='progress'>128. Using Cupertino (iOS) Widgets ___ 9min</li>
+              <li class='progress'>129. Using the SafeArea ___ 2min</li>
+              <li class='progress'>130. More Cupertino Styles ___ 3min</li>
+              <li class='progress'>131. Using Cupertino Buttons ___ 3min</li>
+              <li class='progress'>132. Creating Custom Adaptive Widgets ___ 5min</li>
+              <li class='progress'>Quiz 11: Adaptive Widgets</li>
+              <li class='progress'>133. Wrap Up ___ 2min</li>
+              <li class='progress'>134. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 6: Widget and Flutter Internals - Deep Dive",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 21 | 2hr</li></ul>
+            <ul>
+              <li class='progress'>135. Module Introduction ___ 3min</li>
+              <li class='progress'>136. The Problem At Hand ___ 3min</li>
+              <li class='progress'>137. Widget Tree and Element Tree - What, Why and How? ___ 11min</li>
+              <li class='progress'>138. How Flutter Rebuilds and Repaints the Screen ___ 9min</li>
+              <li class='progress'>139. How Flutter Executes build() ___ 9min</li>
+              <li class='progress'>140. Using 'const' Widgets and Constructors ___ 11min</li>
+              <li class='progress'>Quiz 12: Widgets, Elements, build()</li>
+              <li class='progress'>141. Writing Good Code ___ 4min</li>
+              <li class='progress'>142. Extracting Widgets ___ 6min</li>
+              <li class='progress'>143. Using Builder Methods ___ 10min</li>
+              <li class='progress'>Assignment 2: Time to Practice: Builder Methods</li>
+              <li class='progress'>144. Understanding the Widget Lifecycle ___ 13min</li>
+              <li class='progress'>145. Calling super.initState() etc. ___ 1min</li>
+              <li class='progress'>146. Understanding the App Lifecycle ___ 9min</li>
+              <li class='progress'>147. Understanding Context ___ 7min</li>
+              <li class='progress'>148. A Problem with Lists and Stateful Widgets ___ 6min</li>
+              <li class='progress'>149. Understanding the Problem Root ___ 5min</li>
+              <li class='progress'>150. Using Keys ___ 11min</li>
+              <li class='progress'>Quiz 13: Keys, Lists, Stateful Widgets</li>
+              <li class='progress'>151. Wrap Up ___ 2min</li>
+              <li class='progress'>152. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 7: Navigation and Multiple Screens [MEALS APP]",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 33 | 4hr 9min</li></ul>
+            <ul>
+              <li class='progress'>153. Module Introduction ___ 2min</li>
+              <li class='progress'>154. Planning the App ___ 5min</li>
+              <li class='progress'>155. Starting With The App - Adding Base Data ___ 11min</li>
+              <li class='progress'>156. Creating a Grid and Working with Linear Gradients ___ 8min</li>
+              <li class='progress'>157. Registering a Screen as the Main Screen ___ 3min</li>
+              <li class='progress'>158. Styling and Theming ___ 7min</li>
+              <li class='progress'>159. Navigating to a New Page ___ 10min</li>
+              <li class='progress'>160. Passing Data via the Constructor ___ 3min</li>
+              <li class='progress'>161. Using Named Routes and Passing Data With Named Routes ___ 7min</li>
+              <li class='progress'>Quiz 14: Screens and Navigation</li>
+              <li class='progress'>162. Diving Deeper into Named Routes ___ 3min</li>
+              <li class='progress'>163. Adding a Meal Model and Data ___ 13min</li>
+              <li class='progress'>164. Selecting Meals for a Chosen Category ___ 5min</li>
+              <li class='progress'>165. Displaying Recipe Items and Using Network Images ___ 15min</li>
+              <li class='progress'>166. Finishing the Meal List Item ___ 15min</li>
+              <li class='progress'>167. Navigating to the Meal Detail Page ___ 7min</li>
+              <li class='progress'>168. onGenerateRoute and onUnknownRoute ___ 5min</li>
+              <li class='progress'>Quiz 15: More Navigation!</li>
+              <li class='progress'>169. Finishing the Meal Detail Page ___ 18min</li>
+              <li class='progress'>170. Adding a TabBar to the Appbar ___ 10min</li>
+              <li class='progress'>171. Adding a Bottom TabBar ___ 13min</li>
+              <li class='progress'>172. Adding a Custom Drawer ___ 13min</li>
+              <li class='progress'>173. Adding Links to the Drawer ___ 4min</li>
+              <li class='progress'>Quiz 16: Tabs and Drawers!</li>
+              <li class='progress'>174. Replacing Pages (Instead of Pushing) ___ 4min</li>
+              <li class='progress'>175. Popping Pages and Passing Data Back ___ 17min</li>
+              <li class='progress'>Quiz 17: Replacing, Popping and Data</li>
+              <li class='progress'>176. Adding Filter Switches ___ 9min</li>
+              <li class='progress'>177. Adding Filtering Logic ___ 16min</li>
+              <li class='progress'>178. Adding a 'Mark as Favorite' Feature ___ 20min</li>
+              <li class='progress'>179. A Problem! ___ 3min</li>
+              <li class='progress'>180. Wrap Up ___ 3min</li>
+              <li class='progress'>181. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 8: State Management [SHOP APP]",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 33 | 3hr 50min</li></ul>
+            <ul>
+              <li class='progress'>182. Module Introduction ___ 2min</li>
+              <li class='progress'>183. Planning the App ___ 7min</li>
+              <li class='progress'>184. Defining a Data Model ___ 7min</li>
+              <li class='progress'>185. Working on the 'Products' Grid and Item Widgets ___ 16min</li>
+              <li class='progress'>186. Styling and Theming the App ___ 5min</li>
+              <li class='progress'>187. Adding Navigation to the App ___ 11min</li>
+              <li class='progress'>188. Why State Management? And what is 'State' and 'State Management'? ___ 6min</li>
+              <li class='progress'>189. Understanding the 'Provider' Package and Approach ___ 3min</li>
+              <li class='progress'>190. Using the Right Provider Package Version ___ 1min</li>
+              <li class='progress'>191. Working with Providers and Listeners ___ 20min</li>
+              <li class='progress'>192. [DART DEEP DIVE] Inheritance ('extends') vs Mixins ('with') ___ 6min</li>
+              <li class='progress'>193. Providing non-Objects ___ 1min</li>
+              <li class='progress'>194. Listening in Different Places and Ways ___ 6min</li>
+              <li class='progress'>Quiz 18: State, State Management and The Provider Package/ Approach</li>
+              <li class='progress'>195. Using Nested Models and Providers ___ 14min</li>
+              <li class='progress'>196. Exploring Alternative Provider Syntaxes ___ 5min</li>
+              <li class='progress'>197. Using 'Consumer' instead of 'Provider.of' ___ 7min</li>
+              <li class='progress'>198. Local State vs App-wide State ___ 16min</li>
+              <li class='progress'>199. Adding Shopping Cart Data ___ 9min</li>
+              <li class='progress'>Quiz 19: More on State Management and The Provider Package</li>
+              <li class='progress'>200. Working with Multiple Providers ___ 3min</li>
+              <li class='progress'>201. Connecting the Cart Provider ___ 12min</li>
+              <li class='progress'>202. Working on the Shopping Cart and Displaying a Total ___ 12min</li>
+              <li class='progress'>203. Displaying a List of Cart Items ___ 11min</li>
+              <li class='progress'>204. Making Cart Items Dismissible ___ 9min</li>
+              <li class='progress'>205. Adding Product Detail Data ___ 5min</li>
+              <li class='progress'>206. Providing an Orders Object ___ 7min</li>
+              <li class='progress'>207. Adding Orders ___ 3min</li>
+              <li class='progress'>208. Adding an Orders Screen ___ 8min</li>
+              <li class='progress'>209. Using a Side Drawer ___ 6min</li>
+              <li class='progress'>210. Making Orders Expandable and Stateful Widgets vs Providers ___ 10min</li>
+              <li class='progress'>211. Wrap Up ___ 3min</li>
+              <li class='progress'>212. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 9: Working with User Input and Forms [SHOP APP]",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 19 | 2hr 3min</li></ul>
+            <ul>
+              <li class='progress'>213. Module Introduction ___ 3min</li>
+              <li class='progress'>214. Snackbars and Undoing 'Add to Cart' Actions ___ 11min</li>
+              <li class='progress'>215. Showing Alert Dialogs ___ 7min</li>
+              <li class='progress'>216. Adding a 'Manage Products' Page ___ 14min</li>
+              <li class='progress'>217. 'Edit Product' Screen and A Problem ___ 5min</li>
+              <li class='progress'>218. Using Forms and Working with Form Inputs ___ 8min</li>
+              <li class='progress'>219. ListView or Column ___ 1min</li>
+              <li class='progress'>220. Managing Form Input Focus ___ 5min</li>
+              <li class='progress'>221. Multiline Inputs and Disposing Objects ___ 4min</li>
+              <li class='progress'>222. Image Input and Image Preview ___ 13min</li>
+              <li class='progress'>223. Submitting Forms ___ 12min</li>
+              <li class='progress'>224. Validating User Input ___ 4min</li>
+              <li class='progress'>225. Adding Validation to All Inputs ___ 10min</li>
+              <li class='progress'>226. [OPTIONAL] Working with Regular Expressions ___ 1min</li>
+              <li class='progress'>227. Saving New Products ___ 4min</li>
+              <li class='progress'>228. Time to Update Products! ___ 16min</li>
+              <li class='progress'>229. Allowing Users to Delete Products ___ 4min</li>
+              <li class='progress'>230. Wrap Up ___ 1min</li>
+              <li class='progress'>231. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 10: Sending Http Requests [SHOP APP]",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 25 | 2hr 46min</li></ul>
+            <ul>
+              <li class='progress'>232. Module Introduction ___ 2min</li>
+              <li class='progress'>233. On-Device vs Web Storage ___ 4min</li>
+              <li class='progress'>234. How to Connect Flutter to a Database ___ 4min</li>
+              <li class='progress'>235. Preparing Our Backend ___ 5min</li>
+              <li class='progress'>236. How To Send Http Requests ___ 6min</li>
+              <li class='progress'>237. Sending POST Requests ___ 11min</li>
+              <li class='progress'>238. Working with Futures in Dart ___ 8min</li>
+              <li class='progress'>239. [DART DEEP DIVE] Futures and Async Code ___ 9min</li>
+              <li class='progress'>Quiz 20: Http Requests and Futures</li>
+              <li class='progress'>240. Showing a Loading Indicator ___ 7min</li>
+              <li class='progress'>241. Handling Errors Gracefully ___ 12min</li>
+              <li class='progress'>242. Working with 'async' and 'await' ___ 10min</li>
+              <li class='progress'>243. Fetching Data, initState and 'of(context)' ___ 8min</li>
+              <li class='progress'>244. How to Transform Fetched Data ___ 8min</li>
+              <li class='progress'>245. Implementing Pull-to-Refresh ___ 4min</li>
+              <li class='progress'>246. Updating Data via PATCH Requests ___ 7min</li>
+              <li class='progress'>247. Utilizing Optimistic Updating ___ 8min</li>
+              <li class='progress'>248. Creating Custom Exceptions and More Error Handling ___ 9min</li>
+              <li class='progress'>249. A Challenge For You! ___ 2min</li>
+              <li class='progress'>250. Updating the 'Favorite' Status Optimistically ___ 7min</li>
+              <li class='progress'>251. Storing Orders in the Web ___ 11min</li>
+              <li class='progress'>252. Fetching Orders and Fixing an Issue ___ 12min</li>
+              <li class='progress'>253. Using the 'FutureBuilder' Widget and Improving the Code ___ 10min</li>
+              <li class='progress'>254. Wrap Up ___ 2min</li>
+              <li class='progress'>255. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 11: Adding User Authentication [SHOP APP]",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 19 | 2hr 25min</li></ul>
+            <ul>
+              <li class='progress'>256. Module Introduction ___ 2min</li>
+              <li class='progress'>257. How Authentication Works ___ 6min</li>
+              <li class='progress'>258. Prepare Backend ___ 4min</li>
+              <li class='progress'>259. Adding the Auth Screen ___ 16min</li>
+              <li class='progress'>260. Adding User Signup ___ 14min</li>
+              <li class='progress'>261. Allowing Users to Log In ___ 6min</li>
+              <li class='progress'>262. Handling Authentication Errors ___ 13min</li>
+              <li class='progress'>263. Managing the Auth Token Locally (in the App) ___ 11min</li>
+              <li class='progress'>264. Avoiding Issues with Provider Package ___ 1min</li>
+              <li class='progress'>265. Using the 'ProxyProvider' and Attaching the Token to Outgoing Http Request ___ 9min</li>
+              <li class='progress'>266. Adding the Token to All Requests ___ 9min</li>
+              <li class='progress'>267. Connecting the 'Favorite' Status to Users ___ 10min</li>
+              <li class='progress'>268. Attaching Products to Users and Filtering By Creator ___ 13min</li>
+              <li class='progress'>269. Attaching Orders to Users ___ 3min</li>
+              <li class='progress'>270. Adding a Logout Functionality ___ 4min</li>
+              <li class='progress'>271. Automatically Logging Users Out (After Some Time) ___ 5min</li>
+              <li class='progress'>272. Automatically Logging Users In ___ 18min</li>
+              <li class='progress'>273. Wrap Up ___ 2min</li>
+              <li class='progress'>274. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 12: Adding Animations [SHOP APP]",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 12 | 58min</li></ul>
+            <ul>
+              <li class='progress'>275. Module Introduction ___ 1min</li>
+              <li class='progress'>276. Animations From Scratch (Completely Manually Controlled) ___ 14min</li>
+              <li class='progress'>277. Using the 'AnimatedBuilder' Widget ___ 4min</li>
+              <li class='progress'>278. Working with the 'AnimatedContainer' ___ 3min</li>
+              <li class='progress'>279. More Built-in Animation and Transition Widgets ___ 9min</li>
+              <li class='progress'>280. Fading Loaded Images In (And Showing a Placeholder) ___ 4min</li>
+              <li class='progress'>281. Adding a 'Hero' Transition ___ 3min</li>
+              <li class='progress'>282. Working with Slivers ___ 6min</li>
+              <li class='progress'>283. Practice: Animating Order Boxes ___ 4min</li>
+              <li class='progress'>284. Implementing Custom Route Transitions ___ 10min</li>
+              <li class='progress'>285. Wrap Up ___ 1min</li>
+              <li class='progress'>286. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 13: Using Native Device Features (Camera, Maps, Location, ...)",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 20 | 2hr 57min</li></ul>
+            <ul>
+              <li class='progress'>287. Module Introduction ___ 2min</li>
+              <li class='progress'>288. Planning the App ___ 3min</li>
+              <li class='progress'>289. PlaceList and Place Provider Setup ___ 13min</li>
+              <li class='progress'>290. Adding the 'Add Place' Screen and An Image Input ___ 17min</li>
+              <li class='progress'>291. Using Image Picker and The Device Camera ___ 11min</li>
+              <li class='progress'>292. Storing the Image on the Filesystem (on the Device) ___ 9min</li>
+              <li class='progress'>293. Managing Data and Images via the Provider Package ___ 16min</li>
+              <li class='progress'>294. Handling Errors ___ 1min</li>
+              <li class='progress'>295. Testing on Real Devices ___ 5min</li>
+              <li class='progress'>296. Preparing SQLite ___ 13min</li>
+              <li class='progress'>297. Storing and Fetching Data with SQLite ___ 12min</li>
+              <li class='progress'>298. Adding a Location Input and The 'location' Package ___ 10min</li>
+              <li class='progress'>299. Fetching the User Coordinates ___ 2min</li>
+              <li class='progress'>300. Displaying a Static Map Snapshot ___ 9min</li>
+              <li class='progress'>301. Rendering a Dynamic Map (via Google Maps) ___ 14min</li>
+              <li class='progress'>302. Allowing Users to Pick a Location on the Map ___ 10min</li>
+              <li class='progress'>303. Storing the Location in SQLite ___ 18min</li>
+              <li class='progress'>304. Adding a 'Place Detail' Screen and Opening the Map in 'readonly' Mode ___ 12min</li>
+              <li class='progress'>305. Wrap Up ___ 2min</li>
+              <li class='progress'>306. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 14: Running Native Swift, ObjectiveC, Java or Kotlin Code",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 7 | 37min</li></ul>
+            <ul>
+              <li class='progress'>307. Module Introduction ___ 2min</li>
+              <li class='progress'>308. Using a Proper Project Setup ___ 1min</li>
+              <li class='progress'>309. Sending a Method Call from Flutter ___ 9min</li>
+              <li class='progress'>310. Running Android Code ___ 15min</li>
+              <li class='progress'>311. Running iOS Code ___ 10min</li>
+              <li class='progress'>312. Wrap Up ___ 1min</li>
+              <li class='progress'>313. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 15: Publishing to the App Stores",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 8 | 35min</li></ul>
+            <ul>
+              <li class='progress'>314. Module Introduction ___ 2min</li>
+              <li class='progress'>315. Preparing the Code ___ 2min</li>
+              <li class='progress'>316. Preparing the App Configuration ___ 6min</li>
+              <li class='progress'>317. Preparing Third-Party Services ___ 1min</li>
+              <li class='progress'>318. Adding Icons and Splash Screens ___ 9min</li>
+              <li class='progress'>319. Publishing Android Apps ___ 9min</li>
+              <li class='progress'>320. Publishing iOS Apps ___ 6min</li>
+              <li class='progress'>321. Useful Resources and Links ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 16: Roundup and Next Steps",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 3 | 16min</li></ul>
+            <ul>
+              <li class='progress'>322. You did it! ___ 1min</li>
+              <li class='progress'>323. Your Next Steps (To Become an Awesome Developer!) ___ 4min</li>
+              <li class='progress'>324. How to Plan and Develop Successful Apps ___ 11min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 17: Summary of the Course Update",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 3 | 15min</li></ul>
+            <ul>
+              <li class='progress'>325. What Changed? What's New? Why did I Update the Course? ___ 14min</li>
+              <li class='progress'>326. Changes you should not miss ___ 1min</li>
+            </ul>
+            </p>
+          `
+        }, {
+          "courseClassTitle": "Section 35: Roundup",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            <ul><li>0 / 1 | 1min</li></ul>
+            <ul>
+              <li class='progress'>605. Bonus: More Content! ___ 1min</li>
+            </ul>
+            </p>
           `
         }
       ]

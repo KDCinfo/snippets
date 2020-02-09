@@ -79,7 +79,7 @@ Previous educational advancements can be found in the [educational section of my
 
 ### A:
 
-I'm a web/app developer by trait: Developing open source projects fills two purposes for me; I get more programming experience _(something I never tire of gaining)_, and I get a utility that can be crossed off my life's `@TODO:` list _(where it's likely been for years)_.
+I'm a web/app developer by trait (and trade): Developing open source projects fills two purposes for me; I get more programming experience _(something I never tire of gaining)_, and I get a utility that can be crossed off my life's `@TODO:` list _(where it's likely been for years)_.
 
 Additionally...
 
