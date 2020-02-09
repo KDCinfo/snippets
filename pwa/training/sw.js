@@ -1,8 +1,8 @@
 const curPath = location.search.split('=')[1].replace(/_/g, '/'),
       curApp = 'training-progress-spa';
 
-const staticCacheName = curApp + '-v4',
-      staticAssetsVer = '20180731a';
+const staticCacheName = curApp + '-v8',
+      staticAssetsVer = '20180820d';
 
 self.addEventListener('install', function(event) {
 

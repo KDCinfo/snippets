@@ -88,7 +88,7 @@
       "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
-      "courseProgress": 78,
+      "courseProgress": 84,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "August",
@@ -114,7 +114,7 @@
         },
         {
           "courseClassTitle": "Client-Server Communications",
-          "courseClassProgress": 13,
+          "courseClassProgress": 35,
           "courseClassContent": `
             <p class='text-body'>Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.</p>
             <h4 class='western'>Approx. 5 weeks Advanced</h4>
@@ -1048,7 +1048,7 @@
       "active": true,
       "courseVendorName": "3c— Udacity",
       "courseVendor": "Client-Server Communications by Google",
-      "courseProgress": 13,
+      "courseProgress": 35,
       "courseDesc": "HTTP/1 to HTTP/2 and all things Security. Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "August",
@@ -1058,7 +1058,7 @@
       "courseList": [
         {
           "courseClassTitle": "Lesson 1: HTTP's Request/Response Cycle -- 1 hour 15 minutes",
-          "courseClassProgress": 67,
+          "courseClassProgress": 100,
           "courseClassContent": `
             <p>You'll learn the ins and outs of requests. You'll look at how a page is requested, the headers that are received, HTTP codes, and how data is transferred.</p>
             <ul>
@@ -1069,30 +1069,30 @@
               <li class='progress done'>Fetching a single request 2</li>
               <li class='progress done'>Getting Multiple Requests</li>
               <li class='progress done'>Exercise Setup</li>
-              <li class='progress'>Quiz: DevTools Quiz</li>
-              <li class='progress'>Sending data with a POST Request</li>
-              <li class='progress'>From XHR to Fetch</li>
-              <li class='progress'>Quiz: Fetch Quiz</li>
-              <li class='progress'>Outro</li>
+              <li class='progress done'>Quiz: DevTools Quiz</li>
+              <li class='progress done'>Sending data with a POST Request</li>
+              <li class='progress done'>From XHR to Fetch</li>
+              <li class='progress done'>Quiz: Fetch Quiz</li>
+              <li class='progress done'>Outro</li>
             </ul>
           `
         },
         {
           "courseClassTitle": "Lesson 2: HTTP/1 -- 1 hour 15 minutes",
-          "courseClassProgress": 0,
+          "courseClassProgress": 77,
           "courseClassContent": `
             <p>You'll take a deep dive into HTTP verbs. You'll dig in deep to the vital headers used in HTTP. You'll also learn how to efficiently structure applications using REST.</p>
             <ul>
-              <li class='progress'>HTTP Intro</li>
-              <li class='progress'>The Netcat Command</li>
-              <li class='progress'>HTTP Verbs</li>
-              <li class='progress'>HTTP Verbs 2</li>
-              <li class='progress'>Quiz: HTTP Verbs Quiz</li>
-              <li class='progress'>Common Response Headers</li>
-              <li class='progress'>Quiz: Request Headers Quiz</li>
-              <li class='progress'>REST</li>
-              <li class='progress'>Quiz: REST Quiz</li>
-              <li class='progress'>Performance Basics</li>
+              <li class='progress done'>HTTP Intro</li>
+              <li class='progress done'>The Netcat Command</li>
+              <li class='progress done'>HTTP Verbs</li>
+              <li class='progress done'>HTTP Verbs 2</li>
+              <li class='progress done'>Quiz: HTTP Verbs Quiz</li>
+              <li class='progress done'>Common Response Headers</li>
+              <li class='progress done'>Quiz: Request Headers Quiz</li>
+              <li class='progress done'>REST</li>
+              <li class='progress done'>Quiz: REST Quiz</li>
+              <li class='progress done'>Performance Basics</li>
               <li class='progress'>Performance Details</li>
               <li class='progress'>Performance Details 2</li>
               <li class='progress'>Outro</li>
@@ -2627,7 +2627,7 @@
     },
     {
       "id": "udacity-8",
-      "active": true,
+      "active": false,
       "courseVendorName": "6b— Udacity",
       "courseVendor": "Modern React with Redux",
       "courseProgress": 0,
@@ -2864,7 +2864,7 @@
     },
     {
       "id": "udacity-9",
-      "active": true,
+      "active": false,
       "courseVendorName": "6c— Udacity",
       "courseVendor": "Advanced React and Redux: 2018 Edition",
       "courseProgress": 0,
@@ -3081,6 +3081,156 @@
           "courseClassContent": `
             <ul>
               <li class='progress'>RallyCoding</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "codeofaninja-1",
+      "active": true,
+      "courseVendorName": "7a— The Code Of A Ninja",
+      "courseVendor": "PHP Login Script",
+      "courseProgress": 3,
+      "courseDesc": "Mike Dalisay has been a pro software developer since 2010. He's the founder and author of codeofaninja.com programming blog. Through his tutorials you can learn PHP programming, JavaScript programming and how to use Social Media APIs.",
+      "courseDateStarted": "Sep 2018",
+      "courseDateLast": "September",
+      "courseShortVendor": "codeofaninja-courses",
+      "courseShortName": "codeofaninja-tutorial",
+      "courseURL": "https://www.codeofaninja.com/2013/03/php-login-script.html",
+      "courseList": [
+        {
+          "courseClassTitle": "Step by Step Contents",
+          "courseClassProgress": 3,
+          "courseClassContent": `
+            <p>
+              PHP Login Script with Session Tutorial – Step by Step Guide!
+            </p>
+            <ul>
+              <li class='progress done'>1.0 Overview</li>
+              <li class='progress done'>2.0 Program output</li>
+              <li class='progress done'>3.0 File structure</li>
+              <li class='progress'>4.0 Prepare the database
+                <ul>
+                  <li class='progress'>4.1 Create a database</li>
+                  <li class='progress'>4.2 Run SQL for users table</li>
+                  <li class='progress'>4.3 Run SQL for user accounts</li>
+                  <li class='progress'>4.4 Create database connection file</li>
+                  <li class='progress'>4.5 Create user object file</li>
+                  <li class='progress'>4.6 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>5.0 Prepare basic settings
+                <ul>
+                  <li class='progress'>5.1 Create config file</li>
+                  <li class='progress'>5.2 Create login checker file</li>
+                  <li class='progress'>5.3 Create .htaccess file</li>
+                  <li class='progress'>5.4 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>6.0 Create the template files
+                <ul>
+                  <li class='progress'>6.1 Create navigation bar</li>
+                  <li class='progress'>6.2 Show logout button</li>
+                  <li class='progress'>6.3 Show login and register buttons</li>
+                  <li class='progress'>6.4 Create page header</li>
+                  <li class='progress'>6.5 Create page footer</li>
+                  <li class='progress'>6.6 Customer section custom CSS</li>
+                  <li class='progress'>6.7 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>7.0 Create login form
+                <ul>
+                  <li class='progress'>7.1 Include basic settings</li>
+                  <li class='progress'>7.2 Login form HTML</li>
+                  <li class='progress'>7.3 Login form output</li>
+                  <li class='progress'>7.4 Add alert message</li>
+                  <li class='progress'>7.5 Alert message output</li>
+                  <li class='progress'>7.6 If user submitted the form</li>
+                  <li class='progress'>7.7 Check if email exists</li>
+                  <li class='progress'>7.8 Add emailExists() method</li>
+                  <li class='progress'>7.9 Validate login credentials</li>
+                  <li class='progress'>7.10 Customer’s index page</li>
+                  <li class='progress'>7.11 Logout file</li>
+                  <li class='progress'>7.12 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>8.0 Create registration form
+                <ul>
+                  <li class='progress'>8.1 Create register page</li>
+                  <li class='progress'>8.2 Create Utils class</li>
+                  <li class='progress'>8.3 Registration form HTML</li>
+                  <li class='progress'>8.4 If registration form was submitted</li>
+                  <li class='progress'>8.5 Create new user</li>
+                  <li class='progress'>8.6 User object create() method</li>
+                  <li class='progress'>8.7 Add showError() method</li>
+                  <li class='progress'>8.8 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>9.0 Admin section
+                <ul>
+                  <li class='progress'>9.1 Create admin index page</li>
+                  <li class='progress'>9.2 Create navigation bar</li>
+                  <li class='progress'>9.3 Create page header</li>
+                  <li class='progress'>9.4 Create page footer</li>
+                  <li class='progress'>9.5 Admin section custom CSS</li>
+                  <li class='progress'>9.6 Create login checker file</li>
+                  <li class='progress'>9.7 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>10.0 Show registered users
+                <ul>
+                  <li class='progress'>10.1 Create \"read users\" file</li>
+                  <li class='progress'>10.2 Add readAll() method in user object</li>
+                  <li class='progress'>10.3 Create \"read users\" template file</li>
+                  <li class='progress'>10.4 Add countAll() method in user object</li>
+                  <li class='progress'>10.5 Paginate list of users</li>
+                  <li class='progress'>10.6 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>11.0 How to validate email address?
+                <ul>
+                  <li class='progress'>11.1 Change account status</li>
+                  <li class='progress'>11.2 Add access code field</li>
+                  <li class='progress'>11.3 Add getToken() method</li>
+                  <li class='progress'>11.4 Change create() method</li>
+                  <li class='progress'>11.5 Add access_code property</li>
+                  <li class='progress'>11.6 Send verification email</li>
+                  <li class='progress'>11.7 Add sendEmailViaPhpMail() method</li>
+                  <li class='progress'>11.8 Output</li>
+                  <li class='progress'>11.9 Create verification file</li>
+                  <li class='progress'>11.10 Add updateStatusByAccessCode() method</li>
+                  <li class='progress'>11.11 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>12.0 PHP forgot password form
+                <ul>
+                  <li class='progress'>12.1 Add forgot password link</li>
+                  <li class='progress'>12.2 Login page new output</li>
+                  <li class='progress'>12.3 Create “forgot password” page</li>
+                  <li class='progress'>12.4 Forgot password page output</li>
+                  <li class='progress'>12.5 Add post code</li>
+                  <li class='progress'>12.6 Add updateAccessCode() method</li>
+                  <li class='progress'>12.7 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>13.0 PHP reset password form
+                <ul>
+                  <li class='progress'>13.1 Create “reset password” page</li>
+                  <li class='progress'>13.2 Check access code</li>
+                  <li class='progress'>13.3 Add accessCodeExists() method</li>
+                  <li class='progress'>13.4 Add “reset password” form</li>
+                  <li class='progress'>13.5 Add post code</li>
+                  <li class='progress'>13.6 Add updatePassword() method</li>
+                  <li class='progress'>13.7 Output</li>
+                </ul>
+              </li>
+              <li class='progress'>14.0 How To Run The Source Code?</li>
+              <li class='progress'>15.0 Download LEVEL 1 Source Code</li>
+              <li class='progress'>16.0 Download PHP Login System</li>
+              <li class='progress'>17.0 What’s Next?</li>
+              <li class='progress'>18.0 Related Tutorials</li>
+              <li class='progress'>19.0 Notes</li>
             </ul>
           `
         }

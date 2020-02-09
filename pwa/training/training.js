@@ -330,13 +330,12 @@
         // }
       });
 
-      app.allClassList.forEach( classObj => {
-
-        if (classObj.active) {                          // No non-active classes allowed inside `visibleClassSet`.
+      app.allClassList.filter(e => e.active === true).forEach( classObj => {
+        // if (classObj.active) {                       // No non-active classes allowed inside `visibleClassSet`.
           app.visibleClassSet.add(classObj.id);         // Update Set with IDs
           const trimmedObj = app.getNewObj(classObj);
           app.visibleClasses[classObj.id] = trimmedObj; // Update visibleClasses object (actives)
-        }
+        // }
       });
 
       if (app.visibleClassSet.size > 0) {
@@ -366,42 +365,33 @@
       //   if (elem.id === classId) { classItemIdx = idx; return true; }
       // });
 
-      Array.from(app.container.childNodes).forEach( (childNode) => { // Definitely Need `Array.from()` (tried it without; blech!)
-
-        if (childNode.nodeType === childNode.ELEMENT_NODE && childNode.classList.contains('item-node')) {
-
-          let childNodeID = childNode.querySelector('.ch-id').textContent;
-
-          if (!app.visibleClassSet.has(childNodeID)) {
-
-            childNode.parentNode.removeChild(childNode);              // REMOVE
-
-            dupeIDnodes = app.container.querySelectorAll('.item-dupe');
-            if (dupeIDnodes.length > 0) {
-              for (var k = 0; k < dupeIDnodes.length; k++) {
-                if (dupeIDnodes[k].querySelector('.ch-id').textContent === childNode.querySelector('.ch-id').textContent) {
-                  dupeIDnodes[k].parentNode.removeChild(dupeIDnodes[k]); // querySelectorAll is not a live collection.
-                  break;
+      Array.from(app.container.childNodes)
+           .filter(e => e.nodeType === e.ELEMENT_NODE && e.classList.contains('item-node'))
+           .forEach( (childNode) => { // Definitely Need `Array.from()` (tried it without; blech!)
+            let childNodeID = childNode.querySelector('.ch-id').textContent;
+            if (!app.visibleClassSet.has(childNodeID)) {
+              childNode.parentNode.removeChild(childNode);              // REMOVE
+              dupeIDnodes = app.container.querySelectorAll('.item-dupe');
+              if (dupeIDnodes.length > 0) {
+                for (var k = 0; k < dupeIDnodes.length; k++) {
+                  if (dupeIDnodes[k].querySelector('.ch-id').textContent === childNode.querySelector('.ch-id').textContent) {
+                    dupeIDnodes[k].parentNode.removeChild(dupeIDnodes[k]); // querySelectorAll is not a live collection.
+                    break;
+                  }
                 }
               }
+            } else {
+              // These are all getting replaced, but it can still be determined if display needs updating.
+              app.listCourse(childNodeID, {'replace': childNode});      // REPLACE
+              updatedItems.push(childNodeID);
             }
-
-          } else {
-
-            // These are all getting replaced, but it can still be determined if display needs updating.
-            app.listCourse(childNodeID, {'replace': childNode});      // REPLACE
-            updatedItems.push(childNodeID);
-          }
-        }
       });
     }
 
     const firstTime = app.container.querySelector('.item-node') ? false : true;
 
     app.visibleClassSet.forEach( classId => {
-
       if (!updatedItems.includes(classId)) {
-
         if (firstTime) {
           app.listCourse(classId, {'add': -1});                       // ADD (append to end of container DOM)
 
@@ -855,11 +845,15 @@
     if (el.getAttribute("aria-checked") === "true") {
         el.setAttribute("aria-checked", "false");
         document.querySelectorAll('.completed').forEach(n => n.classList.add('t-off'));
-        window.dispatchEvent(new Event('resize'));
+        setTimeout( () => {
+          window.dispatchEvent(new Event('resize'));
+        }, 250);
     } else {
         el.setAttribute("aria-checked", "true");
         document.querySelectorAll('.completed').forEach(n => n.classList.remove('t-off'));
-        window.dispatchEvent(new Event('resize'));
+        setTimeout( () => {
+          window.dispatchEvent(new Event('resize'));
+        }, 250);
     }
   }, false);
 })();
