@@ -1,12 +1,10 @@
 # Progressive Web App~s~
 
-Training Progress SPA - A brief history
-
 Chronological - Descending
 
 ## [2020-02]
 
-Mobile App Development: The Training Progress SPA is back in action!!
+The Training Progress SPA is back in action!!
 
 ## [2018-06 - 2018-07]
 
