@@ -85,7 +85,7 @@
     },
     {
       "id": "google-3",
-      "active": false,
+      "active": true,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
       "courseProgress": 84,
@@ -3241,7 +3241,7 @@
       "active": true,
       "courseVendorName": "2a— Udemy",
       "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
-      "courseProgress": 11,
+      "courseProgress": 18,
       "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 | Created by Academind by Maximilian Schwarzmüller",
       "courseDateStarted": "Feb 2020",
       "courseDateLast": "Feb '20",
@@ -3253,7 +3253,7 @@
           "courseClassTitle": "Section 1: Introduction",
           "courseClassProgress": 100,
           "courseClassContent": `<p>
-            <ul><li>15 / 15 | 1hr 23min</li></ul>
+            <ul><li>1 hr 23 min</li></ul>
             <ul>
               <li class='progress done'>1. Introduction ___ 2min</li>
               <li class='progress done'>2. What is Flutter? ___ 6min</li>
@@ -3275,9 +3275,9 @@
           `
         }, {
           "courseClassTitle": "Section 2: Flutter Basics [QUIZ APP]",
-          "courseClassProgress": 85,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
-            <ul><li>44 / 46 | 4hr 30min</li></ul>
+            <ul><li>4 hr 30 min</li></ul>
             <ul>
               <li class='progress done'>16. Module Introduction ___ 2min</li>
               <li class='progress done'>17. Creating a New Project ___ 12min</li>
@@ -3318,54 +3318,54 @@
               <li class='progress done'>47. [DART DEEP DIVE] More on 'if' Statements ___ 11min</li>
               <li class='progress done'>48. [DART DEEP DIVE] The 'null' Value ___ 2min</li>
               <li class='progress done'>49. Outputting Widgets Conditionally ___ 2min</li>
-              <li class='progress'>50. Splitting the App Into Widgets ___ 10min</li>
-              <li class='progress'>51. Calculating a Total Score ___ 8min</li>
-              <li class='progress'>52. Getters and 'else-if' ___ 7min</li>
-              <li class='progress'>53. Resetting the Quiz ___ 5min</li>
-              <li class='progress'>Assignment 1: Time to Practice: Flutter Basics</li>
-              <li class='progress'>54. Wrap Up ___ 2min</li>
-              <li class='progress'>55. Module Resources ___ 1min</li>
+              <li class='progress done'>50. Splitting the App Into Widgets ___ 10min</li>
+              <li class='progress done'>51. Calculating a Total Score ___ 8min</li>
+              <li class='progress done'>52. Getters and 'else-if' ___ 7min</li>
+              <li class='progress done'>53. Resetting the Quiz ___ 5min</li>
+              <li class='progress done'>Assignment 1: Time to Practice: Flutter Basics</li>
+              <li class='progress done'>54. Wrap Up ___ 2min</li>
+              <li class='progress done'>55. Module Resources ___ 1min</li>
             </ul>
             </p>
           `
         }, {
-          "courseClassTitle": "Section 3: Running Apps on Different",
-          "courseClassProgress": 9,
+          "courseClassTitle": "Section 3: Running Apps on Different Devices and Debugging Apps",
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
-            <ul><li>6 / 11 | 38min</li></ul>
+            <ul><li>38 min</li></ul>
             <ul>
               <li class='progress done'>56. Module Introduction ___ 2min</li>
-              <li class='progress'>57. Running the App on a Real Android Device ___ 4min</li>
-              <li class='progress'>58. Running the App on an iOS Emulator ___ 6min</li>
-              <li class='progress'>59. Running the App on a Real iOS Device ___ 2min</li>
-              <li class='progress'>60. Working with the Emulators / Using the Emulators ___ 2min</li>
-              <li class='progress'>61. Understanding Error Messages and Fixing Errors ___ 5min</li>
-              <li class='progress'>62. Using the Debugger ___ 6min</li>
-              <li class='progress'>63. Getting Started with the Dart DevTools ___ 5min</li>
-              <li class='progress'>64. Understanding the Repaint Rainbow ___ 3min</li>
-              <li class='progress'>65. Wrapping up the Dart DevTools ___ 2min</li>
-              <li class='progress'>66. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>57. Running the App on a Real Android Device ___ 4min</li>
+              <li class='progress done'>58. Running the App on an iOS Emulator ___ 6min</li>
+              <li class='progress done'>59. Running the App on a Real iOS Device ___ 2min</li>
+              <li class='progress done'>60. Working with the Emulators / Using the Emulators ___ 2min</li>
+              <li class='progress done'>61. Understanding Error Messages and Fixing Errors ___ 5min</li>
+              <li class='progress done'>62. Using the Debugger ___ 6min</li>
+              <li class='progress done'>63. Getting Started with the Dart DevTools ___ 5min</li>
+              <li class='progress done'>64. Understanding the Repaint Rainbow ___ 3min</li>
+              <li class='progress done'>65. Wrapping up the Dart DevTools ___ 2min</li>
+              <li class='progress done'>66. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
-          "courseClassTitle": "Section 4: Widgets, Styling, Adding Logic - Building a Real App",
-          "courseClassProgress": 0,
+          "courseClassTitle": "Section 4: Widgets, Styling, Adding Logic - Building a Real App [Personal Expenses App]",
+          "courseClassProgress": 23,
           "courseClassContent": `<p>
-            <ul><li>0 / 51 | 5hr 1min</li></ul>
+            <ul><li>5 hr 1 min</li></ul>
             <ul>
-              <li class='progress'>67. Module Introduction ___ 3min</li>
-              <li class='progress'>68. An Overview of the Core Flutter Widgets ___ 10min</li>
-              <li class='progress'>69. Planning the App ___ 3min</li>
-              <li class='progress'>70. Combining Widgets ___ 9min</li>
-              <li class='progress'>71. Understanding Column Alignment ___ 6min</li>
-              <li class='progress'>Quiz 6: Columns and Rows</li>
-              <li class='progress'>72. Not a Widget: Adding a Transaction Model and Transaction Data ___ 8min</li>
-              <li class='progress'>73. Mapping Data Into Widgets ___ 4min</li>
-              <li class='progress'>74. Building a Custom List Item ___ 5min</li>
-              <li class='progress'>75. Styling a Container ___ 5min</li>
-              <li class='progress'>76. Styling Text ___ 3min</li>
-              <li class='progress'>77. More Styling! ___ 2min</li>
+              <li class='progress done'>67. Module Introduction ___ 3min</li>
+              <li class='progress done'>68. An Overview of the Core Flutter Widgets ___ 10min</li>
+              <li class='progress done'>69. Planning the App ___ 3min</li>
+              <li class='progress done'>70. Combining Widgets ___ 9min</li>
+              <li class='progress done'>71. Understanding Column Alignment ___ 6min</li>
+              <li class='progress done'>Quiz 6: Columns and Rows</li>
+              <li class='progress done'>72. Not a Widget: Adding a Transaction Model and Transaction Data ___ 8min</li>
+              <li class='progress done'>73. Mapping Data Into Widgets ___ 4min</li>
+              <li class='progress done'>74. Building a Custom List Item ___ 5min</li>
+              <li class='progress done'>75. Styling a Container ___ 5min</li>
+              <li class='progress done'>76. Styling Text ___ 3min</li>
+              <li class='progress done'>77. More Styling! ___ 2min</li>
               <li class='progress'>Quiz 7: Styling Time!</li>
               <li class='progress'>78. Containers vs Columns vs Rows ___ 4min</li>
               <li class='progress'>79. Using String Interpolation ___ 5min</li>
@@ -3412,7 +3412,7 @@
           "courseClassTitle": "Section 5: Responsive and Adaptive User Interfaces and Apps",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 23 | 1hr 25min</li></ul>
+            <ul><li>1 hr 25 min</li></ul>
             <ul>
               <li class='progress'>114. Module Introduction ___ 2min</li>
               <li class='progress'>115. What does 'Responsive' and 'Adaptive' Mean? ___ 6min</li>
@@ -3444,7 +3444,7 @@
           "courseClassTitle": "Section 6: Widget and Flutter Internals - Deep Dive",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 21 | 2hr</li></ul>
+            <ul><li>2 hr</li></ul>
             <ul>
               <li class='progress'>135. Module Introduction ___ 3min</li>
               <li class='progress'>136. The Problem At Hand ___ 3min</li>
@@ -3474,7 +3474,7 @@
           "courseClassTitle": "Section 7: Navigation and Multiple Screens [MEALS APP]",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 33 | 4hr 9min</li></ul>
+            <ul><li>4 hr 9 min</li></ul>
             <ul>
               <li class='progress'>153. Module Introduction ___ 2min</li>
               <li class='progress'>154. Planning the App ___ 5min</li>
@@ -3516,7 +3516,7 @@
           "courseClassTitle": "Section 8: State Management [SHOP APP]",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 33 | 3hr 50min</li></ul>
+            <ul><li>3 hr 50 min</li></ul>
             <ul>
               <li class='progress'>182. Module Introduction ___ 2min</li>
               <li class='progress'>183. Planning the App ___ 7min</li>
@@ -3558,7 +3558,7 @@
           "courseClassTitle": "Section 9: Working with User Input and Forms [SHOP APP]",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 19 | 2hr 3min</li></ul>
+            <ul><li>2 hr 3 min</li></ul>
             <ul>
               <li class='progress'>213. Module Introduction ___ 3min</li>
               <li class='progress'>214. Snackbars and Undoing 'Add to Cart' Actions ___ 11min</li>
@@ -3586,7 +3586,7 @@
           "courseClassTitle": "Section 10: Sending Http Requests [SHOP APP]",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 25 | 2hr 46min</li></ul>
+            <ul><li>2 hr 46 min</li></ul>
             <ul>
               <li class='progress'>232. Module Introduction ___ 2min</li>
               <li class='progress'>233. On-Device vs Web Storage ___ 4min</li>
@@ -3620,7 +3620,7 @@
           "courseClassTitle": "Section 11: Adding User Authentication [SHOP APP]",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 19 | 2hr 25min</li></ul>
+            <ul><li>2 hr 25 min</li></ul>
             <ul>
               <li class='progress'>256. Module Introduction ___ 2min</li>
               <li class='progress'>257. How Authentication Works ___ 6min</li>
@@ -3648,7 +3648,7 @@
           "courseClassTitle": "Section 12: Adding Animations [SHOP APP]",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 12 | 58min</li></ul>
+            <ul><li>58 min</li></ul>
             <ul>
               <li class='progress'>275. Module Introduction ___ 1min</li>
               <li class='progress'>276. Animations From Scratch (Completely Manually Controlled) ___ 14min</li>
@@ -3666,10 +3666,10 @@
             </p>
           `
         }, {
-          "courseClassTitle": "Section 13: Using Native Device Features (Camera, Maps, Location, ...)",
+          "courseClassTitle": "Section 13: Using Native Device Features (Camera, Maps, Location, ...) [Great Places App]",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 20 | 2hr 57min</li></ul>
+            <ul><li>2 hr 57 min</li></ul>
             <ul>
               <li class='progress'>287. Module Introduction ___ 2min</li>
               <li class='progress'>288. Planning the App ___ 3min</li>
@@ -3698,7 +3698,7 @@
           "courseClassTitle": "Section 14: Running Native Swift, ObjectiveC, Java or Kotlin Code",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 7 | 37min</li></ul>
+            <ul><li>37 min</li></ul>
             <ul>
               <li class='progress'>307. Module Introduction ___ 2min</li>
               <li class='progress'>308. Using a Proper Project Setup ___ 1min</li>
@@ -3714,7 +3714,7 @@
           "courseClassTitle": "Section 15: Publishing to the App Stores",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 8 | 35min</li></ul>
+            <ul><li>35 min</li></ul>
             <ul>
               <li class='progress'>314. Module Introduction ___ 2min</li>
               <li class='progress'>315. Preparing the Code ___ 2min</li>
@@ -3731,7 +3731,7 @@
           "courseClassTitle": "Section 16: Roundup and Next Steps",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 3 | 16min</li></ul>
+            <ul><li>16 min</li></ul>
             <ul>
               <li class='progress'>322. You did it! ___ 1min</li>
               <li class='progress'>323. Your Next Steps (To Become an Awesome Developer!) ___ 4min</li>
@@ -3743,7 +3743,7 @@
           "courseClassTitle": "Section 17: Summary of the Course Update",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 3 | 15min</li></ul>
+            <ul><li>15 min</li></ul>
             <ul>
               <li class='progress'>325. What Changed? What's New? Why did I Update the Course? ___ 14min</li>
               <li class='progress'>326. Changes you should not miss ___ 1min</li>
@@ -3754,7 +3754,7 @@
           "courseClassTitle": "Section 35: Roundup",
           "courseClassProgress": 0,
           "courseClassContent": `<p>
-            <ul><li>0 / 1 | 1min</li></ul>
+            <ul><li>1 min</li></ul>
             <ul>
               <li class='progress'>605. Bonus: More Content! ___ 1min</li>
             </ul>

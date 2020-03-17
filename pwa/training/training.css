@@ -860,7 +860,8 @@ main.main {
   }
   .c-courseVendorName,
   .c-courseVendor {
-    color: rgba(0, 106, 176, .65);
+    /*color: rgba(0, 106, 176, .65);*/
+    color: rgb(200, 50, 150);
     font-family: 'Palanquin Dark';
     width: calc(100% - 1rem);
   }
