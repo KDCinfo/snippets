@@ -3239,12 +3239,12 @@
     {
       "id": "udemy-3",
       "active": true,
-      "courseVendorName": "2a— Udemy",
+      "courseVendorName": "2a— Udemy (327 Lectures)",
       "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
-      "courseProgress": 18,
+      "courseProgress": 85,
       "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 | Created by Academind by Maximilian Schwarzmüller",
       "courseDateStarted": "Feb 2020",
-      "courseDateLast": "Feb '20",
+      "courseDateLast": "Mar '20",
       "courseShortVendor": "udemy-courses",
       "courseShortName": "learn-flutter-and-dart",
       "courseURL": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
@@ -3350,7 +3350,7 @@
           `
         }, {
           "courseClassTitle": "Section 4: Widgets, Styling, Adding Logic - Building a Real App [Personal Expenses App]",
-          "courseClassProgress": 23,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>5 hr 1 min</li></ul>
             <ul>
@@ -3366,296 +3366,296 @@
               <li class='progress done'>75. Styling a Container ___ 5min</li>
               <li class='progress done'>76. Styling Text ___ 3min</li>
               <li class='progress done'>77. More Styling! ___ 2min</li>
-              <li class='progress'>Quiz 7: Styling Time!</li>
-              <li class='progress'>78. Containers vs Columns vs Rows ___ 4min</li>
-              <li class='progress'>79. Using String Interpolation ___ 5min</li>
-              <li class='progress'>80. Installing External Packages and Formatting Dates ___ 7min</li>
-              <li class='progress'>81. DateFormat Patterns ___ 1min</li>
-              <li class='progress'>82. Adding Text Input Widgets (TextField) ___ 10min</li>
-              <li class='progress'>83. Fetching User Input ___ 9min</li>
-              <li class='progress'>84. Splitting the App Into Widgets ___ 13min</li>
-              <li class='progress'>85. Connecting Widgets and Managing Data / State ___ 7min</li>
-              <li class='progress'>86. Adding User Transactions to the List ___ 4min</li>
-              <li class='progress'>87. Making the List Scrollable! ___ 6min</li>
-              <li class='progress'>88. Working with ListViews ___ 12min</li>
-              <li class='progress'>Quiz 8: Lists, Scrolling and Text Input</li>
-              <li class='progress'>89. Further Input and Output Styling and Configuration ___ 8min</li>
-              <li class='progress'>90. Adding AppBar Buttons and Floating Action Buttons ___ 5min</li>
-              <li class='progress'>91. Showing a Modal Bottom Sheet ___ 10min</li>
-              <li class='progress'>92. Improving and Styling the Modal Bottom Sheet ___ 5min</li>
-              <li class='progress'>93. Configuring and Using Themes ___ 9min</li>
-              <li class='progress'>94. Custom Fonts and Working with Text Themes ___ 11min</li>
-              <li class='progress'>Quiz 9: Theming</li>
-              <li class='progress'>95. Adding Images to the App ___ 8min</li>
-              <li class='progress'>96. Planning the Chart Widget ___ 4min</li>
-              <li class='progress'>97. Looping Through Lists ___ 14min</li>
-              <li class='progress'>98. More on 'for' Loops ___ 1min</li>
-              <li class='progress'>99. Deriving Recent Transactions ___ 7min</li>
-              <li class='progress'>100. Creating Bars for our Chart ___ 11min</li>
-              <li class='progress'>101. Populating the Chart with Values ___ 6min</li>
-              <li class='progress'>102. Finishing the Chart Bars ___ 5min</li>
-              <li class='progress'>103. Flexible and Expanded: Deep Dive ___ 10min</li>
-              <li class='progress'>104. Adding a ListTile Widget ___ 5min</li>
-              <li class='progress'>105. Improving the Overall Chart ___ 3min</li>
-              <li class='progress'>106. Widgets and Configuring Widgets - Summary / Overview ___ 5min</li>
-              <li class='progress'>107. Getting Started with Date Selection ___ 5min</li>
-              <li class='progress'>108. Showing a DatePicker ___ 11min</li>
-              <li class='progress'>109. Adding Transactions with a Date ___ 3min</li>
-              <li class='progress'>110. Deleting Transactions and Using IconButtons ___ 7min</li>
-              <li class='progress'>111. Final Polishing! ___ 6min</li>
-              <li class='progress'>112. Wrap Up ___ 4min</li>
-              <li class='progress'>113. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>Quiz 7: Styling Time!</li>
+              <li class='progress done'>78. Containers vs Columns vs Rows ___ 4min</li>
+              <li class='progress done'>79. Using String Interpolation ___ 5min</li>
+              <li class='progress done'>80. Installing External Packages and Formatting Dates ___ 7min</li>
+              <li class='progress done'>81. DateFormat Patterns ___ 1min</li>
+              <li class='progress done'>82. Adding Text Input Widgets (TextField) ___ 10min</li>
+              <li class='progress done'>83. Fetching User Input ___ 9min</li>
+              <li class='progress done'>84. Splitting the App Into Widgets ___ 13min</li>
+              <li class='progress done'>85. Connecting Widgets and Managing Data / State ___ 7min</li>
+              <li class='progress done'>86. Adding User Transactions to the List ___ 4min</li>
+              <li class='progress done'>87. Making the List Scrollable! ___ 6min</li>
+              <li class='progress done'>88. Working with ListViews ___ 12min</li>
+              <li class='progress done'>Quiz 8: Lists, Scrolling and Text Input</li>
+              <li class='progress done'>89. Further Input and Output Styling and Configuration ___ 8min</li>
+              <li class='progress done'>90. Adding AppBar Buttons and Floating Action Buttons ___ 5min</li>
+              <li class='progress done'>91. Showing a Modal Bottom Sheet ___ 10min</li>
+              <li class='progress done'>92. Improving and Styling the Modal Bottom Sheet ___ 5min</li>
+              <li class='progress done'>93. Configuring and Using Themes ___ 9min</li>
+              <li class='progress done'>94. Custom Fonts and Working with Text Themes ___ 11min</li>
+              <li class='progress done'>Quiz 9: Theming</li>
+              <li class='progress done'>95. Adding Images to the App ___ 8min</li>
+              <li class='progress done'>96. Planning the Chart Widget ___ 4min</li>
+              <li class='progress done'>97. Looping Through Lists ___ 14min</li>
+              <li class='progress done'>98. More on 'for' Loops ___ 1min</li>
+              <li class='progress done'>99. Deriving Recent Transactions ___ 7min</li>
+              <li class='progress done'>100. Creating Bars for our Chart ___ 11min</li>
+              <li class='progress done'>101. Populating the Chart with Values ___ 6min</li>
+              <li class='progress done'>102. Finishing the Chart Bars ___ 5min</li>
+              <li class='progress done'>103. Flexible and Expanded: Deep Dive ___ 10min</li>
+              <li class='progress done'>104. Adding a ListTile Widget ___ 5min</li>
+              <li class='progress done'>105. Improving the Overall Chart ___ 3min</li>
+              <li class='progress done'>106. Widgets and Configuring Widgets - Summary / Overview ___ 5min</li>
+              <li class='progress done'>107. Getting Started with Date Selection ___ 5min</li>
+              <li class='progress done'>108. Showing a DatePicker ___ 11min</li>
+              <li class='progress done'>109. Adding Transactions with a Date ___ 3min</li>
+              <li class='progress done'>110. Deleting Transactions and Using IconButtons ___ 7min</li>
+              <li class='progress done'>111. Final Polishing! ___ 6min</li>
+              <li class='progress done'>112. Wrap Up ___ 4min</li>
+              <li class='progress done'>113. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 5: Responsive and Adaptive User Interfaces and Apps",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>1 hr 25 min</li></ul>
             <ul>
-              <li class='progress'>114. Module Introduction ___ 2min</li>
-              <li class='progress'>115. What does 'Responsive' and 'Adaptive' Mean? ___ 6min</li>
-              <li class='progress'>116. Examples: Where we could improve the App! ___ 3min</li>
-              <li class='progress'>117. Calculating Sizes Dynamically ___ 9min</li>
-              <li class='progress'>118. Working with the 'textScaleFactor' ___ 1min</li>
-              <li class='progress'>119. Using the LayoutBuilder Widget ___ 8min</li>
-              <li class='progress'>Quiz 10: Responsiveness</li>
-              <li class='progress'>120. Controlling the Device Orientation ___ 3min</li>
-              <li class='progress'>121. Rendering Alternative Landscape Content - 1 ___ 5min</li>
-              <li class='progress'>122. Finishing Landscape Mode ___ 3min</li>
-              <li class='progress'>123. Showing Different Content Based on Device Orientation ___ 6min</li>
-              <li class='progress'>124. Respecting the Softkeyboard Insets ___ 4min</li>
-              <li class='progress'>125. Using the Device Size in Conditions ___ 4min</li>
-              <li class='progress'>126. Managing the MediaQuery Object ___ 2min</li>
-              <li class='progress'>127. Checking the Device Platform ___ 6min</li>
-              <li class='progress'>128. Using Cupertino (iOS) Widgets ___ 9min</li>
-              <li class='progress'>129. Using the SafeArea ___ 2min</li>
-              <li class='progress'>130. More Cupertino Styles ___ 3min</li>
-              <li class='progress'>131. Using Cupertino Buttons ___ 3min</li>
-              <li class='progress'>132. Creating Custom Adaptive Widgets ___ 5min</li>
-              <li class='progress'>Quiz 11: Adaptive Widgets</li>
-              <li class='progress'>133. Wrap Up ___ 2min</li>
-              <li class='progress'>134. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>114. Module Introduction ___ 2min</li>
+              <li class='progress done'>115. What does 'Responsive' and 'Adaptive' Mean? ___ 6min</li>
+              <li class='progress done'>116. Examples: Where we could improve the App! ___ 3min</li>
+              <li class='progress done'>117. Calculating Sizes Dynamically ___ 9min</li>
+              <li class='progress done'>118. Working with the 'textScaleFactor' ___ 1min</li>
+              <li class='progress done'>119. Using the LayoutBuilder Widget ___ 8min</li>
+              <li class='progress done'>Quiz 10: Responsiveness</li>
+              <li class='progress done'>120. Controlling the Device Orientation ___ 3min</li>
+              <li class='progress done'>121. Rendering Alternative Landscape Content - 1 ___ 5min</li>
+              <li class='progress done'>122. Finishing Landscape Mode ___ 3min</li>
+              <li class='progress done'>123. Showing Different Content Based on Device Orientation ___ 6min</li>
+              <li class='progress done'>124. Respecting the Softkeyboard Insets ___ 4min</li>
+              <li class='progress done'>125. Using the Device Size in Conditions ___ 4min</li>
+              <li class='progress done'>126. Managing the MediaQuery Object ___ 2min</li>
+              <li class='progress done'>127. Checking the Device Platform ___ 6min</li>
+              <li class='progress done'>128. Using Cupertino (iOS) Widgets ___ 9min</li>
+              <li class='progress done'>129. Using the SafeArea ___ 2min</li>
+              <li class='progress done'>130. More Cupertino Styles ___ 3min</li>
+              <li class='progress done'>131. Using Cupertino Buttons ___ 3min</li>
+              <li class='progress done'>132. Creating Custom Adaptive Widgets ___ 5min</li>
+              <li class='progress done'>Quiz 11: Adaptive Widgets</li>
+              <li class='progress done'>133. Wrap Up ___ 2min</li>
+              <li class='progress done'>134. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 6: Widget and Flutter Internals - Deep Dive",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>2 hr</li></ul>
             <ul>
-              <li class='progress'>135. Module Introduction ___ 3min</li>
-              <li class='progress'>136. The Problem At Hand ___ 3min</li>
-              <li class='progress'>137. Widget Tree and Element Tree - What, Why and How? ___ 11min</li>
-              <li class='progress'>138. How Flutter Rebuilds and Repaints the Screen ___ 9min</li>
-              <li class='progress'>139. How Flutter Executes build() ___ 9min</li>
-              <li class='progress'>140. Using 'const' Widgets and Constructors ___ 11min</li>
-              <li class='progress'>Quiz 12: Widgets, Elements, build()</li>
-              <li class='progress'>141. Writing Good Code ___ 4min</li>
-              <li class='progress'>142. Extracting Widgets ___ 6min</li>
-              <li class='progress'>143. Using Builder Methods ___ 10min</li>
-              <li class='progress'>Assignment 2: Time to Practice: Builder Methods</li>
-              <li class='progress'>144. Understanding the Widget Lifecycle ___ 13min</li>
-              <li class='progress'>145. Calling super.initState() etc. ___ 1min</li>
-              <li class='progress'>146. Understanding the App Lifecycle ___ 9min</li>
-              <li class='progress'>147. Understanding Context ___ 7min</li>
-              <li class='progress'>148. A Problem with Lists and Stateful Widgets ___ 6min</li>
-              <li class='progress'>149. Understanding the Problem Root ___ 5min</li>
-              <li class='progress'>150. Using Keys ___ 11min</li>
-              <li class='progress'>Quiz 13: Keys, Lists, Stateful Widgets</li>
-              <li class='progress'>151. Wrap Up ___ 2min</li>
-              <li class='progress'>152. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>135. Module Introduction ___ 3min</li>
+              <li class='progress done'>136. The Problem At Hand ___ 3min</li>
+              <li class='progress done'>137. Widget Tree and Element Tree - What, Why and How? ___ 11min</li>
+              <li class='progress done'>138. How Flutter Rebuilds and Repaints the Screen ___ 9min</li>
+              <li class='progress done'>139. How Flutter Executes build() ___ 9min</li>
+              <li class='progress done'>140. Using 'const' Widgets and Constructors ___ 11min</li>
+              <li class='progress done'>Quiz 12: Widgets, Elements, build()</li>
+              <li class='progress done'>141. Writing Good Code ___ 4min</li>
+              <li class='progress done'>142. Extracting Widgets ___ 6min</li>
+              <li class='progress done'>143. Using Builder Methods ___ 10min</li>
+              <li class='progress done'>Assignment 2: Time to Practice: Builder Methods</li>
+              <li class='progress done'>144. Understanding the Widget Lifecycle ___ 13min</li>
+              <li class='progress done'>145. Calling super.initState() etc. ___ 1min</li>
+              <li class='progress done'>146. Understanding the App Lifecycle ___ 9min</li>
+              <li class='progress done'>147. Understanding Context ___ 7min</li>
+              <li class='progress done'>148. A Problem with Lists and Stateful Widgets ___ 6min</li>
+              <li class='progress done'>149. Understanding the Problem Root ___ 5min</li>
+              <li class='progress done'>150. Using Keys ___ 11min</li>
+              <li class='progress done'>Quiz 13: Keys, Lists, Stateful Widgets</li>
+              <li class='progress done'>151. Wrap Up ___ 2min</li>
+              <li class='progress done'>152. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 7: Navigation and Multiple Screens [MEALS APP]",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>4 hr 9 min</li></ul>
             <ul>
-              <li class='progress'>153. Module Introduction ___ 2min</li>
-              <li class='progress'>154. Planning the App ___ 5min</li>
-              <li class='progress'>155. Starting With The App - Adding Base Data ___ 11min</li>
-              <li class='progress'>156. Creating a Grid and Working with Linear Gradients ___ 8min</li>
-              <li class='progress'>157. Registering a Screen as the Main Screen ___ 3min</li>
-              <li class='progress'>158. Styling and Theming ___ 7min</li>
-              <li class='progress'>159. Navigating to a New Page ___ 10min</li>
-              <li class='progress'>160. Passing Data via the Constructor ___ 3min</li>
-              <li class='progress'>161. Using Named Routes and Passing Data With Named Routes ___ 7min</li>
-              <li class='progress'>Quiz 14: Screens and Navigation</li>
-              <li class='progress'>162. Diving Deeper into Named Routes ___ 3min</li>
-              <li class='progress'>163. Adding a Meal Model and Data ___ 13min</li>
-              <li class='progress'>164. Selecting Meals for a Chosen Category ___ 5min</li>
-              <li class='progress'>165. Displaying Recipe Items and Using Network Images ___ 15min</li>
-              <li class='progress'>166. Finishing the Meal List Item ___ 15min</li>
-              <li class='progress'>167. Navigating to the Meal Detail Page ___ 7min</li>
-              <li class='progress'>168. onGenerateRoute and onUnknownRoute ___ 5min</li>
-              <li class='progress'>Quiz 15: More Navigation!</li>
-              <li class='progress'>169. Finishing the Meal Detail Page ___ 18min</li>
-              <li class='progress'>170. Adding a TabBar to the Appbar ___ 10min</li>
-              <li class='progress'>171. Adding a Bottom TabBar ___ 13min</li>
-              <li class='progress'>172. Adding a Custom Drawer ___ 13min</li>
-              <li class='progress'>173. Adding Links to the Drawer ___ 4min</li>
-              <li class='progress'>Quiz 16: Tabs and Drawers!</li>
-              <li class='progress'>174. Replacing Pages (Instead of Pushing) ___ 4min</li>
-              <li class='progress'>175. Popping Pages and Passing Data Back ___ 17min</li>
-              <li class='progress'>Quiz 17: Replacing, Popping and Data</li>
-              <li class='progress'>176. Adding Filter Switches ___ 9min</li>
-              <li class='progress'>177. Adding Filtering Logic ___ 16min</li>
-              <li class='progress'>178. Adding a 'Mark as Favorite' Feature ___ 20min</li>
-              <li class='progress'>179. A Problem! ___ 3min</li>
-              <li class='progress'>180. Wrap Up ___ 3min</li>
-              <li class='progress'>181. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>153. Module Introduction ___ 2min</li>
+              <li class='progress done'>154. Planning the App ___ 5min</li>
+              <li class='progress done'>155. Starting With The App - Adding Base Data ___ 11min</li>
+              <li class='progress done'>156. Creating a Grid and Working with Linear Gradients ___ 8min</li>
+              <li class='progress done'>157. Registering a Screen as the Main Screen ___ 3min</li>
+              <li class='progress done'>158. Styling and Theming ___ 7min</li>
+              <li class='progress done'>159. Navigating to a New Page ___ 10min</li>
+              <li class='progress done'>160. Passing Data via the Constructor ___ 3min</li>
+              <li class='progress done'>161. Using Named Routes and Passing Data With Named Routes ___ 7min</li>
+              <li class='progress done'>Quiz 14: Screens and Navigation</li>
+              <li class='progress done'>162. Diving Deeper into Named Routes ___ 3min</li>
+              <li class='progress done'>163. Adding a Meal Model and Data ___ 13min</li>
+              <li class='progress done'>164. Selecting Meals for a Chosen Category ___ 5min</li>
+              <li class='progress done'>165. Displaying Recipe Items and Using Network Images ___ 15min</li>
+              <li class='progress done'>166. Finishing the Meal List Item ___ 15min</li>
+              <li class='progress done'>167. Navigating to the Meal Detail Page ___ 7min</li>
+              <li class='progress done'>168. onGenerateRoute and onUnknownRoute ___ 5min</li>
+              <li class='progress done'>Quiz 15: More Navigation!</li>
+              <li class='progress done'>169. Finishing the Meal Detail Page ___ 18min</li>
+              <li class='progress done'>170. Adding a TabBar to the Appbar ___ 10min</li>
+              <li class='progress done'>171. Adding a Bottom TabBar ___ 13min</li>
+              <li class='progress done'>172. Adding a Custom Drawer ___ 13min</li>
+              <li class='progress done'>173. Adding Links to the Drawer ___ 4min</li>
+              <li class='progress done'>Quiz 16: Tabs and Drawers!</li>
+              <li class='progress done'>174. Replacing Pages (Instead of Pushing) ___ 4min</li>
+              <li class='progress done'>175. Popping Pages and Passing Data Back ___ 17min</li>
+              <li class='progress done'>Quiz 17: Replacing, Popping and Data</li>
+              <li class='progress done'>176. Adding Filter Switches ___ 9min</li>
+              <li class='progress done'>177. Adding Filtering Logic ___ 16min</li>
+              <li class='progress done'>178. Adding a 'Mark as Favorite' Feature ___ 20min</li>
+              <li class='progress done'>179. A Problem! ___ 3min</li>
+              <li class='progress done'>180. Wrap Up ___ 3min</li>
+              <li class='progress done'>181. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 8: State Management [SHOP APP]",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>3 hr 50 min</li></ul>
             <ul>
-              <li class='progress'>182. Module Introduction ___ 2min</li>
-              <li class='progress'>183. Planning the App ___ 7min</li>
-              <li class='progress'>184. Defining a Data Model ___ 7min</li>
-              <li class='progress'>185. Working on the 'Products' Grid and Item Widgets ___ 16min</li>
-              <li class='progress'>186. Styling and Theming the App ___ 5min</li>
-              <li class='progress'>187. Adding Navigation to the App ___ 11min</li>
-              <li class='progress'>188. Why State Management? And what is 'State' and 'State Management'? ___ 6min</li>
-              <li class='progress'>189. Understanding the 'Provider' Package and Approach ___ 3min</li>
-              <li class='progress'>190. Using the Right Provider Package Version ___ 1min</li>
-              <li class='progress'>191. Working with Providers and Listeners ___ 20min</li>
-              <li class='progress'>192. [DART DEEP DIVE] Inheritance ('extends') vs Mixins ('with') ___ 6min</li>
-              <li class='progress'>193. Providing non-Objects ___ 1min</li>
-              <li class='progress'>194. Listening in Different Places and Ways ___ 6min</li>
-              <li class='progress'>Quiz 18: State, State Management and The Provider Package/ Approach</li>
-              <li class='progress'>195. Using Nested Models and Providers ___ 14min</li>
-              <li class='progress'>196. Exploring Alternative Provider Syntaxes ___ 5min</li>
-              <li class='progress'>197. Using 'Consumer' instead of 'Provider.of' ___ 7min</li>
-              <li class='progress'>198. Local State vs App-wide State ___ 16min</li>
-              <li class='progress'>199. Adding Shopping Cart Data ___ 9min</li>
-              <li class='progress'>Quiz 19: More on State Management and The Provider Package</li>
-              <li class='progress'>200. Working with Multiple Providers ___ 3min</li>
-              <li class='progress'>201. Connecting the Cart Provider ___ 12min</li>
-              <li class='progress'>202. Working on the Shopping Cart and Displaying a Total ___ 12min</li>
-              <li class='progress'>203. Displaying a List of Cart Items ___ 11min</li>
-              <li class='progress'>204. Making Cart Items Dismissible ___ 9min</li>
-              <li class='progress'>205. Adding Product Detail Data ___ 5min</li>
-              <li class='progress'>206. Providing an Orders Object ___ 7min</li>
-              <li class='progress'>207. Adding Orders ___ 3min</li>
-              <li class='progress'>208. Adding an Orders Screen ___ 8min</li>
-              <li class='progress'>209. Using a Side Drawer ___ 6min</li>
-              <li class='progress'>210. Making Orders Expandable and Stateful Widgets vs Providers ___ 10min</li>
-              <li class='progress'>211. Wrap Up ___ 3min</li>
-              <li class='progress'>212. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>182. Module Introduction ___ 2min</li>
+              <li class='progress done'>183. Planning the App ___ 7min</li>
+              <li class='progress done'>184. Defining a Data Model ___ 7min</li>
+              <li class='progress done'>185. Working on the 'Products' Grid and Item Widgets ___ 16min</li>
+              <li class='progress done'>186. Styling and Theming the App ___ 5min</li>
+              <li class='progress done'>187. Adding Navigation to the App ___ 11min</li>
+              <li class='progress done'>188. Why State Management? And what is 'State' and 'State Management'? ___ 6min</li>
+              <li class='progress done'>189. Understanding the 'Provider' Package and Approach ___ 3min</li>
+              <li class='progress done'>190. Using the Right Provider Package Version ___ 1min</li>
+              <li class='progress done'>191. Working with Providers and Listeners ___ 20min</li>
+              <li class='progress done'>192. [DART DEEP DIVE] Inheritance ('extends') vs Mixins ('with') ___ 6min</li>
+              <li class='progress done'>193. Providing non-Objects ___ 1min</li>
+              <li class='progress done'>194. Listening in Different Places and Ways ___ 6min</li>
+              <li class='progress done'>Quiz 18: State, State Management and The Provider Package/ Approach</li>
+              <li class='progress done'>195. Using Nested Models and Providers ___ 14min</li>
+              <li class='progress done'>196. Exploring Alternative Provider Syntaxes ___ 5min</li>
+              <li class='progress done'>197. Using 'Consumer' instead of 'Provider.of' ___ 7min</li>
+              <li class='progress done'>198. Local State vs App-wide State ___ 16min</li>
+              <li class='progress done'>199. Adding Shopping Cart Data ___ 9min</li>
+              <li class='progress done'>Quiz 19: More on State Management and The Provider Package</li>
+              <li class='progress done'>200. Working with Multiple Providers ___ 3min</li>
+              <li class='progress done'>201. Connecting the Cart Provider ___ 12min</li>
+              <li class='progress done'>202. Working on the Shopping Cart and Displaying a Total ___ 12min</li>
+              <li class='progress done'>203. Displaying a List of Cart Items ___ 11min</li>
+              <li class='progress done'>204. Making Cart Items Dismissible ___ 9min</li>
+              <li class='progress done'>205. Adding Product Detail Data ___ 5min</li>
+              <li class='progress done'>206. Providing an Orders Object ___ 7min</li>
+              <li class='progress done'>207. Adding Orders ___ 3min</li>
+              <li class='progress done'>208. Adding an Orders Screen ___ 8min</li>
+              <li class='progress done'>209. Using a Side Drawer ___ 6min</li>
+              <li class='progress done'>210. Making Orders Expandable and Stateful Widgets vs Providers ___ 10min</li>
+              <li class='progress done'>211. Wrap Up ___ 3min</li>
+              <li class='progress done'>212. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 9: Working with User Input and Forms [SHOP APP]",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>2 hr 3 min</li></ul>
             <ul>
-              <li class='progress'>213. Module Introduction ___ 3min</li>
-              <li class='progress'>214. Snackbars and Undoing 'Add to Cart' Actions ___ 11min</li>
-              <li class='progress'>215. Showing Alert Dialogs ___ 7min</li>
-              <li class='progress'>216. Adding a 'Manage Products' Page ___ 14min</li>
-              <li class='progress'>217. 'Edit Product' Screen and A Problem ___ 5min</li>
-              <li class='progress'>218. Using Forms and Working with Form Inputs ___ 8min</li>
-              <li class='progress'>219. ListView or Column ___ 1min</li>
-              <li class='progress'>220. Managing Form Input Focus ___ 5min</li>
-              <li class='progress'>221. Multiline Inputs and Disposing Objects ___ 4min</li>
-              <li class='progress'>222. Image Input and Image Preview ___ 13min</li>
-              <li class='progress'>223. Submitting Forms ___ 12min</li>
-              <li class='progress'>224. Validating User Input ___ 4min</li>
-              <li class='progress'>225. Adding Validation to All Inputs ___ 10min</li>
-              <li class='progress'>226. [OPTIONAL] Working with Regular Expressions ___ 1min</li>
-              <li class='progress'>227. Saving New Products ___ 4min</li>
-              <li class='progress'>228. Time to Update Products! ___ 16min</li>
-              <li class='progress'>229. Allowing Users to Delete Products ___ 4min</li>
-              <li class='progress'>230. Wrap Up ___ 1min</li>
-              <li class='progress'>231. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>213. Module Introduction ___ 3min</li>
+              <li class='progress done'>214. Snackbars and Undoing 'Add to Cart' Actions ___ 11min</li>
+              <li class='progress done'>215. Showing Alert Dialogs ___ 7min</li>
+              <li class='progress done'>216. Adding a 'Manage Products' Page ___ 14min</li>
+              <li class='progress done'>217. 'Edit Product' Screen and A Problem ___ 5min</li>
+              <li class='progress done'>218. Using Forms and Working with Form Inputs ___ 8min</li>
+              <li class='progress done'>219. ListView or Column ___ 1min</li>
+              <li class='progress done'>220. Managing Form Input Focus ___ 5min</li>
+              <li class='progress done'>221. Multiline Inputs and Disposing Objects ___ 4min</li>
+              <li class='progress done'>222. Image Input and Image Preview ___ 13min</li>
+              <li class='progress done'>223. Submitting Forms ___ 12min</li>
+              <li class='progress done'>224. Validating User Input ___ 4min</li>
+              <li class='progress done'>225. Adding Validation to All Inputs ___ 10min</li>
+              <li class='progress done'>226. [OPTIONAL] Working with Regular Expressions ___ 1min</li>
+              <li class='progress done'>227. Saving New Products ___ 4min</li>
+              <li class='progress done'>228. Time to Update Products! ___ 16min</li>
+              <li class='progress done'>229. Allowing Users to Delete Products ___ 4min</li>
+              <li class='progress done'>230. Wrap Up ___ 1min</li>
+              <li class='progress done'>231. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 10: Sending Http Requests [SHOP APP]",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>2 hr 46 min</li></ul>
             <ul>
-              <li class='progress'>232. Module Introduction ___ 2min</li>
-              <li class='progress'>233. On-Device vs Web Storage ___ 4min</li>
-              <li class='progress'>234. How to Connect Flutter to a Database ___ 4min</li>
-              <li class='progress'>235. Preparing Our Backend ___ 5min</li>
-              <li class='progress'>236. How To Send Http Requests ___ 6min</li>
-              <li class='progress'>237. Sending POST Requests ___ 11min</li>
-              <li class='progress'>238. Working with Futures in Dart ___ 8min</li>
-              <li class='progress'>239. [DART DEEP DIVE] Futures and Async Code ___ 9min</li>
-              <li class='progress'>Quiz 20: Http Requests and Futures</li>
-              <li class='progress'>240. Showing a Loading Indicator ___ 7min</li>
-              <li class='progress'>241. Handling Errors Gracefully ___ 12min</li>
-              <li class='progress'>242. Working with 'async' and 'await' ___ 10min</li>
-              <li class='progress'>243. Fetching Data, initState and 'of(context)' ___ 8min</li>
-              <li class='progress'>244. How to Transform Fetched Data ___ 8min</li>
-              <li class='progress'>245. Implementing Pull-to-Refresh ___ 4min</li>
-              <li class='progress'>246. Updating Data via PATCH Requests ___ 7min</li>
-              <li class='progress'>247. Utilizing Optimistic Updating ___ 8min</li>
-              <li class='progress'>248. Creating Custom Exceptions and More Error Handling ___ 9min</li>
-              <li class='progress'>249. A Challenge For You! ___ 2min</li>
-              <li class='progress'>250. Updating the 'Favorite' Status Optimistically ___ 7min</li>
-              <li class='progress'>251. Storing Orders in the Web ___ 11min</li>
-              <li class='progress'>252. Fetching Orders and Fixing an Issue ___ 12min</li>
-              <li class='progress'>253. Using the 'FutureBuilder' Widget and Improving the Code ___ 10min</li>
-              <li class='progress'>254. Wrap Up ___ 2min</li>
-              <li class='progress'>255. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>232. Module Introduction ___ 2min</li>
+              <li class='progress done'>233. On-Device vs Web Storage ___ 4min</li>
+              <li class='progress done'>234. How to Connect Flutter to a Database ___ 4min</li>
+              <li class='progress done'>235. Preparing Our Backend ___ 5min</li>
+              <li class='progress done'>236. How To Send Http Requests ___ 6min</li>
+              <li class='progress done'>237. Sending POST Requests ___ 11min</li>
+              <li class='progress done'>238. Working with Futures in Dart ___ 8min</li>
+              <li class='progress done'>239. [DART DEEP DIVE] Futures and Async Code ___ 9min</li>
+              <li class='progress done'>Quiz 20: Http Requests and Futures</li>
+              <li class='progress done'>240. Showing a Loading Indicator ___ 7min</li>
+              <li class='progress done'>241. Handling Errors Gracefully ___ 12min</li>
+              <li class='progress done'>242. Working with 'async' and 'await' ___ 10min</li>
+              <li class='progress done'>243. Fetching Data, initState and 'of(context)' ___ 8min</li>
+              <li class='progress done'>244. How to Transform Fetched Data ___ 8min</li>
+              <li class='progress done'>245. Implementing Pull-to-Refresh ___ 4min</li>
+              <li class='progress done'>246. Updating Data via PATCH Requests ___ 7min</li>
+              <li class='progress done'>247. Utilizing Optimistic Updating ___ 8min</li>
+              <li class='progress done'>248. Creating Custom Exceptions and More Error Handling ___ 9min</li>
+              <li class='progress done'>249. A Challenge For You! ___ 2min</li>
+              <li class='progress done'>250. Updating the 'Favorite' Status Optimistically ___ 7min</li>
+              <li class='progress done'>251. Storing Orders in the Web ___ 11min</li>
+              <li class='progress done'>252. Fetching Orders and Fixing an Issue ___ 12min</li>
+              <li class='progress done'>253. Using the 'FutureBuilder' Widget and Improving the Code ___ 10min</li>
+              <li class='progress done'>254. Wrap Up ___ 2min</li>
+              <li class='progress done'>255. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 11: Adding User Authentication [SHOP APP]",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>2 hr 25 min</li></ul>
             <ul>
-              <li class='progress'>256. Module Introduction ___ 2min</li>
-              <li class='progress'>257. How Authentication Works ___ 6min</li>
-              <li class='progress'>258. Prepare Backend ___ 4min</li>
-              <li class='progress'>259. Adding the Auth Screen ___ 16min</li>
-              <li class='progress'>260. Adding User Signup ___ 14min</li>
-              <li class='progress'>261. Allowing Users to Log In ___ 6min</li>
-              <li class='progress'>262. Handling Authentication Errors ___ 13min</li>
-              <li class='progress'>263. Managing the Auth Token Locally (in the App) ___ 11min</li>
-              <li class='progress'>264. Avoiding Issues with Provider Package ___ 1min</li>
-              <li class='progress'>265. Using the 'ProxyProvider' and Attaching the Token to Outgoing Http Request ___ 9min</li>
-              <li class='progress'>266. Adding the Token to All Requests ___ 9min</li>
-              <li class='progress'>267. Connecting the 'Favorite' Status to Users ___ 10min</li>
-              <li class='progress'>268. Attaching Products to Users and Filtering By Creator ___ 13min</li>
-              <li class='progress'>269. Attaching Orders to Users ___ 3min</li>
-              <li class='progress'>270. Adding a Logout Functionality ___ 4min</li>
-              <li class='progress'>271. Automatically Logging Users Out (After Some Time) ___ 5min</li>
-              <li class='progress'>272. Automatically Logging Users In ___ 18min</li>
-              <li class='progress'>273. Wrap Up ___ 2min</li>
-              <li class='progress'>274. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>256. Module Introduction ___ 2min</li>
+              <li class='progress done'>257. How Authentication Works ___ 6min</li>
+              <li class='progress done'>258. Prepare Backend ___ 4min</li>
+              <li class='progress done'>259. Adding the Auth Screen ___ 16min</li>
+              <li class='progress done'>260. Adding User Signup ___ 14min</li>
+              <li class='progress done'>261. Allowing Users to Log In ___ 6min</li>
+              <li class='progress done'>262. Handling Authentication Errors ___ 13min</li>
+              <li class='progress done'>263. Managing the Auth Token Locally (in the App) ___ 11min</li>
+              <li class='progress done'>264. Avoiding Issues with Provider Package ___ 1min</li>
+              <li class='progress done'>265. Using the 'ProxyProvider' and Attaching the Token to Outgoing Http Request ___ 9min</li>
+              <li class='progress done'>266. Adding the Token to All Requests ___ 9min</li>
+              <li class='progress done'>267. Connecting the 'Favorite' Status to Users ___ 10min</li>
+              <li class='progress done'>268. Attaching Products to Users and Filtering By Creator ___ 13min</li>
+              <li class='progress done'>269. Attaching Orders to Users ___ 3min</li>
+              <li class='progress done'>270. Adding a Logout Functionality ___ 4min</li>
+              <li class='progress done'>271. Automatically Logging Users Out (After Some Time) ___ 5min</li>
+              <li class='progress done'>272. Automatically Logging Users In ___ 18min</li>
+              <li class='progress done'>273. Wrap Up ___ 2min</li>
+              <li class='progress done'>274. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 12: Adding Animations [SHOP APP]",
-          "courseClassProgress": 0,
+          "courseClassProgress": 50,
           "courseClassContent": `<p>
             <ul><li>58 min</li></ul>
             <ul>
-              <li class='progress'>275. Module Introduction ___ 1min</li>
-              <li class='progress'>276. Animations From Scratch (Completely Manually Controlled) ___ 14min</li>
-              <li class='progress'>277. Using the 'AnimatedBuilder' Widget ___ 4min</li>
-              <li class='progress'>278. Working with the 'AnimatedContainer' ___ 3min</li>
-              <li class='progress'>279. More Built-in Animation and Transition Widgets ___ 9min</li>
-              <li class='progress'>280. Fading Loaded Images In (And Showing a Placeholder) ___ 4min</li>
+              <li class='progress done'>275. Module Introduction ___ 1min</li>
+              <li class='progress done'>276. Animations From Scratch (Completely Manually Controlled) ___ 14min</li>
+              <li class='progress done'>277. Using the 'AnimatedBuilder' Widget ___ 4min</li>
+              <li class='progress done'>278. Working with the 'AnimatedContainer' ___ 3min</li>
+              <li class='progress done'>279. More Built-in Animation and Transition Widgets ___ 9min</li>
+              <li class='progress done'>280. Fading Loaded Images In (And Showing a Placeholder) ___ 4min</li>
               <li class='progress'>281. Adding a 'Hero' Transition ___ 3min</li>
               <li class='progress'>282. Working with Slivers ___ 6min</li>
               <li class='progress'>283. Practice: Animating Order Boxes ___ 4min</li>
