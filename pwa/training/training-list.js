@@ -3241,7 +3241,7 @@
       "active": true,
       "courseVendorName": "2a— Udemy (327 Lectures)",
       "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
-      "courseProgress": 85,
+      "courseProgress": 88,
       "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 | Created by Academind by Maximilian Schwarzmüller",
       "courseDateStarted": "Feb 2020",
       "courseDateLast": "Mar '20",
@@ -3646,7 +3646,7 @@
           `
         }, {
           "courseClassTitle": "Section 12: Adding Animations [SHOP APP]",
-          "courseClassProgress": 50,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>58 min</li></ul>
             <ul>
@@ -3656,24 +3656,24 @@
               <li class='progress done'>278. Working with the 'AnimatedContainer' ___ 3min</li>
               <li class='progress done'>279. More Built-in Animation and Transition Widgets ___ 9min</li>
               <li class='progress done'>280. Fading Loaded Images In (And Showing a Placeholder) ___ 4min</li>
-              <li class='progress'>281. Adding a 'Hero' Transition ___ 3min</li>
-              <li class='progress'>282. Working with Slivers ___ 6min</li>
-              <li class='progress'>283. Practice: Animating Order Boxes ___ 4min</li>
-              <li class='progress'>284. Implementing Custom Route Transitions ___ 10min</li>
-              <li class='progress'>285. Wrap Up ___ 1min</li>
-              <li class='progress'>286. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>281. Adding a 'Hero' Transition ___ 3min</li>
+              <li class='progress done'>282. Working with Slivers ___ 6min</li>
+              <li class='progress done'>283. Practice: Animating Order Boxes ___ 4min</li>
+              <li class='progress done'>284. Implementing Custom Route Transitions ___ 10min</li>
+              <li class='progress done'>285. Wrap Up ___ 1min</li>
+              <li class='progress done'>286. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 13: Using Native Device Features (Camera, Maps, Location, ...) [Great Places App]",
-          "courseClassProgress": 0,
+          "courseClassProgress": 15,
           "courseClassContent": `<p>
             <ul><li>2 hr 57 min</li></ul>
             <ul>
-              <li class='progress'>287. Module Introduction ___ 2min</li>
-              <li class='progress'>288. Planning the App ___ 3min</li>
-              <li class='progress'>289. PlaceList and Place Provider Setup ___ 13min</li>
+              <li class='progress done'>287. Module Introduction ___ 2min</li>
+              <li class='progress done'>288. Planning the App ___ 3min</li>
+              <li class='progress done'>289. PlaceList and Place Provider Setup ___ 13min</li>
               <li class='progress'>290. Adding the 'Add Place' Screen and An Image Input ___ 17min</li>
               <li class='progress'>291. Using Image Picker and The Device Camera ___ 11min</li>
               <li class='progress'>292. Storing the Image on the Filesystem (on the Device) ___ 9min</li>

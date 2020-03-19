@@ -1,8 +1,8 @@
 const curPath = location.search.split('=')[1].replace(/_/g, '/'),
       curApp = 'training-progress-spa';
 
-const staticCacheName = curApp + '-v22',
-      staticAssetsVer = '20200316a';
+const staticCacheName = curApp + '-v23',
+      staticAssetsVer = '20200318a';
 // const staticCacheName = curApp + '-v9',
 // const staticCacheName = curApp + '-v8',
 //       staticAssetsVer = '20180820d';
