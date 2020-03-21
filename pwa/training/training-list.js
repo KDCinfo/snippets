@@ -3241,7 +3241,7 @@
       "active": true,
       "courseVendorName": "2a— Udemy (327 Lectures)",
       "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
-      "courseProgress": 88,
+      "courseProgress": 91,
       "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 | Created by Academind by Maximilian Schwarzmüller",
       "courseDateStarted": "Feb 2020",
       "courseDateLast": "Mar '20",
@@ -3667,23 +3667,23 @@
           `
         }, {
           "courseClassTitle": "Section 13: Using Native Device Features (Camera, Maps, Location, ...) [Great Places App]",
-          "courseClassProgress": 15,
+          "courseClassProgress": 65,
           "courseClassContent": `<p>
             <ul><li>2 hr 57 min</li></ul>
             <ul>
               <li class='progress done'>287. Module Introduction ___ 2min</li>
               <li class='progress done'>288. Planning the App ___ 3min</li>
               <li class='progress done'>289. PlaceList and Place Provider Setup ___ 13min</li>
-              <li class='progress'>290. Adding the 'Add Place' Screen and An Image Input ___ 17min</li>
-              <li class='progress'>291. Using Image Picker and The Device Camera ___ 11min</li>
-              <li class='progress'>292. Storing the Image on the Filesystem (on the Device) ___ 9min</li>
-              <li class='progress'>293. Managing Data and Images via the Provider Package ___ 16min</li>
-              <li class='progress'>294. Handling Errors ___ 1min</li>
-              <li class='progress'>295. Testing on Real Devices ___ 5min</li>
-              <li class='progress'>296. Preparing SQLite ___ 13min</li>
-              <li class='progress'>297. Storing and Fetching Data with SQLite ___ 12min</li>
-              <li class='progress'>298. Adding a Location Input and The 'location' Package ___ 10min</li>
-              <li class='progress'>299. Fetching the User Coordinates ___ 2min</li>
+              <li class='progress done'>290. Adding the 'Add Place' Screen and An Image Input ___ 17min</li>
+              <li class='progress done'>291. Using Image Picker and The Device Camera ___ 11min</li>
+              <li class='progress done'>292. Storing the Image on the Filesystem (on the Device) ___ 9min</li>
+              <li class='progress done'>293. Managing Data and Images via the Provider Package ___ 16min</li>
+              <li class='progress done'>294. Handling Errors ___ 1min</li>
+              <li class='progress done'>295. Testing on Real Devices ___ 5min</li>
+              <li class='progress done'>296. Preparing SQLite ___ 13min</li>
+              <li class='progress done'>297. Storing and Fetching Data with SQLite ___ 12min</li>
+              <li class='progress done'>298. Adding a Location Input and The 'location' Package ___ 10min</li>
+              <li class='progress done'>299. Fetching the User Coordinates ___ 2min</li>
               <li class='progress'>300. Displaying a Static Map Snapshot ___ 9min</li>
               <li class='progress'>301. Rendering a Dynamic Map (via Google Maps) ___ 14min</li>
               <li class='progress'>302. Allowing Users to Pick a Location on the Map ___ 10min</li>
