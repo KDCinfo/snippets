@@ -3241,7 +3241,7 @@
       "active": true,
       "courseVendorName": "2a— Udemy (327 Lectures)",
       "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
-      "courseProgress": 91,
+      "courseProgress": 97,
       "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 | Created by Academind by Maximilian Schwarzmüller",
       "courseDateStarted": "Feb 2020",
       "courseDateLast": "Mar '20",
@@ -3667,7 +3667,7 @@
           `
         }, {
           "courseClassTitle": "Section 13: Using Native Device Features (Camera, Maps, Location, ...) [Great Places App]",
-          "courseClassProgress": 65,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>2 hr 57 min</li></ul>
             <ul>
@@ -3684,42 +3684,42 @@
               <li class='progress done'>297. Storing and Fetching Data with SQLite ___ 12min</li>
               <li class='progress done'>298. Adding a Location Input and The 'location' Package ___ 10min</li>
               <li class='progress done'>299. Fetching the User Coordinates ___ 2min</li>
-              <li class='progress'>300. Displaying a Static Map Snapshot ___ 9min</li>
-              <li class='progress'>301. Rendering a Dynamic Map (via Google Maps) ___ 14min</li>
-              <li class='progress'>302. Allowing Users to Pick a Location on the Map ___ 10min</li>
-              <li class='progress'>303. Storing the Location in SQLite ___ 18min</li>
-              <li class='progress'>304. Adding a 'Place Detail' Screen and Opening the Map in 'readonly' Mode ___ 12min</li>
-              <li class='progress'>305. Wrap Up ___ 2min</li>
-              <li class='progress'>306. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>300. Displaying a Static Map Snapshot ___ 9min</li>
+              <li class='progress done'>301. Rendering a Dynamic Map (via Google Maps) ___ 14min</li>
+              <li class='progress done'>302. Allowing Users to Pick a Location on the Map ___ 10min</li>
+              <li class='progress done'>303. Storing the Location in SQLite ___ 18min</li>
+              <li class='progress done'>304. Adding a 'Place Detail' Screen and Opening the Map in 'readonly' Mode ___ 12min</li>
+              <li class='progress done'>305. Wrap Up ___ 2min</li>
+              <li class='progress done'>306. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 14: Running Native Swift, ObjectiveC, Java or Kotlin Code",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>37 min</li></ul>
             <ul>
-              <li class='progress'>307. Module Introduction ___ 2min</li>
-              <li class='progress'>308. Using a Proper Project Setup ___ 1min</li>
-              <li class='progress'>309. Sending a Method Call from Flutter ___ 9min</li>
-              <li class='progress'>310. Running Android Code ___ 15min</li>
-              <li class='progress'>311. Running iOS Code ___ 10min</li>
-              <li class='progress'>312. Wrap Up ___ 1min</li>
-              <li class='progress'>313. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>307. Module Introduction ___ 2min</li>
+              <li class='progress done'>308. Using a Proper Project Setup ___ 1min</li>
+              <li class='progress done'>309. Sending a Method Call from Flutter ___ 9min</li>
+              <li class='progress done'>310. Running Android Code ___ 15min</li>
+              <li class='progress done'>311. Running iOS Code ___ 10min</li>
+              <li class='progress done'>312. Wrap Up ___ 1min</li>
+              <li class='progress done'>313. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 15: Publishing to the App Stores",
-          "courseClassProgress": 0,
+          "courseClassProgress": 50,
           "courseClassContent": `<p>
             <ul><li>35 min</li></ul>
             <ul>
-              <li class='progress'>314. Module Introduction ___ 2min</li>
-              <li class='progress'>315. Preparing the Code ___ 2min</li>
-              <li class='progress'>316. Preparing the App Configuration ___ 6min</li>
-              <li class='progress'>317. Preparing Third-Party Services ___ 1min</li>
+              <li class='progress done'>314. Module Introduction ___ 2min</li>
+              <li class='progress done'>315. Preparing the Code ___ 2min</li>
+              <li class='progress done'>316. Preparing the App Configuration ___ 6min</li>
+              <li class='progress done'>317. Preparing Third-Party Services ___ 1min</li>
               <li class='progress'>318. Adding Icons and Splash Screens ___ 9min</li>
               <li class='progress'>319. Publishing Android Apps ___ 9min</li>
               <li class='progress'>320. Publishing iOS Apps ___ 6min</li>
