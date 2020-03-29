@@ -3239,10 +3239,10 @@
     {
       "id": "udemy-3",
       "active": true,
-      "courseVendorName": "2a— Udemy (327 Lectures)",
+      "courseVendorName": "2a— Udemy (325 Lectures)",
       "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
-      "courseProgress": 97,
-      "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 | Created by Academind by Maximilian Schwarzmüller",
+      "courseProgress": 100,
+      "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 (at time of training) | Created by Academind by Maximilian Schwarzmüller",
       "courseDateStarted": "Feb 2020",
       "courseDateLast": "Mar '20",
       "courseShortVendor": "udemy-courses",
@@ -3712,7 +3712,7 @@
           `
         }, {
           "courseClassTitle": "Section 15: Publishing to the App Stores",
-          "courseClassProgress": 50,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>35 min</li></ul>
             <ul>
@@ -3720,43 +3720,32 @@
               <li class='progress done'>315. Preparing the Code ___ 2min</li>
               <li class='progress done'>316. Preparing the App Configuration ___ 6min</li>
               <li class='progress done'>317. Preparing Third-Party Services ___ 1min</li>
-              <li class='progress'>318. Adding Icons and Splash Screens ___ 9min</li>
-              <li class='progress'>319. Publishing Android Apps ___ 9min</li>
-              <li class='progress'>320. Publishing iOS Apps ___ 6min</li>
-              <li class='progress'>321. Useful Resources and Links ___ 1min</li>
+              <li class='progress done'>318. Adding Icons and Splash Screens ___ 9min</li>
+              <li class='progress done'>319. Publishing Android Apps ___ 9min</li>
+              <li class='progress done'>320. Publishing iOS Apps ___ 6min</li>
+              <li class='progress done'>321. Useful Resources and Links ___ 1min</li>
             </ul>
             </p>
           `
         }, {
           "courseClassTitle": "Section 16: Roundup and Next Steps",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>16 min</li></ul>
             <ul>
-              <li class='progress'>322. You did it! ___ 1min</li>
-              <li class='progress'>323. Your Next Steps (To Become an Awesome Developer!) ___ 4min</li>
-              <li class='progress'>324. How to Plan and Develop Successful Apps ___ 11min</li>
+              <li class='progress done'>322. You did it! ___ 1min</li>
+              <li class='progress done'>323. Your Next Steps (To Become an Awesome Developer!) ___ 4min</li>
+              <li class='progress done'>324. How to Plan and Develop Successful Apps ___ 11min</li>
             </ul>
             </p>
           `
         }, {
-          "courseClassTitle": "Section 17: Summary of the Course Update",
-          "courseClassProgress": 0,
-          "courseClassContent": `<p>
-            <ul><li>15 min</li></ul>
-            <ul>
-              <li class='progress'>325. What Changed? What's New? Why did I Update the Course? ___ 14min</li>
-              <li class='progress'>326. Changes you should not miss ___ 1min</li>
-            </ul>
-            </p>
-          `
-        }, {
-          "courseClassTitle": "Section 35: Roundup",
-          "courseClassProgress": 0,
+          "courseClassTitle": "Section 17: Roundup",
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             <ul><li>1 min</li></ul>
             <ul>
-              <li class='progress'>605. Bonus: More Content! ___ 1min</li>
+              <li class='progress done'>605. Bonus: More Content! ___ 1min</li>
             </ul>
             </p>
           `
