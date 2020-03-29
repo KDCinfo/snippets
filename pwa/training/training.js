@@ -446,10 +446,40 @@
     const courseVendorName = app.visibleClasses[cid].courseVendorName,
           courseVendor = app.visibleClasses[cid].courseVendor,
           courseDesc = app.visibleClasses[cid].courseDesc,
-          courseDateStarted = app.visibleClasses[cid].courseDateStarted,
-          courseDateLast = app.visibleClasses[cid].courseDateLast,
           courseProgress = app.visibleClasses[cid].courseProgress,
-          courseList = app.visibleClasses[cid].courseList;
+          courseList = app.visibleClasses[cid].courseList,
+          courseDateStarted = app.visibleClasses[cid].courseDateStarted,
+          courseDateLast = app.visibleClasses[cid].courseDateLast;
+
+    // Adding: Date Checks - Don't Hide New Course Completions [2020-03-29 @ 4:36 AM]
+
+          // Two Example Formats:
+          //     "courseDateLast": "May—Jun '18",
+          //     "courseDateLast": "Aug '18",
+
+          const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+          let courseSplit = courseDateLast.split(' '),
+              courseMonth = courseSplit[0],
+              courseYear = courseSplit[1];
+          let thisMonth = courseMonth.substring(courseMonth.length - 3); // Jun
+          let thisMonthIdx = months.indexOf(thisMonth);                // Jun = 5
+                                                                         // "May—Jun '18",
+                                                                         //  0123456 012
+          let thisCourseYear = '20' + courseYear.substring(courseYear.length - 2);
+
+          let thisCourseDate = new Date(thisCourseYear, thisMonthIdx);
+          let rightNowDate = new Date(); // Wouldn't let me do: Date.now(); (per MDN doc examples) [2020-03-29]
+          // let rightNowDate = Date.now(); // Error: Undefined method 'getTime'
+          // Date.now() === newDate.getTime(); | Can only use getTime() when instantiating a new Date() [2020-03-29]
+          let dateDiff = rightNowDate.getTime() - thisCourseDate.getTime();
+          let dateDiffDays = dateDiff/1000/60/60/24;
+          // let rnSeconds = Math.floor(rightNowDate / 1000); // Alternative
+          // let tcSeconds = Math.floor(thisCourseDate / 1000);
+          // console.log('___ CID ___: ', cid, thisCourseYear, thisMonthIdx, dateDiff);
+          // console.log('thisCourseDate: ', thisCourseDate.getTime(), tcSeconds);
+          // console.log('rightNowDate: ', rightNowDate.getTime(), rnSeconds);
+
+    // Done Adding ^^^ ... (for dateDiffDays check below)
 
     // courseList = [ { courseClassTitle, courseClassProgress, courseClassContent } ]
 
@@ -473,7 +503,9 @@
     }
 
     if (courseProgress === 100) {
-      classWrapper.classList.add('completed', 't-off');
+      if (dateDiffDays > 120) { // Don't hide completed courses that are newer than 3-4 months
+        classWrapper.classList.add('completed', 't-off');
+      }
       document.getElementById('completed-count').textContent = parseInt(document.getElementById('completed-count').textContent, 10) + 1;
     }
 
