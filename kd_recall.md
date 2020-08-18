@@ -173,5 +173,5 @@ The basic beginnings:
 - Finished colorizing outlined usage in RightNote. 
   This allowed me to spot who is including what and where, thus spotting and removing two double-calls to kdrecall.js.
 - Finished layout of preferences page in drawio. Created two views; wide and thin. Exported as PNG.
-- Started a bit on FAQ/terms/privacy wording (copied files from PetRefApp same as contact form).
 - Worked a bit on preferences page. Now that I can see what I'm aiming for, got all the HTML elements lined up and ready for CSS formatting.
+- Started a bit on FAQ/terms/privacy wording (copied files from PetRefApp same as contact form).
