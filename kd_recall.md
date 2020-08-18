@@ -165,3 +165,13 @@ The basic beginnings:
 - [web] Added boilerplate templates. Added side drawer. Reduced placeholder text.
 - [web] Still working on preferences page.
 - [web] Made landing page responsive. Added contact form. Moved kdrecall.js include into _bottom. Added placeholder for links to app store.
+
+> 2020-08-17
+
+- Finished outline of structure for the primary files (index, login, logout, preference, meta, _bottom)
+- Finished extrapolation of asset usage for same files (CSS, JS, [meta: css], [_bottom: js])
+- Finished colorizing outlined usage in RightNote. 
+  This allowed me to spot who is including what and where, thus spotting and removing two double-calls to kdrecall.js.
+- Finished layout of preferences page in drawio. Created two views; wide and thin. Exported as PNG.
+- Started a bit on FAQ/terms/privacy wording (copied files from PetRefApp same as contact form).
+- Worked a bit on preferences page. Now that I can see what I'm aiming for, got all the HTML elements lined up and ready for CSS formatting.
