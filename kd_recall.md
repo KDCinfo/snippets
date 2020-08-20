@@ -181,4 +181,4 @@ The basic beginnings:
 - Fixed burger buttons on faux appBar.
 - Created `_includes` folder and shifted files.
 - Got FAQ and About panels laid out and formatted.
-- Converted <div>s to <a> tags for keyboard nav. Added keydowns and .focuses.
+- Converted `<div>`s to `<a>` tags for keyboard nav. Added keydowns and .focuses.
