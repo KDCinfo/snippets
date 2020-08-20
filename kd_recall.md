@@ -175,3 +175,10 @@ The basic beginnings:
 - Finished layout of preferences page in drawio. Created two views; wide and thin. Exported as PNG.
 - Worked a bit on preferences page. Now that I can see what I'm aiming for, got all the HTML elements lined up and ready for CSS formatting.
 - Started a bit on FAQ/terms/privacy wording (copied files from PetRefApp same as contact form).
+
+> 2020-08-18
+
+- Fixed burger buttons on faux appBar.
+- Created `_includes` folder and shifted files.
+- Got FAQ and About panels laid out and formatted.
+- Converted <div>s to <a> tags for keyboard nav. Added keydowns and .focuses.
