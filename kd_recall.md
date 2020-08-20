@@ -178,6 +178,8 @@ The basic beginnings:
 
 > 2020-08-18
 
+Current primary focus right now is on completing the web authentication pages 100%. This includes finalizing the FAQ/terms/privacy/about panels, then will finalize the preferences page. All the while fixing and tweaking things along the way.
+
 - Fixed burger buttons on faux appBar.
 - Created `_includes` folder and shifted files.
 - Got FAQ and About panels laid out and formatted.
