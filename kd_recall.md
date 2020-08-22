@@ -198,13 +198,17 @@ Current primary focus from here on out is on completing the web authentication p
 - Created a 'modal endpoints' structural outline.
 - Prettied up footer links.
 - Added focus to hovers.
-- Converted spans to A tags.
+- Converted clickable `div`s and `span`s to `a` tags.
 - Added keypresses to clicks.
 
 > 2020-08-21 [web]
 
-- Fixed and finalized closed tabbing loop on Drawer and contact form.
+- Fixed and finalized closed tabbing loop on side drawer and contact form.
 - Added and finalized tabbing loop on FAQ and Privacy modals.
 - Prettied up all the modals; made more consistent with each other and the site.
-- Modal layout and functionality is complete.
-- Keyboard navigation of entire page is complete.
+- Think I'm done with the layout, formatting, and functionality of all the modals.
+  - 4 modals
+  - 8 entrances
+  - All escape endpoints
+  - All keyboard inputs for constrained keyboard navigation
+- Keyboard navigation of entire index page is complete.
