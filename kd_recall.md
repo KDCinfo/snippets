@@ -140,33 +140,35 @@ The basic beginnings:
 - [web] Progress on login, logout, and registration / verify.
 - [web] Updated 'reset' and 'dnd' verify API pages and their email verbiage.
 
-> 2020‑08‑09
+> 2020‑08‑09 [mobile, web]
 
 - [mobile] Forgot/reset password complete. Authentication screen complete.
 - [mobile] Cleaned some code. Added printK(). Added _nameRef to logged in appbar title.
 - [web] Added verifyAndReset form.
 
-> 2020‑08‑12
+> 2020‑08‑12 [web]
 
-- [web] Split out Hungry readme from kdrecall readme.
-- [web] Added getUserFromUID() for logged users. Removed access_code. Added 'exit()' after all header('location').
+Current primary focus from here on out is on completing the web authentication pages 100%. This includes finalizing the FAQ/terms/privacy/about panels, then will finalize the preferences page. All the while fixing and tweaking things along the way.
 
-> 2020‑08‑14
+- Split out Hungry readme from kdrecall readme.
+- Added getUserFromUID() for logged users. Removed access_code. Added 'exit()' after all header('location').
 
-- [web] Finished with sessions. Another landing page iteration.
-- [web] Got index, landing page, and preferences layout code ready for boilerplating.
+> 2020‑08‑14 [web]
 
-> 2020‑08‑15
+- Finished with sessions. Another landing page iteration.
+- Got index, landing page, and preferences layout code ready for boilerplating.
 
-- [web] Moved images out of _img and into _assets_src
+> 2020‑08‑15 [web]
 
-> 2020‑08‑16
+- Moved images out of _img and into _assets_src
 
-- [web] Added boilerplate templates. Added side drawer. Reduced placeholder text.
-- [web] Still working on preferences page.
-- [web] Made landing page responsive. Added contact form. Moved kdrecall.js include into _bottom. Added placeholder for links to app store.
+> 2020‑08‑16 [web]
 
-> 2020-08-17
+- Added boilerplate templates. Added side drawer. Reduced placeholder text.
+- Still working on preferences page.
+- Made landing page responsive. Added contact form. Moved kdrecall.js include into _bottom. Added placeholder for links to app store.
+
+> 2020-08-17 [web]
 
 - Finished outline of structure for the primary files (index, login, logout, preference, meta, _bottom)
 - Finished extrapolation of asset usage for same files (CSS, JS, [meta: css], [_bottom: js])
@@ -176,11 +178,33 @@ The basic beginnings:
 - Worked a bit on preferences page. Now that I can see what I'm aiming for, got all the HTML elements lined up and ready for CSS formatting.
 - Started a bit on FAQ/terms/privacy wording (copied files from PetRefApp same as contact form).
 
-> 2020-08-18
-
-Current primary focus right now is on completing the web authentication pages 100%. This includes finalizing the FAQ/terms/privacy/about panels, then will finalize the preferences page. All the while fixing and tweaking things along the way.
+> 2020-08-18 [web]
 
 - Fixed burger buttons on faux appBar.
 - Created `_includes` folder and shifted files.
 - Got FAQ and About panels laid out and formatted.
 - Converted `<div>`s to `<a>` tags for keyboard nav. Added keydowns and .focuses.
+
+> 2020-08-19 [web]
+
+- Went through wording in privacy panel.
+- Began analyzing various modal entries and exits.
+
+> 2020-08-20 [web]
+
+- Began checking through tabbing on page.
+- Added a closed tabbing loop on the contact form and the side drawer.
+- Added privacy, FAQ, and contact form to footer.
+- Created a 'modal endpoints' structural outline.
+- Prettied up footer links.
+- Added focus to hovers.
+- Converted spans to A tags.
+- Added keypresses to clicks.
+
+> 2020-08-21 [web]
+
+- Fixed and finalized closed tabbing loop on Drawer and contact form.
+- Added and finalized tabbing loop on FAQ and Privacy modals.
+- Prettied up all the modals; made more consistent with each other and the site.
+- Modal layout and functionality is complete.
+- Keyboard navigation of entire page is complete.
