@@ -212,3 +212,11 @@ Current primary focus from here on out is on completing the web authentication p
   - All escape endpoints
   - All keyboard inputs for constrained keyboard navigation
 - Keyboard navigation of entire index page is complete.
+
+> 2020-08-22 [web]
+
+- Shuttered the app detail blocks instead of expand-dropping them in like a curtain call.
+- Brought all four shutters up from the bottom, and coupled it with a fade transition.
+- Made hero logo image clickable.
+- Fixed two text links in appBar.
+- Added some missing hrefs.
