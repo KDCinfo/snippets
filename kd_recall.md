@@ -30,7 +30,7 @@ The basic beginnings:
 - Mobile app structure created.
 - Mobile app authentication routing and page setup.
 - Mobile app auth testing setup with Flutter testing.
-- Web-based pages refactored to accommodate mobile app theming.
+- Web-based pages refactored to reflect mobile app theming.
 
 ## Revision History
 
@@ -79,7 +79,7 @@ The basic beginnings:
 > 2020‑06‑10
 
 - [web] Auth: Refactored auth/reset to require username if not logged in. Changed PASSWORD_BCRYPT to PASSWORD_DEFAULT.
-- [web] Auth: Current final revision of flowchart diagram.
+- [web] Auth: Completed final revision of flowchart diagram.
 
 > 2020‑06‑12
 
@@ -97,9 +97,11 @@ The basic beginnings:
 - [web] Auth: Cleaned up files and fixed some bugs. Adjusted tests.
 - [web] Auth: Got user preferences showing on preferences page.
 
+
 > 2020-06
 
 - [browser extension] Took two weeks off to create a browser extension.
+
 
 > 2020‑07‑03
 
@@ -215,8 +217,8 @@ Current primary focus from here on out is on completing the web authentication p
 
 > 2020-08-22 [web]
 
-- Shuttered the app detail blocks instead of expand-dropping them in like a curtain call.
-- Brought all four shutters up from the bottom, and coupled it with a fade transition.
-- Made hero logo image clickable.
+- Shuttered the app detail blocks instead of expand-dropping them all in at once like a curtain call.
+- Brought all four shutters up from the bottom, and coupled them with fade transitions.
+- Made hero logo image clickable; added `alt` and `title` properties.
 - Fixed two text links in appBar.
 - Added some missing hrefs.
