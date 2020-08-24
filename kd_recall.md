@@ -229,3 +229,10 @@ Current primary focus from here on out is on completing the web authentication p
 - Moved 'About' from Privacy to FAQ and updated references.
 - Updated individual page meta titles and descriptions.
 - Fixed error: When logging in, .toLowerCase() error on undefined.
+
+> 2020-08-23 [web]
+
+- Done with preferences page layout and formatting.
+- Applied a responsive breakpoint at 720px.
+- Changed 'login status' to checkbox icon.
+- Got all the form posting mechanics in place.
