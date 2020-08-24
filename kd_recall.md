@@ -222,3 +222,10 @@ Current primary focus from here on out is on completing the web authentication p
 - Made hero logo image clickable; added `alt` and `title` properties.
 - Fixed two text links in appBar.
 - Added some missing hrefs.
+
+> 2020-08-22/23 [web]
+
+- Done with verbiage, layout, and formatting on the FAQ, About, Privacy, Disclaimers, etc.
+- Moved 'About' from Privacy to FAQ and updated references.
+- Updated individual page meta titles and descriptions.
+- Fixed error: When logging in, .toLowerCase() error on undefined.
