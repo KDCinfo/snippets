@@ -250,3 +250,12 @@ Current primary focus from here on out is on completing the web authentication p
 
 - Setup a preferences data object.
 - Sliders now update the data object, then provide feedback to the preferences panel. Data object will also populate on button save.
+
+> 2020-08-24 [web] (technically; 08-25 @4:15 AM)
+
+- Finished with Preferences layout and formatting.
+	- Moved 'Show Help' section to be alongside Global Dark Mode.
+	- Added a question mark icon showing 'quick tip' pop-ups for 3 fields.
+	- Added a checkbox for option to change password.
+		- Will need to setup an intermediary screen for capturing current, and setting new password.
+	- Ready for form validation and submission.
