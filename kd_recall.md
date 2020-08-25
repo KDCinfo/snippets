@@ -232,7 +232,16 @@ Current primary focus from here on out is on completing the web authentication p
 
 > 2020-08-23 [web]
 
-- Done with preferences page layout and formatting.
+- Done with preferences page general layout.
 - Applied a responsive breakpoint at 720px.
 - Changed 'login status' to checkbox icon.
 - Got all the form posting mechanics in place.
+
+> 2020-08-24 [web]
+
+- Done with styling toggle buttons. Instead of a switch, using an input="range" and custom styled slider. Sliders can be 0-1, 0-1-2, 0-1-2-3, etc.
+  - Slider styling thanks to: [Daniel Stern](http://danielstern.ca/range.css/#/)
+  - Browser compatibility cross-checked with: [CSS Tricks](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
+- Added a 950px media query breakpoint. This widens the interface from 768px out to 900px --- helps a little on the preferences page; not so much on authentication pages, which have their own styling.
+- Began entering HTML code for pop-up tips.
+- Removed "themes" from preferences page (`display: none`). Will get to them later if there's even any interest. Dark mode (theme) will suffice for now.
