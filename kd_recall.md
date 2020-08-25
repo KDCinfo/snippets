@@ -245,3 +245,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Added a 950px media query breakpoint. This widens the interface from 768px out to 900px --- helps a little on the preferences page; not so much on authentication pages, which have their own styling.
 - Began entering HTML code for pop-up tips.
 - Removed "themes" from preferences page (`display: none`). Will get to them later if there's even any interest. Dark mode (theme) will suffice for now.
+
+> 2020-08-24 [web] (technically; 08-25 @1:52 AM)
+
+- Setup a preferences data object.
+- Sliders now update the data object, then provide feedback to the preferences panel. Data object will also populate on button save.
