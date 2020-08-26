@@ -259,3 +259,9 @@ Current primary focus from here on out is on completing the web authentication p
 	- Added a checkbox for option to change password.
 		- Will need to setup an intermediary screen for capturing current, and setting new password.
 	- Ready for form validation and submission.
+
+> 2020-08-25 [web]
+
+- Added quick tip pop-up cancel buttons.
+- Created a 'quick tip' pop-up for the various field-level validation requirements.
+- Fixed the Save and Reset buttons on narrow screens; made responsive.
