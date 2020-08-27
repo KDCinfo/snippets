@@ -265,3 +265,15 @@ Current primary focus from here on out is on completing the web authentication p
 - Added quick tip pop-up cancel buttons.
 - Created a 'quick tip' pop-up for the various field-level validation requirements.
 - Fixed the Save and Reset buttons on narrow screens; made responsive.
+
+> 2020-08-25 [web]
+
+- Began adding code for password fields.
+- Added 3-sec countdown on login.
+- Fixed reference name error.
+- Tweaked quick tip box.
+- Stopped sliders from updating `prefsObj` (original values); will be kept immutable.
+- Getting a handle on how the form submission is going to work; 
+  - Email change requires current password.
+  - Password change requires current password, new password, and a confirm password.
+  - None of these fields are present on the original preferences screen.
