@@ -277,3 +277,26 @@ Current primary focus from here on out is on completing the web authentication p
   - Email change requires current password.
   - Password change requires current password, new password, and a confirm password.
   - None of these fields are present on the original preferences screen.
+
+> 2020-08-26 [web]
+
+- Added visual feedback when individual preference settings are changed.
+  - For the sliders, feedback is immediate as the sliders are moved.
+  - For the text inputs and textarea, feedback is when the field loses focus (blur; not worth a `keydown` listener).
+- Added visual feedback when sliders are focused via keyboard.
+- Determined password fields should be directly under their respective form fields.
+- Finished the mechanics of adding dynamic password fields for both email or password changes.
+  - Email changes require current password.
+  - Password changes require current password, new password, and new password confirmation.
+```
+    - Chrome complained about having two password fields; suggested separating out forms.
+    - These fields are a part of the overall form though; they're just dynamically toggled.
+    - Thought about it, and my initial approach on how to do the two passwords seemed to work.
+    - When hiding either of the relevant input fields, also set their attribute to `hidden`.
+    - When displaying either of the relevant fields, set their attribute to `password`.
+```
+- Enabled auto-focus on dynamic password fields (hopefully click-then-lose-focus won't be an issue---will play around with it some).
+- Moved form validation requirements quick tip button to bottom; is now a full-width button above submit/reset buttons.
+- Removed question mark icon from validation requirement button, and stopped the bubbling `<b>` tag.
+- Renamed `input-text` to `input-tip-text` for clarity.
+- Removed 'app description' (clutter).
