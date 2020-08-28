@@ -300,3 +300,20 @@ Current primary focus from here on out is on completing the web authentication p
 - Removed question mark icon from validation requirement button, and stopped the bubbling `<b>` tag.
 - Renamed `input-text` to `input-tip-text` for clarity.
 - Removed 'app description' (clutter).
+
+> 2020-08-27 [web]
+
+- Disabled login button on click. Reenables on error.
+- Misc tweaks and fixes.
+- Password fields are expanding out nicely.
+- Fixed issue with sliders popping back to name field.
+
+  Apparently sliders don't get focus by default when changing them, so manually applied `.focus()`.
+
+- Fixed password min length on login.
+- Consolidating validation constants in [page_overlay_js.php].
+
+  Technically there should be a more global version of 'runa.js'; one that 'runp.js', and potentially others, could leverage as a shared-scoped parent.
+
+- Began adding code for form post return messages.
+- Began pruning and adjusting client side validation code.
