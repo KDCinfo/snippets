@@ -353,3 +353,14 @@ Current primary focus from here on out is on completing the web authentication p
 
 - Continued the overhaul on the still-Frankensteined `app_prefs` API file. Got the major field sections grouped (email and password, name, notes, and the 3 sliders), although still quite rough.
 - Began adding setter methods to the primary class object.
+
+> 9-1-2020 [web]
+
+- Filtering user's `notes`. Using a programmatical `textarea` to pass PHP-filtered `notes` to JavaScript.
+- Fixed a double ternary (in PHP you gotta wrap that second ternary!)
+- Added function to clear changed fields.
+- Worked on reference name and slider validation.
+- Updating initial `prefsObj` with changed field data.
+- Additional class object updates.
+- Fixed `user_reset` table to allow for `ON UPDATE CASCADE`.
+- Fixed `user_notes` table; made `user_id` `UNIQUE` and increased `notes` to 5,000 characters.
