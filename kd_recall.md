@@ -317,3 +317,18 @@ Current primary focus from here on out is on completing the web authentication p
 
 - Began adding code for form post return messages.
 - Began pruning and adjusting client side validation code.
+
+> 8-28-2020 [web]
+
+- Began getting `app_prefs.php` setup --- will be a composite of multiple other files.
+- Added countdown counter to Notes `textarea`.
+
+  - `fieldNotesCounter.innerText = Math.max(0, 5000 - evt.target.value.length).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");`
+
+    // ^^^ Math.max()  | Thanks to: [stackoverflow.com => character-counter-backspace-doesnt-reflect-on-characters-remaining](https://stackoverflow.com/questions/42969347/character-counter-backspace-doesnt-reflect-on-characters-remaining)
+    // ^^^ Comma Regex | Thanks to: [stackoverflow.com => how-to-print-a-number-with-commas-as-thousands-separators-in-javascript](https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript)
+
+- Prettied up the UI message response area.
+- Took control over the `reset form` button to clear custom UI adjustments.
+- Got the base of the server-side validation structure outlined and coded.
+- Working on validation; primarily email and password data.
