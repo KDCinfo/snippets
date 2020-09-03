@@ -342,3 +342,9 @@ Current primary focus from here on out is on completing the web authentication p
   - Initial gathering and go-through of all the major code pieces.
   - Aggregated and trimmed a lot of the code within.
   - Not posting to it from `runp.js` yet.
+
+> 8-30-2020 [web]
+
+- Began posting to `app_prefs`. Although currently a complete Frankenstein, got the file to load without error (posting from `runp.js`).
+- Fixed session error. Moved the `include` call to `_core` to be __above__ session activity checks.
+- A lot more code gathering and trimming inside `app_prefs`. Blocked out 3 major sections; top (initial sift), middle (in progress), bottom (TBD).
