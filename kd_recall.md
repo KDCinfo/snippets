@@ -332,3 +332,13 @@ Current primary focus from here on out is on completing the web authentication p
 - Took control over the `reset form` button to clear custom UI adjustments.
 - Got the base of the server-side validation structure outlined and coded.
 - Working on validation; primarily email and password data.
+
+> 8-29-2020 [web]
+
+- Set session to auto-timeout (will redirect to `log in` on any subsequent activity).
+- Added in requirement for `whichApp` on all preferences form submissions (not just user ID).
+- The API file `app_prefs` is a culmination of four other API files.
+
+  - Initial gathering and go-through of all the major code pieces.
+  - Aggregated and trimmed a lot of the code within.
+  - Not posting to it from `runp.js` yet.
