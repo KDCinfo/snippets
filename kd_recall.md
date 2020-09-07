@@ -368,3 +368,13 @@ Current primary focus from here on out is on completing the web authentication p
 - All error handling now only posts log entries to server.
 - Added `preferences-testing.md` and `preferences-testing.ods` to source assets.
 - **The web-based preferences interface is complete.**
+
+> 9-3-2020 [web]
+
+- Structured and formatted 2 of 4 ancillary pages; password reset and DND.
+- Started on 'user removal'.
+  - Tried a handful of locations and layouts.
+  - Ended up going next to 'Change Password'.
+  - Initially going with `confirm` alert dialog.
+  - No call to back end yet.
+- New rule: Loosening up on [periods](https://www.dailywritingtips.com/period-goes-inside-quotation-marks/) and [commas](https://english.stackexchange.com/questions/23/is-it-ever-acceptable-for-a-period-to-come-after-a-quote-at-the-end-of-a-sentenc) being inside quotes, especially within all my 'programming endeavors'.
