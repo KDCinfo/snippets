@@ -373,5 +373,4 @@ Current primary focus from here on out is on completing the web authentication p
 - Cleaned up session stats at bottom of preferences screen. It's now minimized by default, and only shows two stats (hid the two 'previous' session stats). Also added a small `scrollIntoView` on the footer (after the CSS animations are done; `1s`).
 - All error handling now only posts log entries to server.
 - Added `preferences-testing.md` and `preferences-testing.ods` to source assets.
-
 - **The web-based preferences interface is complete.**
