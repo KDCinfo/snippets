@@ -378,3 +378,12 @@ Current primary focus from here on out is on completing the web authentication p
   - Initially going with `confirm` alert dialog.
   - No call to back end yet.
 - New rule: Loosening up on [periods](https://www.dailywritingtips.com/period-goes-inside-quotation-marks/) and [commas](https://english.stackexchange.com/questions/23/is-it-ever-acceptable-for-a-period-to-come-after-a-quote-at-the-end-of-a-sentenc) being inside quotes, especially within all my 'programming endeavors'.
+
+> 9-4-2020 [web]
+
+- Structured and formatted remaining ancillary pages; verify and logout.
+- Determined new user removal layout and process.
+  - Moved to a modal for user removal functionality.
+  - As with the footer link modals, made it keyboard friendly.
+  - Providing a removal notice, input field for current password, and a submit button.
+  - UI and UX feel good.
