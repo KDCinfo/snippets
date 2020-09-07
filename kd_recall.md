@@ -309,10 +309,10 @@ Current primary focus from here on out is on completing the web authentication p
 - Misc tweaks and fixes.
 - Password fields are expanding out nicely.
 - Fixed issue with sliders popping back to name field.
-  Apparently sliders don't get focus by default when changing them, so manually applied `.focus()`.
+  - Apparently sliders don't get focus by default when changing them, so manually applied `.focus()`.
 - Fixed password min length on login.
 - Consolidating validation constants in [page_overlay_js.php].
-  Technically there should be a more global version of 'runa.js'; one that 'runp.js', and potentially others, could leverage as a shared-scoped parent.
+  - Technically there should be a more global version of 'runa.js'; one that 'runp.js', and potentially others, could leverage as a shared-scoped parent.
 - Began adding code for form post return messages.
 - Began pruning and adjusting client side validation code.
 
@@ -321,8 +321,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Began getting `app_prefs.php` setup --- will be a composite of multiple other files.
 - Added countdown counter to Notes `textarea`.
   - `fieldNotesCounter.innerText = Math.max(0, 5000 - evt.target.value.length).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");`
-    // ^^^ Math.max()  | Thanks to: [stackoverflow.com => character-counter-backspace-doesnt-reflect-on-characters-remaining](https://stackoverflow.com/questions/42969347/character-counter-backspace-doesnt-reflect-on-characters-remaining)
-    // ^^^ Comma Regex | Thanks to: [stackoverflow.com => how-to-print-a-number-with-commas-as-thousands-separators-in-javascript](https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript)
+    - // ^^^ Math.max()  | Thanks to: [stackoverflow.com => character-counter-backspace-doesnt-reflect-on-characters-remaining](https://stackoverflow.com/questions/42969347/character-counter-backspace-doesnt-reflect-on-characters-remaining)
+    - // ^^^ Comma Regex | Thanks to: [stackoverflow.com => how-to-print-a-number-with-commas-as-thousands-separators-in-javascript](https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript)
 - Prettied up the UI message response area.
 - Took control over the `reset form` button to clear custom UI adjustments.
 - Got the base of the server-side validation structure outlined and coded.
