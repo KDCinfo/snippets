@@ -364,3 +364,14 @@ Current primary focus from here on out is on completing the web authentication p
 - Additional class object updates.
 - Fixed `user_reset` table to allow for `ON UPDATE CASCADE`.
 - Fixed `user_notes` table; made `user_id` `UNIQUE` and increased `notes` to 5,000 characters.
+
+> 9-2-2020 [web]
+
+- Cut session timeout from 5 hours to 1 hour.
+- Changed `email` field to trigger change event when user has stopped typing for half a second. Ergo, when the email field changes, it will no longer wait for the field to blur, but instead will show the 'current password' field near immediately after the field is changed.
+- Fixed 'error flow-through' issue --- when one field validation failed, subsequent field validations would continue.
+- Cleaned up session stats at bottom of preferences screen. It's now minimized by default, and only shows two stats (hid the two 'previous' session stats). Also added a small `scrollIntoView` on the footer (after the CSS animations are done; `1s`).
+- All error handling now only posts log entries to server.
+- Added `preferences-testing.md` and `preferences-testing.ods` to source assets.
+
+- The web-based preferences interface is complete.
