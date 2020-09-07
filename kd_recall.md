@@ -387,3 +387,16 @@ Current primary focus from here on out is on completing the web authentication p
   - As with the footer link modals, made it keyboard friendly.
   - Providing a removal notice, input field for current password, and a submit button.
   - UI and UX feel good.
+
+> 9-5-2020 [web]
+
+- Completed user removal process.
+  - Added supporting method to class object.
+  - @JavaScript Fetch Form Posts &rarr; know what you're sending; `post data` or `JSON`.
+    - Posts to: https://kdcinfo.com/kdrecall/?remove=success
+  - Added account removal success message to KD-reCall home (index) page.
+- Completed preferences page
+  - 'Completeness' status was previously correct---for the time it was written; I did not account for user removal ... figured it was going to be in the side drawer panel menu, which is where I began with it.
+  - Extracted out the embedded CSS into its own file.
+- Changed out all [http_status] to 200 and added a [xsfer_status] with their relevant http status codes.
+    Change all: http_status = 200
