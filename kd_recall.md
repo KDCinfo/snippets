@@ -374,4 +374,4 @@ Current primary focus from here on out is on completing the web authentication p
 - All error handling now only posts log entries to server.
 - Added `preferences-testing.md` and `preferences-testing.ods` to source assets.
 
-- The web-based preferences interface is complete.
+- **The web-based preferences interface is complete.**
