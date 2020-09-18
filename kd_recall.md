@@ -400,3 +400,37 @@ Current primary focus from here on out is on completing the web authentication p
   - Extracted out the embedded CSS into its own file.
 - Changed out all [http_status] to 200 and added a [xsfer_status] with their relevant http status codes.
     Change all: http_status = 200
+
+> 9-6-2020 -- 9-17-2020 [mobile]
+
+This last week and a half is mostly just a blurred mixture of learning, trying, fixing, and a little actual programming.
+
+- **Added option to save email address on login form (after a successful login).**
+  - There was a three day delay in figuring out how to populate a form field after an async call.
+  - I posted my findings on [Stack Overflow](https://stackoverflow.com/a/63876766/638153).
+- **Added option to reveal (unmask) password.**
+- Added Tooltips to both the 'save email' and 'unmask password' icon buttons.
+  - Also integrated a TooltipTheme into the app's custom theme configuration.
+- **Added an 'i'nfo icon in the app bar that opens an 'about' dialog showing info about the app.**
+- **Added ability to 'swipe-down refresh' the authentication screen.**
+- Eventually derived an approach for shared route authentication detection.
+  - Was considering going with a splash screen, but came to the conclusion that an intermediary splash screen is unnecessary.
+  - Instead, just added a transient "one moment..." wait screen for authentication detection, along with an instructive welcome message on the authentication screen. The pass-thru "one moment" message is about all you have time to read while waiting to know if you're already authenticated or not, which just does an async check into the device's secure storage.
+- Fixed issue with server side error messages not being delivered to the snackbar.
+  - Near three days later, during my second step-by-step widget-debugging step-through, I realized at one point it was hitting the router.
+  - That led to the discovery that I had a 'notifyListeners()' at the end of one of the final form submission function calls. Oops.
+  - Filtering this notifier call out of the login form submission fixed the error.
+- Updated `minSdkVersion` to 21 and `targetSdkVersion` to 29 per [Codenames, Tags, and Build Numbers](https://source.android.com/setup/start/build-numbers).
+  - [Codenames, Tags, and Build Numbers](https://source.android.com/setup/start/build-numbers)
+  - [Target API level requirements for the Play Console](https://support.google.com/googleplay/android-developer/answer/113469#targetsdk)
+  - [Build and release an Android app](https://flutter.dev/docs/deployment/android)
+
+### Current App Summary for 9-17-2020
+
+Knowing I've still got a few more topics I will need to dive deeper into prior to completing the pilot app, I'm still pushing for the end of September (less than two weeks). However, realistically speaking, Hungry-on-Hand will likely run into early October. I still need to create the preferences screen, and then the actual app itself.
+
+The goods news, however, is the remaining apps should require less than 5% of all this developmental 'overhead.' Ergo, I 'should' be able to eventually code one KD-reCall reminder app every 1 to 2 weeks, tops.
+
+Below is a screenshot of what the completed login screen for mobile looks like. You'll find the theme reflects the [web-based interface](https://kdcinfo.com/kdrecall/) that was completed earlier. And of course, each mobile app will have its own hero-subtitled image.
+
+<img alt="KD-reCall Login Screen" src="https://kdcinfo.com/kdrecall/_img/kdrecall_login_01.jpg" width="180">
