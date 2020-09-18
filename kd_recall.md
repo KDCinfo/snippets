@@ -1,7 +1,10 @@
 # KD-reCall - A mobile app suite of simple reminder apps.
 
-- In-Progress
-- Pilot app target date: Mid to end of Sept 2020.
+- Status: In-Progress
+
+- Target platform: Android
+
+- Pilot app target date: Early Oct 2020
 
 ## Site and Primary Pages
 
