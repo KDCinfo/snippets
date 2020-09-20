@@ -437,3 +437,13 @@ The goods news, however, is the remaining apps should require less than 5% of al
 Below is a screenshot of what the completed login screen for mobile looks like. You'll find the theme reflects the [web-based interface](https://kdcinfo.com/kdrecall/) that was completed earlier. And of course, each mobile app will have its own hero-subtitled image.
 
 <img alt="KD-reCall Login Screen" src="https://kdcinfo.com/kdrecall/_img/kdrecall_login_01.jpg" width="180">
+
+> 9-18-2020 [web]
+
+- Moved 'account removal' code from API (mobile) to POST (web) and refactored.
+  - Because remove account is now a part of the preferences page, both web and mobile will split to their mirrored functionality, as is consistent with the rest of the project.
+  - I thought the two could share this functionality---it was a poor and short-sighted decision. On a split-interface project such as this, we need structural code consistency!
+  - Yes, much of the code is duplicated, verbatim even, but merging code functionalities should be done as a whole, not piecemeal (and what's the ROI?)
+  - A couple other refactors are in order as well (@TODO:). One in particular is moving the remaining throttle logic from the form handlers into the back end classes, as is done already in a couple places (and it's awesome!)
+- Fixed issue with verification found in error log.
+- Fixed issue with redirect not working after account removal.
