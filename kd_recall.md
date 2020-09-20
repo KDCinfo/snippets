@@ -428,7 +428,7 @@ This last week and a half is mostly just a blurred mixture of learning, trying, 
   - [Target API level requirements for the Play Console](https://support.google.com/googleplay/android-developer/answer/113469#targetsdk)
   - [Build and release an Android app](https://flutter.dev/docs/deployment/android)
 
-### Current App Summary for 9-17-2020
+### Current App Status for 9-17-2020
 
 Knowing I've still got a few more topics I will need to dive deeper into prior to completing the pilot app, I'm still pushing for the end of September (less than two weeks). However, realistically speaking, Hungry-on-Hand will likely run into early October. I still need to create the preferences screen, and then the actual app itself.
 
@@ -443,7 +443,17 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
 - Moved 'account removal' code from API (mobile) to POST (web) and refactored.
   - Because remove account is now a part of the preferences page, both web and mobile will split to their mirrored functionality, as is consistent with the rest of the project.
   - I thought the two could share this functionality---it was a poor and short-sighted decision. On a split-interface project such as this, we need structural code consistency!
-  - Yes, much of the code is duplicated, verbatim even, but merging code functionalities should be done as a whole, not piecemeal (and what's the ROI?)
-  - A couple other refactors are in order as well (@TODO:). One in particular is moving the remaining throttle logic from the form handlers into the back end classes, as is done already in a couple places (and it's awesome!)
-- Fixed issue with verification found in error log.
+  - Yes, some of the back end code sections are duplicated, sometimes verbatim even, but merging code functionalities should be done as a whole, not piecemeal (and what's the ROI?)
+  - A couple other refactors are in order as well (@TODO:). One in particular is moving the throttle logic from back end form handlers to back end classes, as is done already in a couple places (and it's awesome!)
+- Fixed issue with registration verification page found in error log.
 - Fixed issue with redirect not working after account removal.
+
+> 9-19-2020 [mobile]
+
+- Added cancel button to forgot/reset password pop-up.
+- Made hero image clickable (shows 'about' dialog).
+- Refactored entire 'submit()' function to better flow through the API responses.
+- Outsourced 'showInfoDialog' code as a static method in its own `auth_helpers` class.
+- Lots more research and relearning on the overall Provider package concepts.
+  - I'm now branching past just the authentication screen, and need a better understanding of the multi-provider routes I have setup.
+- Began playing with dark mode theme. Lots to do, but going to solely focus instead on preferences screen.
