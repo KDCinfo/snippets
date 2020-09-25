@@ -501,6 +501,15 @@ A quick list of the web apps I fixed are:
 - Extracted out the AppBar into its own widget class.
 - Extracted out the entire body's `Stack()`, which accepts a custom child widget as its innermost content `Card()`.
 - Got Prefs screen started pretty good.
-  I'd say I'm about 20% through the UI screen file initial setup.
+  - I'd say I'm about 20% through the UI screen file initial setup.
 - Got Prefs provider data initially setup pretty good.
-  Created the `isDark` functional logic in the Prefs provider based on `Auth()->UserInfo` settings.
+  - Created the `isDark` functional logic in the Prefs provider based on `Auth()->UserInfo` settings.
+
+> 9-23 [mobile]
+
+- Got all the critical errors cleared in both 'prefs_p.dart' and 'prefs_card.dart'.
+  - No logic yet, and all the fields are complete Frankensteins, but the screen comes up.
+- Conglomerating data flow through `AuthData` and `UserInfo` to gain insights on how Prefs() fits into it all
+  (i.e. provider-level data sharing and access, routes, and themes).
+- Created a draw.io code skeleton composite for a broader view of the data and interactions between the app's main, provider, models, and screen files.
+  - Creating and updating diagrams and flowcharts, although time consuming, can help immensely in walking back through the code in detail, oftentimes revealing flaws along the way.
