@@ -495,3 +495,12 @@ A quick list of the web apps I fixed are:
 - [My first photo album](https://kdcinfo.com/K_Album/Album.php)
 - [Personal countdown calendar](https://kdcinfo.com/db/CalCnt/CDC.php)
 - [Pick-a-Meal](https://kdcinfo.com/pickameal/)
+
+> 9-22 [mobile]
+
+- Extracted out the AppBar into its own widget class.
+- Extracted out the entire body's `Stack()`, which accepts a custom child widget as its innermost content `Card()`.
+- Got Prefs screen started pretty good.
+  I'd say I'm about 20% through the UI screen file initial setup.
+- Got Prefs provider data initially setup pretty good.
+  Created the `isDark` functional logic in the Prefs provider based on `Auth()->UserInfo` settings.
