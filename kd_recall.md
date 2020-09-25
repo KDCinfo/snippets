@@ -4,7 +4,7 @@
 
 - Target platform: Android
 
-- Pilot app target date: Early Oct 2020
+- Pilot app target date: Mid Oct 2020
 
 ## Site and Primary Pages
 
@@ -461,13 +461,13 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
 > 9-20 [mobile]
 
 - Began prepping for creating the Preferences screen.
-  Gathered preference properties from web-based code.
-    Setup a data object that includes a few `static const` map properties (to emulate 'enums with values').
-    Outsourced those enum-with-value constants for comparison logic in other screens, and the `main`.
-  Started with a skeleton screen file.
-  Started with a skeleton provider file.
-    Will bring over coding structures from `Auth()` and some other classes.
-    Swapped out my test 'isFavorite' with the more proper 'isDark' (still hard coded).
+  - Gathered preference properties from web-based code.
+    - Setup a data object that includes a few `static const` map properties (to emulate 'enums with values').
+    - Outsourced those enum-with-value constants for comparison logic in other screens, and the `main`.
+  - Started with a skeleton screen file.
+  - Started with a skeleton provider file.
+    - Will bring over coding structures from `Auth()` and some other classes.
+    - Swapped out my test 'isFavorite' with the more proper 'isDark' (still hard coded).
 
 An example of the `static const` maps now used as 'enums with values' thank to [@Nae on Stack Overflow](https://stackoverflow.com/a/54803079/638153):
 ```
@@ -513,3 +513,13 @@ A quick list of the web apps I fixed are:
   (i.e. provider-level data sharing and access, routes, and themes).
 - Created a draw.io code skeleton composite for a broader view of the data and interactions between the app's main, provider, models, and screen files.
   - Creating and updating diagrams and flowcharts, although time consuming, can help immensely in walking back through the code in detail, oftentimes revealing flaws along the way.
+
+> 9/24 [mobile]
+
+- Finally got all the code, data, and flows lined up in both `prefs_p` (provider file) and `prefs_card` (functional inner-screen widget---each screen has its own).
+  - Getting a _little better_ handle on data initialization at the 'forest level'.
+- Began adding a couple input listeners ('email' and 'nameRef').
+    `_formControllerEmail.addListener(_showChangeEmail);`
+- Started up app.
+  - Error --> Changed out provider initialization call with a hard-coded `true` in `main.dart`.
+  - Error --> Something something on a null object --- But the screen came up!
