@@ -457,3 +457,23 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
 - Lots more research and relearning on the overall Provider package concepts.
   - I'm now branching past just the authentication screen, and need a better understanding of the multi-provider routes I have setup.
 - Began playing with dark mode theme. Lots to do, but going to solely focus instead on preferences screen.
+
+> 9-20 [mobile]
+
+- Began prepping for creating the Preferences screen.
+  Gathered preference properties from web-based code.
+    Setup a data object that includes a few `static const` map properties (to emulate 'enums with values').
+    Outsourced those enum-with-value constants for comparison logic in other screens, and the `main`.
+  Started with a skeleton screen file.
+  Started with a skeleton provider file.
+    Will bring over coding structures from `Auth()` and some other classes.
+    Swapped out my test 'isFavorite' with the more proper 'isDark' (still hard coded).
+
+An example of the `static const` maps now used as 'enums with values' thank to [@Nae on Stack Overflow](https://stackoverflow.com/a/54803079/638153):
+```
+  class LocalDarkmode {
+    static const kd_off = '0';
+    static const kd_on = '1';
+    static const kd_global = '2';
+  }
+```
