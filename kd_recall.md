@@ -477,3 +477,21 @@ An example of the `static const` maps now used as 'enums with values' thank to [
     static const kd_global = '2';
   }
 ```
+
+> 9-21 [web - other]
+
+Having been working with debugging my KD-reCall web-based preferences API, I got the idea to do a search on my entire `kdcinfo.com` domain for "error_log".
+
+Sorting the results yielded some unexpected current findings. I then recalled that I did put up some temporary parking pages for quite a few of my utilities when I upgraded to PHP7. Those, coupled with a half dozen other findings, kept me busy for about 15 hours.
+
+And yes, that was "results," as in plural. I have over a decade of projects created using a variety of technologies, but a LOT of those projects are 2002&ndash;2010 PHP files, which, after upgrading to MySQLi and PHP7, are still run wonderfully.
+
+A quick list of the web apps I fixed are:
+- [PHP/MySQL Form-a-Form](https://kdcinfo.com/db/form-a-form/)
+- [Guess-a-Number](http://guess-a-number.sourceforge.net)
+- [TWG Hall o' Fame](https://kdcinfo.com/twg-hallofame/)
+- [My B to B Online Business Form](https://kdcinfo.com/db/b2b-order-form/)
+- WoW [Blog](https://kdcinfo.com/wow/), [journal](https://kdcinfo.com/wow/journal.php), and [character pages](https://kdcinfo.com/wow/chars.php)
+- [My first photo album](https://kdcinfo.com/K_Album/Album.php)
+- [Personal countdown calendar](https://kdcinfo.com/db/CalCnt/CDC.php)
+- [Pick-a-Meal](https://kdcinfo.com/pickameal/)
