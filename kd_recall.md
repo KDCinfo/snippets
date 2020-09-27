@@ -536,3 +536,33 @@ About to take a new trek on my app's theme setup.
   - My original `themedata` findings didn't account for the `isDark: true` being set dynamically. :(
 
 Current Status: Two steps forward, one step back. Going to have to refactor the app's entire theme approach. It's a learning process. :)
+
+> 9/25 [mobile] - Part 2
+
+As previously mentioned, couldn't get dark mode set dynamically via `Provider` within my current theme setup, so I researched and found a more comprehensive approach to theming.
+
+New theming implementation:
+- A review of their code didn't look like it would work.
+- Installation of their demo files from GitHub produced at least a dozen errors.
+- But after fixing the criitical errors, the app came up and worked.
+- It was beautiful!
+
+But what worked wasn't dark mode ... what worked was the ability to switch between custom preset themes. Wow!
+
+To be honest, I'm still processing what this new theme approach just accomplished---my first, second, and third thoughts are that it's awesome! But, I'm still factoring its functional integrity, how it applies to dark mode, and how & _IF_ it really applies to fully custom personalized themes---something I had set aside for the pilot app's development.
+
+Having themes this easy feels too good to be true, but I saw it working before my very eyes, in both their app and my own, so I just need to let it sink in and process its flow and application. If this turns out to be a solid approach, as I will find while completing the integration, I will also need to reactivate preset themes on the web's preferences page, test the API endpoints, and still implement dark mode (but should now be able to do through this new theming mechanism).
+
+The new theme approach was provided by [FlutterDevs](http://flutterdevs.com) via their [GitHub repo](https://github.com/flutter-devs/flutter_multitheme_demo/), and explained in their [Medium walkthrough:
+Multi Theme Using Provider in Flutter](https://medium.com/flutterdevs/multi-theme-using-provider-in-flutter-cdb89bbde4e0).
+
+- Their approach was uniquely insightful in that it provided the missing details on how to use their theme's `ChangeNotifier` (in the provider file) **with** the `ChangeNotifierProvider` in the `providers` List[].
+
+- Secondly, in all my learnings, I've not seen an example of where the `ChangeNotifierProvider` was used as a `child:` of the `MultiProvider`, even though it's also been configured in the `providers` List[]. This feels like an advanced approach for the Provider package perhaps? The [Flutter documentation](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple) also only shows the `ChangeNotifierProvider` being configured in the `providers` List[].
+
+Their Medium article's walklthrough also references [Panache: A Flutter Material Theme editor](https://rxlabz.github.io/panache_web/). As stated on the Panache website,
+
+- Panache helps you to create beautiful Material themes for your Flutter applications.
+- Customize widgets colors and shapes, and download your theme.dart file.
+
+In summary, although finding this theming approach is a significant bonus for the app as a whole, I will need to spend some time to complete the theme's integration, as well as developing out all the resulting action items.
