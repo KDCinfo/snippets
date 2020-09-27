@@ -523,3 +523,16 @@ A quick list of the web apps I fixed are:
 - Started up app.  
   Error --> Changed out provider initialization call with a hard-coded `true` in `main.dart`.  
   Error --> Something something on a null object --- But the screen came up!
+
+> 9/25 [mobile]
+
+- Fix for #2:
+  - Removed `_localPrefsData` initialization from the Prefs() build, and now initializing when instantiating.
+    `PrefsData _localPrefsData = PrefsData();`
+- Fix for #1: After further research I have determined I need to refactor my app's theme approach.
+  - Search topics: "MultiProvider" "consumer" "themedata"
+
+About to take a new trek on my app's theme setup.
+  - My original `themedata` findings didn't account for the `isDark: true` being set dynamically. :(
+
+Current Status: Two steps forward, one step back. Going to have to refactor the app's entire theme approach. It's a learning process. :)
