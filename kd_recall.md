@@ -319,7 +319,7 @@ Current primary focus from here on out is on completing the web authentication p
 - Began adding code for form post return messages.
 - Began pruning and adjusting client side validation code.
 
-> 8-28-2020 [web]
+> 2020-08-28 [web]
 
 - Began getting `app_prefs.php` setup --- will be a composite of multiple other files.
 - Added countdown counter to Notes `textarea`.
@@ -331,7 +331,7 @@ Current primary focus from here on out is on completing the web authentication p
 - Got the base of the server-side validation structure outlined and coded.
 - Working on validation; primarily email and password data.
 
-> 8-29-2020 [web]
+> 2020-08-29 [web]
 
 - Set session to auto-timeout (will redirect to `log in` on any subsequent activity).
 - Added in requirement for `whichApp` on all preferences form submissions (not just user ID).
@@ -340,18 +340,18 @@ Current primary focus from here on out is on completing the web authentication p
   - Aggregated and trimmed a lot of the code within.
   - Not posting to it from `runp.js` yet.
 
-> 8-30-2020 [web]
+> 2020-08-30 [web]
 
 - Began posting to `app_prefs`. Although currently a complete Frankenstein, got the file to load without error (posting from `runp.js`).
 - Fixed session error. Moved the `include` call to `_core` to be __above__ session activity checks.
 - A lot more code gathering and trimming inside `app_prefs`. Blocked out 3 major sections; top (initial sift), middle (in progress), bottom (TBD).
 
-> 8-31-2020 [web]
+> 2020-08-31 [web]
 
 - Continued the overhaul on the still-Frankensteined `app_prefs` API file. Got the major field sections grouped (email and password, name, notes, and the 3 sliders), although still quite rough.
 - Began adding setter methods to the primary class object.
 
-> 9-1-2020 [web]
+> 2020-09-01 [web]
 
 - Filtering user's `notes`. Using a programmatical `textarea` to pass PHP-filtered `notes` to JavaScript.
 - Fixed a double ternary (in PHP you gotta wrap that second ternary!)
@@ -362,7 +362,7 @@ Current primary focus from here on out is on completing the web authentication p
 - Fixed `user_reset` table to allow for `ON UPDATE CASCADE`.
 - Fixed `user_notes` table; made `user_id` `UNIQUE` and increased `notes` to 5,000 characters.
 
-> 9-2-2020 [web]
+> 2020-09-02 [web]
 
 - Cut session timeout from 5 hours to 1 hour.
 - Changed `email` field to trigger change event when user has stopped typing for half a second. Ergo, when the email field changes, it will no longer wait for the field to blur, but instead will show the 'current password' field near immediately after the field is changed.
@@ -372,7 +372,7 @@ Current primary focus from here on out is on completing the web authentication p
 - Added `preferences-testing.md` and `preferences-testing.ods` to source assets.
 - **The web-based preferences interface is complete.**
 
-> 9-3-2020 [web]
+> 2020-09-03 [web]
 
 - Structured and formatted 2 of 4 ancillary pages; password reset and DND.
 - Started on 'user removal'.
@@ -382,7 +382,7 @@ Current primary focus from here on out is on completing the web authentication p
   - No call to back end yet.
 - New rule: Loosening up on [periods](https://www.dailywritingtips.com/period-goes-inside-quotation-marks/) and [commas](https://english.stackexchange.com/questions/23/is-it-ever-acceptable-for-a-period-to-come-after-a-quote-at-the-end-of-a-sentenc) being inside quotes, especially within all my 'programming endeavors'.
 
-> 9-4-2020 [web]
+> 2020-09-04 [web]
 
 - Structured and formatted remaining ancillary pages; verify and logout.
 - Determined new user removal layout and process.
@@ -391,7 +391,7 @@ Current primary focus from here on out is on completing the web authentication p
   - Providing a removal notice, input field for current password, and a submit button.
   - UI and UX feel good.
 
-> 9-5-2020 [web]
+> 2020-09-05 [web]
 
 - Completed user removal process.
   - Added supporting method to class object.
@@ -404,7 +404,7 @@ Current primary focus from here on out is on completing the web authentication p
 - Changed out all [http_status] to 200 and added a [xsfer_status] with their relevant http status codes.
     Change all: http_status = 200
 
-> 9-6-2020 -- 9-17-2020 [mobile]
+> 2020-09-06 -- 2020-09-17 [mobile]
 
 This last week and a half is mostly just a blurred mixture of learning, trying, fixing, and a little actual programming.
 
@@ -428,7 +428,7 @@ This last week and a half is mostly just a blurred mixture of learning, trying, 
   - [Target API level requirements for the Play Console](https://support.google.com/googleplay/android-developer/answer/113469#targetsdk)
   - [Build and release an Android app](https://flutter.dev/docs/deployment/android)
 
-### Current App Status for 9-17-2020
+### Current App Status for 2020-09-17
 
 Knowing I've still got a few more topics I will need to dive deeper into prior to completing the pilot app, I'm still pushing for the end of September (less than two weeks). However, realistically speaking, Hungry-on-Hand will likely run into early October. I still need to create the preferences screen, and then the actual app itself.
 
@@ -438,7 +438,7 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
 
 <img alt="KD-reCall Login Screen" src="https://kdcinfo.com/kdrecall/_img/kdrecall_login_01.jpg" width="180">
 
-> 9-18-2020 [web]
+> 2020-09-18 [web]
 
 - Moved 'account removal' code from API (mobile) to POST (web) and refactored.
   - Because remove account is now a part of the preferences page, both web and mobile will split to their mirrored functionality, as is consistent with the rest of the project.
@@ -448,7 +448,7 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
 - Fixed issue with registration verification page found in error log.
 - Fixed issue with redirect not working after account removal.
 
-> 9-19-2020 [mobile]
+> 2020-09-19 [mobile]
 
 - Added cancel button to forgot/reset password pop-up.
 - Made hero image clickable (shows 'about' dialog).
@@ -458,7 +458,7 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
   I'm now branching past just the authentication screen, and need a better understanding of the multi-provider routes I have setup.
 - Began playing with dark mode theme. Lots to do, but going to solely focus instead on preferences screen.
 
-> 9-20 [mobile]
+> 2020-09-20 [mobile]
 
 - Began prepping for creating the Preferences screen.  
   Gathered preference properties from web-based code.
@@ -478,7 +478,7 @@ An example of the `static const` maps now used as 'enums with values' thank to [
   }
 ```
 
-> 9-21 [web - other]
+> 2020-09-21 [web - other]
 
 Having been working with debugging my KD-reCall web-based preferences API, I got the idea to do a search on my entire `kdcinfo.com` domain for "error_log".
 
@@ -496,7 +496,7 @@ A quick list of the web apps I fixed are:
 - [Personal countdown calendar](https://kdcinfo.com/db/CalCnt/CDC.php)
 - [Pick-a-Meal](https://kdcinfo.com/pickameal/)
 
-> 9-22 [mobile]
+> 2020-09-22 [mobile]
 
 - Extracted out the AppBar into its own widget class.
 - Extracted out the entire body's `Stack()`, which accepts a custom child widget as its innermost content `Card()`.
@@ -505,7 +505,7 @@ A quick list of the web apps I fixed are:
 - Got Prefs provider data initially setup pretty good.
   - Created the `isDark` functional logic in the Prefs provider based on `Auth()->UserInfo` settings.
 
-> 9-23 [mobile]
+> 2020-09-23 [mobile]
 
 - Got all the critical errors cleared in both 'prefs_p.dart' and 'prefs_card.dart'.
   - No logic yet, and all the fields are complete Frankensteins, but the screen comes up.
@@ -514,7 +514,7 @@ A quick list of the web apps I fixed are:
 - Created a draw.io code skeleton composite for a broader view of the data and interactions between the app's main, provider, models, and screen files.  
   Creating and updating diagrams and flowcharts, although time consuming, can help immensely in walking back through the code in detail, oftentimes revealing flaws along the way.
 
-> 9/24 [mobile]
+> 2020-09-24 [mobile]
 
 - Finally got all the code, data, and flows lined up in both `prefs_p` (provider file) and `prefs_card` (functional inner-screen widget---each screen has its own).  
   Getting a _little better_ handle on data initialization at the 'forest level'.
@@ -524,7 +524,7 @@ A quick list of the web apps I fixed are:
   Error --> Changed out provider initialization call with a hard-coded `true` in `main.dart`.  
   Error --> Something something on a null object --- But the screen came up!
 
-> 9/25 [mobile]
+> 2020-09-25 [mobile]
 
 - Fix for #2:
   - Removed `_localPrefsData` initialization from the Prefs() build, and now initializing when instantiating.
@@ -537,7 +537,7 @@ About to take a new trek on my app's theme setup.
 
 Current Status: Two steps forward, one step back. Going to have to refactor the app's entire theme approach. It's a learning process. :)
 
-> 9/25 [mobile] - Part 2
+> 2020-09-25 [mobile] - Part 2
 
 As previously mentioned, couldn't get dark mode set dynamically via `Provider` within my current theme setup, so I researched and found a more comprehensive approach to theming.
 
@@ -567,10 +567,24 @@ Their Medium article's walklthrough also references [Panache: A Flutter Material
 
 In summary, although finding this theming approach is a significant bonus for the app as a whole, I will need to spend some time to complete the theme's integration, as well as developing out all the resulting action items.
 
-> 9/26 [_]
+> 2020-09-26 [_]
 
 - Day trip to Sacramento.
 
 - Still not yet processed the application and effects of the new theming system.
 
 Between refactoring the app's entire theme, adding custom preset themes back into development, and today's day trip, the pilot app's delivery has shifted to mid-October.
+
+> 2020-09-27 [_]
+
+- Another detour:
+
+My [project showcase domain](https://kdcbase.com) at kdcbase.com is a masked redirect to [content provided](https://kdcinfo.com/db/kdcbase/) from my [personal portfolio domain](https://kdcinfo.com) on kdcinfo.com. I sat through chatting with half a dozen CS tech reps while setting up the kdcbase.com SSL, and, as usual, learned a few new things about my domains along the way.
+
+- Stuck again in some 'lack of knowledge' muck.
+
+I spent some time trying to get button font sizes increased via the new theming system now in place, only to find that none of the `ThemeData` properties provided by the new system work. Well, they may be working, but nothing is set to take advantage of whatever is working ... perhaps? I certainly saw something working! 
+
+I do know the primary and secondary colors I have setup are working, because the app's colors look almost back to normal (excepting a few blue colors here and there).
+
+Need to process.
