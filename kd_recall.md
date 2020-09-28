@@ -566,3 +566,11 @@ Their Medium article's walklthrough also references [Panache: A Flutter Material
 - Customize widgets colors and shapes, and download your theme.dart file.
 
 In summary, although finding this theming approach is a significant bonus for the app as a whole, I will need to spend some time to complete the theme's integration, as well as developing out all the resulting action items.
+
+> 9/26 [_]
+
+- Day trip to Sacramento.
+
+- Still not yet processed the application and effects of the new theming system.
+
+Between refactoring the app's entire theme, adding custom preset themes back into development, and today's day trip, the pilot app's delivery has shifted to mid-October.
