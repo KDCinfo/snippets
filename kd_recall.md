@@ -588,3 +588,23 @@ I spent some time trying to get button font sizes increased via the new theming 
 I do know the primary and secondary colors I have setup are working, because the app's colors look almost back to normal (excepting a few blue colors here and there).
 
 Need to process.
+
+> 2020-09-28 [mobile]
+
+A new approach:
+
+  - I brought back up the demo theme project and went through file by file.
+  - I took a forest-level look at what it is I'm trying to accomplish, and what I currently have set in place to accommodate what needs to be done.
+
+@5:02 PM I figured it out.  
+  
+  - In the `MaterialApp` widget, there is both a `darkmode`, and a `theme` property. tl;dr, ne'er the twain shall meet.
+  - The darkmode property will be used in certain cases, and the code for the new theme system I'm using had both set.
+
+@11:40 PM
+
+- Refactored the code based on my new understandings and got it working. Some icons change, and the button font size changes. Lots of work ahead in tweaking it all.
+
+@1:45 AM
+
+- Got it working even more ... scaffold and backgrounds all swap out. WOOT !!!
