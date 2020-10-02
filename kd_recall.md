@@ -620,3 +620,42 @@ Got login screen prettied back up.
 Before logging off, noticed reference name wasn't showing up, although I know I'd seen it populated.
 
   - Determined the value was being cleared out by having an initializer at the top of the provider file.
+
+> 2020-09-30 [mobile]
+
+After working and thinking through my dilemma of the reference name being cleared out on the Preferences screen, it turns out I was only populating the `_localUserInfo` object with the `nameRef` setting on login. It wasn't being repopulated when its provider file was reinitialized, which I learned can occur quite often. 
+
+However, in the process of finding this oversight, I came across an even more perplexing issue. Just as the `Prefs()` provider class can be reinitialized at any time, as I found with the missing `nameRef` setting, as can the `Auth()` class, and its `_localUserInfo` object. This meant `isDark` was being cleared out with each reinitialization just like `nameRef` was.
+
+But to avoid `isDark` from being cleared out, if we __don't__ initialize the Auth() class until later (like in the `_tryAutoLogin` router call, which is where `_localUserInfo` is populated), that means that the initial `isDark` getter call for the app's theme has nothing to work with (i.e., the `_localUserInfo` object is `null` when called from the `theme:` property). 
+
+It was all quite perplexing, especially when trying to determine how, or even if, the `ChangeNotifierProvider` or `ChangeNotiferProxyProvider` components are involved, and if so, how?
+
+@6:50 PM - Revelation: should `isDark` be just a "logged in" user setting? I hadn't thought about its actual usage, as I'm still figuring out and learning syntax and Flutter flows.
+
+  - For starters, it's currently being set based on what's in `Auth._localUserInfo`.
+  - Secondly, that information is populated during the `tryAutoLogin()` call in the `routes` property.
+
+Thinking through this new perspective, I coded in what I figured to be the right setup, and everything seemed to work. As it sometimes happens, the result was fairly close to what I already had, but now armed with an understanding of why it wasn't working, I was able to make the one or two minor tweaks necessary to meet the new understanding of the expectations.
+
+Business logic decision: The `isDark` logic is already in place for "logged in" users---ergo, logged in users will have the dark mode option.
+
+  - `Auth` is initialized from the `ChangeNotifierProvider`, and `isDark` will default to `false`, initially, in every case.
+  - `tryAutoLogin()` will attempt to restore the proper `isDark` based on `_localUserInfo` stored in the device's Shared Preferences.
+  - The "One moment..." screen should be the only screen that has no dark mode, as that screen shows while the app asynchronously goes and grabs the `isDark` setting. That in mind, I may consider darkening the "One moment..." screen, as I believe, given the two scenarios, it is better to initially assume a dark mode.
+
+Snippets of the resulting successful code with an understanding: `isDark` is a getter with Auth-based dependencies:
+
+[main.dart]
+```
+  MultiProvider( providers: [ ChangeNotifierProvider.value( value: Auth() // Nothing fancy here.
+  ...
+  theme: _showTheme(
+    themeModel,
+    // authProvider.isDark,                            // Incorrect
+    authProvider.isAuth ? authProvider.isDark : false, // FIXED !!!
+  )
+  home: authProvider.isAuth
+    ? PreferencesScreen()
+    : buildFutureBuilder(context, authProvider),
+```
