@@ -608,3 +608,15 @@ A new approach:
 @1:45 AM
 
 - Got it working even more ... scaffold and backgrounds all swap out. WOOT !!!
+
+> 2020-09-29 [mobile]
+
+Got login screen prettied back up.
+
+  - Adjusted button fonts.
+  - Added input padding (and letting other padding default back to EdgeInset defaults).
+  - Themes are tedious.
+
+Before logging off, noticed reference name wasn't showing up, although I know I'd seen it populated.
+
+  - Determined the value was being cleared out by having an initializer at the top of the provider file.
