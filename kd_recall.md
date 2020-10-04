@@ -664,3 +664,12 @@ Snippets of the resulting successful code with an understanding: `isDark` is a g
 > 2020-10-01, -02 [_]
 
 Inadvertently spent two days on other life stuff ... with more life stuff coming up on Sun and Mon 10/04-05.
+
+> 2020-__ [web]
+
+Random updates to the KD-reCall web-based interface:
+
+- Added 'notes' to `getUserFromEmail` query.
+- Fixed a null object error.
+- Removed `console.log`s.
+- Centered toggles on preferences screen.
