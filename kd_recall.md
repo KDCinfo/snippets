@@ -669,7 +669,32 @@ Inadvertently spent two days on other life stuff ... with more life stuff coming
 
 Random updates to the KD-reCall web-based interface:
 
-- Added 'notes' to `getUserFromEmail` query.
+- Added 'notes' field to `getUserFromEmail` query.
 - Fixed a null object error.
 - Removed `console.log`s.
 - Centered toggles on preferences screen.
+
+> 2020-10-03 [mobile]
+
+- Success!
+
+Got global dark mode to toggle on and off. And it remembers and sees it on the 'auth check' screen, and again on login.
+
+Felt like at least a dozen tweaks, starting with my realizing the token was being sent back with the rest of the received preferences data. This is because it's required to be sent for user verification. So, I had to remove it out from the data object/array.
+
+This led me to figuring out how to deal between PHP's JSON array objects and associative arrays. The problem was that I have a decoded JSON object, but then I add the received and decoded data into that JSON object, but _that_ data is an associative array (or vice versa, depending on which "object" you're focusing on). So in coming to understand this, and accessing the array within the object, or the object within the array, it took a bit to wrap my head around to understand and figure out.
+
+But in removing the token field, because PHP copies by reference, it also removed it from the JSON object itself, which is needed further down in the code. So that fix was to create a temporary token string prior to cutting it from the data object.
+```
+  $thisToken = $json_obj->userToken; //  // We're creating a copy of the token string, because, being a reference, removing 'userToken' from '$newObj'
+  unset($newObj["userdata"]->userToken); // also removes it from '$json_obj->userToken', which is needed below.
+```
+Once that was done, I found each change of the dark mode setting triggered the 'auth check' screen. This was because I was also updating the `userId`, which triggers the auth route flow logic when set (apparently even if unchanged).
+
+Once that was fixed, the 'check auth' screen kept getting hit on logout, and I was getting an error: `'Future' is not a subtype of type 'FutureOr'`. This was due to my needing to change out all the pre-API method call parameters to accommodate the (new and) necessary `dynamic` list.
+
+  `Future<Map<String, List<dynamic>>> logout() async { ... }`
+  
+  Side Note: I don't like using dynamic types, just as I didn't like using `any`(?) in TypeScript, but it was either that, or spend 2 to 3 days learning how to do PHP type casting gymnastics, as I did with my API responses in which everything that is sent back is an Array---even single response items; they're just a one-element array.
+
+*Summary:* The happy path to updating all the preferences is open, and I believe I just now need to setup all the fields, add validation, add the overall submission, and preferences should be done. Guesstimation: 10/05 Monday evening, although preferrably tonight.
