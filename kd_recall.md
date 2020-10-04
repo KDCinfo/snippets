@@ -565,7 +565,7 @@ Their Medium article's walklthrough also references [Panache: A Flutter Material
 - Panache helps you to create beautiful Material themes for your Flutter applications.
 - Customize widgets colors and shapes, and download your theme.dart file.
 
-In summary, although finding this theming approach is a significant bonus for the app as a whole, I will need to spend some time to complete the theme's integration, as well as developing out all the resulting action items.
+In summary, I swapped out the Theme class for a ThemeModel. And although I do find this theming approach is a significant bonus for the app as a whole, I will need to spend some time to complete the theme's integration, as well as developing out all the resulting action items.
 
 > 2020-09-26 [_]
 
@@ -603,6 +603,7 @@ A new approach:
 
 @11:40 PM
 
+- Added in two color themes from Panache ('paprika' and 'yellowish').
 - Refactored the code based on my new understandings and got it working. Some icons change, and the button font size changes. Lots of work ahead in tweaking it all.
 
 @1:45 AM
@@ -659,3 +660,7 @@ Snippets of the resulting successful code with an understanding: `isDark` is a g
     ? PreferencesScreen()
     : buildFutureBuilder(context, authProvider),
 ```
+
+> 2020-10-01, -02 [_]
+
+Inadvertently spent two days on other life stuff ... with more life stuff coming up on Sun and Mon 10/04-05.
