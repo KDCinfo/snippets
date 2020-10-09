@@ -791,3 +791,15 @@ I traced all the way back to the 'Forgot Password' button method, finding two mo
 Then I found one more in the reference to the `showInfoDialog()` method, found in the [auth_helpers.dart] file.
 
   `static void showInfoDialog(BuildContext sbctx, Map<String, List<dynamic>> statusObj) { ... }`
+
+* * *
+### 2020-10-05 [mobile]
+
+- For help in keeping things visually structured, stripped out and created a code skeleton from the form fields in the [web] [preferences.php] file.
+
+- Moving along and getting things displaying on preferences page.
+  - Have all the input field `FocusNode`s setup.
+  - Have all the input field `Controller`s setup.
+  - Started on slider toggles. Got the first one near complete (thanks to the head start by Stack Overflow). They'll need focus as well.
+
+Need to start on functionality.
