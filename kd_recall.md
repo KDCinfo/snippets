@@ -803,3 +803,15 @@ Then I found one more in the reference to the `showInfoDialog()` method, found i
   - Started on slider toggles. Got the first one near complete (thanks to the head start by Stack Overflow). They'll need focus as well.
 
 Need to start on functionality.
+
+* * * 
+### 2020-10-06 [mobile]
+
+- Made a first test pass on the Prefs form.
+- More of the "jumping-to-the-catch-error-block" errors (`String` -> `dynamic`).
+- So many twists and turns:
+  - By reading through one semi-lengthy error message in the debug console, among other potential/irrelevant issues and solutions, it informed me my Prefs provider might not be in the MultiProvider list.
+  - Next error: Out of range. For testing, I was returning `returnObj` without populating a status (i.e. it was empty, but expected 1).
+  - Next error: Had to add `listen: false` to 2 calls to `Provider.of<ThemeModel>` in the [auth_helpers] file.
+  - And so many more...
+- Good progress. A lot to go.
