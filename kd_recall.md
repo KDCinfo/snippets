@@ -37,39 +37,47 @@ The basic beginnings:
 
 ## Revision History
 
-> 2020‑05‑08
+* * * 
+### 2020‑05‑08
 
 - [web] Initial commit for KD-reCall.
 - [web] Incremental development update.
 
-> 2020‑05‑14
+* * * 
+### 2020‑05‑14
 
 - [web] Incremental development updates.
 
-> 2020‑05‑16
+* * * 
+### 2020‑05‑16
 
 - [web] Working on session handling.
 - [web] Finished PHP session handling.
 
-> 2020‑05‑21
+* * * 
+### 2020‑05‑21
 
 - [web] Initial split between auth for both web and app.
 
-> 2020‑05‑24
+* * * 
+### 2020‑05‑24
 
 - [web] Worked on /auth. Renamed /app to /api.
 - [web] Auth path still working. API: Login and Logout are done (w/ JWT).
 
-> 2020‑05‑28
+* * * 
+### 2020‑05‑28
 
 - [web] Progress: Auth flow, session control, and some security (removed JWT)
 
-> 2020‑06‑01
+* * * 
+### 2020‑06‑01
 
 - [web] Started userData object population from server for client on login.
 - [web] Added pertinent user obj props. Setup whichApp and app_id usage.
 
-> 2020‑06‑09
+* * * 
+### 2020‑06‑09
 
 - [web] Authentication implementation / merge / refactor.
 - [web] Authentication: Added app_id
@@ -79,22 +87,26 @@ The basic beginnings:
 - [web] Authentication: Finished auth/DND. Bug fixes and code tweaks.
 - [web] Authentication: E-mail adjustments. DND refactor. Finished auth/reset.
 
-> 2020‑06‑10
+* * * 
+### 2020‑06‑10
 
 - [web] Auth: Refactored auth/reset to require username if not logged in. Changed PASSWORD_BCRYPT to PASSWORD_DEFAULT.
 - [web] Auth: Completed final revision of flowchart diagram.
 
-> 2020‑06‑12
+* * * 
+### 2020‑06‑12
 
 - [web] Auth flow source asset file updates.
 - [web] Auth: Added login logic to reset ref. name. Added 'resend'.
 - [web] Added 'api/reset'. Added active user orphan token check. Fixed expiration check.
 
-> 2020‑06‑13
+* * * 
+### 2020‑06‑13
 
 - [web] Auth: 2 DB updates. Implemented create_user_tables. Began allowing for multi-app registrations.
 
-> 2020‑06‑15
+* * * 
+### 2020‑06‑15
 
 - [web] Auth: Working on allowing login to register a new app - having to do some refactoring.
 - [web] Auth: Cleaned up files and fixed some bugs. Adjusted tests.
@@ -102,80 +114,95 @@ The basic beginnings:
 
 ---
 
-> 2020-06
+* * * 
+### 2020-06
 
 - [browser extension] Took two weeks off to create a browser extension.
 
 ---
 
-> 2020‑07‑03
+* * * 
+### 2020‑07‑03
 
 - [mobile] Initial commit of mobile app source files.
 
-> 2020‑07‑05
+* * * 
+### 2020‑07‑05
 
 - [mobile] Structural refactor and UI completion of login screen.
 
-> 2020‑07‑22
+* * * 
+### 2020‑07‑22
 
 - [mobile] Login UI complete. Began testing.
 
-> 2020‑07‑24
+* * * 
+### 2020‑07‑24
 
 - [mobile] Got some testing to work using lists, maps, and loops.
 
-> 2020‑07‑31
+* * * 
+### 2020‑07‑31
 
 - [mobile] Getting caught up: Field-level testing is done. Login is done.
 - [web] Getting caught up: Field-level testing done. Login done.
 
-> 2020‑08‑03
+* * * 
+### 2020‑08‑03
 
 - [mobile] Just preserving where I'm at: API token logins ~70-80%.
 
-> 2020‑08‑05
+* * * 
+### 2020‑08‑05
 
 - [mobile] Login and logout with token working through app via API.
 - [web] Added app_user_access table w token. Began login/logout auth flows.
 - [web] Progress on login/logout flow with token.
 - [web] Login and logout with token working through app via API.
 
-> 2020‑08‑07
+* * * 
+### 2020‑08‑07
 
 - [mobile] Auth page near complete. Starting on forgot password / password reset.
 - [web] Progress on logout.
 - [web] Progress on login, logout, and registration / verify.
 - [web] Updated 'reset' and 'dnd' verify API pages and their email verbiage.
 
-> 2020‑08‑09 [mobile, web]
+* * * 
+### 2020‑08‑09 [mobile, web]
 
 - [mobile] Forgot/reset password complete. Authentication screen complete.
 - [mobile] Cleaned some code. Added printK(). Added _nameRef to logged in appbar title.
 - [web] Added verifyAndReset form.
 
-> 2020‑08‑12 [web]
+* * * 
+### 2020‑08‑12 [web]
 
 Current primary focus from here on out is on completing the web authentication pages 100%. This includes finalizing the FAQ/terms/privacy/about panels, then will finalize the preferences page. All the while fixing and tweaking things along the way.
 
 - Split out Hungry readme from kdrecall readme.
 - Added getUserFromUID() for logged users. Removed access_code. Added 'exit()' after all header('location').
 
-> 2020‑08‑14 [web]
+* * * 
+### 2020‑08‑14 [web]
 
 - Finished with sessions. Another landing page iteration.
 - Got index, landing page, and preferences layout code ready for boilerplating.
 
-> 2020‑08‑15 [web]
+* * * 
+### 2020‑08‑15 [web]
 
 - Moved images out of _img and into _assets_src
 
-> 2020‑08‑16 [web]
+* * * 
+### 2020‑08‑16 [web]
 
 - Added boilerplate templates. Added side drawer. Reduced placeholder text.
 - Still working on preferences page.
 - Made landing page responsive. Added contact form. Moved kdrecall.js include into _bottom. Added placeholder for links to app store.
 
-> 2020-08-17 [web]
+* * * 
+### 2020-08-17 [web]
 
 - Finished outline of structure for the primary files (index, login, logout, preference, meta, _bottom)
 - Finished extrapolation of asset usage for same files (CSS, JS, [meta: css], [_bottom: js])
@@ -185,19 +212,22 @@ Current primary focus from here on out is on completing the web authentication p
 - Worked a bit on preferences page. Now that I can see what I'm aiming for, got all the HTML elements lined up and ready for CSS formatting.
 - Started a bit on FAQ/terms/privacy wording (copied files from PetRefApp same as contact form).
 
-> 2020-08-18 [web]
+* * * 
+### 2020-08-18 [web]
 
 - Fixed burger buttons on faux appBar.
 - Created `_includes` folder and shifted files.
 - Got FAQ and About panels laid out and formatted.
 - Converted `<div>`s to `<a>` tags for keyboard nav. Added keydowns and .focuses.
 
-> 2020-08-19 [web]
+* * * 
+### 2020-08-19 [web]
 
 - Went through wording in privacy panel.
 - Began analyzing various modal entries and exits.
 
-> 2020-08-20 [web]
+* * * 
+### 2020-08-20 [web]
 
 - Began checking through tabbing on page.
 - Added a closed tabbing loop on the contact form and the side drawer.
@@ -208,7 +238,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Converted clickable `div`s and `span`s to `a` tags.
 - Added keypresses to clicks.
 
-> 2020-08-21 [web]
+* * * 
+### 2020-08-21 [web]
 
 - Fixed and finalized closed tabbing loop on side drawer and contact form.
 - Added and finalized tabbing loop on FAQ and Privacy modals.
@@ -220,7 +251,8 @@ Current primary focus from here on out is on completing the web authentication p
   - All keyboard inputs for constrained keyboard navigation
 - Keyboard navigation of entire index page is complete.
 
-> 2020-08-22 [web]
+* * * 
+### 2020-08-22 [web]
 
 - Shuttered the app detail blocks instead of expand-dropping them all in at once like a curtain call.
 - Brought all four shutters up from the bottom, and coupled them with fade transitions.
@@ -228,21 +260,24 @@ Current primary focus from here on out is on completing the web authentication p
 - Fixed two text links in appBar.
 - Added some missing hrefs.
 
-> 2020-08-22/23 [web]
+* * * 
+### 2020-08-22/23 [web]
 
 - Done with verbiage, layout, and formatting on the FAQ, About, Privacy, Disclaimers, etc.
 - Moved 'About' from Privacy to FAQ and updated references.
 - Updated individual page meta titles and descriptions.
 - Fixed error: When logging in, .toLowerCase() error on undefined.
 
-> 2020-08-23 [web]
+* * * 
+### 2020-08-23 [web]
 
 - Done with preferences page general layout.
 - Applied a responsive breakpoint at 720px.
 - Changed 'login status' to checkbox icon.
 - Got all the form posting mechanics in place.
 
-> 2020-08-24 [web]
+* * * 
+### 2020-08-24 [web]
 
 - Done with styling toggle buttons. Instead of a switch, using an input="range" and custom styled slider. Sliders can be 0-1, 0-1-2, 0-1-2-3, etc.
   - Slider styling thanks to: [Daniel Stern](http://danielstern.ca/range.css/#/)
@@ -251,12 +286,14 @@ Current primary focus from here on out is on completing the web authentication p
 - Began entering HTML code for pop-up tips.
 - Removed "themes" from preferences page (`display: none`). Will get to them later if there's even any interest. Dark mode (theme) will suffice for now.
 
-> 2020-08-24 [web] (technically; 08-25 @1:52 AM)
+* * * 
+### 2020-08-24 [web] (technically; 08-25 @1:52 AM)
 
 - Setup a preferences data object.
 - Sliders now update the data object, then provide feedback to the preferences panel. Data object will also populate on button save.
 
-> 2020-08-24 [web] (technically; 08-25 @4:15 AM)
+* * * 
+### 2020-08-24 [web] (technically; 08-25 @4:15 AM)
 
 - Finished with Preferences layout and formatting.
 	- Moved 'Show Help' section to be alongside Global Dark Mode.
@@ -265,13 +302,15 @@ Current primary focus from here on out is on completing the web authentication p
 		- Will need to setup an intermediary screen for capturing current, and setting new password.
 	- Ready for form validation and submission.
 
-> 2020-08-25 [web]
+* * * 
+### 2020-08-25 [web]
 
 - Added quick tip pop-up cancel buttons.
 - Created a 'quick tip' pop-up for the various field-level validation requirements.
 - Fixed the Save and Reset buttons on narrow screens; made responsive.
 
-> 2020-08-25 [web]
+* * * 
+### 2020-08-25 [web]
 
 - Began adding code for password fields.
 - Added 3-sec countdown on login.
@@ -283,7 +322,8 @@ Current primary focus from here on out is on completing the web authentication p
   - Password change requires current password, new password, and a confirm password.
   - None of these fields are present on the original preferences screen.
 
-> 2020-08-26 [web]
+* * * 
+### 2020-08-26 [web]
 
 - Added visual feedback when individual preference settings are changed.
   - For the sliders, feedback is immediate as the sliders are moved.
@@ -306,7 +346,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Renamed `input-text` to `input-tip-text` for clarity.
 - Removed 'app description' (clutter).
 
-> 2020-08-27 [web]
+* * * 
+### 2020-08-27 [web]
 
 - Disabled login button on click. Reenables on error.
 - Misc tweaks and fixes.
@@ -319,7 +360,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Began adding code for form post return messages.
 - Began pruning and adjusting client side validation code.
 
-> 2020-08-28 [web]
+* * * 
+### 2020-08-28 [web]
 
 - Began getting `app_prefs.php` setup --- will be a composite of multiple other files.
 - Added countdown counter to Notes `textarea`.
@@ -331,7 +373,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Got the base of the server-side validation structure outlined and coded.
 - Working on validation; primarily email and password data.
 
-> 2020-08-29 [web]
+* * * 
+### 2020-08-29 [web]
 
 - Set session to auto-timeout (will redirect to `log in` on any subsequent activity).
 - Added in requirement for `whichApp` on all preferences form submissions (not just user ID).
@@ -340,18 +383,21 @@ Current primary focus from here on out is on completing the web authentication p
   - Aggregated and trimmed a lot of the code within.
   - Not posting to it from `runp.js` yet.
 
-> 2020-08-30 [web]
+* * * 
+### 2020-08-30 [web]
 
 - Began posting to `app_prefs`. Although currently a complete Frankenstein, got the file to load without error (posting from `runp.js`).
 - Fixed session error. Moved the `include` call to `_core` to be __above__ session activity checks.
 - A lot more code gathering and trimming inside `app_prefs`. Blocked out 3 major sections; top (initial sift), middle (in progress), bottom (TBD).
 
-> 2020-08-31 [web]
+* * * 
+### 2020-08-31 [web]
 
 - Continued the overhaul on the still-Frankensteined `app_prefs` API file. Got the major field sections grouped (email and password, name, notes, and the 3 sliders), although still quite rough.
 - Began adding setter methods to the primary class object.
 
-> 2020-09-01 [web]
+* * * 
+### 2020-09-01 [web]
 
 - Filtering user's `notes`. Using a programmatical `textarea` to pass PHP-filtered `notes` to JavaScript.
 - Fixed a double ternary (in PHP you gotta wrap that second ternary!)
@@ -362,7 +408,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Fixed `user_reset` table to allow for `ON UPDATE CASCADE`.
 - Fixed `user_notes` table; made `user_id` `UNIQUE` and increased `notes` to 5,000 characters.
 
-> 2020-09-02 [web]
+* * * 
+### 2020-09-02 [web]
 
 - Cut session timeout from 5 hours to 1 hour.
 - Changed `email` field to trigger change event when user has stopped typing for half a second. Ergo, when the email field changes, it will no longer wait for the field to blur, but instead will show the 'current password' field near immediately after the field is changed.
@@ -372,7 +419,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Added `preferences-testing.md` and `preferences-testing.ods` to source assets.
 - **The web-based preferences interface is complete.**
 
-> 2020-09-03 [web]
+* * * 
+### 2020-09-03 [web]
 
 - Structured and formatted 2 of 4 ancillary pages; password reset and DND.
 - Started on 'user removal'.
@@ -382,7 +430,8 @@ Current primary focus from here on out is on completing the web authentication p
   - No call to back end yet.
 - New rule: Loosening up on [periods](https://www.dailywritingtips.com/period-goes-inside-quotation-marks/) and [commas](https://english.stackexchange.com/questions/23/is-it-ever-acceptable-for-a-period-to-come-after-a-quote-at-the-end-of-a-sentenc) being inside quotes, especially within all my 'programming endeavors'.
 
-> 2020-09-04 [web]
+* * * 
+### 2020-09-04 [web]
 
 - Structured and formatted remaining ancillary pages; verify and logout.
 - Determined new user removal layout and process.
@@ -391,7 +440,8 @@ Current primary focus from here on out is on completing the web authentication p
   - Providing a removal notice, input field for current password, and a submit button.
   - UI and UX feel good.
 
-> 2020-09-05 [web]
+* * * 
+### 2020-09-05 [web]
 
 - Completed user removal process.
   - Added supporting method to class object.
@@ -404,7 +454,8 @@ Current primary focus from here on out is on completing the web authentication p
 - Changed out all [http_status] to 200 and added a [xsfer_status] with their relevant http status codes.
     Change all: http_status = 200
 
-> 2020-09-06 -- 2020-09-17 [mobile]
+* * * 
+### 2020-09-06 -- 2020-09-17 [mobile]
 
 This last week and a half is mostly just a blurred mixture of learning, trying, fixing, and a little actual programming.
 
@@ -428,7 +479,8 @@ This last week and a half is mostly just a blurred mixture of learning, trying, 
   - [Target API level requirements for the Play Console](https://support.google.com/googleplay/android-developer/answer/113469#targetsdk)
   - [Build and release an Android app](https://flutter.dev/docs/deployment/android)
 
-### Current App Status for 2020-09-17
+* * * 
+## Current App Status for 2020-09-17
 
 Knowing I've still got a few more topics I will need to dive deeper into prior to completing the pilot app, I'm still pushing for the end of September (less than two weeks). However, realistically speaking, Hungry-on-Hand will likely run into early October. I still need to create the preferences screen, and then the actual app itself.
 
@@ -438,7 +490,8 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
 
 <img alt="KD-reCall Login Screen" src="https://kdcinfo.com/kdrecall/_img/kdrecall_login_01.jpg" width="180">
 
-> 2020-09-18 [web]
+* * * 
+### 2020-09-18 [web]
 
 - Moved 'account removal' code from API (mobile) to POST (web) and refactored.
   - Because remove account is now a part of the preferences page, both web and mobile will split to their mirrored functionality, as is consistent with the rest of the project.
@@ -448,7 +501,8 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
 - Fixed issue with registration verification page found in error log.
 - Fixed issue with redirect not working after account removal.
 
-> 2020-09-19 [mobile]
+* * * 
+### 2020-09-19 [mobile]
 
 - Added cancel button to forgot/reset password pop-up.
 - Made hero image clickable (shows 'about' dialog).
@@ -458,7 +512,8 @@ Below is a screenshot of what the completed login screen for mobile looks like. 
   I'm now branching past just the authentication screen, and need a better understanding of the multi-provider routes I have setup.
 - Began playing with dark mode theme. Lots to do, but going to solely focus instead on preferences screen.
 
-> 2020-09-20 [mobile]
+* * * 
+### 2020-09-20 [mobile]
 
 - Began prepping for creating the Preferences screen.  
   Gathered preference properties from web-based code.
@@ -478,7 +533,8 @@ An example of the `static const` maps now used as 'enums with values' thank to [
   }
 ```
 
-> 2020-09-21 [web - other]
+* * * 
+### 2020-09-21 [web - other]
 
 Having been working with debugging my KD-reCall web-based preferences API, I got the idea to do a search on my entire `kdcinfo.com` domain for "error_log".
 
@@ -496,7 +552,8 @@ A quick list of the web apps I fixed are:
 - [Personal countdown calendar](https://kdcinfo.com/db/CalCnt/CDC.php)
 - [Pick-a-Meal](https://kdcinfo.com/pickameal/)
 
-> 2020-09-22 [mobile]
+* * * 
+### 2020-09-22 [mobile]
 
 - Extracted out the AppBar into its own widget class.
 - Extracted out the entire body's `Stack()`, which accepts a custom child widget as its innermost content `Card()`.
@@ -505,7 +562,8 @@ A quick list of the web apps I fixed are:
 - Got Prefs provider data initially setup pretty good.
   - Created the `isDark` functional logic in the Prefs provider based on `Auth()->UserInfo` settings.
 
-> 2020-09-23 [mobile]
+* * * 
+### 2020-09-23 [mobile]
 
 - Got all the critical errors cleared in both 'prefs_p.dart' and 'prefs_card.dart'.
   - No logic yet, and all the fields are complete Frankensteins, but the screen comes up.
@@ -514,7 +572,8 @@ A quick list of the web apps I fixed are:
 - Created a draw.io code skeleton composite for a broader view of the data and interactions between the app's main, provider, models, and screen files.  
   Creating and updating diagrams and flowcharts, although time consuming, can help immensely in walking back through the code in detail, oftentimes revealing flaws along the way.
 
-> 2020-09-24 [mobile]
+* * * 
+### 2020-09-24 [mobile]
 
 - Finally got all the code, data, and flows lined up in both `prefs_p` (provider file) and `prefs_card` (functional inner-screen widget---each screen has its own).  
   Getting a _little better_ handle on data initialization at the 'forest level'.
@@ -524,7 +583,8 @@ A quick list of the web apps I fixed are:
   Error --> Changed out provider initialization call with a hard-coded `true` in `main.dart`.  
   Error --> Something something on a null object --- But the screen came up!
 
-> 2020-09-25 [mobile]
+* * * 
+### 2020-09-25 [mobile]
 
 - Fix for #2:
   - Removed `_localPrefsData` initialization from the Prefs() build, and now initializing when instantiating.
@@ -537,7 +597,8 @@ About to take a new trek on my app's theme setup.
 
 Current Status: Two steps forward, one step back. Going to have to refactor the app's entire theme approach. It's a learning process. :)
 
-> 2020-09-25 [mobile] - Part 2
+* * * 
+### 2020-09-25 [mobile] - Part 2
 
 As previously mentioned, couldn't get dark mode set dynamically via `Provider` within my current theme setup, so I researched and found a more comprehensive approach to theming.
 
@@ -567,7 +628,8 @@ Their Medium article's walklthrough also references [Panache: A Flutter Material
 
 In summary, I swapped out the Theme class for a ThemeModel. And although I do find this theming approach is a significant bonus for the app as a whole, I will need to spend some time to complete the theme's integration, as well as developing out all the resulting action items.
 
-> 2020-09-26 [_]
+* * * 
+### 2020-09-26 [_]
 
 - Day trip to Sacramento.
 
@@ -575,7 +637,8 @@ In summary, I swapped out the Theme class for a ThemeModel. And although I do fi
 
 Between refactoring the app's entire theme, adding custom preset themes back into development, and today's day trip, the pilot app's delivery has shifted to mid-October.
 
-> 2020-09-27 [_]
+* * * 
+### 2020-09-27 [_]
 
 - Another detour:
 
@@ -589,7 +652,8 @@ I do know the primary and secondary colors I have setup are working, because the
 
 Need to process.
 
-> 2020-09-28 [mobile]
+* * * 
+### 2020-09-28 [mobile]
 
 A new approach:
 
@@ -610,7 +674,8 @@ A new approach:
 
 - Got it working even more ... scaffold and backgrounds all swap out. WOOT !!!
 
-> 2020-09-29 [mobile]
+* * * 
+### 2020-09-29 [mobile]
 
 Got login screen prettied back up.
 
@@ -622,7 +687,8 @@ Before logging off, noticed reference name wasn't showing up, although I know I'
 
   - Determined the value was being cleared out by having an initializer at the top of the provider file.
 
-> 2020-09-30 [mobile]
+* * * 
+### 2020-09-30 [mobile]
 
 After working and thinking through my dilemma of the reference name being cleared out on the Preferences screen, it turns out I was only populating the `_localUserInfo` object with the `nameRef` setting on login. It wasn't being repopulated when its provider file was reinitialized, which I learned can occur quite often. 
 
@@ -661,11 +727,13 @@ Snippets of the resulting successful code with an understanding: `isDark` is a g
     : buildFutureBuilder(context, authProvider),
 ```
 
-> 2020-10-01, -02 [_]
+* * * 
+### 2020-10-01, -02 [_]
 
 Inadvertently spent two days on other life stuff ... with more life stuff coming up on Sun and Mon 10/04-05.
 
-> 2020-__ [web]
+* * * 
+### 2020-__ [web]
 
 Random updates to the KD-reCall web-based interface:
 
@@ -674,7 +742,8 @@ Random updates to the KD-reCall web-based interface:
 - Removed `console.log`s.
 - Centered toggles on preferences screen.
 
-> 2020-10-03 [mobile]
+* * * 
+### 2020-10-03 [mobile]
 
 - Success!
 
@@ -698,3 +767,27 @@ Once that was fixed, the 'check auth' screen kept getting hit on logout, and I w
   Side Note: I don't like using dynamic types, just as I didn't like using `any`(?) in TypeScript, but it was either that, or spend 2 to 3 days learning how to do PHP type casting gymnastics, as I did with my API responses in which everything that is sent back is an Array---even single response items; they're just a one-element array.
 
 *Summary:* The happy path to updating all the preferences is open, and I believe I just now need to setup all the fields, add validation, add the overall submission, and preferences should be done. Guesstimation: 10/05 Monday evening, although preferrably tonight.
+
+* * * 
+### 2020-10-04 [mobile]
+
+In randomly chaecking through the app, I found the Forgot and Reset Password forms didn't work. They just hung. Hmmm...
+
+@10/4/2020 7:05 PM
+
+- Got it solved.  
+  Holy holy wow wow!
+
+I faced a DOS-level generic error with a stacktrace of little to no help. Stepping through the code, it just "jumped" from a simple call straight into the `error -> catch` block. The error was:
+
+  `_TypeError (type '_TypeError' is not a subtype of type 'String')`
+
+Research might tell you this is a problem with not using `toList()` on a derived map. I must have tried at least two dozen different changes to my code, including adding potential `toList()` method calls in various locations that appeared could benefit from such a method. I changed code on both local and server-side, some of which were fortunately good and likely necessary changes. Other changes I'll need to revisit prior to commit.
+
+It wasn't until I *swapped out a `.then()` callback and assigned its `await` to a variable*: This led me deeper into and closer to where my code was wrong.
+
+I traced all the way back to the 'Forgot Password' button method, finding two more `<String>` types not yet changed to `<dynamic>`. This led to a search for `<String>>`. That search revealed another `<String>` type in the `finishAPICall()` method, and yet another in the `receiveMsg()` method.
+
+Then I found one more in the reference to the `showInfoDialog()` method, found in the [auth_helpers.dart] file.
+
+  `static void showInfoDialog(BuildContext sbctx, Map<String, List<dynamic>> statusObj) { ... }`
