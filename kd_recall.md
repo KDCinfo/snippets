@@ -825,3 +825,43 @@ Need to start on functionality.
 - Got all 3 sliders on happy paths.
 
 Was working with trying to get the slider toggles to be round with a line between like the web interface: got close enough to see I'd rather have the buttons with my new labels ("Currently ON", "Turn OFF").
+
+* * *
+### 2020-10-06 -- 08 [web]
+
+- [PHP] Stripping returnObj (token, password, confirm, etc.)
+- [PHP] Fixed `isWeb` vs. `isMobile` logic, among many other fixes.
+- [JS] Now clearing password fields on success.
+
+* * *
+### 2020-10-08 [mobile]
+
+- Most of preferences screen is working. 
+- Dark theme colors are much better. 
+  - Created a few custom text themes. 
+  - Toggle sliders look and work good.
+  - Swapped colors between drawer and dark mode background.
+    - Figured out and made adjustment to other colors.
+- Figured out how to get the multiline to add a new line.
+```
+    keyboardType: tfField == 'email'
+        ? TextInputType.emailAddress
+        : tfField == 'notes'
+            ? TextInputType.multiline
+            : TextInputType.text,
+
+    textInputAction: (tfFocusNext == null)
+        ? tfField == 'notes'
+            ? TextInputAction.newline
+            : TextInputAction.done
+        : TextInputAction.next,
+```
+- Fixed numerous bugs and logic issues (things change as the app grows and matures).
+- Change email works, but ... not thrilled it doesn't ask to revalidate.
+  - I didn't set it up originally because I figured they're logged in, but this isn't a security issue, it's an owner/authenticity issue. 
+  - We need to know the email belongs to the user, else people can just use any "email address". 
+  - @TODO: It should set the account to a (new) verification status.
+
+So, thus far about 85% of preferences is complete.
+  - Just still need to go through 'Change Password' and 'Remove Account' functionality.
+  - Then, will take the time to convert the 'change email' to require validation.
