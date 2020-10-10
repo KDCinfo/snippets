@@ -815,3 +815,13 @@ Need to start on functionality.
   - Next error: Had to add `listen: false` to 2 calls to `Provider.of<ThemeModel>` in the [auth_helpers] file.
   - And so many more...
 - Good progress. A lot to go.
+
+* * *
+### 2020-10-07 [mobile]
+
+- Toggling global dark mode now works, but... wondering if it's the right way.
+  - Researching: if one flutter provider needs access to another provider (spoiler: `changeNotifierProxyProvider`, although I still don't grasp it fully).
+  - Added slider toggle widget ([with a little start from Stack Overflow](https://stackoverflow.com/a/56344365/638153)) and got global dark mode to update via the Prefs provider.
+- Got all 3 sliders on happy paths.
+
+Was working with trying to get the slider toggles to be round with a line between like the web interface: got close enough to see I'd rather have the buttons with my new labels ("Currently ON", "Turn OFF").
