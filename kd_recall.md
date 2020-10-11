@@ -865,3 +865,24 @@ Was working with trying to get the slider toggles to be round with a line betwee
 So, thus far about 85% of preferences is complete.
   - Just still need to go through 'Change Password' and 'Remove Account' functionality.
   - Then, will take the time to convert the 'change email' to require validation.
+
+* * *
+### 2020-10-09 [mobile]
+
+- Fixed numerous errors in my PHP coding logic wrt using `in_array` vs. `array_key_exists` vs. `property_exists` vs. `isempty` vs. `isset`.
+
+- Change password functionality is complete.
+  - Had to fix the 'userInfo' not referencing the correct data.
+  - Created a new method to retrieve the values direct from Shared Preferences and provide them back to the `_initState` call.
+
+The issue is that I'm doing it mostly imperatively, because I don't have enough experience yet with the `ChangeNotifierProvider` and how they are all supposed to be magically connected. Need to study and analyze this more, but also need to finish this app. :)
+
+> Moving on to Remove Account, which needs its own screen widget.
+
+- Created the new Remove Account screen (quite crude). Tried running it and got a new error: `no material widget found`.
+  ```
+  > To introduce a Material widget, you can either directly include one, 
+  > or use a widget that contains Material itself, such as a Card, Dialog, Drawer, or Scaffold.
+  ```
+
+I don't get it. I'm using the same structural setup from [auth_reset_form.dart] --- all the major Widgets are in place.
