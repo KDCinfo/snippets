@@ -886,3 +886,36 @@ The issue is that I'm doing it mostly imperatively, because I don't have enough 
   ```
 
 I don't get it. I'm using the same structural setup from [auth_reset_form.dart] --- all the major Widgets are in place.
+
+* * *
+### 2020-10-10 [mobile]
+
+- Fixed previous issue temporarily by wrapping the `Form` inside of a `Card` widget.
+  - Side note: This code was later (today) fully refactored based on my 'about' dialog.
+
+- Analyzing and working through the PHP 'remove account' and 'user token' control flows.
+
+Found I've coded for two token comaprison approaches, but only using one of them --- for logout.
+  - Research (minimal): hashed token comparison approach "hash_equals" vs. database lookup  
+  #1: Get the hashed token and use `hash_equals()` with a newly created hash.  
+  #2: Create a new hash and use it in a database `where` clause.
+
+Of the two, I'm going to switch 'logout' to use #1, because that's its entire purpose, and I just don't think a database lookup is the best approach (could be wrong!). This approach is also suggested on [Stack Overflow](https://stackoverflow.com/questions/30535593/what-is-the-most-secure-method-of-logging-someone-into-a-website).
+
+An example of my most common Flutter errors---that yield little to no stack trace help, and stepping through just jumps directly to the `catch` block:
+  ```
+  'Future' is not a subtype of type 'FutureOr'
+  _TypeError (type '_TypeError' is not a subtype of type 'String')
+  flutter type 'NoSuchMethodError' is not a subtype of type 'String'
+  ```
+
+- Finished fixing Remove Account.
+
+Was putting too much logic in the modal. Just needed to run the `removeAccount`, then pop it off and return the result. Then on the fallback screen we can run the success/error modal and subsequent logout. 
+
+- Remove Account functionality is complete.
+  - Added verbiage and theming.
+
+> Moving on to requiring email validation for changing email address.
+  - This will need to be thought through.
+  - This is the last item left on the preferences screen.
