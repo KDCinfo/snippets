@@ -962,3 +962,33 @@ This was a **lot** of work, and I feel the need to justify it (to myself)---if o
 
 *Modularized:*
   - checkDateDf($checkDate = '')
+
+* * *
+### 2020-10-13 [web]
+
+I tried everything to get Chrome to **not** autofill the password fields. Nothing works.
+```
+  autocomplete="off" // Set on both `input` and `form` tags.
+  autocomplete="false"
+  autocomplete="new-password" // Spec: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill
+  autocomplete="chrome-off" // This is not a team-conscientious move.
+```
+Chrome has a ["use case" page](https://bugs.chromium.org/p/chromium/issues/detail?id=587466) that apparently is just for people to vent all the reasons why `autocomplete` should not be forced into every-single-field-no-matter-what-despite-what-the-creators-have-in-mind. Personally I think if you're on a "change email" or "change password" that having the 'current password' is there for an additional secruity element, and having it autofill defeats that entire purpose. This also reminds me of Chrome now hiding extension icons by default, no-matter-what. Developers were allowed to voice their say... but turns out that was just a vent box too.
+
+Per [MDN](https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion):
+  - `autocomplete="new-password"`
+  - I submitted a 2-step report to MDN that apparently [Chrome doesn't honor this anymore](https://support.google.com/chrome/thread/18696702).
+
+In the end, I'm going with:
+```
+  <form autocomplete="off">
+    <input type="email" autocomplete="off">
+    <input type="password" autocomplete="new-password"><!-- Per the spec -->
+```
+
+- More work on API logic.
+- Got PHP syntax errors ironed out.
+  - Uncommented out API call and began initial testing.
+- Got email sending and database updating.
+- Coding for updating new email in [reset_change] table is complete.
+  - Also ran a few tests; same submitter (must wait), token expired (transparent), email is already active.
