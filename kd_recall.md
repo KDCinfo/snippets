@@ -916,6 +916,49 @@ Was putting too much logic in the modal. Just needed to run the `removeAccount`,
 - Remove Account functionality is complete.
   - Added verbiage and theming.
 
-> Moving on to requiring email validation for changing email address.
+> Moving on to **requiring email validation for changing email address**.
   - This will need to be thought through.
   - This is the last item left on the preferences screen.
+
+* * *
+### 2020-10-11 -- 12 [web]
+
+This was a **lot** of work, and I feel the need to justify it (to myself)---if only to help isolate and adapt for future LOEs.
+  - Project hindsight analogy: If I were to consider drawing a hand, I would visualize it as a fully detailed 'outline' in my head, but I tend to end up with a micro-detailed, pore-level hand rendering. Once you start drilling down into a project, then you can begin to see all the underlying factors involved. I try to factor as much as I can before starting a project, but I seem to find more nuances when I'm working in and through the code.
+
+*Began logic:*
+```
+    // Email exists in [USER TABLE]                    *** Caution: Email exists ***
+        // Need status from [RESET TABLE]              *** Check created_at date
+            // created_at > 5
+            // created_at < 5
+    // Email doesn't exist in [USER TABLE]             *** Need to also check [RESET_CHANGE TABLE]
+        // Email exists in [RESET_CHANGE TABLE]        *** Check created_at date
+            // created_at > 5
+            // created_at < 5
+        // Email doesn't exist in [RESET_CHANGE TABLE] *** Clear: Add row and Send email with access code ***
+```
+
+*Added:*
+  - Table [_RESET_CHANGE]
+  - `email_change` to [web] API objects and flows.
+  - Rudimentary UI elements with some CSS to get the ball rolling.
+    - Went with the one new input field, and a checkbox to help control state.
+  - Integrated email change field into JavaScript flow (prep for API call).
+
+*Removed:*
+  - `updateMailAndPassFromUID()` -> Will no longer process email and password together.
+
+*Created:*
+  - emailExists()
+  - runChecks()
+  - getUserStatusByNewEmail()
+  - clearResetChangeEmail()
+  - getEmailChangeCreatedByNewEmail()
+
+*Changes to:*
+  - updateEmailFromUID()
+  - removeUser()
+
+*Modularized:*
+  - checkDateDf($checkDate = '')
