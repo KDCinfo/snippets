@@ -986,9 +986,87 @@ In the end, I'm going with:
     <input type="password" autocomplete="new-password"><!-- Per the spec -->
 ```
 
-- More work on API logic.
+More work on API logic.
 - Got PHP syntax errors ironed out.
   - Uncommented out API call and began initial testing.
 - Got email sending and database updating.
 - Coding for updating new email in [reset_change] table is complete.
   - Also ran a few tests; same submitter (must wait), token expired (transparent), email is already active.
+
+* * *
+### 2020-10-14 [web]
+
+Core PHP coding for *email verification* is complete, however, I actually completed the [mobile] version of the API code.
+  - Because preferences uses the [api/app_prefs.php] API file, I had copied over the [api/app_verify.php] API file as my starter, instead of [auth/verify.php].
+
+Ergo,
+  - Completed change email API for [mobile] (untested---still need to work on mobile).
+  - Now will convert to API for [web] so I can test the preferences [web] page.
+
+*Created:*
+  - [auth/changeemail.php]
+
+Email change is done for [web].
+  - Now clearing change email address on preferences page load if expired.
+  - Now differentiating between `emailExists` and `emailChangeExists`.
+  - Needs more testing.
+  - Needs `<a>` links.
+
+*Resulting functions:*
+  Note: _All the names have been somewhat randomly modified._
+  - function accessCodeChangeMailExists() {...}
+  - function shouldChangeMail() {...}
+  - function updateUserPassFromUID() {...}
+  - function MailChangeExists() {...}
+  - function getMailChangeStatus() {...}
+  - function runMailChecks() {
+    - return 'error';
+    - return 'error';
+    - return false;
+    - return false;
+    - return "error";
+    - return "same";
+    - return "verify";
+    - return 'verify';
+    - return 'dnd';
+    - return 'active'; }
+  - function getUserStatusByNewMail() {
+    - return false;
+    - return 'error';
+    - return 'verify';
+    - return 'error';
+    - return 'error';
+    - return 'dnd';
+    - return 'active';
+    - return false;
+    - return 'error'; }
+  - function issetMailChangeByMail() {...}
+  - function getMailChangeCreatedByNewMail() {...}
+  - function removeResetChangeMail($thisMail = '') {...}
+  - function removeResetChangeMailByID() {...}
+  - function updateResetChangeMail() {...}
+
+*Final database changes:*
+```
+    `_reset`
+        Added 'email' index
+        email -> _user -> cascade|cascade
+        app_id -> _app -> cascade|restrict
+
+    `_reset_change` [new]
+        Added 'user_id' index | unique
+        Added 'email' index
+        Added 'reset_token'
+        Added 'created_at'
+        user_id -> _user -> cascade|no action
+```
+
+I reeally did not see all the interactions and implications across the board that this was going to impact.
+This was primarily due to project fatigue.
+I don't encounter it often, but I'm not usually on the same project for 6+ months.
+The only reason I am in this case is because I'm laying the groundwork twofold:
+1) I'm about to create 5-10 mobile apps all based on the same coding framework and authentication structure.
+2) The authentication framework I've come up with attempts to cover all the authentication bases, and I'm doing it for both web (session auth) and mobile (token auth).
+
+When registering, need to check [reset_change] to see if email is waiting to be 'changed to'. If yes, but >5 min, it's clear.
+  - Email check for registration is complete.
