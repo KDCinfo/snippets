@@ -1150,3 +1150,26 @@ My little half dozen testing paths are a start, but will need to approach this m
     ----------->  --> DND ------->  KD7 < 5
 ```
 Now just need to implement.
+
+* * *
+### 2020-10-17 [web]
+
+Created a (secure) PHP page to keep an eye on my 3 primary database tables during testing: [t_user], [t_reset], [t_reset_change]
+
+In preparation for testing, I set out to delete the accounts I created from yesterday. I then spent half the day researching _what broke_ the 'remove account' functionality.
+
+  - Turns out, "I" had (who else?) added a logic check within the body of `removeUser()`.
+```
+        function removeUser() {
+            if ($this->clientHashCompare()) { ... }
+```
+  - ...making it consistent with [mobile], but!, only [mobile] does a token hash check, not [web].
+
+==> [ 1.50 ] hours of straight testing. There are quite a few 'wait >5 min' steps, which gives you time to make notes and do a little analysis.
+
+- Went through all 39 testing scenarios---added four log out actions.
+- Fixed one error while it was still in an 'access code wait' mode.
+- The very last test broke. Could not completely add the faux account; created the [t_user], but failed on [t_reset] with `app_id = 0`.
+- Saved all test results from 3-sql page I created earlier.
+
+Next step: apply same email change verification functionality to [mobile] and run through all the same tests.
