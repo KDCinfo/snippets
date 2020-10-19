@@ -1094,3 +1094,59 @@ This was slightly more involved than originally thought.
   - A couple errors were thrown, but could have been from one of my two DND attempts.
 
 My little half dozen testing paths are a start, but will need to approach this much more systematically. There can be no doubts with these email changes and DND faux account creations.
+
+* * *
+### 2020-10-16 [web]
+
+- Sick day
+
+- Got testing worked out. Ended up with 39 paths; later expanded to 43 paths adding four log outs.
+
+```
+    Action ---->  As  Try to ---->  For Expiry
+    ------ -----  --- ------------  --- -----
+    Register -->  KD1 Register -->  KD1 < 5
+    Register -->  KD1 Register -->  KD1 > 5
+    Register -->  KD1 Verify ---->  KD1 > 5
+    Register -->  KD1 Verify ---->  KD1 < 5
+    Register -->  KD2 Verify ---->  KD2 < 5
+    ----------->  KD2 Change email  KD1
+    ----------->  KD2 Change email  KD2
+    Change email  KD2 Verify ---->  KD3 > 5
+    Change email  KD2 Verify ---->  KD3 < 5
+    Change email  KD3 Verify ---->  KD2 < 5
+    Log out
+    Register -->  KD3
+    ----------->  KD2 Change email  KD3 < 5
+    ----------->  KD2 Change email  KD3 > 5
+    ----------->  --> Verify ---->  KD3 < 5
+    Remove  KD3
+    Register -->  KD2 Verify ---->  KD2 < 5
+    Register -->  KD3
+    ----------->  KD2 Change email  KD3 < 5
+    ----------->  KD2 Change email  KD3 > 5
+    Log out
+    Register -->  KD3 Register -->  KD3 < 5
+    ----------->  --> Register -->  KD3 > 5
+    ----------->  --> Verify ---->  KD3 < 5
+    Register -->  KD4
+    ----------->  KD2 Change email  KD4 < 5
+    ----------->  KD2 Change email  KD4 > 5
+    ----------->  KD2 Change email  KD2
+    ----------->  KD2 Change email  KD4 < 5
+    ----------->  KD2 Change email  KD4 > 5
+    ----------->  --> Verify ---->  KD4 < 5
+    Log out
+    Register -->  KD5
+    ----------->  --> DND ------->  KD5 > 5
+    Register -->  KD5
+    ----------->  --> DND ------->  KD5 < 5
+    ----------->  --> Register -->  KD5
+    ----------->  KD3 Change email  KD5
+    Log out
+    Register -->  KD6 Verify ---->  KD6 < 5
+    ----------->  KD6 Change email  KD7
+    ----------->  --> DND ------->  KD7 > 5
+    ----------->  --> DND ------->  KD7 < 5
+```
+Now just need to implement.
