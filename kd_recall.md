@@ -1048,25 +1048,49 @@ Email change is done for [web].
 
 *Final database changes:*
 ```
-    `_reset`
+    `t_reset`
         Added 'email' index
-        email -> _user -> cascade|cascade
-        app_id -> _app -> cascade|restrict
+        email -> t_user -> cascade|cascade
+        app_id -> t_app -> cascade|restrict
 
-    `_reset_change` [new]
+    `t_reset_change` [new]
         Added 'user_id' index | unique
         Added 'email' index
         Added 'reset_token'
         Added 'created_at'
-        user_id -> _user -> cascade|no action
+        user_id -> t_user -> cascade|no action
 ```
 
-I reeally did not see all the interactions and implications across the board that this was going to impact.
+I really did not see all the interactions and implications across the board that this was going to impact.
 This was primarily due to project fatigue.
 I don't encounter it often, but I'm not usually on the same project for 6+ months.
 The only reason I am in this case is because I'm laying the groundwork twofold:
 1) I'm about to create 5-10 mobile apps all based on the same coding framework and authentication structure.
 2) The authentication framework I've come up with attempts to cover all the authentication bases, and I'm doing it for both web (session auth) and mobile (token auth).
 
-When registering, need to check [reset_change] to see if email is waiting to be 'changed to'. If yes, but >5 min, it's clear.
+When registering, need to check [t_reset_change] to see if email is waiting to be 'changed to'. If yes, but >5 min, it's clear.
   - Email check for registration is complete.
+
+* * *
+### 2020-10-15 [web] [mobile]
+
+*DND:*
+  - Completed: when adding DND, also remove email from [t_reset_change] if exists (if email/DND link sent via a change email request).
+
+This was slightly more involved than originally thought.
+
+  1) Need to check if email exists in [t_reset_change].
+  2) Need to check if change email was set < 5 min.
+  3) Need to create a faux user and set status to DND.
+  4) Need to then remove email from [t_reset_change] --- On error, remove newly created user from #3.[1]
+
+[1] Doing what I can to not have the same email in both [t_user] and [t_reset_change] tables, although an expired email in [t_reset_change] should eventually be removed programmatically if it's going to be in use [i.e. not DND]---hopefully I've got all my `removeChangeEmail()` methods in all the right places.
+
+- Added links to error messages.  
+  `<a href='{$pathToLoginPage}'>log in</a>`
+- Went through all `@TODO:` tags in code.
+- Began some testing.
+  - Registration, verification, login, and changing password all seem to work as expected.
+  - A couple errors were thrown, but could have been from one of my two DND attempts.
+
+My little half dozen testing paths are a start, but will need to approach this much more systematically. There can be no doubts with these email changes and DND faux account creations.
