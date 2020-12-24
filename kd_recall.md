@@ -1173,3 +1173,30 @@ In preparation for testing, I set out to delete the accounts I created from yest
 - Saved all test results from 3-sql page I created earlier.
 
 Next step: apply same email change verification functionality to [mobile] and run through all the same tests.
+
+### 2020-12-23 [mobile]
+
+I got to a point with my app where I just couldn't get the code to do what I needed it to do. Basically, I need to update various components from three different 'reactive' sources. Scouring the web, I tried dozens of variations with every aspect of the `Provider` package I could find data on. I got really close a couple times, but always, always hit a solid road block. Additionally, in the end, my entire code base felt really ... procedural (read, cluttered). I felt claustrophic in my own code, and could not make heads or tails of all the different flows (and I've got plenty of DrawIO diagrams to show for it).
+
+Pressing pause on development, I put myself through a Coursera series on Computer and Object Oriented Systems Design. 
+
+With a newfound deeper understanding of OOD, and after several failed attempts to outline CRC (Class-Responsibility Collaborator) cards due to my app's current convoluted spaghetti code, I ventured to learn the "Filled Stacks" architecture. That went really well, and I loved the Clean Architecture approach, but he lost me on TDD. After additional consideration, I resolved that I didn't want to become reliant on a 3rd party package. Especially with my still being relatively new, if something breaks in their architectural package, I wouldn't know that it wasn't me doing something wrong. A package such as that is highly beneficial to developers who have the years of experience and can simply know when something isn't working "as expected."
+
+I had one architectural tutorial left to put to the test---Ray Wenderlich. To my delight, it was based on the Filled Stacks architecture, but didn't rely on the Stacked package itself. Unfortunately, although it gave me the insight of the architecture outside of the Stacked package, it didn't detail any reactiveness. But another huge plus was it showed me how to `implement` an `abstract` class with Dart, providing a crystal clear outline for switching between Dev and Prod data (e.g. for Web API and Storage data/access).
+
+So, I then had two paths to my goal of a cleaner architecture---both with their own limitations.
+
+Knowing these were still my best potentials for success, I took a(nother) chance. After double checking licensing on the code for both architectures, I extrapolated the reactive sections of the Stacked package, and merged in the essence of Ray's architecture, creating my own little architectural Frankenstein, which, when done, did not work.
+
+Slightly baffled, I created a simple pared down skeleton version of the code I had just compounded into my own app, and lo and behold, it worked! That was 2020-12-19. After months of failure in finding a good architectural approach that solved my app's needs, I was too tired to be excited. Using the `observable_ish` documentation, I then expanded my pared coding test to also react to compound objects, which after some trial and error, also worked. 
+
+The next day I applied the compound object setup to my own app, making all the pertinent adjustments, and when done, it also worked. Woot!
+
+Since that breakthrough, I've been working on continuing the refactor of the rest of my app to leverage the new reactive architectural design. It is tedious, but only because I still need practice in shifting my code around. At least now I can diagram my app without it becoming a game of Twister.
+
+References:
+  [Coursera Object Oriented Design](https://www.coursera.org/learn/object-oriented-design#syllabus)
+  [Filled Stacks](https://www.filledstacks.com/)
+  [Ray Wenderlich](https://www.raywenderlich.com/6373413-state-management-with-provider)
+
+**New projected estimate for app completion:** I have no idea but am hopeful for mid-January.
