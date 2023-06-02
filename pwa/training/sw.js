@@ -1,8 +1,9 @@
 const curPath = location.search.split('=')[1].replace(/_/g, '/'),
       curApp = 'training-progress-spa';
 
-const staticCacheName = curApp + '-v27',
-      staticAssetsVer = '20200329a';
+const staticCacheName = curApp + '-v35',
+      staticAssetsVer = '20211015e';
+      // staticAssetsVer = '20200329a';
 // const staticCacheName = curApp + '-v9',
 // const staticCacheName = curApp + '-v8',
 //       staticAssetsVer = '20180820d';
@@ -61,8 +62,15 @@ self.addEventListener('fetch', function(event) {
   const fetchThenCache = (eventRequest) => caches.open(staticCacheName).then(function(cache) {
           return fetch(eventRequest)
             .then(function(response) {
-              cache.put(eventRequest, response.clone());
-              return response;
+
+              if (response.url.match("^(http|https)://")) {
+                // cache.put(request, copy);
+                cache.put(eventRequest, response.clone());
+                return response;
+              } else {
+                return response;
+              }
+
             }).catch((e) => {
               console.log('CATCH [fetchThenCache]: ', eventRequest);
               return new Response("", {

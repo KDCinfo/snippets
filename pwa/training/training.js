@@ -15,6 +15,18 @@
    //
    // @TODO: PWA (Service Workers; if available).
 
+   // 2021-10-15 --- Bug Fix: Cards were no longer showing as being "Updated".
+   // Turned out a fall-through `resolve()` was causing the issue.
+   // Commented out at the end of app.storage.getList();
+   // // resolve(tmpCourseList);
+   // 1) You have to hard-reload each time to see any changes you make.
+   // 2) Then, after the fix, you have to update the 2 [sw.js] attributes,
+   //    and unregister the Service Worker in Dev Tools -> Application.
+
+   // 'Cut Corners' thanks to: [Joseph Silber](https://stackoverflow.com/a/7324826/638153)
+   // 'Cut Corners' can be added in the [training.css] ~ line #662.
+   // Don't forget to update [sw.js] staticCacheName && staticAssetsVer
+
   // Initialize App
   //
   const app = {
@@ -141,6 +153,27 @@
     }
   }
 
+  function sortTrainingList(a, b) {
+    // console.log("a");
+    // console.log(a);
+    // console.log("b");
+    // console.log(b);
+    // return a < b
+    //     ? -1
+    //     : a > b
+    //         ? 1
+    //         : 0;
+    return a.courseDateLastDate > b.courseDateLastDate
+        ? -1
+        : a.courseDateLastDate < b.courseDateLastDate
+            ? 1
+            : a.courseVendorName < b.courseVendorName
+                ? -1
+                : a.courseVendorName > b.courseVendorName
+                    ? 1
+                    : 0;
+  }
+
   app.storage = (function() {
     return {
       set: (val, key = 'EducationalAdvancement') => { // app.storage.set()
@@ -153,6 +186,7 @@
       getList: (key = 'EducationalAdvancement') => {  // Should just send back an array of classes.
         return new Promise((resolve, reject) => {
           let tmpCourseList = [];
+          // let sortedCourseList = [];
 
           if (app.dataSource === 'IDB') {
             appObjectStore = appDB.transaction('classList').objectStore('classList');
@@ -165,8 +199,8 @@
               if (cursor) {
                 tmpCourseList.push(JSON.parse(JSON.stringify(cursor.value)));
                 cursor.continue();
-
               } else { // if (cursor === null) { // End of cursor.
+                // tmpCourseList.sort(sortTrainingList);
                 resolve(tmpCourseList);
               }
             };
@@ -174,8 +208,16 @@
           } else {
             tmpCourseList = localStorage[key];
             tmpCourseList = JSON.parse(tmpCourseList);
+            // tmpCourseList.sort(sortTrainingList);
             resolve(tmpCourseList);
           }
+          // tmpCourseList.sort((a, b) => {
+          //   console.log("aa");
+          //   return a.localeCompare(b);
+          // });
+          // tmpCourseList.sort((a, b) => a.last_nom.localeCompare(b.last_nom));
+          // tmpCourseList.sort((a, b) => a.localeCompare(b));
+          // resolve(tmpCourseList);
         });
       },
       get: (key) => {
@@ -214,22 +256,17 @@
     return newObj;
   };
 
-  app.getClassList = function() {
+  app.getClassList = async function() {
 
-    app.storage.getList().then( tmpClassList => {
-
-      setTimeout( () => {
-        if (app.isLoading) {                    // Turn spinner off.
-          // app.spinner.setAttribute('hidden', true);
-          app.spinner.style.opacity = 0;
-          app.container.removeAttribute('hidden');
-          app.isLoading = false;
-        }
-      }, 250);
+    // app.storage.getList().then( tmpClassList => {
+    var tmpClassList = await app.storage.getList();
 
       app.clearDisplayList();                   // Let's start clean; always; no unexpected side effects.
 
       // FIRST PASS - Populate with browser-saved data (if any; it will try IndexedDB first, then localStorage).
+
+console.log('[training.js] tmpClassList.length');
+console.log(tmpClassList.length);
 
       if (tmpClassList.length > 0) {
         app.allClassList = tmpClassList;        // Array: Empty or populated with vendor objects (classes).
@@ -240,25 +277,7 @@
 
       const url = 'training-list.js';           // 'https://kdcinfo.com/app/training/training-list.js'
 
-      async function fetchClassList(urlToGet) {
-        try {
-          let response = await fetch(urlToGet, { method: 'GET', cache: 'reload' }); // , mode: 'no-cors', mode: 'same-origin'
-          let text = await response.text();
-
-          text = text.replace(/\n/g, '');       // ^^^ \n should be all that's needed.
-          // text = text.replace(/\t/g, ' ');   // Tabs aren't used; possible future use.
-          text = text.replace(/\`/g, '"');      // Convert string literals to quotes.
-          text = text.replace(/[\s\s]+/g, ' '); // Remove double spacing
-          text = text.replace(/\"\s/g, '"');    // Remove superfluous spaces after quotes.
-
-          return text;
-
-        } catch (e) {
-          return {}; // Empty object
-        }
-      }
-
-      fetchClassList(url).then( data => {
+      app.fetchClassList(url).then( data => {
 
         const ourJson = data ? JSON.parse(data) : {};
 
@@ -273,6 +292,7 @@
         } else {
           app.errorMsg('There was an error with the classList.');
         }
+        app.disableIsLoading();
 
       }).catch( (e) => {
         if (console && console.log) {
@@ -280,13 +300,43 @@
           console.log(e);
         }
         app.errorMsg('There was an error fetching the class listing.', e);
+        app.disableIsLoading();
       });
-    });
+    // });
+  };
+
+  app.fetchClassList = async function(urlToGet) {
+    try {
+      let response = await fetch(urlToGet, { method: 'GET', cache: 'reload' }); // , mode: 'no-cors', mode: 'same-origin'
+      let text = await response.text();
+
+      text = text.replace(/\n/g, '');       // ^^^ \n should be all that's needed.
+      // text = text.replace(/\t/g, ' ');   // Tabs aren't used; possible future use.
+      text = text.replace(/\`/g, '"');      // Convert string literals to quotes.
+      text = text.replace(/[\s\s]+/g, ' '); // Remove double spacing
+      text = text.replace(/\"\s/g, '"');    // Remove superfluous spaces after quotes.
+
+      return text;
+
+    } catch (e) {
+      return {}; // Empty object
+    }
+  }
+
+  app.disableIsLoading = function() {
+    setTimeout( () => {
+      if (app.isLoading) {                    // Turn spinner off.
+        // app.spinner.setAttribute('hidden', true);
+        app.spinner.style.opacity = 0;
+        app.container.removeAttribute('hidden');
+        app.isLoading = false;
+      }
+    }, 250);
   };
 
   app.errorMsg = function(msg, e = '') {
     app.message(msg + ' :: ' + e);
-  }
+  };
 
   app.clearDisplayList = function() {
     while (app.container.childElementCount > 0) {
@@ -314,21 +364,22 @@
       }
 
       // @TODONE: 'sort' feature
-      app.allClassList.sort( (a, b) => {
-        // if (a.courseProgress > b.courseProgress) {
-        //   return -1;
-        // } else if (a.courseProgress < b.courseProgress) {
-        //   return 1;
-        // } else {
-          if (a.courseVendorName < b.courseVendorName) {
-            return -1;
-          } else if (a.courseVendorName > b.courseVendorName) {
-            return 1;
-          } else {
-            return 0;
-          }
-        // }
-      });
+      // app.allClassList.sort( (a, b) => {
+      //   // if (a.courseProgress > b.courseProgress) {
+      //   //   return -1;
+      //   // } else if (a.courseProgress < b.courseProgress) {
+      //   //   return 1;
+      //   // } else {
+      //     if (a.courseVendorName < b.courseVendorName) {
+      //       return -1;
+      //     } else if (a.courseVendorName > b.courseVendorName) {
+      //       return 1;
+      //     } else {
+      //       return 0;
+      //     }
+      //   // }
+      // });
+      app.allClassList.sort(sortTrainingList);
 
       app.allClassList.filter(e => e.active === true).forEach( classObj => {
         // if (classObj.active) {                       // No non-active classes allowed inside `visibleClassSet`.

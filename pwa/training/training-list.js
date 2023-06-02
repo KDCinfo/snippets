@@ -9,6 +9,7 @@
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "May—Jun '18",
+      "courseDateLastDate": "2018-06",
       "courseShortVendor": "google-training",
       "courseShortName": "pwa",
       "courseURL": "",
@@ -50,6 +51,7 @@
       "courseDesc": "",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun—Jul '18",
+      "courseDateLastDate": "2018-07",
       "courseShortVendor": "google-training",
       "courseShortName": "all-devices",
       "courseURL": "",
@@ -85,13 +87,14 @@
     },
     {
       "id": "google-3",
-      "active": true,
+      "active": false,
       "courseVendorName": "3*— Google Training #3",
       "courseVendor": "Improve the user experience",
       "courseProgress": 84,
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "google-training",
       "courseShortName": "ux",
       "courseURL": "",
@@ -139,6 +142,7 @@
       "courseDesc": "This course was found by way of Jake Archibald's 'The offline cookbook' (a.k.a., caching strategies) [https://jakearchibald.com/2014/offline-cookbook/] ... This course provides a ton of relevant and fully functional examples, with a little humor sprinkled throughout.",
       "courseDateStarted": "May 2018",
       "courseDateLast": "May '18",
+      "courseDateLastDate": "2018-05",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "offline",
       "courseURL": "https://classroom.udacity.com/courses/ud899",
@@ -234,6 +238,7 @@
       "courseDesc": "Build your first PWA, a weather app that works offline. Learn to cache files with the Service Worker API, collect data using the Fetch API, and make your app installable on the home screen with the web app manifest file.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun '18",
+      "courseDateLastDate": "2018-06",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "intro-pwa",
       "courseURL": "https://classroom.udacity.com/courses/ud811",
@@ -340,6 +345,7 @@
       "courseDesc": "Learn how to handle asynchronous work with ease! In this course, you'll use Native JavaScript Promises to write asynchronous code that is easy to read, easy to write and easy to debug. Along the way, you'll be using Promises to make a webapp come to life!",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun '18",
+      "courseDateLastDate": "2018-06",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "js-promises",
       "courseURL": "https://classroom.udacity.com/courses/ud898",
@@ -410,6 +416,7 @@
       "courseDesc": "In this course you'll get hands-on experience making web applications accessible. You'll understand when and why users need accessibility. Then you'll dive into the \"how\": making a page work properly with screen readers, and managing input focus (e.g. the highlight you see when tabbing through a form.) You'll understand what \"semantics\" and \"semantic markup\" mean for web pages and add ARIA markup to enable navigating the interface with a range of assistive devices. Finally, you'll learn styling techniques that help users with partial vision navigate your pages easily and reliably. This course is also featured in Udacity's Full-Stack Web Developer Nanodegree program.",
       "courseDateStarted": "June 2018",
       "courseDateLast": "Jun '18",
+      "courseDateLastDate": "2018-06",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "web-accessibility",
       "courseURL": "https://classroom.udacity.com/courses/ud891",
@@ -579,6 +586,7 @@
       "courseDesc": "In this course you'll learn the fundamentals of responsive web design with Google's Pete LePage! You'll create your own responsive web page that works well on any device - phone, tablet, desktop or anything in between.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Jul '18",
+      "courseDateLastDate": "2018-07",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "responsive-design-fundamentals",
       "courseURL": "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893",
@@ -710,6 +718,7 @@
       "courseDesc": "Did you know that images account for more than 60% of the bytes on average needed to load a web page? In this course you will learn how to work with images on the modern web, so that your images look great and load quickly on any device. Along the way, you will pick up a range of skills and techniques to smoothly integrate responsive images into your development workflow. By the end of the course, you will be developing with images that adapt and respond to different viewport sizes and usage scenarios.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Jul '18",
+      "courseDateLastDate": "2018-07",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "responsive-images",
       "courseURL": "https://www.udacity.com/course/responsive-images--ud882",
@@ -812,6 +821,7 @@
       "courseDesc": "Want that smooth-as-a-native-app look and feel? Learn how to build apps that maintain 60-frames-per-second performance to react quickly and render smoothly. Performance matters to users. Web developers need to build apps that react quickly and render smoothly. Google performance guru Paul Lewis is here to help you destroy jank and create web apps that maintain 60 frames per second performance. You'll leave this course with the tools you need to profile apps and identify the causes of jank. You'll explore the browser's rendering pipeline and uncover patterns that make it easy to build performant apps.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "browser-rendering-optimization",
       "courseURL": "https://www.udacity.com/course/browser-rendering-optimization--ud860",
@@ -960,6 +970,7 @@
       "courseDesc": "The #1 reason people leave a web site is because it renders too slowly. Learn how to optimize your websites for speed on the desktop and mobile. You will learn how to optimize any website for speed by diving into the details of how mobile and desktop browsers render pages. Level: Intermediate",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "website-performance-optimization",
       "courseURL": "https://www.udacity.com/course/website-performance-optimization--ud884",
@@ -1052,6 +1063,7 @@
       "courseDesc": "HTTP/1 to HTTP/2 and all things Security. Become an HTTP master, optimizing network communications (for example using REST), preventing security problems (XSS, CSRF), deploying HTTPS, and turbocharging your apps with HTTP/2.",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "client-server-communication",
       "courseURL": "https://www.udacity.com/course/client-server-communication--ud897",
@@ -1174,6 +1186,7 @@
       "courseDesc": "Forms Rock! Over 70% of online shopping carts are abandoned before checkout! Learn how to keep users happy and reduce the chances of their walking away.",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "udacity-courses",
       "courseShortName": "high-conversion-web-forms",
       "courseURL": "https://www.udacity.com/course/building-high-conversion-web-forms--ud890",
@@ -1285,6 +1298,7 @@
       "courseDesc": "Covers: Basic JavaScript _ ES6 _ Regular Expressions _ Debugging _ Basic Data Structures _ Basic Algorithm Scripting _ Object Oriented Programming _ Functional Programming _ Intermediate Algorithm Scripting _ JavaScript Algorithms and Data Structures Projects",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-javascript-data-cert",
       "courseURL": "https://www.freecodecamp.org/kdcinfo",
@@ -1678,6 +1692,7 @@
       "courseDesc": "",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-libraries-cert",
       "courseURL": "https://www.freecodecamp.org/kdcinfo",
@@ -1894,6 +1909,7 @@
       "courseDesc": "https://www.freecodecamp.org/certification/kdcinfo/responsive-web-design",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Jul '18",
+      "courseDateLastDate": "2018-07",
       "courseShortVendor": "fcc-courses",
       "courseShortName": "fcc-web-design-cert",
       "courseURL": "https://www.freecodecamp.org/certification/kdcinfo/responsive-web-design",
@@ -2173,6 +2189,7 @@
       "courseDesc": "A practical guided Tour of Service Workers: Focusing on one of its most important use cases: Application Download and Installation (including application versioning).",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Jul '18",
+      "courseDateLastDate": "2018-07",
       "courseShortVendor": "angu-courses",
       "courseShortName": "angu-guided-intro",
       "courseURL": "https://blog.angular-university.io/service-workers/",
@@ -2213,13 +2230,14 @@
     },
     {
       "id": "harvard-1",
-      "active": true,
+      "active": false,
       "courseVendorName": "6a— HarvardX CS50W",
       "courseVendor": "CS50's Web Programming with Python and JavaScript",
       "courseProgress": 40,
       "courseDesc": "CS50W assumes that you've already taken CS50 itself, or have a year or more of prior programming experience (in any procedural language). Topics include database design, scalability, security, and user experience. Through hands-on projects, you'll learn to write and use APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku. By course's end, you'll emerge with knowledge and experience in principles, languages, and tools that empower you to design and deploy applications on the Internet.",
       "courseDateStarted": "July 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "harvard-courses",
       "courseShortName": "harvard-cs50w",
       "courseURL": "https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web",
@@ -2634,6 +2652,7 @@
       "courseDesc": "Master the fundamentals of React v16.3.2 and Redux as you develop apps with React Router, Webpack, and ES6.",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "udemy-courses",
       "courseShortName": "react-redux-tutorial",
       "courseURL": "https://www.udemy.com/react-redux/",
@@ -2871,6 +2890,7 @@
       "courseDesc": "Detailed walkthroughs on advanced React and Redux concepts - Authentication, Testing, Middlewares, HOC's, and Deployment",
       "courseDateStarted": "Aug 2018",
       "courseDateLast": "Aug '18",
+      "courseDateLastDate": "2018-08",
       "courseShortVendor": "udemy-courses",
       "courseShortName": "react-redux-tutorial",
       "courseURL": "https://www.udemy.com/react-redux-tutorial/",
@@ -3095,6 +3115,7 @@
       "courseDesc": "Mike Dalisay has been a pro software developer since 2010. He's the founder and author of codeofaninja.com programming blog. Through his tutorials you can learn PHP programming, JavaScript programming and how to use Social Media APIs.",
       "courseDateStarted": "Sep 2018",
       "courseDateLast": "Sep '19",
+      "courseDateLastDate": "2019-09",
       "courseShortVendor": "codeofaninja-courses",
       "courseShortName": "codeofaninja-tutorial",
       "courseURL": "https://www.codeofaninja.com/2013/03/php-login-script.html",
@@ -3245,6 +3266,7 @@
       "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 (at time of training) | Created by Academind by Maximilian Schwarzmüller",
       "courseDateStarted": "Feb 2020",
       "courseDateLast": "Mar '20",
+      "courseDateLastDate": "2020-03",
       "courseShortVendor": "udemy-courses",
       "courseShortName": "learn-flutter-and-dart",
       "courseURL": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
@@ -3748,6 +3770,389 @@
               <li class='progress done'>605. Bonus: More Content! ___ 1min</li>
             </ul>
             </p>
+          `
+        }
+      ]
+    },
+    {
+      "id": "google-4",
+      "active": true,
+      "courseVendorName": "4*— Google Flutter Codelabs",
+      "courseVendor": "Flutter Codelabs & Workshops",
+      "courseProgress": 55,
+      "courseDesc": "The Flutter codelabs provide a guided, hands-on coding experience. Flutter workshops are similar to the codelabs, but are instructor led and always use DartPad.",
+      "courseDateStarted": "Sep 2021",
+      "courseDateLast": "Dec '21",
+      "courseDateLastDate": "2021-12-05",
+      "courseShortVendor": "google-flutter-training",
+      "courseShortName": "flutter",
+      "courseURL": "https://flutter.dev/docs/codelabs",
+      "courseList": [
+        {
+          "courseClassTitle": "Good for Beginners",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p>
+            If you’re new to Flutter, we recommend starting with one of these codelabs:
+            </p>
+            <ul style='list-style: disc;'>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>Building your first Flutter app (workshop) NEW!</span> &mdash; An instructor-led version of our very popular “Write your first Flutter app, part 1” codelab (listed below).</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>Write your first Flutter app, part 1</span> &mdash; Create a simple mobile app that generates proposed names for a startup company. In part one, you’ll use a package that returns pairs of words at random and inserts them into an infinite scrolling list. You can also find this codelab on flutter.dev.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>Write your first Flutter app, part 2</span> &mdash; Create a simple mobile app that generates proposed names for a startup company. In part two, you’ll extend the example from part 1 to allow the user to select favorite word pairs, and add a second “Saved Favorites” page where users can view the selected names. Finally, you’ll change the app’s theme color.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>Write your first Flutter app on the web</span> &mdash; Implement a simple web app in DartPad (no downloads required!) that displays a sign-in screen containing three text fields. As the user fills out the fields, a progress bar animates along the top of the sign-in area. This codelab is written specifically for the web, but if you have downloaded and configured Android and iOS tooling, the completed app works on Android and iOS devices, as well.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>Building beautiful UIs with Flutter</span> &mdash; A deeper “first dive” than “Write your first Flutter app.” Create a chat app that includes a simple animation, and customizes the UI for iOS and Android. As part of this codelab, learn how to use keyboard shortcuts in Android Studio.</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Next Steps",
+          "courseClassProgress": 33,
+          "courseClassContent": `<p>
+              Next steps...
+            </p>
+            <ul style='list-style: disc;'>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>Building scrolling experiences in Flutter (workshop) NEW!</span> &mdash; Start with an app that performs simple, straightforward scrolling and enhance it to create fancy and custom scrolling effects by using slivers.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Dart null safety in Action (workshop) NEW!</span> &mdash; An instructor-led workshop based on the Null safety codelab on the dart.dev site.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>How to manage application states using inherited widgets (workshop) NEW!</span> &mdash; Learn how to manage the state of your app’s data by using the InheritedWidget class, one of the low-level state management classes provided by Flutter.</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Designing a Flutter UI",
+          "courseClassProgress": 75,
+          "courseClassContent": `<p>
+              Learn about Material Design and basic Flutter concepts, like layout and animations:
+            </p>
+            <ul style='list-style: disc;'>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>Basic Flutter layout concepts</span> &mdash; Use DartPad in a browser (no downloads required!) to learn the basics of creating a Flutter layout.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>How to debug layout issues with the Flutter Inspector</span> &mdash; Not an official codelab, but step-by-step instructions on how to debug common layout problems using the Flutter Inspector and Layout Explorer.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Implicit animations</span> &mdash; Use DartPad (no downloads required!) to learn how to use implicit animations to add motion and create visual effects for the widgets in your UI.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Building Beautiful Transitions with Material Motion for Flutter</span> &mdash; Learn how to use the Material animations package to add pre-built transitions to a Material app called Reply.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>MDC-101 Flutter: Material Components (MDC) Basics</span> &mdash; Learn the basics of using Material Components by building a simple app with core components. The four MDC codelabs guide you through building an e-commerce app called Shrine. You’ll start by building a login page using several of MDC Flutter’s components.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>MDC-102 Flutter: Material Structure and Layout</span> &mdash; Learn how to use Material for structure and layout in Flutter. Continue building the e-commerce app, introduced in MDC-101, by adding navigation, structure, and data.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>MDC-103 Flutter: Material Theming with Color, Shape, Elevation, and Type</span> &mdash; Discover how Material Components for Flutter make it easy to differentiate your product, and express your brand through design. Continue building your e-commerce app by adding a home screen that displays products.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>MDC-104 Flutter: Material Advanced Components</span> &mdash; Improve your design and learn to use our advanced component backdrop menu. Finish your e-commerce app by adding a backdrop with a menu that filters products by the selected category.</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Using Flutter with...",
+          "courseClassProgress": 20,
+          "courseClassContent": `<p>
+              Learn how to use Flutter with other technologies.
+            </p>
+            <ul style='list-style: disc;'>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Adding Google Maps to a Flutter app</span> &mdash; Display a Google map in an app, retrieve data from a web service, and display the data as markers on the map.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Adding AdMob Ads to a Flutter app</span> &mdash; Learn how to add an AdMob banner, an interstitial ad, and a rewarded ad to an app called Awesome Drawing Quiz, a game that lets players guess the name of the drawing.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Adding an AdMob banner and native inline ads to a Flutter app</span> &mdash; Learn how to implement inline banner and native ads to a travel booking app that lists possible flight destinations.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Adding in-app purchases to your Flutter app</span> &mdash; Extend a simple gaming app that uses the Dash mascot as currency to offer three types of in-app purchases: consumable, non-consumable, and subscription.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Build a Photo Sharing app with Google Photos and Flutter</span> &mdash; Build a field trip app that allows you and other members of the trip to share photos.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Build voice bots for mobile with Dialogflow and Flutter (workshop) NEW!</span> &mdash; An instructor-led version of the Dialogflow and Flutter codelab (listed below).</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Build voice bots for Android with Dialogflow and Flutter</span> &mdash; Learn how to build a mobile FAQ bot that can answer most common questions about the tool Dialogflow. End users can interact with the text interface or stream a voice interaction via the built-in microphone of a mobile device.</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>[2021-12-05] <a href='https://youtube.com/watch?v=wUSkeTaBonA' target='kdcNewWindow'>Get to know Firebase for Flutter (workshop) NEW!</a></span> &mdash; An instructor-led version of our popular “Get to know Firebase for Flutter” codelab (listed below).</li>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>[2021-12-05] <a href='https://firebase.google.com/learn/codelabs/firebase-get-to-know-flutter' target='kdcNewWindow'>Get to know Firebase for Flutter</a></span> &mdash; Build an event RSVP and guestbook chat app on both Android and iOS using Flutter, authenticating users with Firebase Authentication and sync data using Cloud Firestore.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Multi-platform Firestore Flutter</span> &mdash; Build a multi-platform restaurant recommendation app powered by Flutter and Cloud Firestore. The finished app runs on Android, iOS, and web, from a single Dart codebase.</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Testing",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p>
+              Learn how to test your Flutter application.
+            </p>
+            <ul style='list-style: disc;'>
+              <li class='progress done'><span style='font-weight: normal; font-style: italic;'>How to test a Flutter app</span> &mdash; Start with a simple app that manages state with the Provider package. Unit test the provider package. Write widget tests for two of the widgets. Use Flutter Driver to create an integration test.</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Writing Platform-specific Code",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+              Learn how to write code that’s targeted for specific platforms, like iOS, Android, the web, and the desktop.
+            </p>
+            <ul style='list-style: disc;'>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Building a Cupertino app with Flutter</span> &mdash; Build a version of the Shrine shopping app (used in the Material Design codelabs) using the Cupertino package to create an iOS style look and feel. Create multiple tabs and navigate between them. Use the provider package to manage state between screens.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>How to write a Flutter plugin</span> &mdash; Learn how to write a plugin by creating a music plugin for iOS and Android that processes audio on the host platform. Then make an example app that uses your plugin to make a music keyboard.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Using a plugin with a Flutter web app</span> &mdash; Finish an app that reports the number of stars on a GitHub repository. use Dart DevTools to do some simple debugging, and Host your app on Firebase and, finally, use a Flutter plugin to launch the app and open the hosted privacy policy.</li>
+              <li class='progress'><span style='font-weight: normal; font-style: italic;'>Write a Flutter desktop application</span> &mdash; Build a Flutter desktop app that accesses GitHub APIs to retrieve your repositories, assigned issues, and pull requests. As part of this task, create and use plugins to interact with native APIs and desktop applications, and use code generation to build type-safe client libraries for GitHub’s APIs.</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "google-5",
+      "active": true,
+      "courseVendorName": "5*— Flutter Cookbooks",
+      "courseVendor": "Flutter Testing",
+      "courseProgress": 0,
+      "courseDesc": "Further learning for 'testing' as suggested in the Flutter Testing codelab. Primarily focusing on Unit and Widget testing.",
+      "courseDateStarted": "Oct 2021",
+      "courseDateLast": "Oct '21",
+      "courseDateLastDate": "2021-10-22",
+      "courseShortVendor": "google-flutter-training",
+      "courseShortName": "flutter",
+      "courseURL": "https://flutter.dev/docs/cookbook/testing/unit/introduction",
+      "courseList": [
+        {
+          "courseClassTitle": "An Introduction to Unit Testing",
+          "courseClassProgress": 0,
+          "courseClassContent": `<ul style='list-style: disc;'>
+              <li class='progress'>Add the test dependency</li>
+              <li class='progress'>Create a test file</li>
+              <li class='progress'>Create a class to test</li>
+              <li class='progress'>Write a test for our class</li>
+              <li class='progress'>Combine multiple tests in a group</li>
+              <li class='progress'>Run the tests using IntelliJ or VSCode and in a terminal</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "An Introduction to Widget Testing",
+          "courseClassProgress": 0,
+          "courseClassContent": `<ul style='list-style: disc;'>
+              <li class='progress'>1. Add the flutter_test dependency</li>
+              <li class='progress'>2. Create a widget to test</li>
+              <li class='progress'>3. Create a testWidgets test</li>
+              <li class='progress'>4. Build the widget using the WidgetTester with notes about the pump() methods</li>
+              <li class='progress'>5. Search for our widget using a Finder</li>
+              <li class='progress'>6. Verify the widget using a Matcher</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Find Widgets",
+          "courseClassProgress": 0,
+          "courseClassContent": `<ul style='list-style: disc;'>
+              <li class='progress'>1. Find a Text widget</li>
+              <li class='progress'>2. Find a widget with a specific Key</li>
+              <li class='progress'>3. Find a specific widget instance</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Tap, Drag, and Enter Text",
+          "courseClassProgress": 0,
+          "courseClassContent": `<ul style='list-style: disc;'>
+              <li class='progress'>1. Create a widget to test</li>
+              <li class='progress'>2. Enter text in the text field</li>
+              <li class='progress'>3. Ensure tapping a button adds the todo</li>
+              <li class='progress'>4. Ensure swipe-to-dismiss removes the todo</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "google-6",
+      "active": true,
+      "courseVendorName": "6*— Dart Codelabs",
+      "courseVendor": "Dart",
+      "courseProgress": 20,
+      "courseDesc": "The Dart codelabs provide a guided, hands-on coding experience — no download required!",
+      "courseDateStarted": "Oct 2021",
+      "courseDateLast": "Oct '21",
+      "courseDateLastDate": "2021-10-21",
+      "courseShortVendor": "google-dart-training",
+      "courseShortName": "dart",
+      "courseURL": "https://dart.dev/codelabs",
+      "courseList": [
+        {
+          "courseClassTitle": "Intro to Dart for Java Developers",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p>
+            Use DartPad to explore how Dart makes writing apps easy and fun.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Dart cheatsheet",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            Use DartPad to learn or remind yourself of some of the most commonly used, yet unique features of the Dart language.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Iterable collections",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            Use DartPad to learn or remind yourself of how to use lists, sets, and other iterable collections in Dart, with special attention to filtering and mapping values.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Asynchronous programming: futures, async, await",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            Use DartPad to learn or remind yourself of how to write asynchronous code using futures and the async and await keywords.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Null safety",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            Use DartPad to learn about Dart’s null-safe type system, which was introduced in Dart 2.12.</p>
+          `
+        }
+      ]
+    },
+    {
+      "id": "kotlin-1",
+      "active": true,
+      "courseVendorName": "1*— Kotlin Codelabs",
+      "courseVendor": "Kotlin Bootcamp for Programmers",
+      "courseProgress": 29,
+      "courseDesc": "In the Kotlin Bootcamp for Programmers course, you learn the basics of Kotlin as you create various small programs in IntelliJ IDEA.",
+      "courseDateStarted": "Oct 2021",
+      "courseDateLast": "Oct '21",
+      "courseDateLastDate": "2021-10-03",
+      "courseShortVendor": "android-kotlin-training",
+      "courseShortName": "kotlin",
+      "courseURL": "https://developer.android.com/courses/kotlin-bootcamp/overview",
+      "courseList": [
+        {
+          "courseClassTitle": "Get started",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p class='text-body'>
+            In Lesson 1, you learn how to work with the Kotlin REPL (Read-Eval-Print Loop) interactive shell, and you practice using the basic syntax of Kotlin code.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Kotlin basics",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p class='text-body'>
+              In Lesson 2, you learn how to use Kotlin data types, operators, and variables, and how to work with booleans and conditions. You explore the difference between nullable and non-nullable variables, and you practice using arrays, lists, and loops in Kotlin.
+            </p>
+            <ul style='list-style: disc;'>
+              <li class='progress done'>Welcome</li>
+              <li class='progress'>Task: Learn about operators and types</li>
+              <li class='progress'>Task: Compare conditions and booleans</li>
+              <li class='progress'>Task: Learn about nullability</li>
+              <li class='progress'>Task: Explore arrays, lists, and loops</li>
+              <li class='progress'>Summary</li>
+              <li class='progress'>Learn more</li>
+              <li class='progress'>Homework</li>
+              <li class='progress'>Next codelab</li>
+            </ul>
+          `
+        },
+        {
+          "courseClassTitle": "Functions",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p class='text-body'>
+            In Lesson 3, you learn how to create a program with a main() function and arguments in IntelliJ IDEA. You create small programs as you learn about default values, compact functions, list filters, basic lambdas, and higher-order functions.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Classes and objects",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p class='text-body'>
+            In Lesson 4, you learn about classes, objects, and inheritance in Kotlin. You create small programs as you learn about abstract classes, interfaces, and interface delegation.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Extensions",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p class='text-body'>
+            In Lesson 5.1, you learn about collections, constants, and extension functions in Kotlin. You create small programs as you learn about pairs, triples, lists, and hash maps for storing data, and implement extension functions to add functionality to existing classes.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Generics",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p class='text-body'>
+            In Lesson 5.2, you learn about generic classes, methods, and functions in Kotlin. You create a type hierarchy, make classes more flexible by making them generic, and extend their functionality with generic methods and functions.</p>
+          `
+        },
+        {
+          "courseClassTitle": "Functional manipulation",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p class='text-body'>
+            In Lesson 6, you learn about annotations, labeled breaks, and Single Abstract Methods (SAMs). You also review lambdas and higher-order functions. You then create and use lambdas and higher-order functions, and learn about higher-order functions in the Kotlin Standard Library.</p>
+          `
+        }
+      ]
+    },
+    {
+      "id": "kotlin-2",
+      "active": true,
+      "courseVendorName": "2*— Traversy Media",
+      "courseVendor": "Kotlin Crash Course [1:23:49]",
+      "courseProgress": 100,
+      "courseDesc": "A beginners guide to learning the basics of the Kotlin programming language, which is heaviliy used in creating Android apps. Published: Nov 9, 2020.",
+      "courseDateStarted": "Oct 2021",
+      "courseDateLast": "Oct '21",
+      "courseDateLastDate": "2021-10-02",
+      "courseShortVendor": "kotlin-training",
+      "courseShortName": "kotlin",
+      "courseURL": "https://www.youtube.com/watch?v=5flXf8nuq60&ab_channel=TraversyMedia",
+      "courseList": [
+        {
+          "courseClassTitle": "Video Tutorial | YouTube",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p>
+              Timestamps:
+            </p>
+            <ul>
+              <li>00:00 - Intro</li>
+              <li>00:52 - Why learn Kotlin?</li>
+              <li>03:01 - Installation & Prerequisites</li>
+              <li>10:12 - Hello World</li>
+              <li>13:07 - Variables and Data Types</li>
+              <li>20:00 - Arithmetic Operators</li>
+              <li>22:32 - Logical & Comparison Operators</li>
+              <li>26:20 - Strings</li>
+              <li>27:32 - If Conditions</li>
+              <li>30:40 - Null Values</li>
+              <li>35:47 - Lists</li>
+              <li>39:09 - While-Loop</li>
+              <li>41:39 - For-Loop</li>
+              <li>43:36 - When-Expression</li>
+              <li>45:35 - Functions</li>
+              <li>54:59 - Classes</li>
+              <li>57:59 - Inheritance</li>
+              <li>1:02:53 - Abstract Classes</li>
+              <li>1:05:44 - Anonymous Classes</li>
+              <li>1:08:07 - Try & Catch</li>
+              <li>1:12:22 - Lambda Functions</li>
+              <li>1:20:37 - Generics</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "kotlin-3",
+      "active": true,
+      "courseVendorName": "3*— Traversy Media",
+      "courseVendor": "Build A Simple Android App With Kotlin [1:11:40]",
+      "courseProgress": 100,
+      "courseDesc": "We will create a basic todo list Android app using the Kotlin programming language. Published: Nov 9, 2020.",
+      "courseDateStarted": "Oct 2021",
+      "courseDateLast": "Oct '21",
+      "courseDateLastDate": "2021-10-01",
+      "courseShortVendor": "android-kotlin-training",
+      "courseShortName": "kotlin",
+      "courseURL": "https://www.youtube.com/watch?v=BBWyXo-3JGQ&ab_channel=TraversyMedia",
+      "courseList": [
+        {
+          "courseClassTitle": "Video Tutorial | YouTube",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p>
+              Timestamps:
+            </p>
+            <ul>
+              <li>00:00 - Intro</li>
+              <li>00:33 - What we will build</li>
+              <li>01:42 - Why choose Kotlin for Android Development?</li>
+              <li>03:29 - Android Studio Setup</li>
+              <li>07:17 - Creating the project</li>
+              <li>08:57 - Android Studio Roundtrip</li>
+              <li>16:17 - Building the app's layout</li>
+              <li>35:07 - Writing the Kotlin code for our app</li>
+              <li>01:03:04 - Recap of what we've done</li>
+              <li>01:06:25 - Setting up the Android emulator</li>
+              <li>01:08:15 - Running our app</li>
+            </ul>
           `
         }
       ]

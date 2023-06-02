@@ -670,7 +670,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(29):before,
   .main-wrapper main.main .card:nth-child(33):before,
   .main-wrapper main.main .card:nth-child(37):before,
-  .main-wrapper main.main .card:nth-child(41):before  {
+  .main-wrapper main.main .card:nth-child(41):before,
+  .main-wrapper main.main .card:nth-child(45):before,
+  .main-wrapper main.main .card:nth-child(49):before,
+  .main-wrapper main.main .card:nth-child(53):before,
+  .main-wrapper main.main .card:nth-child(57):before,
+  .main-wrapper main.main .card:nth-child(61):before {
     border-left: var(--post-it-cut-1a);
     border-top: var(--post-it-cut-1b);
   }
@@ -684,7 +689,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(30):before,
   .main-wrapper main.main .card:nth-child(34):before,
   .main-wrapper main.main .card:nth-child(38):before,
-  .main-wrapper main.main .card:nth-child(42):before {
+  .main-wrapper main.main .card:nth-child(42):before,
+  .main-wrapper main.main .card:nth-child(46):before,
+  .main-wrapper main.main .card:nth-child(50):before,
+  .main-wrapper main.main .card:nth-child(54):before,
+  .main-wrapper main.main .card:nth-child(58):before,
+  .main-wrapper main.main .card:nth-child(62):before {
     border-left: var(--post-it-cut-2a);
     border-top: var(--post-it-cut-2b);
   }
@@ -698,7 +708,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(31):before,
   .main-wrapper main.main .card:nth-child(35):before,
   .main-wrapper main.main .card:nth-child(39):before,
-  .main-wrapper main.main .card:nth-child(43):before {
+  .main-wrapper main.main .card:nth-child(43):before,
+  .main-wrapper main.main .card:nth-child(47):before,
+  .main-wrapper main.main .card:nth-child(51):before,
+  .main-wrapper main.main .card:nth-child(55):before,
+  .main-wrapper main.main .card:nth-child(59):before,
+  .main-wrapper main.main .card:nth-child(63):before {
     border-left: var(--post-it-cut-3a);
     border-top: var(--post-it-cut-3b);
   }
@@ -712,7 +727,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(32):before,
   .main-wrapper main.main .card:nth-child(36):before,
   .main-wrapper main.main .card:nth-child(40):before,
-  .main-wrapper main.main .card:nth-child(44):before {
+  .main-wrapper main.main .card:nth-child(44):before,
+  .main-wrapper main.main .card:nth-child(48):before,
+  .main-wrapper main.main .card:nth-child(52):before,
+  .main-wrapper main.main .card:nth-child(56):before,
+  .main-wrapper main.main .card:nth-child(60):before,
+  .main-wrapper main.main .card:nth-child(64):before {
     border-left: var(--post-it-cut-4a);
     border-top: var(--post-it-cut-4b);
   }
@@ -729,7 +749,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(29),
   .main-wrapper main.main .card:nth-child(33),
   .main-wrapper main.main .card:nth-child(37),
-  .main-wrapper main.main .card:nth-child(41) {
+  .main-wrapper main.main .card:nth-child(41),
+  .main-wrapper main.main .card:nth-child(45),
+  .main-wrapper main.main .card:nth-child(49),
+  .main-wrapper main.main .card:nth-child(53),
+  .main-wrapper main.main .card:nth-child(57),
+  .main-wrapper main.main .card:nth-child(61) {
     transform: rotate(var(--post-it-1b));
   }
   .main-wrapper main.main .card:nth-child(2),
@@ -742,7 +767,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(30),
   .main-wrapper main.main .card:nth-child(34),
   .main-wrapper main.main .card:nth-child(38),
-  .main-wrapper main.main .card:nth-child(42) {
+  .main-wrapper main.main .card:nth-child(42),
+  .main-wrapper main.main .card:nth-child(46),
+  .main-wrapper main.main .card:nth-child(50),
+  .main-wrapper main.main .card:nth-child(54),
+  .main-wrapper main.main .card:nth-child(58),
+  .main-wrapper main.main .card:nth-child(62) {
     transform: rotate(var(--post-it-2b));
   }
   .main-wrapper main.main .card:nth-child(3),
@@ -755,7 +785,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(31),
   .main-wrapper main.main .card:nth-child(35),
   .main-wrapper main.main .card:nth-child(39),
-  .main-wrapper main.main .card:nth-child(43) {
+  .main-wrapper main.main .card:nth-child(43),
+  .main-wrapper main.main .card:nth-child(47),
+  .main-wrapper main.main .card:nth-child(51),
+  .main-wrapper main.main .card:nth-child(55),
+  .main-wrapper main.main .card:nth-child(59),
+  .main-wrapper main.main .card:nth-child(63) {
     transform: rotate(var(--post-it-3b));
   }
   .main-wrapper main.main .card:nth-child(4),
@@ -768,7 +803,12 @@ main.main {
   .main-wrapper main.main .card:nth-child(32),
   .main-wrapper main.main .card:nth-child(36),
   .main-wrapper main.main .card:nth-child(40),
-  .main-wrapper main.main .card:nth-child(44) {
+  .main-wrapper main.main .card:nth-child(44),
+  .main-wrapper main.main .card:nth-child(48),
+  .main-wrapper main.main .card:nth-child(52),
+  .main-wrapper main.main .card:nth-child(56),
+  .main-wrapper main.main .card:nth-child(60),
+  .main-wrapper main.main .card:nth-child(64) {
     transform: rotate(var(--post-it-4b));
   }
 
@@ -783,7 +823,12 @@ main.main {
     .main-wrapper main.main .card:nth-child(29),
     .main-wrapper main.main .card:nth-child(33),
     .main-wrapper main.main .card:nth-child(37),
-    .main-wrapper main.main .card:nth-child(41) {
+    .main-wrapper main.main .card:nth-child(41),
+    .main-wrapper main.main .card:nth-child(45),
+    .main-wrapper main.main .card:nth-child(49),
+    .main-wrapper main.main .card:nth-child(53),
+    .main-wrapper main.main .card:nth-child(57),
+    .main-wrapper main.main .card:nth-child(61) {
       transform: rotate(var(--post-it-1));
     }
     .main-wrapper main.main .card:nth-child(2),
@@ -796,7 +841,12 @@ main.main {
     .main-wrapper main.main .card:nth-child(30),
     .main-wrapper main.main .card:nth-child(34),
     .main-wrapper main.main .card:nth-child(38),
-    .main-wrapper main.main .card:nth-child(42) {
+    .main-wrapper main.main .card:nth-child(42),
+    .main-wrapper main.main .card:nth-child(46),
+    .main-wrapper main.main .card:nth-child(50),
+    .main-wrapper main.main .card:nth-child(54),
+    .main-wrapper main.main .card:nth-child(58),
+    .main-wrapper main.main .card:nth-child(62) {
       transform: rotate(var(--post-it-2));
     }
     .main-wrapper main.main .card:nth-child(3),
@@ -809,7 +859,12 @@ main.main {
     .main-wrapper main.main .card:nth-child(31),
     .main-wrapper main.main .card:nth-child(35),
     .main-wrapper main.main .card:nth-child(39),
-    .main-wrapper main.main .card:nth-child(43) {
+    .main-wrapper main.main .card:nth-child(43),
+    .main-wrapper main.main .card:nth-child(47),
+    .main-wrapper main.main .card:nth-child(51),
+    .main-wrapper main.main .card:nth-child(55),
+    .main-wrapper main.main .card:nth-child(59),
+    .main-wrapper main.main .card:nth-child(63) {
       transform: rotate(var(--post-it-3));
     }
     .main-wrapper main.main .card:nth-child(4),
@@ -822,7 +877,12 @@ main.main {
     .main-wrapper main.main .card:nth-child(32),
     .main-wrapper main.main .card:nth-child(36),
     .main-wrapper main.main .card:nth-child(40),
-    .main-wrapper main.main .card:nth-child(44) {
+    .main-wrapper main.main .card:nth-child(44),
+    .main-wrapper main.main .card:nth-child(48),
+    .main-wrapper main.main .card:nth-child(52),
+    .main-wrapper main.main .card:nth-child(56),
+    .main-wrapper main.main .card:nth-child(60),
+    .main-wrapper main.main .card:nth-child(64) {
       transform: rotate(var(--post-it-4));
     }
   }
