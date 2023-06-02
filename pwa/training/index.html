@@ -16,6 +16,14 @@
   <meta property="og:description" content="I built this Training Progress SPA for courses I've been engaged with since May 2018.">
   <meta property="og:site_name" content="Training Progress SPA">
   <meta property="og:image" content="https://kdcinfo.com/db/kdcbase/splash_training_640.jpg">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1872941-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-1872941-10');
+  </script>
 </head>
 <body>
 
@@ -53,7 +61,7 @@
           <button role="switch" aria-checked="false" id="completedCourses" class="switch">
             <span>show</span>
             <span>hide</span>
-          </button> <span class="button-label">Completed Courses</span> <small>(<span id="completed-count">0</span>)</small>
+          </button> <span class="button-label">Previous Completions</span> <small>(<span id="completed-count">0</span>)</small>
         </label>
       </div>
     </div>
@@ -95,7 +103,7 @@
     <footer>
       <div class="message"></div>
       <div class="msg">
-        Last Build: <b><a class="last-dev-build no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">Wed Jun 20 2018 01:50:34 GMT-0700 (Pacific Daylight Time)</a></b>
+        Last Updated: <b><a class="last-dev-build no-wrap" target="kdcNewWindow" href="https://github.com/KDCinfo/snippets/tree/master/pwa/training">Wed Jun 20 2018 01:50:34 GMT-0700 (Pacific Daylight Time)</a></b>
       </div>
       <div id="webapp-help">
         <button type="button" id="button-toggle-webapp-help">About this App</button>
@@ -148,20 +156,40 @@
       top.location.href = goToUrl;
       return false;
     }
-    async function fetchAsync() {
-      // GitHub API Request Process - Thanks to: [Ivan Zuzak](https://stackoverflow.com/a/15933109/638153)
-      let response = await fetch('https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master', { method: "GET", cache: 'reload' });
-      let json = await response.json();
-      let refResponse = await fetch(json.object.url, { method: "GET" });
-      let refJson = await refResponse.json();
-      return refJson;
-    }
-    fetchAsync().then( data => {                     // My old manual version:     // 2018 June 21 @ 1:08 AM
-      const modDate = new Date(data.committer.date); // modDate.toLocaleString()); // 6/20/2018, 1:50:34 AM
-      document.querySelector('.last-dev-build').textContent = modDate;
-    }).catch( err => {
-      document.querySelector('.last-dev-build').innerHTML = 'Wed Jun 21 2018 03:00:00 GMT-0700<br/>(err: using last known commit date)<br/><br/>' + err;
+
+    fetch('https://kdcinfo.com/app/training/training-list.js', { method: "GET", cache: 'reload' }).then( data => {
+      let fileDateF = new Date(data.headers.get('last-modified'));
+      document.querySelector('.last-dev-build').innerHTML = fileDateF;
     });
+
+    // async function fetchAsync() {
+    //   let response = await fetch('https://kdcinfo.com/app/training/training-list.js', { method: "GET", cache: 'reload' });
+    //   // console.log('response: ', response.headers.get('last-modified'));
+    //   // response.headers.forEach(function(val, key) { console.log(key + ' -> ' + val); });
+    //   let json = await response.json();
+    //   let refResponse = await fetch(json.object.url, { method: "GET" });
+    //   let refJson = await refResponse.json();
+    //   return refJson;
+    // }
+
+    // if (true) { // I believe I didn't want to continue hitting the GitHub API ... for something so trivial.
+    //   document.querySelector('.last-dev-build').innerHTML = 'Tue Feb 18 2020 02:43:19 GMT-0800 (Pacific Standard Time)';
+    // } else {
+      // async function fetchAsync() {
+      //   // GitHub API Request Process - Thanks to: [Ivan Zuzak](https://stackoverflow.com/a/15933109/638153)
+      //   let response = await fetch('https://api.github.com/repos/KDCinfo/snippets/git/refs/heads/master', { method: "GET", cache: 'reload' });
+      //   let json = await response.json();
+      //   let refResponse = await fetch(json.object.url, { method: "GET" });
+      //   let refJson = await refResponse.json();
+      //   return refJson;
+      // }
+      // fetchAsync().then( data => {                     // My old manual version:     // 2018 June 21 @ 1:08 AM
+      //   const modDate = new Date(data.committer.date); // modDate.toLocaleString()); // 6/20/2018, 1:50:34 AM
+      //   document.querySelector('.last-dev-build').textContent = modDate;
+      // }).catch( err => {
+      //   document.querySelector('.last-dev-build').innerHTML = 'Wed Jun 21 2018 03:00:00 GMT-0700<br/>(err: using last known commit date)<br/><br/>' + err;
+      // });
+    // }
   </script>
   <!-- register the Service Worker -->
   <script src="/sw-register.js" id="sw-register" data-app-name="_pwa_training_"></script>
