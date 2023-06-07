@@ -3775,6 +3775,72 @@
       ]
     },
     {
+      "id": "udemy-4",
+      "active": true,
+      "courseVendorName": "4*— Udemy",
+      "courseVendor": "Flutter & Dart: SOLID Principles and Top Design Patterns",
+      "courseProgress": 100,
+      "courseDesc": "Learn how to improve your Flutter & Dart code through mastery of S.O.L.I.D principles and the Top GoF Design Patterns.",
+      "courseDateStarted": "Mar 2023",
+      "courseDateLast": "Mar '23",
+      "courseDateLastDate": "2023-03-12",
+      "courseShortVendor": "udemy-courses",
+      "courseShortName": "learn-oop",
+      "courseURL": "https://www.udemy.com/certificate/UC-0301f1e9-7770-48e4-a384-c6408364d929/",
+      "courseList": [
+        {
+          "courseClassTitle": "What you'll learn",
+          "courseClassProgress": 100,
+          "courseClassContent": `<p>
+              11 sections | 45 lectures | 3h 45m total length
+            </p>
+            <ul>
+              <li class='progress done'>Introduction</li>
+              <li class='progress done'>What makes a Great Architecture?</li>
+              <li class='progress done'>Singleton Design Pattern</li>
+              <li class='progress done'>Factory Method Design Pattern</li>
+              <li class='progress done'>Builder Design Pattern</li>
+              <li class='progress done'>Adapter Design Pattern</li>
+              <li class='progress done'>Strategy Design Pattern</li>
+              <li class='progress done'>Observer Design Pattern</li>
+              <li class='progress done'>State Design Pattern</li>
+              <li class='progress done'>Course Assignment - The Game of Life</li>
+              <li class='progress done'>Final Thoughts</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "udemy-5",
+      "active": true,
+      "courseVendorName": "5*— Udemy",
+      "courseVendor": "SOLID Principle - Dart / Flutter",
+      "courseProgress": 100,
+      "courseDesc": "Learn SOLID principle and be a better developer",
+      "courseDateStarted": "Mar 2023",
+      "courseDateLast": "Mar '23",
+      "courseDateLastDate": "2023-03-19",
+      "courseShortVendor": "udemy-courses",
+      "courseShortName": "learn-oop",
+      "courseURL": "https://www.udemy.com/course/solid-principle-dart-flutter/",
+      "courseList": [
+        {
+          "courseClassTitle": "What you'll learn",
+          "courseClassProgress": 100,
+          "courseClassContent": `<ul>
+              <li class='progress done'>SOLID Principle</li>
+              <li class='progress done'>Single Responsibility Principle (SRP)</li>
+              <li class='progress done'>Open-Close Principle (OCP)</li>
+              <li class='progress done'>Liskov substitution principle (LSP)</li>
+              <li class='progress done'>Interface segregation principle (ISP)</li>
+              <li class='progress done'>Dependency Inversion Principle (DIP)</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
       "id": "google-4",
       "active": true,
       "courseVendorName": "4*— Google Flutter Codelabs",
@@ -3949,11 +4015,11 @@
       "active": true,
       "courseVendorName": "6*— Dart Codelabs",
       "courseVendor": "Dart",
-      "courseProgress": 20,
+      "courseProgress": 33,
       "courseDesc": "The Dart codelabs provide a guided, hands-on coding experience — no download required!",
       "courseDateStarted": "Oct 2021",
-      "courseDateLast": "Oct '21",
-      "courseDateLastDate": "2021-10-21",
+      "courseDateLast": "Jun '23",
+      "courseDateLastDate": "2023-06-02",
       "courseShortVendor": "google-dart-training",
       "courseShortName": "dart",
       "courseURL": "https://dart.dev/codelabs",
@@ -3967,9 +4033,28 @@
         },
         {
           "courseClassTitle": "Dart cheatsheet",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             Use DartPad to learn or remind yourself of some of the most commonly used, yet unique features of the Dart language.</p>
+            <ul>
+              <li class='progress done'>String interpolation</li>
+              <li class='progress done'>Nullable variables</li>
+              <li class='progress done'>Null-aware operators</li>
+              <li class='progress done'>Conditional property access</li>
+              <li class='progress done'>Collection literals</li>
+              <li class='progress done'>Arrow syntax</li>
+              <li class='progress done'>Cascades</li>
+              <li class='progress done'>Getters and setters</li>
+              <li class='progress done'>Optional positional parameters</li>
+              <li class='progress done'>Named parameters</li>
+              <li class='progress done'>Exceptions</li>
+              <li class='progress done'>Using this in a constructor</li>
+              <li class='progress done'>Initializer lists</li>
+              <li class='progress done'>Named constructors</li>
+              <li class='progress done'>Factory constructors</li>
+              <li class='progress done'>Redirecting constructors</li>
+              <li class='progress done'>Const constructors</li>
+            </ul>
           `
         },
         {
@@ -3996,8 +4081,42 @@
       ]
     },
     {
-      "id": "kotlin-1",
+      "id": "google-7",
       "active": true,
+      "courseVendorName": "7*— Dart Codelabs",
+      "courseVendor": "Records and Patterns in Dart 3",
+      "courseProgress": 0,
+      "courseDesc": "Discover Dart 3’s new records and patterns features. Learn how you can use them in a Flutter app to help you write more readable and maintainable Dart code.",
+      "courseDateStarted": "Jun 2023",
+      "courseDateLast": "Jun '23",
+      "courseDateLastDate": "2021-06-02",
+      "courseShortVendor": "google-dart-training",
+      "courseShortName": "dart",
+      "courseURL": "https://codelabs.developers.google.com/codelabs/dart-patterns-records",
+      "courseList": [
+        {
+          "courseClassTitle": "Dive into Dart's patterns and records",
+          "courseClassProgress": 0,
+          "courseClassContent": `<p>
+            Dart 3 introduces patterns to the language, a major new category of grammar. Beyond this new way to write Dart code, there are several other language enhancements,
+            including records for bundling data of different types, class modifiers for controlling access, and new switch expressions and if-case statements.</p>
+            <ul>
+              <li class='progress'>Create and return records</li>
+              <li class='progress'>Match and destructure with patterns</li>
+              <li class='progress'>Use patterns to extract data</li>
+              <li class='progress'>Prepare the app for more patterns</li>
+              <li class='progress'>Use patterns to display the document</li>
+              <li class='progress'>Use switch expressions</li>
+              <li class='progress'>Use object patterns</li>
+              <li class='progress'>Seal a class for exhaustive switching</li>
+            </ul>
+            `
+        }
+      ]
+    },
+    {
+      "id": "kotlin-1",
+      "active": false,
       "courseVendorName": "1*— Kotlin Codelabs",
       "courseVendor": "Kotlin Bootcamp for Programmers",
       "courseProgress": 29,
@@ -4152,6 +4271,35 @@
               <li>01:03:04 - Recap of what we've done</li>
               <li>01:06:25 - Setting up the Android emulator</li>
               <li>01:08:15 - Running our app</li>
+            </ul>
+          `
+        }
+      ]
+    },
+    {
+      "id": "refactoringguru-1",
+      "active": true,
+      "courseVendorName": "1*— Refactoring.guru",
+      "courseVendor": "Dive Into Refactoring: An online course about code smells and refactoring",
+      "courseProgress": 47,
+      "courseDesc": "The course teaches you about 21 smells of bad code and 66 refactoring techniques to fix them.",
+      "courseDateStarted": "Jun 2023",
+      "courseDateLast": "Jun '23",
+      "courseDateLastDate": "2023-06-07",
+      "courseShortVendor": "oop-training",
+      "courseShortName": "refactoringguru",
+      "courseURL": "https://refactoring.guru/refactoring/course",
+      "courseList": [
+        {
+          "courseClassTitle": "Refactoring and Design Patterns",
+          "courseClassProgress": 47,
+          "courseClassContent": `<p>
+              In this course, I will share my knowledge with you and teach you to:
+            </p>
+            <ul>
+              <li>See the difference between beautiful and ugly code.</li>
+              <li>Improve ugly code, even where you thought it was impossible.</li>
+              <li>Change the code in such a way that it doesn't break other parts of your program.</li>
             </ul>
           `
         }
