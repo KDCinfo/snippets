@@ -3260,7 +3260,7 @@
     {
       "id": "udemy-3",
       "active": true,
-      "courseVendorName": "2a— Udemy (325 Lectures)",
+      "courseVendorName": "2a— Udemy (325 Lectures; certificate)",
       "courseVendor": "Learn Flutter & Dart to Build iOS & Android Apps",
       "courseProgress": 100,
       "courseDesc": "A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps | Bestseller | Last updated 12/2019 (at time of training) | Created by Academind by Maximilian Schwarzmüller",
@@ -3269,7 +3269,7 @@
       "courseDateLastDate": "2020-03",
       "courseShortVendor": "udemy-courses",
       "courseShortName": "learn-flutter-and-dart",
-      "courseURL": "https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/",
+      "courseURL": "https://ude.my/UC-aaa10e86-9311-4dd7-8a24-3e9531777591",
       "courseList": [
         {
           "courseClassTitle": "Section 1: Introduction",
@@ -3777,7 +3777,7 @@
     {
       "id": "udemy-4",
       "active": true,
-      "courseVendorName": "4*— Udemy",
+      "courseVendorName": "4*— Udemy (certificate)",
       "courseVendor": "Flutter & Dart: SOLID Principles and Top Design Patterns",
       "courseProgress": 100,
       "courseDesc": "Learn how to improve your Flutter & Dart code through mastery of S.O.L.I.D principles and the Top GoF Design Patterns.",
@@ -4015,11 +4015,11 @@
       "active": true,
       "courseVendorName": "6*— Dart Codelabs",
       "courseVendor": "Dart",
-      "courseProgress": 33,
+      "courseProgress": 100,
       "courseDesc": "The Dart codelabs provide a guided, hands-on coding experience — no download required!",
       "courseDateStarted": "Oct 2021",
       "courseDateLast": "Jun '23",
-      "courseDateLastDate": "2023-06-02",
+      "courseDateLastDate": "2023-06-11",
       "courseShortVendor": "google-dart-training",
       "courseShortName": "dart",
       "courseURL": "https://dart.dev/codelabs",
@@ -4059,21 +4059,21 @@
         },
         {
           "courseClassTitle": "Iterable collections",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             Use DartPad to learn or remind yourself of how to use lists, sets, and other iterable collections in Dart, with special attention to filtering and mapping values.</p>
           `
         },
         {
           "courseClassTitle": "Asynchronous programming: futures, async, await",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             Use DartPad to learn or remind yourself of how to write asynchronous code using futures and the async and await keywords.</p>
           `
         },
         {
           "courseClassTitle": "Null safety",
-          "courseClassProgress": 0,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
             Use DartPad to learn about Dart’s null-safe type system, which was introduced in Dart 2.12.</p>
           `
@@ -4279,20 +4279,20 @@
     {
       "id": "refactoringguru-1",
       "active": true,
-      "courseVendorName": "1*— Refactoring.guru",
+      "courseVendorName": "1*— Refactoring.guru (certificate)",
       "courseVendor": "Dive Into Refactoring: An online course about code smells and refactoring",
-      "courseProgress": 47,
+      "courseProgress": 100,
       "courseDesc": "The course teaches you about 21 smells of bad code and 66 refactoring techniques to fix them.",
       "courseDateStarted": "Jun 2023",
       "courseDateLast": "Jun '23",
-      "courseDateLastDate": "2023-06-07",
+      "courseDateLastDate": "2023-06-15",
       "courseShortVendor": "oop-training",
       "courseShortName": "refactoringguru",
-      "courseURL": "https://refactoring.guru/refactoring/course",
+      "courseURL": "https://refactoring.guru/cert/r/MTM5NzE4",
       "courseList": [
         {
           "courseClassTitle": "Refactoring and Design Patterns",
-          "courseClassProgress": 47,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
               In this course, I will share my knowledge with you and teach you to:
             </p>

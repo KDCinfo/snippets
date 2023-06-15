@@ -74,6 +74,7 @@
    *   { 'udacity-1': {
    *       courseVendorName: '',  // Udacity
    *       courseVendor: '',      // Offline Web Applications
+   *       courseURL: '',         // (if any)
    *       courseDesc: '',        // (if any)
    *       courseDateStarted: '', // 2018 May
    *       courseDateLast: '',    // 2018 June
@@ -248,6 +249,7 @@
     newObj.active = localObj.active;
     newObj.courseVendorName = localObj.courseVendorName;
     newObj.courseVendor = localObj.courseVendor;
+    newObj.courseURL = localObj.courseURL;
     newObj.courseDesc = localObj.courseDesc;
     newObj.courseDateStarted = localObj.courseDateStarted;
     newObj.courseDateLast = localObj.courseDateLast;
@@ -265,8 +267,8 @@
 
       // FIRST PASS - Populate with browser-saved data (if any; it will try IndexedDB first, then localStorage).
 
-console.log('[training.js] tmpClassList.length');
-console.log(tmpClassList.length);
+      // console.log('[training.js] tmpClassList.length');
+      // console.log(tmpClassList.length);
 
       if (tmpClassList.length > 0) {
         app.allClassList = tmpClassList;        // Array: Empty or populated with vendor objects (classes).
@@ -497,6 +499,7 @@ console.log(tmpClassList.length);
     const courseVendorName = app.visibleClasses[cid].courseVendorName,
           courseVendor = app.visibleClasses[cid].courseVendor,
           courseDesc = app.visibleClasses[cid].courseDesc,
+          courseURL = app.visibleClasses[cid].courseURL,
           courseProgress = app.visibleClasses[cid].courseProgress,
           courseList = app.visibleClasses[cid].courseList,
           courseDateStarted = app.visibleClasses[cid].courseDateStarted,
@@ -542,6 +545,10 @@ console.log(tmpClassList.length);
     classWrapper.querySelector('.c-courseVendorName').textContent = courseVendor;
     classWrapper.querySelector('.c-courseVendor').textContent = courseVendorName.substr(courseVendorName.indexOf(' ') + 1);
     classWrapper.querySelector('.c-courseProgress').textContent = courseProgress;
+    classWrapper.querySelector('.ch-courseURL').textContent = courseURL;
+    // classWrapper.querySelector('.ch-courseURL').innerHTML = courseURL.length > 0
+    //     ? '<a href="' + courseURL + '" target="_blank">' + courseURL + '</a>'
+    //     : '';
     classWrapper.querySelector('.c-courseDateLast').textContent = courseDateLast;
 
     classWrapper.querySelector('.ch-courseDateStarted').textContent = courseDateStarted;
@@ -639,8 +646,10 @@ console.log(tmpClassList.length);
 
       // Remove superfluous content that will only serve to make the node's `dupe` heavier to move around.
       const courseDesc = dupe.querySelector('.ch-courseDesc'),
+            courseURL = dupe.querySelector('.ch-courseURL'),
             courseList = dupe.querySelector('.ch-courseList');
       dupe.removeChild(courseDesc);
+      dupe.removeChild(courseURL);
       dupe.removeChild(courseList);
 
       node.parentNode.appendChild(dupe);  // Position: `absolute` - Each clone stays relative to their shared parent container.
@@ -726,6 +735,7 @@ console.log(tmpClassList.length);
       classContent.querySelector('.cc-courseDateLast').textContent = nodeContent.querySelector('.c-courseDateLast').textContent;
       classContent.querySelector('.cc-courseDateStarted').textContent = nodeContent.querySelector('.ch-courseDateStarted').textContent;
       classContent.querySelector('.cc-courseDesc').textContent = nodeContent.querySelector('.ch-courseDesc').textContent;
+      classContent.querySelector('.cc-courseURL').textContent = nodeContent.querySelector('.ch-courseURL').textContent;
 
       // .main-wrapper .content-wrapper
       if (classContent.querySelector('.cc-courseList')) {

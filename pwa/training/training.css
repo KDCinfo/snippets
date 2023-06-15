@@ -317,12 +317,6 @@ footer {
     content: '';
     height: 0px;
   }
-  .accordion li:nth-child(even) h2 {
-  }
-  .accordion li:nth-child(even) div.progress-sub {
-  }
-  .accordion li:nth-child(even) div.li-body {
-  }
 
 @keyframes show-it {
   0% {
@@ -346,6 +340,8 @@ footer {
     height: 0px;
   }
 }
+
+/* Utility Classes */
 
 ul {
   list-style: none;
@@ -375,6 +371,10 @@ ul {
 .hide,
 .hidden {
   display: none;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 /* Borrowed from: My First PWA - https://github.com/KDCinfo/snippets/tree/master/pwa/your-first-pwapp */

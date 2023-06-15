@@ -16,17 +16,16 @@
   <meta property="og:description" content="I built this Training Progress SPA for courses I've been engaged with since May 2018.">
   <meta property="og:site_name" content="Training Progress SPA">
   <meta property="og:image" content="https://kdcinfo.com/db/kdcbase/splash_training_640.jpg">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1872941-10"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-1872941-10');
-  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ4RTT074X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PQ4RTT074X');
+</script>
 </head>
 <body>
-
   <div class="all-content">
     <header class="header">
       <div id="header" class="desc">
@@ -48,7 +47,6 @@
       </div>
     </div>
   </div>
-
   <!-- Main will begin centered. -->
        <!-- Mobile: Collapse. Desktop: Pull left; Open DIV on right: Smooth move class cards. -->
        <!-- Responsive: Menu will expand / collapse; DIV on right will fold underneath Main. -->
@@ -76,9 +74,10 @@
         </div>
         <div class="ch-courseDateStarted" hidden></div>
         <div class="ch-courseDesc" hidden></div>
+        <div class="ch-courseURL" hidden></div>
         <div class="ch-courseList" hidden>
           <div class="course course-template" hidden>
-            <div class="expand-it">*</div>
+            <div class="expand-it"><b>&#x2195;</b></div>
             <article class="c-expandable">
               <div class="c-listheader">
                 <span class="c-listitem cl-courseClassProgress"></span><span> - </span><span class="c-listitem cl-courseClassTitle"></span>
@@ -95,6 +94,7 @@
         <div><label>Last Visited:</label> <span class="cc-courseDateLast">2018 June</span></div>
         <div><label>Began:</label> <span class="cc-courseDateStarted">2018 May</span></div>
         <div><label>Overall Progress:</label> <span class="cc-courseProgress">1</span></div>
+        <div><label>URL:</label> <span><a class="cc-courseURL cursor" target="_blank" onclick="goToExternalUrlNewWin(this.textContent);"></a></span></div>
         <label>Course Description:</label><br/>
         <div class="cc-courseDesc">Fake Static Hard-Coded Data (replaced with JavaScript) [lorem15&rarr;]</div>
         <label>Course Topics:</label><br/>
@@ -155,6 +155,24 @@
       let goToUrl = (typeof url === 'undefined') ? 'https://kdcinfo.com' : url;
       top.location.href = goToUrl;
       return false;
+    }
+
+    function goToExternalUrlNewWin(url) {
+      const newSize = window.innerWidth > 900 ? 0.8 : 0.9;
+      if (typeof url !== 'undefined') {
+        openNewWindow0(
+          url,
+          "kdcinfo",
+          "width=" + (window.innerWidth * newSize) +
+          ",height=" + (window.innerHeight * newSize) +
+          ",scrollbars=yes,toolbar=no,directories=no,menubar=yes,status=no,resizable=yes,location=yes,scrollbars=1,copyhistory=yes",
+        );
+      }
+    }
+
+    function openNewWindow0(URLtoOpen,windowName,windowFeatures) {
+      newWindow = window.open(URLtoOpen,windowName,windowFeatures);
+    	newWindow.focus();
     }
 
     fetch('https://kdcinfo.com/app/training/training-list.js', { method: "GET", cache: 'reload' }).then( data => {
