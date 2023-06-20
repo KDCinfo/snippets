@@ -3,7 +3,7 @@
     {
       "id": "google-1",
       "active": true,
-      "courseVendorName": "1*— Google Training #1",
+      "courseVendorName": "1a— Google Training #1",
       "courseVendor": "Build Progressive Web Apps",
       "courseProgress": 100,
       "courseDesc": "A web app is progressive if it uses the latest web technologies to behave like a native mobile app. These technologies are supported by modern browsers and include service workers, databases, and push messaging. You develop Progressive Web Apps (PWAs) using existing tools and technologies to create targeted, ideal user experiences.",
@@ -45,7 +45,7 @@
     {
       "id": "google-2",
       "active": true,
-      "courseVendorName": "2*— Google Training #2",
+      "courseVendorName": "1b— Google Training #2",
       "courseVendor": "Build for all devices and users",
       "courseProgress": 100,
       "courseDesc": "",
@@ -88,7 +88,7 @@
     {
       "id": "google-3",
       "active": false,
-      "courseVendorName": "3*— Google Training #3",
+      "courseVendorName": "1c— Google Training #3",
       "courseVendor": "Improve the user experience",
       "courseProgress": 84,
       "courseDesc": "",
@@ -3843,7 +3843,7 @@
     {
       "id": "google-4",
       "active": true,
-      "courseVendorName": "4*— Google Flutter Codelabs",
+      "courseVendorName": "1*— Google Flutter Codelabs",
       "courseVendor": "Flutter Codelabs & Workshops",
       "courseProgress": 55,
       "courseDesc": "The Flutter codelabs provide a guided, hands-on coding experience. Flutter workshops are similar to the codelabs, but are instructor led and always use DartPad.",
@@ -3950,7 +3950,7 @@
     {
       "id": "google-5",
       "active": true,
-      "courseVendorName": "5*— Flutter Cookbooks",
+      "courseVendorName": "1*— Flutter Cookbooks",
       "courseVendor": "Flutter Testing",
       "courseProgress": 0,
       "courseDesc": "Further learning for 'testing' as suggested in the Flutter Testing codelab. Primarily focusing on Unit and Widget testing.",
@@ -4013,7 +4013,7 @@
     {
       "id": "google-6",
       "active": true,
-      "courseVendorName": "6*— Dart Codelabs",
+      "courseVendorName": "3a— Dart Codelabs",
       "courseVendor": "Dart",
       "courseProgress": 100,
       "courseDesc": "The Dart codelabs provide a guided, hands-on coding experience — no download required!",
@@ -4083,28 +4083,28 @@
     {
       "id": "google-7",
       "active": true,
-      "courseVendorName": "7*— Dart Codelabs",
+      "courseVendorName": "3b— Dart Codelabs",
       "courseVendor": "Records and Patterns in Dart 3",
-      "courseProgress": 0,
+      "courseProgress": 50,
       "courseDesc": "Discover Dart 3’s new records and patterns features. Learn how you can use them in a Flutter app to help you write more readable and maintainable Dart code.",
       "courseDateStarted": "Jun 2023",
       "courseDateLast": "Jun '23",
-      "courseDateLastDate": "2021-06-02",
+      "courseDateLastDate": "2021-06-19",
       "courseShortVendor": "google-dart-training",
       "courseShortName": "dart",
       "courseURL": "https://codelabs.developers.google.com/codelabs/dart-patterns-records",
       "courseList": [
         {
           "courseClassTitle": "Dive into Dart's patterns and records",
-          "courseClassProgress": 0,
+          "courseClassProgress": 50,
           "courseClassContent": `<p>
             Dart 3 introduces patterns to the language, a major new category of grammar. Beyond this new way to write Dart code, there are several other language enhancements,
             including records for bundling data of different types, class modifiers for controlling access, and new switch expressions and if-case statements.</p>
             <ul>
-              <li class='progress'>Create and return records</li>
-              <li class='progress'>Match and destructure with patterns</li>
-              <li class='progress'>Use patterns to extract data</li>
-              <li class='progress'>Prepare the app for more patterns</li>
+              <li class='progress done'>Create and return records</li>
+              <li class='progress done'>Match and destructure with patterns</li>
+              <li class='progress done'>Use patterns to extract data</li>
+              <li class='progress done'>Prepare the app for more patterns</li>
               <li class='progress'>Use patterns to display the document</li>
               <li class='progress'>Use switch expressions</li>
               <li class='progress'>Use object patterns</li>

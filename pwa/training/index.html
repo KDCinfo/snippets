@@ -172,7 +172,7 @@
 
     function openNewWindow0(URLtoOpen,windowName,windowFeatures) {
       newWindow = window.open(URLtoOpen,windowName,windowFeatures);
-    	newWindow.focus();
+      newWindow.focus();
     }
 
     fetch('https://kdcinfo.com/app/training/training-list.js', { method: "GET", cache: 'reload' }).then( data => {
