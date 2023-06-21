@@ -4085,30 +4085,45 @@
       "active": true,
       "courseVendorName": "3b— Dart Codelabs",
       "courseVendor": "Records and Patterns in Dart 3",
-      "courseProgress": 50,
-      "courseDesc": "Discover Dart 3’s new records and patterns features. Learn how you can use them in a Flutter app to help you write more readable and maintainable Dart code.",
+      "courseProgress": 100,
+      "courseDesc": "Discover Dart 3’s new patterns, records, enhanced 'switch' and 'case', and sealed classes. ",
       "courseDateStarted": "Jun 2023",
       "courseDateLast": "Jun '23",
-      "courseDateLastDate": "2021-06-19",
+      "courseDateLastDate": "2021-06-20",
       "courseShortVendor": "google-dart-training",
       "courseShortName": "dart",
       "courseURL": "https://codelabs.developers.google.com/codelabs/dart-patterns-records",
       "courseList": [
         {
           "courseClassTitle": "Dive into Dart's patterns and records",
-          "courseClassProgress": 50,
+          "courseClassProgress": 100,
           "courseClassContent": `<p>
-            Dart 3 introduces patterns to the language, a major new category of grammar. Beyond this new way to write Dart code, there are several other language enhancements,
-            including records for bundling data of different types, class modifiers for controlling access, and new switch expressions and if-case statements.</p>
+              Dart 3 introduces patterns to the language, a major new category of grammar.
+              Beyond this new way to write Dart code, there are several other language enhancements,
+              including records for bundling data of different types, class modifiers for
+              controlling access, and new switch expressions and if-case statements.
+            </p>
+            <p>
+              In this course you will experiment with patterns, records,
+              enhanced switch and case, and sealed classes. You will cover a lot of
+              information --- yet only barely scratch the surface of these features.
+            </p>
+            <p>
+              For more information, see the feature specifications:<br>
+              - Patterns => https://github.com/dart-lang/language/blob/master/accepted/future-releases/0546-patterns/feature-specification.md<br>
+              - Records => https://github.com/dart-lang/language/blob/master/accepted/future-releases/records/records-feature-specification.md<br>
+              - Exhaustiveness checking => https://github.com/dart-lang/language/blob/master/accepted/future-releases/0546-patterns/exhaustiveness.md<br>
+              - Sealed classes => https://github.com/dart-lang/language/blob/master/accepted/future-releases/sealed-types/feature-specification.md
+            </p>
             <ul>
               <li class='progress done'>Create and return records</li>
               <li class='progress done'>Match and destructure with patterns</li>
               <li class='progress done'>Use patterns to extract data</li>
               <li class='progress done'>Prepare the app for more patterns</li>
-              <li class='progress'>Use patterns to display the document</li>
-              <li class='progress'>Use switch expressions</li>
-              <li class='progress'>Use object patterns</li>
-              <li class='progress'>Seal a class for exhaustive switching</li>
+              <li class='progress done'>Use patterns to display the document</li>
+              <li class='progress done'>Use switch expressions</li>
+              <li class='progress done'>Use object patterns</li>
+              <li class='progress done'>Seal a class for exhaustive switching</li>
             </ul>
             `
         }
